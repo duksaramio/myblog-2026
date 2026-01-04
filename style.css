@@ -90,18 +90,21 @@ p {
 
 ul.list {
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 ul.list li {
   margin-bottom: 0.5rem;
-  display: flex;
+  position: relative;
+  padding-left: 1.2rem;
   font-size: var(--font-size-base);
+  line-height: 1.6;
 }
 
 ul.list li::before {
-  content: "- ";
-  margin-right: 0.5rem;
+  content: "-";
+  position: absolute;
+  left: 0;
 }
 
 footer {
