@@ -81,6 +81,7 @@ Object.entries(tagMap).forEach(([tag, posts]) => {
                     <li><a href="/">Home</a></li>
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/posts.html">Posts</a></li>
+                    <li><a href="/movies.html">Movies</a></li>
                 </ul>
             </nav>
         </header>
