@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review: Predator: Badlands | Duke Lee</title>
+    <meta name="description" content="My thoughts and rating for Predator: Badlands (2025).">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://duke.lee/movies/predator-badlands.html">
+    <meta property="og:title" content="Movie Review: Predator: Badlands | Duke Lee">
+    <meta property="og:description" content="A fresh take on the Predator franchise. Read my full review and rating.">
+    <meta property="og:image" content="/img/predator-badlands-poster.png">
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .movie-layout {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        .movie-poster {
+            flex: 0 0 300px;
+        }
+        .movie-poster img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .movie-info {
+            flex: 1;
+        }
+        .movie-meta {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            opacity: 0.6;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .rating-box {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            border: 1px solid var(--text-color);
+            border-radius: 4px;
+        }
+        .rating-value {
+            font-family: var(--font-serif);
+            font-size: 24px;
+        }
+        .imdb-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            transition: opacity 0.2s ease;
+        }
+        .imdb-link:hover {
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .movie-layout {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .movie-poster {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Duke Lee</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/posts.html">Posts</a></li>
+                    <li><a href="/movies.html">Movies</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="movie-layout">
+                    <div class="movie-poster">
+                        <img src="/img/predator-badlands-poster.png" alt="Predator: Badlands Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h1>Predator: Badlands</h1>
+                        <div class="movie-meta">
+                            2025 &bull; Dir. Dan Trachtenberg &bull; Cast: Elle Fanning, Dimitrius Schuster-Koloamatangi
+                        </div>
+                        
+                        <p>A bold and fresh evolution of the Predator franchise. Directed by Dan Trachtenberg (who brought us the excellent <i>Prey</i>), <i>Badlands</i> shifts the perspective in a way we've never seen before: making the Predator the protagonist.</p>
+                        
+                        <p>The story follows Dek, a young Yautja outcast trying to prove his worth on a hostile planet, forming an unlikely alliance with a damaged android named Thia. It's a cinematic hunt that explores Yautja culture far more deeply than any previous installment.</p>
+
+                        <div class="rating-box">
+                            <span style="font-size: 12px; opacity: 0.6; display: block; margin-bottom: 0.5rem;">My Rating</span>
+                            <span class="rating-value">9 / 10</span>
+                        </div>
+
+                        <br>
+                        <a href="https://www.imdb.com/title/tt31114402/" target="_blank" class="imdb-link">View on IMDb</a>
+                    </div>
+                </div>
+            </article>
+
+            <div style="margin-top: 4rem;">
+                <a href="/movies.html" style="font-size: 0.9rem;">← Back to Movies</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>100% vibe coded using Antigravity</p>
+        </footer>
+    </div>
+</body>
+</html>
