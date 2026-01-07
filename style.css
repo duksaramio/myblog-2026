@@ -250,3 +250,53 @@ a {
     background-color: rgba(0,0,0,0.03);
     border-color: rgba(0,0,0,0.1);
 }
+
+#what-i-read-today {
+    margin-top: 4rem;
+}
+
+.reading-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reading-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    font-weight: 400;
+}
+
+.reading-item:hover .reading-title {
+    text-decoration: underline;
+}
+
+.reading-date {
+    color: #666;
+    min-width: 120px;
+}
+
+.reading-title {
+    flex-grow: 1;
+}
+
+
+.reading-url {
+    color: #666;
+    font-size: 12px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+    .reading-item {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .reading-url {
+        margin-left: 0;
+    }
+}
+
