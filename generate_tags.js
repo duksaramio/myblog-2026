@@ -6,7 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const postsDir = path.join(__dirname, "posts");
+const moviesDir = path.join(__dirname, "movies");
 const tagsDir = path.join(__dirname, "tags");
+const rootDir = __dirname;
 
 // Ensure tags directory exists and is clean
 if (fs.existsSync(tagsDir)) {
@@ -15,54 +17,111 @@ if (fs.existsSync(tagsDir)) {
 fs.mkdirSync(tagsDir);
 
 const tagMap = {};
+const allPosts = [];
+const allMovies = [];
 
-function extractMetadata(content) {
+/**
+ * Robustly extract metadata from HTML content
+ */
+function extractMetadata(content, filename, type) {
+  // Title: captures everything after <title> until the first | or </title>
   const titleMatch = content.match(/<title>([^|]+)/);
-  const dateMatch = content.match(/<div class=\"post-meta\"[^>]*>\s*([^\n<]+)/);
-  const tagMatches = content.match(/href=\"\/tags\/([^\"]+)\"/g);
+
+  // Date: look for the post-meta div and capture the text content
+  const dateMatch = content.match(/<div class="post-meta"[^>]*>\s*([^<\n]+)/);
+
+  // Tags: extract from the post-tags section
+  const tagMatches = content.match(/href="\/tags\/([^"]+)"/g);
+
+  let title = titleMatch ? titleMatch[1].trim() : "Untitled";
+  // Clean up "Movie Review: " from movie titles for lists
+  if (type === 'movies') title = title.replace(/^Movie Review:\s*/, "");
 
   return {
-    title: titleMatch ? titleMatch[1].trim() : "Untitled",
+    title,
     date: dateMatch ? dateMatch[1].trim() : "Unknown Date",
     tags: tagMatches
-      ? tagMatches.map((m) => m.split("/")[2].replace('"', ""))
+      ? [...new Set(tagMatches.map((m) => m.split("/")[2].replace('"', "")))]
       : [],
+    url: `/${type}/${filename}`,
   };
 }
 
-// Scan posts
-fs.readdirSync(postsDir).forEach((file) => {
-  if (file.endsWith(".html")) {
-    const filePath = path.join(postsDir, file);
-    const content = fs.readFileSync(filePath, "utf8");
-    const { title, date, tags } = extractMetadata(content);
+// 1. Scan Posts
+if (fs.existsSync(postsDir)) {
+  fs.readdirSync(postsDir).forEach((file) => {
+    if (file.endsWith(".html")) {
+      const metadata = extractMetadata(fs.readFileSync(path.join(postsDir, file), "utf8"), file, "posts");
+      allPosts.push(metadata);
+      metadata.tags.forEach(tag => (tagMap[tag] = tagMap[tag] || []).push(metadata));
+    }
+  });
+}
 
-    tags.forEach((tag) => {
-      if (!tagMap[tag]) {
-        tagMap[tag] = [];
-      }
-      tagMap[tag].push({ title, date, url: `/posts/${file}` });
-    });
-  }
-});
+// 2. Scan Movies
+if (fs.existsSync(moviesDir)) {
+  fs.readdirSync(moviesDir).forEach((file) => {
+    if (file.endsWith(".html") && file !== "movies.html") {
+      const metadata = extractMetadata(fs.readFileSync(path.join(moviesDir, file), "utf8"), file, "movies");
+      allMovies.push(metadata);
+      metadata.tags.forEach(tag => (tagMap[tag] = tagMap[tag] || []).push(metadata));
+    }
+  });
+}
 
-// Generate tag pages
-Object.entries(tagMap).forEach(([tag, posts]) => {
-  const tagSubDir = path.join(tagsDir, tag);
-  if (!fs.existsSync(tagSubDir)) {
-    fs.mkdirSync(tagSubDir, { recursive: true });
-  }
+// Sort helpers
+const byDate = (a, b) => new Date(b.date) - new Date(a.date);
+allPosts.sort(byDate);
+allMovies.sort(byDate);
 
-  const postsHtml = posts
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
+// Helper: Generate post list HTML snippet
+function generatePostListHtml(items) {
+  return items
     .map(
-      (post) => `
-                <a href="${post.url}" class="post-item">
-                    <span class="post-date">${post.date}</span>
-                    <span class="post-title">${post.title}</span>
-                </a>`
+      (item) => `
+                    <a href="${item.url}" class="post-item">
+                        <span class="post-date">${item.date}</span>
+                        <span class="post-title">${item.title}</span>
+                    </a>`
     )
     .join("\n");
+}
+
+// 3. Update Main Pages
+function updateMainPages() {
+  const configs = [
+    { file: "index.html", items: allPosts, limit: 5 },
+    { file: "posts.html", items: allPosts, limit: null },
+    { file: "movies.html", items: allMovies, limit: null }
+  ];
+
+  configs.forEach(config => {
+    const filePath = path.join(rootDir, config.file);
+    if (!fs.existsSync(filePath)) return;
+
+    let content = fs.readFileSync(filePath, "utf8");
+    const itemsToShow = config.limit ? config.items.slice(0, config.limit) : config.items;
+    const newListHtml = `<!-- POSTS_LIST_START -->
+${generatePostListHtml(itemsToShow)}
+                    <!-- POSTS_LIST_END -->`;
+
+    const regex = /<!-- POSTS_LIST_START -->[\s\S]*<!-- POSTS_LIST_END -->/;
+    if (regex.test(content)) {
+      content = content.replace(regex, newListHtml);
+      fs.writeFileSync(filePath, content);
+      console.log(`✓ Updated ${config.file}`);
+    }
+  });
+}
+
+updateMainPages();
+
+// 4. Generate Tag Pages
+Object.entries(tagMap).forEach(([tag, items]) => {
+  const tagSubDir = path.join(tagsDir, tag);
+  if (!fs.existsSync(tagSubDir)) fs.mkdirSync(tagSubDir, { recursive: true });
+
+  const itemsHtml = generatePostListHtml(items.sort(byDate));
 
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">
@@ -87,9 +146,9 @@ Object.entries(tagMap).forEach(([tag, posts]) => {
         </header>
 
         <main>
-            <h1>Posts Tagged: ${tag}</h1>
+            <h1>Content Tagged: ${tag}</h1>
             <div class="posts-list">
-                ${postsHtml}
+                ${itemsHtml}
             </div>
             
             <div style="margin-top: 4rem;">
@@ -107,7 +166,4 @@ Object.entries(tagMap).forEach(([tag, posts]) => {
   fs.writeFileSync(path.join(tagSubDir, "index.html"), htmlContent);
 });
 
-console.log(
-  "Tag pages generated successfully for:",
-  Object.keys(tagMap).join(", ")
-);
+console.log("\nSummary: Automation complete. Tag pages generated for:", Object.keys(tagMap).sort().join(", "));
