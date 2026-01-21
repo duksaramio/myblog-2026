@@ -43,7 +43,7 @@ function extractMetadata(content, filename, type) {
     tags: tagMatches
       ? [...new Set(tagMatches.map((m) => m.split("/")[2].replace('"', "")))]
       : [],
-    url: `/${type}/${filename}`,
+    url: `/${type}/${filename.replace(/\.html$/, "")}`,
   };
 }
 
@@ -138,9 +138,9 @@ Object.entries(tagMap).forEach(([tag, items]) => {
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/posts.html">Posts</a></li>
-                    <li><a href="/movies.html">Movies</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/movies">Movies</a></li>
                 </ul>
             </nav>
         </header>
@@ -152,7 +152,7 @@ Object.entries(tagMap).forEach(([tag, items]) => {
             </div>
             
             <div style="margin-top: 4rem;">
-                <a href="/posts.html" style="font-size: 0.9rem;">← Back to All Posts</a>
+                <a href="/posts" style="font-size: 0.9rem;">← Back to All Posts</a>
             </div>
         </main>
 
