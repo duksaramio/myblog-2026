@@ -259,6 +259,10 @@ a {
     margin-top: 4rem;
 }
 
+#recently-read-books {
+    margin-top: 4rem;
+}
+
 .reading-list {
     display: flex;
     flex-direction: column;
