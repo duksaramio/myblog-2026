@@ -171,9 +171,7 @@ a {
   }
 }
 
-#currently-reading {
-    margin-top: 4rem;
-}
+
 
 .reading-content {
     display: flex;
@@ -251,15 +249,7 @@ a {
     border-color: rgba(0,0,0,0.1);
 }
 
-#what-i-read-today {
-    margin-top: 4rem;
-}
-
-#what-i-am-learning-today {
-    margin-top: 4rem;
-}
-
-#recently-read-books {
+section + section {
     margin-top: 4rem;
 }
 
