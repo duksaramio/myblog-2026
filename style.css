@@ -288,13 +288,23 @@ section + section {
     margin-left: 1rem;
 }
 
+.reading-rating {
+    font-size: 12px;
+    color: #ffb400;
+    margin-left: 1rem;
+    min-width: 75px;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
 @media (max-width: 600px) {
     .reading-item {
         flex-direction: column;
         gap: 0.25rem;
     }
-    .reading-url {
+    .reading-url, .reading-rating {
         margin-left: 0;
+        text-align: left;
     }
 }
 
