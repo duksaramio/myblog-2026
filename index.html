@@ -2,116 +2,207 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Duke Lee | Home</title>
-  <meta name="description"
-    content="Personal blog of Duke Lee, a Strategic IT Leader specializing in digital transformation, cybersecurity, and GxP compliance.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saram Consulting | GxP & AI IT Consulting for Life Sciences</title>
+    <meta name="description"
+        content="Transform your life science business with AI while maintaining GxP compliance and daily IT support. Saram Consulting understands the intersection of biotech and artificial intelligence.">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dukelee.xyz/">
-  <meta property="og:title" content="Duke Lee | Personal Blog">
-  <meta property="og:description"
-    content="Personal blog of Duke Lee. Strategic IT Leader and Founder of Saram Consulting.">
-  <meta property="og:image" content="https://dukelee.xyz/img/og-image.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saram.io/">
+    <meta property="og:title" content="Saram Consulting | GxP & AI IT Consulting">
+    <meta property="og:description"
+        content="Helping life science companies transform with AI while maintaining GxP compliance.">
+    <meta property="og:image" content="/saram_consulting_og_image.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://dukelee.xyz/">
-  <meta property="twitter:title" content="Duke Lee | Personal Blog">
-  <meta property="twitter:description"
-    content="Personal blog of Duke Lee. Strategic IT Leader and Founder of Saram Consulting.">
-  <meta property="twitter:image" content="https://dukelee.xyz/img/og-image.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saram.io/">
+    <meta property="twitter:title" content="Saram Consulting | GxP & AI IT Consulting">
+    <meta property="twitter:description"
+        content="Helping life science companies transform with AI while maintaining GxP compliance.">
+    <meta property="twitter:image" content="/saram_consulting_og_image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f4ef;
+            --text-color: #000000;
+            --font-serif: "Playfair Display", serif;
+            --font-mono: "Roboto Mono", monospace;
+            --underline-color: rgba(0, 0, 0, 0.15);
+            --underline-hover: rgba(0, 0, 0, 0.4);
+        }
 
-  <link rel="stylesheet" href="style.css" />
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 30px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .logo span {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            text-decoration-color: var(--underline-hover);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero-text p {
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .service-item::before {
+            content: "— ";
+            margin-right: 12px;
+            opacity: 0.6;
+        }
+
+        .service-link {
+            text-underline-offset: 4px;
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        footer {
+            margin-top: 154px;
+            font-family: var(--font-serif);
+            font-size: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 24px;
+                margin-bottom: 60px;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            footer {
+                margin-top: 80px;
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">Duke Lee</a>
-    </header>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Saram Consulting</a>
+        </header>
 
-    <main>
+        <main>
+            <div class="hero-text">
+                <p>We are an IT consulting company that understands GxP regulations and AI. </p>
+                <p>If you are a life science company and believe that AI is the future, we can help you transform your
+                    business with AI while maintaining GxP compliance and daily IT support. </p>
+            </div>
 
-      <section id="what-i-read-today">
-        <h2>Currently Visiting</h2>
-        <div class="reading-list">
-          <a href="https://z.ai/blog/glm-5.1" class="reading-item">
-            <span class="reading-date">Apr 08, 2026</span>
-            <span class="reading-title">GLM-5.1</span>
-            <span class="reading-url">z.ai</span>
-          </a>
-          <a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04" class="reading-item">
-            <span class="reading-date">Jan 07, 2026</span>
-            <span class="reading-title">Welcome to Gas Town</span>
-            <span class="reading-url">steve-yegge.medium.com</span>
-          </a>
-        </div>
-      </section>
+            <div class="contact-us">
+                <p class="section-title">Contact Us</p>
+                <p>Email: <a href="mailto:duke@saram.io" class="service-link"
+                        style="text-decoration: underline;">duke@saram.io</a></p>
+                <p>Phone: <a href="tel:+19254527203" class="service-link"
+                        style="text-underline-offset: 4px; text-decoration: underline;">925-452-7203</a></p>
+            </div>
+        </main>
 
-      <section id="what-i-am-learning-today">
-        <h2>Currently Learning</h2>
-        <div class="reading-list">
-          <a href="https://pydantic.dev/docs/ai" class="reading-item">
-            <span class="reading-date">Apr 08, 2026</span>
-            <span class="reading-title">Pydantic AI</span>
-            <span class="reading-url">pydantic.dev</span>
-          </a>
-          <a href="https://dspy.ai/" class="reading-item">
-            <span class="reading-date">Apr 08, 2026</span>
-            <span class="reading-title">DSPy</span>
-            <span class="reading-url">dspy.ai</span>
-          </a>
-        </div>
-      </section>
-
-      <section id="currently-reading">
-        <h2>Currently Reading</h2>
-        <div class="reading-content">
-          <img src="img/atomic-bomb.jpg" alt="The Making of the Atomic Bomb by Richard Rhodes" class="book-cover">
-          <div class="book-info">
-            <h3 class="book-title">The Making of the Atomic Bomb</h3>
-            <p class="book-author">by Richard Rhodes</p>
-            <a href="https://www.amazon.com/Making-of-Atomic-Bomb-audiobook/dp/B01B1ZCG8G/ref=sr_1_1?crid=26IVAHT845F7G&dib=eyJ2IjoiMSJ9.k5J14yVVeRppmTwdfaiKxact6-jck08FLGKNzj37nuhrqdcSe_JX9PbVHxUCK_nl8cUZum7lMtUIqLGF68BePxNezjzDtSzqVrC3vMxzTSVbfBAUih7Cg6iHccYS_uENZ7Ykx7Tmjg3OQPxNII5HE3vrqHLiMmRmapF2MCbobKAiLuYmNv9z6b9Bd_as11UjjuXnwehPsf_8U3J_CH6PlTacr6z2NSIdOZU2zunJPOA.EijJkYlSfUq6DFx9Pfa_xuqKbuJ2WPc0KttkFH61pJc&dib_tag=se&keywords=making+of+the+atomic+bomb+rhodes&qid=1775654417&sprefix=making+of+the+atom%2Caps%2C181&sr=8-1"
-              class="amazon-link">View
-              on Amazon</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="recently-read-books">
-        <h2>Recently Read Books</h2>
-        <div class="reading-list">
-          <a href="https://www.amazon.com/Mind-Wide-Open-Neuroscience-Everyday/dp/0743241665" class="reading-item">
-            <span class="reading-date">Apr 2026</span>
-            <span class="reading-title">Mind Wide Open: Your Brain and the Neuroscience of Everyday Life</span>
-            <span class="reading-url">Steven Johnson</span>
-            <span class="reading-rating">★★★★☆</span>
-          </a>
-          <a href="https://www.amazon.com/dp/0063385945/?bestFormat=true&k=way%20of%20excellence%20book&crid=2UG32HAJ0OAV1&sprefix=way%20of%20exc"
-            class="reading-item">
-            <span class="reading-date">Apr 2026</span>
-            <span class="reading-title">The Way of Excellence</span>
-            <span class="reading-url">Brad Stulberg</span>
-            <span class="reading-rating">★★★★☆</span>
-          </a>
-          <a href="https://www.amazon.com/dp/B0FQT7ZLRW/?bestFormat=true&k=a%20world%20appears%20michael%20pollan&crid=EHM2DLDM12YI&sprefix=world%20appears"
-            class="reading-item">
-            <span class="reading-date">Mar 2026</span>
-            <span class="reading-title">A World Appears</span>
-            <span class="reading-url">Michael Pollan</span>
-            <span class="reading-rating">★★★☆☆</span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>100% vibe coded using Antigravity</p>
-    </footer>
-  </div>
+        <p style="margin-top: 80px; font-size: 10px; opacity: 0.4;">100% vibe coded using Antigravity</p>
+    </div>
 </body>
 
 </html>
