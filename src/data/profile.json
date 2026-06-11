@@ -1,0 +1,46 @@
+{
+  "site": {
+    "title": "Duke Lee",
+    "description": "Transform your life science business with AI while maintaining GxP compliance and daily IT support. Saram Consulting understands the intersection of biotech and artificial intelligence."
+  },
+  "seo": {
+    "og": {
+      "type": "website",
+      "url": "https://saram.io/",
+      "title": "Saram Consulting | GxP & AI IT Consulting",
+      "description": "Helping life science companies transform with AI while maintaining GxP compliance.",
+      "image": "/saram_consulting_og_image.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://saram.io/",
+      "title": "Saram Consulting | GxP & AI IT Consulting",
+      "description": "Helping life science companies transform with AI while maintaining GxP compliance.",
+      "image": "/saram_consulting_og_image.png"
+    }
+  },
+  "header": {
+    "logo": "Duke Lee"
+  },
+  "hero": {
+    "paragraphs": [
+      "I like books, movies and tinkering with computers.",
+      "My AI agents are working 24/7 buidling <a href=\"https://saram.io\">tools</a>."
+    ]
+  },
+  "contact": {
+    "label": "Email",
+    "value": "duke.lee@saram.io",
+    "url": "mailto:duke.lee@saram.io"
+  },
+  "github": {
+    "editUrl": "https://github.com/duksaramio/myblog-2026/edit/main/src/data/profile.json"
+  },
+  "banner": {
+    "show": true,
+    "tag": "OpenBio News",
+    "text": "Our partner platform for decentralized biotechnology intelligence.",
+    "linkText": "Visit OpenBio News",
+    "linkUrl": "https://openbionews.com"
+  }
+}

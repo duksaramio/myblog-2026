@@ -1,0 +1,132 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import profile from '../data/profile.json';
+
+interface Props {
+	title: string;
+	description: string;
+	pubDate: Date;
+}
+
+const { title, description, pubDate } = Astro.props;
+
+const blogSeo = {
+	og: {
+		...profile.seo.og,
+		title: `${title} | ${profile.header.logo}`,
+		description: description,
+	},
+	twitter: {
+		...profile.seo.twitter,
+		title: `${title} | ${profile.header.logo}`,
+		description: description,
+	}
+};
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+---
+
+<BaseLayout title={`${title} | ${profile.header.logo}`} description={description} seo={blogSeo}>
+	<Header logo={profile.header.logo} />
+
+	<main>
+		<article class="blog-post">
+			<header class="post-header">
+				<h1 class="post-title">{title}</h1>
+				<time class="post-date" datetime={pubDate.toISOString()}>{formattedDate}</time>
+			</header>
+
+			<hr class="post-divider" />
+
+			<div class="post-content">
+				<slot />
+			</div>
+		</article>
+
+		<div class="back-home">
+			<a href="/" class="service-link">← Back to Home</a>
+		</div>
+	</main>
+</BaseLayout>
+
+<style>
+	.blog-post {
+		max-width: 650px;
+		margin-bottom: 40px;
+	}
+
+	.post-header {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		margin-bottom: 16px;
+	}
+
+	.post-title {
+		font-family: var(--font-serif);
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 1.3;
+	}
+
+	.post-date {
+		font-size: 13px;
+		opacity: 0.6;
+	}
+
+	.post-divider {
+		border: 0;
+		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		margin: 16px 0 24px 0;
+	}
+
+	.post-content {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	.post-content :global(p) {
+		margin-bottom: 16px;
+	}
+
+	.post-content :global(h2),
+	.post-content :global(h3) {
+		font-family: var(--font-serif);
+		margin-top: 24px;
+		margin-bottom: 12px;
+		font-weight: 500;
+	}
+
+	.post-content :global(h2) {
+		font-size: 20px;
+	}
+
+	.post-content :global(h3) {
+		font-size: 17px;
+	}
+
+	.post-content :global(ul),
+	.post-content :global(ol) {
+		margin-left: 20px;
+		margin-bottom: 16px;
+	}
+
+	.post-content :global(li) {
+		margin-bottom: 6px;
+	}
+
+	.post-content :global(strong) {
+		font-weight: 600;
+	}
+
+	.back-home {
+		margin-top: 24px;
+		font-size: 13px;
+	}
+</style>

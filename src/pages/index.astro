@@ -1,0 +1,134 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PromoBanner from '../components/PromoBanner.astro';
+import profile from '../data/profile.json';
+
+const posts = (await getCollection('blog', ({ data }) => {
+	return import.meta.env.PROD ? !data.draft : true;
+})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title={profile.site.title} description={profile.site.description} seo={profile.seo}>
+	{profile.banner && profile.banner.show && (
+		<PromoBanner
+			tag={profile.banner.tag}
+			text={profile.banner.text}
+			linkText={profile.banner.linkText}
+			linkUrl={profile.banner.linkUrl}
+		/>
+	)}
+
+	<Header logo={profile.header.logo} />
+
+	<main>
+		<div class="hero-text">
+			{profile.hero.paragraphs.map((paragraph) => (
+				<p set:html={paragraph} />
+			))}
+		</div>
+
+		{posts.length > 0 && (
+			<div class="writing-section">
+				<h2 class="section-title">Writing</h2>
+				<ul class="post-list">
+					{posts.map((post) => {
+						const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric',
+						});
+						return (
+							<li class="post-item">
+								<time class="post-date" datetime={post.data.pubDate.toISOString()}>
+									{formattedDate}
+								</time>
+								<a href={`/blog/${post.id}`} class="post-link">
+									{post.data.title}
+								</a>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		)}
+
+		<div class="contact-us">
+			<p>
+				{profile.contact.label}:{' '}
+				<a
+					href={profile.contact.url}
+					class="service-link"
+					style="text-decoration: underline;"
+				>
+					{profile.contact.value}
+				</a>
+			</p>
+		</div>
+
+		<p>
+			<a href={profile.github.editUrl}>edit</a>
+		</p>
+		<div></div>
+	</main>
+</BaseLayout>
+
+<style>
+	.writing-section {
+		margin-top: 32px;
+		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		padding-top: 24px;
+	}
+
+	.section-title {
+		margin-bottom: 16px;
+		font-family: var(--font-serif);
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.post-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.post-item {
+		display: flex;
+		align-items: baseline;
+		gap: 16px;
+	}
+
+	.post-date {
+		font-size: 12px;
+		opacity: 0.5;
+		flex-shrink: 0;
+		width: 90px;
+	}
+
+	.post-link {
+		color: inherit;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 4px;
+		text-decoration-color: var(--underline-color);
+		transition: text-decoration-color 0.2s ease;
+	}
+
+	.post-link:hover {
+		text-decoration-color: var(--underline-hover);
+	}
+
+	@media (max-width: 768px) {
+		.post-item {
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		.post-date {
+			width: auto;
+		}
+	}
+</style>

@@ -1,0 +1,17 @@
+---
+interface Props {
+	tag: string;
+	text: string;
+	linkText: string;
+	linkUrl: string;
+}
+
+const { tag, text, linkText, linkUrl } = Astro.props;
+---
+
+<div class="promo-banner" id="promoBanner">
+	<span class="promo-tag">{tag}</span>
+	<span class="promo-text">
+		{text} <a href={linkUrl} target="_blank" rel="noopener noreferrer" class="promo-link">{linkText}</a>
+	</span>
+</div>
