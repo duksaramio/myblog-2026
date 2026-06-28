@@ -3,6 +3,7 @@ title: "You're yelling at me"
 pubDate: 2026-06-26
 description: "A tactical guide to winning any argument by being the first to accuse the other person of yelling — no matter how indefensible your position."
 draft: false
+tags: ["humor", "life"]
 ---
 
 When you get into an argument with someone, you need to use this power trump card, "you're yelling at me", before the other person uses it. When someone flashes that card, you lose right away. 

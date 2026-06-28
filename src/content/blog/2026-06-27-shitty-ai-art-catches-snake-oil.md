@@ -3,6 +3,7 @@ title: "Shitty AI art is how you catch AI snake oil salesmen"
 pubDate: 2026-06-27
 description: "If your LinkedIn AI image looks like it was one-shotted from a default prompt, you're telling on yourself."
 draft: false
+tags: ["ai", "opinion", "linkedin"]
 ---
 
 Shitty AI art is how you catch AI snake oil salesmen. I am sick and tired of AI-generated slop images of CPU chips with "AI" on them with glowing circuits around them. And I am also sick and tired of AI-generated humans doing things that I couldn't care less about.

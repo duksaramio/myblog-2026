@@ -8,6 +8,8 @@ import profile from '../data/profile.json';
 const posts = (await getCollection('blog', ({ data }) => {
 	return import.meta.env.PROD ? !data.draft : true;
 })).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
 ---
 
 <BaseLayout title={profile.site.title} description={profile.site.description} seo={profile.seo}>
@@ -32,6 +34,15 @@ const posts = (await getCollection('blog', ({ data }) => {
 		{posts.length > 0 && (
 			<div class="writing-section">
 				<h2 class="section-title">Writing</h2>
+
+				{allTags.length > 0 && (
+					<div class="all-tags">
+						{allTags.map((tag) => (
+							<a href={`/tags/${tag}`} class="tag-badge">#{tag}</a>
+						))}
+					</div>
+				)}
+
 				<ul class="post-list">
 					{posts.map((post) => {
 						const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
@@ -44,9 +55,18 @@ const posts = (await getCollection('blog', ({ data }) => {
 								<time class="post-date" datetime={post.data.pubDate.toISOString()}>
 									{formattedDate}
 								</time>
-								<a href={`/blog/${post.id}`} class="post-link">
-									{post.data.title}
-								</a>
+								<div class="post-title-and-tags">
+									<a href={`/blog/${post.id}`} class="post-link">
+										{post.data.title}
+									</a>
+									{post.data.tags && post.data.tags.length > 0 && (
+										<span class="post-tags">
+											{post.data.tags.map((tag) => (
+												<a href={`/tags/${tag}`} class="tag-link">#{tag}</a>
+											))}
+										</span>
+									)}
+								</div>
 							</li>
 						);
 					})}
@@ -74,6 +94,53 @@ const posts = (await getCollection('blog', ({ data }) => {
 		margin-top: 32px;
 		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
 		padding-top: 24px;
+	}
+
+	.all-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 24px;
+		font-size: 12px;
+	}
+
+	.tag-badge {
+		color: var(--text-muted);
+		text-decoration: none;
+		border: 1px solid var(--border-color);
+		padding: 2px 8px;
+		border-radius: 4px;
+		background: var(--card-bg);
+		transition: all 0.2s ease;
+	}
+
+	.tag-badge:hover {
+		color: var(--text-color);
+		border-color: var(--underline-hover);
+		background: rgba(0, 0, 0, 0.06);
+	}
+
+	.post-title-and-tags {
+		display: flex;
+		align-items: baseline;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+
+	.post-tags {
+		display: flex;
+		gap: 8px;
+		font-size: 11px;
+		opacity: 0.5;
+	}
+
+	.tag-link {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.tag-link:hover {
+		text-decoration: underline;
 	}
 
 	.section-title {
