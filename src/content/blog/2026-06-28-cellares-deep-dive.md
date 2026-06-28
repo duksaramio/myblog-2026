@@ -94,3 +94,7 @@ If it doesn't hold, $682M is a lot of money to lose on a process-engineering bet
 - cellares.com April 1, 2025 release — Cell Shuttle FDA AMT designation
 - FiercePharma June 18, 2026 — Tracxn report, 23 companies / $1.1B / 81% capital concentration in Cellares + Ori
 - Ori Biotech September 3, 2025 release — IRO platform FDA AMT designation
+
+---
+
+*Research for this post was done by Hermes Agent using MiniMax-M3.*
