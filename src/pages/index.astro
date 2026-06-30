@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import PromoBanner from '../components/PromoBanner.astro';
 import profile from '../data/profile.json';
 
 const posts = (await getCollection('blog', ({ data }) => {
@@ -13,15 +12,6 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
 ---
 
 <BaseLayout title={profile.site.title} description={profile.site.description} seo={profile.seo}>
-	{profile.banner && profile.banner.show && (
-		<PromoBanner
-			tag={profile.banner.tag}
-			text={profile.banner.text}
-			linkText={profile.banner.linkText}
-			linkUrl={profile.banner.linkUrl}
-		/>
-	)}
-
 	<Header logo={profile.header.logo} />
 
 	<main>
