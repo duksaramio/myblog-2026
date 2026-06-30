@@ -8,6 +8,8 @@ tags: ["ai-agents", "workflow", "hacker-news", "information-curation", "promptin
 
 I don't want to fetch information from multiple sources. The information that I want and need has to come to me. And that's what AI agents are helping me do right now.
 
+![AI agent curating information](/clip_20260630_134222_1.png)
+
 I want to know what's going on in the tech space by going to Hacker News, but I don't want to get curious about huge number of toxic comments. So I want that information to come to me. One of the tasks my agent does now is visit Hacker News and grab summaries of anything with 200 points or higher. It pushes the summary to my blog, so now I have one place where I go read summaries of hot topics. No comment sections. No rabbit holes. Just the signal.
 
 Now I just think about what to ask, how to ask.
