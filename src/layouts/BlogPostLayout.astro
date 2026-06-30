@@ -62,6 +62,11 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		<div class="back-home">
 			<a href="/" class="service-link">← Back to Home</a>
 		</div>
+
+		<!-- Lightbox Overlay -->
+		<div id="image-lightbox" class="lightbox">
+			<img id="lightbox-img" src="" alt="Lightbox image" />
+		</div>
 	</main>
 </BaseLayout>
 
@@ -138,6 +143,43 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		margin: 24px auto;
 		border-radius: 4px;
 		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		cursor: zoom-in;
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.post-content :global(img:hover) {
+		transform: scale(1.008);
+	}
+
+	/* Lightbox styling */
+	.lightbox {
+		display: none;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(245, 244, 239, 0.98); /* match background-color */
+		justify-content: center;
+		align-items: center;
+		cursor: zoom-out;
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	.lightbox.active {
+		display: flex;
+		opacity: 1;
+	}
+
+	.lightbox img {
+		max-width: 90vw;
+		max-height: 90vh;
+		object-fit: contain;
+		border-radius: 4px;
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
 	}
 
 	.post-content :global(h2),
@@ -175,3 +217,29 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		font-size: 13px;
 	}
 </style>
+
+<script>
+	const postImages = document.querySelectorAll('.post-content img');
+	const lightbox = document.getElementById('image-lightbox');
+	const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
+
+	if (lightbox && lightboxImg) {
+		postImages.forEach((img) => {
+			img.addEventListener('click', () => {
+				const src = img.getAttribute('src');
+				const alt = img.getAttribute('alt') || 'Blog post image';
+				if (src) {
+					lightboxImg.src = src;
+					lightboxImg.alt = alt;
+					lightbox.classList.add('active');
+					document.body.style.overflow = 'hidden';
+				}
+			});
+		});
+
+		lightbox.addEventListener('click', () => {
+			lightbox.classList.remove('active');
+			document.body.style.overflow = '';
+		});
+	}
+</script>
