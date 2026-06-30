@@ -131,6 +131,15 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		margin-bottom: 16px;
 	}
 
+	.post-content :global(img) {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 24px auto;
+		border-radius: 4px;
+		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+	}
+
 	.post-content :global(h2),
 	.post-content :global(h3) {
 		font-family: var(--font-serif);
