@@ -8,8 +8,6 @@ tags: ["hacker-news", "roundup", "ai", "llm", "anthropic", "open-source", "infra
 
 Eleven stories crossed 200 points on Hacker News today. Here's what the internet's nerds are actually excited about, with the marketing fluff stripped out.
 
-![Hacker News front page — June 30, 2026](/clip_20260630_140307_2.png)
-
 ---
 
 ## 1. Qwen 3.6 27B — the local dev sweet spot (1,117 pts)
