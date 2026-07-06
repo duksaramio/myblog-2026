@@ -7,10 +7,9 @@ interface Props {
 	title: string;
 	description: string;
 	pubDate: Date;
-	tags?: string[];
 }
 
-const { title, description, pubDate, tags = [] } = Astro.props;
+const { title, description, pubDate } = Astro.props;
 
 const blogSeo = {
 	og: {
@@ -41,14 +40,6 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 				<h1 class="post-title">{title}</h1>
 				<div class="post-meta">
 					<time class="post-date" datetime={pubDate.toISOString()}>{formattedDate}</time>
-					{tags.length > 0 && (
-						<span class="meta-separator">•</span>
-						<div class="post-tags">
-							{tags.map((tag) => (
-								<a href={`/tags/${tag}`} class="tag-link">#{tag}</a>
-							))}
-						</div>
-					)}
 				</div>
 			</header>
 
@@ -102,23 +93,6 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		opacity: 0.6;
 	}
 
-	.meta-separator {
-		opacity: 0.4;
-	}
-
-	.post-tags {
-		display: flex;
-		gap: 8px;
-	}
-
-	.tag-link {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	.tag-link:hover {
-		text-decoration: underline;
-	}
 
 	.post-divider {
 		border: 0;

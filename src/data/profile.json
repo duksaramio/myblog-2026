@@ -30,8 +30,8 @@
   },
   "contact": {
     "label": "Email",
-    "value": "duke.lee@saram.io",
-    "url": "mailto:duke.lee@saram.io"
+    "value": "duk@saram.io",
+    "url": "mailto:duk@saram.io"
   },
   "github": {
     "editUrl": "https://github.com/duksaramio/myblog-2026/edit/main/src/data/profile.json"
