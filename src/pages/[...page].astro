@@ -1,31 +1,41 @@
 ---
+import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import profile from '../data/profile.json';
 
-const posts = (await getCollection('blog', ({ data }) => {
-	return import.meta.env.PROD ? !data.draft : true;
-})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+export const getStaticPaths = (async ({ paginate }) => {
+	const posts = (await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+	const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+
+	return paginate(posts, { pageSize: 5, props: { allTags } });
+}) satisfies GetStaticPaths;
+
+const { page, allTags } = Astro.props;
+const posts = page.data;
 ---
 
 <BaseLayout title={profile.site.title} description={profile.site.description} seo={profile.seo}>
 	<Header logo={profile.header.logo} />
 
 	<main>
-		<div class="hero-text">
-			{profile.hero.paragraphs.map((paragraph) => (
-				<p set:html={paragraph} />
-			))}
-		</div>
+		{page.currentPage === 1 && (
+			<div class="hero-text">
+				{profile.hero.paragraphs.map((paragraph) => (
+					<p set:html={paragraph} />
+				))}
+			</div>
+		)}
 
 		{posts.length > 0 && (
 			<div class="writing-section">
 				<h2 class="section-title">Writing</h2>
 
-				{allTags.length > 0 && (
+				{allTags.length > 0 && page.currentPage === 1 && (
 					<div class="all-tags">
 						{allTags.map((tag) => (
 							<a href={`/tags/${tag}`} class="tag-badge">#{tag}</a>
@@ -61,6 +71,40 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
 						);
 					})}
 				</ul>
+
+				{page.lastPage > 1 && (
+					<nav class="pagination" aria-label="Pagination">
+						{page.url.prev ? (
+							<a href={page.url.prev} class="pagination-link prev">
+								← Newer
+							</a>
+						) : (
+							<span class="pagination-link prev disabled">← Newer</span>
+						)}
+
+						<div class="pagination-numbers">
+							{Array.from({ length: page.lastPage }, (_, i) => i + 1).map((pageNum) => {
+								const href = pageNum === 1 ? '/' : `/${pageNum}`;
+								const isCurrent = pageNum === page.currentPage;
+								return isCurrent ? (
+									<span class="pagination-number current">{pageNum}</span>
+								) : (
+									<a href={href} class="pagination-number">
+										{pageNum}
+									</a>
+								);
+							})}
+						</div>
+
+						{page.url.next ? (
+							<a href={page.url.next} class="pagination-link next">
+								Older →
+							</a>
+						) : (
+							<span class="pagination-link next disabled">Older →</span>
+						)}
+					</nav>
+				)}
 			</div>
 		)}
 
@@ -173,6 +217,70 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
 		text-decoration-color: var(--underline-hover);
 	}
 
+	/* Pagination Styles */
+	.pagination {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 32px;
+		padding-top: 24px;
+		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		font-family: var(--font-mono);
+		font-size: 13px;
+	}
+
+	.pagination-link {
+		color: var(--text-color);
+		text-decoration: none;
+		border: 1px solid var(--border-color);
+		padding: 6px 12px;
+		border-radius: 4px;
+		background: var(--card-bg);
+		transition: all 0.2s ease;
+	}
+
+	.pagination-link:not(.disabled):hover {
+		border-color: var(--underline-hover);
+		background: rgba(0, 0, 0, 0.06);
+	}
+
+	.pagination-link.disabled {
+		opacity: 0.4;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	.pagination-numbers {
+		display: flex;
+		gap: 8px;
+	}
+
+	.pagination-number {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+		text-decoration: none;
+		color: var(--text-muted);
+		border: 1px solid transparent;
+		transition: all 0.2s ease;
+	}
+
+	.pagination-number:hover {
+		color: var(--text-color);
+		border-color: var(--border-color);
+		background: var(--card-bg);
+	}
+
+	.pagination-number.current {
+		color: var(--text-color);
+		border-color: var(--underline-hover);
+		background: rgba(0, 0, 0, 0.06);
+		font-weight: bold;
+	}
+
 	@media (max-width: 768px) {
 		.post-item {
 			flex-direction: column;
@@ -181,6 +289,12 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
 
 		.post-date {
 			width: auto;
+		}
+
+		.pagination {
+			flex-direction: column;
+			gap: 16px;
+			align-items: center;
 		}
 	}
 </style>
