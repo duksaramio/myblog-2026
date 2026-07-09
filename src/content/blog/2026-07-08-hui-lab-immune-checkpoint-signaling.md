@@ -6,6 +6,10 @@ draft: false
 tags: ["immunology", "cancer", "immune-checkpoints", "research-labs", "science"]
 ---
 
+<div class="note-box">
+  <strong>Note:</strong> I asked an LLM to figure out what my son does in his lab. Since I'm not too familiar with biology, I asked it to explain everything in layman's terms.
+</div>
+
 I've been reading through research lab websites lately, trying to understand what these labs actually do. Not the abstract jargon. The real stuff. This is the first one: the Hui Lab at UCSD.
 
 ## The problem in one sentence

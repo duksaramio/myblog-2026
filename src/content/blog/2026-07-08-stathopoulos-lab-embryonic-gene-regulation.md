@@ -6,6 +6,10 @@ draft: false
 tags: ["developmental-biology", "genetics", "embryos", "research-labs", "science", "drosophila"]
 ---
 
+<div class="note-box">
+  <strong>Note:</strong> I asked an LLM to figure out what my son does in his lab. Since I'm not too familiar with biology, I asked it to explain everything in layman's terms.
+</div>
+
 This is the second lab I've been digging into. The Stathopoulos Lab at Caltech, run by Angela Stathopoulos. They study how embryos build themselves — specifically, how genes know when and where to turn on during development.
 
 ## The core question
