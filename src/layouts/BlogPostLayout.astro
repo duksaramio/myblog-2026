@@ -190,6 +190,95 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		margin-top: 24px;
 		font-size: 13px;
 	}
+
+	/* Code Snippet Styles */
+	.post-content :global(.code-block-wrapper) {
+		position: relative;
+		margin: 28px 0;
+		border-radius: 8px;
+		background-color: #1f2428;
+		border: 1px solid #30363d;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+	}
+
+	.post-content :global(.code-block-header) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 16px;
+		background-color: #1b1f23;
+		border-bottom: 1px solid #30363d;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: #8b949e;
+	}
+
+	.post-content :global(.code-block-lang) {
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		font-size: 10px;
+	}
+
+	.post-content :global(.copy-button) {
+		background: transparent;
+		border: 1px solid rgba(240, 246, 252, 0.1);
+		border-radius: 4px;
+		color: #c9d1d9;
+		padding: 4px 10px;
+		font-size: 11px;
+		font-family: var(--font-mono);
+		cursor: pointer;
+		transition: all 0.15s ease-in-out;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	.post-content :global(.copy-button:hover) {
+		background-color: rgba(240, 246, 252, 0.1);
+		border-color: rgba(240, 246, 252, 0.25);
+		color: #ffffff;
+	}
+
+	.post-content :global(.copy-button.copied) {
+		color: #3fb950;
+		border-color: #3fb950;
+		background-color: rgba(63, 185, 80, 0.1);
+	}
+
+	.post-content :global(pre) {
+		margin: 0 !important;
+		padding: 18px 20px !important;
+		background-color: #24292e !important;
+		font-family: var(--font-mono);
+		font-size: 13px !important;
+		line-height: 1.6;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.post-content :global(pre code) {
+		background: none !important;
+		padding: 0 !important;
+		border: none !important;
+		font-size: inherit !important;
+		color: inherit !important;
+		border-radius: 0 !important;
+	}
+
+	/* Inline Code Snippets */
+	.post-content :global(:not(pre) > code) {
+		background-color: rgba(0, 0, 0, 0.05);
+		color: #24292e;
+		padding: 3px 6px;
+		border-radius: 4px;
+		font-size: 13px;
+		font-family: var(--font-mono);
+		border: 1px solid rgba(0, 0, 0, 0.06);
+		word-break: break-word;
+	}
 </style>
 
 <script>
@@ -216,4 +305,50 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 			document.body.style.overflow = '';
 		});
 	}
+
+	// Code snippet enhancements: wrappers, headers, copy buttons
+	const codeBlocks = document.querySelectorAll('.post-content pre');
+	codeBlocks.forEach((pre) => {
+		const lang = pre.getAttribute('data-language') || 'code';
+		
+		const wrapper = document.createElement('div');
+		wrapper.className = 'code-block-wrapper';
+		
+		const header = document.createElement('div');
+		header.className = 'code-block-header';
+		
+		const langLabel = document.createElement('span');
+		langLabel.className = 'code-block-lang';
+		langLabel.textContent = lang;
+		
+		const copyBtn = document.createElement('button');
+		copyBtn.className = 'copy-button';
+		copyBtn.type = 'button';
+		copyBtn.textContent = 'Copy';
+		
+		header.appendChild(langLabel);
+		header.appendChild(copyBtn);
+		
+		if (pre.parentNode) {
+			pre.parentNode.insertBefore(wrapper, pre);
+			wrapper.appendChild(pre);
+			wrapper.insertBefore(header, pre);
+		}
+		
+		copyBtn.addEventListener('click', async () => {
+			const codeText = pre.querySelector('code')?.textContent || pre.textContent || '';
+			try {
+				await navigator.clipboard.writeText(codeText);
+				copyBtn.textContent = 'Copied!';
+				copyBtn.classList.add('copied');
+				setTimeout(() => {
+					copyBtn.textContent = 'Copy';
+					copyBtn.classList.remove('copied');
+				}, 2000);
+			} catch (err) {
+				console.error('Failed to copy text: ', err);
+				copyBtn.textContent = 'Error';
+			}
+		});
+	});
 </script>
