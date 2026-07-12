@@ -30,8 +30,8 @@
   },
   "contact": {
     "label": "Email",
-    "value": "duk@saram.io",
-    "url": "mailto:duk@saram.io"
+    "value": "info@saram.consulting",
+    "url": "mailto:info@saram.consulting"
   },
   "github": {
     "editUrl": "https://github.com/duksaramio/myblog-2026/edit/main/src/data/profile.json"
