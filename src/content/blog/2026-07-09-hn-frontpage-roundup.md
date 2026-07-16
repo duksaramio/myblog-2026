@@ -4,6 +4,7 @@ pubDate: 2026-07-09
 description: "GPT-5.6 goes GA, ChatGPT becomes a worker agent, EU greenlights chat surveillance, Meta launches Muse Spark 1.1 and recycles old RAM, and spider venom saves bees"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 Nine stories crossed 200 points today. OpenAI dominated with two launches, Meta answered with its own model drop, the EU voted to scan your messages, and a spider might save the bees. Here's what mattered.

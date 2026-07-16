@@ -4,6 +4,7 @@ pubDate: 2026-07-13
 description: "A 15-year Linux kernel bug earns a $92K bounty, LAPD drops its surveillance contractor, Apple's speech API crushes Whisper, and a voxel Tokyo lets you study Japanese on a train"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech", "linux", "security", "privacy"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 # Hacker News Front Page Roundup — July 13, 2026

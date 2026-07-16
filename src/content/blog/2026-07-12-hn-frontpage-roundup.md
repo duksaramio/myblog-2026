@@ -4,6 +4,7 @@ pubDate: 2026-07-12
 description: "Terry Tao vibes codes relativity applets, xAI's Grok CLI caught exfiltrating repos, Mesh LLM pools your GPUs, and Vint Cerf rides into the sunset"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 ## Terry Tao Uses AI Coding Agents to Revive Decades-Old Math Applets

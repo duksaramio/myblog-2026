@@ -4,6 +4,7 @@ pubDate: 2026-06-28
 description: "~$50B in combined valuations, $39B for Figure alone, and the actual deployed units are countable on two hands. A grounded look at what's real, what's theater, and why the skeptics have the better of the argument in 2026."
 draft: false
 tags: ["robotics", "humanoid", "industry-analysis", "china", "research"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 Spent the day digging into the humanoid robotics industry because I wanted to understand where the money was actually going versus where the press releases were pointing. The short version: this is the single most overcapitalized, underrevenue-generating corner of the entire robotics industry, and the skeptics have the better of the argument in 2026.

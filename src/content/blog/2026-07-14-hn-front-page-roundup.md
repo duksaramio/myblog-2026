@@ -4,6 +4,7 @@ pubDate: 2026-07-14
 description: "DIY latency rigs, app reverse-engineering, Claude's verbal tics, EU age verification overreach, AI cognitive debt, Australian solar policy, and Oracle's credit downgrade"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 ## Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK — 278 points

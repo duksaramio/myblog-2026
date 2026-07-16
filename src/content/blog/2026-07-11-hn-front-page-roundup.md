@@ -4,6 +4,7 @@ pubDate: 2026-07-11
 description: "Apple sues OpenAI over trade secrets, GPT-5.6 cracks a 50-year-old graph theory conjecture, NYC bans dark patterns, and 13 more stories from today's HN front page"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 # Hacker News Front Page Roundup — July 11, 2026

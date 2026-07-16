@@ -4,6 +4,7 @@ pubDate: 2026-07-11
 description: "AI has transformed the front end of drug discovery. The back end — proving drugs work in humans — hasn't changed at all. A reality check."
 draft: false
 tags: ["ai", "drug-discovery", "biotech", "alphafold", "pharma", "science"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 <div class="note-box">

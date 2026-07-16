@@ -4,6 +4,7 @@ pubDate: 2026-07-05
 description: "C&C Generals gets a native Apple port, Organic Maps hits 6M installs, UI button philosophy, GPT-5.5 Codex reasoning bugs, shadcn ditches Radix, and a free compiler textbook."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 # Hacker News Front Page Roundup — July 5, 2026

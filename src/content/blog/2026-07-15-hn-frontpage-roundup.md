@@ -4,6 +4,7 @@ pubDate: 2026-07-15
 description: "A deep dive into Jurassic Park's retro hardware, sleep regularity vs. duration, developer mental health, and OpenAI's $230 coding keyboard"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 Four stories crossed 200 points today. Retro computing nostalgia, a sleep science bombshell, a brutally honest depression essay, and a $230 keyboard for vibe coding.

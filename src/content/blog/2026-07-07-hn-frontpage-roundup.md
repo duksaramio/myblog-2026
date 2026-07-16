@@ -4,6 +4,7 @@ pubDate: 2026-07-07
 description: "EU Chat Control resurrection, Microsoft guts id Software's engine team, open-source cartography gamified, and why 98% is never enough"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 ## StreetComplete: Fixing OpenStreetMap, one tiny quest at a time

@@ -4,6 +4,7 @@ pubDate: 2026-07-08
 description: "A deep dive into what the Hui Lab at UCSD is actually studying — immune checkpoints, phase separation, and why mouse models might be lying to us."
 draft: false
 tags: ["immunology", "cancer", "immune-checkpoints", "research-labs", "science"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 <div class="note-box">

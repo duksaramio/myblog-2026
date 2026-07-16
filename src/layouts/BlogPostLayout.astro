@@ -1,15 +1,17 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
+import AudioPlayer from '../components/AudioPlayer.astro';
 import profile from '../data/profile.json';
 
 interface Props {
 	title: string;
 	description: string;
 	pubDate: Date;
+	audioUrl?: string;
 }
 
-const { title, description, pubDate } = Astro.props;
+const { title, description, pubDate, audioUrl } = Astro.props;
 
 const blogSeo = {
 	og: {
@@ -44,6 +46,8 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 			</header>
 
 			<hr class="post-divider" />
+
+			{audioUrl && <AudioPlayer audioUrl={audioUrl} title={title} />}
 
 			<div class="post-content">
 				<slot />

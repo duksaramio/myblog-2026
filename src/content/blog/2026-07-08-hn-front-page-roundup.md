@@ -4,6 +4,7 @@ pubDate: 2026-07-08
 description: "Today's top HN stories: obfuscated bash on a Uniqlo shirt, GitHub's AI agent leaking private repos, Chatto going open source, OpenAI's GPT-Live voice model, EVE Online's Carbon engine open-sourced, and more."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 # Hacker News Front Page Roundup — July 8, 2026

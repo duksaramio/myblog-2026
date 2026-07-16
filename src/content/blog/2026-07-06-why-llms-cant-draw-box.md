@@ -4,6 +4,7 @@ pubDate: 2026-07-06
 description: "Ask an LLM to draw an ASCII box and watch the vertical lines go crooked. The problem is deeper than you think."
 draft: false
 tags: ["llm", "tokenization", "ascii-art", "ai-limitations", "prompting"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 > **Update (July 6, 2026):** I asked multiple LLMs to draw a simple ASCII box and every single one nailed it. So the basic box problem may be mostly solved at the frontier. My guess now is that the alignment issue creeps in when the context gets complicated — longer conversations, multi-part layouts, or when the model is already juggling a bunch of other constraints. Simple box, easy. Complex ASCII art in a messy context window, that's where things probably still fall apart.

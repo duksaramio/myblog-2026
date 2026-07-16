@@ -4,6 +4,7 @@ pubDate: 2026-07-10
 description: "Today's top stories: LLMs are teaching your codebase bad habits, a Raspberry Pi-based phased array that sees through walls, Bronze Age civilizations collapsing, why good tools disappear, and the EU finally putting teeth into the DSA against Meta."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 ## Write code like a human will maintain it — 286 pts

@@ -4,6 +4,7 @@ pubDate: 2026-07-16
 description: "Music piracy nostalgia, Sony's digital ownership scam, OnePlus exits the West, Microsoft open-sources Comic Chat, a Rust-to-Zig compiler rewrite, Kimi K3 launches, and Victorian wildlife art gets digitized."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 # Hacker News Front Page Roundup — July 16, 2026

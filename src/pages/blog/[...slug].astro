@@ -16,6 +16,6 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogPostLayout title={post.data.title} description={post.data.description} pubDate={post.data.pubDate}>
+<BlogPostLayout title={post.data.title} description={post.data.description} pubDate={post.data.pubDate} audioUrl={post.data.audioUrl}>
 	<Content />
 </BlogPostLayout>

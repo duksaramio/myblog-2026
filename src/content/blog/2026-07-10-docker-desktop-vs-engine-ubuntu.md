@@ -4,6 +4,7 @@ pubDate: 2026-07-10
 description: "Docker Desktop runs containers inside a VM even on Linux. If you're on Ubuntu, you're paying a massive performance penalty for a GUI. Here's why, and how to fix it."
 draft: false
 tags: ["docker", "ubuntu", "linux", "devops", "containers", "performance"]
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 ---
 
 Found out something today that should have been obvious but wasn't: Docker Desktop on Ubuntu is genuinely slower than native Docker Engine. Not slightly slower. Architecturally slower. The kind of slower where you're running Linux containers inside a Linux VM inside your Linux host for no reason other than a graphical dashboard.
