@@ -11,7 +11,8 @@
     "watchDate": "2026-03-01",
     "genres": ["Sci-Fi", "Classic", "Adventure"],
     "backdropColor": "linear-gradient(135deg, #e65c00 0%, #F9D423 100%)",
-    "externalUrl": "https://www.amazon.com/dp/0441172717"
+    "externalUrl": "https://www.amazon.com/dp/0441172717",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0441172717-L.jpg"
   },
   {
     "id": "project-hail-mary",
@@ -25,7 +26,8 @@
     "watchDate": "2026-06-15",
     "genres": ["Sci-Fi", "Adventure", "Mystery"],
     "backdropColor": "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
-    "externalUrl": "https://www.amazon.com/dp/0593135202"
+    "externalUrl": "https://www.amazon.com/dp/0593135202",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0593135202-L.jpg"
   },
   {
     "id": "godel-escher-bach",
@@ -39,7 +41,8 @@
     "watchDate": "2026-07-14",
     "genres": ["Philosophy", "Science", "Math"],
     "backdropColor": "linear-gradient(135deg, #83a4d4 0%, #b6fbff 100%)",
-    "externalUrl": "https://www.amazon.com/dp/0465026567"
+    "externalUrl": "https://www.amazon.com/dp/0465026567",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0465026567-L.jpg"
   },
   {
     "id": "neuromancer",
@@ -53,7 +56,8 @@
     "watchDate": "",
     "genres": ["Sci-Fi", "Cyberpunk"],
     "backdropColor": "linear-gradient(135deg, #141e30 0%, #243b55 100%)",
-    "externalUrl": "https://www.amazon.com/dp/0441569595"
+    "externalUrl": "https://www.amazon.com/dp/0441569595",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0441569595-L.jpg"
   },
   {
     "id": "inception",
@@ -67,7 +71,8 @@
     "watchDate": "2026-05-12",
     "genres": ["Sci-Fi", "Action", "Thriller"],
     "backdropColor": "linear-gradient(135deg, #1f4068 0%, #162447 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt1375666/"
+    "externalUrl": "https://www.imdb.com/title/tt1375666/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/o0j46V21y84C068qp6H5z251zmA.jpg"
   },
   {
     "id": "severance",
@@ -81,7 +86,8 @@
     "watchDate": "2026-07-10",
     "genres": ["Sci-Fi", "Thriller", "Mystery"],
     "backdropColor": "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt11280740/"
+    "externalUrl": "https://www.imdb.com/title/tt11280740/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/1xs55pPz7g44aR46LLUF5927vPQ.jpg"
   },
   {
     "id": "interstellar",
@@ -95,7 +101,8 @@
     "watchDate": "2026-04-18",
     "genres": ["Sci-Fi", "Adventure", "Drama"],
     "backdropColor": "linear-gradient(135deg, #000000 0%, #434343 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt0816692/"
+    "externalUrl": "https://www.imdb.com/title/tt0816692/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/gEU2Qv4z3tVBSmdfw8upj625qcr.jpg"
   },
   {
     "id": "breaking-bad",
@@ -109,7 +116,8 @@
     "watchDate": "2025-11-30",
     "genres": ["Crime", "Drama", "Thriller"],
     "backdropColor": "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt0903747/"
+    "externalUrl": "https://www.imdb.com/title/tt0903747/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/ztkUQj61j1wXYnrmCO5okzZsyHd.jpg"
   },
   {
     "id": "dune-part-two",
@@ -123,7 +131,8 @@
     "watchDate": "2026-02-15",
     "genres": ["Sci-Fi", "Adventure", "Drama"],
     "backdropColor": "linear-gradient(135deg, #f4c430 0%, #c68642 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt15239678/"
+    "externalUrl": "https://www.imdb.com/title/tt15239678/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/czemb421NaZFfgPlACjga2i0j23.jpg"
   },
   {
     "id": "succession",
@@ -137,7 +146,8 @@
     "watchDate": "2026-01-05",
     "genres": ["Drama", "Comedy"],
     "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #bdc3c7 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt7660850/"
+    "externalUrl": "https://www.imdb.com/title/tt7660850/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Jlh546r7UIezEDup.jpg"
   },
   {
     "id": "dark",
@@ -151,7 +161,8 @@
     "watchDate": "2025-09-14",
     "genres": ["Sci-Fi", "Mystery", "Thriller"],
     "backdropColor": "linear-gradient(135deg, #141e30 0%, #243b55 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt5753856/"
+    "externalUrl": "https://www.imdb.com/title/tt5753856/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/560zo1jXmZl96276iA17evZXZr7.jpg"
   },
   {
     "id": "the-matrix",
@@ -165,7 +176,8 @@
     "watchDate": "2026-06-01",
     "genres": ["Sci-Fi", "Action"],
     "backdropColor": "linear-gradient(135deg, #00FF00 0%, #000000 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt0133093/"
+    "externalUrl": "https://www.imdb.com/title/tt0133093/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/f89U3wzqrCU87eYQTpo6eVwA2uC.jpg"
   },
   {
     "id": "foundation",
@@ -179,6 +191,7 @@
     "watchDate": "",
     "genres": ["Sci-Fi", "Drama"],
     "backdropColor": "linear-gradient(135deg, #3a7bd5 0%, #3a6073 100%)",
-    "externalUrl": "https://www.imdb.com/title/tt0814022/"
+    "externalUrl": "https://www.imdb.com/title/tt0814022/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/sz5249zK5gV49156Qo461W9qU1F.jpg"
   }
 ]

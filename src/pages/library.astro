@@ -163,19 +163,24 @@ const seo = {
             data-index={index}
           >
             <!-- Poster Backdrop representation -->
-            <div class="media-poster-container" style={`background: ${item.backdropColor || '#333'}`}>
+            <div 
+              class="media-poster-container" 
+              style={`background: ${item.coverUrl ? `url(${item.coverUrl}) center / cover no-repeat, ` : ''} ${item.backdropColor || '#333'}`}
+            >
               <div class="media-poster-overlay"></div>
               <div class="media-poster-details">
                 <span class="media-year-badge">{item.releaseYear}</span>
                 <span class="media-type-badge">{item.type}</span>
               </div>
-              <div class="media-poster-art">
-                {item.type === 'book' ? (
-                  <span class="media-book-design">📖</span>
-                ) : (
-                  <span class="media-initials">{item.title.substring(0, 2).toUpperCase()}</span>
-                )}
-              </div>
+              {!item.coverUrl && (
+                <div class="media-poster-art">
+                  {item.type === 'book' ? (
+                    <span class="media-book-design">📖</span>
+                  ) : (
+                    <span class="media-initials">{item.title.substring(0, 2).toUpperCase()}</span>
+                  )}
+                </div>
+              )}
             </div>
 
             <!-- Card Info -->
@@ -207,41 +212,50 @@ const seo = {
             
             <!-- Hidden details content for modal injection -->
             <div class="hidden-details" style="display: none;">
-              <h2 class="modal-title">{item.title}</h2>
-              <div class="modal-meta">
-                <span class="modal-meta-item"><strong>Year:</strong> {item.releaseYear}</span>
-                <span class="modal-meta-item"><strong>Type:</strong> <span class="type-capitalize">{item.type}</span></span>
-                <span class="modal-meta-item"><strong>{item.type === 'book' ? 'Author' : item.type === 'movie' ? 'Director' : 'Creator'}:</strong> {item.creator}</span>
-                <span class="modal-meta-item"><strong>Status:</strong> <span class="status-capitalize">{displayStatus}</span></span>
-                {item.watchDate && (
-                  <span class="modal-meta-item">
-                    <strong>{item.type === 'book' ? 'Read:' : 'Watched:'}</strong> {formattedDate}
-                  </span>
+              <div class="modal-layout">
+                {item.coverUrl && (
+                  <div class="modal-cover-wrapper">
+                    <img src={item.coverUrl} alt={`${item.title} cover`} class="modal-cover-img" />
+                  </div>
                 )}
-              </div>
-              
-              <div class="modal-genres">
-                {item.genres.map(genre => <span class="genre-tag">{genre}</span>)}
-              </div>
+                <div class="modal-info-wrapper">
+                  <h2 class="modal-title">{item.title}</h2>
+                  <div class="modal-meta">
+                    <span class="modal-meta-item"><strong>Year:</strong> {item.releaseYear}</span>
+                    <span class="modal-meta-item"><strong>Type:</strong> <span class="type-capitalize">{item.type}</span></span>
+                    <span class="modal-meta-item"><strong>{item.type === 'book' ? 'Author' : item.type === 'movie' ? 'Director' : 'Creator'}:</strong> {item.creator}</span>
+                    <span class="modal-meta-item"><strong>Status:</strong> <span class="status-capitalize">{displayStatus}</span></span>
+                    {item.watchDate && (
+                      <span class="modal-meta-item">
+                        <strong>{item.type === 'book' ? 'Read:' : 'Watched:'}</strong> {formattedDate}
+                      </span>
+                    )}
+                  </div>
+                  
+                  <div class="modal-genres">
+                    {item.genres.map(genre => <span class="genre-tag">{genre}</span>)}
+                  </div>
 
-              <div class="modal-rating">
-                <strong>Rating:</strong> {item.rating > 0 ? `${item.rating}/10 ★` : 'Unrated'}
-              </div>
+                  <div class="modal-rating">
+                    <strong>Rating:</strong> {item.rating > 0 ? `${item.rating}/10 ★` : 'Unrated'}
+                  </div>
 
-              {item.review && (
-                <div class="modal-review">
-                  <strong>Personal Notes & Review:</strong>
-                  <p>{item.review}</p>
+                  {item.review && (
+                    <div class="modal-review">
+                      <strong>Personal Notes & Review:</strong>
+                      <p>{item.review}</p>
+                    </div>
+                  )}
+
+                  {item.externalUrl && (
+                    <div class="modal-link-action">
+                      <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="external-btn-link">
+                        {item.type === 'book' ? 'Find on Amazon' : 'View on IMDb'} ↗
+                      </a>
+                    </div>
+                  )}
                 </div>
-              )}
-
-              {item.externalUrl && (
-                <div class="modal-link-action">
-                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="external-btn-link">
-                    {item.type === 'book' ? 'Find on Amazon' : 'View on IMDb'} ↗
-                  </a>
-                </div>
-              )}
+              </div>
             </div>
           </div>
         );
@@ -837,6 +851,51 @@ const seo = {
   .external-btn-link:hover {
     border-color: var(--underline-hover);
     background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  /* Modal Cover Layout */
+  .modal-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .modal-cover-wrapper {
+    flex-shrink: 0;
+    width: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-cover-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .modal-info-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @media (max-width: 576px) {
+    .modal-layout {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .modal-cover-wrapper {
+      width: 120px;
+    }
+
+    .modal-info-wrapper {
+      width: 100%;
+    }
   }
 
   @media (max-width: 768px) {
