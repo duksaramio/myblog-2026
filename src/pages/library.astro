@@ -193,6 +193,15 @@ const seo = {
                   <span class="genre-tag">{genre}</span>
                 ))}
                 {item.genres.length > 2 && <span class="genre-tag-more">+{item.genres.length - 2}</span>}
+                {item.externalUrl && (
+                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="card-link-icon" title={item.type === 'book' ? 'View on Amazon' : 'View on IMDb'}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
             
@@ -223,6 +232,14 @@ const seo = {
                 <div class="modal-review">
                   <strong>Personal Notes & Review:</strong>
                   <p>{item.review}</p>
+                </div>
+              )}
+
+              {item.externalUrl && (
+                <div class="modal-link-action">
+                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="external-btn-link">
+                    {item.type === 'book' ? 'Find on Amazon' : 'View on IMDb'} ↗
+                  </a>
                 </div>
               )}
             </div>
@@ -779,6 +796,49 @@ const seo = {
     color: var(--text-color);
   }
 
+  .card-link-icon {
+    margin-left: auto;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .card-link-icon:hover {
+    color: var(--text-color);
+    border-color: var(--border-color);
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .modal-link-action {
+    margin-top: 8px;
+  }
+
+  .external-btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+
+  .external-btn-link:hover {
+    border-color: var(--underline-hover);
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
   @media (max-width: 768px) {
     .stats-dashboard {
       grid-template-columns: repeat(2, 1fr);
@@ -1001,6 +1061,14 @@ const seo = {
   cards.forEach(card => {
     const htmlCard = card as HTMLElement;
     htmlCard.addEventListener('click', () => openModal(htmlCard));
+  });
+
+  // Prevent card click modal trigger when clicking external link on the card
+  const linkIcons = document.querySelectorAll('.card-link-icon');
+  linkIcons.forEach(icon => {
+    icon.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
   });
 
   modalClose?.addEventListener('click', closeModal);
