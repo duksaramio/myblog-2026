@@ -208,5 +208,20 @@
     "backdropColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     "externalUrl": "https://www.amazon.com/dp/0465030793",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0465030793-L.jpg"
+  },
+  {
+    "id": "the-christophers",
+    "title": "The Christophers",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2025,
+    "creator": "Steven Soderbergh",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-07-15",
+    "genres": ["Dark Comedy", "Comedy", "Drama"],
+    "backdropColor": "linear-gradient(135deg, #c6a059 0%, #3d2b1f 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt34966562/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTkzYzk4OTItYmYzMi00YTkxLWI0NjEtMGExMjU5ZDQwYTJhXkEyXkFqcGc@._V1_.jpg"
   }
 ]
