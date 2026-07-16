@@ -193,5 +193,20 @@
     "backdropColor": "linear-gradient(135deg, #3a7bd5 0%, #3a6073 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0814022/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/sz5249zK5gV49156Qo461W9qU1F.jpg"
+  },
+  {
+    "id": "am-a-strange-loop",
+    "title": "I Am a Strange Loop",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2007,
+    "creator": "Douglas Hofstadter",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-07-15",
+    "genres": ["Philosophy", "Science", "Math"],
+    "backdropColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0465030793",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0465030793-L.jpg"
   }
 ]
