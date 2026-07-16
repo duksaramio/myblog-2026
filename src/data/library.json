@@ -238,5 +238,20 @@
     "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
     "externalUrl": "https://www.imdb.com/title/tt35946742/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/f9U0oTlvLlqbww2Gm5j8Lhf1r9W.jpg"
+  },
+  {
+    "id": "passenger",
+    "title": "Passenger",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "André Øvredal",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-07-11",
+    "genres": ["Horror", "Thriller"],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33763941/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzgwNWY1YzgtOWU2NC00YTU2LTk4OGYtYzNkZTY2ZWQ2MzllXkEyXkFqcGc@._V1_.jpg"
   }
 ]
