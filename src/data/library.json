@@ -9,7 +9,11 @@
     "rating": 10,
     "review": "A masterpiece of world-building and sci-fi philosophy. The ecology of Arrakis, the spice, the Bene Gesserit order, and the exploration of messianic structures make this one of my favorite books of all time.",
     "watchDate": "2026-03-01",
-    "genres": ["Sci-Fi", "Classic", "Adventure"],
+    "genres": [
+      "Sci-Fi",
+      "Classic",
+      "Adventure"
+    ],
     "backdropColor": "linear-gradient(135deg, #e65c00 0%, #F9D423 100%)",
     "externalUrl": "https://www.amazon.com/dp/0441172717",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0441172717-L.jpg"
@@ -24,7 +28,11 @@
     "rating": 9,
     "review": "Incredibly fun and scientifically detailed space survival story. The relationship between Ryland Grace and Rocky is one of the most heartwarming friendships in modern sci-fi. Page-turner from start to finish.",
     "watchDate": "2026-06-15",
-    "genres": ["Sci-Fi", "Adventure", "Mystery"],
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Mystery"
+    ],
     "backdropColor": "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
     "externalUrl": "https://www.amazon.com/dp/0593135202",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0593135202-L.jpg"
@@ -39,7 +47,11 @@
     "rating": 9.5,
     "review": "A profound, playful exploration of self-reference, formal systems, art, and music. Reading it slowly to fully digest the concepts. The dialogues between Achilles and the Tortoise are brilliant.",
     "watchDate": "2026-07-14",
-    "genres": ["Philosophy", "Science", "Math"],
+    "genres": [
+      "Philosophy",
+      "Science",
+      "Math"
+    ],
     "backdropColor": "linear-gradient(135deg, #83a4d4 0%, #b6fbff 100%)",
     "externalUrl": "https://www.amazon.com/dp/0465026567",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0465026567-L.jpg"
@@ -54,7 +66,10 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Sci-Fi", "Cyberpunk"],
+    "genres": [
+      "Sci-Fi",
+      "Cyberpunk"
+    ],
     "backdropColor": "linear-gradient(135deg, #141e30 0%, #243b55 100%)",
     "externalUrl": "https://www.amazon.com/dp/0441569595",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0441569595-L.jpg"
@@ -69,7 +84,11 @@
     "rating": 9,
     "review": "A masterclass in original sci-fi action. The layers of dreams, Hans Zimmer's iconic brass-heavy score, and the emotional core of Cobb trying to get back to his kids make it a classic. The practical effects still hold up incredibly well.",
     "watchDate": "2026-05-12",
-    "genres": ["Sci-Fi", "Action", "Thriller"],
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #1f4068 0%, #162447 100%)",
     "externalUrl": "https://www.imdb.com/title/tt1375666/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/o0j46V21y84C068qp6H5z251zmA.jpg"
@@ -84,7 +103,11 @@
     "rating": 9.5,
     "review": "An eerie, gripping corporate thriller with stellar art direction. The sterile Lumon offices contrast beautifully with the characters' dark emotional struggles. Ben Stiller's direction is precise and tense.",
     "watchDate": "2026-07-10",
-    "genres": ["Sci-Fi", "Thriller", "Mystery"],
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Mystery"
+    ],
     "backdropColor": "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
     "externalUrl": "https://www.imdb.com/title/tt11280740/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/1xs55pPz7g44aR46LLUF5927vPQ.jpg"
@@ -99,7 +122,11 @@
     "rating": 10,
     "review": "My favorite space epic. Christopher Nolan manages to combine relativity, black holes, and deep human emotion into a breathtaking journey. Hans Zimmer's organ score is absolutely monumental.",
     "watchDate": "2026-04-18",
-    "genres": ["Sci-Fi", "Adventure", "Drama"],
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #000000 0%, #434343 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0816692/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/gEU2Qv4z3tVBSmdfw8upj625qcr.jpg"
@@ -114,7 +141,11 @@
     "rating": 10,
     "review": "The gold standard of television drama. Walter White's descent from a desperate chemistry teacher to a ruthless drug kingpin is one of the most meticulously written character arcs in media history.",
     "watchDate": "2025-11-30",
-    "genres": ["Crime", "Drama", "Thriller"],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0903747/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/ztkUQj61j1wXYnrmCO5okzZsyHd.jpg"
@@ -129,7 +160,11 @@
     "rating": 9,
     "review": "A visual and auditory triumph. Denis Villeneuve successfully adapts the complex second half of Frank Herbert's novel, delivering massive scale battles, complex political intrigue, and an immersive soundscape.",
     "watchDate": "2026-02-15",
-    "genres": ["Sci-Fi", "Adventure", "Drama"],
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #f4c430 0%, #c68642 100%)",
     "externalUrl": "https://www.imdb.com/title/tt15239678/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/czemb421NaZFfgPlACjga2i0j23.jpg"
@@ -144,7 +179,10 @@
     "rating": 9.5,
     "review": "A tragicomic look at corporate power dynamics and generational trauma. The writing is incredibly sharp, with insults that cut like knives and a stellar ensemble cast where everyone shines.",
     "watchDate": "2026-01-05",
-    "genres": ["Drama", "Comedy"],
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #bdc3c7 100%)",
     "externalUrl": "https://www.imdb.com/title/tt7660850/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Jlh546r7UIezEDup.jpg"
@@ -159,7 +197,11 @@
     "rating": 9,
     "review": "The most intricate time-travel story ever put to screen. It demands your absolute attention, tracing multiple generations across multiple timelines. A masterpiece of puzzle-box television.",
     "watchDate": "2025-09-14",
-    "genres": ["Sci-Fi", "Mystery", "Thriller"],
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #141e30 0%, #243b55 100%)",
     "externalUrl": "https://www.imdb.com/title/tt5753856/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/560zo1jXmZl96276iA17evZXZr7.jpg"
@@ -174,7 +216,10 @@
     "rating": 10,
     "review": "A landmark film that redefined sci-fi action cinema. Philosophy, cyberculture, and martial arts blended together with groundbreaking visual effects. A perfect film from start to finish.",
     "watchDate": "2026-06-01",
-    "genres": ["Sci-Fi", "Action"],
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
     "backdropColor": "linear-gradient(135deg, #00FF00 0%, #000000 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0133093/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/f89U3wzqrCU87eYQTpo6eVwA2uC.jpg"
@@ -189,7 +234,10 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Sci-Fi", "Drama"],
+    "genres": [
+      "Sci-Fi",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #3a7bd5 0%, #3a6073 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0814022/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/sz5249zK5gV49156Qo461W9qU1F.jpg"
@@ -204,7 +252,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Philosophy", "Science", "Math"],
+    "genres": [
+      "Philosophy",
+      "Science",
+      "Math"
+    ],
     "backdropColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     "externalUrl": "https://www.amazon.com/dp/0465030793",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0465030793-L.jpg"
@@ -219,7 +271,11 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Dark Comedy", "Comedy", "Drama"],
+    "genres": [
+      "Dark Comedy",
+      "Comedy",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #c6a059 0%, #3d2b1f 100%)",
     "externalUrl": "https://www.imdb.com/title/tt34966562/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTkzYzk4OTItYmYzMi00YTkxLWI0NjEtMGExMjU5ZDQwYTJhXkEyXkFqcGc@._V1_.jpg"
@@ -234,9 +290,32 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Comedy", "Drama", "Mystery", "Thriller"],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
     "externalUrl": "https://www.imdb.com/title/tt35946742/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/f9U0oTlvLlqbww2Gm5j8Lhf1r9W.jpg"
+  },
+  {
+    "id": "passenger",
+    "title": "Passenger",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "André Øvredal",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-07-11",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33763941/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzgwNWY1YzgtOWU2NC00YTU2LTk4OGYtYzNkZTY2ZWQ2MzllXkEyXkFqcGc@._V1_.jpg"
   }
 ]
