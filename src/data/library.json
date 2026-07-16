@@ -223,5 +223,20 @@
     "backdropColor": "linear-gradient(135deg, #c6a059 0%, #3d2b1f 100%)",
     "externalUrl": "https://www.imdb.com/title/tt34966562/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTkzYzk4OTItYmYzMi00YTkxLWI0NjEtMGExMjU5ZDQwYTJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "maximum-pleasure-guaranteed",
+    "title": "Maximum Pleasure Guaranteed",
+    "type": "tv",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "David Rosen",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-07-15",
+    "genres": ["Comedy", "Drama", "Mystery", "Thriller"],
+    "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt35946742/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/f9U0oTlvLlqbww2Gm5j8Lhf1r9W.jpg"
   }
 ]
