@@ -4,8 +4,15 @@ interface Props {
 }
 
 const { logo } = Astro.props;
+const pathname = Astro.url.pathname;
+const isHome = pathname === '/' || pathname === '/1' || pathname.match(/^\/\d+$/); // handle pagination paths like /2, /3
+const isLibrary = pathname.startsWith('/library');
 ---
 
 <header>
 	<a href="/" class="logo">{logo}</a>
+	<nav>
+		<a href="/" class={isHome ? 'active' : ''}>Writing</a>
+		<a href="/library" class={isLibrary ? 'active' : ''}>Library</a>
+	</nav>
 </header>

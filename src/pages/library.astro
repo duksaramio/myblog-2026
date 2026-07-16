@@ -1,0 +1,1018 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import profile from '../data/profile.json';
+import library from '../data/library.json';
+
+// Calculate initial statistics
+const totalCount = library.length;
+const booksCount = library.filter(item => item.type === 'book').length;
+const moviesCount = library.filter(item => item.type === 'movie').length;
+const tvCount = library.filter(item => item.type === 'tv').length;
+const completedItems = library.filter(item => item.status === 'completed' && item.rating > 0);
+const averageRating = completedItems.length > 0 
+  ? (completedItems.reduce((sum, item) => sum + item.rating, 0) / completedItems.length).toFixed(1)
+  : '0.0';
+
+// Extract all unique genres for the dropdown
+const allGenres = Array.from(
+  new Set(library.flatMap(item => item.genres))
+).sort();
+
+const seo = {
+  og: {
+    ...profile.seo.og,
+    title: `Library | ${profile.site.title}`,
+    description: "My personal log of books, movies, and TV series that I read and watch."
+  },
+  twitter: {
+    ...profile.seo.twitter,
+    title: `Library | ${profile.site.title}`,
+    description: "My personal log of books, movies, and TV series that I read and watch."
+  }
+};
+---
+
+<BaseLayout title={`Library | ${profile.site.title}`} description="My personal log of books, movies, and TV series." seo={seo}>
+  <Header logo={profile.header.logo} />
+
+  <main>
+    <div class="library-header">
+      <h1 class="page-title">Library</h1>
+      <p class="subtitle">A visual shelf and log of books I've read, and movies & TV series I've watched.</p>
+    </div>
+
+    <!-- Stats Dashboard -->
+    <div class="stats-dashboard">
+      <div class="stat-card">
+        <span class="stat-label">Total Logs</span>
+        <span class="stat-value" id="stat-total">{totalCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Books</span>
+        <span class="stat-value" id="stat-books">{booksCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Movies & TV</span>
+        <span class="stat-value" id="stat-screen">{moviesCount + tvCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Average Rating</span>
+        <span class="stat-value" id="stat-rating">★ {averageRating}</span>
+      </div>
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search by title, creator, genre..." 
+          aria-label="Search library"
+        />
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <div class="filters-row">
+        <!-- Type Tabs -->
+        <div class="tabs-group" role="tablist">
+          <button class="tab-btn active" data-type="all" role="tab" aria-selected="true">All</button>
+          <button class="tab-btn" data-type="book" role="tab" aria-selected="false">Books</button>
+          <button class="tab-btn" data-type="movie" role="tab" aria-selected="false">Movies</button>
+          <button class="tab-btn" data-type="tv" role="tab" aria-selected="false">TV Series</button>
+        </div>
+
+        <div class="selects-group">
+          <!-- Status Select -->
+          <div class="select-wrapper">
+            <select id="status-filter" aria-label="Filter by Status">
+              <option value="all">All Status</option>
+              <option value="completed">Completed / Read</option>
+              <option value="watching">Watching / Reading</option>
+              <option value="plan-to-watch">Plan to Watch / Read</option>
+            </select>
+          </div>
+
+          <!-- Genre Select -->
+          <div class="select-wrapper">
+            <select id="genre-filter" aria-label="Filter by Genre">
+              <option value="all">All Genres</option>
+              {allGenres.map(genre => (
+                <option value={genre.toLowerCase()}>{genre}</option>
+              ))}
+            </select>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="select-wrapper">
+            <select id="sort-order" aria-label="Sort Order">
+              <option value="latest">Latest Completed</option>
+              <option value="rating-desc">Rating: High to Low</option>
+              <option value="year-desc">Year: New to Old</option>
+              <option value="year-asc">Year: Old to New</option>
+              <option value="alphabetical">Title: A to Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Filters Notification / Counter -->
+    <div class="results-counter" id="results-counter">
+      Showing all {totalCount} items
+    </div>
+
+    <!-- Media Grid -->
+    <div class="media-grid" id="media-grid">
+      {library.map((item, index) => {
+        const formattedDate = item.watchDate 
+          ? new Date(item.watchDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+          : item.type === 'book' ? 'Not read yet' : 'Not watched yet';
+
+        // Creator label based on type
+        let creatorLabel = 'Creator:';
+        if (item.type === 'book') creatorLabel = 'Author:';
+        else if (item.type === 'movie') creatorLabel = 'Dir:';
+
+        // Status string formatting
+        let displayStatus = item.status.replace('-', ' ');
+        if (item.status === 'completed' && item.type === 'book') {
+          displayStatus = 'Read';
+        } else if (item.status === 'watching' && item.type === 'book') {
+          displayStatus = 'Reading';
+        } else if (item.status === 'plan-to-watch' && item.type === 'book') {
+          displayStatus = 'Plan to Read';
+        }
+
+        return (
+          <div 
+            class="media-card" 
+            data-id={item.id}
+            data-title={item.title.toLowerCase()}
+            data-creator={item.creator.toLowerCase()}
+            data-type={item.type}
+            data-status={item.status}
+            data-genres={item.genres.map(g => g.toLowerCase()).join(',')}
+            data-rating={item.rating}
+            data-year={item.releaseYear}
+            data-watch-date={item.watchDate || '0000-00-00'}
+            data-index={index}
+          >
+            <!-- Poster Backdrop representation -->
+            <div class="media-poster-container" style={`background: ${item.backdropColor || '#333'}`}>
+              <div class="media-poster-overlay"></div>
+              <div class="media-poster-details">
+                <span class="media-year-badge">{item.releaseYear}</span>
+                <span class="media-type-badge">{item.type}</span>
+              </div>
+              <div class="media-poster-art">
+                {item.type === 'book' ? (
+                  <span class="media-book-design">📖</span>
+                ) : (
+                  <span class="media-initials">{item.title.substring(0, 2).toUpperCase()}</span>
+                )}
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="media-info">
+              <div class="media-meta-top">
+                <span class={`status-dot ${item.status}`}></span>
+                <span class="status-text">{displayStatus}</span>
+                {item.rating > 0 && <span class="rating-badge">★ {item.rating}</span>}
+              </div>
+              <h3 class="media-card-title">{item.title}</h3>
+              <p class="media-card-creator">{creatorLabel} {item.creator}</p>
+              
+              <div class="media-genres">
+                {item.genres.slice(0, 2).map(genre => (
+                  <span class="genre-tag">{genre}</span>
+                ))}
+                {item.genres.length > 2 && <span class="genre-tag-more">+{item.genres.length - 2}</span>}
+              </div>
+            </div>
+            
+            <!-- Hidden details content for modal injection -->
+            <div class="hidden-details" style="display: none;">
+              <h2 class="modal-title">{item.title}</h2>
+              <div class="modal-meta">
+                <span class="modal-meta-item"><strong>Year:</strong> {item.releaseYear}</span>
+                <span class="modal-meta-item"><strong>Type:</strong> <span class="type-capitalize">{item.type}</span></span>
+                <span class="modal-meta-item"><strong>{item.type === 'book' ? 'Author' : item.type === 'movie' ? 'Director' : 'Creator'}:</strong> {item.creator}</span>
+                <span class="modal-meta-item"><strong>Status:</strong> <span class="status-capitalize">{displayStatus}</span></span>
+                {item.watchDate && (
+                  <span class="modal-meta-item">
+                    <strong>{item.type === 'book' ? 'Read:' : 'Watched:'}</strong> {formattedDate}
+                  </span>
+                )}
+              </div>
+              
+              <div class="modal-genres">
+                {item.genres.map(genre => <span class="genre-tag">{genre}</span>)}
+              </div>
+
+              <div class="modal-rating">
+                <strong>Rating:</strong> {item.rating > 0 ? `${item.rating}/10 ★` : 'Unrated'}
+              </div>
+
+              {item.review && (
+                <div class="modal-review">
+                  <strong>Personal Notes & Review:</strong>
+                  <p>{item.review}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="8" y1="12" x2="16" y2="12"></line>
+      </svg>
+      <p>No matching logs found.</p>
+    </div>
+
+    <!-- Modal for details -->
+    <div id="details-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-elem">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">×</button>
+        <div id="modal-body-content"></div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .library-header {
+    margin-bottom: 24px;
+  }
+
+  .page-title {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    max-width: 600px;
+  }
+
+  /* Stats Dashboard */
+  .stats-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 24px;
+  }
+
+  .stat-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--underline-hover);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-value {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Controls Panel */
+  .controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+
+  #search-input:focus {
+    outline: none;
+    border-color: var(--underline-hover);
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .filters-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Tabs styling */
+  .tabs-group {
+    display: flex;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .tab-btn:hover {
+    color: var(--text-color);
+  }
+
+  .tab-btn.active {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+  .selects-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .select-wrapper {
+    position: relative;
+  }
+
+  .selects-group select {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 32px 8px 12px;
+    color: var(--text-color);
+    cursor: pointer;
+    appearance: none;
+    transition: border-color 0.2s;
+  }
+
+  .selects-group select:focus {
+    outline: none;
+    border-color: var(--underline-hover);
+  }
+
+  /* Custom dropdown arrow */
+  .select-wrapper::after {
+    content: "▼";
+    font-size: 8px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .results-counter {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+
+  /* Grid Layout */
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .media-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .media-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--underline-hover);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Poster Image Fallback Representation */
+  .media-poster-container {
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .media-poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+  }
+
+  .media-poster-details {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .media-year-badge {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .media-type-badge {
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .media-poster-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .media-book-design {
+    font-size: 32px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+
+  .media-initials {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card Info */
+  .media-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+  }
+
+  .media-meta-top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .status-dot.completed {
+    background-color: #2e7d32;
+  }
+
+  .status-dot.watching {
+    background-color: #1565c0;
+  }
+
+  .status-dot.plan-to-watch {
+    background-color: #ef6c00;
+  }
+
+  .status-dot.dropped {
+    background-color: #c62828;
+  }
+
+  .status-text {
+    text-transform: capitalize;
+  }
+
+  .rating-badge {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .media-card-title {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--text-color);
+  }
+
+  .media-card-creator {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .media-genres {
+    margin-top: auto;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .genre-tag {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: var(--text-muted);
+  }
+
+  .genre-tag-more {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-left: 2px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    gap: 16px;
+    color: var(--text-muted);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+  }
+
+  .empty-state p {
+    font-size: 14px;
+  }
+
+  /* Modal Details styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .modal.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 244, 239, 0.95);
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 32px;
+    width: 90%;
+    max-width: 600px;
+    z-index: 2;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+
+  .modal-close:hover {
+    color: var(--text-color);
+  }
+
+  #modal-body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal-title {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 1.2;
+  }
+
+  .modal-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+  }
+
+  .modal-meta-item {
+    color: var(--text-muted);
+  }
+
+  .modal-meta-item strong {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+  .type-capitalize {
+    text-transform: capitalize;
+  }
+
+  .status-capitalize {
+    text-transform: capitalize;
+  }
+
+  .modal-genres {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .modal-rating {
+    font-size: 14px;
+  }
+
+  .modal-rating strong {
+    font-weight: 600;
+  }
+
+  .modal-review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--text-color);
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  .modal-review strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+  }
+
+  .modal-review p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .stats-dashboard {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .filters-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .selects-group {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .selects-group .select-wrapper:last-child {
+      grid-column: span 2;
+    }
+
+    .selects-group select {
+      width: 100%;
+    }
+
+    .tabs-group {
+      width: 100%;
+    }
+
+    .tab-btn {
+      flex: 1;
+      text-align: center;
+    }
+
+    .modal-content {
+      padding: 24px;
+      width: 95%;
+    }
+  }
+</style>
+
+<script>
+  // Dynamic search, filter, and sort logic
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+  const statusFilter = document.getElementById('status-filter') as HTMLSelectElement | null;
+  const genreFilter = document.getElementById('genre-filter') as HTMLSelectElement | null;
+  const sortOrder = document.getElementById('sort-order') as HTMLSelectElement | null;
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const mediaGrid = document.getElementById('media-grid');
+  const emptyState = document.getElementById('empty-state');
+  const resultsCounter = document.getElementById('results-counter');
+
+  // Stats elements to update dynamically
+  const statTotal = document.getElementById('stat-total');
+  const statBooks = document.getElementById('stat-books');
+  const statScreen = document.getElementById('stat-screen');
+  const statRating = document.getElementById('stat-rating');
+
+  // Get initial card elements
+  const cards = mediaGrid ? Array.from(mediaGrid.querySelectorAll('.media-card')) : [];
+  let currentTypeFilter = 'all';
+
+  function updateList() {
+    if (!mediaGrid) return;
+
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const status = statusFilter ? statusFilter.value : 'all';
+    const genre = genreFilter ? genreFilter.value : 'all';
+    const sort = sortOrder ? sortOrder.value : 'latest';
+
+    // 1. Filter elements
+    const filteredCards = cards.filter(card => {
+      const cardElement = card as HTMLElement;
+      
+      // Match type tab
+      const typeMatch = currentTypeFilter === 'all' || cardElement.dataset.type === currentTypeFilter;
+      
+      // Match status
+      const statusMatch = status === 'all' || cardElement.dataset.status === status;
+      
+      // Match genre
+      const cardGenres = cardElement.dataset.genres ? cardElement.dataset.genres.split(',') : [];
+      const genreMatch = genre === 'all' || cardGenres.includes(genre);
+      
+      // Match search query (title, creator, genres)
+      const title = cardElement.dataset.title || '';
+      const creator = cardElement.dataset.creator || '';
+      const searchMatch = !query || 
+                          title.includes(query) || 
+                          creator.includes(query) || 
+                          cardGenres.some(g => g.includes(query));
+
+      const isVisible = typeMatch && statusMatch && genreMatch && searchMatch;
+      cardElement.style.display = isVisible ? 'flex' : 'none';
+      return isVisible;
+    });
+
+    // 2. Sort elements
+    filteredCards.sort((a, b) => {
+      const cardA = a as HTMLElement;
+      const cardB = b as HTMLElement;
+
+      if (sort === 'rating-desc') {
+        const rA = parseFloat(cardA.dataset.rating || '0');
+        const rB = parseFloat(cardB.dataset.rating || '0');
+        return rB - rA; // High to low
+      } else if (sort === 'year-desc') {
+        const yA = parseInt(cardA.dataset.year || '0');
+        const yB = parseInt(cardB.dataset.year || '0');
+        return yB - yA;
+      } else if (sort === 'year-asc') {
+        const yA = parseInt(cardA.dataset.year || '0');
+        const yB = parseInt(cardB.dataset.year || '0');
+        return yA - yB;
+      } else if (sort === 'alphabetical') {
+        const tA = cardA.dataset.title || '';
+        const tB = cardB.dataset.title || '';
+        return tA.localeCompare(tB);
+      } else {
+        // default: 'latest' completion date
+        const dA = cardA.dataset.watchDate || '0000-00-00';
+        const dB = cardB.dataset.watchDate || '0000-00-00';
+        
+        // Handle uncompleted plans (sort them to the end)
+        if (dA === '0000-00-00' || !dA) return 1;
+        if (dB === '0000-00-00' || !dB) return -1;
+        
+        return dB.localeCompare(dA); // Newest date first
+      }
+    });
+
+    // Reorder DOM nodes
+    filteredCards.forEach(card => mediaGrid.appendChild(card));
+
+    // 3. Update visibility of empty state and counts
+    if (emptyState) {
+      emptyState.style.display = filteredCards.length === 0 ? 'flex' : 'none';
+    }
+
+    if (resultsCounter) {
+      resultsCounter.textContent = `Showing ${filteredCards.length} of ${cards.length} items`;
+    }
+
+    // 4. Update stats dashboard dynamically based on active filter
+    updateStatsDashboard(filteredCards);
+  }
+
+  function updateStatsDashboard(activeCards: Element[]) {
+    const activeData = activeCards.map(c => {
+      const el = c as HTMLElement;
+      return {
+        type: el.dataset.type,
+        status: el.dataset.status,
+        rating: parseFloat(el.dataset.rating || '0')
+      };
+    });
+
+    if (statTotal) statTotal.textContent = activeData.length.toString();
+    if (statBooks) statBooks.textContent = activeData.filter(d => d.type === 'book').length.toString();
+    if (statScreen) {
+      const screenCount = activeData.filter(d => d.type === 'movie' || d.type === 'tv').length;
+      statScreen.textContent = screenCount.toString();
+    }
+
+    if (statRating) {
+      const ratedCompleted = activeData.filter(d => d.status === 'completed' && d.rating > 0);
+      const avg = ratedCompleted.length > 0 
+        ? (ratedCompleted.reduce((sum, d) => sum + d.rating, 0) / ratedCompleted.length).toFixed(1)
+        : '0.0';
+      statRating.textContent = `★ ${avg}`;
+    }
+  }
+
+  // Setup Event Listeners for Filters
+  searchInput?.addEventListener('input', updateList);
+  statusFilter?.addEventListener('change', updateList);
+  genreFilter?.addEventListener('change', updateList);
+  sortOrder?.addEventListener('change', updateList);
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      tabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      const target = e.currentTarget as HTMLButtonElement;
+      target.classList.add('active');
+      target.setAttribute('aria-selected', 'true');
+      currentTypeFilter = target.dataset.type || 'all';
+      updateList();
+    });
+  });
+
+  // Modal Functionality
+  const modal = document.getElementById('details-modal');
+  const modalBody = document.getElementById('modal-body-content');
+  const modalClose = modal?.querySelector('.modal-close');
+  const modalOverlay = modal?.querySelector('.modal-overlay');
+
+  function openModal(card: HTMLElement) {
+    if (!modal || !modalBody) return;
+    
+    const hiddenDetails = card.querySelector('.hidden-details');
+    if (!hiddenDetails) return;
+
+    modalBody.innerHTML = hiddenDetails.innerHTML;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // prevent page scroll
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Add click listener to cards for modal opening
+  cards.forEach(card => {
+    const htmlCard = card as HTMLElement;
+    htmlCard.addEventListener('click', () => openModal(htmlCard));
+  });
+
+  modalClose?.addEventListener('click', closeModal);
+  modalOverlay?.addEventListener('click', closeModal);
+
+  // Close modal on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Initial trigger to ensure correct sorting/count
+  updateList();
+</script>
