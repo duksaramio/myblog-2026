@@ -58,5 +58,20 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33763941/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzgwNWY1YzgtOWU2NC00YTU2LTk4OGYtYzNkZTY2ZWQ2MzllXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "inside-the-box",
+    "title": "Inside the Box: How Constraints Make Us Better",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2026,
+    "creator": "David Epstein",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-07-16",
+    "genres": ["Creativity", "Psychology", "Business"],
+    "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0593715713",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0593715713-L.jpg"
   }
 ]
