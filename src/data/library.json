@@ -103,5 +103,20 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36364892/",
     "coverUrl": "https://www.moviemeter.com/images/cover/1176000/1176126.jpg"
+  },
+  {
+    "id": "tuner",
+    "title": "Tuner",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2025,
+    "creator": "Daniel Roher",
+    "rating": 8,
+    "review": "Probably the best movie I've seen this year so far.",
+    "watchDate": "2026-07-17",
+    "genres": ["Crime", "Drama", "Music"],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33296751/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Tuner_poster.jpg"
   }
 ]
