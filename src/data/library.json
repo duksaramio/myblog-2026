@@ -118,5 +118,20 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33296751/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Tuner_poster.jpg"
+  },
+  {
+    "id": "shelter",
+    "title": "Shelter",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Ric Roman Waugh",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-07-17",
+    "genres": ["Action", "Thriller"],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt30217600/",
+    "coverUrl": "https://resizing.flixster.com/RKh_pDXX2jCm08TEFjqR0p9u0FQ=/206x305/v2/https://resizing.flixster.com/b1iAsdkEH60Oo5zXnnsbUF_g6EU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg5ZjhlYjg2LTdlYjItNDY1MS1iMjIzLTNmYzhjODdjYjVjNi5qcGc="
   }
 ]
