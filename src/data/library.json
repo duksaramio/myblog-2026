@@ -88,5 +88,20 @@
     "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32135632/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzYwMWFkNmQtMGMzOC00Y2EyLTk3NGItNzNhYTg2MTAyZjBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-body-in-the-locker",
+    "title": "The Body in the Locker",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2025,
+    "creator": "Sean Cisterna",
+    "rating": 4,
+    "review": "",
+    "watchDate": "2026-07-17",
+    "genres": ["Mystery", "Crime", "Thriller"],
+    "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36364892/",
+    "coverUrl": "https://www.moviemeter.com/images/cover/1176000/1176126.jpg"
   }
 ]
