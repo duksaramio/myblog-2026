@@ -4,7 +4,7 @@ pubDate: 2026-07-12
 description: "AI makes gathering information fast and cheap, but it still takes a human brain to process it into something new. A reflection on what AI exposes about the way we think."
 draft: false
 tags: ["ai", "thinking", "reflection", "ideas", "multidisciplinary"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/ai-is-great-for-people-who-think.wav"
 ---
 
 AI is an awesome product for people who think. If you are the type who walks in the morning around the neighborhood and ponders on things, AI is great. If you sit on a couch all day and doomscroll, it won't help you much.
