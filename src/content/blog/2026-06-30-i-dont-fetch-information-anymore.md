@@ -4,7 +4,7 @@ pubDate: 2026-06-30
 description: "On using AI agents as an information curation layer, avoiding HN comment toxicity, and the evolving craft of asking questions."
 draft: false
 tags: ["ai-agents", "workflow", "hacker-news", "information-curation", "prompting"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/i-dont-fetch-information-anymore.wav"
 ---
 
 I don't want to fetch information from multiple sources. The information that I want and need has to come to me. And that's what AI agents are helping me do right now.
