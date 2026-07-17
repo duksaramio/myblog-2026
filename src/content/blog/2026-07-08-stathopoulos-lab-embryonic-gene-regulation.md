@@ -4,7 +4,7 @@ pubDate: 2026-07-08
 description: "The Stathopoulos Lab at Caltech studies how embryos coordinate gene expression in time and space — and why timing matters as much as location."
 draft: false
 tags: ["developmental-biology", "genetics", "embryos", "research-labs", "science", "drosophila"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/stathopoulos-lab-embryonic-gene-regulation.wav"
 ---
 
 <div class="note-box">

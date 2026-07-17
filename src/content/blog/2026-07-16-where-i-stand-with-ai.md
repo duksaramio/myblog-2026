@@ -4,7 +4,7 @@ pubDate: 2026-07-16
 description: "AI isn't going away, and no, chatting with ChatGPT isn't 'knowing AI.' Here's where I stand after months of working with 12 different LLMs, local image generation, and AI agents."
 draft: false
 tags: ["ai", "llm", "agents", "reflection", "comfyui", "observability"]
-audioUrl: "https://file.dukelee.xyz/where-i-stand-with-ai.wav"
+audioUrl: "https://file.duklee.net/audio/where-i-stand-with-ai.wav"
 ---
 
 AI is not going away. And no — chatting with ChatGPT is not remotely close to "knowing how to use AI."
