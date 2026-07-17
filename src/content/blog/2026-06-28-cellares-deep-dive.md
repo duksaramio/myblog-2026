@@ -4,7 +4,7 @@ pubDate: 2026-06-28
 description: "A deep dive into the first IDMO — what Cellares builds, who pays them, and why the AMT designation is the real moat."
 draft: false
 tags: ["biotech", "cell-therapy", "manufacturing", "research"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-06-28-cellares-deep-dive.wav"
 ---
 
 Spent the morning deep diving on Cellares, the South San Francisco company that wants to be the contract manufacturer for every CAR-T, TCR-T, and gene-edited stem cell therapy that hits the market in the back half of this decade. Here's the read.

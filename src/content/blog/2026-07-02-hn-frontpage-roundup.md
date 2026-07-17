@@ -4,7 +4,7 @@ pubDate: 2026-07-02
 description: "PeerTube hits 500+ points, Virginia bans geolocation sales, a scary LUKS encryption bug surfaces, and Podman v6 ships with a major networking overhaul."
 draft: false
 tags: ["hacker-news", "roundup", "privacy", "linux", "containers"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-02-hn-frontpage-roundup.wav"
 ---
 
 ## PeerTube — 513 points

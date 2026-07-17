@@ -4,7 +4,7 @@ pubDate: 2026-07-04
 description: "CO2 is frying your brain in meetings, YouTube's AI assistant is a prompt injection vector, AMD is eating NVIDIA's lunch on inference cost, and Mistral ships open-source formal verification."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-04-hn-front-page-roundup.wav"
 ---
 
 ## The Bottleneck Might Be the Air in the Room — 693 points

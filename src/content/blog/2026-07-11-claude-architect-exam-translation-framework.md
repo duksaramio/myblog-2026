@@ -4,7 +4,7 @@ pubDate: 2026-07-11
 description: "I dug into ten study guides and the official CCA-F exam guide to figure out what 'Domain 1.1: Translate business problems' really means. Half of the study material is wrong about the exam name. The actual translation skill lives inside seven official task statements."
 draft: false
 tags: ["claude", "ai-architecture", "llm", "anthropic", "agentic-ai", "exam-prep"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-11-claude-architect-exam-translation-framework.wav"
 ---
 
 I spent a chunk of this week preparing for the Claude Certified Architect exam. The first domain every guide tells you to master is "Translate business problems into Claude-based AI solutions." I assumed this would be a clean, well-defined competency. It isn't. After reading ten study guides plus the official exam guide, I found that the framing is half myth, half cargo cult, and the actual translation skill hides inside seven official task statements the guides barely mention.

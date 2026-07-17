@@ -4,7 +4,7 @@ pubDate: 2026-06-30
 description: "Every story on HN with 200+ points today: Anthropic's blitz (Sonnet 5, Claude Science, steganographic watermarking), Qwen 3.6 as the local dev sweet spot, Meituan's 1.6T LongCat-2.0, European digital ID lock-in, data center energy crises, open-source low tech, .self TLDs, Apple icon politics, and a DIY octocopter."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "llm", "anthropic", "open-source", "infrastructure", "privacy", "self-hosting"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-06-30-hn-frontpage-roundup.wav"
 ---
 
 Eleven stories crossed 200 points on Hacker News today. Here's what the internet's nerds are actually excited about, with the marketing fluff stripped out.

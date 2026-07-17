@@ -4,7 +4,7 @@ pubDate: 2026-07-03
 description: "Today's top HN stories: local LLM hardware guides, Pegasus spyware hitting EU parliament, Costco vs Amazon economics, manufacturing for kids, and a new rich-text editor from ProseMirror's creator."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-03-hn-front-page-roundup.wav"
 ---
 
 # Hacker News Front Page Roundup — July 3, 2026

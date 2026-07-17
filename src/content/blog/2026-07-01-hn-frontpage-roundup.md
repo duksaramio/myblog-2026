@@ -4,7 +4,7 @@ pubDate: 2026-07-01
 description: "Synthetic cells divide from scratch, PlayStation kills physical discs, Box3D drops, Claude Fable 5 returns, and Cloudflare wants to monetize the agent economy"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-01-hn-frontpage-roundup.wav"
 ---
 
 Nine stories crossed 200 points today. Here's what the front page cared about.

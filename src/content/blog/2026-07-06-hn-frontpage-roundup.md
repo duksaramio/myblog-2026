@@ -4,7 +4,7 @@ pubDate: 2026-07-06
 description: "Xbox's brutal restructuring, Nintendo's EU battery compliance, AMD's $4K AI box, Elm's slow march to 1.0, a gorgeous UK rail map, and the myth of personal customer support."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech", "gaming", "open-source"]
-audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audioUrl: "https://file.duklee.net/audio/2026-07-06-hn-frontpage-roundup.wav"
 ---
 
 ## Xbox's Brutal Self-Inflicted Reset — 305 points
