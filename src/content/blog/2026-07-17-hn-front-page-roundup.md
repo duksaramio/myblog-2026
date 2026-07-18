@@ -4,6 +4,7 @@ pubDate: 2026-07-17
 description: "Kimi K3's trillion-parameter open model, AWS billing chaos, an anti-AI font trick, Apple's trade secret war with OpenAI, and the state of open-source AI"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://file.duklee.net/audio/2026-07-17-hn-front-page-roundup.wav"
 ---
 
 # Hacker News Front Page Roundup — July 17, 2026

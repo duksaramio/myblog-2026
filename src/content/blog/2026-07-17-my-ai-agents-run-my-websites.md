@@ -4,6 +4,7 @@ pubDate: 2026-07-17
 description: "AI agents run multiple websites for me. They make mistakes, but I'm getting better at using AI every single day. Here's the biggest lesson."
 draft: false
 tags: ["ai", "agents", "automation", "tts", "comfyui", "build-in-public"]
+audioUrl: "https://file.duklee.net/audio/2026-07-17-my-ai-agents-run-my-websites.wav"
 ---
 
 My AI agents run multiple websites for me. These sites are my sandboxes.
