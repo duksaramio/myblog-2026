@@ -148,5 +148,20 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0896798/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Cleaner_%28film%29_poster.jpg"
+  },
+  {
+    "id": "fallen",
+    "title": "Fallen",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 1998,
+    "creator": "Gregory Hoblit",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-07-18",
+    "genres": ["Supernatural", "Thriller", "Crime"],
+    "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #2d3436 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt0119099/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Fallen_film_poster.jpg"
   }
 ]
