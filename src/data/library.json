@@ -133,5 +133,20 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt30217600/",
     "coverUrl": "https://resizing.flixster.com/6Cw7dYe7K-L4kf2lFDNmK7mdtus=/206x305/v2/https://resizing.flixster.com/Q5k7k_vTJBaqkJcHU2WEhzMuujk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgxNDVhZWI4LTFiNjgtNGZiNy1iM2U4LTUwMDFkZDA0NTkwZi5qcGc="
+  },
+  {
+    "id": "cleaner",
+    "title": "Cleaner",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2007,
+    "creator": "Renny Harlin",
+    "rating": 4,
+    "review": "",
+    "watchDate": "2026-07-18",
+    "genres": ["Thriller", "Crime", "Drama"],
+    "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt0896798/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Cleaner_%28film%29_poster.jpg"
   }
 ]
