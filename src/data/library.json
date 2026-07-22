@@ -178,5 +178,20 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 50%, #b2bec3 100%)",
     "externalUrl": "https://www.imdb.com/title/tt7923710/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/MyMisterposter.jpg"
+  },
+  {
+    "id": "we-are-all-trying-here",
+    "title": "We Are All Trying Here",
+    "type": "tv",
+    "status": "watching",
+    "releaseYear": 2026,
+    "creator": "Park Hae-young",
+    "rating": 8,
+    "review": "",
+    "watchDate": "2026-07-22",
+    "genres": ["Black Comedy", "Slice of Life", "Melodrama"],
+    "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d3436 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36732944/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2c/We_Are_All_Trying_Here_poster.png"
   }
 ]
