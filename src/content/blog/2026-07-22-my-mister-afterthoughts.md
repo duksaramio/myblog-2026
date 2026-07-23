@@ -4,6 +4,7 @@ pubDate: 2026-07-22
 description: "Thought about it for a few days. The writing, the nuance, and the actor who couldn't carry what his character could."
 draft: false
 tags: ["k-drama", "my-mister", "review", "emotional", "tv", "reflection"]
+audioUrl: "https://file.duklee.net/audio/my-mister-afterthoughts.wav"
 ---
 
 I've been thinking about *My Mister* for a few days now. It won't leave.
