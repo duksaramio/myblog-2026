@@ -1,5 +1,5 @@
 ---
-title: "I Asked 8 LLMs the Same Question About Fixing Errors. They Split 5-3 and Both Sides Were Wrong."
+title: "I Asked 12 LLMs the Same Question About Fixing Errors. They Split 7-5 and Both Sides Were Wrong."
 pubDate: 2026-07-25
 description: "When an LLM fails, should you ask 'did you make sure?' or just repeat the instruction? Eight models gave opposite answers. The real reason reveals something structural about how these things work."
 draft: false
@@ -11,7 +11,7 @@ Here's a question that sounds trivial but isn't: when an LLM fails at a task, wh
 1. "Did you make sure to do this task?"
 2. "Please do this task."
 
-I ran this question across eight different LLM responses. Five said option 1 works better. Three said option 2 works better. Both sides were confident. Both built elaborate, numbered arguments with analogies and "practical takeaways." Both sounded like they knew what they were talking about.
+I ran this question across twelve different LLM responses. Seven said option 1 works better. Five said option 2 works better. Both sides were confident. Both built elaborate, numbered arguments with analogies and "practical takeaways." Both sounded like they knew what they were talking about.
 
 They can't all be right. And the reason they disagree is more interesting than the answer.
 
