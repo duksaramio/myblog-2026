@@ -223,5 +223,20 @@
     "backdropColor": "linear-gradient(135deg, #1a3a5c 0%, #0a1628 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33764258/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOGM0NDE2NWEtZjEzNy00YjQwLTlkMDctM2ZmMTc4NTU1MWYzXkEyXkFqcGc@._V1_QL75_UX328_.jpg"
+  },
+  {
+    "id": "domain-specific-small-language-models",
+    "title": "Domain-Specific Small Language Models",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 2025,
+    "creator": "Guglielmo Iozzia",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["AI", "Machine Learning", "NLP"],
+    "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
+    "externalUrl": "https://www.amazon.com/Domain-Specific-Language-Models-Guglielmo-Iozzia/dp/1633436705/",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1633436705-L.jpg"
   }
 ]
