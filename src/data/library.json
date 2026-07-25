@@ -208,5 +208,20 @@
     "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a1a 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33499146/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWNmMzRiMWUtYjY0YS00NWI3LTkxNGItZDk5ZjQ1NmJhODQ1XkEyXkFqcGc@._V1_QL75_UX328_.jpg"
+  },
+  {
+    "id": "the-odyssey",
+    "title": "The Odyssey",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Christopher Nolan",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Adventure", "Drama", "Fantasy"],
+    "backdropColor": "linear-gradient(135deg, #1a3a5c 0%, #0a1628 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33764258/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BOGM0NDE2NWEtZjEzNy00YjQwLTlkMDctM2ZmMTc4NTU1MWYzXkEyXkFqcGc@._V1_QL75_UX328_.jpg"
   }
 ]
