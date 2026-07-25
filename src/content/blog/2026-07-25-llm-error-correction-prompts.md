@@ -4,6 +4,7 @@ pubDate: 2026-07-25
 description: "When an LLM fails, should you ask 'did you make sure?' or just repeat the instruction? Eight models gave opposite answers. The real reason reveals something structural about how these things work."
 draft: false
 tags: ["ai", "llm", "prompt-engineering", "sycophancy", "self-correction", "rlhf"]
+audioUrl: "https://file.duklee.net/audio/2026-07-25-llm-error-correction-prompts.wav"
 ---
 
 Here's a question that sounds trivial but isn't: when an LLM fails at a task, what's the better prompt to fix it?

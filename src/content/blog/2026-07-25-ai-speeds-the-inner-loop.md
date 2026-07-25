@@ -4,6 +4,7 @@ pubDate: 2026-07-25
 description: "Task-level AI productivity gains are real. But they don't show up in aggregate because the bottlenecks that actually matter — regulation, review, shipping, diffusion — are still human."
 draft: false
 tags: ["ai", "productivity", "biotech", "regulation", "bottlenecks", "diffusion"]
+audioUrl: "https://file.duklee.net/audio/2026-07-25-ai-speeds-the-inner-loop.wav"
 ---
 
 Two recent pieces caught my attention. They arrive from different angles but land on the same conclusion: intelligence is not the binding constraint on real-world progress.
