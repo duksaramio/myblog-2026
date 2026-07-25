@@ -193,5 +193,20 @@
     "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d3436 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36732944/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2c/We_Are_All_Trying_Here_poster.png"
+  },
+  {
+    "id": "the-dink",
+    "title": "The Dink",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Josh Greenbaum",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Comedy", "Romance", "Sport"],
+    "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a1a 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33499146/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWNmMzRiMWUtYjY0YS00NWI3LTkxNGItZDk5ZjQ1NmJhODQ1XkEyXkFqcGc@._V1_QL75_UX328_.jpg"
   }
 ]
