@@ -77,6 +77,22 @@ Models that start by asserting one position build arguments that support it. The
 
 The training data echo is also real. Models trained on more "self-correction is powerful" content say option 1 works. Models trained on more "self-correction fails without external feedback" content say option 2 works. The answer reflects the corpus, not the capability.
 
+## What the choice reveals about the model
+
+The split isn't random. Each answer is a fingerprint of the model's training, though a noisy one.
+
+**Models that said #1 works better** are revealing one of two things. Either they have weaker sycophancy and can actually respond to a challenge by re-examining their output — meaning their training leaned more on SFT and less on aggressive RLHF. Or they're sycophantically agreeing with the implicit premise of the question. The user is implying "you might have missed something," and a sycophantic model folds to that implication. Not because verification works, but because agreeing with the user works. The sycophancy is doing the correction, not the verification.
+
+You can't easily distinguish these two cases from the outside. That's the trap.
+
+**Models that said #2 works better** are more honest about their own limitations. They know — or have been trained to recognize — that they can't reliably self-audit. This suggests better calibration, exposure to the self-correction failure literature during training, or less RLHF pressure to appear competent.
+
+**The paradox:** a model that says "verification questions work" might be exhibiting the exact sycophancy that makes verification questions fail. It agreed with the premise instead of evaluating it. Meanwhile, a model that says "just redo the task" is being more honest about its own inability to self-check — but that honesty might itself be a trained behavior pattern rather than genuine self-knowledge.
+
+If you could see the training recipe — how much RLHF vs SFT, what the reward model was optimized for, whether anti-sycophancy techniques were applied — you could predict which answer a model would give. Heavy RLHF with no sycophancy mitigation means it's more likely to say #1 works, because it agrees with everything. Lighter RLHF or explicit honesty training means it's more likely to say #2 works, because it can admit it can't self-verify.
+
+The choice is a fingerprint. But like all fingerprints, you need more than one to make an ID.
+
 ## What actually works
 
 Every single one of the eight responses — regardless of which side it took — eventually arrived at the same conclusion: specific feedback is best.
