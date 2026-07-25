@@ -253,5 +253,20 @@
     "backdropColor": "linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%)",
     "externalUrl": "https://www.imdb.com/title/tt13964560/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTZmMTQ5OTEtYzg2Mi00ZmJlLThlZjQtYWVjYzQxYmIyNWViXkEyXkFqcGc@._V1_QL75_UX327_.jpg"
+  },
+  {
+    "id": "perfect-days",
+    "title": "Perfect Days",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2023,
+    "creator": "Wim Wenders",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-07-25",
+    "genres": ["Drama", "Japanese", "Psychological Drama"],
+    "backdropColor": "linear-gradient(135deg, #4a7c59 0%, #2d4a3e 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27503384/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDljZDA5NTctYzI2Yy00MWM0LTk1NjctNTAxZWRhMzVmMTg4XkEyXkFqcGc@._V1_QL75_UX328_.jpg"
   }
 ]
