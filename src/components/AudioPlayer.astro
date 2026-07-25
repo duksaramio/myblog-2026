@@ -86,6 +86,15 @@ const { audioUrl, title } = Astro.props;
 			</div>
 		</div>
 	</div>
+
+	<div class="player-footer-notice">
+		<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="notice-icon" aria-hidden="true">
+			<circle cx="12" cy="12" r="10"></circle>
+			<line x1="12" y1="16" x2="12" y2="12"></line>
+			<line x1="12" y1="8" x2="12.01" y2="8"></line>
+		</svg>
+		<span>Audio is automatically generated using Qwen 3 TTS with my sample voice</span>
+	</div>
 </div>
 
 <style>
@@ -413,6 +422,23 @@ const { audioUrl, title } = Astro.props;
 			order: 2;
 			margin-left: auto;
 		}
+	}
+
+	.player-footer-notice {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 11px;
+		color: var(--text-muted);
+		opacity: 0.85;
+		padding-top: 8px;
+		border-top: 1px dashed var(--border-color);
+		line-height: 1.4;
+	}
+
+	.notice-icon {
+		flex-shrink: 0;
+		opacity: 0.75;
 	}
 </style>
 
