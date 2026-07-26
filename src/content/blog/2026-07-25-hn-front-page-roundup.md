@@ -4,6 +4,7 @@ pubDate: 2026-07-25
 description: "Claude Opus 5 dominates HN, Neal Stephenson defends handwriting, Android locks down ADB, and a security camera ships with admin tokens baked in."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://file.duklee.net/audio/2026-07-25-hn-front-page-roundup.wav"
 ---
 
 ## Claude Opus 5 — 1725 pts
