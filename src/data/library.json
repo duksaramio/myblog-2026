@@ -328,5 +328,20 @@
     "backdropColor": "linear-gradient(135deg, #d4a574 0%, #8b6914 100%)",
     "externalUrl": "https://www.amazon.com/dp/0679720200",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0679720200-L.jpg"
+  },
+  {
+    "id": "my-liberation-notes",
+    "title": "My Liberation Notes",
+    "type": "tv",
+    "status": "watching",
+    "releaseYear": 2022,
+    "creator": "Park Hae-young",
+    "rating": 8,
+    "review": "",
+    "watchDate": "2026-07-27",
+    "genres": ["Drama", "Korean Drama", "Slice of Life"],
+    "backdropColor": "linear-gradient(135deg, #556b2f 0%, #2f4f4f 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt15146130/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/olmfFeKZyQoTwj9Zo3Y5IUaioPB.jpg"
   }
 ]
