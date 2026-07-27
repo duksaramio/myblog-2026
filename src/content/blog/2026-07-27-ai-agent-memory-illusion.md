@@ -4,6 +4,7 @@ pubDate: 2026-07-27
 description: "The biggest misconception about coding agents: saving a lesson to a file means the agent learned it. Here's why memory doesn't equal intelligence, and what actually works."
 draft: false
 tags: ["ai", "llm", "agents", "memory", "prompt-engineering", "hermes"]
+audioUrl: "https://file.duklee.net/audio/2026-07-27-ai-agent-memory-illusion.wav"
 ---
 
 Here's a scenario that's become painfully common.
