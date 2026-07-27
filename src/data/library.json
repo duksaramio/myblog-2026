@@ -283,5 +283,20 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.amazon.com/dp/037462156X",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/037462156X-L.jpg"
+  },
+  {
+    "id": "hands-on-machine-learning-with-scikit-learn-and-pytorch",
+    "title": "Hands-On Machine Learning with Scikit-Learn and PyTorch: Concepts, Tools, and Techniques to Build Intelligent Systems",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2025,
+    "creator": "Aurélien Géron",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-07-27",
+    "genres": ["Machine Learning", "AI", "Programming"],
+    "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
+    "externalUrl": "https://www.amazon.com/dp/B0F2SG98Q9",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/B0F2SG98Q9-L.jpg"
   }
 ]
