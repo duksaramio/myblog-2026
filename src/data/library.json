@@ -313,5 +313,20 @@
     "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #4a6741 100%)",
     "externalUrl": "https://www.amazon.com/dp/0525564454",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0525564454-L.jpg"
+  },
+  {
+    "id": "the-stranger",
+    "title": "The Stranger",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 1989,
+    "creator": "Albert Camus",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Philosophy", "French Literature", "Existentialism"],
+    "backdropColor": "linear-gradient(135deg, #d4a574 0%, #8b6914 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0679720200",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0679720200-L.jpg"
   }
 ]
