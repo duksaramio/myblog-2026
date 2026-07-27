@@ -298,5 +298,20 @@
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/dp/B0F2SG98Q9",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/B0F2SG98Q9-L.jpg"
+  },
+  {
+    "id": "the-myth-of-sisyphus",
+    "title": "The Myth of Sisyphus",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 2018,
+    "creator": "Albert Camus",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Philosophy", "Existentialism", "Essays"],
+    "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #4a6741 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0525564454",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0525564454-L.jpg"
   }
 ]
