@@ -4,6 +4,7 @@ pubDate: 2026-07-28
 description: "Pre-training builds a next-token predictor. Post-training turns it into something useful. Here's how SFT, preference optimization, distillation, and RL actually work — and when to use each."
 draft: false
 tags: ["ai", "llm", "machine-learning", "post-training", "rl", "dpo", "grpo", "reasoning"]
+audioUrl: "https://file.duklee.net/audio/2026-07-28-post-training-methods-llms.wav"
 ---
 
 A pre-trained language model is a next-token predictor with encyclopedic knowledge and zero social skills. It doesn't know how to answer questions, refuse harmful requests, format JSON, or reason through a math problem. It just autocompletes text.
