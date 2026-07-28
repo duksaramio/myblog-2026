@@ -1,6 +1,6 @@
 ---
 title: "Park Hae-young Doesn't Write About Love. She Writes About Worship."
-pubDate: 2026-07-27
+pubDate: 2026-07-28
 description: "After finishing three of her dramas in two weeks, I realized Park Hae-young's characters don't try to change each other. They just exist for each other. That's the whole philosophy."
 draft: false
 tags: ["korean-drama", "park-hae-young", "philosophy", "my-mister", "my-liberation-notes", "camus"]
