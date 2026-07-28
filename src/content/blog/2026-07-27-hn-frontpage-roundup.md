@@ -4,6 +4,7 @@ pubDate: 2026-07-27
 description: "Today's top HN stories: Kimi K3's open-weight frontier model debut, a skeptical teardown of the Bun-in-Rust rewrite, PGSimCity's PostgreSQL visualization, Wero payments at Decathlon, and Moonshot's technical report."
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://file.duklee.net/audio/2026-07-27-hn-frontpage-roundup.wav"
 ---
 
 # Hacker News Front Page Roundup — July 27, 2026
