@@ -4,6 +4,7 @@ pubDate: 2026-07-28
 description: "7.1 earthquake hits Kumamoto, Japan; HIV vaccine breakthrough in primates; EU citizens fight digital ID mandates; and the linear attention architecture wars heat up"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://file.duklee.net/audio/2026-07-28-hn-frontpage-roundup.wav"
 ---
 
 Six stories crossed 200 points today. Here's what the front page cared about.
