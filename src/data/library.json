@@ -333,7 +333,7 @@
     "id": "my-liberation-notes",
     "title": "My Liberation Notes",
     "type": "tv",
-    "status": "watching",
+    "status": "completed",
     "releaseYear": 2022,
     "creator": "Park Hae-young",
     "rating": 8,
@@ -343,5 +343,20 @@
     "backdropColor": "linear-gradient(135deg, #556b2f 0%, #2f4f4f 100%)",
     "externalUrl": "https://www.imdb.com/title/tt15146130/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/olmfFeKZyQoTwj9Zo3Y5IUaioPB.jpg"
+  },
+  {
+    "id": "we-are-all-trying-here",
+    "title": "We Are All Trying Here",
+    "type": "tv",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Park Hae-young",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-07-27",
+    "genres": ["Drama", "Korean Drama", "Black Comedy"],
+    "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d4a3e 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36732944/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/5Znl8HNStdoHHy0hqdljpDZnVRn.jpg"
   }
 ]
