@@ -4,6 +4,7 @@ pubDate: 2026-07-28
 description: "After finishing three of her dramas in two weeks, I realized Park Hae-young's characters don't try to change each other. They just exist for each other. That's the whole philosophy."
 draft: false
 tags: ["korean-drama", "park-hae-young", "philosophy", "my-mister", "my-liberation-notes", "camus"]
+audioUrl: "https://file.duklee.net/audio/2026-07-28-park-hae-young-philosophy-of-worship.wav"
 ---
 
 I just finished watching My Liberation Notes. Written by Park Hae-young. And it's a beauty.
