@@ -130,7 +130,7 @@ const seo = {
     <div class="media-grid" id="media-grid">
       {library.map((item, index) => {
         const formattedDate = item.watchDate 
-          ? new Date(item.watchDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+          ? new Date(item.watchDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })
           : item.type === 'book' ? 'Not read yet' : 'Not watched yet';
 
         // Creator label based on type
