@@ -358,5 +358,20 @@
     "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d4a3e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36732944/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/5Znl8HNStdoHHy0hqdljpDZnVRn.jpg"
+  },
+  {
+    "id": "on-trails",
+    "title": "On Trails: An Exploration",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 2016,
+    "creator": "Robert Moor",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Nonfiction", "Nature", "Philosophy"],
+    "backdropColor": "linear-gradient(135deg, #5a7247 0%, #2d4a1e 100%)",
+    "externalUrl": "https://www.amazon.com/dp/1476739234",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739234-L.jpg"
   }
 ]
