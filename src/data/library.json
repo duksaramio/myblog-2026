@@ -373,5 +373,20 @@
     "backdropColor": "linear-gradient(135deg, #5a7247 0%, #2d4a1e 100%)",
     "externalUrl": "https://www.amazon.com/dp/1476739234",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739234-L.jpg"
+  },
+  {
+    "id": "in-trees",
+    "title": "In Trees: An Exploration",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 2025,
+    "creator": "Robert Moor",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Nonfiction", "Nature", "Science"],
+    "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a15 100%)",
+    "externalUrl": "https://www.amazon.com/dp/1476739250",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739250-L.jpg"
   }
 ]
