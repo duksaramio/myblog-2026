@@ -403,5 +403,20 @@
     "backdropColor": "linear-gradient(135deg, #2c1810 0%, #1a0a05 100%)",
     "externalUrl": "https://www.imdb.com/title/tt39143902/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Leviticus_%28film%29_poster.jpg"
+  },
+  {
+    "id": "a-thousand-brains",
+    "title": "A Thousand Brains: A New Theory of Intelligence",
+    "type": "book",
+    "status": "plan-to-read",
+    "releaseYear": 2021,
+    "creator": "Jeff Hawkins",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Neuroscience", "AI", "Science"],
+    "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
+    "externalUrl": "https://www.amazon.com/dp/1541675797",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1541675797-L.jpg"
   }
 ]
