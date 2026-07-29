@@ -388,5 +388,20 @@
     "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a15 100%)",
     "externalUrl": "https://www.amazon.com/dp/1476739250",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739250-L.jpg"
+  },
+  {
+    "id": "leviticus",
+    "title": "Leviticus",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Adrian Chiarella",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-07-28",
+    "genres": ["Horror", "Coming-of-Age", "Supernatural"],
+    "backdropColor": "linear-gradient(135deg, #2c1810 0%, #1a0a05 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt39143902/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Leviticus_%28film%29_poster.jpg"
   }
 ]
