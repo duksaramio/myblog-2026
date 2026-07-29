@@ -4,7 +4,7 @@ pubDate: 2026-07-29
 description: "The context window went from 2K to 10M tokens in five years. The math, the engineering breakthroughs, and the dirty secret nobody puts on the spec sheet — your model can see 1M tokens, but it can't actually use them all."
 draft: false
 tags: ["ai", "llm", "context-window", "attention", "rag", "transformers", "agent-architecture"]
-audioUrl: ""
+audioUrl: "https://file.duklee.net/audio/2026-07-29-llm-context-windows-deep-dive.wav"
 ---
 
 The context window went from 2,048 tokens on GPT-3 to 10 million tokens on Llama 4 Scout in five years. That's a 5,000× jump. Frontier models now advertise windows that can hold entire codebases, multi-volume books, or hours of audio and video in a single prompt.
