@@ -418,5 +418,20 @@
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/dp/1541675797",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1541675797-L.jpg"
+  },
+  {
+    "id": "colony",
+    "title": "Colony",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Yeon Sang-ho",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": ["Horror", "Sci-Fi", "Thriller"],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt34385135/",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Colony_%282026_film%29_poster.png"
   }
 ]
