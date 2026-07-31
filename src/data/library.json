@@ -9,7 +9,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Philosophy", "Science", "Math"],
+    "genres": [
+      "Philosophy",
+      "Science",
+      "Math"
+    ],
     "backdropColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     "externalUrl": "https://www.amazon.com/dp/0465030793",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0465030793-L.jpg"
@@ -24,7 +28,11 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Dark Comedy", "Comedy", "Drama"],
+    "genres": [
+      "Dark Comedy",
+      "Comedy",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #c6a059 0%, #3d2b1f 100%)",
     "externalUrl": "https://www.imdb.com/title/tt34966562/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTkzYzk4OTItYmYzMi00YTkxLWI0NjEtMGExMjU5ZDQwYTJhXkEyXkFqcGc@._V1_.jpg"
@@ -39,7 +47,12 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-15",
-    "genres": ["Comedy", "Drama", "Mystery", "Thriller"],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
     "externalUrl": "https://www.imdb.com/title/tt35946742/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/f9U0oTlvLlqbww2Gm5j8Lhf1r9W.jpg"
@@ -54,7 +67,10 @@
     "rating": 6,
     "review": "",
     "watchDate": "2026-07-11",
-    "genres": ["Horror", "Thriller"],
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33763941/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzgwNWY1YzgtOWU2NC00YTU2LTk4OGYtYzNkZTY2ZWQ2MzllXkEyXkFqcGc@._V1_.jpg"
@@ -69,7 +85,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-16",
-    "genres": ["Creativity", "Psychology", "Business"],
+    "genres": [
+      "Creativity",
+      "Psychology",
+      "Business"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.amazon.com/dp/0593715713",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0593715713-L.jpg"
@@ -84,7 +104,11 @@
     "rating": 8,
     "review": "",
     "watchDate": "2026-07-16",
-    "genres": ["Action", "Crime", "Thriller"],
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32135632/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzYwMWFkNmQtMGMzOC00Y2EyLTk3NGItNzNhYTg2MTAyZjBkXkEyXkFqcGc@._V1_.jpg"
@@ -99,7 +123,11 @@
     "rating": 4,
     "review": "",
     "watchDate": "2026-07-17",
-    "genres": ["Mystery", "Crime", "Thriller"],
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36364892/",
     "coverUrl": "https://www.moviemeter.com/images/cover/1176000/1176126.jpg"
@@ -114,7 +142,11 @@
     "rating": 8,
     "review": "Probably the best movie I've seen this year so far.",
     "watchDate": "2026-07-17",
-    "genres": ["Crime", "Drama", "Music"],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Music"
+    ],
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33296751/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Tuner_poster.jpg"
@@ -129,7 +161,10 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-17",
-    "genres": ["Thriller", "Horror"],
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt30217600/",
     "coverUrl": "https://resizing.flixster.com/6Cw7dYe7K-L4kf2lFDNmK7mdtus=/206x305/v2/https://resizing.flixster.com/Q5k7k_vTJBaqkJcHU2WEhzMuujk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgxNDVhZWI4LTFiNjgtNGZiNy1iM2U4LTUwMDFkZDA0NTkwZi5qcGc="
@@ -144,7 +179,11 @@
     "rating": 4,
     "review": "",
     "watchDate": "2026-07-18",
-    "genres": ["Thriller", "Crime", "Drama"],
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0896798/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Cleaner_%28film%29_poster.jpg"
@@ -159,7 +198,11 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-18",
-    "genres": ["Supernatural", "Thriller", "Crime"],
+    "genres": [
+      "Supernatural",
+      "Thriller",
+      "Crime"
+    ],
     "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #2d3436 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0119099/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Fallen_film_poster.jpg"
@@ -174,7 +217,11 @@
     "rating": 10,
     "review": "",
     "watchDate": "2026-07-19",
-    "genres": ["Drama", "Melodrama", "Slice of Life"],
+    "genres": [
+      "Drama",
+      "Melodrama",
+      "Slice of Life"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 50%, #b2bec3 100%)",
     "externalUrl": "https://www.imdb.com/title/tt7923710/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/MyMisterposter.jpg"
@@ -189,7 +236,11 @@
     "rating": 8,
     "review": "",
     "watchDate": "2026-07-22",
-    "genres": ["Black Comedy", "Slice of Life", "Melodrama"],
+    "genres": [
+      "Black Comedy",
+      "Slice of Life",
+      "Melodrama"
+    ],
     "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d3436 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36732944/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2c/We_Are_All_Trying_Here_poster.png"
@@ -204,7 +255,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Comedy", "Romance", "Sport"],
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sport"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a1a 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33499146/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWNmMzRiMWUtYjY0YS00NWI3LTkxNGItZDk5ZjQ1NmJhODQ1XkEyXkFqcGc@._V1_QL75_UX328_.jpg"
@@ -219,7 +274,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Adventure", "Drama", "Fantasy"],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
     "backdropColor": "linear-gradient(135deg, #1a3a5c 0%, #0a1628 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33764258/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOGM0NDE2NWEtZjEzNy00YjQwLTlkMDctM2ZmMTc4NTU1MWYzXkEyXkFqcGc@._V1_QL75_UX328_.jpg"
@@ -234,7 +293,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["AI", "Machine Learning", "NLP"],
+    "genres": [
+      "AI",
+      "Machine Learning",
+      "NLP"
+    ],
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/Domain-Specific-Language-Models-Guglielmo-Iozzia/dp/1633436705/",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1633436705-L.jpg"
@@ -249,7 +312,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Horror", "Sci-Fi", "Thriller"],
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%)",
     "externalUrl": "https://www.imdb.com/title/tt13964560/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTZmMTQ5OTEtYzg2Mi00ZmJlLThlZjQtYWVjYzQxYmIyNWViXkEyXkFqcGc@._V1_QL75_UX327_.jpg"
@@ -264,7 +331,11 @@
     "rating": 7,
     "review": "",
     "watchDate": "2026-07-25",
-    "genres": ["Drama", "Japanese", "Psychological Drama"],
+    "genres": [
+      "Drama",
+      "Japanese",
+      "Psychological Drama"
+    ],
     "backdropColor": "linear-gradient(135deg, #4a7c59 0%, #2d4a3e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27503384/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDljZDA5NTctYzI2Yy00MWM0LTk1NjctNTAxZWRhMzVmMTg4XkEyXkFqcGc@._V1_QL75_UX328_.jpg"
@@ -279,7 +350,11 @@
     "rating": 5,
     "review": "Repetitive and nothing new.",
     "watchDate": "2026-07-26",
-    "genres": ["Technology", "AI", "Society"],
+    "genres": [
+      "Technology",
+      "AI",
+      "Society"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.amazon.com/dp/037462156X",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/037462156X-L.jpg"
@@ -294,7 +369,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-27",
-    "genres": ["Machine Learning", "AI", "Programming"],
+    "genres": [
+      "Machine Learning",
+      "AI",
+      "Programming"
+    ],
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/dp/B0F2SG98Q9",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/B0F2SG98Q9-L.jpg"
@@ -309,7 +388,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Philosophy", "Existentialism", "Essays"],
+    "genres": [
+      "Philosophy",
+      "Existentialism",
+      "Essays"
+    ],
     "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #4a6741 100%)",
     "externalUrl": "https://www.amazon.com/dp/0525564454",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0525564454-L.jpg"
@@ -324,7 +407,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Philosophy", "French Literature", "Existentialism"],
+    "genres": [
+      "Philosophy",
+      "French Literature",
+      "Existentialism"
+    ],
     "backdropColor": "linear-gradient(135deg, #d4a574 0%, #8b6914 100%)",
     "externalUrl": "https://www.amazon.com/dp/0679720200",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0679720200-L.jpg"
@@ -339,7 +426,11 @@
     "rating": 8,
     "review": "",
     "watchDate": "2026-07-27",
-    "genres": ["Drama", "Korean Drama", "Slice of Life"],
+    "genres": [
+      "Drama",
+      "Korean Drama",
+      "Slice of Life"
+    ],
     "backdropColor": "linear-gradient(135deg, #556b2f 0%, #2f4f4f 100%)",
     "externalUrl": "https://www.imdb.com/title/tt15146130/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/olmfFeKZyQoTwj9Zo3Y5IUaioPB.jpg"
@@ -354,7 +445,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-27",
-    "genres": ["Drama", "Korean Drama", "Black Comedy"],
+    "genres": [
+      "Drama",
+      "Korean Drama",
+      "Black Comedy"
+    ],
     "backdropColor": "linear-gradient(135deg, #4a6741 0%, #2d4a3e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36732944/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/5Znl8HNStdoHHy0hqdljpDZnVRn.jpg"
@@ -369,7 +464,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Nonfiction", "Nature", "Philosophy"],
+    "genres": [
+      "Nonfiction",
+      "Nature",
+      "Philosophy"
+    ],
     "backdropColor": "linear-gradient(135deg, #5a7247 0%, #2d4a1e 100%)",
     "externalUrl": "https://www.amazon.com/dp/1476739234",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739234-L.jpg"
@@ -384,7 +483,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Nonfiction", "Nature", "Science"],
+    "genres": [
+      "Nonfiction",
+      "Nature",
+      "Science"
+    ],
     "backdropColor": "linear-gradient(135deg, #2d5a27 0%, #1a3a15 100%)",
     "externalUrl": "https://www.amazon.com/dp/1476739250",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1476739250-L.jpg"
@@ -399,7 +502,11 @@
     "rating": 6,
     "review": "",
     "watchDate": "2026-07-28",
-    "genres": ["Horror", "Coming-of-Age", "Supernatural"],
+    "genres": [
+      "Horror",
+      "Coming-of-Age",
+      "Supernatural"
+    ],
     "backdropColor": "linear-gradient(135deg, #2c1810 0%, #1a0a05 100%)",
     "externalUrl": "https://www.imdb.com/title/tt39143902/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Leviticus_%28film%29_poster.jpg"
@@ -414,7 +521,11 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Neuroscience", "AI", "Science"],
+    "genres": [
+      "Neuroscience",
+      "AI",
+      "Science"
+    ],
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/dp/1541675797",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1541675797-L.jpg"
@@ -429,9 +540,32 @@
     "rating": 0,
     "review": "",
     "watchDate": "",
-    "genres": ["Horror", "Sci-Fi", "Thriller"],
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt34385135/",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Colony_%282026_film%29_poster.png"
+  },
+  {
+    "id": "the-devils-mouth",
+    "title": "The Devil's Mouth",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Jeff Wadlow",
+    "rating": 2,
+    "review": "",
+    "watchDate": "2026-07-31",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Survival"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36958312/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg"
   }
 ]
