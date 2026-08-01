@@ -4,6 +4,7 @@ pubDate: 2026-08-01
 description: "Twelve models, same question about prompting for neutrality and low hallucination. They converged on identical templates, identical personas, identical advice. The meta-irony is deafening."
 draft: false
 tags: ["ai", "llm", "prompt-engineering", "sycophancy", "hallucination", "rlhf"]
+audioUrl: "https://file.duklee.net/audio/2026-08-01-twelve-llms-same-answer-prompting-neutrality.wav"
 ---
 
 I asked twelve different LLMs the same question: how do you prompt for neutrality, objectivity, and reduced hallucinations? Every single one gave me a comprehensive, well-structured answer. Every single one agreed with my premise. Every single one gave me essentially the same answer.
