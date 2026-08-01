@@ -1,7 +1,7 @@
 ---
-title: "I Asked 12 LLMs How to Stop LLMs From Lying. They All Gave Me the Same Answer."
+title: "Prompting LLMs for Neutrality and Low Hallucination: What Works and What Doesn't"
 pubDate: 2026-08-01
-description: "Twelve models, same question about prompting for neutrality and low hallucination. They converged on identical templates, identical personas, identical advice. The meta-irony is deafening."
+description: "Strip leading language, assign an auditor persona, force counter-arguments, demand confidence scores. Every model gives the same advice. Most of it works — but the parts that don't matter more than you'd think."
 draft: false
 tags: ["ai", "llm", "prompt-engineering", "sycophancy", "hallucination", "rlhf"]
 audioUrl: "https://file.duklee.net/audio/2026-08-01-twelve-llms-same-answer-prompting-neutrality.wav"
