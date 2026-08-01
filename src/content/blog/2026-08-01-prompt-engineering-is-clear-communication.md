@@ -4,6 +4,7 @@ pubDate: 2026-08-01
 description: "The best techniques for talking to LLMs are identical to the best techniques for talking to people. You don't need two modes — you need one good habit."
 draft: false
 tags: ["ai", "llm", "prompt-engineering", "communication", "writing"]
+audioUrl: "https://file.duklee.net/audio/2026-08-01-prompt-engineering-is-clear-communication.wav"
 ---
 
 Here's a thought experiment. Imagine sending this Slack message to a coworker:
