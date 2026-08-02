@@ -1,0 +1,130 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import profile from '../data/profile.json';
+
+const nakseojangEntry = await getEntry('nakseojang', 'index');
+const { Content } = nakseojangEntry ? await render(nakseojangEntry) : { Content: null };
+
+const seo = {
+	og: {
+		...profile.seo.og,
+		title: `낙서장 | ${profile.site.title}`,
+		description: nakseojangEntry?.data.description || "머릿속에 떠오르는 생각을 자유롭게 기록하는 공간",
+	},
+	twitter: {
+		...profile.seo.twitter,
+		title: `낙서장 | ${profile.site.title}`,
+		description: nakseojangEntry?.data.description || "머릿속에 떠오르는 생각을 자유롭게 기록하는 공간",
+	},
+};
+---
+
+<BaseLayout title={`낙서장 | ${profile.site.title}`} description="머릿속에 떠오르는 생각을 자유롭게 기록하는 공간" seo={seo}>
+	<Header logo={profile.header.logo} />
+
+	<main>
+		<article class="nakseojang-article">
+			<header class="nakseojang-header">
+				<h1 class="page-title">{nakseojangEntry?.data.title || '낙서장'}</h1>
+				{nakseojangEntry?.data.description && (
+					<p class="subtitle">{nakseojangEntry.data.description}</p>
+				)}
+			</header>
+
+			<hr class="divider" />
+
+			<div class="nakseojang-content">
+				{Content ? <Content /> : <p class="empty-state">src/content/nakseojang/index.md 파일 내용을 추가해주세요.</p>}
+			</div>
+		</article>
+	</main>
+</BaseLayout>
+
+<style>
+	.nakseojang-article {
+		max-width: 680px;
+		margin-bottom: 40px;
+	}
+
+	.nakseojang-header {
+		margin-bottom: 20px;
+	}
+
+	.page-title {
+		font-family: var(--font-serif);
+		font-size: 32px;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+
+	.subtitle {
+		font-size: 14px;
+		color: var(--text-muted);
+		line-height: 1.6;
+	}
+
+	.divider {
+		border: none;
+		border-top: 1px solid var(--border-color);
+		margin-bottom: 32px;
+	}
+
+	.nakseojang-content {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		line-height: 1.8;
+		color: var(--text-color);
+	}
+
+	.nakseojang-content :global(h1),
+	.nakseojang-content :global(h2),
+	.nakseojang-content :global(h3) {
+		font-family: var(--font-serif);
+		font-weight: 600;
+		margin-top: 36px;
+		margin-bottom: 16px;
+	}
+
+	.nakseojang-content :global(h2) {
+		font-size: 22px;
+	}
+
+	.nakseojang-content :global(h3) {
+		font-size: 18px;
+	}
+
+	.nakseojang-content :global(p) {
+		margin-bottom: 16px;
+	}
+
+	.nakseojang-content :global(hr) {
+		border: none;
+		border-top: 1px dashed var(--border-color);
+		margin: 32px 0;
+	}
+
+	.nakseojang-content :global(blockquote) {
+		border-left: 2px solid var(--text-color);
+		padding-left: 16px;
+		margin: 20px 0;
+		font-style: italic;
+		color: var(--text-muted);
+	}
+
+	.nakseojang-content :global(ul),
+	.nakseojang-content :global(ol) {
+		margin-bottom: 16px;
+		padding-left: 24px;
+	}
+
+	.nakseojang-content :global(li) {
+		margin-bottom: 6px;
+	}
+
+	.empty-state {
+		color: var(--text-muted);
+		font-style: italic;
+	}
+</style>

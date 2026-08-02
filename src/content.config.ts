@@ -14,4 +14,13 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const nakseojang = defineCollection({
+	loader: glob({ pattern: 'index.md', base: './src/content/nakseojang' }),
+	schema: z.object({
+		title: z.string().optional().default('낙서장'),
+		description: z.string().optional().default(''),
+	}),
+});
+
+export const collections = { blog, nakseojang };
+

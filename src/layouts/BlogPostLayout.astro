@@ -9,9 +9,11 @@ interface Props {
 	description: string;
 	pubDate: Date;
 	audioUrl?: string;
+	backUrl?: string;
+	backLabel?: string;
 }
 
-const { title, description, pubDate, audioUrl } = Astro.props;
+const { title, description, pubDate, audioUrl, backUrl = '/', backLabel = '← Back to Home' } = Astro.props;
 
 const blogSeo = {
 	og: {
@@ -56,7 +58,7 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		</article>
 
 		<div class="back-home">
-			<a href="/" class="service-link">← Back to Home</a>
+			<a href={backUrl} class="service-link">{backLabel}</a>
 		</div>
 
 		<!-- Lightbox Overlay -->
