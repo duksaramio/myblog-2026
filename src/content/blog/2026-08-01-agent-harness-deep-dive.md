@@ -4,6 +4,7 @@ pubDate: 2026-08-01
 description: "Agent = Model + Harness. The equation is real. But the term has become a vendor magnet, and most 'harnesses' are just frameworks with new packaging."
 draft: false
 tags: ["ai", "agent-harness", "llm", "agent-architecture", "context-engineering", "mlops"]
+audioUrl: "https://file.duklee.net/audio/2026-08-01-agent-harness-deep-dive.wav"
 ---
 
 Every six months, the AI industry finds a new term to colonize. First it was "prompt engineering." Then "context engineering." Now it's **harness engineering** — and every vendor from Microsoft to a three-person YC startup is suddenly selling you an agent harness.
