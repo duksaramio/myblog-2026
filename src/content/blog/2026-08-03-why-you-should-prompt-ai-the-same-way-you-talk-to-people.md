@@ -4,6 +4,7 @@ pubDate: 2026-08-03
 description: "Good prompting is just good communication — six universal principles for talking to AI the way you'd talk to anyone, from stating intent first to calibrating to the stakes."
 draft: false
 tags: ["ai", "llm", "prompting", "communication", "productivity"]
+audioUrl: "https://file.duklee.net/2026-08-03-why-you-should-prompt-ai-the-same-way-you-talk-to-people.wav"
 ---
 
 Most AI advice tells you to learn a completely new dialect: "prompt engineering." You’re told to memorize specific magic words, complex system prompts, or hidden hacks to make Large Language Models (LLMs) do what you want.
