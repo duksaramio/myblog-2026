@@ -63,7 +63,7 @@
     "type": "movie",
     "status": "completed",
     "releaseYear": 2026,
-    "creator": "André Øvredal",
+    "creator": "Andr\u00e9 \u00d8vredal",
     "rating": 6,
     "review": "",
     "watchDate": "2026-07-11",
@@ -365,7 +365,7 @@
     "type": "book",
     "status": "reading",
     "releaseYear": 2025,
-    "creator": "Aurélien Géron",
+    "creator": "Aur\u00e9lien G\u00e9ron",
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-27",
@@ -567,5 +567,25 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36958312/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg"
+  },
+  {
+    "id": "soulm8te",
+    "title": "Soulm8te",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Kate Dolan",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-03",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller",
+      "AI"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt32654916/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNmY1NmU5NjMtYjU2YS00YjI5LWExNDItNDA3N2M5YWJiZDhiXkEyXkFqcGc@._V1_.jpg"
   }
 ]
