@@ -587,5 +587,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32654916/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNmY1NmU5NjMtYjU2YS00YjI5LWExNDItNDA3N2M5YWJiZDhiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-gangster-the-cop-the-devil",
+    "title": "The Gangster, the Cop, the Devil",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2019,
+    "creator": "Lee Won-tae",
+    "rating": 8,
+    "review": "",
+    "watchDate": "2026-08-04",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt10208198/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTdjOTAzOTgtNWI1My00YzZkLWI2YWMtYjQ2MTAxOTI4YWQzXkEyXkFqcGc@._V1_.jpg"
   }
 ]
