@@ -663,5 +663,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt15838850/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYTlkZDk1NzUtMWFmZC00NjMzLWExNzEtZTA5N2M2ZDg5MzI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-roundup-no-way-out",
+    "title": "The Roundup: No Way Out",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2023,
+    "creator": "Lee Sang-yong",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-08-05",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt21364552/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWRmZjhhMWMtNzdlMi00YWYzLTgzNzMtM2JlMmVhMjQyNDI1XkEyXkFqcGc@._V1_.jpg"
   }
 ]
