@@ -117,6 +117,16 @@ const seo = {
               <option value="alphabetical">Title: A to Z</option>
             </select>
           </div>
+
+          <!-- Items Per Page Select -->
+          <div class="select-wrapper">
+            <select id="items-per-page" aria-label="Items per page">
+              <option value="12">12 per page</option>
+              <option value="24">24 per page</option>
+              <option value="48">48 per page</option>
+              <option value="all">All items</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -261,6 +271,17 @@ const seo = {
         );
       })}
     </div>
+
+    <!-- Pagination Navigation -->
+    <nav class="pagination-nav" id="pagination-nav" aria-label="Library pagination">
+      <button class="pagination-btn prev" id="prev-page-btn" aria-label="Previous page">
+        ← Prev
+      </button>
+      <div class="pagination-pages" id="pagination-pages"></div>
+      <button class="pagination-btn next" id="next-page-btn" aria-label="Next page">
+        Next →
+      </button>
+    </nav>
 
     <!-- Empty State -->
     <div class="empty-state" id="empty-state" style="display: none;">
@@ -672,6 +693,85 @@ const seo = {
     font-size: 14px;
   }
 
+  /* Pagination Navigation */
+  .pagination-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .pagination-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination-btn:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: var(--underline-hover);
+  }
+
+  .pagination-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .pagination-pages {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .page-num-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    min-width: 32px;
+    height: 32px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+  }
+
+  .page-num-btn:hover:not(.active):not(.ellipsis) {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: var(--underline-hover);
+  }
+
+  .page-num-btn.active {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+    font-weight: 600;
+  }
+
+  .page-num-btn.ellipsis {
+    background: transparent;
+    border: none;
+    cursor: default;
+    padding: 0 4px;
+    color: var(--text-muted);
+  }
+
   /* Modal Details styling */
   .modal {
     display: none;
@@ -947,10 +1047,15 @@ const seo = {
   const statusFilter = document.getElementById('status-filter') as HTMLSelectElement | null;
   const genreFilter = document.getElementById('genre-filter') as HTMLSelectElement | null;
   const sortOrder = document.getElementById('sort-order') as HTMLSelectElement | null;
+  const itemsPerPageSelect = document.getElementById('items-per-page') as HTMLSelectElement | null;
   const tabBtns = document.querySelectorAll('.tab-btn');
   const mediaGrid = document.getElementById('media-grid');
   const emptyState = document.getElementById('empty-state');
   const resultsCounter = document.getElementById('results-counter');
+  const paginationNav = document.getElementById('pagination-nav');
+  const prevPageBtn = document.getElementById('prev-page-btn') as HTMLButtonElement | null;
+  const nextPageBtn = document.getElementById('next-page-btn') as HTMLButtonElement | null;
+  const paginationPages = document.getElementById('pagination-pages');
 
   // Stats elements to update dynamically
   const statTotal = document.getElementById('stat-total');
@@ -961,6 +1066,17 @@ const seo = {
   // Get initial card elements
   const cards = mediaGrid ? Array.from(mediaGrid.querySelectorAll('.media-card')) : [];
   let currentTypeFilter = 'all';
+  let currentPage = 1;
+
+  function scrollToGridTop() {
+    const controlsPanel = document.querySelector('.controls-panel');
+    if (controlsPanel) {
+      const rect = controlsPanel.getBoundingClientRect();
+      if (rect.top < 0) {
+        controlsPanel.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
 
   function updateList() {
     if (!mediaGrid) return;
@@ -969,6 +1085,8 @@ const seo = {
     const status = statusFilter ? statusFilter.value : 'all';
     const genre = genreFilter ? genreFilter.value : 'all';
     const sort = sortOrder ? sortOrder.value : 'latest';
+    const perPageVal = itemsPerPageSelect ? itemsPerPageSelect.value : '12';
+    const itemsPerPage = perPageVal === 'all' ? Infinity : (parseInt(perPageVal, 10) || 12);
 
     // 1. Filter elements
     const filteredCards = cards.filter(card => {
@@ -992,9 +1110,7 @@ const seo = {
                           creator.includes(query) || 
                           cardGenres.some(g => g.includes(query));
 
-      const isVisible = typeMatch && statusMatch && genreMatch && searchMatch;
-      cardElement.style.display = isVisible ? 'flex' : 'none';
-      return isVisible;
+      return typeMatch && statusMatch && genreMatch && searchMatch;
     });
 
     // 2. Sort elements
@@ -1031,20 +1147,100 @@ const seo = {
       }
     });
 
-    // Reorder DOM nodes
+    // 3. Paginate
+    const totalFiltered = filteredCards.length;
+    const totalPages = itemsPerPage === Infinity ? 1 : (Math.ceil(totalFiltered / itemsPerPage) || 1);
+
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = itemsPerPage === Infinity ? totalFiltered : startIndex + itemsPerPage;
+
+    // Update visibility of cards based on pagination
+    const visibleCardsSet = new Set(filteredCards.slice(startIndex, endIndex));
+    cards.forEach(card => {
+      (card as HTMLElement).style.display = visibleCardsSet.has(card) ? 'flex' : 'none';
+    });
+
+    // Reorder DOM nodes to match sort order
     filteredCards.forEach(card => mediaGrid.appendChild(card));
 
-    // 3. Update visibility of empty state and counts
+    // 4. Update visibility of empty state, counts, and pagination
     if (emptyState) {
-      emptyState.style.display = filteredCards.length === 0 ? 'flex' : 'none';
+      emptyState.style.display = totalFiltered === 0 ? 'flex' : 'none';
     }
 
     if (resultsCounter) {
-      resultsCounter.textContent = `Showing ${filteredCards.length} of ${cards.length} items`;
+      if (totalFiltered === 0) {
+        resultsCounter.textContent = 'Showing 0 items';
+      } else {
+        const displayStart = startIndex + 1;
+        const displayEnd = Math.min(endIndex, totalFiltered);
+        resultsCounter.textContent = `Showing ${displayStart}–${displayEnd} of ${totalFiltered} items`;
+      }
     }
 
-    // 4. Update stats dashboard dynamically based on active filter
+    renderPagination(totalPages, totalFiltered);
+
+    // 5. Update stats dashboard dynamically based on active filter
     updateStatsDashboard(filteredCards);
+  }
+
+  function renderPagination(totalPages: number, totalFiltered: number) {
+    if (!paginationNav || !paginationPages) return;
+
+    if (totalFiltered === 0 || totalPages <= 1) {
+      paginationNav.style.display = 'none';
+      return;
+    }
+
+    paginationNav.style.display = 'flex';
+
+    if (prevPageBtn) {
+      prevPageBtn.disabled = currentPage === 1;
+    }
+    if (nextPageBtn) {
+      nextPageBtn.disabled = currentPage === totalPages;
+    }
+
+    paginationPages.innerHTML = '';
+
+    // Calculate pages to show
+    const pagesToShow: (number | string)[] = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pagesToShow.push(i);
+    } else {
+      pagesToShow.push(1);
+      if (currentPage > 3) pagesToShow.push('...');
+
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+      for (let i = start; i <= end; i++) {
+        if (!pagesToShow.includes(i)) pagesToShow.push(i);
+      }
+
+      if (currentPage < totalPages - 2) pagesToShow.push('...');
+      pagesToShow.push(totalPages);
+    }
+
+    pagesToShow.forEach(p => {
+      const btn = document.createElement('button');
+      if (typeof p === 'number') {
+        btn.className = `page-num-btn${p === currentPage ? ' active' : ''}`;
+        btn.textContent = p.toString();
+        btn.addEventListener('click', () => {
+          currentPage = p;
+          updateList();
+          scrollToGridTop();
+        });
+      } else {
+        btn.className = 'page-num-btn ellipsis';
+        btn.textContent = '...';
+        btn.disabled = true;
+      }
+      paginationPages.appendChild(btn);
+    });
   }
 
   function updateStatsDashboard(activeCards: Element[]) {
@@ -1074,10 +1270,30 @@ const seo = {
   }
 
   // Setup Event Listeners for Filters
-  searchInput?.addEventListener('input', updateList);
-  statusFilter?.addEventListener('change', updateList);
-  genreFilter?.addEventListener('change', updateList);
-  sortOrder?.addEventListener('change', updateList);
+  function onFilterChange() {
+    currentPage = 1;
+    updateList();
+  }
+
+  searchInput?.addEventListener('input', onFilterChange);
+  statusFilter?.addEventListener('change', onFilterChange);
+  genreFilter?.addEventListener('change', onFilterChange);
+  sortOrder?.addEventListener('change', onFilterChange);
+  itemsPerPageSelect?.addEventListener('change', onFilterChange);
+
+  prevPageBtn?.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updateList();
+      scrollToGridTop();
+    }
+  });
+
+  nextPageBtn?.addEventListener('click', () => {
+    currentPage++;
+    updateList();
+    scrollToGridTop();
+  });
 
   tabBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -1089,7 +1305,7 @@ const seo = {
       target.classList.add('active');
       target.setAttribute('aria-selected', 'true');
       currentTypeFilter = target.dataset.type || 'all';
-      updateList();
+      onFilterChange();
     });
   });
 
