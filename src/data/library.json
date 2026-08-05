@@ -625,5 +625,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt7468056/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTBlOGY0MDMtZmNmMy00ZjJjLWFhNjctNDg4NmI1M2E1NDRhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "evil-dead-burn",
+    "title": "Evil Dead Burn",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Sébastien Vanicek",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-04",
+    "genres": [
+      "Horror",
+      "Supernatural Horror",
+      "Body Horror"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2c1810 0%, #0c0c0c 50%, #1a0a05 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt31170389/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_.jpg"
   }
 ]
