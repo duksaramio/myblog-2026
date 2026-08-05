@@ -644,5 +644,24 @@
     "backdropColor": "linear-gradient(135deg, #2c1810 0%, #0c0c0c 50%, #1a0a05 100%)",
     "externalUrl": "https://www.imdb.com/title/tt31170389/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-roundup",
+    "title": "The Roundup",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2022,
+    "creator": "Lee Sang-yong",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-04",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt15838850/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BYTlkZDk1NzUtMWFmZC00NjMzLWExNzEtZTA5N2M2ZDg5MzI2XkEyXkFqcGc@._V1_.jpg"
   }
 ]
