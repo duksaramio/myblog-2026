@@ -4,6 +4,7 @@ pubDate: 2026-08-05
 description: "Don't fully accept or reject any outcome. Digest it, assess it, and approach every event as 'it's not nothing.'"
 draft: false
 tags: ["mindset", "life-philosophy", "perspective", "resilience"]
+audioUrl: "https://file.duklee.net/audio/2026-08-05-its-not-nothing.wav"
 ---
 
 "It's not nothing" is how I approach any outcome in my life. You shouldn't completely accept it, nor should you reject it completely. It's always somewhere in the middle.
