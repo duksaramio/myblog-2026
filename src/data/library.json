@@ -682,5 +682,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt21364552/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWRmZjhhMWMtNzdlMi00YWYzLTgzNzMtM2JlMmVhMjQyNDI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-roundup-punishment",
+    "title": "The Roundup: Punishment",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2024,
+    "creator": "Heo Myeong-haeng",
+    "rating": 5,
+    "review": "",
+    "watchDate": "2026-08-05",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27811040/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BYmU3N2UwMmEtNTM1ZS00NWQ2LTgzNDUtZDM0NGIyNzZkZTIzXkEyXkFqcGc@._V1_.jpg"
   }
 ]
