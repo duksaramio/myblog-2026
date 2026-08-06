@@ -4,6 +4,7 @@ pubDate: 2026-08-06
 description: "The same model scores 30 points apart depending on who wraps it. In 2026, the harness — not the model — is where AI lives or dies."
 draft: false
 tags: ["ai", "llm", "harness-engineering", "agents", "architecture", "mlops"]
+audioUrl: "https://file.duklee.net/audio/2026-08-06-harness-is-the-product.wav"
 ---
 
 I compiled twelve independent deep-dives on AI harness architecture — from Anthropic's internal docs, LangChain's engineering team, Microsoft's agent framework, academic surveys, and practitioners shipping production agents. They converge on one uncomfortable thesis: **the model is commoditized. The harness is the product.**
