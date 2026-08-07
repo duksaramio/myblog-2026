@@ -4,6 +4,7 @@ pubDate: 2026-08-07
 description: "Life is too short to tolerate things you can avoid. Pixel, Google Fi, and a new philosophy."
 draft: false
 tags: ["life-philosophy", "pixel", "google-fi", "spam-calls", "minimalism"]
+audioUrl: "https://file.duklee.net/audio/2026-08-07-no-more-unpleasant-experiences.wav"
 ---
 
 There is no reason to put up with unpleasant experiences if you can avoid it. I will put up with them if that's required for my family and career. That's about it.
