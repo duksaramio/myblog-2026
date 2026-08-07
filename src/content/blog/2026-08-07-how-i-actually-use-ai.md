@@ -31,6 +31,14 @@ The result: a [RAG agent running inside a Docker sandbox](https://github.com/duk
 
 ![Running docker commands to build and launch the RAG agent sandbox](/running-docker-command.png)
 
+Here's the stack in action:
+
+![RustFS S3 object storage holding GxP documents](/rustfs.png)
+
+![Qdrant vector database with document embeddings indexed](/qdrant.png)
+
+![Langfuse observability traces showing agent execution](/langfuse.png)
+
 ## No More One-Size-Fits-All Tutorials
 
 I no longer need to find a tutorial that matches my exact setup. There is no tutorial for "Pydantic AI RAG agent with Qdrant and RustFS running inside a Docker sandbox with Langfuse observability." That tutorial doesn't exist. It never will.
