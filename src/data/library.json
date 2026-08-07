@@ -719,5 +719,24 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt14781176/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTdmMjZjOTMtMzQyYi00YjliLTgyZmQtZjE3YzI2ZWFjYzVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "humint",
+    "title": "Humint",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Ryoo Seung-wan",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-08-06",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt32606470/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZjliZDRkZTYtYTBkNi00NzAxLTg0YmQtODE0YjVmNWNjNjhiXkEyXkFqcGc@._V1_.jpg"
   }
 ]
