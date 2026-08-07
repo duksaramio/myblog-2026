@@ -701,5 +701,23 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27811040/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYmU3N2UwMmEtNTM1ZS00NWQ2LTgzNDUtZDM0NGIyNzZkZTIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-8th-night",
+    "title": "The 8th Night",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2021,
+    "creator": "Kim Tae-hyung",
+    "rating": 5,
+    "review": "",
+    "watchDate": "2026-08-04",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt14781176/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTdmMjZjOTMtMzQyYi00YjliLTgyZmQtZjE3YzI2ZWFjYzVmXkEyXkFqcGc@._V1_.jpg"
   }
 ]
