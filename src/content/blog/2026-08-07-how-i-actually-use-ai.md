@@ -4,6 +4,7 @@ pubDate: 2026-08-07
 description: "My workflow for using AI agents to learn and build. No tutorial hunting — just research, feed docs to a coding agent, and iterate."
 draft: false
 tags: ["ai-agents", "workflow", "docker", "coding-agents", "rag", "learning"]
+audioUrl: "https://file.duklee.net/audio/2026-08-07-how-i-actually-use-ai.wav"
 ---
 
 I wanted to learn how to use Docker's new sandbox feature to deploy an AI RAG agent. The docs cover mostly "coding" agents — Claude Code, Codex, that kind of thing. Not "here's how to package your own agent idea into a sandbox."
@@ -18,7 +19,7 @@ So I did what I always do.
 
 **Step 3: Feed into a deep research agent.** All those responses get compiled into a comprehensive report.
 
-**Step 4: Publish.** That report becomes a [blog post](/2026-08-07-docker-sandboxes-ai-agents). Now I have a reference I can actually use.
+**Step 4: Publish.** That report becomes a [blog post](/blog/2026-08-07-docker-sandboxes-ai-agents). Now I have a reference I can actually use.
 
 **Step 5: Read my own report.** I know what Docker Sandboxes can do. Now I need to figure out how to make it do what *I* want.
 
