@@ -4,6 +4,7 @@ pubDate: 2026-08-07
 description: "Docker's new microVM sandboxing for AI agents. Five isolation layers, credential proxying, and enterprise governance. Here's what matters."
 draft: false
 tags: ["docker", "ai-agents", "sandboxing", "security", "microvm", "devtools"]
+audioUrl: "https://file.duklee.net/audio/2026-08-07-docker-sandboxes-ai-agents.wav"
 ---
 
 AI coding agents need to run code, install packages, and build containers. That's the whole point. But giving an autonomous agent full access to your machine is terrifying. One hallucinated `rm -rf` and you're restoring from backup.
