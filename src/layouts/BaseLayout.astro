@@ -22,9 +22,35 @@ interface Props {
 			image: string;
 		};
 	};
+	jsonLd?: Record<string, any> | Record<string, any>[];
 }
 
-const { title, description, seo } = Astro.props;
+const { title, description, seo, jsonLd } = Astro.props;
+
+const siteUrl = Astro.site ? Astro.site.origin : profile.seo.og.url.replace(/\/$/, '');
+const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
+
+const ogImageUrl = seo.og.image.startsWith('http')
+	? seo.og.image
+	: new URL(seo.og.image, siteUrl).href;
+
+const twitterImageUrl = seo.twitter.image.startsWith('http')
+	? seo.twitter.image
+	: new URL(seo.twitter.image, siteUrl).href;
+
+const pageUrl = seo.og.url && seo.og.url !== profile.seo.og.url
+	? seo.og.url
+	: canonicalURL;
+
+const websiteSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	'name': profile.site.title,
+	'url': siteUrl,
+	'description': profile.site.description,
+};
+
+const activeJsonLd = jsonLd || websiteSchema;
 ---
 
 <!DOCTYPE html>
@@ -34,20 +60,25 @@ const { title, description, seo } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
+		<link rel="alternate" type="application/rss+xml" title={profile.site.title} href={new URL('/rss.xml', siteUrl).href} />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content={seo.og.type} />
-		<meta property="og:url" content={seo.og.url} />
+		<meta property="og:site_name" content={profile.site.title} />
+		<meta property="og:url" content={pageUrl} />
 		<meta property="og:title" content={seo.og.title} />
 		<meta property="og:description" content={seo.og.description} />
-		<meta property="og:image" content={seo.og.image} />
+		<meta property="og:image" content={ogImageUrl} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content={seo.twitter.card} />
-		<meta property="twitter:url" content={seo.twitter.url} />
+		<meta property="twitter:url" content={pageUrl} />
 		<meta property="twitter:title" content={seo.twitter.title} />
 		<meta property="twitter:description" content={seo.twitter.description} />
-		<meta property="twitter:image" content={seo.twitter.image} />
+		<meta property="twitter:image" content={twitterImageUrl} />
+
+		<script type="application/ld+json" set:html={JSON.stringify(activeJsonLd)} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -16,17 +16,44 @@ interface Props {
 
 const { title, description, pubDate, audioUrl, backUrl = '/', backLabel = '← Back to Home', rawMarkdown } = Astro.props;
 
+const postUrl = new URL(Astro.url.pathname, Astro.site || profile.seo.og.url).href;
+
 const blogSeo = {
 	og: {
 		...profile.seo.og,
+		type: 'article',
+		url: postUrl,
 		title: `${title} | ${profile.header.logo}`,
 		description: description,
 	},
 	twitter: {
 		...profile.seo.twitter,
+		url: postUrl,
 		title: `${title} | ${profile.header.logo}`,
 		description: description,
 	}
+};
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	'headline': title,
+	'description': description,
+	'datePublished': pubDate.toISOString(),
+	'author': {
+		'@type': 'Person',
+		'name': profile.site.title,
+		'url': Astro.site ? Astro.site.origin : 'https://saram.io',
+	},
+	'publisher': {
+		'@type': 'Organization',
+		'name': 'Saram Consulting',
+		'url': Astro.site ? Astro.site.origin : 'https://saram.io',
+	},
+	'mainEntityOfPage': {
+		'@type': 'WebPage',
+		'@id': postUrl,
+	},
 };
 
 const formattedDate = pubDate.toLocaleDateString('en-US', {
@@ -37,7 +64,7 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 });
 ---
 
-<BaseLayout title={`${title} | ${profile.header.logo}`} description={description} seo={blogSeo}>
+<BaseLayout title={`${title} | ${profile.header.logo}`} description={description} seo={blogSeo} jsonLd={jsonLd}>
 	<Header logo={profile.header.logo} />
 
 	<main>
