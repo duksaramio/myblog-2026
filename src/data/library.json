@@ -757,5 +757,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt9225192/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTMzMjJjZDktYmZkZi00YzYwLWE2ZTAtMDNjMTgzYWZhNzVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-childe",
+    "title": "The Childe",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2023,
+    "creator": "Park Hoon-jung",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-08-08",
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27534328/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BYjc4ZTE1ZGYtNjU2MS00YjgyLTgwOTctMGU1NTc5MzEzMGZiXkEyXkFqcGc@._V1_.jpg"
   }
 ]
