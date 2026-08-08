@@ -53,6 +53,8 @@ But my coding agent can generate the exact code example for my exact need. I giv
 
 **Not everyone can do this today.** I watch coding agents churn out code and the sheer number of things I need to spot-check or validate — it's a lot. I'm not sure people without programming experience can pull this off right now. It takes domain knowledge to know when the agent is wrong. Smart kids might figure it out, but starting with AI *without* any hand-coding experience is a real gap.
 
-**Does AI level the playing field or widen it?** I can't find the article right now, but there was a blog post analyzing Terence Tao's ChatGPT prompts. The bottom line: the more domain knowledge you have, the better your prompt will be. Better prompt, better result. AI might be an equalizer for people who already know what they're doing. For everyone else, it's a black box that sometimes gives you garbage and you don't know which is which.
+**Does AI level the playing field or widen it?** Sean Goedecke has a great post, ["LLMs Reward Expertise"](https://www.seangoedecke.com/llms-reward-expertise/), analyzing Terence Tao's ChatGPT conversation about the Jacobian Conjecture. The insight: Tao's prompts are short, he pushes back on vague answers, and the model responds in "talking-to-mathematicians" mode — not "explaining-to-amateurs" mode. You can't replicate his prompting technique just by following tips. The key is actually understanding the math.
+
+Same thing applies to code. I can tell a coding agent "this looks overengineered, simplify it" because I know what a clean solution looks like in my stack. Without that intuition, you're at the mercy of whatever the model generates. The more domain knowledge you have, the harder you can steer. Goedecke puts it well: the human is the bottleneck, not the model.
 
 The gap isn't access to AI. Everyone has access. The gap is knowing what to ask and knowing when the answer is wrong.
