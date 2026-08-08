@@ -11,9 +11,10 @@ interface Props {
 	audioUrl?: string;
 	backUrl?: string;
 	backLabel?: string;
+	rawMarkdown?: string;
 }
 
-const { title, description, pubDate, audioUrl, backUrl = '/', backLabel = '← Back to Home' } = Astro.props;
+const { title, description, pubDate, audioUrl, backUrl = '/', backLabel = '← Back to Home', rawMarkdown } = Astro.props;
 
 const blogSeo = {
 	og: {
@@ -45,8 +46,24 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 				<h1 class="post-title">{title}</h1>
 				<div class="post-meta">
 					<time class="post-date" datetime={pubDate.toISOString()}>{formattedDate}</time>
+					{rawMarkdown && (
+						<>
+							<span class="meta-dot">•</span>
+							<button id="copy-post-md-btn" class="copy-md-btn" type="button" aria-label="Copy post as Markdown">
+								<svg class="copy-md-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+									<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+								</svg>
+								<span class="copy-md-text">Copy Markdown</span>
+							</button>
+						</>
+					)}
 				</div>
 			</header>
+
+			{rawMarkdown && (
+				<script id="raw-markdown-data" type="application/json" set:html={JSON.stringify(rawMarkdown)} />
+			)}
 
 			<hr class="post-divider" />
 
@@ -97,7 +114,42 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 		align-items: center;
 		gap: 8px;
 		font-size: 13px;
-		opacity: 0.6;
+		opacity: 0.8;
+		flex-wrap: wrap;
+	}
+
+	.meta-dot {
+		opacity: 0.5;
+	}
+
+	.copy-md-btn {
+		background: transparent;
+		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.12));
+		border-radius: 4px;
+		color: var(--text-color);
+		opacity: 0.85;
+		padding: 3px 9px;
+		font-size: 11px;
+		font-family: var(--font-mono);
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		transition: all 0.15s ease-in-out;
+		line-height: 1.2;
+	}
+
+	.copy-md-btn:hover {
+		opacity: 1;
+		border-color: var(--underline-hover, rgba(0, 0, 0, 0.4));
+		background-color: var(--card-bg, rgba(0, 0, 0, 0.05));
+	}
+
+	.copy-md-btn.copied {
+		opacity: 1;
+		color: #2da44e;
+		border-color: #2da44e;
+		background-color: rgba(45, 164, 78, 0.08);
 	}
 
 
@@ -358,4 +410,27 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 			}
 		});
 	});
+
+	// Copy post markdown button handler
+	const copyPostMdBtn = document.getElementById('copy-post-md-btn');
+	const rawMdDataEl = document.getElementById('raw-markdown-data');
+	if (copyPostMdBtn && rawMdDataEl) {
+		const textSpan = copyPostMdBtn.querySelector('.copy-md-text');
+		const rawMarkdown = JSON.parse(rawMdDataEl.textContent || '""');
+
+		copyPostMdBtn.addEventListener('click', async () => {
+			try {
+				await navigator.clipboard.writeText(rawMarkdown);
+				copyPostMdBtn.classList.add('copied');
+				if (textSpan) textSpan.textContent = 'Copied!';
+				setTimeout(() => {
+					copyPostMdBtn.classList.remove('copied');
+					if (textSpan) textSpan.textContent = 'Copy Markdown';
+				}, 2000);
+			} catch (err) {
+				console.error('Failed to copy post markdown:', err);
+				if (textSpan) textSpan.textContent = 'Error';
+			}
+		});
+	}
 </script>
