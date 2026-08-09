@@ -3,6 +3,7 @@ title: "Hacker News Front Page Roundup — August 9, 2026"
 pubDate: 2026-08-09
 description: "AI plagiarism gets a public reckoning, Silicon Valley's sci-fi illiteracy, supersonic trebuchets, and a 1998 word processor running natively on x64"
 draft: false
+audioUrl: "https://file.duklee.net/audio/2026-08-09-hn-frontpage-roundup.wav"
 tags: ["hacker-news", "roundup", "ai", "tech"]
 ---
 
