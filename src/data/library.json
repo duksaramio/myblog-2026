@@ -776,5 +776,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27534328/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYjc4ZTE1ZGYtNjU2MS00YjgyLTgwOTctMGU1NTc5MzEzMGZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "veteran",
+    "title": "Veteran",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2015,
+    "creator": "Ryoo Seung-wan",
+    "rating": 4,
+    "review": "It could've used better editing.",
+    "watchDate": "2026-08-09",
+    "genres": [
+      "Action",
+      "Crime",
+      "Comedy"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2c1810 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt4768764/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/59KtPlcr2GQIudEA6B5KNY5NnBf.jpg"
   }
 ]
