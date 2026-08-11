@@ -795,5 +795,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2c1810 100%)",
     "externalUrl": "https://www.imdb.com/title/tt4768764/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/59KtPlcr2GQIudEA6B5KNY5NnBf.jpg"
+  },
+  {
+    "id": "the-invite",
+    "title": "The Invite",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Olivia Wilde",
+    "rating": 8,
+    "review": "Probably the best 2026 movie so far.",
+    "watchDate": "2026-08-10",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "backdropColor": "linear-gradient(135deg, #f8c291 0%, #e55039 50%, #b71540 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt14173636/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg"
   }
 ]
