@@ -4,6 +4,7 @@ pubDate: 2026-08-11
 description: "AI devours the web's memory, antirez builds native video gen for Apple Silicon, researchers crack encrypted reasoning traces, and a 14MB LLM runs on ESP32s"
 draft: false
 tags: ["hacker-news", "roundup", "ai", "tech"]
+audioUrl: "https://file.duklee.net/audio/2026-08-11-hn-frontpage-roundup.wav"
 ---
 
 ## Google Search Is Dying. What Comes Next Is Worse
