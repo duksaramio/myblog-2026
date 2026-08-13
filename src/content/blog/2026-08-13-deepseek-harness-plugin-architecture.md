@@ -4,6 +4,7 @@ pubDate: 2026-08-13
 description: "I went deep on DeepSeek's open-source agent harness. 219 packages, 94K lines of TypeScript, and a plugin architecture that makes Claude Code and Codex look monolithic."
 draft: false
 tags: ["ai", "agents", "deepseek", "harness-engineering", "open-source", "architecture", "typescript"]
+audioUrl: "https://file.duklee.net/audio/2026-08-13-deepseek-harness-plugin-architecture.wav"
 ---
 
 I cloned DeepSeek's open-source agent harness and spent a day inside it. What I found is the most architecturally ambitious agent framework anyone has shipped. Not the most polished. Not the most popular. But the most *principled*.
