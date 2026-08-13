@@ -833,5 +833,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d1b1b 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt1190539/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZGZjMDU2ODAtMzFlNy00MWU1LWE1YTEtYTFmZTE0ZmEyYjYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "i-saw-the-devil",
+    "title": "I Saw the Devil",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2010,
+    "creator": "Kim Jee-woon",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-13",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a0a0a 50%, #2d1b1b 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt1588170/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BM2Q1ZGZiNTYtMWNjOC00NmU2LTg1MDQtZGZkNmY0Y2RlOTBmXkEyXkFqcGc@._V1_.jpg"
   }
 ]
