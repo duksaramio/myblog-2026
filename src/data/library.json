@@ -814,5 +814,24 @@
     "backdropColor": "linear-gradient(135deg, #f8c291 0%, #e55039 50%, #b71540 100%)",
     "externalUrl": "https://www.imdb.com/title/tt14173636/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-chaser",
+    "title": "The Chaser",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2008,
+    "creator": "Na Hong-jin",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-13",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d1b1b 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt1190539/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZGZjMDU2ODAtMzFlNy00MWU1LWE1YTEtYTFmZTE0ZmEyYjYxXkEyXkFqcGc@._V1_.jpg"
   }
 ]
