@@ -4,6 +4,7 @@ pubDate: 2026-08-14
 description: "I read all 13 deep-dive docs from DSPy's documentation. Here's what the framework is actually doing and why it matters."
 draft: false
 tags: ["dspy", "llm", "python", "optimizers", "open-source", "ai", "prompt-engineering"]
+audioUrl: "https://file.duklee.net/audio/2026-08-14-dspy-is-not-a-prompt-framework.wav"
 ---
 
 I went through every page in DSPy's "Diving Deeper" documentation — all 13 of them. Signatures, Adapters, Modules, Metrics, Optimizers, GEPA, Tools, ReAct, Settings, Saving, Flex, RLM, and the built-in module variants. Here's what I came away with.
