@@ -4,6 +4,7 @@ pubDate: 2026-08-14
 description: "I read through all 30 capability docs in Pydantic AI's new harness library. Here's what's actually worth your time and what's just API surface."
 draft: false
 tags: ["ai", "agents", "python", "pydantic", "open-source", "architecture", "agentic-ai"]
+audioUrl: "https://file.duklee.net/audio/2026-08-14-pydantic-ai-harness-capabilities.wav"
 ---
 
 Pydantic AI shipped a harness library. Not a framework — a library. Thirty standalone capabilities you compose into an agent like LEGO blocks. I read every single doc page. Here's what matters.

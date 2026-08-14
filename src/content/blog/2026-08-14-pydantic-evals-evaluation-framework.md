@@ -4,6 +4,7 @@ pubDate: 2026-08-14
 description: "Pydantic Evals is a code-first evaluation framework for AI systems. 22 docs deep, here's what makes it different from every other eval tool out there."
 draft: false
 tags: ["ai", "evals", "python", "pydantic", "llm", "testing", "open-source"]
+audioUrl: "https://file.duklee.net/audio/2026-08-14-pydantic-evals-evaluation-framework.wav"
 ---
 
 Most AI eval tools give you a dashboard and a prayer. Pydantic Evals gives you Python types and a test suite. I read through all 22 documentation pages. Here's why that design choice changes everything.
