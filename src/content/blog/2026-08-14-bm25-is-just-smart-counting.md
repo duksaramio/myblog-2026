@@ -4,6 +4,7 @@ pubDate: 2026-08-14
 description: "BM25 has survived every 'search is dead' wave since 1994. Three simple rules, two tuning knobs, and it still powers Google, Elasticsearch, and every RAG pipeline underneath."
 draft: false
 tags: ["bm25", "search", "information-retrieval", "rag", "python", "algorithms"]
+audioUrl: "https://file.duklee.net/audio/2026-08-14-bm25-is-just-smart-counting.wav"
 ---
 
 I read a dozen different explanations of BM25 recently — from academic papers to "explain it like I'm 10" blog posts. Every single one converged on the same three ideas. That's because BM25 really is that simple.
