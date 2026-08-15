@@ -852,5 +852,23 @@
     "backdropColor": "linear-gradient(135deg, #0c0c0c 0%, #1a0a0a 50%, #2d1b1b 100%)",
     "externalUrl": "https://www.imdb.com/title/tt1588170/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BM2Q1ZGZiNTYtMWNjOC00NmU2LTg1MDQtZGZkNmY0Y2RlOTBmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "nowhere-to-lay-my-eyes",
+    "title": "Nowhere to Lay My Eyes",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Hong Sang-soo",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "backdropColor": "linear-gradient(135deg, #a8d8ea 0%, #355c7d 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt43663820/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BODRmOGYxM2YtYTliNi00ODMzLTg3YmYtMTM5MWZkZjNhYWQ5XkEyXkFqcGc@._V1_.jpg"
   }
 ]
