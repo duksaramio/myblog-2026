@@ -4,6 +4,7 @@ pubDate: 2026-08-15
 description: "Qwen dropped Qwen3.8-27B and everyone's looking at benchmarks. I'm looking at the DeltaNet hybrid architecture and what it means for inference."
 draft: false
 tags: ["ai", "llms", "qwen", "architecture", "inference", "open-source", "vision-language"]
+audioUrl: "https://file.duklee.net/audio/2026-08-15-qwen38-27b-architecture.wav"
 ---
 
 Qwen shipped Qwen3.8-27B yesterday. The internet is doing what it always does — posting benchmark tables, arguing about whether 61.7 on SWE-bench Pro "beats" Claude Opus, and moving on. But the interesting thing about this model isn't the numbers. It's what's under the hood.
