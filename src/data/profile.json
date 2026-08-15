@@ -6,14 +6,14 @@
   "seo": {
     "og": {
       "type": "website",
-      "url": "https://saram.io/",
+      "url": "https://duklee.net/",
       "title": "Duk Lee",
       "description": "I like books, movies and tinkering with computers. My AI agents are working 24/7 building tools.",
       "image": "/og-image.png"
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://saram.io/",
+      "url": "https://duklee.net/",
       "title": "Duk Lee",
       "description": "I like books, movies and tinkering with computers. My AI agents are working 24/7 building tools.",
       "image": "/og-image.png"

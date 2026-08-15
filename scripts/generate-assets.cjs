@@ -4,17 +4,24 @@ const sharp = require('sharp');
 const { execSync } = require('child_process');
 
 async function generateAssets() {
-  const sourceImagePath = '/home/d3lee/.gemini/antigravity/brain/42336ac7-9f28-4a7f-9fde-f1baacbc2219/.user_uploaded/media_1786805075337.jpg';
+  const brainSource = '/home/d3lee/.gemini/antigravity/brain/42336ac7-9f28-4a7f-9fde-f1baacbc2219/.user_uploaded/media_1786805075337.jpg';
   const publicDir = path.resolve(__dirname, '../public');
   const srcAssetsDir = path.resolve(__dirname, '../src/assets');
+  const publicAvatar = path.join(publicDir, 'avatar.jpg');
+  const srcAvatar = path.join(srcAssetsDir, 'avatar.jpg');
+  const sourceImagePath = fs.existsSync(brainSource) ? brainSource : (fs.existsSync(srcAvatar) ? srcAvatar : publicAvatar);
 
   if (!fs.existsSync(srcAssetsDir)) {
     fs.mkdirSync(srcAssetsDir, { recursive: true });
   }
 
   // Copy source avatar to assets and public
-  fs.copyFileSync(sourceImagePath, path.join(srcAssetsDir, 'avatar.jpg'));
-  fs.copyFileSync(sourceImagePath, path.join(publicDir, 'avatar.jpg'));
+  if (sourceImagePath !== path.join(srcAssetsDir, 'avatar.jpg')) {
+    fs.copyFileSync(sourceImagePath, path.join(srcAssetsDir, 'avatar.jpg'));
+  }
+  if (sourceImagePath !== path.join(publicDir, 'avatar.jpg')) {
+    fs.copyFileSync(sourceImagePath, path.join(publicDir, 'avatar.jpg'));
+  }
   console.log('Copied avatar to src/assets/avatar.jpg and public/avatar.jpg');
 
   // Load embedded fonts
@@ -99,7 +106,7 @@ async function generateAssets() {
     <!-- Tag / Pill -->
     <g transform="translate(94, 96)">
       <rect width="140" height="34" rx="4" class="tag-box" />
-      <text x="70" y="22" text-anchor="middle" class="tag-text">SARAM.IO</text>
+      <text x="70" y="22" text-anchor="middle" class="tag-text">DUKLEE.NET</text>
     </g>
 
     <!-- Title -->
@@ -116,7 +123,7 @@ async function generateAssets() {
     <!-- Footer URL -->
     <g transform="translate(94, 465)">
       <circle cx="8" cy="-5" r="4" fill="#111111" />
-      <text x="24" y="0" class="url-text">saram.io</text>
+      <text x="24" y="0" class="url-text">duklee.net</text>
     </g>
 
     <!-- Right Column: Avatar Portrait -->
@@ -134,8 +141,8 @@ async function generateAssets() {
 
   fs.writeFileSync(path.join(publicDir, 'og-image.png'), ogBuffer);
   fs.writeFileSync(path.join(publicDir, 'social-card.png'), ogBuffer);
-  fs.writeFileSync(path.join(publicDir, 'saram_consulting_og_image.png'), ogBuffer);
-  console.log('Generated public/og-image.png, public/social-card.png, public/saram_consulting_og_image.png');
+  fs.writeFileSync(path.join(publicDir, 'duklee_net_og_image.png'), ogBuffer);
+  console.log('Generated public/og-image.png, public/social-card.png, public/duklee_net_og_image.png');
 
   // 4. Generate Favicons
   // We prepare a clean square avatar icon with slight rounding or circle for favicons

@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://saram.io',
+  site: 'https://duklee.net',
   integrations: [sitemap()],
 });
 
