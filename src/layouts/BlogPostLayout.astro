@@ -9,14 +9,16 @@ interface Props {
 	description: string;
 	pubDate: Date;
 	audioUrl?: string;
+	image?: string;
 	backUrl?: string;
 	backLabel?: string;
 	rawMarkdown?: string;
 }
 
-const { title, description, pubDate, audioUrl, backUrl = '/', backLabel = '← Back to Home', rawMarkdown } = Astro.props;
+const { title, description, pubDate, audioUrl, image, backUrl = '/', backLabel = '← Back to Home', rawMarkdown } = Astro.props;
 
 const postUrl = new URL(Astro.url.pathname, Astro.site || profile.seo.og.url).href;
+const cardImage = image || profile.seo.og.image;
 
 const blogSeo = {
 	og: {
@@ -25,12 +27,14 @@ const blogSeo = {
 		url: postUrl,
 		title: `${title} | ${profile.header.logo}`,
 		description: description,
+		image: cardImage,
 	},
 	twitter: {
 		...profile.seo.twitter,
 		url: postUrl,
 		title: `${title} | ${profile.header.logo}`,
 		description: description,
+		image: cardImage,
 	}
 };
 

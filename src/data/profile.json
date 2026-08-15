@@ -7,16 +7,16 @@
     "og": {
       "type": "website",
       "url": "https://saram.io/",
-      "title": "Saram Consulting | GxP & AI IT Consulting",
-      "description": "Helping life science companies transform with AI while maintaining GxP compliance.",
-      "image": "/saram_consulting_og_image.png"
+      "title": "Duk Lee",
+      "description": "I like books, movies and tinkering with computers. My AI agents are working 24/7 building tools.",
+      "image": "/og-image.png"
     },
     "twitter": {
       "card": "summary_large_image",
       "url": "https://saram.io/",
-      "title": "Saram Consulting | GxP & AI IT Consulting",
-      "description": "Helping life science companies transform with AI while maintaining GxP compliance.",
-      "image": "/saram_consulting_og_image.png"
+      "title": "Duk Lee",
+      "description": "I like books, movies and tinkering with computers. My AI agents are working 24/7 building tools.",
+      "image": "/og-image.png"
     }
   },
   "header": {
