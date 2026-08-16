@@ -889,5 +889,24 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27802490/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOTA1OTY1NTYtNDEzZS00OTgyLWI1NWEtNDI5NjBhOTIwNzIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "train-to-busan",
+    "title": "Train to Busan",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2016,
+    "creator": "Yeon Sang-ho",
+    "rating": 9,
+    "review": "",
+    "watchDate": "2026-08-15",
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt5700672/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BODA3OTM4NWQtMjU1OS00NzA2LTlhZDAtYjU2YjM5MWUxNTdiXkEyXkFqcGc@._V1_.jpg"
   }
 ]
