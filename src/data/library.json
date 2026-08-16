@@ -63,7 +63,7 @@
     "type": "movie",
     "status": "completed",
     "releaseYear": 2026,
-    "creator": "Andr\u00e9 \u00d8vredal",
+    "creator": "André Øvredal",
     "rating": 6,
     "review": "",
     "watchDate": "2026-07-11",
@@ -365,7 +365,7 @@
     "type": "book",
     "status": "reading",
     "releaseYear": 2025,
-    "creator": "Aur\u00e9lien G\u00e9ron",
+    "creator": "Aurélien Géron",
     "rating": 0,
     "review": "",
     "watchDate": "2026-07-27",
@@ -870,5 +870,24 @@
     "backdropColor": "linear-gradient(135deg, #a8d8ea 0%, #355c7d 100%)",
     "externalUrl": "https://www.imdb.com/title/tt43663820/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BODRmOGYxM2YtYTliNi00ODMzLTg3YmYtMTM5MWZkZjNhYWQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "exhuma",
+    "title": "Exhuma",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2024,
+    "creator": "Jang Jae-hyun",
+    "rating": 9,
+    "review": "One of my top 10 movies of all time.",
+    "watchDate": "2026-08-15",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Supernatural"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27802490/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BOTA1OTY1NTYtNDEzZS00OTgyLWI1NWEtNDI5NjBhOTIwNzIyXkEyXkFqcGc@._V1_.jpg"
   }
 ]
