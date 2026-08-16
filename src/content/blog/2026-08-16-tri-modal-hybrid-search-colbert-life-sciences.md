@@ -193,3 +193,5 @@ If you're deploying this in a regulated environment:
 This isn't a toy RAG demo. The tri-modal retrieval architecture (dense + sparse BM25 + ColBERT MaxSim) solves real problems that life sciences QA teams face daily: synonym bridging across domain terminology, exact regulatory code matching, and fine-grained temporal disambiguation. The `m=0` HNSW trick keeps ColBERT memory-efficient. Pydantic AI enforces structured outputs so the copilot can't hallucinate lot numbers. Langfuse captures everything for audit compliance.
 
 The code is MIT-licensed and runs entirely local. If you're in pharma QA and tired of keyword search that misses half your records, this is worth a look.
+
+**Repo**: [github.com/duksaramio/qdrant-hybrid-search-with-reranking-tutorial](https://github.com/duksaramio/qdrant-hybrid-search-with-reranking-tutorial)
