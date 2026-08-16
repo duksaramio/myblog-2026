@@ -14,7 +14,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const rawMarkdown = `# ${post.data.title}\n\n${post.body || ''}`;
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://duklee.net').href;
+const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
 ---
 
 <BlogPostLayout 
