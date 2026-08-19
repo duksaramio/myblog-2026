@@ -908,5 +908,24 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt5700672/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BODA3OTM4NWQtMjU1OS00NzA2LTlhZDAtYjU2YjM5MWUxNTdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-dream-life-of-mr-kim",
+    "title": "The Dream Life of Mr. Kim",
+    "type": "tv",
+    "status": "completed",
+    "releaseYear": 2025,
+    "creator": "unknown",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-08-19",
+    "genres": [
+      "Korean Drama",
+      "Comedy",
+      "Drama"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #4a6741 50%, #1a1a2e 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt38570528/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDUxYWVmYjItYzdiMy00Yjk0LWFiMjQtOTFhNjhkYmIzZWQ4XkEyXkFqcGc@._V1_.jpg"
   }
 ]
