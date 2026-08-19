@@ -3,6 +3,7 @@ title: "Tri-Modal Hybrid Search with ColBERT Reranking for Life Sciences QA"
 pubDate: 2026-08-16
 description: "Building a production-grade search engine that combines dense vectors, BM25, and ColBERT MaxSim reranking in Qdrant — with a Pydantic AI copilot and Langfuse audit trails for regulated pharma."
 draft: false
+audioUrl: "https://file.duklee.net/audio/2026-08-16-tri-modal-hybrid-search-colbert-life-sciences.wav"
 tags: ["search", "qdrant", "colbert", "life-sciences", "pharma", "pydantic-ai", "rag", "open-source"]
 ---
 
