@@ -4,6 +4,7 @@ pubDate: 2026-08-19
 description: "The biggest problem with any tech tutorial is that it's too general. Here's my workflow for turning one-size-fits-all courses into something that actually matches my stack."
 draft: false
 tags: ["obsidian", "tutorials", "workflow", "ai", "qdrant", "vector-search", "gemini", "open-source"]
+audioUrl: "https://file.duklee.net/audio/obsidian-clipper-antigravity-tutorials.wav"
 ---
 
 Every tech tutorial you've ever followed has the same problem: it's written for somebody who isn't you.
