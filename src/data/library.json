@@ -927,5 +927,24 @@
     "backdropColor": "linear-gradient(135deg, #2c3e50 0%, #4a6741 50%, #1a1a2e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt38570528/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDUxYWVmYjItYzdiMy00Yjk0LWFiMjQtOTFhNjhkYmIzZWQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "ghost-in-the-cell",
+    "title": "Ghost in the Cell",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Joko Anwar",
+    "rating": 3,
+    "review": "Joko Anwar's movies are getting worse.",
+    "watchDate": "2026-08-19",
+    "genres": [
+      "Prison Drama",
+      "Psychological Horror",
+      "Dark Comedy"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #4a0e0e 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt9000310/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNjMxNzFkMjgtMTkyZi00MmNhLWI2OTMtYzEyZWE0NjA1ODIwXkEyXkFqcGc@._V1_.jpg"
   }
 ]
