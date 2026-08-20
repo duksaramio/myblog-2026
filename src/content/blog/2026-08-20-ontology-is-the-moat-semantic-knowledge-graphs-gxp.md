@@ -4,6 +4,7 @@ pubDate: 2026-08-20
 description: "Everyone talks about knowledge graphs for regulated AI. Almost nobody talks about the part that actually matters — the ontology."
 draft: false
 tags: ["gxp", "knowledge-graph", "ai-agents", "validation", "ontology", "semantic-web", "graphrag", "life-sciences"]
+audioUrl: "https://file.duklee.net/audio/2026-08-20-ontology-is-the-moat-semantic-knowledge-graphs-gxp.wav"
 ---
 
 Everyone building AI for regulated environments is talking about knowledge graphs. Almost none of them are talking about the part that actually matters.
