@@ -946,5 +946,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #4a0e0e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt9000310/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNjMxNzFkMjgtMTkyZi00MmNhLWI2OTMtYzEyZWE0NjA1ODIwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-wailing",
+    "title": "The Wailing",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2016,
+    "creator": "Na Hong-jin",
+    "rating": 9,
+    "review": "3rd viewing, still excellent. Probably the director's best work so far.",
+    "watchDate": "2026-08-19",
+    "genres": [
+      "Horror",
+      "Folk Horror",
+      "Drama"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt5215952/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BODkwMTgxNjA2NF5BMl5BanBnXkFtZTgwMDc0OTcwOTE@._V1_.jpg"
   }
 ]
