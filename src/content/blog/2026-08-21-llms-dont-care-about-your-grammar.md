@@ -4,6 +4,7 @@ pubDate: 2026-08-21
 description: "Everyone assumes messy prompts hurt LLM output. Spelling errors barely matter. The real failures are semantic — ambiguity, contradictions, and buried intent."
 draft: false
 tags: ["llm", "prompt-engineering", "ai-agents", "attention-mechanism", "nlp", "practical-ai"]
+audioUrl: "https://file.duklee.net/audio/2026-08-21-llms-dont-care-about-your-grammar.wav"
 ---
 
 Everyone assumes that if you feed an LLM a messy, rambling, grammatically broken prompt, you'll get garbage back. That intuition is wrong — and the reason it's wrong tells you something important about how these models actually work.
