@@ -965,5 +965,24 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt5215952/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BODkwMTgxNjA2NF5BMl5BanBnXkFtZTgwMDc0OTcwOTE@._V1_.jpg"
+  },
+  {
+    "id": "build-a-large-language-model-from-scratch",
+    "title": "Build a Large Language Model (From Scratch)",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2024,
+    "creator": "Sebastian Raschka",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-08-26",
+    "genres": [
+      "AI",
+      "Machine Learning",
+      "Programming"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
+    "externalUrl": "https://www.amazon.com/dp/1633437167",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1633437167-L.jpg"
   }
 ]
