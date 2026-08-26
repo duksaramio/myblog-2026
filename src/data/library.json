@@ -984,5 +984,24 @@
     "backdropColor": "linear-gradient(135deg, #1e3a5f 0%, #0f1f33 100%)",
     "externalUrl": "https://www.amazon.com/dp/1633437167",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1633437167-L.jpg"
+  },
+  {
+    "id": "motor-city",
+    "title": "Motor City",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Potsy Ponciroli",
+    "rating": 6,
+    "review": "Interesting concept. Barely any dialogue. I find this director very interesting.",
+    "watchDate": "2026-08-25",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt2012616/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZGFmNTJkNzctNDc2Zi00ZWMxLWIzNzktNDQxMzU3ZGVkZTRjXkEyXkFqcGc@._V1_.jpg"
   }
 ]
