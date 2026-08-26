@@ -4,6 +4,7 @@ pubDate: 2026-08-25
 description: "The days that matter most aren't the ones with the most hours logged or the most output. They're the ones where you figure something out that compounds."
 draft: false
 tags: ["productivity", "thinking", "long-term-leverage", "compounding"]
+audioUrl: "https://file.duklee.net/audio/2026-08-25-the-best-productive-days-arent-the-longest.wav"
 ---
 
 I had one of those days today. The kind I love the most when it comes to productivity.
