@@ -6,17 +6,11 @@ import Header from '../components/Header.astro';
 import profile from '../data/profile.json';
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const PAGE_SIZE = 5;
-	const MAX_PAGES = 10;
-
 	const posts = (await getCollection('blog', ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
 	})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-	// Keep pages at 10 tops (50 most recent posts)
-	const paginatedPosts = posts.slice(0, PAGE_SIZE * MAX_PAGES);
-
-	return paginate(paginatedPosts, { pageSize: PAGE_SIZE });
+	return paginate(posts, { pageSize: 5 });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
@@ -25,6 +19,21 @@ const posts = page.data;
 const isFirstPage = page.currentPage === 1;
 const pageTitle = isFirstPage ? profile.site.title : `${profile.site.title} - Page ${page.currentPage}`;
 const pageDescription = isFirstPage ? profile.site.description : `${profile.site.description} (Page ${page.currentPage})`;
+
+// Calculate sliding window of at most 10 pages for the pagination numbers
+const maxVisiblePages = 10;
+let startPage = Math.max(1, page.currentPage - Math.floor(maxVisiblePages / 2));
+let endPage = startPage + maxVisiblePages - 1;
+
+if (endPage > page.lastPage) {
+	endPage = page.lastPage;
+	startPage = Math.max(1, endPage - maxVisiblePages + 1);
+}
+
+const visiblePages = Array.from(
+	{ length: endPage - startPage + 1 },
+	(_, i) => startPage + i
+);
 
 const pageSeo = {
 	og: {
@@ -92,7 +101,7 @@ const pageSeo = {
 						)}
 
 						<div class="pagination-numbers">
-							{Array.from({ length: page.lastPage }, (_, i) => i + 1).map((pageNum) => {
+							{visiblePages.map((pageNum) => {
 								const href = pageNum === 1 ? '/' : `/${pageNum}`;
 								const isCurrent = pageNum === page.currentPage;
 								return isCurrent ? (
@@ -189,13 +198,15 @@ const pageSeo = {
 	/* Pagination Styles */
 	.pagination {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+		gap: 12px;
 		margin-top: 32px;
 		padding-top: 24px;
 		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
 		font-family: var(--font-mono);
 		font-size: 13px;
+		flex-wrap: wrap;
 	}
 
 	.pagination-link {
@@ -263,9 +274,7 @@ const pageSeo = {
 		}
 
 		.pagination {
-			flex-direction: column;
-			gap: 16px;
-			align-items: center;
+			gap: 8px;
 		}
 	}
 </style>
