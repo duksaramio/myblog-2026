@@ -6,11 +6,17 @@ import Header from '../components/Header.astro';
 import profile from '../data/profile.json';
 
 export const getStaticPaths = (async ({ paginate }) => {
+	const PAGE_SIZE = 5;
+	const MAX_PAGES = 10;
+
 	const posts = (await getCollection('blog', ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
 	})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-	return paginate(posts, { pageSize: 5 });
+	// Keep pages at 10 tops (50 most recent posts)
+	const paginatedPosts = posts.slice(0, PAGE_SIZE * MAX_PAGES);
+
+	return paginate(paginatedPosts, { pageSize: PAGE_SIZE });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
@@ -90,7 +96,7 @@ const pageSeo = {
 								const href = pageNum === 1 ? '/' : `/${pageNum}`;
 								const isCurrent = pageNum === page.currentPage;
 								return isCurrent ? (
-									<span class="pagination-number current">{pageNum}</span>
+									<span class="pagination-number current" aria-current="page">{pageNum}</span>
 								) : (
 									<a href={href} class="pagination-number">
 										{pageNum}
@@ -216,6 +222,8 @@ const pageSeo = {
 	.pagination-numbers {
 		display: flex;
 		gap: 8px;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.pagination-number {
