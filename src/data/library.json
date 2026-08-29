@@ -1022,5 +1022,23 @@
     "backdropColor": "linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36996011/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNWIwMWVhNTQtOGQ4Ny00MGFkLThjNzktZWVhNzI4YzFlMGE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "dont-say-good-luck",
+    "title": "Don't Say Good Luck",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Julia Hart",
+    "rating": 6,
+    "review": "Sunny Sandler is pretty good actually.",
+    "watchDate": "2026-08-29",
+    "genres": [
+      "Drama",
+      "Musical"
+    ],
+    "backdropColor": "linear-gradient(135deg, #f5af19 0%, #f12711 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36590417/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BN2RiYWI1M2QtZmMzMy00MGNlLWFmNDItMWE0M2RiMDAyNjc0XkEyXkFqcGc@._V1_.jpg"
   }
 ]
