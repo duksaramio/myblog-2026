@@ -1040,5 +1040,24 @@
     "backdropColor": "linear-gradient(135deg, #f5af19 0%, #f12711 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36590417/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BN2RiYWI1M2QtZmMzMy00MGNlLWFmNDItMWE0M2RiMDAyNjc0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-whisper-man",
+    "title": "The Whisper Man",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "James Ashcroft",
+    "rating": 6,
+    "review": "Robert De Niro looks good for a 83 year old dude.",
+    "watchDate": "2026-08-30",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #0d0d0d 50%, #16213e 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt11561116/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_.jpg"
   }
 ]
