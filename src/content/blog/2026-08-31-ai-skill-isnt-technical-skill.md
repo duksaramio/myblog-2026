@@ -4,6 +4,7 @@ pubDate: 2026-08-31
 description: "The more I use AI, the more I realize the skill gap isn't about prompts — it's about how you think about work itself."
 draft: false
 tags: ["ai", "productivity", "software", "user-interface", "agents"]
+audioUrl: "https://file.duklee.net/audio/2026-08-31-ai-skill-isnt-technical-skill.wav"
 ---
 
 The more I use AI, the more bullish I get. And I'm getting to a point where the value of what I understand about this stuff might be too valuable to share.
