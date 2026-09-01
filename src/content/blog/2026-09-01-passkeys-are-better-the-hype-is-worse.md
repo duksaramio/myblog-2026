@@ -4,6 +4,7 @@ pubDate: 2026-09-01
 description: "Passkeys genuinely beat 2FA against the attacks that matter most. But the vendor pitch skips the parts where they break."
 draft: false
 tags: ["security", "authentication", "passkeys", "fido2", "enterprise", "identity"]
+audioUrl: "https://file.duklee.net/audio/2026-09-01-passkeys-are-better-the-hype-is-worse.wav"
 ---
 
 Five billion passkeys are now in active use worldwide. 90% of consumers know what they are. 68% of enterprises are deploying or piloting them. Google says its 85,000 employees have had zero phishing-related account compromises since moving to hardware security keys.
