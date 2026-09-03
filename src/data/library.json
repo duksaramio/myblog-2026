@@ -1059,5 +1059,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #0d0d0d 50%, #16213e 100%)",
     "externalUrl": "https://www.imdb.com/title/tt11561116/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "i-want-your-sex",
+    "title": "I Want Your Sex",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Gregg Araki",
+    "rating": 4,
+    "review": "Not my kind of movie — rating is probably lower than it deserves. Olivia Wilde is extremely gifted.",
+    "watchDate": "2026-09-02",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt32332915/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzA0NDlhNmMtNzYyYy00NjI0LWFiZjEtYWIwOTFiMDkyM2JhXkEyXkFqcGc@._V1_.jpg"
   }
 ]
