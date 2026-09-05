@@ -1134,5 +1134,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #c0392b 50%, #e74c3c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27497448/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzg4M2U3YWMtMWY4MS00MzFkLTk2ZWQtOThiOGYxZDEyMGQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "hope",
+    "title": "Hope",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Na Hong-jin",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27369017/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZjE3ZDI0MmItMDIyMC00NzU2LTk2OTQtZTUxYTlkMjlkNmY3XkEyXkFqcGc@._V1_.jpg"
   }
 ]
