@@ -1115,5 +1115,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #e94560 100%)",
     "externalUrl": "https://www.amazon.com/dp/B01B1ZCG8G",
     "coverUrl": "https://m.media-amazon.com/images/I/71A9GWWQDxL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "a-knight-of-the-seven-kingdoms",
+    "title": "A Knight of the Seven Kingdoms",
+    "type": "tv",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "George R.R. Martin & Ira Parker",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-09-04",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #c0392b 50%, #e74c3c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27497448/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzg4M2U3YWMtMWY4MS00MzFkLTk2ZWQtOThiOGYxZDEyMGQ2XkEyXkFqcGc@._V1_.jpg"
   }
 ]
