@@ -1078,5 +1078,23 @@
     "backdropColor": "linear-gradient(135deg, #e84393 0%, #6c5ce7 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32332915/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNzA0NDlhNmMtNzYyYy00NjI0LWFiZjEtYWIwOTFiMDkyM2JhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "dear-you",
+    "title": "Dear You",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Hongchun Lan",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "backdropColor": "linear-gradient(135deg, #d4a574 0%, #8b6914 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt41791573/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzc5NTM4ZjEtNjIxOC00YzE0LWFiNTAtNGUyNWNlZWEwN2Y2XkEyXkFqcGc@._V1_.jpg"
   }
 ]
