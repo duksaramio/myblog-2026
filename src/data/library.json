@@ -1096,5 +1096,24 @@
     "backdropColor": "linear-gradient(135deg, #d4a574 0%, #8b6914 100%)",
     "externalUrl": "https://www.imdb.com/title/tt41791573/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BYzc5NTM4ZjEtNjIxOC00YzE0LWFiNTAtNGUyNWNlZWEwN2Y2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-making-of-the-atomic-bomb",
+    "title": "The Making of the Atomic Bomb: 25th Anniversary Edition",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2016,
+    "creator": "Richard Rhodes",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-09-04",
+    "genres": [
+      "History",
+      "Science",
+      "Nonfiction"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #e94560 100%)",
+    "externalUrl": "https://www.amazon.com/dp/B01B1ZCG8G",
+    "coverUrl": "https://m.media-amazon.com/images/I/71A9GWWQDxL._UF1000,1000_QL80_.jpg"
   }
 ]
