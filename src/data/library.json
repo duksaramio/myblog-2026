@@ -1153,5 +1153,24 @@
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27369017/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZjE3ZDI0MmItMDIyMC00NzU2LTk2OTQtZTUxYTlkMjlkNmY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "keanu",
+    "title": "Keanu",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2016,
+    "creator": "Peter Atencio",
+    "rating": 7,
+    "review": "The movie was hilarious. My daughter and I had a good time.",
+    "watchDate": "2026-09-07",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 50%, #b2bec3 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt4139124/",
+    "coverUrl": "https://image.tmdb.org/t/p/w500/ktjbGsGm5GKlHDvvwQajXvDW2BN.jpg"
   }
 ]
