@@ -1172,5 +1172,24 @@
     "backdropColor": "linear-gradient(135deg, #2d3436 0%, #636e72 50%, #b2bec3 100%)",
     "externalUrl": "https://www.imdb.com/title/tt4139124/",
     "coverUrl": "https://image.tmdb.org/t/p/w500/uswOLfIUdDjqSz1x28GR72ffhff.jpg"
+  },
+  {
+    "id": "spider-man-brand-new-day",
+    "title": "Spider-Man: Brand New Day",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Destin Daniel Cretton",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "backdropColor": "linear-gradient(135deg, #c0392b 0%, #1a1a2e 50%, #2c3e50 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt22084616/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_.jpg"
   }
 ]
