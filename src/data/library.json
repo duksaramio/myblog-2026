@@ -1229,5 +1229,24 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt35538033/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BODIwYTk4MWYtMGUxYS00OWUzLTg5MDYtNzg5MmYyNzcyNThkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "a-tale-of-two-sisters",
+    "title": "A Tale of Two Sisters",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2003,
+    "creator": "Kim Jee-woon",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-09-11",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt0365376/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTEwMTYwMGQtY2ZhNi00Y2QwLWIxYjktMGY1Mzk4YmE4ODY2XkEyXkFqcGc@._V1_.jpg"
   }
 ]
