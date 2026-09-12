@@ -1210,5 +1210,24 @@
     "backdropColor": "linear-gradient(135deg, #f39c12 0%, #e74c3c 50%, #c0392b 100%)",
     "externalUrl": "https://www.imdb.com/title/tt1756855/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMDg5NDFkNTctZWE2ZC00MDYzLThlYjItZTljZDY3NTcwNjA3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "resident-evil",
+    "title": "Resident Evil",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Zach Cregger",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt35538033/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BODIwYTk4MWYtMGUxYS00OWUzLTg5MDYtNzg5MmYyNzcyNThkXkEyXkFqcGc@._V1_.jpg"
   }
 ]
