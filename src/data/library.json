@@ -1191,5 +1191,24 @@
     "backdropColor": "linear-gradient(135deg, #c0392b 0%, #1a1a2e 50%, #2c3e50 100%)",
     "externalUrl": "https://www.imdb.com/title/tt22084616/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "coyote-vs-acme",
+    "title": "Coyote vs. Acme",
+    "type": "movie",
+    "status": "plan-to-watch",
+    "releaseYear": 2026,
+    "creator": "Dave Green",
+    "rating": 0,
+    "review": "",
+    "watchDate": "",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Adventure"
+    ],
+    "backdropColor": "linear-gradient(135deg, #f39c12 0%, #e74c3c 50%, #c0392b 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt1756855/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMDg5NDFkNTctZWE2ZC00MDYzLThlYjItZTljZDY3NTcwNjA3XkEyXkFqcGc@._V1_.jpg"
   }
 ]
