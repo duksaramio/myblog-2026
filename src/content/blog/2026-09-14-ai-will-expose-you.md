@@ -1,67 +1,65 @@
 ---
 title: "AI Will Expose You"
 pubDate: 2026-09-14
-description: "The technical excuse is gone. What's left is the only question that ever mattered: do you have agency, or do you just attend meetings?"
+description: "The technical excuse is gone. AI won't replace you — it'll reveal how much of your potential you've been sitting on."
 draft: false
 tags: ["ai", "agency", "vibe-coding", "productivity", "building"]
 ---
 
-Over the weekend I vibe coded two web apps and two mobile apps. I've been playing around with the Android builds specifically and they're solid. Production-ready solid.
+Over the weekend I vibe coded two web apps and two mobile apps. The Android builds specifically are solid — production-ready solid. And the craziest part is I didn't think about what language or framework to use once. I just described what I wanted and iterated.
 
 That got me thinking about something uncomfortable.
 
 ## The Excuse Is Gone
 
-Five years ago you had a reasonable excuse. You weren't technical enough. You didn't have time after all those Zoom meetings and Excel updates. You needed to learn a language, pick a framework, figure out deployment. There were real barriers between "I have an idea" and "I built the thing."
+Five years ago, not being technical was a real barrier. You needed to learn a language, pick a framework, figure out deployment. There were legitimate steps between "I have an idea" and "I built the thing." And most of those steps required skills you could plausibly claim you didn't have and couldn't learn.
 
 Those barriers are gone. Not shrinking — gone.
 
-AI coding agents don't care what language you know. They don't care what ecosystem you're comfortable in. You describe what you want, they build it. Over the weekend I shipped four apps across web and mobile without once thinking about which framework to use or how to set up a project. I just said what I wanted and iterated.
+AI coding agents don't care what language you know. They don't care what ecosystem you're comfortable in. You describe what you want, they build it. Over the weekend I shipped four apps across web and mobile. No framework decisions. No project setup. No boilerplate. Just "I want this" and iteration.
 
-So what's your excuse now?
+So what's stopping you now?
 
 ## The Rude Awakening
 
-Here's the harsh reality most people are going to face: AI will expose you.
+Here's the reality most of us are going to face: AI won't replace you. It'll expose you.
 
-Not expose you as in "replace your job." Expose you as in reveal exactly who you are and what you're capable of — or more accurately, what you've always been capable of but never did.
+Not expose as in make you obsolete. Expose as in reveal exactly what you're capable of — and more precisely, what you've always been capable of but never did.
 
-For years, most people have been optimizing for corporate survival. Attend thousands of Zoom meetings. Say something smart enough to impress people. Get promoted from updating Excel sheets to creating PowerPoints. Ask your manager for time off like a child when you're 42 years old. That's the loop. That's the whole game.
+For years, most of us have been optimizing for corporate survival. Attend the Zoom meetings. Say something smart enough in the standup. Get promoted from updating spreadsheets to creating presentations. Request time off through a system designed for children. That's the loop. That's the game. And it was comfortable enough when "I'm not technical" was a legitimate reason not to build anything.
 
-And it was fine — comfortable even — when "I'm not technical" was a legitimate barrier. When building things required skills you could plausibly claim you didn't have and couldn't learn.
-
-That excuse doesn't work anymore. AI agents can build anything you want. You can go out and make money on your own. Be your own boss. Travel. Build the thing you've been thinking about for three years.
+That reason doesn't work anymore. AI agents can build whatever you want. You could go out and make money on your own. Be your own boss. Build that thing you've been sitting on for three years.
 
 But can you? Really?
 
-## Born NPC, Die NPC
+## The Gap That Was Always There
 
-The uncomfortable answer for most people is no. Not because they're stupid. Not because they can't learn. But because they lack agency. The ability to start. To try. To do something without being told to do it by a manager, a process, or a career ladder.
+The uncomfortable answer for most people is no. Not because they're stupid or lazy. But because the real barrier was never technical. It was always psychological.
 
-We all know this about ourselves at some level. The NPC meme hits hard because it's true for most of us. We were born NPC and we'll die NPC. We're good at updating Excel sheets and we have "people skills."
+The ability to start without being told to. To try something that might fail publicly. To spend a month building something that gets zero feedback and zero validation. To tolerate ambiguity, loneliness, and being wrong — repeatedly — before anything works.
 
-AI didn't create this problem. It just made it impossible to hide from.
+That's agency. And it's the thing AI can't give you.
 
-## The Binary Is Too Clean (But the Direction Is Right)
+Most people aren't choosing passivity. They're responding rationally to incentives. The corporate treadmill pays every two weeks. Building something on your own is unstable by definition. Meeting, deck, promotion, slightly better meetings — that's a stable system. Can you blame anyone for staying on it?
 
-Now let me push back on myself for a second. The NPC framing is satisfying but too simple. Most people aren't choosing passivity — they're responding rationally to incentives. The corporate treadmill pays every two weeks. Building something on your own is unstable by definition. Meeting → deck → promotion → slightly better meetings is a *stable* system. Can you blame people for staying on it?
-
-And AI lowered the technical barrier but didn't touch the psychological one. That's the bigger wall. The person who can't ship without AI usually wasn't blocked by code — they were blocked by not knowing what to build, not wanting to look stupid, not being able to tolerate a month of zero feedback and zero validation.
-
-Execution requires a tolerance for ambiguity, loneliness, and wrongness that decades of comfort-seeking erode. Camus would recognize it. Sisyphus has the tools now, but the boulder is still heavy. Most people will set the tools down and go back to the meeting.
+But here's what changes: AI lowered the technical barrier without touching the psychological one. And that psychological wall is now the only wall left. The person who can't ship wasn't usually blocked by code — they were blocked by not knowing what to build, not wanting to look stupid, not being able to handle the silence that comes before anyone cares.
 
 ## The Gap Is Now Measured
 
-Here's what AI actually exposes: the precise distance between having ideas and executing ideas. That gap has always existed, but it was hidden behind layers of plausible deniability. *I would build that, but I don't know how to code. I would start that company, but the timing isn't right. I would ship that product, but I need a technical co-founder.*
+Here's what AI actually exposes: the precise distance between having ideas and executing ideas.
 
-Every one of those excuses is gone now. What's left is the raw, unflattering truth: the gap between your ideas and your actions is entirely on you. No technical barrier. No resource constraint. Just you and your ability to start and keep going.
+That gap has always existed, but it was hidden behind layers of plausible deniability. *I would build that, but I don't know how to code. I would start that company, but the timing isn't right. I would ship that product, but I need a technical co-founder.*
 
-## The Uncomfortable Bottom Line
+Every one of those excuses is gone now. What's left is a question that has nothing to do with technology: are you the kind of person who starts things, or the kind who talks about starting things?
 
-AI won't make average people extraordinary. It'll make extraordinary people terrifyingly productive, and everyone else will use it to write slightly better emails.
+That question was always there. AI just made it impossible to dodge.
 
-That's the rude awakening. The tools are free, the barriers are gone, and most people still won't build anything. Not because they can't. Because they were never going to.
+## What Actually Happens Next
 
-The ones who were already shipping — they're going to compound at a rate the rest of the world can't comprehend. The ones who were waiting for permission will keep waiting. AI just made the difference between those two groups impossible to ignore.
+Here's my honest take: AI won't make average people extraordinary. It'll make people who were already inclined to build things terrifyingly productive. Everyone else will use it to write slightly better emails.
+
+That's not a moral judgment. It's a structural observation. The tools are free, the barriers are gone, and most people still won't build anything. Not because they can't. Because the thing that drives someone to ship — that restless, uncomfortable need to make something exist that didn't before — either you have it or you don't. AI amplifies what's already there. If what's there is a preference for stability and predictability, AI will make you more efficiently stable. If what's there is a compulsion to build, AI is rocket fuel.
+
+Sisyphus has the tools now. The boulder is still heavy. Camus would recognize the situation immediately.
 
 We're all running out of excuses. The question is what you do when there's nothing left to hide behind.
