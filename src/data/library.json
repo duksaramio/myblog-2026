@@ -1248,5 +1248,24 @@
     "backdropColor": "linear-gradient(135deg, #1a0a05 0%, #2c1810 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt0365376/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTEwMTYwMGQtY2ZhNi00Y2QwLWIxYjktMGY1Mzk4YmE4ODY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-end-of-oak-street",
+    "title": "The End of Oak Street",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "David Robert Mitchell",
+    "rating": 4,
+    "review": "One of the worst movies I've ever watched.",
+    "watchDate": "2026-09-16",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery"
+    ],
+    "backdropColor": "linear-gradient(135deg, #6b4c1f 0%, #10121c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt27165187/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDQ1MDhmZWQtNjdhOS00MGE0LTkxMTItN2Q4NjIyYzUzZmRlXkEyXkFqcGc@._V1_.jpg"
   }
 ]
