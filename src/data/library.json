@@ -1267,5 +1267,24 @@
     "backdropColor": "linear-gradient(135deg, #6b4c1f 0%, #10121c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27165187/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZDQ1MDhmZWQtNjdhOS00MGE0LTkxMTItN2Q4NjIyYzUzZmRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-last-kiss-2026",
+    "title": "The Last Kiss",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Yoko Okumura",
+    "rating": 6,
+    "review": "Pretty good one. My daughter liked it a lot more than I did.",
+    "watchDate": "2026-09-16",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #8e1b3a 0%, #16060c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt33253206/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTdjNTc1NmUtMGRjZi00M2RiLWJmMmMtNGIzNTE5YTVmNDQwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   }
 ]
