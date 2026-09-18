@@ -1,20 +1,110 @@
 ---
+import { useTranslations, type SupportedLanguage, getLocalizedPath } from '../i18n/ui';
+
 interface Props {
 	logo: string;
+	locale?: SupportedLanguage;
 }
 
-const { logo } = Astro.props;
+const { logo, locale } = Astro.props;
 const pathname = Astro.url.pathname;
-const isHome = pathname === '/' || pathname === '/1' || pathname.match(/^\/\d+$/); // handle pagination paths like /2, /3
-const isLibrary = pathname.startsWith('/library');
-const isNakseojang = pathname.startsWith('/nakseojang');
+const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (pathname.startsWith('/ko') ? 'ko' : 'en');
+const t = useTranslations(currentLocale);
+
+const isKo = currentLocale === 'ko';
+
+// Check active states
+const isHome = isKo 
+	? (pathname === '/ko' || pathname === '/ko/' || pathname.match(/^\/ko\/\d+$/) !== null)
+	: (pathname === '/' || pathname === '/1' || pathname.match(/^\/\d+$/) !== null);
+
+const isLibrary = pathname.startsWith('/library') || pathname.startsWith('/ko/library');
+const isNakseojang = pathname.startsWith('/nakseojang') || pathname.startsWith('/ko/nakseojang');
+
+const homeUrl = isKo ? '/ko' : '/';
+const nakseojangUrl = isKo ? '/ko/nakseojang' : '/nakseojang';
+const libraryUrl = isKo ? '/ko/library' : '/library';
+
+// Switch language target url
+const switchTargetLocale: SupportedLanguage = isKo ? 'en' : 'ko';
+const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 ---
 
 <header>
-	<a href="/" class="logo">{logo}</a>
+	<a href={homeUrl} class="logo">{logo}</a>
 	<nav>
-		<a href="/" class={isHome ? 'active' : ''}>Writing</a>
-		<a href="/nakseojang" class={isNakseojang ? 'active' : ''}>낙서장</a>
-		<a href="/library" class={isLibrary ? 'active' : ''}>Library</a>
+		<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
+		<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>
+		<a href={libraryUrl} class={isLibrary ? 'active' : ''}>{t('nav.library')}</a>
+		<div class="lang-switch-wrapper">
+			<a href={switchTargetUrl} class="lang-switch-btn" title={`Switch to ${isKo ? 'English' : '한국어'}`}>
+				<span class={!isKo ? 'active-lang' : 'inactive-lang'}>EN</span>
+				<span class="lang-separator">/</span>
+				<span class={isKo ? 'active-lang' : 'inactive-lang'}>KO</span>
+			</a>
+		</div>
 	</nav>
 </header>
+
+<style>
+	.lang-switch-wrapper {
+		margin-left: 8px;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.lang-switch-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		font-family: var(--font-mono);
+		font-size: 12px;
+		text-decoration: none !important;
+		padding: 3px 8px;
+		border-radius: 4px;
+		border: 1px solid var(--border-color);
+		background-color: var(--card-bg);
+		color: var(--text-color);
+		transition: all 0.2s ease;
+	}
+
+	.lang-switch-btn:hover {
+		border-color: var(--underline-hover);
+		background-color: rgba(0, 0, 0, 0.06);
+	}
+
+	.active-lang {
+		font-weight: 700;
+		color: var(--text-color);
+	}
+
+	.inactive-lang {
+		color: var(--text-muted);
+		opacity: 0.6;
+	}
+
+	.lang-separator {
+		color: var(--text-muted);
+		opacity: 0.4;
+		font-size: 11px;
+	}
+
+	@media (max-width: 640px) {
+		header {
+			flex-direction: column;
+			gap: 16px;
+			align-items: flex-start;
+		}
+
+		nav {
+			gap: 18px;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 100%;
+		}
+
+		.lang-switch-wrapper {
+			margin-left: auto;
+		}
+	}
+</style>

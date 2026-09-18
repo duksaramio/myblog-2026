@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://duklee.net').href;
+const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
+---
+
+<BlogPostLayout 
+	title={post.data.title} 
+	description={post.data.description} 
+	pubDate={post.data.pubDate} 
+	audioUrl={post.data.audioUrl}
+	image={post.data.image}
+	rawMarkdown={rawMarkdown}
+	locale="ko"
+>
+	<Content />
+</BlogPostLayout>

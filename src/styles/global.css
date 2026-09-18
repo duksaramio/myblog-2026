@@ -1,8 +1,8 @@
 :root {
     --bg-color: #f5f4ef;
     --text-color: #000000;
-    --font-serif: "Playfair Display", serif;
-    --font-mono: "Roboto Mono", monospace;
+    --font-serif: "Playfair Display", "Noto Serif KR", "Batang", serif;
+    --font-mono: "Roboto Mono", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", monospace;
     --underline-color: rgba(0, 0, 0, 0.15);
     --underline-hover: rgba(0, 0, 0, 0.4);
     --card-bg: rgba(0, 0, 0, 0.03);

@@ -1,9 +1,10 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import profile from '../data/profile.json';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import profile from '../../data/profile.json';
+import { useTranslations, formatDate } from '../../i18n/ui';
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const posts = (await getCollection('blog', ({ data }) => {
@@ -15,10 +16,11 @@ export const getStaticPaths = (async ({ paginate }) => {
 
 const { page } = Astro.props;
 const posts = page.data;
+const t = useTranslations('ko');
 
 const isFirstPage = page.currentPage === 1;
-const pageTitle = isFirstPage ? profile.site.title : `${profile.site.title} - Page ${page.currentPage}`;
-const pageDescription = isFirstPage ? profile.site.description : `${profile.site.description} (Page ${page.currentPage})`;
+const pageTitle = isFirstPage ? profile.site.title : `${profile.site.title} - ${page.currentPage}페이지`;
+const pageDescription = isFirstPage ? t('site.description') : `${t('site.description')} (${page.currentPage}페이지)`;
 
 // Calculate sliding window of at most 10 pages for the pagination numbers
 const maxVisiblePages = 10;
@@ -49,32 +51,26 @@ const pageSeo = {
 };
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} seo={pageSeo} locale="en">
-	<Header logo={profile.header.logo} locale="en" />
+<BaseLayout title={pageTitle} description={pageDescription} seo={pageSeo} locale="ko">
+	<Header logo={profile.header.logo} locale="ko" />
 
 	<main>
-		<h1 class="sr-only">{profile.site.title} - Blog & Notes</h1>
+		<h1 class="sr-only">{profile.site.title} - 블로그 & 기록</h1>
 
 		{isFirstPage && (
 			<div class="hero-text">
-				{profile.hero.paragraphs.map((paragraph) => (
-					<p set:html={paragraph} />
-				))}
+				<p set:html={t('hero.paragraph1')} />
+				<p set:html={t('hero.paragraph2')} />
 			</div>
 		)}
 
 		{posts.length > 0 && (
 			<div class="writing-section">
-				<h2 class="section-title">Writing</h2>
+				<h2 class="section-title">{t('nav.writing')}</h2>
 
 				<ul class="post-list">
 					{posts.map((post) => {
-						const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
-							year: 'numeric',
-							month: 'short',
-							day: 'numeric',
-							timeZone: 'UTC',
-						});
+						const formattedDate = formatDate(post.data.pubDate, 'ko');
 						const isKorean = post.data.lang === 'ko';
 						return (
 							<li class="post-item">
@@ -82,10 +78,10 @@ const pageSeo = {
 									{formattedDate}
 								</time>
 								<div class="post-title-wrapper">
-									<a href={`/blog/${post.id}`} class="post-link">
+									<a href={`/ko/blog/${post.id}`} class="post-link">
 										{post.data.title}
 									</a>
-									{isKorean && <span class="lang-badge">KO</span>}
+									{!isKorean && <span class="lang-badge">EN</span>}
 								</div>
 							</li>
 						);
@@ -93,18 +89,18 @@ const pageSeo = {
 				</ul>
 
 				{page.lastPage > 1 && (
-					<nav class="pagination" aria-label="Pagination">
+					<nav class="pagination" aria-label="페이지 네비게이션">
 						{page.url.prev ? (
 							<a href={page.url.prev} class="pagination-link prev">
-								← Newer
+								{t('pagination.newer')}
 							</a>
 						) : (
-							<span class="pagination-link prev disabled">← Newer</span>
+							<span class="pagination-link prev disabled">{t('pagination.newer')}</span>
 						)}
 
 						<div class="pagination-numbers">
 							{visiblePages.map((pageNum) => {
-								const href = pageNum === 1 ? '/' : `/${pageNum}`;
+								const href = pageNum === 1 ? '/ko' : `/ko/${pageNum}`;
 								const isCurrent = pageNum === page.currentPage;
 								return isCurrent ? (
 									<span class="pagination-number current" aria-current="page">{pageNum}</span>
@@ -118,10 +114,10 @@ const pageSeo = {
 
 						{page.url.next ? (
 							<a href={page.url.next} class="pagination-link next">
-								Older →
+								{t('pagination.older')}
 							</a>
 						) : (
-							<span class="pagination-link next disabled">Older →</span>
+							<span class="pagination-link next disabled">{t('pagination.older')}</span>
 						)}
 					</nav>
 				)}
@@ -130,7 +126,7 @@ const pageSeo = {
 
 		<div class="contact-us">
 			<p>
-				{profile.contact.label}:{' '}
+				{t('contact.label')}:{' '}
 				<a
 					href={profile.contact.url}
 					class="service-link"
@@ -191,7 +187,7 @@ const pageSeo = {
 		font-size: 12px;
 		opacity: 0.5;
 		flex-shrink: 0;
-		width: 90px;
+		width: 105px;
 	}
 
 	.post-link {

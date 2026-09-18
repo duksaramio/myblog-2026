@@ -1,0 +1,1345 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import profile from '../data/profile.json';
+import library from '../data/library.json';
+import { useTranslations, formatDate, type SupportedLanguage } from '../i18n/ui';
+
+interface Props {
+  locale?: SupportedLanguage;
+}
+
+const { locale = 'en' } = Astro.props;
+const t = useTranslations(locale);
+
+// Calculate initial statistics
+const totalCount = library.length;
+const booksCount = library.filter(item => item.type === 'book').length;
+const moviesCount = library.filter(item => item.type === 'movie').length;
+const tvCount = library.filter(item => item.type === 'tv').length;
+const completedItems = library.filter(item => item.status === 'completed' && item.rating > 0);
+const averageRating = completedItems.length > 0 
+  ? (completedItems.reduce((sum, item) => sum + item.rating, 0) / completedItems.length).toFixed(1)
+  : '0.0';
+
+// Extract all unique genres for the dropdown
+const allGenres = Array.from(
+  new Set(library.flatMap(item => item.genres))
+).sort();
+
+const pageTitle = `${t('library.title')} | ${profile.site.title}`;
+const pageDescription = t('library.subtitle');
+
+const seo = {
+  og: {
+    ...profile.seo.og,
+    title: pageTitle,
+    description: pageDescription,
+  },
+  twitter: {
+    ...profile.seo.twitter,
+    title: pageTitle,
+    description: pageDescription,
+  }
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} seo={seo} locale={locale}>
+  <Header logo={profile.header.logo} locale={locale} />
+
+  <main id="library-main" data-lang={locale}>
+    <div class="library-header">
+      <h1 class="page-title">{t('library.title')}</h1>
+      <p class="subtitle">{t('library.subtitle')}</p>
+    </div>
+
+    <!-- Stats Dashboard -->
+    <div class="stats-dashboard">
+      <div class="stat-card">
+        <span class="stat-label">{t('library.totalLogs')}</span>
+        <span class="stat-value" id="stat-total">{totalCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">{t('library.books')}</span>
+        <span class="stat-value" id="stat-books">{booksCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">{t('library.moviesTv')}</span>
+        <span class="stat-value" id="stat-screen">{moviesCount + tvCount}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">{t('library.averageRating')}</span>
+        <span class="stat-value" id="stat-rating">★ {averageRating}</span>
+      </div>
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder={t('library.searchPlaceholder')} 
+          aria-label={t('library.searchPlaceholder')}
+        />
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <div class="filters-row">
+        <!-- Type Tabs -->
+        <div class="tabs-group" role="tablist">
+          <button class="tab-btn active" data-type="all" role="tab" aria-selected="true">{t('library.all')}</button>
+          <button class="tab-btn" data-type="book" role="tab" aria-selected="false">{t('library.books')}</button>
+          <button class="tab-btn" data-type="movie" role="tab" aria-selected="false">{t('library.moviesTv')}</button>
+          <button class="tab-btn" data-type="tv" role="tab" aria-selected="false">{t('library.tv')}</button>
+        </div>
+
+        <div class="selects-group">
+          <!-- Status Select -->
+          <div class="select-wrapper">
+            <select id="status-filter" aria-label={t('library.allStatus')}>
+              <option value="all">{t('library.allStatus')}</option>
+              <option value="completed">{t('library.completed')}</option>
+              <option value="watching">{t('library.watching')}</option>
+              <option value="plan-to-watch">{t('library.planToWatch')}</option>
+            </select>
+          </div>
+
+          <!-- Genre Select -->
+          <div class="select-wrapper">
+            <select id="genre-filter" aria-label={t('library.allGenres')}>
+              <option value="all">{t('library.allGenres')}</option>
+              {allGenres.map(genre => (
+                <option value={genre.toLowerCase()}>{genre}</option>
+              ))}
+            </select>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="select-wrapper">
+            <select id="sort-order" aria-label="Sort Order">
+              <option value="latest">{t('library.latestCompleted')}</option>
+              <option value="rating-desc">{t('library.ratingHigh')}</option>
+              <option value="year-desc">{t('library.yearNew')}</option>
+              <option value="year-asc">{t('library.yearOld')}</option>
+              <option value="alphabetical">{t('library.alphabetical')}</option>
+            </select>
+          </div>
+
+          <!-- Items Per Page Select -->
+          <div class="select-wrapper">
+            <select id="items-per-page" aria-label="Items per page">
+              <option value="12">12 {t('library.perPage')}</option>
+              <option value="24">24 {t('library.perPage')}</option>
+              <option value="48">48 {t('library.perPage')}</option>
+              <option value="all">{t('library.allItems')}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Filters Notification / Counter -->
+    <div class="results-counter" id="results-counter">
+      {t('library.showing', { count: totalCount })}
+    </div>
+
+    <!-- Media Grid -->
+    <div class="media-grid" id="media-grid">
+      {library.map((item, index) => {
+        const formattedDate = item.watchDate 
+          ? formatDate(new Date(item.watchDate), locale)
+          : item.type === 'book' ? (locale === 'ko' ? '미독' : 'Not read yet') : (locale === 'ko' ? '미시청' : 'Not watched yet');
+
+        // Creator label based on type
+        let creatorLabel = locale === 'ko' ? '제작:' : 'Creator:';
+        if (item.type === 'book') creatorLabel = locale === 'ko' ? '저자:' : 'Author:';
+        else if (item.type === 'movie') creatorLabel = locale === 'ko' ? '감독:' : 'Dir:';
+
+        // Status string formatting
+        let displayStatus = item.status.replace('-', ' ');
+        if (item.status === 'completed') {
+          displayStatus = item.type === 'book' ? t('library.read') : (locale === 'ko' ? '완료' : 'Completed');
+        } else if (item.status === 'watching') {
+          displayStatus = item.type === 'book' ? t('library.reading') : (locale === 'ko' ? '시청 중' : 'Watching');
+        } else if (item.status === 'plan-to-watch') {
+          displayStatus = item.type === 'book' ? t('library.planToRead') : (locale === 'ko' ? '볼 예정' : 'Plan to Watch');
+        }
+
+        return (
+          <div 
+            class="media-card" 
+            data-id={item.id}
+            data-title={item.title.toLowerCase()}
+            data-creator={item.creator.toLowerCase()}
+            data-type={item.type}
+            data-status={item.status}
+            data-genres={item.genres.map(g => g.toLowerCase()).join(',')}
+            data-rating={item.rating}
+            data-year={item.releaseYear}
+            data-watch-date={item.watchDate || '0000-00-00'}
+            data-index={index}
+          >
+            <!-- Poster Backdrop representation -->
+            <div 
+              class="media-poster-container" 
+              style={`background: ${item.coverUrl ? `url(${item.coverUrl}) center / cover no-repeat, ` : ''} ${item.backdropColor || '#333'}`}
+            >
+              <div class="media-poster-overlay"></div>
+              <div class="media-poster-details">
+                <span class="media-year-badge">{item.releaseYear}</span>
+                <span class="media-type-badge">{item.type}</span>
+              </div>
+              {!item.coverUrl && (
+                <div class="media-poster-art">
+                  {item.type === 'book' ? (
+                    <span class="media-book-design">📖</span>
+                  ) : (
+                    <span class="media-initials">{item.title.substring(0, 2).toUpperCase()}</span>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <!-- Card Info -->
+            <div class="media-info">
+              <div class="media-meta-top">
+                <span class={`status-dot ${item.status}`}></span>
+                <span class="status-text">{displayStatus}</span>
+                {item.rating > 0 && <span class="rating-badge">★ {item.rating}</span>}
+              </div>
+              <h3 class="media-card-title">{item.title}</h3>
+              <p class="media-card-creator">{creatorLabel} {item.creator}</p>
+              
+              <div class="media-genres">
+                {item.genres.slice(0, 2).map(genre => (
+                  <span class="genre-tag">{genre}</span>
+                ))}
+                {item.genres.length > 2 && <span class="genre-tag-more">+{item.genres.length - 2}</span>}
+                {item.externalUrl && (
+                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="card-link-icon" title={item.type === 'book' ? (locale === 'ko' ? '아마존에서 보기' : 'View on Amazon') : (locale === 'ko' ? 'IMDb에서 보기' : 'View on IMDb')}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                )}
+              </div>
+            </div>
+            
+            <!-- Hidden details content for modal injection -->
+            <div class="hidden-details" style="display: none;">
+              <div class="modal-layout">
+                {item.coverUrl && (
+                  <div class="modal-cover-wrapper">
+                    <img src={item.coverUrl} alt={`${item.title} cover`} class="modal-cover-img" />
+                  </div>
+                )}
+                <div class="modal-info-wrapper">
+                  <h2 class="modal-title">{item.title}</h2>
+                  <div class="modal-meta">
+                    <span class="modal-meta-item"><strong>{t('library.year')}:</strong> {item.releaseYear}</span>
+                    <span class="modal-meta-item"><strong>{t('library.type')}:</strong> <span class="type-capitalize">{item.type}</span></span>
+                    <span class="modal-meta-item"><strong>{item.type === 'book' ? t('library.author') : item.type === 'movie' ? t('library.director') : t('library.creator')}:</strong> {item.creator}</span>
+                    <span class="modal-meta-item"><strong>{t('library.status')}:</strong> <span class="status-capitalize">{displayStatus}</span></span>
+                    {item.watchDate && (
+                      <span class="modal-meta-item">
+                        <strong>{item.type === 'book' ? (locale === 'ko' ? '완독:' : 'Read:') : (locale === 'ko' ? '시청:' : 'Watched:')}</strong> {formattedDate}
+                      </span>
+                    )}
+                  </div>
+                  
+                  <div class="modal-genres">
+                    {item.genres.map(genre => <span class="genre-tag">{genre}</span>)}
+                  </div>
+
+                  <div class="modal-rating">
+                    <strong>{t('library.rating')}:</strong> {item.rating > 0 ? `${item.rating}/10 ★` : t('library.unrated')}
+                  </div>
+
+                  {item.review && (
+                    <div class="modal-review">
+                      <strong>{t('library.notesReview')}</strong>
+                      <p>{item.review}</p>
+                    </div>
+                  )}
+
+                  {item.externalUrl && (
+                    <div class="modal-link-action">
+                      <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="external-btn-link">
+                        {item.type === 'book' ? t('library.findOnAmazon') : t('library.viewOnImdb')} ↗
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Pagination Navigation -->
+    <nav class="pagination-nav" id="pagination-nav" aria-label="Library pagination">
+      <button class="pagination-btn prev" id="prev-page-btn" aria-label="Previous page">
+        {t('library.prev')}
+      </button>
+      <div class="pagination-pages" id="pagination-pages"></div>
+      <button class="pagination-btn next" id="next-page-btn" aria-label="Next page">
+        {t('library.next')}
+      </button>
+    </nav>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="8" y1="12" x2="16" y2="12"></line>
+      </svg>
+      <p>{t('library.noMatching')}</p>
+    </div>
+
+    <!-- Modal for details -->
+    <div id="details-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-elem">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">×</button>
+        <div id="modal-body-content"></div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .library-header {
+    margin-bottom: 24px;
+  }
+
+  .page-title {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    max-width: 600px;
+  }
+
+  /* Stats Dashboard */
+  .stats-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 24px;
+  }
+
+  .stat-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--underline-hover);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-value {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Controls Panel */
+  .controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+
+  #search-input:focus {
+    outline: none;
+    border-color: var(--underline-hover);
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .filters-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Tabs styling */
+  .tabs-group {
+    display: flex;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .tab-btn:hover {
+    color: var(--text-color);
+  }
+
+  .tab-btn.active {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+  .selects-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .select-wrapper {
+    position: relative;
+  }
+
+  .selects-group select {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 32px 8px 12px;
+    color: var(--text-color);
+    cursor: pointer;
+    appearance: none;
+    transition: border-color 0.2s;
+  }
+
+  .selects-group select:focus {
+    outline: none;
+    border-color: var(--underline-hover);
+  }
+
+  .select-wrapper::after {
+    content: "▼";
+    font-size: 8px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .results-counter {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+
+  /* Grid Layout */
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .media-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .media-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--underline-hover);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  }
+
+  .media-poster-container {
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .media-poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+  }
+
+  .media-poster-details {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .media-year-badge {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .media-type-badge {
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .media-poster-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .media-book-design {
+    font-size: 32px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+
+  .media-initials {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card Info */
+  .media-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+  }
+
+  .media-meta-top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .status-dot.completed {
+    background-color: #2e7d32;
+  }
+
+  .status-dot.watching {
+    background-color: #1565c0;
+  }
+
+  .status-dot.plan-to-watch {
+    background-color: #ef6c00;
+  }
+
+  .status-dot.dropped {
+    background-color: #c62828;
+  }
+
+  .status-text {
+    text-transform: capitalize;
+  }
+
+  .rating-badge {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .media-card-title {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--text-color);
+  }
+
+  .media-card-creator {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .media-genres {
+    margin-top: auto;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .genre-tag {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: var(--text-muted);
+  }
+
+  .genre-tag-more {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-left: 2px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    gap: 16px;
+    color: var(--text-muted);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+  }
+
+  .empty-state p {
+    font-size: 14px;
+  }
+
+  /* Pagination Navigation */
+  .pagination-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .pagination-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination-btn:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: var(--underline-hover);
+  }
+
+  .pagination-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .pagination-pages {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  :global(.page-num-btn) {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    min-width: 32px;
+    height: 32px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+  }
+
+  :global(.page-num-btn:hover:not(.active):not(.ellipsis)) {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: var(--underline-hover);
+  }
+
+  :global(.page-num-btn.active) {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+    font-weight: 600;
+  }
+
+  :global(.page-num-btn.ellipsis) {
+    background: transparent;
+    border: none;
+    cursor: default;
+    padding: 0 4px;
+    color: var(--text-muted);
+  }
+
+  /* Modal Details styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .modal.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 244, 239, 0.95);
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 32px;
+    width: 90%;
+    max-width: 600px;
+    z-index: 2;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+
+  .modal-close:hover {
+    color: var(--text-color);
+  }
+
+  #modal-body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  :global(.modal-title) {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 1.2;
+  }
+
+  :global(.modal-meta) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+  }
+
+  :global(.modal-meta-item) {
+    color: var(--text-muted);
+  }
+
+  :global(.modal-meta-item strong) {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+  :global(.type-capitalize) {
+    text-transform: capitalize;
+  }
+
+  :global(.status-capitalize) {
+    text-transform: capitalize;
+  }
+
+  :global(.modal-genres) {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  :global(.modal-rating) {
+    font-size: 14px;
+  }
+
+  :global(.modal-rating strong) {
+    font-weight: 600;
+  }
+
+  :global(.modal-review) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--text-color);
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  :global(.modal-review strong) {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+  }
+
+  :global(.modal-review p) {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-color);
+  }
+
+  .card-link-icon {
+    margin-left: auto;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .card-link-icon:hover {
+    color: var(--text-color);
+    border-color: var(--border-color);
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  :global(.modal-link-action) {
+    margin-top: 8px;
+  }
+
+  :global(.external-btn-link) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+
+  :global(.external-btn-link:hover) {
+    border-color: var(--underline-hover);
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  :global(.modal-layout) {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  :global(.modal-cover-wrapper) {
+    flex-shrink: 0;
+    width: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.modal-cover-img) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  :global(.modal-info-wrapper) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @media (max-width: 576px) {
+    :global(.modal-layout) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    :global(.modal-cover-wrapper) {
+      width: 120px;
+    }
+
+    :global(.modal-info-wrapper) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stats-dashboard {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .filters-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .selects-group {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .selects-group .select-wrapper:last-child {
+      grid-column: span 2;
+    }
+
+    .selects-group select {
+      width: 100%;
+    }
+
+    .tabs-group {
+      width: 100%;
+    }
+
+    .tab-btn {
+      flex: 1;
+      text-align: center;
+    }
+
+    .modal-content {
+      padding: 24px;
+      width: 95%;
+    }
+  }
+</style>
+
+<script>
+  const libraryMain = document.getElementById('library-main');
+  const isKo = libraryMain?.dataset.lang === 'ko';
+
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+  const statusFilter = document.getElementById('status-filter') as HTMLSelectElement | null;
+  const genreFilter = document.getElementById('genre-filter') as HTMLSelectElement | null;
+  const sortOrder = document.getElementById('sort-order') as HTMLSelectElement | null;
+  const itemsPerPageSelect = document.getElementById('items-per-page') as HTMLSelectElement | null;
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const mediaGrid = document.getElementById('media-grid');
+  const emptyState = document.getElementById('empty-state');
+  const resultsCounter = document.getElementById('results-counter');
+  const paginationNav = document.getElementById('pagination-nav');
+  const prevPageBtn = document.getElementById('prev-page-btn') as HTMLButtonElement | null;
+  const nextPageBtn = document.getElementById('next-page-btn') as HTMLButtonElement | null;
+  const paginationPages = document.getElementById('pagination-pages');
+
+  const statTotal = document.getElementById('stat-total');
+  const statBooks = document.getElementById('stat-books');
+  const statScreen = document.getElementById('stat-screen');
+  const statRating = document.getElementById('stat-rating');
+
+  const cards = mediaGrid ? Array.from(mediaGrid.querySelectorAll('.media-card')) : [];
+  let currentTypeFilter = 'all';
+  let currentPage = 1;
+
+  function scrollToGridTop() {
+    const controlsPanel = document.querySelector('.controls-panel');
+    if (controlsPanel) {
+      const rect = controlsPanel.getBoundingClientRect();
+      if (rect.top < 0) {
+        controlsPanel.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
+  function updateList() {
+    if (!mediaGrid) return;
+
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const status = statusFilter ? statusFilter.value : 'all';
+    const genre = genreFilter ? genreFilter.value : 'all';
+    const sort = sortOrder ? sortOrder.value : 'latest';
+    const perPageVal = itemsPerPageSelect ? itemsPerPageSelect.value : '12';
+    const itemsPerPage = perPageVal === 'all' ? Infinity : (parseInt(perPageVal, 10) || 12);
+
+    const filteredCards = cards.filter(card => {
+      const cardElement = card as HTMLElement;
+      const typeMatch = currentTypeFilter === 'all' || cardElement.dataset.type === currentTypeFilter;
+      const statusMatch = status === 'all' || cardElement.dataset.status === status;
+      const cardGenres = cardElement.dataset.genres ? cardElement.dataset.genres.split(',') : [];
+      const genreMatch = genre === 'all' || cardGenres.includes(genre);
+      const title = cardElement.dataset.title || '';
+      const creator = cardElement.dataset.creator || '';
+      const searchMatch = !query || 
+                          title.includes(query) || 
+                          creator.includes(query) || 
+                          cardGenres.some(g => g.includes(query));
+
+      return typeMatch && statusMatch && genreMatch && searchMatch;
+    });
+
+    filteredCards.sort((a, b) => {
+      const cardA = a as HTMLElement;
+      const cardB = b as HTMLElement;
+
+      if (sort === 'rating-desc') {
+        const rA = parseFloat(cardA.dataset.rating || '0');
+        const rB = parseFloat(cardB.dataset.rating || '0');
+        return rB - rA;
+      } else if (sort === 'year-desc') {
+        const yA = parseInt(cardA.dataset.year || '0');
+        const yB = parseInt(cardB.dataset.year || '0');
+        return yB - yA;
+      } else if (sort === 'year-asc') {
+        const yA = parseInt(cardA.dataset.year || '0');
+        const yB = parseInt(cardB.dataset.year || '0');
+        return yA - yB;
+      } else if (sort === 'alphabetical') {
+        const tA = cardA.dataset.title || '';
+        const tB = cardB.dataset.title || '';
+        return tA.localeCompare(tB);
+      } else {
+        const dA = cardA.dataset.watchDate || '0000-00-00';
+        const dB = cardB.dataset.watchDate || '0000-00-00';
+        if (dA === '0000-00-00' || !dA) return 1;
+        if (dB === '0000-00-00' || !dB) return -1;
+        return dB.localeCompare(dA);
+      }
+    });
+
+    const totalFiltered = filteredCards.length;
+    const totalPages = itemsPerPage === Infinity ? 1 : (Math.ceil(totalFiltered / itemsPerPage) || 1);
+
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = itemsPerPage === Infinity ? totalFiltered : startIndex + itemsPerPage;
+
+    const visibleCardsSet = new Set(filteredCards.slice(startIndex, endIndex));
+    cards.forEach(card => {
+      (card as HTMLElement).style.display = visibleCardsSet.has(card) ? 'flex' : 'none';
+    });
+
+    filteredCards.forEach(card => mediaGrid.appendChild(card));
+
+    if (emptyState) {
+      emptyState.style.display = totalFiltered === 0 ? 'flex' : 'none';
+    }
+
+    if (resultsCounter) {
+      if (totalFiltered === 0) {
+        resultsCounter.textContent = isKo ? '0개 항목 표시 중' : 'Showing 0 items';
+      } else {
+        const displayStart = startIndex + 1;
+        const displayEnd = Math.min(endIndex, totalFiltered);
+        resultsCounter.textContent = isKo 
+          ? `총 ${totalFiltered}개 항목 중 ${displayStart}–${displayEnd} 표시`
+          : `Showing ${displayStart}–${displayEnd} of ${totalFiltered} items`;
+      }
+    }
+
+    renderPagination(totalPages, totalFiltered);
+    updateStatsDashboard(filteredCards);
+  }
+
+  function renderPagination(totalPages: number, totalFiltered: number) {
+    if (!paginationNav || !paginationPages) return;
+
+    if (totalFiltered === 0 || totalPages <= 1) {
+      paginationNav.style.display = 'none';
+      return;
+    }
+
+    paginationNav.style.display = 'flex';
+
+    if (prevPageBtn) {
+      prevPageBtn.disabled = currentPage === 1;
+    }
+    if (nextPageBtn) {
+      nextPageBtn.disabled = currentPage === totalPages;
+    }
+
+    paginationPages.innerHTML = '';
+
+    const pagesToShow: (number | string)[] = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pagesToShow.push(i);
+    } else {
+      pagesToShow.push(1);
+      if (currentPage > 3) pagesToShow.push('...');
+
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+      for (let i = start; i <= end; i++) {
+        if (!pagesToShow.includes(i)) pagesToShow.push(i);
+      }
+
+      if (currentPage < totalPages - 2) pagesToShow.push('...');
+      pagesToShow.push(totalPages);
+    }
+
+    pagesToShow.forEach(p => {
+      const btn = document.createElement('button');
+      if (typeof p === 'number') {
+        btn.className = `page-num-btn${p === currentPage ? ' active' : ''}`;
+        btn.textContent = p.toString();
+        btn.addEventListener('click', () => {
+          currentPage = p;
+          updateList();
+          scrollToGridTop();
+        });
+      } else {
+        btn.className = 'page-num-btn ellipsis';
+        btn.textContent = '...';
+        btn.disabled = true;
+      }
+      paginationPages.appendChild(btn);
+    });
+  }
+
+  function updateStatsDashboard(activeCards: Element[]) {
+    const activeData = activeCards.map(c => {
+      const el = c as HTMLElement;
+      return {
+        type: el.dataset.type,
+        status: el.dataset.status,
+        rating: parseFloat(el.dataset.rating || '0')
+      };
+    });
+
+    if (statTotal) statTotal.textContent = activeData.length.toString();
+    if (statBooks) statBooks.textContent = activeData.filter(d => d.type === 'book').length.toString();
+    if (statScreen) {
+      const screenCount = activeData.filter(d => d.type === 'movie' || d.type === 'tv').length;
+      statScreen.textContent = screenCount.toString();
+    }
+
+    if (statRating) {
+      const ratedCompleted = activeData.filter(d => d.status === 'completed' && d.rating > 0);
+      const avg = ratedCompleted.length > 0 
+        ? (ratedCompleted.reduce((sum, d) => sum + d.rating, 0) / ratedCompleted.length).toFixed(1)
+        : '0.0';
+      statRating.textContent = `★ ${avg}`;
+    }
+  }
+
+  function onFilterChange() {
+    currentPage = 1;
+    updateList();
+  }
+
+  searchInput?.addEventListener('input', onFilterChange);
+  statusFilter?.addEventListener('change', onFilterChange);
+  genreFilter?.addEventListener('change', onFilterChange);
+  sortOrder?.addEventListener('change', onFilterChange);
+  itemsPerPageSelect?.addEventListener('change', onFilterChange);
+
+  prevPageBtn?.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updateList();
+      scrollToGridTop();
+    }
+  });
+
+  nextPageBtn?.addEventListener('click', () => {
+    currentPage++;
+    updateList();
+    scrollToGridTop();
+  });
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      tabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      const target = e.currentTarget as HTMLButtonElement;
+      target.classList.add('active');
+      target.setAttribute('aria-selected', 'true');
+      currentTypeFilter = target.dataset.type || 'all';
+      onFilterChange();
+    });
+  });
+
+  // Modal Functionality
+  const modal = document.getElementById('details-modal');
+  const modalBody = document.getElementById('modal-body-content');
+  const modalClose = modal?.querySelector('.modal-close');
+  const modalOverlay = modal?.querySelector('.modal-overlay');
+
+  function openModal(card: HTMLElement) {
+    if (!modal || !modalBody) return;
+    
+    const hiddenDetails = card.querySelector('.hidden-details');
+    if (!hiddenDetails) return;
+
+    modalBody.innerHTML = hiddenDetails.innerHTML;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  cards.forEach(card => {
+    const htmlCard = card as HTMLElement;
+    htmlCard.addEventListener('click', () => openModal(htmlCard));
+  });
+
+  const linkIcons = document.querySelectorAll('.card-link-icon');
+  linkIcons.forEach(icon => {
+    icon.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
+
+  modalClose?.addEventListener('click', closeModal);
+  modalOverlay?.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  updateList();
+</script>
