@@ -21,6 +21,7 @@ const { title, description, pubDate, audioUrl, image, backUrl, backLabel, rawMar
 
 const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : 'en');
 const t = useTranslations(currentLocale);
+const siteTitle = t('site.title');
 
 const resolvedBackUrl = backUrl || (currentLocale === 'ko' ? '/ko' : '/');
 const resolvedBackLabel = backLabel || t('post.back');
@@ -33,14 +34,14 @@ const blogSeo = {
 		...profile.seo.og,
 		type: 'article',
 		url: postUrl,
-		title: `${title} | ${profile.header.logo}`,
+		title: `${title} | ${siteTitle}`,
 		description: description,
 		image: cardImage,
 	},
 	twitter: {
 		...profile.seo.twitter,
 		url: postUrl,
-		title: `${title} | ${profile.header.logo}`,
+		title: `${title} | ${siteTitle}`,
 		description: description,
 		image: cardImage,
 	}
@@ -54,12 +55,12 @@ const jsonLd = {
 	'datePublished': pubDate.toISOString(),
 	'author': {
 		'@type': 'Person',
-		'name': profile.site.title,
+		'name': siteTitle,
 		'url': Astro.site ? Astro.site.origin : 'https://duklee.net',
 	},
 	'publisher': {
 		'@type': 'Organization',
-		'name': profile.site.title,
+		'name': siteTitle,
 		'url': Astro.site ? Astro.site.origin : 'https://duklee.net',
 	},
 	'mainEntityOfPage': {
@@ -71,8 +72,8 @@ const jsonLd = {
 const formattedDate = formatDate(pubDate, currentLocale);
 ---
 
-<BaseLayout title={`${title} | ${profile.header.logo}`} description={description} seo={blogSeo} jsonLd={jsonLd} locale={currentLocale}>
-	<Header logo={profile.header.logo} locale={currentLocale} />
+<BaseLayout title={`${title} | ${siteTitle}`} description={description} seo={blogSeo} jsonLd={jsonLd} locale={currentLocale}>
+	<Header logo={siteTitle} locale={currentLocale} />
 
 	<main>
 		<article class="blog-post">

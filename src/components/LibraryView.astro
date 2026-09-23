@@ -27,7 +27,8 @@ const allGenres = Array.from(
   new Set(library.flatMap(item => item.genres))
 ).sort();
 
-const pageTitle = `${t('library.title')} | ${profile.site.title}`;
+const siteTitle = t('site.title');
+const pageTitle = `${t('library.title')} | ${siteTitle}`;
 const pageDescription = t('library.subtitle');
 
 const seo = {
@@ -45,7 +46,7 @@ const seo = {
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} seo={seo} locale={locale}>
-  <Header logo={profile.header.logo} locale={locale} />
+  <Header logo={siteTitle} locale={locale} />
 
   <main id="library-main" data-lang={locale}>
     <div class="library-header">

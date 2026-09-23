@@ -84,7 +84,7 @@ export const ui = {
 		'nav.library': '서재',
 		'lang.switch': 'English',
 
-		'site.title': 'Duk Lee',
+		'site.title': '이덕희',
 		'site.description': '생명과학 및 바이오테크 기업을 위한 GxP 규정 준수와 AI 통합 솔루션. Saram Consulting은 바이오와 인공지능의 접점을 만듭니다.',
 
 		'hero.paragraph1': '책과 영화, 그리고 컴퓨터 다루는 것을 좋아합니다.',

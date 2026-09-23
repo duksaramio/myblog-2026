@@ -5,16 +5,22 @@ import { ui } from '../../i18n/ui';
 import type { APIContext } from 'astro';
 
 export async function GET(context: APIContext) {
-	const posts = await getCollection('blog', ({ data }) => {
+	const koPosts = await getCollection('blog_ko', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+	const enPosts = await getCollection('blog', ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
 	});
 
-	const sortedPosts = posts.sort(
-		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	);
+	const koPostMap = new Map(koPosts.map((p) => [p.id, p]));
+	const allSlugs = new Set([...koPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
+
+	const sortedPosts = Array.from(allSlugs).map((slug) => {
+		return koPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
+	}).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 	return rss({
-		title: `${profile.site.title} (한국어)`,
+		title: `${ui.ko['site.title']} (한국어)`,
 		description: ui.ko['site.description'],
 		site: context.site || new URL(profile.seo.og.url),
 		items: sortedPosts.map((post) => ({

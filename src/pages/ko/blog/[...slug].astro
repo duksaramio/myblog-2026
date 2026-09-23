@@ -3,13 +3,23 @@ import { getCollection, render } from 'astro:content';
 import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog', ({ data }) => {
+	const koPosts = await getCollection('blog_ko', ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
 	});
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: { post },
-	}));
+	const enPosts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+
+	const koPostMap = new Map(koPosts.map((p) => [p.id, p]));
+	const allSlugs = new Set([...koPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
+
+	return Array.from(allSlugs).map((slug) => {
+		const post = koPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
+		return {
+			params: { slug },
+			props: { post },
+		};
+	});
 }
 
 const { post } = Astro.props;

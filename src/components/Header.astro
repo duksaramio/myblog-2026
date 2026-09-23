@@ -2,7 +2,7 @@
 import { useTranslations, type SupportedLanguage, getLocalizedPath } from '../i18n/ui';
 
 interface Props {
-	logo: string;
+	logo?: string;
 	locale?: SupportedLanguage;
 }
 
@@ -12,6 +12,7 @@ const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as Suppo
 const t = useTranslations(currentLocale);
 
 const isKo = currentLocale === 'ko';
+const displayLogo = (!logo || logo === 'Duk Lee') ? t('site.title') : logo;
 
 // Check active states
 const isHome = isKo 
@@ -31,7 +32,7 @@ const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 ---
 
 <header>
-	<a href={homeUrl} class="logo">{logo}</a>
+	<a href={homeUrl} class="logo">{displayLogo}</a>
 	<nav>
 		<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
 		<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>

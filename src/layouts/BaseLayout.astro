@@ -50,12 +50,14 @@ const pageUrl = seo.og.url && seo.og.url !== profile.seo.og.url
 	? seo.og.url
 	: canonicalURL;
 
+const siteTitle = t('site.title');
+
 const websiteSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'WebSite',
-	'name': profile.site.title,
+	'name': siteTitle,
 	'url': siteUrl,
-	'description': profile.site.description,
+	'description': t('site.description'),
 };
 
 const activeJsonLd = jsonLd || websiteSchema;
@@ -72,7 +74,7 @@ const activeJsonLd = jsonLd || websiteSchema;
 		<link rel="alternate" hreflang="en" href={enUrl} />
 		<link rel="alternate" hreflang="ko" href={koUrl} />
 		<link rel="alternate" hreflang="x-default" href={enUrl} />
-		<link rel="alternate" type="application/rss+xml" title={profile.site.title} href={new URL(currentLocale === 'ko' ? '/ko/rss.xml' : '/rss.xml', siteUrl).href} />
+		<link rel="alternate" type="application/rss+xml" title={siteTitle} href={new URL(currentLocale === 'ko' ? '/ko/rss.xml' : '/rss.xml', siteUrl).href} />
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -83,7 +85,7 @@ const activeJsonLd = jsonLd || websiteSchema;
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content={seo.og.type} />
-		<meta property="og:site_name" content={profile.site.title} />
+		<meta property="og:site_name" content={siteTitle} />
 		<meta property="og:url" content={pageUrl} />
 		<meta property="og:title" content={seo.og.title} />
 		<meta property="og:description" content={seo.og.description} />
