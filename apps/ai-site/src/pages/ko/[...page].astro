@@ -97,7 +97,7 @@ const navItems = [
 			</div>
 		)}
 
-		{posts.length > 0 && (
+		{posts.length > 0 ? (
 			<div class="writing-section">
 				<h2 class="section-title">AI 글</h2>
 
@@ -153,6 +153,10 @@ const navItems = [
 					</nav>
 				)}
 			</div>
+		) : (
+			<div class="writing-section">
+				<p class="empty-state">새로운 글과 연구 노트가 곧 공개됩니다.</p>
+			</div>
 		)}
 
 		<div class="contact-us">
@@ -175,6 +179,13 @@ const navItems = [
 		margin-top: 32px;
 		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
 		padding-top: 24px;
+	}
+
+	.empty-state {
+		font-size: 14px;
+		color: var(--text-muted);
+		font-style: italic;
+		padding: 12px 0;
 	}
 
 	.post-title-wrapper {

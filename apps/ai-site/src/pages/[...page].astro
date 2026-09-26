@@ -83,7 +83,7 @@ const navItems = [
 			</div>
 		)}
 
-		{posts.length > 0 && (
+		{posts.length > 0 ? (
 			<div class="writing-section">
 				<h2 class="section-title">AI Writing</h2>
 
@@ -146,6 +146,10 @@ const navItems = [
 					</nav>
 				)}
 			</div>
+		) : (
+			<div class="writing-section">
+				<p class="empty-state">Fresh essays, notes, and experiments are coming soon.</p>
+			</div>
 		)}
 
 		<div class="contact-us">
@@ -168,6 +172,13 @@ const navItems = [
 		margin-top: 32px;
 		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
 		padding-top: 24px;
+	}
+
+	.empty-state {
+		font-size: 14px;
+		color: var(--text-muted);
+		font-style: italic;
+		padding: 12px 0;
 	}
 
 	.post-title-wrapper {
