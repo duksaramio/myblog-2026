@@ -133,6 +133,19 @@ footer {
     color: var(--text-muted);
 }
 
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--underline-color);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--text-color);
+    text-decoration-color: var(--underline-hover);
+}
+
 @media (max-width: 768px) {
     body {
         padding: 40px 20px;

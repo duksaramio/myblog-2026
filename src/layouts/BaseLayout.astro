@@ -120,7 +120,7 @@ const activeJsonLd = jsonLd || websiteSchema;
 			)}
 			<slot />
 			<footer>
-				<p>{t('footer.text')}</p>
+				<p set:html={t('footer.text')} />
 			</footer>
 		</div>
 	</body>
