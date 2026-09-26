@@ -1,27 +1,25 @@
 {
-  "name": "digital-disk",
-  "type": "module",
+  "name": "myblog-platform",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "generate:assets": "node scripts/generate-assets.cjs",
-    "deploy": "astro build && wrangler deploy"
-  },
-  "dependencies": {
-    "@astrojs/cloudflare": "^14.3.1",
-    "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.3.2"
+    "dev": "npm run dev --workspace=main-site",
+    "dev:main": "npm run dev --workspace=main-site",
+    "dev:ai": "npm run dev --workspace=ai-site",
+    "build": "npm run build --workspaces --if-present",
+    "build:main": "npm run build --workspace=main-site",
+    "build:ai": "npm run build --workspace=ai-site",
+    "preview:main": "npm run preview --workspace=main-site",
+    "preview:ai": "npm run preview --workspace=ai-site",
+    "deploy:main": "npm run deploy --workspace=main-site",
+    "deploy:ai": "npm run deploy --workspace=ai-site"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "typescript": "^6.0.3",
-    "wrangler": "^4.119.0"
+    "typescript": "^6.0.3"
   }
 }

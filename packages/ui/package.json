@@ -1,0 +1,22 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "echo '@repo/ui is consumed as source'"
+  },
+  "exports": {
+    "./components/*": "./src/components/*",
+    "./layouts/*": "./src/layouts/*",
+    "./styles/*": "./src/styles/*",
+    "./i18n": "./src/i18n/ui.ts",
+    "./i18n/*": "./src/i18n/*",
+    "./*": "./src/*"
+  },
+  "peerDependencies": {
+    "astro": "^7.3.2"
+  },
+  "devDependencies": {
+    "astro": "^7.3.2"
+  }
+}

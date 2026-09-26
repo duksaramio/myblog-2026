@@ -1,0 +1,154 @@
+---
+import '../styles/global.css';
+import PromoBanner from '../components/PromoBanner.astro';
+import { useTranslations, type SupportedLanguage, getLocalizedPath } from '../i18n/ui';
+
+interface Props {
+	title: string;
+	description: string;
+	seo: {
+		og: {
+			type: string;
+			url: string;
+			title: string;
+			description: string;
+			image: string;
+		};
+		twitter: {
+			card: string;
+			url: string;
+			title: string;
+			description: string;
+			image: string;
+		};
+	};
+	jsonLd?: Record<string, any> | Record<string, any>[];
+	locale?: SupportedLanguage;
+	siteTitle?: string;
+	siteDescription?: string;
+	siteUrl?: string;
+	banner?: {
+		show?: boolean;
+		tag?: string;
+		text?: string;
+		linkText?: string;
+		linkUrl?: string;
+	};
+	footerHtml?: string;
+}
+
+const { 
+	title, 
+	description, 
+	seo, 
+	jsonLd, 
+	locale, 
+	siteTitle: propSiteTitle, 
+	siteDescription: propSiteDescription, 
+	siteUrl: propSiteUrl,
+	banner,
+	footerHtml
+} = Astro.props;
+
+const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : 'en');
+const t = useTranslations(currentLocale);
+
+const defaultSiteUrl = propSiteUrl || (Astro.site ? Astro.site.origin : (seo.og.url ? new URL(seo.og.url).origin : 'https://duklee.net'));
+const siteUrl = Astro.site ? Astro.site.origin : defaultSiteUrl;
+const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
+
+const enUrl = new URL(getLocalizedPath(Astro.url.pathname, 'en'), siteUrl).href;
+const koUrl = new URL(getLocalizedPath(Astro.url.pathname, 'ko'), siteUrl).href;
+
+const ogImageUrl = seo.og.image.startsWith('http')
+	? seo.og.image
+	: new URL(seo.og.image, siteUrl).href;
+
+const twitterImageUrl = seo.twitter.image.startsWith('http')
+	? seo.twitter.image
+	: new URL(seo.twitter.image, siteUrl).href;
+
+const pageUrl = seo.og.url && !seo.og.url.endsWith('duklee.net/') && !seo.og.url.endsWith('ai.duklee.net/')
+	? seo.og.url
+	: canonicalURL;
+
+const siteTitle = propSiteTitle || t('site.title');
+const siteDescription = propSiteDescription || t('site.description');
+
+const websiteSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	'name': siteTitle,
+	'url': siteUrl,
+	'description': siteDescription,
+};
+
+const activeJsonLd = jsonLd || websiteSchema;
+---
+
+<!DOCTYPE html>
+<html lang={currentLocale}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
+		<link rel="alternate" hreflang="en" href={enUrl} />
+		<link rel="alternate" hreflang="ko" href={koUrl} />
+		<link rel="alternate" hreflang="x-default" href={enUrl} />
+		<link rel="alternate" type="application/rss+xml" title={siteTitle} href={new URL(currentLocale === 'ko' ? '/ko/rss.xml' : '/rss.xml', siteUrl).href} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content={seo.og.type} />
+		<meta property="og:site_name" content={siteTitle} />
+		<meta property="og:url" content={pageUrl} />
+		<meta property="og:title" content={seo.og.title} />
+		<meta property="og:description" content={seo.og.description} />
+		<meta property="og:image" content={ogImageUrl} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content={seo.twitter.card} />
+		<meta property="twitter:url" content={pageUrl} />
+		<meta property="twitter:title" content={seo.twitter.title} />
+		<meta property="twitter:description" content={seo.twitter.description} />
+		<meta property="twitter:image" content={twitterImageUrl} />
+
+		<script type="application/ld+json" set:html={JSON.stringify(activeJsonLd)} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<div class="container">
+			{banner && banner.show && (
+				<PromoBanner
+					tag={banner.tag || t('banner.tag')}
+					text={banner.text || t('banner.text')}
+					linkText={banner.linkText || t('banner.linkText')}
+					linkUrl={banner.linkUrl || 'https://saram.io'}
+				/>
+			)}
+			<slot />
+			<footer>
+				{footerHtml ? (
+					<p set:html={footerHtml} />
+				) : (
+					<p set:html={t('footer.text')} />
+				)}
+			</footer>
+		</div>
+	</body>
+</html>

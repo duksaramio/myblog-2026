@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogPostLayout from '@repo/ui/layouts/BlogPostLayout.astro';
+import profile from '../../../data/profile.json';
+
+export async function getStaticPaths() {
+	const koPosts = await getCollection('blog_ko', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+	const enPosts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+
+	const koPostMap = new Map(koPosts.map((p) => [p.id, p]));
+	const allSlugs = new Set([...koPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
+
+	return Array.from(allSlugs).map((slug) => {
+		const post = koPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
+		return {
+			params: { slug },
+			props: { post },
+		};
+	});
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://duklee.net').href;
+const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
+---
+
+<BlogPostLayout 
+	title={post.data.title} 
+	description={post.data.description} 
+	pubDate={post.data.pubDate} 
+	audioUrl={post.data.audioUrl}
+	image={post.data.image}
+	rawMarkdown={rawMarkdown}
+	locale="ko"
+	banner={profile.banner}
+>
+	<Content />
+</BlogPostLayout>

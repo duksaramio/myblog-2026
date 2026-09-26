@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Duk Lee | AI",
+    "description": "Notes, essays, and experiments on artificial intelligence, LLM architectures, agent harnesses, evals, and autonomous systems."
+  },
+  "seo": {
+    "og": {
+      "type": "website",
+      "url": "https://ai.duklee.net/",
+      "title": "Duk Lee | AI",
+      "description": "Notes, essays, and experiments on artificial intelligence, autonomous agents, and LLMs by Duk Lee.",
+      "image": "/og-image.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://ai.duklee.net/",
+      "title": "Duk Lee | AI",
+      "description": "Notes, essays, and experiments on artificial intelligence, autonomous agents, and LLMs by Duk Lee.",
+      "image": "/og-image.png"
+    }
+  },
+  "header": {
+    "logo": "Duk Lee",
+    "topicTitle": "AI",
+    "parentTitle": "Duk Lee",
+    "parentUrl": "https://duklee.net"
+  },
+  "hero": {
+    "paragraphs": [
+      "Notes, essays, and experiments on artificial intelligence, autonomous agents, and LLMs.",
+      "A topic-focused publication by <a href=\"https://duklee.net\">Duk Lee</a>."
+    ],
+    "paragraphs_ko": [
+      "인공지능, 자율 에이전트, LLM 아키텍처에 대한 생각과 실험을 기록하는 공간입니다.",
+      "<a href=\"https://duklee.net\">이덕희</a>의 AI 주제별 특화 블로그입니다."
+    ]
+  },
+  "contact": {
+    "label": "Email",
+    "value": "info@saram.consulting",
+    "url": "mailto:info@saram.consulting"
+  },
+  "banner": {
+    "show": true,
+    "tag": "Saram Consulting",
+    "text": "GxP compliance and AI integration for life science and biotechnology companies.",
+    "linkText": "Visit saram.io →",
+    "linkUrl": "https://saram.io"
+  }
+}

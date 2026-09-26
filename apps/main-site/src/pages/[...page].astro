@@ -1,0 +1,292 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@repo/ui/layouts/BaseLayout.astro';
+import Header from '@repo/ui/components/Header.astro';
+import profile from '../data/profile.json';
+
+export const getStaticPaths = (async ({ paginate }) => {
+	const posts = (await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+	return paginate(posts, { pageSize: 5 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const posts = page.data;
+
+const isFirstPage = page.currentPage === 1;
+const pageTitle = isFirstPage ? profile.site.title : `${profile.site.title} - Page ${page.currentPage}`;
+const pageDescription = isFirstPage ? profile.site.description : `${profile.site.description} (Page ${page.currentPage})`;
+
+// Calculate sliding window of at most 10 pages for the pagination numbers
+const maxVisiblePages = 10;
+let startPage = Math.max(1, page.currentPage - Math.floor(maxVisiblePages / 2));
+let endPage = startPage + maxVisiblePages - 1;
+
+if (endPage > page.lastPage) {
+	endPage = page.lastPage;
+	startPage = Math.max(1, endPage - maxVisiblePages + 1);
+}
+
+const visiblePages = Array.from(
+	{ length: endPage - startPage + 1 },
+	(_, i) => startPage + i
+);
+
+const pageSeo = {
+	og: {
+		...profile.seo.og,
+		title: pageTitle,
+		description: pageDescription,
+	},
+	twitter: {
+		...profile.seo.twitter,
+		title: pageTitle,
+		description: pageDescription,
+	},
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} seo={pageSeo} locale="en" banner={profile.banner}>
+	<Header logo={profile.header.logo} locale="en" />
+
+	<main>
+		<h1 class="sr-only">{profile.site.title} - Blog & Notes</h1>
+
+		{isFirstPage && (
+			<div class="hero-text">
+				{profile.hero.paragraphs.map((paragraph) => (
+					<p set:html={paragraph} />
+				))}
+			</div>
+		)}
+
+		{posts.length > 0 && (
+			<div class="writing-section">
+				<h2 class="section-title">Writing</h2>
+
+				<ul class="post-list">
+					{posts.map((post) => {
+						const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric',
+							timeZone: 'UTC',
+						});
+						const isKorean = post.data.lang === 'ko';
+						return (
+							<li class="post-item">
+								<time class="post-date" datetime={post.data.pubDate.toISOString()}>
+									{formattedDate}
+								</time>
+								<div class="post-title-wrapper">
+									<a href={`/blog/${post.id}`} class="post-link">
+										{post.data.title}
+									</a>
+									{isKorean && <span class="lang-badge">KO</span>}
+								</div>
+							</li>
+						);
+					})}
+				</ul>
+
+				{page.lastPage > 1 && (
+					<nav class="pagination" aria-label="Pagination">
+						{page.url.prev ? (
+							<a href={page.url.prev} class="pagination-link prev">
+								← Newer
+							</a>
+						) : (
+							<span class="pagination-link prev disabled">← Newer</span>
+						)}
+
+						<div class="pagination-numbers">
+							{visiblePages.map((pageNum) => {
+								const href = pageNum === 1 ? '/' : `/${pageNum}`;
+								const isCurrent = pageNum === page.currentPage;
+								return isCurrent ? (
+									<span class="pagination-number current" aria-current="page">{pageNum}</span>
+								) : (
+									<a href={href} class="pagination-number">
+										{pageNum}
+									</a>
+								);
+							})}
+						</div>
+
+						{page.url.next ? (
+							<a href={page.url.next} class="pagination-link next">
+								Older →
+							</a>
+						) : (
+							<span class="pagination-link next disabled">Older →</span>
+						)}
+					</nav>
+				)}
+			</div>
+		)}
+
+		<div class="contact-us">
+			<p>
+				{profile.contact.label}:{' '}
+				<a
+					href={profile.contact.url}
+					class="service-link"
+					style="text-decoration: underline;"
+				>
+					{profile.contact.value}
+				</a>
+			</p>
+		</div>
+	</main>
+</BaseLayout>
+
+<style>
+	.writing-section {
+		margin-top: 32px;
+		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		padding-top: 24px;
+	}
+
+	.post-title-wrapper {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.lang-badge {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		padding: 1px 5px;
+		border-radius: 3px;
+		border: 1px solid var(--border-color);
+		color: var(--text-muted);
+		opacity: 0.75;
+	}
+
+	.section-title {
+		margin-bottom: 16px;
+		font-family: var(--font-serif);
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.post-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.post-item {
+		display: flex;
+		align-items: baseline;
+		gap: 16px;
+	}
+
+	.post-date {
+		font-size: 12px;
+		opacity: 0.5;
+		flex-shrink: 0;
+		width: 90px;
+	}
+
+	.post-link {
+		color: inherit;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 4px;
+		text-decoration-color: var(--underline-color);
+		transition: text-decoration-color 0.2s ease;
+	}
+
+	.post-link:hover {
+		text-decoration-color: var(--underline-hover);
+	}
+
+	/* Pagination Styles */
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+		margin-top: 32px;
+		padding-top: 24px;
+		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		font-family: var(--font-mono);
+		font-size: 13px;
+		flex-wrap: wrap;
+	}
+
+	.pagination-link {
+		color: var(--text-color);
+		text-decoration: none;
+		border: 1px solid var(--border-color);
+		padding: 6px 12px;
+		border-radius: 4px;
+		background: var(--card-bg);
+		transition: all 0.2s ease;
+	}
+
+	.pagination-link:not(.disabled):hover {
+		border-color: var(--underline-hover);
+		background: rgba(0, 0, 0, 0.06);
+	}
+
+	.pagination-link.disabled {
+		opacity: 0.4;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	.pagination-numbers {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.pagination-number {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+		text-decoration: none;
+		color: var(--text-muted);
+		border: 1px solid transparent;
+		transition: all 0.2s ease;
+	}
+
+	.pagination-number:hover {
+		color: var(--text-color);
+		border-color: var(--border-color);
+		background: var(--card-bg);
+	}
+
+	.pagination-number.current {
+		color: var(--text-color);
+		border-color: var(--underline-hover);
+		background: rgba(0, 0, 0, 0.06);
+		font-weight: bold;
+	}
+
+	@media (max-width: 768px) {
+		.post-item {
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		.post-date {
+			width: auto;
+		}
+
+		.pagination {
+			gap: 8px;
+		}
+	}
+</style>
