@@ -15,13 +15,13 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://ai.duklee.net').href;
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://health.duklee.net').href;
 const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
 
 const navItems = [
 	{ label: 'Writing', href: '/', active: true },
 	{ label: 'Main Blog ↗', href: 'https://duklee.net', external: true },
-	{ label: 'Health ↗', href: 'https://health.duklee.net', external: true }
+	{ label: 'AI ↗', href: 'https://ai.duklee.net', external: true }
 ];
 ---
 
@@ -33,7 +33,7 @@ const navItems = [
 	image={post.data.image}
 	rawMarkdown={rawMarkdown}
 	siteTitle={profile.site.title}
-	siteUrl="https://ai.duklee.net"
+	siteUrl="https://health.duklee.net"
 	topicTitle={profile.header.topicTitle}
 	parentTitle={profile.header.parentTitle}
 	parentUrl={profile.header.parentUrl}

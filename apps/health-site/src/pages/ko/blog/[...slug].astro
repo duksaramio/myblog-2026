@@ -25,13 +25,13 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://ai.duklee.net').href;
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://health.duklee.net').href;
 const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
 
 const navItems = [
 	{ label: '글', href: '/ko', active: true },
 	{ label: '메인 블로그 ↗', href: 'https://duklee.net/ko', external: true },
-	{ label: 'Health ↗', href: 'https://health.duklee.net/ko', external: true }
+	{ label: 'AI ↗', href: 'https://ai.duklee.net/ko', external: true }
 ];
 ---
 
@@ -43,8 +43,8 @@ const navItems = [
 	image={post.data.image}
 	rawMarkdown={rawMarkdown}
 	locale="ko"
-	siteTitle="이덕희 | AI"
-	siteUrl="https://ai.duklee.net"
+	siteTitle="이덕희 | Health"
+	siteUrl="https://health.duklee.net"
 	topicTitle={profile.header.topicTitle}
 	parentTitle="이덕희"
 	parentUrl="https://duklee.net/ko"

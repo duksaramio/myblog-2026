@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://health.duklee.net/sitemap-index.xml

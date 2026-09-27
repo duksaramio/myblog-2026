@@ -30,3 +30,6 @@ pnpm-debug.log*
 # Cloudflare Wrangler
 .wrangler/
 **/.wrangler/
+
+# Agent local artifacts
+.agents/

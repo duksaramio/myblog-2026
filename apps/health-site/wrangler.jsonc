@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "duklee-health-blog",
+  "compatibility_date": "2026-06-10",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "health.duklee.net",
+      "custom_domain": true
+    }
+  ]
+}

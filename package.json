@@ -11,13 +11,17 @@
     "dev": "npm run dev --workspace=main-site",
     "dev:main": "npm run dev --workspace=main-site",
     "dev:ai": "npm run dev --workspace=ai-site",
+    "dev:health": "npm run dev --workspace=health-site",
     "build": "npm run build --workspaces --if-present",
     "build:main": "npm run build --workspace=main-site",
     "build:ai": "npm run build --workspace=ai-site",
+    "build:health": "npm run build --workspace=health-site",
     "preview:main": "npm run preview --workspace=main-site",
     "preview:ai": "npm run preview --workspace=ai-site",
+    "preview:health": "npm run preview --workspace=health-site",
     "deploy:main": "npm run deploy --workspace=main-site",
-    "deploy:ai": "npm run deploy --workspace=ai-site"
+    "deploy:ai": "npm run deploy --workspace=ai-site",
+    "deploy:health": "npm run deploy --workspace=health-site"
   },
   "devDependencies": {
     "typescript": "^6.0.3"

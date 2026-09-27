@@ -82,7 +82,8 @@ const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 				<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
 				<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>
 				<a href={libraryUrl} class={isLibrary ? 'active' : ''}>{t('nav.library')}</a>
-				<a href="https://ai.duklee.net" target="_blank" rel="noopener noreferrer">AI ↗</a>
+				<a href={isKo ? 'https://ai.duklee.net/ko' : 'https://ai.duklee.net'} target="_blank" rel="noopener noreferrer">AI ↗</a>
+				<a href={isKo ? 'https://health.duklee.net/ko' : 'https://health.duklee.net'} target="_blank" rel="noopener noreferrer">Health ↗</a>
 			</>
 		)}
 		<div class="lang-switch-wrapper">

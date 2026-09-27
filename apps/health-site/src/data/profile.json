@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Duk Lee | Health",
+    "description": "Notes, essays, and experiments on health, longevity, nutrition, fitness, and metabolic wellness."
+  },
+  "seo": {
+    "og": {
+      "type": "website",
+      "url": "https://health.duklee.net/",
+      "title": "Duk Lee | Health",
+      "description": "Notes, essays, and experiments on health, longevity, and metabolic wellness by Duk Lee.",
+      "image": "/og-image.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://health.duklee.net/",
+      "title": "Duk Lee | Health",
+      "description": "Notes, essays, and experiments on health, longevity, and metabolic wellness by Duk Lee.",
+      "image": "/og-image.png"
+    }
+  },
+  "header": {
+    "logo": "Duk Lee",
+    "topicTitle": "Health",
+    "parentTitle": "Duk Lee",
+    "parentUrl": "https://duklee.net"
+  },
+  "hero": {
+    "paragraphs": [
+      "Notes, essays, and experiments on health, longevity, metabolic wellness, and fitness.",
+      "A topic-focused publication by <a href=\"https://duklee.net\">Duk Lee</a>."
+    ],
+    "paragraphs_ko": [
+      "건강, 장수(longevity), 대사 건강, 피트니스 및 웰니스에 대한 생각과 실험을 기록하는 공간입니다.",
+      "<a href=\"https://duklee.net\">이덕희</a>의 건강 주제별 특화 블로그입니다."
+    ]
+  },
+  "contact": {
+    "label": "Email",
+    "value": "info@saram.consulting",
+    "url": "mailto:info@saram.consulting"
+  },
+  "banner": {
+    "show": true,
+    "tag": "Saram Consulting",
+    "text": "GxP compliance and AI integration for life science and biotechnology companies.",
+    "linkText": "Visit saram.io →",
+    "linkUrl": "https://saram.io"
+  }
+}

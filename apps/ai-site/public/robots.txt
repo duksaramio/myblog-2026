@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://duklee.net/sitemap-index.xml
+Sitemap: https://ai.duklee.net/sitemap-index.xml

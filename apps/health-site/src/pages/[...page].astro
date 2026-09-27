@@ -51,7 +51,7 @@ const pageSeo = {
 const navItems = [
 	{ label: 'Writing', href: '/', active: true },
 	{ label: 'Main Blog ↗', href: 'https://duklee.net', external: true },
-	{ label: 'Health ↗', href: 'https://health.duklee.net', external: true }
+	{ label: 'AI ↗', href: 'https://ai.duklee.net', external: true }
 ];
 ---
 
@@ -74,7 +74,7 @@ const navItems = [
 	/>
 
 	<main>
-		<h1 class="sr-only">{profile.site.title} - Artificial Intelligence & LLMs</h1>
+		<h1 class="sr-only">{profile.site.title} - Health & Longevity</h1>
 
 		{isFirstPage && (
 			<div class="hero-text">
@@ -86,7 +86,7 @@ const navItems = [
 
 		{posts.length > 0 ? (
 			<div class="writing-section">
-				<h2 class="section-title">AI Writing</h2>
+				<h2 class="section-title">Health Writing</h2>
 
 				<ul class="post-list">
 					{posts.map((post) => {

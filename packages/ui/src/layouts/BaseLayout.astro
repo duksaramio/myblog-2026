@@ -68,7 +68,7 @@ const twitterImageUrl = seo.twitter.image.startsWith('http')
 	? seo.twitter.image
 	: new URL(seo.twitter.image, siteUrl).href;
 
-const pageUrl = seo.og.url && !seo.og.url.endsWith('duklee.net/') && !seo.og.url.endsWith('ai.duklee.net/')
+const pageUrl = seo.og.url && !seo.og.url.endsWith('duklee.net/') && !seo.og.url.endsWith('ai.duklee.net/') && !seo.og.url.endsWith('health.duklee.net/')
 	? seo.og.url
 	: canonicalURL;
 
