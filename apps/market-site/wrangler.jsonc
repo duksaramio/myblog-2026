@@ -9,6 +9,10 @@
     {
       "pattern": "market.duklee.net",
       "custom_domain": true
+    },
+    {
+      "pattern": "stock.duklee.net",
+      "custom_domain": true
     }
   ]
 }
