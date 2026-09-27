@@ -12,16 +12,20 @@
     "dev:main": "npm run dev --workspace=main-site",
     "dev:ai": "npm run dev --workspace=ai-site",
     "dev:health": "npm run dev --workspace=health-site",
+    "dev:market": "npm run dev --workspace=market-site",
     "build": "npm run build --workspaces --if-present",
     "build:main": "npm run build --workspace=main-site",
     "build:ai": "npm run build --workspace=ai-site",
     "build:health": "npm run build --workspace=health-site",
+    "build:market": "npm run build --workspace=market-site",
     "preview:main": "npm run preview --workspace=main-site",
     "preview:ai": "npm run preview --workspace=ai-site",
     "preview:health": "npm run preview --workspace=health-site",
+    "preview:market": "npm run preview --workspace=market-site",
     "deploy:main": "npm run deploy --workspace=main-site",
     "deploy:ai": "npm run deploy --workspace=ai-site",
-    "deploy:health": "npm run deploy --workspace=health-site"
+    "deploy:health": "npm run deploy --workspace=health-site",
+    "deploy:market": "npm run deploy --workspace=market-site"
   },
   "devDependencies": {
     "typescript": "^6.0.3"

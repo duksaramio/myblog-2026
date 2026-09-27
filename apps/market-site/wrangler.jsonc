@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "duklee-market-blog",
+  "compatibility_date": "2026-06-10",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "market.duklee.net",
+      "custom_domain": true
+    }
+  ]
+}

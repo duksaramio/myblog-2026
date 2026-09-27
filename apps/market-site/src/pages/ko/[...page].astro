@@ -3,24 +3,38 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from '@repo/ui/layouts/BaseLayout.astro';
 import Header from '@repo/ui/components/Header.astro';
-import profile from '../data/profile.json';
+import profile from '../../data/profile.json';
+import { useTranslations, formatDate } from '@repo/ui/i18n/ui';
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const posts = (await getCollection('blog', ({ data }) => {
+	const koPosts = await getCollection('blog_ko', ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
-	})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+	});
+	const enPosts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+
+	const koPostMap = new Map(koPosts.map((p) => [p.id, p]));
+	const allSlugs = new Set([...koPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
+
+	const posts = Array.from(allSlugs).map((slug) => {
+		return koPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
+	}).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 	return paginate(posts, { pageSize: 5 });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
 const posts = page.data;
+const t = useTranslations('ko');
+
+const siteTitle = '이덕희 | Market';
+const siteDescription = '주식 시장, 거시 경제, 테크 기업 밸류에이션 및 자본 배분에 대한 데이터 기반 분석과 통찰을 기록하는 공간';
 
 const isFirstPage = page.currentPage === 1;
-const pageTitle = isFirstPage ? profile.site.title : `${profile.site.title} - Page ${page.currentPage}`;
-const pageDescription = isFirstPage ? profile.site.description : `${profile.site.description} (Page ${page.currentPage})`;
+const pageTitle = isFirstPage ? siteTitle : `${siteTitle} - ${page.currentPage}페이지`;
+const pageDescription = isFirstPage ? siteDescription : `${siteDescription} (${page.currentPage}페이지)`;
 
-// Calculate sliding window of at most 10 pages for the pagination numbers
 const maxVisiblePages = 10;
 let startPage = Math.max(1, page.currentPage - Math.floor(maxVisiblePages / 2));
 let endPage = startPage + maxVisiblePages - 1;
@@ -49,10 +63,10 @@ const pageSeo = {
 };
 
 const navItems = [
-	{ label: 'Writing', href: '/', active: true },
-	{ label: 'Main Blog ↗', href: 'https://duklee.net', external: true },
-	{ label: 'AI ↗', href: 'https://ai.duklee.net', external: true },
-	{ label: 'Market ↗', href: 'https://market.duklee.net', external: true }
+	{ label: '글', href: '/ko', active: true },
+	{ label: '메인 블로그 ↗', href: 'https://duklee.net/ko', external: true },
+	{ label: 'AI ↗', href: 'https://ai.duklee.net/ko', external: true },
+	{ label: 'Health ↗', href: 'https://health.duklee.net/ko', external: true }
 ];
 ---
 
@@ -60,26 +74,26 @@ const navItems = [
 	title={pageTitle} 
 	description={pageDescription} 
 	seo={pageSeo} 
-	locale="en"
-	siteTitle={profile.site.title}
-	siteDescription={profile.site.description}
+	locale="ko"
+	siteTitle={siteTitle}
+	siteDescription={siteDescription}
 	banner={profile.banner}
 >
 	<Header 
-		logo={profile.header.logo} 
+		logo="이덕희"
 		topicTitle={profile.header.topicTitle}
-		parentTitle={profile.header.parentTitle}
-		parentUrl={profile.header.parentUrl}
-		locale="en" 
+		parentTitle="이덕희"
+		parentUrl="https://duklee.net/ko"
+		locale="ko" 
 		navItems={navItems}
 	/>
 
 	<main>
-		<h1 class="sr-only">{profile.site.title} - Health & Longevity</h1>
+		<h1 class="sr-only">{siteTitle} - 주식 시장 & 거시 경제</h1>
 
 		{isFirstPage && (
 			<div class="hero-text">
-				{profile.hero.paragraphs.map((paragraph) => (
+				{(profile.hero.paragraphs_ko || profile.hero.paragraphs).map((paragraph) => (
 					<p set:html={paragraph} />
 				))}
 			</div>
@@ -87,27 +101,20 @@ const navItems = [
 
 		{posts.length > 0 ? (
 			<div class="writing-section">
-				<h2 class="section-title">Health Writing</h2>
+				<h2 class="section-title">시장 분석 글</h2>
 
 				<ul class="post-list">
 					{posts.map((post) => {
-						const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
-							year: 'numeric',
-							month: 'short',
-							day: 'numeric',
-							timeZone: 'UTC',
-						});
-						const isKorean = post.data.lang === 'ko';
+						const formattedDate = formatDate(post.data.pubDate, 'ko');
 						return (
 							<li class="post-item">
 								<time class="post-date" datetime={post.data.pubDate.toISOString()}>
 									{formattedDate}
 								</time>
 								<div class="post-title-wrapper">
-									<a href={`/blog/${post.id}`} class="post-link">
+									<a href={`/ko/blog/${post.id}`} class="post-link">
 										{post.data.title}
 									</a>
-									{isKorean && <span class="lang-badge">KO</span>}
 								</div>
 							</li>
 						);
@@ -118,15 +125,15 @@ const navItems = [
 					<nav class="pagination" aria-label="Pagination">
 						{page.url.prev ? (
 							<a href={page.url.prev} class="pagination-link prev">
-								← Newer
+								← 이전 글
 							</a>
 						) : (
-							<span class="pagination-link prev disabled">← Newer</span>
+							<span class="pagination-link prev disabled">← 이전 글</span>
 						)}
 
 						<div class="pagination-numbers">
 							{visiblePages.map((pageNum) => {
-								const href = pageNum === 1 ? '/' : `/${pageNum}`;
+								const href = pageNum === 1 ? '/ko' : `/ko/${pageNum}`;
 								const isCurrent = pageNum === page.currentPage;
 								return isCurrent ? (
 									<span class="pagination-number current" aria-current="page">{pageNum}</span>
@@ -140,17 +147,17 @@ const navItems = [
 
 						{page.url.next ? (
 							<a href={page.url.next} class="pagination-link next">
-								Older →
+								다음 글 →
 							</a>
 						) : (
-							<span class="pagination-link next disabled">Older →</span>
+							<span class="pagination-link next disabled">다음 글 →</span>
 						)}
 					</nav>
 				)}
 			</div>
 		) : (
 			<div class="writing-section">
-				<p class="empty-state">Fresh essays, notes, and experiments are coming soon.</p>
+				<p class="empty-state">새로운 시장 분석 및 연구 노트가 곧 공개됩니다.</p>
 			</div>
 		)}
 
@@ -188,16 +195,6 @@ const navItems = [
 		align-items: baseline;
 		gap: 8px;
 		flex-wrap: wrap;
-	}
-
-	.lang-badge {
-		font-family: var(--font-mono);
-		font-size: 10px;
-		padding: 1px 5px;
-		border-radius: 3px;
-		border: 1px solid var(--border-color);
-		color: var(--text-muted);
-		opacity: 0.75;
 	}
 
 	.section-title {
@@ -240,7 +237,6 @@ const navItems = [
 		text-decoration-color: var(--underline-hover);
 	}
 
-	/* Pagination Styles */
 	.pagination {
 		display: flex;
 		justify-content: center;
