@@ -1286,5 +1286,24 @@
     "backdropColor": "linear-gradient(135deg, #8e1b3a 0%, #16060c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt33253206/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BNTdjNTc1NmUtMGRjZi00M2RiLWJmMmMtNGIzNTE5YTVmNDQwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": "runner-2026",
+    "title": "Runner",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Scott Waugh",
+    "rating": 7,
+    "review": "A little darker than I imagined.",
+    "watchDate": "2026-09-30",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #3a4a5c 0%, #0d1117 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt31349844/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BOThmN2YyMzMtN2Y2Zi00MjViLTg2NzQtNGM0ZDU3ZDAyYThhXkEyXkFqcGc@._V1_.jpg"
   }
 ]
