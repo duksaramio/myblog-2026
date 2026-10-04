@@ -38,9 +38,12 @@
   },
   "banner": {
     "show": true,
-    "tag": "Saram Consulting",
-    "text": "GxP compliance and AI integration for life science and biotechnology companies.",
-    "linkText": "Visit saram.io →",
-    "linkUrl": "https://saram.io"
+    "tag": "Tri-Valley Hub",
+    "text": "Curated local news, civic agendas & community events for Pleasanton, Livermore, Dublin, San Ramon, and Danville.",
+    "linkText": "Visit trivalleyhub.com →",
+    "linkUrl": "https://trivalleyhub.com/",
+    "tag_ko": "트라이밸리 허브 (Tri-Valley Hub)",
+    "text_ko": "플레즌튼, 리버모어, 더블린, 샌라몬, 댄빌 지역 로컬 뉴스, 시정 및 커뮤니티 소식.",
+    "linkText_ko": "trivalleyhub.com 방문하기 →"
   }
 }

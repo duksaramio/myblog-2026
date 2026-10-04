@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
 
 	return rss({
 		title: '이덕희 | AI (한국어)',
-		description: '인공지능, 자율 에이전트, LLM 아키텍처에 대한 생각과 실험을 기록하는 공간',
+		description: 'AI 에이전트가 리서치하고 작성한 인공지능, 자율 에이전트, LLM 아키텍처에 대한 생각과 실험',
 		site: context.site || new URL(profile.seo.og.url),
 		items: sortedPosts.map((post) => ({
 			title: post.data.title,

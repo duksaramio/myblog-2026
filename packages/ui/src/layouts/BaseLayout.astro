@@ -33,6 +33,9 @@ interface Props {
 		text?: string;
 		linkText?: string;
 		linkUrl?: string;
+		tag_ko?: string;
+		text_ko?: string;
+		linkText_ko?: string;
 	};
 	footerHtml?: string;
 }
@@ -135,10 +138,10 @@ const activeJsonLd = jsonLd || websiteSchema;
 		<div class="container">
 			{banner && banner.show && (
 				<PromoBanner
-					tag={banner.tag || t('banner.tag')}
-					text={banner.text || t('banner.text')}
-					linkText={banner.linkText || t('banner.linkText')}
-					linkUrl={banner.linkUrl || 'https://saram.io'}
+					tag={currentLocale === 'ko' ? (banner.tag_ko || t('banner.tag')) : (banner.tag || t('banner.tag'))}
+					text={currentLocale === 'ko' ? (banner.text_ko || t('banner.text')) : (banner.text || t('banner.text'))}
+					linkText={currentLocale === 'ko' ? (banner.linkText_ko || t('banner.linkText')) : (banner.linkText || t('banner.linkText'))}
+					linkUrl={banner.linkUrl || 'https://trivalleyhub.com/'}
 				/>
 			)}
 			<slot />

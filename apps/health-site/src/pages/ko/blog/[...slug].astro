@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://health.duklee.net').href;
-const rawMarkdown = `# ${post.data.title}\n\nSource: ${postUrl}\n\n${(post.body || '').trim()}`;
+const rawMarkdown = `# ${post.data.title}\n\n> *안내: 본 아티클은 AI 에이전트가 리서치하고 작성한 콘텐츠입니다.*\n> 출처: ${postUrl}\n\n${(post.body || '').trim()}`;
 
 const navItems = [
 	{ label: '글', href: '/ko', active: true },
@@ -52,6 +52,7 @@ const navItems = [
 	logo="이덕희"
 	navItems={navItems}
 	banner={profile.banner}
+	isAiGenerated={true}
 >
 	<Content />
 </BlogPostLayout>

@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
 
 	return rss({
 		title: '이덕희 | Health (한국어)',
-		description: '건강, 장수, 대사 건강, 피트니스 및 웰니스에 대한 생각과 실험을 기록하는 공간',
+		description: 'AI 에이전트가 리서치하고 작성한 건강, 장수, 대사 건강, 피트니스 및 웰니스에 대한 생각과 실험',
 		site: context.site || new URL(profile.seo.og.url),
 		items: sortedPosts.map((post) => ({
 			title: post.data.title,

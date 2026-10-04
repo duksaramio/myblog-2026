@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
 
 	return rss({
 		title: '이덕희 | Market (한국어)',
-		description: '주식 시장, 거시 경제, 테크 기업 밸류에이션 및 자본 배분에 대한 데이터 기반 분석과 통찰을 기록하는 공간',
+		description: 'AI 에이전트가 리서치하고 작성한 주식 시장, 거시 경제, 테크 기업 밸류에이션 및 자본 배분에 대한 데이터 기반 분석과 통찰',
 		site: context.site || new URL(profile.seo.og.url),
 		items: sortedPosts.map((post) => ({
 			title: post.data.title,

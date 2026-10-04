@@ -82,9 +82,9 @@ const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 				<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
 				<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>
 				<a href={libraryUrl} class={isLibrary ? 'active' : ''}>{t('nav.library')}</a>
-				<a href={isKo ? 'https://ai.duklee.net/ko' : 'https://ai.duklee.net'} target="_blank" rel="noopener noreferrer">AI ↗</a>
-				<a href={isKo ? 'https://health.duklee.net/ko' : 'https://health.duklee.net'} target="_blank" rel="noopener noreferrer">Health ↗</a>
-				<a href={isKo ? 'https://market.duklee.net/ko' : 'https://market.duklee.net'} target="_blank" rel="noopener noreferrer">Market ↗</a>
+				<a href={isKo ? 'https://ai.duklee.net/ko' : 'https://ai.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? 'AI 특화 블로그 (AI 생성)' : 'AI Publication (AI-Generated)'}>AI ↗</a>
+				<a href={isKo ? 'https://health.duklee.net/ko' : 'https://health.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '건강 특화 블로그 (AI 생성)' : 'Health Publication (AI-Generated)'}>Health ↗</a>
+				<a href={isKo ? 'https://market.duklee.net/ko' : 'https://market.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '주식/시장 특화 블로그 (AI 생성)' : 'Market Publication (AI-Generated)'}>Market ↗</a>
 			</>
 		)}
 		<div class="lang-switch-wrapper">
