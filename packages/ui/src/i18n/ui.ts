@@ -20,7 +20,7 @@ export const ui = {
 		'hero.paragraph2': 'My AI agents are working 24/7 building <a href="https://saram.io">tools</a>.',
 
 		'banner.tag': 'Tri-Valley Hub',
-		'banner.text': 'Curated local news, civic agendas & community events for Pleasanton, Livermore, Dublin, San Ramon, and Danville.',
+		'banner.text': 'Curated local news, civic agendas & events across the Tri-Valley.',
 		'banner.linkText': 'Visit trivalleyhub.com →',
 
 		'contact.label': 'Email',
@@ -95,7 +95,7 @@ export const ui = {
 		'hero.paragraph2': '제 AI 에이전트들은 24시간 내내 유용한 <a href="https://saram.io">도구</a>를 만들고 있습니다.',
 
 		'banner.tag': '트라이밸리 허브 (Tri-Valley Hub)',
-		'banner.text': '플레즌튼, 리버모어, 더블린, 샌라몬, 댄빌 지역 로컬 뉴스, 시정 및 커뮤니티 소식.',
+		'banner.text': '캘리포니아 트라이밸리 지역 로컬 뉴스, 시정 및 커뮤니티 소식.',
 		'banner.linkText': 'trivalleyhub.com 방문하기 →',
 
 		'contact.label': '이메일',

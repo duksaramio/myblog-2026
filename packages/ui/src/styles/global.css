@@ -211,10 +211,17 @@ footer a:hover {
     text-decoration-color: var(--underline-color);
     transition: text-decoration-color .2s, color .2s;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .promo-link:hover {
     text-decoration-color: var(--underline-hover);
+}
+
+@media (min-width: 769px) {
+    .promo-banner {
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 768px) {

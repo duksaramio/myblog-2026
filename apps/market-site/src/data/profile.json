@@ -43,11 +43,11 @@
   "banner": {
     "show": true,
     "tag": "Tri-Valley Hub",
-    "text": "Curated local news, civic agendas & community events for Pleasanton, Livermore, Dublin, San Ramon, and Danville.",
+    "text": "Curated local news, civic agendas & events across the Tri-Valley.",
     "linkText": "Visit trivalleyhub.com →",
     "linkUrl": "https://trivalleyhub.com/",
     "tag_ko": "트라이밸리 허브 (Tri-Valley Hub)",
-    "text_ko": "플레즌튼, 리버모어, 더블린, 샌라몬, 댄빌 지역 로컬 뉴스, 시정 및 커뮤니티 소식.",
+    "text_ko": "캘리포니아 트라이밸리 지역 로컬 뉴스, 시정 및 커뮤니티 소식.",
     "linkText_ko": "trivalleyhub.com 방문하기 →"
   }
 }
