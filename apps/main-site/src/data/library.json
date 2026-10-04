@@ -1322,5 +1322,22 @@
     "backdropColor": "linear-gradient(135deg, #4a4034 0%, #0d1117 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36981462/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTdiYTIwMGEtMzYwOC00NzlhLTk2NTQtMDdlYTBjYjhhMzRjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "infirmary-2026",
+    "title": "Infirmary",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Nicholas Pineda",
+    "rating": 3,
+    "review": "",
+    "watchDate": "2026-10-03",
+    "genres": [
+      "Horror"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2f3a34 0%, #0d1117 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt35682658/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZjZlZTY2NjMtNTEwZi00NDYxLTk5NTEtOTIxNmU3ZTA3OGNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   }
 ]
