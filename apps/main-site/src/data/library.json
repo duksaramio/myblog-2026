@@ -1305,5 +1305,22 @@
     "backdropColor": "linear-gradient(135deg, #3a4a5c 0%, #0d1117 100%)",
     "externalUrl": "https://www.imdb.com/title/tt31349844/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BOThmN2YyMzMtN2Y2Zi00MjViLTg2NzQtNGM0ZDU3ZDAyYThhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "union-county-2026",
+    "title": "Union County",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Adam Meeks",
+    "rating": 7,
+    "review": "I just like Will Poulter and his acting a lot.",
+    "watchDate": "2026-10-03",
+    "genres": [
+      "Drama"
+    ],
+    "backdropColor": "linear-gradient(135deg, #4a4034 0%, #0d1117 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36981462/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZTdiYTIwMGEtMzYwOC00NzlhLTk2NTQtMDdlYTBjYjhhMzRjXkEyXkFqcGc@._V1_.jpg"
   }
 ]
