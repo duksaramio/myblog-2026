@@ -1339,5 +1339,24 @@
     "backdropColor": "linear-gradient(135deg, #2f3a34 0%, #0d1117 100%)",
     "externalUrl": "https://www.imdb.com/title/tt35682658/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZjZlZTY2NjMtNTEwZi00NDYxLTk5NTEtOTIxNmU3ZTA3OGNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": "the-girl-with-the-dragon-tattoo-2011",
+    "title": "The Girl with the Dragon Tattoo",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2011,
+    "creator": "David Fincher",
+    "rating": 7,
+    "review": "",
+    "watchDate": "2026-10-04",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2b333c 0%, #0d1117 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt1568346/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_.jpg"
   }
 ]
