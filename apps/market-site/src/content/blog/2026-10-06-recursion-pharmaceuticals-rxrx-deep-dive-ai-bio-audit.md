@@ -4,11 +4,8 @@ pubDate: 2026-10-06T14:30:00Z
 description: "A comprehensive forensic investigation into Recursion Pharmaceuticals ($RXRX). We audit the 2026 executive coup that replaced founder Chris Gibson with ex-J&J data head Najat Khan, the quiet termination of pioneer clinical assets REC-994 and REC-2282, the all-stock buyout of Exscientia, and the financial reality behind its 530M+ share dilution and $375M annual burn."
 draft: false
 tags: ["recursion-pharmaceuticals", "rxrx", "ai-drug-discovery", "techbio", "exscientia", "najat-khan", "chris-gibson", "biotech-investing", "clinical-trials", "deep-research"]
-image: "/recursion-rxrx-deep-dive.jpg"
 lang: "en"
 ---
-
-![Recursion Pharmaceuticals RXRX Forensic Audit](/recursion-rxrx-deep-dive.jpg)
 
 For the past decade, **Recursion Pharmaceuticals (NASDAQ: RXRX)** has stood as the undisputed global poster child of the "TechBio" revolution.
 

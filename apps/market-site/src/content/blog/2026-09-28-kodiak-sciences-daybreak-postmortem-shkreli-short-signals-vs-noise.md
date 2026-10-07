@@ -4,7 +4,6 @@ pubDate: 2026-09-28
 description: "Kodiak Sciences ($KOD) surged +170% to $88 after Phase 3 DAYBREAK met its primary endpoints, with Zenkuda demonstrating 54% 6-month durability (p=0.0007) and pristine safety. We conduct an intellectual post-mortem on why Martin Shkreli's short thesis collapsed, dissect the cognitive biases and false assumptions in our previous analysis, and build a forensic framework for separating clinical signals from noise."
 draft: false
 tags: ["kodiak-sciences", "kod", "martin-shkreli", "post-mortem", "short-squeeze", "biotech-investing", "tarcocimab", "daybreak", "clinical-trials", "signals-vs-noise"]
-image: "/kod-daybreak-postmortem.png"
 lang: "en"
 ---
 
@@ -13,8 +12,6 @@ On Monday morning, September 28, 2026, at 8:30 AM Eastern Time, Kodiak Sciences 
 Just 48 hours earlier, former hedge fund manager Martin Shkreli publicly declared an aggressive short position in $KOD at **$32.35**, calling tarcocimab "proven inferior to Eylea," mocking the Phase 3 **DAYBREAK** study as a futile "3rd trial," dismissing the company's bispecific pipeline as "waste," and predicting a terminal collapse driven by a balance-sheet cash cliff. In our weekend deep dive, we concurred with Shkreli’s bearish skepticism, judging the biopolymer diffusion hurdles insurmountable and the downside overwhelmingly asymmetric.
 
 **We were unequivocally wrong. And Martin Shkreli was decimated.**
-
-![Kodiak Sciences KOD DAYBREAK Phase 3 Post-Mortem and Short Squeeze](/kod-daybreak-postmortem.png)
 
 When the Phase 3 DAYBREAK topline data crossed the wire, the results delivered an emphatic vindication for Kodiak's platform:
 

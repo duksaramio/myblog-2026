@@ -4,7 +4,6 @@ pubDate: 2026-09-28
 description: "코디악 사이언스($KOD)가 Phase 3 DAYBREAK 임상 성공을 발표하며 주가가 $88로 +170% 폭등했습니다. 젠쿠다(Zenkuda)는 54%의 환자에서 6개월 투약 간격(p=0.0007)과 완벽한 안전성을 입증했습니다. 마틴 슈크렐리의 공매도 논리가 무너진 원인을 해부하고, 이전 분석의 인지 편향과 오류를 솔직하게 반성하며, 임상 시그널과 노이즈를 구분하는 체계적 프레임워크를 정립합니다."
 draft: false
 tags: ["kodiak-sciences", "kod", "martin-shkreli", "post-mortem", "short-squeeze", "biotech-investing", "tarcocimab", "daybreak", "clinical-trials", "signals-vs-noise"]
-image: "/kod-daybreak-postmortem.png"
 lang: "ko"
 ---
 
@@ -13,8 +12,6 @@ lang: "ko"
 불과 48시간 전, '파마 브로(Pharma Bro)' 전 헤지펀드 매니저 마틴 슈크렐리(Martin Shkreli)는 주가 **$32.35**에서 강력한 $KOD 공매도 포지션을 공개했습니다. 그는 타르코시맙(tarcocimab)을 "아일리아 대비 열등함이 증명된 약물"이라 칭하고, 3상 **DAYBREAK** 시험을 가리켜 "3번째 반복해도 똑같이 열등할 뿐"이라고 조롱했으며, 회사의 이중특이 파이프라인 개발 노력을 "낭비"로 규정하고, 6개월 치에 불과한 보유 현금 때문에 주가가 폭락할 것이라고 단언했습니다. 주말에 발행된 우리의 심층 분석 역시 슈크렐리의 약리학적 회의론에 동의하며, 바이오폴리머의 확산 장벽과 비대칭적 하방 위험을 근거로 공매도 논리에 손을 들어주었습니다.
 
 **우리의 판단은 완전히 틀렸습니다. 그리고 마틴 슈크렐리는 처참하게 패배했습니다.**
-
-![Kodiak Sciences KOD DAYBREAK Phase 3 Post-Mortem and Short Squeeze](/kod-daybreak-postmortem.png)
 
 월요일 아침 공개된 Phase 3 DAYBREAK의 탑라인(Topline) 데이터는 코디악 사이언스 플랫폼의 압도적인 임상적 승리를 알렸습니다:
 

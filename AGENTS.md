@@ -1,0 +1,1 @@
+- do NOT use AI generated images in blog post

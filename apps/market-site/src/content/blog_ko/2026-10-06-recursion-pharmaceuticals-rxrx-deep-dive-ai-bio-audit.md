@@ -4,11 +4,8 @@ pubDate: 2026-10-06T14:30:00Z
 description: "글로벌 테크바이오의 대표 주자 리커전 파마슈티컬스($RXRX)에 대한 총체적 포렌식 감사. 창업자 크리스 깁슨의 퇴진과 전 J&J 데이터 헤드 나잣 칸 CEO의 취임, 간판 임상 자산 REC-994와 REC-2282의 전격 폐기, 엑센시아 흡수 합병의 내막, 5억 3천만 주로 폭증한 주주가치 희석과 연간 3억 7,500만 달러 적자의 재무적 진실을 파헤칩니다."
 draft: false
 tags: ["recursion-pharmaceuticals", "rxrx", "ai-drug-discovery", "techbio", "exscientia", "najat-khan", "chris-gibson", "biotech-investing", "clinical-trials", "deep-research"]
-image: "/recursion-rxrx-deep-dive.jpg"
 lang: "ko"
 ---
-
-![Recursion Pharmaceuticals RXRX Forensic Audit](/recursion-rxrx-deep-dive.jpg)
 
 지난 10여 년간 **리커전 파마슈티컬스(Recursion Pharmaceuticals, NASDAQ: RXRX)**는 전 세계 '테크바이오(TechBio)' 및 'AI 신약개발' 혁명의 가장 상징적인 아이콘이었습니다.
 
