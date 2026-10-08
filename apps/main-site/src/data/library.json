@@ -1358,5 +1358,24 @@
     "backdropColor": "linear-gradient(135deg, #2b333c 0%, #0d1117 100%)",
     "externalUrl": "https://www.imdb.com/title/tt1568346/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_.jpg"
+  },
+  {
+    "id": "the-glass-bees",
+    "title": "The Glass Bees",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2000,
+    "creator": "Ernst Jünger",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-10-08",
+    "genres": [
+      "Science Fiction",
+      "German Literature",
+      "Philosophy"
+    ],
+    "backdropColor": "linear-gradient(135deg, #6d6d68 0%, #4a1414 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0940322552",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0940322552-L.jpg"
   }
 ]
