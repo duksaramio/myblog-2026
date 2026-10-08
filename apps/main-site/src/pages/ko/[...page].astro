@@ -1,26 +1,13 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection } from 'astro:content';
 import BaseLayout from '@repo/ui/layouts/BaseLayout.astro';
 import Header from '@repo/ui/components/Header.astro';
 import profile from '../../data/profile.json';
 import { useTranslations, formatDate } from '@repo/ui/i18n/ui';
+import { getUnifiedBlogPosts } from '../../utils/posts';
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const koPosts = await getCollection('blog_ko', ({ data }) => {
-		return import.meta.env.PROD ? !data.draft : true;
-	});
-	const enPosts = await getCollection('blog', ({ data }) => {
-		return import.meta.env.PROD ? !data.draft : true;
-	});
-
-	const koPostMap = new Map(koPosts.map((p) => [p.id, p]));
-	const allSlugs = new Set([...koPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
-
-	const posts = Array.from(allSlugs).map((slug) => {
-		return koPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
-	}).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
+	const posts = await getUnifiedBlogPosts('ko');
 	return paginate(posts, { pageSize: 5 });
 }) satisfies GetStaticPaths;
 
@@ -82,16 +69,26 @@ const pageSeo = {
 				<ul class="post-list">
 					{posts.map((post) => {
 						const formattedDate = formatDate(post.data.pubDate, 'ko');
-						const isKorean = post.collection === 'blog_ko' || post.data.lang === 'ko';
+						const isKorean = post.data.lang === 'ko' || post.collection.endsWith('_ko');
 						return (
 							<li class="post-item">
 								<time class="post-date" datetime={post.data.pubDate.toISOString()}>
 									{formattedDate}
 								</time>
 								<div class="post-title-wrapper">
-									<a href={`/ko/blog/${post.id}`} class="post-link">
+									<a 
+										href={post.url} 
+										class="post-link"
+										target={post.isExternal ? '_blank' : undefined}
+										rel={post.isExternal ? 'noopener noreferrer' : undefined}
+									>
 										{post.data.title}
 									</a>
+									{post.siteLabel && (
+										<span class={`site-badge site-${post.site.toLowerCase()}`} title={`${post.siteLabel} 블로그`}>
+											{post.siteLabel} ↗
+										</span>
+									)}
 									{!isKorean && <span class="lang-badge">EN</span>}
 								</div>
 							</li>
@@ -172,6 +169,37 @@ const pageSeo = {
 		border: 1px solid var(--border-color);
 		color: var(--text-muted);
 		opacity: 0.75;
+	}
+
+	.site-badge {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		padding: 1px 5px;
+		border-radius: 3px;
+		border: 1px solid var(--border-color);
+		background: var(--card-bg);
+		color: var(--text-muted);
+		opacity: 0.85;
+		letter-spacing: 0.3px;
+		white-space: nowrap;
+	}
+
+	.site-badge.site-market {
+		color: #2b6cb0;
+		border-color: rgba(43, 108, 176, 0.3);
+		background: rgba(43, 108, 176, 0.05);
+	}
+
+	.site-badge.site-ai {
+		color: #805ad5;
+		border-color: rgba(128, 90, 213, 0.3);
+		background: rgba(128, 90, 213, 0.05);
+	}
+
+	.site-badge.site-health {
+		color: #2f855a;
+		border-color: rgba(47, 133, 90, 0.3);
+		background: rgba(47, 133, 90, 0.05);
 	}
 
 	.section-title {

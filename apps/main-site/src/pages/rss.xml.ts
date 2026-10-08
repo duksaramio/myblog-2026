@@ -1,26 +1,20 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { getUnifiedBlogPosts } from '../utils/posts';
 import profile from '../data/profile.json';
 import type { APIContext } from 'astro';
 
 export async function GET(context: APIContext) {
-	const posts = await getCollection('blog', ({ data }) => {
-		return import.meta.env.PROD ? !data.draft : true;
-	});
-
-	const sortedPosts = posts.sort(
-		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	);
+	const posts = await getUnifiedBlogPosts('en');
 
 	return rss({
 		title: profile.site.title,
 		description: profile.site.description,
 		site: context.site || new URL(profile.seo.og.url),
-		items: sortedPosts.map((post) => ({
-			title: post.data.title,
+		items: posts.map((post) => ({
+			title: post.siteLabel ? `[${post.siteLabel}] ${post.data.title}` : post.data.title,
 			pubDate: post.data.pubDate,
 			description: post.data.description,
-			link: `/blog/${post.id}/`,
+			link: post.url,
 		})),
 		customData: `<language>en-us</language>`,
 	});
