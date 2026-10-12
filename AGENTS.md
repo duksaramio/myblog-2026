@@ -6,6 +6,7 @@
   - Do NOT use generated illustrations, conceptual 3D renders, or synthetic covers.
 - **Allowed Visual Assets:**
   - Authentic primary source artifacts only: official SEC filing excerpts, official company diagrams, analyst charts, or direct screenshots with proper attribution.
+  - For social media commentary (e.g., X / Twitter threads, LinkedIn), use direct blockquotes and primary post URLs instead of embedding screenshots of tweets.
   - If no authentic primary visual exists, omit the `image:` frontmatter attribute or point to the site default `/og-image.png`. The site layout will handle the fallback cleanly.
 
 ## 2. Bilingual Parity Requirement
@@ -24,3 +25,7 @@
   `npm run build:<workspace>` (e.g., `npm run build:market`, `npm run build:main`, `npm run build:ai`, `npm run build:health`)
 - Deploy only after the build succeeds:
   `npm run deploy:<workspace>` (e.g., `npm run deploy:market`)
+- **Main-Site Homepage Sync:**
+  - The main site (`apps/main-site`) aggregates posts from `ai-site`, `health-site`, and `market-site` on its homepage writing list.
+  - Whenever a post is published or revised on ANY sub-site (`ai-site`, `health-site`, `market-site`), **always verify and deploy the main site** as well:
+    `npm run build:main && npm run deploy:main`
