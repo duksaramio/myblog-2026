@@ -17,7 +17,7 @@ export interface UnifiedPost {
 		tags?: string[];
 		audioUrl?: string;
 		image?: string;
-		lang?: 'en' | 'ko';
+		lang?: 'en' | 'ko' | 'zh';
 	};
 }
 
@@ -27,6 +27,7 @@ interface SiteConfig {
 	domain: string;
 	enCollection: 'blog' | 'ai_blog' | 'health_blog' | 'market_blog';
 	koCollection: 'blog_ko' | 'ai_blog_ko' | 'health_blog_ko' | 'market_blog_ko';
+	zhCollection: 'blog_zh' | 'ai_blog_zh' | 'health_blog_zh' | 'market_blog_zh';
 }
 
 const SITES: SiteConfig[] = [
@@ -36,6 +37,7 @@ const SITES: SiteConfig[] = [
 		domain: 'https://duklee.net',
 		enCollection: 'blog',
 		koCollection: 'blog_ko',
+		zhCollection: 'blog_zh',
 	},
 	{
 		id: 'market',
@@ -43,6 +45,7 @@ const SITES: SiteConfig[] = [
 		domain: 'https://market.duklee.net',
 		enCollection: 'market_blog',
 		koCollection: 'market_blog_ko',
+		zhCollection: 'market_blog_zh',
 	},
 	{
 		id: 'ai',
@@ -50,6 +53,7 @@ const SITES: SiteConfig[] = [
 		domain: 'https://ai.duklee.net',
 		enCollection: 'ai_blog',
 		koCollection: 'ai_blog_ko',
+		zhCollection: 'ai_blog_zh',
 	},
 	{
 		id: 'health',
@@ -57,10 +61,11 @@ const SITES: SiteConfig[] = [
 		domain: 'https://health.duklee.net',
 		enCollection: 'health_blog',
 		koCollection: 'health_blog_ko',
+		zhCollection: 'health_blog_zh',
 	},
 ];
 
-export async function getUnifiedBlogPosts(locale: 'en' | 'ko'): Promise<UnifiedPost[]> {
+export async function getUnifiedBlogPosts(locale: 'en' | 'ko' | 'zh'): Promise<UnifiedPost[]> {
 	const allPosts: UnifiedPost[] = [];
 
 	for (const site of SITES) {
@@ -70,42 +75,63 @@ export async function getUnifiedBlogPosts(locale: 'en' | 'ko'): Promise<UnifiedP
 		const koPosts = await getCollection(site.koCollection, ({ data }: { data: any }) => {
 			return import.meta.env.PROD ? !data.draft : true;
 		});
+		const zhPosts = await getCollection(site.zhCollection, ({ data }: { data: any }) => {
+			return import.meta.env.PROD ? !data.draft : true;
+		});
 
 		const enMap = new Map(enPosts.map((p) => [p.id, p]));
 		const koMap = new Map(koPosts.map((p) => [p.id, p]));
-		const allSlugs = new Set([...enPosts.map((p) => p.id), ...koPosts.map((p) => p.id)]);
+		const zhMap = new Map(zhPosts.map((p) => [p.id, p]));
+		const allSlugs = new Set([
+			...enPosts.map((p) => p.id),
+			...koPosts.map((p) => p.id),
+			...zhPosts.map((p) => p.id),
+		]);
 
 		for (const slug of allSlugs) {
 			let post: CollectionEntry<any> | undefined;
-			let isPostKo = false;
+			let postLang: 'en' | 'ko' | 'zh' = 'en';
 
-			if (locale === 'ko') {
+			if (locale === 'zh') {
+				if (zhMap.has(slug)) {
+					post = zhMap.get(slug);
+					postLang = 'zh';
+				} else if (enMap.has(slug)) {
+					post = enMap.get(slug);
+					postLang = 'en';
+				} else {
+					post = koMap.get(slug);
+					postLang = 'ko';
+				}
+			} else if (locale === 'ko') {
 				if (koMap.has(slug)) {
 					post = koMap.get(slug);
-					isPostKo = true;
+					postLang = 'ko';
 				} else {
 					post = enMap.get(slug);
-					isPostKo = false;
+					postLang = 'en';
 				}
 			} else {
 				if (enMap.has(slug)) {
 					post = enMap.get(slug);
-					isPostKo = false;
-				} else {
+					postLang = 'en';
+				} else if (koMap.has(slug)) {
 					post = koMap.get(slug);
-					isPostKo = true;
+					postLang = 'ko';
+				} else {
+					post = zhMap.get(slug);
+					postLang = 'zh';
 				}
 			}
 
 			if (!post) continue;
 
 			let url: string;
+			const langPrefix = postLang === 'en' ? '' : `/${postLang}`;
 			if (site.id === 'main') {
-				url = isPostKo ? `/ko/blog/${slug}` : `/blog/${slug}`;
+				url = `${langPrefix}/blog/${slug}`.replace(/^\/\//, '/');
 			} else {
-				url = isPostKo
-					? `${site.domain}/ko/blog/${slug}`
-					: `${site.domain}/blog/${slug}`;
+				url = `${site.domain}${langPrefix}/blog/${slug}`;
 			}
 
 			allPosts.push({
@@ -123,7 +149,7 @@ export async function getUnifiedBlogPosts(locale: 'en' | 'ko'): Promise<UnifiedP
 					tags: post.data.tags,
 					audioUrl: post.data.audioUrl,
 					image: post.data.image,
-					lang: isPostKo ? 'ko' : 'en',
+					lang: postLang,
 				},
 			});
 		}

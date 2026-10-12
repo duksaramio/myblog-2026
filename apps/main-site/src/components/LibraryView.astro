@@ -153,21 +153,21 @@ const seo = {
       {library.map((item, index) => {
         const formattedDate = item.watchDate 
           ? formatDate(new Date(item.watchDate), locale)
-          : item.type === 'book' ? (locale === 'ko' ? '미독' : 'Not read yet') : (locale === 'ko' ? '미시청' : 'Not watched yet');
+          : item.type === 'book' ? (locale === 'ko' ? '미독' : locale === 'zh' ? '未读' : 'Not read yet') : (locale === 'ko' ? '미시청' : locale === 'zh' ? '未看' : 'Not watched yet');
 
         // Creator label based on type
-        let creatorLabel = locale === 'ko' ? '제작:' : 'Creator:';
-        if (item.type === 'book') creatorLabel = locale === 'ko' ? '저자:' : 'Author:';
-        else if (item.type === 'movie') creatorLabel = locale === 'ko' ? '감독:' : 'Dir:';
+        let creatorLabel = locale === 'ko' ? '제작:' : locale === 'zh' ? '创作者:' : 'Creator:';
+        if (item.type === 'book') creatorLabel = locale === 'ko' ? '저자:' : locale === 'zh' ? '作者:' : 'Author:';
+        else if (item.type === 'movie') creatorLabel = locale === 'ko' ? '감독:' : locale === 'zh' ? '导演:' : 'Dir:';
 
         // Status string formatting
         let displayStatus = item.status.replace('-', ' ');
         if (item.status === 'completed') {
-          displayStatus = item.type === 'book' ? t('library.read') : (locale === 'ko' ? '완료' : 'Completed');
+          displayStatus = item.type === 'book' ? t('library.read') : (locale === 'ko' ? '완료' : locale === 'zh' ? '已完成' : 'Completed');
         } else if (item.status === 'watching') {
-          displayStatus = item.type === 'book' ? t('library.reading') : (locale === 'ko' ? '시청 중' : 'Watching');
+          displayStatus = item.type === 'book' ? t('library.reading') : (locale === 'ko' ? '시청 중' : locale === 'zh' ? '观看中' : 'Watching');
         } else if (item.status === 'plan-to-watch') {
-          displayStatus = item.type === 'book' ? t('library.planToRead') : (locale === 'ko' ? '볼 예정' : 'Plan to Watch');
+          displayStatus = item.type === 'book' ? t('library.planToRead') : (locale === 'ko' ? '볼 예정' : locale === 'zh' ? '想看' : 'Plan to Watch');
         }
 
         return (
@@ -221,7 +221,7 @@ const seo = {
                 ))}
                 {item.genres.length > 2 && <span class="genre-tag-more">+{item.genres.length - 2}</span>}
                 {item.externalUrl && (
-                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="card-link-icon" title={item.type === 'book' ? (locale === 'ko' ? '아마존에서 보기' : 'View on Amazon') : (locale === 'ko' ? 'IMDb에서 보기' : 'View on IMDb')}>
+                  <a href={item.externalUrl} target="_blank" rel="noopener noreferrer" class="card-link-icon" title={item.type === 'book' ? (locale === 'ko' ? '아마존에서 보기' : locale === 'zh' ? '在亚马逊查看' : 'View on Amazon') : (locale === 'ko' ? 'IMDb에서 보기' : locale === 'zh' ? '在 IMDb 查看' : 'View on IMDb')}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                       <polyline points="15 3 21 3 21 9"></polyline>
@@ -249,7 +249,7 @@ const seo = {
                     <span class="modal-meta-item"><strong>{t('library.status')}:</strong> <span class="status-capitalize">{displayStatus}</span></span>
                     {item.watchDate && (
                       <span class="modal-meta-item">
-                        <strong>{item.type === 'book' ? (locale === 'ko' ? '완독:' : 'Read:') : (locale === 'ko' ? '시청:' : 'Watched:')}</strong> {formattedDate}
+                        <strong>{item.type === 'book' ? (locale === 'ko' ? '완독:' : locale === 'zh' ? '读完:' : 'Read:') : (locale === 'ko' ? '시청:' : locale === 'zh' ? '观看:' : 'Watched:')}</strong> {formattedDate}
                       </span>
                     )}
                   </div>
@@ -1052,7 +1052,9 @@ const seo = {
 
 <script>
   const libraryMain = document.getElementById('library-main');
-  const isKo = libraryMain?.dataset.lang === 'ko';
+  const lang = libraryMain?.dataset.lang || 'en';
+  const isKo = lang === 'ko';
+  const isZh = lang === 'zh';
 
   const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
   const statusFilter = document.getElementById('status-filter') as HTMLSelectElement | null;
@@ -1164,12 +1166,14 @@ const seo = {
 
     if (resultsCounter) {
       if (totalFiltered === 0) {
-        resultsCounter.textContent = isKo ? '0개 항목 표시 중' : 'Showing 0 items';
+        resultsCounter.textContent = isKo ? '0개 항목 표시 중' : isZh ? '显示 0 个项目' : 'Showing 0 items';
       } else {
         const displayStart = startIndex + 1;
         const displayEnd = Math.min(endIndex, totalFiltered);
         resultsCounter.textContent = isKo 
           ? `총 ${totalFiltered}개 항목 중 ${displayStart}–${displayEnd} 표시`
+          : isZh
+          ? `显示第 ${displayStart}–${displayEnd} 项，共 ${totalFiltered} 项`
           : `Showing ${displayStart}–${displayEnd} of ${totalFiltered} items`;
       }
     }

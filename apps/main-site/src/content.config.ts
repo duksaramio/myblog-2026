@@ -10,7 +10,7 @@ const postSchema = z.object({
 	tags: z.array(z.string()).optional().default([]),
 	audioUrl: z.string().optional(),
 	image: z.string().optional(),
-	lang: z.enum(['en', 'ko']).optional().default('en'),
+	lang: z.enum(['en', 'ko', 'zh']).optional().default('en'),
 });
 
 const postKoSchema = z.object({
@@ -21,7 +21,18 @@ const postKoSchema = z.object({
 	tags: z.array(z.string()).optional().default([]),
 	audioUrl: z.string().optional(),
 	image: z.string().optional(),
-	lang: z.enum(['en', 'ko']).optional().default('ko'),
+	lang: z.enum(['en', 'ko', 'zh']).optional().default('ko'),
+});
+
+const postZhSchema = z.object({
+	title: z.string(),
+	description: z.string(),
+	pubDate: z.coerce.date(),
+	draft: z.boolean().optional().default(false),
+	tags: z.array(z.string()).optional().default([]),
+	audioUrl: z.string().optional(),
+	image: z.string().optional(),
+	lang: z.enum(['en', 'ko', 'zh']).optional().default('zh'),
 });
 
 const blog = defineCollection({
@@ -42,6 +53,11 @@ const blog_ko = defineCollection({
 	schema: postKoSchema,
 });
 
+const blog_zh = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/blog_zh' }),
+	schema: postZhSchema,
+});
+
 const ai_blog = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: '../ai-site/src/content/blog' }),
 	schema: postSchema,
@@ -50,6 +66,11 @@ const ai_blog = defineCollection({
 const ai_blog_ko = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: '../ai-site/src/content/blog_ko' }),
 	schema: postKoSchema,
+});
+
+const ai_blog_zh = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: '../ai-site/src/content/blog_zh' }),
+	schema: postZhSchema,
 });
 
 const health_blog = defineCollection({
@@ -62,6 +83,11 @@ const health_blog_ko = defineCollection({
 	schema: postKoSchema,
 });
 
+const health_blog_zh = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: '../health-site/src/content/blog_zh' }),
+	schema: postZhSchema,
+});
+
 const market_blog = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: '../market-site/src/content/blog' }),
 	schema: postSchema,
@@ -72,14 +98,23 @@ const market_blog_ko = defineCollection({
 	schema: postKoSchema,
 });
 
+const market_blog_zh = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: '../market-site/src/content/blog_zh' }),
+	schema: postZhSchema,
+});
+
 export const collections = {
 	blog,
 	nakseojang,
 	blog_ko,
+	blog_zh,
 	ai_blog,
 	ai_blog_ko,
+	ai_blog_zh,
 	health_blog,
 	health_blog_ko,
+	health_blog_zh,
 	market_blog,
 	market_blog_ko,
+	market_blog_zh,
 };

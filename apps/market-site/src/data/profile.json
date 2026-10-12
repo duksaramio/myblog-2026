@@ -33,6 +33,10 @@
     "paragraphs_ko": [
       "주식 시장, 거시 경제, 테크 기업 밸류에이션 및 자본 배분에 대한 데이터 기반 분석과 통찰을 기록하는 공간입니다.",
       "<a href=\"https://duklee.net\">이덕희</a>가 큐레이션하며, <em>본 사이트의 모든 아티클은 AI 에이전트가 리서치하고 생성합니다.</em>"
+    ],
+    "paragraphs_zh": [
+      "关于股票市场、宏观经济、科技公司估值与资本配置的数据驱动型分析与洞见记录。",
+      "由 <a href=\"https://duklee.net/zh\">李德熙</a> 策展。<em>本站所有文章均由 AI 智能体调研并生成。</em>"
     ]
   },
   "contact": {
@@ -48,6 +52,9 @@
     "linkUrl": "https://trivalleyhub.com/",
     "tag_ko": "트라이밸리 허브 (Tri-Valley Hub)",
     "text_ko": "캘리포니아 트라이밸리 지역 로컬 뉴스, 시정 및 커뮤니티 소식.",
-    "linkText_ko": "trivalleyhub.com 방문하기 →"
+    "linkText_ko": "trivalleyhub.com 방문하기 →",
+    "tag_zh": "三谷中心 (Tri-Valley Hub)",
+    "text_zh": "精选加州三谷地区的本地新闻、市政议程与社区动态。",
+    "linkText_zh": "访问 trivalleyhub.com →"
   }
 }

@@ -36,6 +36,9 @@ interface Props {
 		tag_ko?: string;
 		text_ko?: string;
 		linkText_ko?: string;
+		tag_zh?: string;
+		text_zh?: string;
+		linkText_zh?: string;
 	};
 	footerHtml?: string;
 }
@@ -53,7 +56,7 @@ const {
 	footerHtml
 } = Astro.props;
 
-const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : 'en');
+const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : Astro.url.pathname.startsWith('/zh') ? 'zh' : 'en');
 const t = useTranslations(currentLocale);
 
 const defaultSiteUrl = propSiteUrl || (Astro.site ? Astro.site.origin : (seo.og.url ? new URL(seo.og.url).origin : 'https://duklee.net'));
@@ -62,6 +65,7 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
 
 const enUrl = new URL(getLocalizedPath(Astro.url.pathname, 'en'), siteUrl).href;
 const koUrl = new URL(getLocalizedPath(Astro.url.pathname, 'ko'), siteUrl).href;
+const zhUrl = new URL(getLocalizedPath(Astro.url.pathname, 'zh'), siteUrl).href;
 
 const ogImageUrl = seo.og.image.startsWith('http')
 	? seo.og.image
@@ -99,8 +103,9 @@ const activeJsonLd = jsonLd || websiteSchema;
 		<link rel="canonical" href={canonicalURL} />
 		<link rel="alternate" hreflang="en" href={enUrl} />
 		<link rel="alternate" hreflang="ko" href={koUrl} />
+		<link rel="alternate" hreflang="zh" href={zhUrl} />
 		<link rel="alternate" hreflang="x-default" href={enUrl} />
-		<link rel="alternate" type="application/rss+xml" title={siteTitle} href={new URL(currentLocale === 'ko' ? '/ko/rss.xml' : '/rss.xml', siteUrl).href} />
+		<link rel="alternate" type="application/rss+xml" title={siteTitle} href={new URL(currentLocale === 'ko' ? '/ko/rss.xml' : currentLocale === 'zh' ? '/zh/rss.xml' : '/rss.xml', siteUrl).href} />
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -138,9 +143,9 @@ const activeJsonLd = jsonLd || websiteSchema;
 		<div class="container">
 			{banner && banner.show && (
 				<PromoBanner
-					tag={currentLocale === 'ko' ? (banner.tag_ko || t('banner.tag')) : (banner.tag || t('banner.tag'))}
-					text={currentLocale === 'ko' ? (banner.text_ko || t('banner.text')) : (banner.text || t('banner.text'))}
-					linkText={currentLocale === 'ko' ? (banner.linkText_ko || t('banner.linkText')) : (banner.linkText || t('banner.linkText'))}
+					tag={currentLocale === 'ko' ? (banner.tag_ko || t('banner.tag')) : currentLocale === 'zh' ? (banner.tag_zh || t('banner.tag')) : (banner.tag || t('banner.tag'))}
+					text={currentLocale === 'ko' ? (banner.text_ko || t('banner.text')) : currentLocale === 'zh' ? (banner.text_zh || t('banner.text')) : (banner.text || t('banner.text'))}
+					linkText={currentLocale === 'ko' ? (banner.linkText_ko || t('banner.linkText')) : currentLocale === 'zh' ? (banner.linkText_zh || t('banner.linkText')) : (banner.linkText || t('banner.linkText'))}
 					linkUrl={banner.linkUrl || 'https://trivalleyhub.com/'}
 				/>
 			)}

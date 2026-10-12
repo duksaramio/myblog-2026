@@ -27,28 +27,32 @@ const {
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
-const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (pathname.startsWith('/ko') ? 'ko' : 'en');
+const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (pathname.startsWith('/ko') ? 'ko' : pathname.startsWith('/zh') ? 'zh' : 'en');
 const t = useTranslations(currentLocale);
 
 const isKo = currentLocale === 'ko';
-const displayLogo = (!logo || logo === 'Duk Lee') ? t('site.title') : logo;
-const defaultParentTitle = parentTitle || (isKo ? '이덕희' : 'Duk Lee');
+const isZh = currentLocale === 'zh';
+const displayLogo = (!logo || logo === 'Duk Lee' || logo === '이덕희' || logo === '李德熙') ? t('site.title') : logo;
+const defaultParentTitle = parentTitle || (isKo ? '이덕희' : isZh ? '李德熙' : 'Duk Lee');
 
-const homeUrl = isKo ? '/ko' : '/';
-const nakseojangUrl = isKo ? '/ko/nakseojang' : '/nakseojang';
-const libraryUrl = isKo ? '/ko/library' : '/library';
+const homeUrl = isKo ? '/ko' : isZh ? '/zh' : '/';
+const nakseojangUrl = isKo ? '/ko/nakseojang' : isZh ? '/zh/nakseojang' : '/nakseojang';
+const libraryUrl = isKo ? '/ko/library' : isZh ? '/zh/library' : '/library';
 
 // Check active states for default nav
 const isHome = isKo 
 	? (pathname === '/ko' || pathname === '/ko/' || pathname.match(/^\/ko\/\d+$/) !== null)
+	: isZh
+	? (pathname === '/zh' || pathname === '/zh/' || pathname.match(/^\/zh\/\d+$/) !== null)
 	: (pathname === '/' || pathname === '/1' || pathname.match(/^\/\d+$/) !== null);
 
-const isLibrary = pathname.startsWith('/library') || pathname.startsWith('/ko/library');
-const isNakseojang = pathname.startsWith('/nakseojang') || pathname.startsWith('/ko/nakseojang');
+const isLibrary = pathname.startsWith('/library') || pathname.startsWith('/ko/library') || pathname.startsWith('/zh/library');
+const isNakseojang = pathname.startsWith('/nakseojang') || pathname.startsWith('/ko/nakseojang') || pathname.startsWith('/zh/nakseojang');
 
-// Switch language target url
-const switchTargetLocale: SupportedLanguage = isKo ? 'en' : 'ko';
-const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
+// Localized language switch targets
+const enUrl = getLocalizedPath(pathname, 'en');
+const koUrl = getLocalizedPath(pathname, 'ko');
+const zhUrl = getLocalizedPath(pathname, 'zh');
 ---
 
 <header>
@@ -82,18 +86,20 @@ const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 				<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
 				<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>
 				<a href={libraryUrl} class={isLibrary ? 'active' : ''}>{t('nav.library')}</a>
-				<a href={isKo ? 'https://learn.duklee.net/ko' : 'https://learn.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '배움 & 호기심 탐구 노트' : 'Learning & Curiosity Notes'}>Learn ↗</a>
-				<a href={isKo ? 'https://ai.duklee.net/ko' : 'https://ai.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? 'AI 특화 블로그 (AI 생성)' : 'AI Publication (AI-Generated)'}>AI ↗</a>
-				<a href={isKo ? 'https://health.duklee.net/ko' : 'https://health.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '건강 특화 블로그 (AI 생성)' : 'Health Publication (AI-Generated)'}>Health ↗</a>
-				<a href={isKo ? 'https://market.duklee.net/ko' : 'https://market.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '주식/시장 특화 블로그 (AI 생성)' : 'Market Publication (AI-Generated)'}>Market ↗</a>
+				<a href={isKo ? 'https://learn.duklee.net/ko' : isZh ? 'https://learn.duklee.net/zh' : 'https://learn.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '배움 & 호기심 탐구 노트' : isZh ? '学习与求知笔记' : 'Learning & Curiosity Notes'}>Learn ↗</a>
+				<a href={isKo ? 'https://ai.duklee.net/ko' : isZh ? 'https://ai.duklee.net/zh' : 'https://ai.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? 'AI 특화 블로그 (AI 생성)' : isZh ? 'AI 专题博客（AI 生成）' : 'AI Publication (AI-Generated)'}>AI ↗</a>
+				<a href={isKo ? 'https://health.duklee.net/ko' : isZh ? 'https://health.duklee.net/zh' : 'https://health.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '건강 특화 블로그 (AI 생성)' : isZh ? '健康专题博客（AI 生成）' : 'Health Publication (AI-Generated)'}>Health ↗</a>
+				<a href={isKo ? 'https://market.duklee.net/ko' : isZh ? 'https://market.duklee.net/zh' : 'https://market.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '주식/시장 특화 블로그 (AI 생성)' : isZh ? '市场与商业专题博客（AI 生成）' : 'Market Publication (AI-Generated)'}>Market ↗</a>
 			</>
 		)}
 		<div class="lang-switch-wrapper">
-			<a href={switchTargetUrl} class="lang-switch-btn" title={`Switch to ${isKo ? 'English' : '한국어'}`}>
-				<span class={!isKo ? 'active-lang' : 'inactive-lang'}>EN</span>
+			<div class="lang-switch-btn">
+				<a href={enUrl} class={currentLocale === 'en' ? 'active-lang' : 'inactive-lang'} title="Switch to English">EN</a>
 				<span class="lang-separator">/</span>
-				<span class={isKo ? 'active-lang' : 'inactive-lang'}>KO</span>
-			</a>
+				<a href={koUrl} class={currentLocale === 'ko' ? 'active-lang' : 'inactive-lang'} title="한국어로 전환">KO</a>
+				<span class="lang-separator">/</span>
+				<a href={zhUrl} class={currentLocale === 'zh' ? 'active-lang' : 'inactive-lang'} title="切换至中文">ZH</a>
+			</div>
 		</div>
 	</nav>
 </header>
@@ -160,6 +166,15 @@ const switchTargetUrl = getLocalizedPath(pathname, switchTargetLocale);
 	.lang-switch-btn:hover {
 		border-color: var(--underline-hover);
 		background-color: rgba(0, 0, 0, 0.06);
+	}
+
+	.lang-switch-btn a {
+		color: inherit;
+		text-decoration: none !important;
+	}
+
+	.lang-switch-btn a:hover {
+		text-decoration: underline !important;
 	}
 
 	.active-lang {

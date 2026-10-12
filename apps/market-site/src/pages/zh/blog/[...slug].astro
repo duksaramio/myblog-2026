@@ -1,0 +1,58 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogPostLayout from '@repo/ui/layouts/BlogPostLayout.astro';
+import profile from '../../../data/profile.json';
+
+export async function getStaticPaths() {
+	const zhPosts = await getCollection('blog_zh', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+	const enPosts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+
+	const zhPostMap = new Map(zhPosts.map((p) => [p.id, p]));
+	const allSlugs = new Set([...zhPosts.map((p) => p.id), ...enPosts.map((p) => p.id)]);
+
+	return Array.from(allSlugs).map((slug) => {
+		const post = zhPostMap.get(slug) || enPosts.find((p) => p.id === slug)!;
+		return {
+			params: { slug },
+			props: { post },
+		};
+	});
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const postUrl = new URL(Astro.url.pathname, Astro.site || 'https://market.duklee.net').href;
+const rawMarkdown = `# ${post.data.title}\n\n> *说明：本文由 AI 智能体调研并生成。*\n> 来源: ${postUrl}\n\n${(post.body || '').trim()}`;
+
+const navItems = [
+	{ label: '文章', href: '/zh', active: true },
+	{ label: '主博客 ↗', href: 'https://duklee.net/zh', external: true },
+	{ label: 'AI ↗', href: 'https://ai.duklee.net/zh', external: true },
+	{ label: 'Health ↗', href: 'https://health.duklee.net/zh', external: true }
+];
+---
+
+<BlogPostLayout 
+	title={post.data.title} 
+	description={post.data.description} 
+	pubDate={post.data.pubDate} 
+	audioUrl={post.data.audioUrl}
+	image={post.data.image}
+	rawMarkdown={rawMarkdown}
+	locale="zh"
+	siteTitle="李德熙 | Market"
+	siteUrl="https://market.duklee.net"
+	topicTitle={profile.header.topicTitle}
+	parentTitle="李德熙"
+	parentUrl="https://duklee.net/zh"
+	logo="李德熙"
+	navItems={navItems}
+	banner={profile.banner}
+	isAiGenerated={true}
+>
+	<Content />
+</BlogPostLayout>

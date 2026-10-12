@@ -50,11 +50,11 @@ const {
 	isAiGenerated = false
 } = Astro.props;
 
-const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : 'en');
+const currentLocale: SupportedLanguage = locale || (Astro.currentLocale as SupportedLanguage) || (Astro.url.pathname.startsWith('/ko') ? 'ko' : Astro.url.pathname.startsWith('/zh') ? 'zh' : 'en');
 const t = useTranslations(currentLocale);
 const siteTitle = propSiteTitle || t('site.title');
 
-const resolvedBackUrl = backUrl || (currentLocale === 'ko' ? '/ko' : '/');
+const resolvedBackUrl = backUrl || (currentLocale === 'ko' ? '/ko' : currentLocale === 'zh' ? '/zh' : '/');
 const resolvedBackLabel = backLabel || t('post.back');
 
 const defaultSiteUrl = propSiteUrl || (Astro.site ? Astro.site.origin : 'https://duklee.net');

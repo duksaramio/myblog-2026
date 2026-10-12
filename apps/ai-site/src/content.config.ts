@@ -12,7 +12,7 @@ const blog = defineCollection({
 		tags: z.array(z.string()).optional().default([]),
 		audioUrl: z.string().optional(),
 		image: z.string().optional(),
-		lang: z.enum(['en', 'ko']).optional().default('en'),
+		lang: z.enum(['en', 'ko', 'zh']).optional().default('en'),
 	}),
 });
 
@@ -26,8 +26,22 @@ const blog_ko = defineCollection({
 		tags: z.array(z.string()).optional().default([]),
 		audioUrl: z.string().optional(),
 		image: z.string().optional(),
-		lang: z.enum(['en', 'ko']).optional().default('ko'),
+		lang: z.enum(['en', 'ko', 'zh']).optional().default('ko'),
 	}),
 });
 
-export const collections = { blog, blog_ko };
+const blog_zh = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/blog_zh' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		draft: z.boolean().optional().default(false),
+		tags: z.array(z.string()).optional().default([]),
+		audioUrl: z.string().optional(),
+		image: z.string().optional(),
+		lang: z.enum(['en', 'ko', 'zh']).optional().default('zh'),
+	}),
+});
+
+export const collections = { blog, blog_ko, blog_zh };

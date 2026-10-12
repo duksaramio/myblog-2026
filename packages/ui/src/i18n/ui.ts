@@ -1,6 +1,7 @@
 export const languages = {
 	en: 'English',
 	ko: '한국어',
+	zh: '中文',
 } as const;
 
 export type SupportedLanguage = keyof typeof languages;
@@ -157,6 +158,81 @@ export const ui = {
 		'library.prev': '← 이전',
 		'library.next': '다음 →',
 	},
+	zh: {
+		'nav.writing': '文章',
+		'nav.nakseojang': '涂鸦本',
+		'nav.library': '书房',
+		'lang.switch': '中文',
+
+		'site.title': '李德熙',
+		'site.description': '在维持 GxP 合规与日常 IT 支持的同时，利用人工智能赋能生命科学企业。Saram Consulting 深谙生物技术与人工智能的交叉融合。',
+
+		'hero.paragraph1': '我喜欢阅读、电影以及摆弄计算机。',
+		'hero.paragraph2': '我的 AI 智能体正在 7×24 小时构建<a href="https://saram.io">工具</a>。',
+
+		'banner.tag': '三谷中心 (Tri-Valley Hub)',
+		'banner.text': '精选加州三谷地区的本地新闻、市政议程与社区动态。',
+		'banner.linkText': '访问 trivalleyhub.com →',
+
+		'contact.label': '电子邮箱',
+
+		'footer.text': '由 <a href="https://saram.io" target="_blank" rel="noopener noreferrer">Saram Consulting</a> 构建。网站设计：Antigravity。博客文章由基于 deepseek-flash 的 Hermes Agent 调研并生成。',
+
+		'pagination.newer': '← 较新文章',
+		'pagination.older': '较旧文章 →',
+
+		'post.back': '← 返回首页',
+		'post.copyMarkdown': '复制 Markdown',
+		'post.copied': '已复制！',
+		'post.error': '出错了',
+		'post.aiGeneratedBadge': 'AI 生成',
+		'post.aiNoticeTitle': 'AI 生成内容说明',
+		'post.aiNoticeDesc': '本文由自主 AI 智能体在人工策展下研究、提炼并撰写生成。',
+		'site.aiNoticeSection': '本出版物的所有文章均由 AI 智能体调研并生成。',
+
+		'nakseojang.title': '涂鸦本',
+		'nakseojang.description': '随时记录心中所想的随笔札记',
+
+		'library.title': '书房',
+		'library.subtitle': '记录我阅读过的书籍以及观看过的电影与剧集的个人书架。',
+		'library.totalLogs': '全部记录',
+		'library.books': '书籍',
+		'library.moviesTv': '电影与剧集',
+		'library.averageRating': '平均评分',
+		'library.searchPlaceholder': '按标题、创作者、流派搜索...',
+		'library.all': '全部',
+		'library.tv': '剧集',
+		'library.allStatus': '全部状态',
+		'library.completed': '已完成 / 已读',
+		'library.watching': '观看中 / 阅读中',
+		'library.planToWatch': '想看 / 想读',
+		'library.allGenres': '全部流派',
+		'library.latestCompleted': '最近完成',
+		'library.ratingHigh': '评分从高到低',
+		'library.yearNew': '年份从新到旧',
+		'library.yearOld': '年份从旧到新',
+		'library.alphabetical': '标题排序',
+		'library.perPage': '项 / 页',
+		'library.allItems': '全部项目',
+		'library.showing': '正在显示全部 {count} 项',
+		'library.noMatching': '未找到匹配的记录。',
+		'library.read': '已读',
+		'library.reading': '阅读中',
+		'library.planToRead': '想读',
+		'library.year': '年份',
+		'library.type': '类型',
+		'library.author': '作者',
+		'library.director': '导演',
+		'library.creator': '创作者',
+		'library.status': '状态',
+		'library.rating': '评分',
+		'library.unrated': '未评分',
+		'library.notesReview': '个人笔记与书评/影评：',
+		'library.findOnAmazon': '在亚马逊查看',
+		'library.viewOnImdb': '在 IMDb 查看',
+		'library.prev': '← 上一页',
+		'library.next': '下一页 →',
+	},
 } as const;
 
 export type TranslationKey = keyof typeof ui['en'];
@@ -192,11 +268,19 @@ export function getLocalizedPath(pathname: string, targetLocale: SupportedLangua
 		cleanPath = cleanPath.slice(3); // keeps leading '/'
 	} else if (cleanPath === '/ko') {
 		cleanPath = '/';
+	} else if (cleanPath.startsWith('/zh/')) {
+		cleanPath = cleanPath.slice(3); // keeps leading '/'
+	} else if (cleanPath === '/zh') {
+		cleanPath = '/';
 	}
 
 	if (targetLocale === 'ko') {
 		if (cleanPath === '/') return '/ko';
 		return `/ko${cleanPath}`;
+	}
+	if (targetLocale === 'zh') {
+		if (cleanPath === '/') return '/zh';
+		return `/zh${cleanPath}`;
 	}
 
 	return cleanPath || '/';
@@ -205,6 +289,14 @@ export function getLocalizedPath(pathname: string, targetLocale: SupportedLangua
 export function formatDate(date: Date, lang: SupportedLanguage = defaultLang): string {
 	if (lang === 'ko') {
 		return date.toLocaleDateString('ko-KR', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			timeZone: 'UTC',
+		});
+	}
+	if (lang === 'zh') {
+		return date.toLocaleDateString('zh-CN', {
 			year: 'numeric',
 			month: 'long',
 			day: 'numeric',
