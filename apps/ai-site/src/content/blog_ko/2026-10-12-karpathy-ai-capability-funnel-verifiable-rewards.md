@@ -55,10 +55,10 @@ flowchart TD
 
     T1 --> T2 --> T3 --> T4
 
-    style T1 fill:#1e293b,stroke:#475569,stroke-width:1px,color:#94a3b8
-    style T2 fill:#334155,stroke:#64748b,stroke-width:1px,color:#cbd5e1
-    style T3 fill:#0f766e,stroke:#14b8a6,stroke-width:2px,color:#f0fdfa
-    style T4 fill:#7c2d12,stroke:#f97316,stroke-width:2px,color:#fff7ed
+    style T1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style T2 fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#1e293b
+    style T3 fill:#ccfbf1,stroke:#0d9488,stroke-width:2px,color:#0f766e
+    style T4 fill:#ffedd5,stroke:#ea580c,stroke-width:2px,color:#9a3412
 ```
 
 ### Tier 1: 접점이 없는 대다수 (~60억 명 / ~75%)

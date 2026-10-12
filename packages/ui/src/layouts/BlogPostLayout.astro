@@ -522,6 +522,28 @@ const formattedDate = formatDate(pubDate, currentLocale);
 		border: 1px solid rgba(0, 0, 0, 0.06);
 		word-break: break-word;
 	}
+
+	/* Mermaid Diagrams */
+	.post-content :global(.mermaid-chart) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 28px 0;
+		overflow-x: auto;
+		background: var(--card-bg, rgba(0, 0, 0, 0.03));
+		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		border-radius: 6px;
+		padding: 24px 16px;
+	}
+
+	.post-content :global(.mermaid-chart svg) {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.post-content :global(pre[data-language="mermaid"]) {
+		display: none;
+	}
 </style>
 
 <script>
@@ -553,6 +575,7 @@ const formattedDate = formatDate(pubDate, currentLocale);
 	const codeBlocks = document.querySelectorAll('.post-content pre');
 	codeBlocks.forEach((pre) => {
 		const lang = pre.getAttribute('data-language') || 'code';
+		if (lang === 'mermaid') return;
 		
 		const wrapper = document.createElement('div');
 		wrapper.className = 'code-block-wrapper';
@@ -594,6 +617,39 @@ const formattedDate = formatDate(pubDate, currentLocale);
 			}
 		});
 	});
+
+	// Mermaid diagram rendering
+	const mermaidBlocks = document.querySelectorAll('.post-content pre[data-language="mermaid"]');
+	if (mermaidBlocks.length > 0) {
+		import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs').then(async ({ default: mermaid }) => {
+			mermaid.initialize({
+				startOnLoad: false,
+				securityLevel: 'loose',
+				theme: 'neutral',
+				fontFamily: '"Roboto Mono", monospace',
+			});
+			for (let i = 0; i < mermaidBlocks.length; i++) {
+				const pre = mermaidBlocks[i];
+				const rawCode = pre.querySelector('code')?.textContent || pre.textContent || '';
+				const container = document.createElement('div');
+				container.className = 'mermaid-chart';
+				const id = `mermaid-svg-${Date.now()}-${i}`;
+				try {
+					const { svg } = await mermaid.render(id, rawCode.trim());
+					container.innerHTML = svg;
+					pre.parentNode?.replaceChild(container, pre);
+				} catch (err) {
+					console.error('Mermaid render error:', err);
+					(pre as HTMLElement).style.display = 'block';
+				}
+			}
+		}).catch((err) => {
+			console.error('Failed to load Mermaid library:', err);
+			mermaidBlocks.forEach((pre) => {
+				(pre as HTMLElement).style.display = 'block';
+			});
+		});
+	}
 
 	// Copy post markdown button handler
 	const copyPostMdBtn = document.getElementById('copy-post-md-btn');
