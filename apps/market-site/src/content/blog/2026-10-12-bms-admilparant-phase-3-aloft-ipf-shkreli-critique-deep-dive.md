@@ -4,7 +4,7 @@ pubDate: 2026-10-12T13:00:00Z
 description: "Bristol Myers Squibb claimed victory in its Phase 3 ALOFT-IPF trial for admilparant at 60 mg, but buried a critical failure: the higher 120 mg dose was not statistically significant, and actual mL effect sizes were withheld. We conduct a deep forensic audit into non-monotonic dose response, LPA1 receptor pharmacology, past hepatotoxicity red flags, and why Martin Shkreli’s viral critique ('low dose good, high dose bad, effect size bad, drug is bad') signals a looming commercial disaster."
 draft: false
 tags: ["bmy", "bristol-myers-squibb", "admilparant", "aloft-ipf", "ipf", "martin-shkreli", "clinical-trials", "biotech-investing", "deep-research"]
-image: "/shkreli-bmy-admilparant-aloft-ipf.png"
+image: "/og-image.png"
 lang: "en"
 ---
 
@@ -12,17 +12,13 @@ On October 12, 2026, **Bristol Myers Squibb (NYSE: BMY)** issued a widely antici
 
 To the casual market observer reading the top headline, it looked like an unequivocal clinical triumph in a devastating, fatal lung disease where treatment innovation has been stalled for over a decade.
 
-Yet within minutes of the opening bell, Wall Street biotech specialists and clinical pharmacologists took one look at the fine print and balked. The stock barely moved, drifting down **-0.77% to $59.12**:
-
-![Biotech Twitter Reaction to BMS ALOFT-IPF Readout](/bmy-admilparant-biotech-twitter-reaction.png)
+Yet within minutes of the opening bell, Wall Street biotech specialists and clinical pharmacologists took one look at the fine print and balked. The stock barely moved, drifting down **-0.77% to $59.12**.
 
 Veteran biotech journalist **Adam Feuerstein** immediately flagged the release as *"significant $BMY news"*, while analyst account **@Lord_of_Biotech** pointedly highlighted the glaring contradiction in the study's dosing arms:
 
 > *"The trial met its primary endpoint at the 60 mg dose... At the 120 mg dose, admilparant slowed the decline of FVC but was **not statistically significant**."*
 
 Former biotech hedge fund manager **Martin Shkreli** cut straight through the corporate spin with a blunt, four-line forensic autopsy that went viral across financial Twitter:
-
-![Martin Shkreli Critique of BMS Admilparant Phase 3 ALOFT-IPF Trial](/shkreli-bmy-admilparant-aloft-ipf.png)
 
 > *"low dose good*  
 > *high dose bad*  

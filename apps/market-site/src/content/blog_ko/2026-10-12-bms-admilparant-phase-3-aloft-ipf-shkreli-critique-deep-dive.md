@@ -4,7 +4,7 @@ pubDate: 2026-10-12T13:00:00Z
 description: "브리스톨 마이어스 스퀴브(BMS)는 특발성 폐섬유증 치료제 애드밀파란트의 3상 ALOFT-IPF 임상에서 60mg 용량이 1차 평가변수를 달성했다고 발표했으나, 핵심적인 결함을 은폐했습니다. 2배 고용량인 120mg이 통계적 유의성을 달성하지 못했고, 실제 FVC(mL) 개선 수치마저 비공개 처리된 것입니다. 비단조적 용량 반응, LPA1 수용체 약리학, 과거 간독성 이슈, 그리고 마틴 슈크렐리의 통렬한 4줄 평가('저용량 성공, 고용량 실패, 효과 크기 불량, 나쁜 약')가 왜 상업적 재앙을 예고하는지 심층 포렌식 분석합니다."
 draft: false
 tags: ["bmy", "브리스톨마이어스스퀴브", "애드밀파란트", "aloft-ipf", "특발성폐섬유증", "마틴슈크렐리", "임상3상", "바이오투자", "심층분석"]
-image: "/shkreli-bmy-admilparant-aloft-ipf.png"
+image: "/og-image.png"
 lang: "ko"
 ---
 
@@ -12,17 +12,13 @@ lang: "ko"
 
 헤드라인만 훑어본 일반 투자자들에게는 지난 10년 넘게 치료 혁신이 정체되어 있던 치명적인 희귀 폐질환 분야에서 또 하나의 역사적인 임상 성공이 탄생한 것처럼 보였습니다.
 
-그러나 시장 개장 직후, 월스트리트 바이오 전문 기관들과 임상 약리학자들의 반응은 정반대였습니다. BMY 주가는 환호 대신 **-0.77% 하락한 $59.12**로 밀려나며 차갑게 식어버렸습니다:
-
-![Biotech Twitter Reaction to BMS ALOFT-IPF Readout](/bmy-admilparant-biotech-twitter-reaction.png)
+그러나 시장 개장 직후, 월스트리트 바이오 전문 기관들과 임상 약리학자들의 반응은 정반대였습니다. BMY 주가는 환호 대신 **-0.77% 하락한 $59.12**로 밀려나며 차갑게 식어버렸습니다.
 
 베테랑 바이오 전문 기자 **아담 포이어슈타인(Adam Feuerstein)**은 즉각 *"중대한 $BMY 뉴스"*라며 시장의 주목을 환기시켰고, 바이오 전문 애널리스트 계정 **@Lord_of_Biotech**는 보도자료 속에 감춰진 치명적인 모순을 적나라하게 짚어냈습니다:
 
 > *"임상은 60mg 용량에서 1차 평가변수를 달성했다... 그러나 120mg 용량에서는 애드밀파란트가 FVC 감소를 늦추긴 했으나 **통계적으로 유의하지 않았다(not statistically significant)**."*
 
 그리고 바이오 헤지펀드 매니저 출신의 악명 높은 투자자 **마틴 슈크렐리(Martin Shkreli)**는 특유의 직설적인 4줄 포렌식 코멘트로 파이낸셜 트위터를 뒤흔들었습니다:
-
-![Martin Shkreli Critique of BMS Admilparant Phase 3 ALOFT-IPF Trial](/shkreli-bmy-admilparant-aloft-ipf.png)
 
 > *"low dose good (저용량 성공)*  
 > *high dose bad (고용량 실패)*  
