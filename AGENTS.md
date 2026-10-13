@@ -42,3 +42,8 @@
   - The main site (`apps/main-site`) aggregates posts from `ai-site`, `health-site`, and `market-site` on its homepage writing list.
   - Whenever a post is published or revised on ANY sub-site (`ai-site`, `health-site`, `market-site`), **always verify and deploy the main site** as well:
     `npm run build:main && npm run deploy:main`
+
+## 5. Agent Customization Version Control
+- All project-level agent rules (`.agents/rules/*.md`) and skills (`.agents/skills/*/SKILL.md`) are first-class codebase assets.
+- Always ensure they are committed and pushed to `origin/main` when modified or created.
+- Never add blanket `.agents/` ignores to `.gitignore`; keep `.agents/rules/` and `.agents/skills/` explicitly un-ignored.
