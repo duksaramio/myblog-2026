@@ -19,7 +19,7 @@ According to May, the market has written off Zura's lead asset, **tibulizumab (Z
 
 In this deep forensic investigation, we apply the 8-phase **"Panning for Gold" critical thinking framework** (Browne & Keeley) to cross-examine May's pitch:
 1. **Financial & Regulatory Traceability:** Auditing Zura's SEC Form 10-Q filings, cash runway, share count with pre-funded warrants, and Eli Lilly royalty encumbrances.
-2. **The "IL-17F Myth" Under Cross-Examination:** Deconstructing the molecular binding affinities ($K_d$), tissue ligand concentration ($[L]$), the law of mass action, and the true causal drivers behind the clinical failure of Moonlake Therapeutics' ($MLTX$) sonelokimab in Phase 3 HS (VELA-2).
+2. **The "IL-17F Myth" Under Cross-Examination:** Deconstructing the molecular binding affinities (*Kd*), tissue ligand concentration ([L]), the law of mass action, and the true causal drivers behind the clinical failure of Moonlake Therapeutics' ($MLTX) sonelokimab in Phase 3 HS (VELA-2).
 3. **The BAFF / B-Cell Axis in HS:** Testing whether intralesional B-cell accumulation is a true pathogenic driver or merely a secondary bystander of follicular rupture and bacterial extravasation.
 4. **The Pipeline-in-a-Product Multipliers:** Forensic scrutiny of Kyowa Kirin’s mysterious 2024 withdrawal of brodalumab in Systemic Sclerosis in Japan, and the epidemiological realities of expanding Polymyalgia Rheumatica into a $10B biologic TAM.
 5. **The Negative View & Omitted Liabilities:** Unmasking double-immunosuppression infection risks, anti-drug antibody (ADA) hazards in engineered bispecifics, and inevitable post-data equity dilution.
@@ -130,7 +130,7 @@ According to the [ClinicalTrials.gov registry for NCT06993610](https://clinicalt
   3. **Arm 3 (Placebo):** Matching subcutaneous placebo.
 * **Primary Endpoint:** Percent change from baseline in abscess and inflammatory nodule (AN) count at **Week 16**.
 * **Key Secondary Endpoints:** HiSCR50, **HiSCR75**, and HiSCR90 response rates at Week 16; DLQI; and Skin Pain Numeric Rating Scale (NRS).
-* **Protocol Safeguards:** Hurley Stage III patients capped at $\le 40\%$; prior TNF-exposed patients capped at $\le 30\%$.
+* **Protocol Safeguards:** Hurley Stage III patients capped at ≤ 40%; prior TNF-exposed patients capped at ≤ 30%.
 
 ---
 
@@ -154,7 +154,7 @@ May constructs a four-part argument to prove that IL-17F does not contribute to 
 
 ### Argument 1: Receptor Binding Affinity Discrepancy
 IL-17A and IL-17F signal through the identical receptor complex: a heterodimer of **IL-17RA** and **IL-17RC**. As documented in peer-reviewed structural biology papers ([Frontiers in Immunology, PMID 32973785](https://pubmed.ncbi.nlm.nih.gov/32973785/)):
-* The **IL-17AA homodimer** binds the receptor complex with high affinity ($K_d \approx 1.8\text{–}3.2\text{ nM}$).
+* The **IL-17AA homodimer** binds the receptor complex with high affinity (*Kd* ≈ 1.8–3.2 nM).
 * The **IL-17AF heterodimer** binds with intermediate affinity.
 * The **IL-17FF homodimer** binds with **$>100$-fold weaker affinity** than AA, driven by an exceptionally weak interaction with the IL-17RA chain.
 
@@ -163,7 +163,7 @@ From this in vitro binding data, May deduces: *"The primary goal of an IL-17 dru
 ### Argument 2: Cosentyx is Weak Because of Low IL-17A Affinity, Not Lack of IL-17F
 Why did secukinumab (Cosentyx) produce mediocre results in HS (~11% placebo-adjusted HiSCR50 delta, failing to report HiSCR75)?
 * Consensus view: Cosentyx is weak because it only hits IL-17A and misses IL-17F.
-* May's counter-analysis: Cosentyx is weak because its binding affinity for IL-17AA is dismal ($K_d = 129\text{ nM}$) and its affinity for IL-17AF is $2,400\text{ nM}$. Taltz (ixekizumab) and Bimzelx (bimekizumab) possess AA affinities of $1.8\text{ nM}$ and $3.2\text{ nM}$—nearly **$40\times\text{ to }70\times$ more potent** than Cosentyx. Thus, Cosentyx is an under-potent IL-17A inhibitor, not proof that IL-17F is required.
+* May's counter-analysis: Cosentyx is weak because its binding affinity for IL-17AA is dismal (*Kd* = 129 nM) and its affinity for IL-17AF is 2,400 nM. Taltz (ixekizumab) and Bimzelx (bimekizumab) possess AA affinities of 1.8 nM and 3.2 nM—nearly **40× to 70× more potent** than Cosentyx. Thus, Cosentyx is an under-potent IL-17A inhibitor, not proof that IL-17F is required.
 
 ### Argument 3: Ixekizumab (Taltz) Was Underdosed by Lilly
 In Phase 3 psoriasis trials, Bimzelx achieved a 61.7% PASI-100 rate, whereas Taltz achieved 41.4%. 
@@ -171,8 +171,8 @@ May points out that Lilly dosed Taltz at only **80 mg Q4W** in maintenance (20 m
 
 In the randomized, controlled **IXORA-P trial** ([British Journal of Dermatology, PMID 31545506](https://pubmed.ncbi.nlm.nih.gov/31545506/)), patients receiving double the Taltz maintenance dose (80 mg Q2W instead of Q4W) saw their PASI-100 response rate surge to **~63%**—closing the gap with Bimzelx (~66%) to within 3 percentage points. May argues this proves that a potent IL-17A inhibitor, when adequately dosed, matches Bimzelx without needing to touch IL-17F.
 
-### Argument 4: The Moonlake ($MLTX$) Sonelokimab Failure
-The ultimate test of the "IL-17F matters" hypothesis occurred with Moonlake Therapeutics' nanobody sonelokimab (SLK), which was specifically engineered to have the highest IL-17FF affinity in biotech history ($K_d = 3.8\text{ nM}$ vs Bimzelx's $23\text{ nM}$).
+### Argument 4: The Moonlake ($MLTX) Sonelokimab Failure
+The ultimate test of the "IL-17F matters" hypothesis occurred with Moonlake Therapeutics' nanobody sonelokimab (SLK), which was specifically engineered to have the highest IL-17FF affinity in biotech history (*Kd* = 3.8 nM vs Bimzelx's 23 nM).
 
 If IL-17F was the secret to Bimzelx's superiority, Sonelokimab should have outperformed Bimzelx. Instead:
 * In psoriasis, Sonelokimab achieved only a 33.3% PASI-100 rate (worse than both Bimzelx and Taltz).
@@ -208,17 +208,17 @@ While Dr. May’s reasoning is compelling, a forensic critical thinking audit re
 ### The Mass Action Reality
 In biochemistry, biological receptor activation is governed by the concentration of ligand-receptor complexes at equilibrium:
 
-$$\text{Fractional Occupancy} = \frac{[L]}{[L] + K_d}$$
+> **Biochemical Receptor Occupancy Formula:**  
+> **Fractional Occupancy = [L] / ([L] + Kd)**  
+> *(where **[L]** represents local tissue ligand concentration, and **Kd** is the binding dissociation constant)*
 
-Where $[L]$ is local tissue ligand concentration and $K_d$ is the dissociation constant.
+While IL-17AA binds the receptor with >100-fold higher affinity than IL-17FF, **in chronic inflammatory lesions (especially in the skin and epithelial tunnels of HS patients), IL-17FF is expressed at molar concentrations 30 to 100 times higher than IL-17AA**. 
 
-While IL-17AA binds the receptor with $>100$-fold higher affinity than IL-17FF, **in chronic inflammatory lesions (especially in the skin and epithelial tunnels of HS patients), IL-17FF is expressed at molar concentrations 30 to 100 times higher than IL-17AA**. 
-
-When $[L_{\text{FF}}]$ is $100\times$ greater than $[L_{\text{AA}}]$, the product of concentration and affinity equalizes. In chronic HS lesions, uninhibited IL-17FF continues to trigger continuous signaling through the IL-17RC receptor chain on keratinocytes, fibroblasts, and endothelial cells, driving neutrophil recruitment and tissue destruction.
+When the local tissue concentration of **[L]~FF~** is 100× greater than **[L]~AA~**, the product of concentration and affinity equalizes. In chronic HS lesions, uninhibited IL-17FF continues to trigger continuous signaling through the IL-17RC receptor chain on keratinocytes, fibroblasts, and endothelial cells, driving neutrophil recruitment and tissue destruction.
 
 ### Rival Causes for Moonlake's VELA-2 Failure
 May attributes Sonelokimab's VELA-2 miss entirely to an "IL-17F drug sink." But a forensic audit of clinical trial variables reveals two powerful rival causes:
-1. **Nanobody Pharmacokinetics vs. Full IgG:** Sonelokimab is a 40 kDa trivalent single-domain nanobody with an albumin-binding domain, whereas bimekizumab is a 150 kDa glycosylated full humanized IgG1. Full IgG antibodies benefit from FcRn recycling, maintaining stable serum and tissue trough concentrations ($C_{\text{trough}}$). Small nanobodies suffer from different biodistribution kinetics and potential tissue clearance fluctuations.
+1. **Nanobody Pharmacokinetics vs. Full IgG:** Sonelokimab is a 40 kDa trivalent single-domain nanobody with an albumin-binding domain, whereas bimekizumab is a 150 kDa glycosylated full humanized IgG1. Full IgG antibodies benefit from FcRn recycling, maintaining stable serum and tissue trough concentrations (*C*~trough~). Small nanobodies suffer from different biodistribution kinetics and potential tissue clearance fluctuations.
 2. **Placebo Response Drift:** In VELA-2, the placebo HiSCR75 rate spiked to **21.6%**, compared to **17.0%** in Bimzelx's Phase 3 program. In VELA-1, Sonelokimab hit a statistically significant 17% delta. The pooled 13.8% delta was driven as much by placebo noise and site scoring variability as by molecular target engagement.
 
 ---
@@ -307,14 +307,14 @@ Our audit indicates the withdrawal was driven by **trial design artifacts and re
 For Zura, the implications are two-fold: **IL-17 is almost certainly biologically active in SSc**, but Zura’s Phase 2 **TibuSURE (NCT06843239, n=80, reading out in May 2027)** must maintain rigid 52-week blinded control to satisfy FDA and EMA requirements.
 
 ### Indication 3: Polymyalgia Rheumatica (PMR)
-* **The Medical Need:** PMR affects over 700,000 Americans aged $\ge 50$. The standard of care has remained unchanged for 60 years: a 1-to-2 year oral prednisone taper. Chronic steroid exposure produces catastrophic toxicity: **30% develop diabetes, 49% develop osteoporosis, and 60–80% experience severe weight gain**.
+* **The Medical Need:** PMR affects over 700,000 Americans aged ≥ 50. The standard of care has remained unchanged for 60 years: a 1-to-2 year oral prednisone taper. Chronic steroid exposure produces catastrophic toxicity: **30% develop diabetes, 49% develop osteoporosis, and 60–80% experience severe weight gain**.
 * **Clinical Proof of Concept:**
   * **Secukinumab Phase 3 ([NEJM 2026, PMID 42234540](https://pubmed.ncbi.nlm.nih.gov/42234540/)):** Cosentyx met its primary endpoint in PMR, achieving a 41.2% sustained remission rate vs. 20.4% for placebo (20.8% delta) and reducing steroid burden.
   * **Sarilumab Phase 3 ([NEJM 2023, PMID 37792612](https://pubmed.ncbi.nlm.nih.gov/37792612/)):** Kevzara (IL-6R) achieved 28.3% sustained remission vs 10.3% placebo (18.0% delta) with a -1,267 mg steroid reduction, leading to FDA approval.
   * **Rituximab RCT ([Lancet Rheumatol 2023, PMID 38251523](https://pubmed.ncbi.nlm.nih.gov/38251523/)):** A single infusion of rituximab achieved 52% steroid-free remission at one year vs. 21% for placebo.
 
 #### The Forensic Audit of the PMR Market
-May projects PMR as a stealth **$10B market**, extrapolating Kevzara's 42% QoQ revenue jump in Q2 2026 ($145M $\to$ $206M) into an $861M annual run rate.
+May projects PMR as a stealth **$10B market**, extrapolating Kevzara's 42% QoQ revenue jump in Q2 2026 ($145M → $206M) into an $861M annual run rate.
 However:
 * Sanofi and Regeneron do not report PMR sales separately from Rheumatoid Arthritis. Q2 pharmaceutical spikes frequently reflect international wholesaler restocking, seasonal re-authorizations, and Medicaid pricing adjustments.
 * Rheumatologists face deep behavioral inertia: generic prednisone costs **$15 per month**, whereas biologic therapies cost **$50,000 to $70,000 per year**. Payers enforce aggressive step-therapy, restricting biologics strictly to steroid-refractory or intolerant patients (~50% of the market). Expanding PMR into an unconstrained first-line biologic TAM will take a decade of payer education.
@@ -359,8 +359,8 @@ In accordance with Browne & Keeley Chapter 11, any rigorous deep dive must aggre
 
 To evaluate the asymmetry of ZURA going into the mid-November 2026 readout, we compare it against two direct historical case studies:
 
-1. **Avalo Therapeutics ($AVTX$):** In May 2026, AVTX read out Phase 2 HS data for abdakibart (an anti-IL-1$\beta$ mAb), reporting a **17.3% HiSCR75 delta** (300 mg Q4W). Despite being a me-too behind AbbVie's lutikizumab and showing efficacy inferior to Bimzelx, AVTX stock doubled, and the company completed a **$430M equity offering at a $1.1B valuation**.
-2. **Moonlake Therapeutics ($MLTX$):** In its Phase 2 HS readout, Sonelokimab delivered a **24.4% HiSCR75 delta**, propelling Moonlake from a $1.5B valuation to a sustained **$3.0B–$4.0B market capitalization**.
+1. **Avalo Therapeutics ($AVTX):** In May 2026, AVTX read out Phase 2 HS data for abdakibart (an anti-IL-1β mAb), reporting a **17.3% HiSCR75 delta** (300 mg Q4W). Despite being a me-too behind AbbVie's lutikizumab and showing efficacy inferior to Bimzelx, AVTX stock doubled, and the company completed a **$430M equity offering at a $1.1B valuation**.
+2. **Moonlake Therapeutics ($MLTX):** In its Phase 2 HS readout, Sonelokimab delivered a **24.4% HiSCR75 delta**, propelling Moonlake from a $1.5B valuation to a sustained **$3.0B–$4.0B market capitalization**.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -397,16 +397,16 @@ To evaluate the asymmetry of ZURA going into the mid-November 2026 readout, we c
 
 Rejecting binary cheerleading and blanket skepticism, we synthesize our forensic audit into five decision-grade conditional statements:
 
-* **IF tibulizumab achieves a Week 16 HiSCR75 delta $\ge 22\%$ with $\le 5\%$ incidence of oral candidiasis or serious infections,**  
+* **IF tibulizumab achieves a Week 16 HiSCR75 delta ≥ 22% with ≤ 5% incidence of oral candidiasis or serious infections,**  
   **THEN** Dr. May’s core thesis is validated: high-dose IL-17A inhibition matches bimekizumab, and BAFF dual-neutralization provides genuine clinical synergy. In this scenario, Zura’s enterprise value will rerate from $294M to $> $1.5B, yielding a stock price between **$10.00 and $14.00** even after accounting for an immediate $150M–$200M secondary financing.
 
-* **IF the HiSCR75 delta lands between $15\%$ and $19\%$ (the Avalo / abdakibart tier),**  
+* **IF the HiSCR75 delta lands between 15% and 19% (the Avalo / abdakibart tier),**  
   **THEN** tibulizumab is a clinically active but commercially secondary drug in HS. The stock will experience an initial relief rally to **$5.50–$7.00**, but institutional upside will be capped by the reality that dermatologists will prefer first-line Bimzelx, leaving Zura to compete with generic Humira and emerging IL-1/TL1A agents.
 
-* **IF the trial misses statistical significance due to a placebo HiSCR75 response exceeding $22\%$,**  
+* **IF the trial misses statistical significance due to a placebo HiSCR75 response exceeding 22%,**  
   **THEN** Zura will suffer the identical fate as Moonlake’s VELA-2. The stock will plummet **-50% to -55% to ~$1.80–$2.20**, leaving the company valued at approximately cash ($175M) plus a $50M–$100M stub value for the Phase 2 SSc readout in 1H 2027.
 
-* **IF opportunistic fungal or serious bacterial infections appear in the 300 mg high-dose arm ($> 8\%$),**  
+* **IF opportunistic fungal or serious bacterial infections appear in the 300 mg high-dose arm (> 8%),**  
   **THEN** the biological liability of combined Th17 and B-cell immunosuppression in open cutaneous tunnels will destroy the asset’s safety profile, triggering an immediate drop to net cash backing at **~$1.20–$1.40 per share**.
 
 * **IF an investor holds ZURA into the Q4 readout,**  
