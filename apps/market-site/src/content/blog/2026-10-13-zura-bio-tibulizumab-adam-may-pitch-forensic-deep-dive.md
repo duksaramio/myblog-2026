@@ -393,12 +393,13 @@ To evaluate the asymmetry of ZURA going into the mid-November 2026 readout, we c
 
 ---
 
-## 9. Grey Thinking & Conditional Synthesis ("If-Clauses")
+## 9. Grey Thinking, Conditional Synthesis & The Forensic Verdict
 
-Rejecting binary cheerleading and blanket skepticism, we synthesize our forensic audit into five decision-grade conditional statements:
+Rejecting binary cheerleading and blanket skepticism, we first lay out the decision-grade conditional branches, followed by our explicit, probability-weighted forensic verdict:
 
+### Decision-Grade "If-Clauses"
 * **IF tibulizumab achieves a Week 16 HiSCR75 delta ≥ 22% with ≤ 5% incidence of oral candidiasis or serious infections,**  
-  **THEN** Dr. May’s core thesis is validated: high-dose IL-17A inhibition matches bimekizumab, and BAFF dual-neutralization provides genuine clinical synergy. In this scenario, Zura’s enterprise value will rerate from $294M to $> $1.5B, yielding a stock price between **$10.00 and $14.00** even after accounting for an immediate $150M–$200M secondary financing.
+  **THEN** Dr. May’s core thesis is validated: high-dose IL-17A inhibition matches bimekizumab, and BAFF dual-neutralization provides genuine clinical synergy. In this scenario, Zura’s enterprise value will rerate from $294M to over $1.2B–$1.5B, yielding a stock price between **$10.00 and $14.00** even after accounting for an immediate $150M–$200M secondary financing.
 
 * **IF the HiSCR75 delta lands between 15% and 19% (the Avalo / abdakibart tier),**  
   **THEN** tibulizumab is a clinically active but commercially secondary drug in HS. The stock will experience an initial relief rally to **$5.50–$7.00**, but institutional upside will be capped by the reality that dermatologists will prefer first-line Bimzelx, leaving Zura to compete with generic Humira and emerging IL-1/TL1A agents.
@@ -411,6 +412,27 @@ Rejecting binary cheerleading and blanket skepticism, we synthesize our forensic
 
 * **IF an investor holds ZURA into the Q4 readout,**  
   **THEN** they are executing an asymmetrical clinical volatility trade rather than a traditional fundamental value investment. The downside is partially buffered by $1.40/share in cash and the upcoming SSc catalyst, but position sizing must reflect the high historical failure rate (~65%) of Phase 2 immunology trials attempting multi-pathway inhibition.
+
+---
+
+### The Forensic Verdict: What We Actually Think
+While Dr. May has constructed an intellectually brilliant and mathematically sophisticated bull case, our forensic audit forces us to part ways with his central conclusion. Here is our probability-weighted verdict based on the biophysical, pharmacokinetic, and regulatory evidence:
+
+1. **Probability Distribution of Readout Scenarios:**
+   * **Base Case: "The Avalo / Me-Too Compression Tier" (~55% Probability):**  
+     Tibulizumab's high-dose (300 mg Q2W) arm demonstrates biological activity, but achieves a HiSCR75 delta between **14% and 18%**, while the 150 mg Q2W arm shows weak or non-significant separation due to sub-therapeutic tissue concentrations. Dermatologists will view it as clinically inferior to Bimzelx (>22% delta with complete IL-17FF suppression).
+   * **Downside Case: "Placebo Washout or Safety Impairment" (~30% Probability):**  
+     A high placebo response (>21%), combined with slow tissue penetration in scarred sinus tracts and high patient-to-patient pharmacokinetic scatter, results in failure to achieve statistical significance (*p* > 0.05), driving the stock down to its cash floor of **~$1.40–$1.80**.
+   * **Bull Case: "True Best-in-Disease Synergy" (~15% Probability):**  
+     The 300 mg dose successfully matches Bimzelx (≥22% delta) while B-cell modulation provides unprecedented fistula healing without safety penalties, propelling shares to **$10.00–$12.00**.
+
+2. **The Stance on the Evidence:**
+   * **The "IL-17F is a Red Herring" argument is scientifically flawed:** In chronic HS lesions, IL-17FF is present at 30× to 100× higher molar concentrations than IL-17AA. By leaving FF completely uninhibited, tibulizumab cannot achieve the complete epithelial sterilization delivered by Bimzelx.
+   * **BAFF synergy in HS lacks clinical proof:** Novartis' quiet abandonment of ianalumab in HS following Phase 2 testing is a giant red flag that B-cell targeting does not translate into primary clinical efficacy in HS.
+   * **The Dilution Ceiling:** Investors must understand that even in a successful readout, Zura's $175M cash reserves require an immediate **$150M–$200M equity offering (25%–35% share dilution)** to fund Phase 3 trials across HS and SSc, creating a structural ceiling on equity gains.
+
+3. **Bottom-Line Investment Stance:**
+   * Entering the mid-November 2026 readout unhedged is an **unfavorably skewed binary gamble**, not a disciplined value investment. With a 55% probability of a lukewarm me-too outcome and a 30% probability of an outright clinical failure, the net risk/reward does not justify holding naked long common equity into the catalyst.
 
 ---
 

@@ -127,13 +127,19 @@ Persuasive pitches always highlight positive features while omitting downsides.
 
 ---
 
-### Phase 7: Grey Thinking & Conditional Synthesis (Chapter 12)
+### Phase 7: Grey Thinking, Conditional Synthesis & The Bottom-Line Verdict (Chapter 12)
 1. **Dismantle Dichotomous Thinking:**
-   - Ban black-and-white, binary verdicts (*"X is dead"*, *"Y is strictly better than Z"*).
+   - Ban black-and-white, binary cheerleading or dogmatic dismissals (*"X is dead"*, *"guaranteed 10x winner"*).
 2. **Synthesize Using "If-Clauses":**
-   - Structure all strategic recommendations and deep-dive conclusions conditionally:
+   - Structure contextual scenarios conditionally:
      * *"If [Workload is batch-oriented and latency-tolerant], then [Architecture A] delivers 40% superior cost efficiency."*
      * *"If [Real-time streaming and sub-10ms tail latency are required], then [Architecture B] is necessary despite 2x higher infrastructure expenditure."*
+3. **Mandatory "The Forensic Verdict: What We Actually Think":**
+   - Never abdicate analytical judgment behind neutral decision trees. The reader expects the investigator's definitive stance.
+   - Every deep-dive conclusion **must include an explicit "The Forensic Verdict: What We Actually Think" section**:
+     * **Probability-Weighted Scenarios:** Assign explicit likelihood percentages to each conditional branch (e.g., *Base/Most Probable [~60%]*, *Bear/Downside [~25%]*, *Bull/Upside [~15%]*).
+     * **Stance on the Evidence:** State unequivocally which side of the dispute has the superior empirical/mechanistic backing and why.
+     * **Actionable Bottom-Line Stance:** Provide a clear, definitive stance or recommendation based on expected value, structural bottlenecks, and risk asymmetry.
 
 ---
 
@@ -162,6 +168,6 @@ Before finalizing any deep-dive report, verify the following 10 items:
 [ ] 6. Statistics audited for mean/median skew, range/distribution, and absolute baseline denominators.
 [ ] 7. "Negative View" executed: Identified who loses, failure modes, and long-term liabilities.
 [ ] 8. Graveyard/survivorship analysis conducted for failed prior attempts.
-[ ] 9. Final synthesis articulated through nuanced, context-dependent "If-Clauses".
+[ ] 9. Final synthesis articulated through nuanced "If-Clauses" AND an explicit, probability-weighted "Bottom-Line Verdict".
 [ ] 10. Every external citation programmatically verified for HTTP 200 liveness.
 ```

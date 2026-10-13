@@ -67,13 +67,18 @@ Comprehensive research requires actively investigating what the sources chose *n
 
 ---
 
-## 5. Grey Thinking & Nuanced Synthesis (Chapter 12)
+## 5. Grey Thinking, Nuanced Synthesis & The Bottom-Line Verdict (Chapter 12)
 * **Dismantle Binary Dichotomies:**
   - Deep research reports must never collapse complex technical or strategic dilemmas into binary cheerleading or blanket dismissals.
 * **The "If-Clause" Standard:**
   - Synthesize strategic findings into qualified conditional statements:
     * *"If [Infrastructure/Constraint A holds], then [Architecture X] is optimal."*
     * *"If [Scale/Resource Constraint B holds], then [Architecture Y] becomes necessary."*
+* **Mandatory Bottom-Line Verdict ("What We Actually Think"):**
+  - Never abdicate analytical judgment behind neutral decision trees. While avoiding dogmatism, agents must synthesize the evidence into an explicit authorial conclusion:
+    * **Probability-Weighted Scenarios:** Assign explicit epistemic probabilities to the key potential outcomes (e.g., *Base/Most Probable [~60%]*, *Bear/Downside [~25%]*, *Bull/Upside [~15%]*).
+    * **Empirical Stance:** Clearly declare which thesis or party possesses the superior empirical, mechanistic, or structural arguments.
+    * **Actionable Verdict:** Provide an unambiguous, bottom-line recommendation or verdict based on expected value, structural bottlenecks, and risk asymmetry.
 
 ---
 

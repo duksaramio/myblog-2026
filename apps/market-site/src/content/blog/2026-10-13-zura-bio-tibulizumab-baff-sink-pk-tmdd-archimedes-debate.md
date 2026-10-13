@@ -307,10 +307,11 @@ Applying Chapter 9 of Browne & Keeley, we disentangle the rival causes governing
 
 ---
 
-## 8. Grey Thinking: Decision-Grade "If-Clauses" for Investors
+## 8. Grey Thinking, Conditional Synthesis & The Forensic Verdict
 
-Rejecting binary cheerleading and blanket dismissal, we synthesize the Archimedes-May debate into four decision-grade conditional statements:
+Rejecting binary cheerleading and blanket dismissal, we first synthesize the Archimedes-May debate into decision-grade conditional statements, followed by our explicit, probability-weighted forensic verdict:
 
+### Decision-Grade "If-Clauses"
 * **IF the 300 mg Q2W arm achieves a Week 16 HiSCR75 delta ≥ 22% while the 150 mg Q2W arm achieves ≥ 16% (demonstrating clean dose response),**  
   **THEN** May’s thesis is partially vindicated: high-frequency Q2W dosing successfully overcame the BAFF clearance sink and 4.4x affinity deficit. In this scenario, Zura’s enterprise value will rerate from $294M to over **$1.0B–$1.2B ($8.00–$10.50/share)**, though post-data secondary financing will dilute upside by 20–25%.
 
@@ -320,8 +321,26 @@ Rejecting binary cheerleading and blanket dismissal, we synthesize the Archimede
 * **IF both dose cohorts fail to achieve statistical significance due to rapid TMDD clearance, poor tissue penetration, or a placebo HiSCR75 response > 22%,**  
   **THEN** Jing Liang’s structural critique is validated: the 60-mer BAFF oligomer and membrane sink broke the drug’s pharmacokinetics. Zura Bio will collapse **-60% to -70% down to cash value ($1.30–$1.60/share)**, wiping out over $300M in market value.
 
-* **THEREFORE, from an epistemic standpoint,**  
-  Archimedes and Jing Liang have exposed critical biophysical vulnerabilities that Dr. May's pitch glossed over. Tibulizumab is not a "better Bimzelx"—it is an engineered bispecific with **4.4x worse IL-17A affinity**, **0% IL-17FF neutralization**, and a **300x macromolecular BAFF sink**. Entering the November 2026 readout without hedging for TMDD failure is an unhedged speculative gamble, not a value investment.
+---
+
+### The Forensic Verdict: What We Actually Think
+Having deconstructed the biophysical, structural, and pharmacokinetic evidence, our analytical team takes an unambiguous stance on the core disputes:
+
+1. **Who Won the Scientific Debate?**
+   * **Archimedes and Jing Liang win decisively on the science.**
+   * Dr. May’s dismissal of the BAFF sink as negligible because of "heterobivalency" commits fundamental errors in spatial macromolecular geometry. A 1.2 MDa 60-mer capsid is six times larger than the entire bispecific antibody; when an IgG binds this particle and undergoes receptor-mediated endocytosis into a hepatic Kupffer cell, the attached anti-IL-17 scFvs are destroyed in the lysosome along with the rest of the molecule.
+   * Furthermore, Archimedes’ calculation that tibulizumab is **4.4× less potent on IL-17A** (14 pM vs. 3.2 pM) while possessing **0% neutralization of the abundant IL-17FF homodimer** is indisputable biophysical fact.
+
+2. **Probability-Weighted Readout Scenarios (Mid-November 2026):**
+   * **Most Probable Outcome: "The Dose-Response Disconnect" (~60% Probability):**  
+     The 150 mg Q2W dose will prove sub-therapeutic in deep dermal tissue due to the 300× BAFF clearance sink, failing to separate cleanly from placebo. The 300 mg Q2W dose will brute-force sufficient exposure to show activity, but will land in the **14%–17% HiSCR75 delta range** (the Avalo me-too tier), well short of Bimzelx’s >22% benchmark.
+   * **Downside Outcome: "Complete TMDD & Placebo Washout" (~25% Probability):**  
+     A high placebo response (>21%), combined with delayed tissue partition into scarred sinus tracts and high patient-to-patient pharmacokinetic scatter, causes the trial to miss statistical significance across both arms (*p* > 0.05). Shares crater to cash floor at **$1.30–$1.60**.
+   * **Bull Outcome: "High-Dose Brute Force Synergy" (~15% Probability):**  
+     The 300 mg dose achieves a ≥22% delta, proving that saturation of both targets produces additive clinical benefit in HS without fungal or bacterial safety penalties, driving shares to **$8.00–$10.50** (post-dilution).
+
+3. **Actionable Bottom-Line Stance:**
+   * Archimedes and Jing Liang have exposed fatal micro-level flaws in the bull thesis. Entering the November 2026 binary catalyst holding unhedged common equity offers an **asymmetrically negative expected value** (85% combined probability of a me-too compression or clinical failure). We recommend avoiding unhedged long exposure into the data release.
 
 ---
 
