@@ -38,7 +38,7 @@ Biopharma forensic analyst **Archimedes (@Archimedes20311)** and structural immu
 
 The exchange cuts to the heart of biologic drug design: **Can an engineered bispecific antibody overcome extreme molar imbalances, target-mediated drug disposition (TMDD), and macromolecular immune complex formation to deliver therapeutic levels of drug into scarred, avascular inflammatory tissue?**
 
-Applying the 8-phase **"Panning for Gold" critical thinking framework** (Browne & Keeley), we cross-examine every mathematical, structural, and clinical argument raised in this debate.
+In this forensic analysis, we cross-examine every mathematical, structural, and clinical argument raised in this debate.
 
 ---
 
@@ -274,7 +274,7 @@ This historical record refutes May’s assumption that BAFF neutralization provi
 
 ## 7. The 4-Way Causal Matrix: What Drives Outcomes in TibuSHIELD?
 
-Applying Chapter 9 of Browne & Keeley, we disentangle the rival causes governing tibulizumab’s upcoming Phase 2 readout:
+We construct a 4-way causal matrix to disentangle the rival factors governing tibulizumab’s upcoming Phase 2 readout:
 
 ```
                           4-WAY CAUSAL MATRIX: TIBUSHIELD OUTCOMES

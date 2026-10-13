@@ -1,7 +1,7 @@
 ---
 title: "The Bispecific Gamble: A Forensic Audit of Adam May’s Bull Pitch on Zura Bio ($ZURA) and Tibulizumab"
 pubDate: 2026-10-13T13:00:00Z
-description: "Dermatologist and biotech investor Dr. Adam May has unveiled his first pitch in 448 days, targeting Zura Bio ($ZURA) and its dual IL-17A/BAFF bispecific antibody tibulizumab ahead of a pivotal Q4 2026 Phase 2 Hidradenitis Suppurativa readout. We conduct an exhaustive forensic cross-examination using the Browne & Keeley critical thinking framework: auditing the 'IL-17F red herring' hypothesis, deconstructing B-cell synergy in HS, scrutinizing the Kyowa Kirin SSc withdrawal, stress-testing the PMR market expansion thesis, and evaluating the asymmetric risk/reward against impending equity dilution."
+description: "Dermatologist and biotech investor Dr. Adam May has unveiled his first pitch in 448 days, targeting Zura Bio ($ZURA) and its dual IL-17A/BAFF bispecific antibody tibulizumab ahead of a pivotal Q4 2026 Phase 2 Hidradenitis Suppurativa readout. We conduct an exhaustive forensic cross-examination: auditing the 'IL-17F red herring' hypothesis, deconstructing B-cell synergy in HS, scrutinizing the Kyowa Kirin SSc withdrawal, stress-testing the PMR market expansion thesis, and evaluating the asymmetric risk/reward against impending equity dilution."
 draft: false
 tags: ["zura", "zura-bio", "tibulizumab", "adam-may", "hidradenitis-suppurativa", "biotech-investing", "clinical-trials", "deep-research", "systemic-sclerosis", "polymyalgia-rheumatica"]
 image: "/og-image.png"
@@ -17,7 +17,7 @@ May's thesis is bold, mathematically intricate, and deeply non-consensus. He arg
 
 According to May, the market has written off Zura's lead asset, **tibulizumab (ZB-106 / formerly Eli Lilly’s LY3090106)**, as a "weak, me-too Cosentyx" because it inhibits only IL-17A rather than both IL-17A and IL-17F (like UCB's market-leading **Bimzelx / bimekizumab**). May counters that IL-17F is a biological "red herring," that Eli Lilly originally underdosed its IL-17A binder (**ixekizumab / Taltz**), and that tibulizumab's second mechanism of action—neutralizing **BAFF (B-cell activating factor / BLyS)**—will act as an orthogonal booster, potentially making tibulizumab the best-in-disease biologic across three multi-billion-dollar inflammatory markets: **Hidradenitis Suppurativa (HS)**, **Systemic Sclerosis (SSc)**, and **Polymyalgia Rheumatica (PMR)**.
 
-In this deep forensic investigation, we apply the 8-phase **"Panning for Gold" critical thinking framework** (Browne & Keeley) to cross-examine May's pitch:
+In this deep forensic investigation, we cross-examine May's pitch across six institutional diligence vectors:
 1. **Financial & Regulatory Traceability:** Auditing Zura's SEC Form 10-Q filings, cash runway, share count with pre-funded warrants, and Eli Lilly royalty encumbrances.
 2. **The "IL-17F Myth" Under Cross-Examination:** Deconstructing the molecular binding affinities (*Kd*), tissue ligand concentration ([L]), the law of mass action, and the true causal drivers behind the clinical failure of Moonlake Therapeutics' ($MLTX) sonelokimab in Phase 3 HS (VELA-2).
 3. **The BAFF / B-Cell Axis in HS:** Testing whether intralesional B-cell accumulation is a true pathogenic driver or merely a secondary bystander of follicular rupture and bacterial extravasation.
@@ -323,7 +323,7 @@ However:
 
 ## 7. The Negative View: Unmasking Hidden Liabilities
 
-In accordance with Browne & Keeley Chapter 11, any rigorous deep dive must aggressively interrogate omitted risks:
+A rigorous institutional deep dive must aggressively interrogate omitted liabilities and downside risks:
 
 ```
                               THE NEGATIVE VIEW AUDIT
