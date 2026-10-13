@@ -20,10 +20,18 @@
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 
-## 3. Deep Research & Link Verification
-- Test cited URLs programmatically before publishing:
-  `curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "<TARGET_URL>"`
-- Empirical claims and metrics require 2+ independent primary or reputable sources.
+## 3. Deep Research & Epistemic Verification
+- **Programmatic Link Verification:**
+  - Test cited URLs programmatically before publishing:
+    `curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "<TARGET_URL>"`
+- **Primary Source Hierarchy & Anti-Echo Chamber:**
+  - Empirical claims and metrics require 2+ structurally independent primary sources (SEC filings, peer-reviewed papers, official git repos). Secondary press aggregations do not qualify as independent corroboration.
+- **Critical Thinking Standards (Browne & Keeley Framework):**
+  - Follow the rules in `.agents/rules/deep-research.md` and the investigative runbook in `.agents/skills/deep-dive/SKILL.md`.
+  - Always evaluate **Rival Causes** (4-way association test: direct, reverse, third variable, feedback loop).
+  - Perform **Statistical Audits** (verify mean vs. median, range, distribution, and baseline denominators).
+  - Execute the **Negative View** (identify who loses, hidden costs, and unstated assumptions).
+  - Reject binary thinking; synthesize conclusions using contextual **If-Clauses**.
 
 ## 4. Verification & Deployment Pipeline
 - Always verify the Astro build before committing:
