@@ -32,4 +32,8 @@ pnpm-debug.log*
 **/.wrangler/
 
 # Agent local artifacts
-.agents/
+.agents/**
+!.agents/rules/
+!.agents/rules/**
+!.agents/skills/
+!.agents/skills/**
