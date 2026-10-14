@@ -544,6 +544,17 @@ const formattedDate = formatDate(pubDate, currentLocale);
 	.post-content :global(pre[data-language="mermaid"]) {
 		display: none;
 	}
+
+	/* KaTeX Math Rendering */
+	.post-content :global(.katex-display) {
+		margin: 24px 0;
+		padding: 16px 20px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		background: var(--card-bg, rgba(0, 0, 0, 0.03));
+		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+		border-radius: 6px;
+	}
 </style>
 
 <script>
@@ -648,6 +659,99 @@ const formattedDate = formatDate(pubDate, currentLocale);
 			mermaidBlocks.forEach((pre) => {
 				(pre as HTMLElement).style.display = 'block';
 			});
+		});
+	}
+
+	// KaTeX math rendering (display $$...$$ and genuine inline $...$ LaTeX)
+	const postArticle = document.querySelector('.blog-post');
+	if (postArticle && (postArticle.textContent?.includes('$$') || postArticle.textContent?.includes('\\') || /\$[^$\n]*[\^_=]/.test(postArticle.textContent || ''))) {
+		if (!document.getElementById('katex-css')) {
+			const link = document.createElement('link');
+			link.id = 'katex-css';
+			link.rel = 'stylesheet';
+			link.href = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';
+			document.head.appendChild(link);
+		}
+
+		import('https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs').then(({ default: katex }) => {
+			const isLikelyInlineMath = (expr: string): boolean => {
+				if (!expr || /^\s|\s$/.test(expr)) return false;
+				// Contains LaTeX commands, subscripts, superscripts, or equations
+				if (/[\\^_=<>]/.test(expr)) return true;
+				// Single variable or short algebraic expression (not starting with a currency digit)
+				if (/^[A-Za-z][A-Za-z0-9\s+\-*/(),.]*$/.test(expr) && expr.length <= 24) return true;
+				return false;
+			};
+
+			const walker = document.createTreeWalker(postArticle, NodeFilter.SHOW_TEXT, {
+				acceptNode(node) {
+					const parent = node.parentElement;
+					if (!parent) return NodeFilter.FILTER_REJECT;
+					const tag = parent.tagName;
+					if (tag === 'PRE' || tag === 'CODE' || tag === 'SCRIPT' || tag === 'STYLE' || tag === 'TEXTAREA' || parent.closest('.katex')) {
+						return NodeFilter.FILTER_REJECT;
+					}
+					const txt = node.nodeValue || '';
+					if (txt.includes('$')) return NodeFilter.FILTER_ACCEPT;
+					return NodeFilter.FILTER_SKIP;
+				}
+			});
+
+			const textNodes: Text[] = [];
+			let currentNode = walker.nextNode();
+			while (currentNode) {
+				textNodes.push(currentNode as Text);
+				currentNode = walker.nextNode();
+			}
+
+			const mathRegex = /\$\$([\s\S]+?)\$\$|\$([^\$\n]+?)\$/g;
+
+			for (const textNode of textNodes) {
+				const text = textNode.nodeValue || '';
+				mathRegex.lastIndex = 0;
+				let match: RegExpExecArray | null;
+				let lastIdx = 0;
+				let changed = false;
+				const frag = document.createDocumentFragment();
+
+				while ((match = mathRegex.exec(text)) !== null) {
+					const isDisplay = match[1] !== undefined;
+					const rawMath = isDisplay ? match[1] : match[2];
+
+					if (!isDisplay && !isLikelyInlineMath(rawMath)) {
+						continue;
+					}
+
+					if (match.index > lastIdx) {
+						frag.appendChild(document.createTextNode(text.slice(lastIdx, match.index)));
+					}
+
+					const span = document.createElement(isDisplay ? 'div' : 'span');
+					try {
+						const sanitizedMath = rawMath.trim().replace(/(^|[^\\])%/g, '$1\\%');
+						katex.render(sanitizedMath, span, {
+							displayMode: isDisplay,
+							throwOnError: false,
+							strict: false,
+						});
+						frag.appendChild(span);
+						changed = true;
+						lastIdx = mathRegex.lastIndex;
+					} catch {
+						frag.appendChild(document.createTextNode(match[0]));
+						lastIdx = mathRegex.lastIndex;
+					}
+				}
+
+				if (changed) {
+					if (lastIdx < text.length) {
+						frag.appendChild(document.createTextNode(text.slice(lastIdx)));
+					}
+					textNode.parentNode?.replaceChild(frag, textNode);
+				}
+			}
+		}).catch((err) => {
+			console.error('Failed to load KaTeX library:', err);
 		});
 	}
 
