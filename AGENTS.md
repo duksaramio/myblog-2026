@@ -17,6 +17,10 @@
 - Ensure frontmatter metadata matches, with translated `title`, `description`, and tags.
 - **Frontmatter Formatting Invariant:**
   - Always wrap `title` and `description` in double quotes: `title: "..."` and `description: "..."`. Never leave multi-line descriptions unquoted or containing unquoted colons or markdown bullet dashes that break YAML parsing.
+- **Typography & Math Formatting Invariant:**
+  - Always use **native Unicode** for inline physical units, dimensions, multipliers, temperatures, and currency in headings, tables, and body prose (e.g., `858 mm²`, `30 µm`, `13.5 nm`, `6-inch × 6-inch`, `250°C`, `4F²`, `$30,000+`).
+  - **NEVER wrap simple units, numbers, or currency in inline LaTeX** (such as `$858\text{ mm}^2$`, `$30\,\mu\text{m}$`, or `$\$30,000+$`). CommonMark strips backslashes in `\$` and `\%`, and LaTeX in headings breaks TOC anchor slugs and RSS feeds.
+  - Reserve LaTeX (`$$ ... $$` standalone display blocks) strictly for multi-term mathematical equations and formal derivations.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 
