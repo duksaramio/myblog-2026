@@ -1377,5 +1377,24 @@
     "backdropColor": "linear-gradient(135deg, #6d6d68 0%, #4a1414 100%)",
     "externalUrl": "https://www.amazon.com/dp/0940322552",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0940322552-L.jpg"
+  },
+  {
+    "id": "buddy",
+    "title": "Buddy",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Casper Kelly",
+    "rating": 8,
+    "review": "Probably the best movie of 2026 for me so far.",
+    "watchDate": "2026-10-13",
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #b8430c 0%, #4a1a10 50%, #0c0c0c 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt37281055/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWRkNWJhNjYtY2FkZC00YjFlLWFjMjUtZGFhMjc5MGYyODE4XkEyXkFqcGc@._V1_.jpg"
   }
 ]
