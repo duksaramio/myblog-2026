@@ -1139,16 +1139,16 @@
     "id": "hope",
     "title": "Hope",
     "type": "movie",
-    "status": "plan-to-watch",
+    "status": "completed",
     "releaseYear": 2026,
     "creator": "Na Hong-jin",
-    "rating": 0,
-    "review": "",
-    "watchDate": "",
+    "rating": 4,
+    "review": "Such a disappointing one from Na Hong-jin.",
+    "watchDate": "2026-10-13",
     "genres": [
       "Action",
-      "Drama",
-      "Horror"
+      "Horror",
+      "Sci-Fi"
     ],
     "backdropColor": "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     "externalUrl": "https://www.imdb.com/title/tt27369017/",
