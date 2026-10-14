@@ -69,7 +69,8 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
    - Trace every metric back to its canonical primary artifact:
      * **Financial / Corporate:** SEC filings (10-K, 10-Q, 8-K), audited earnings transcripts.
      * **Biotech / Life Sciences:** PubMed/PMC peer-reviewed papers, ClinicalTrials.gov registers, FDA approval packages.
-     * **Software / AI:** GitHub commit histories, reproducible benchmarks, raw benchmark logs, official RFCs/whitepapers.
+      * **Software / AI:** GitHub commit histories, reproducible benchmarks, raw benchmark logs, official RFCs/whitepapers.
+      * **Semiconductors & Deep-Tech:** IEEE IEDM/VLSI/ISSCC technical digests, patent family publications (WIPO/USPTO/CNIPA), certified physical teardowns (TechInsights, Yole), export control regulatory schedules (e.g. BIS 15 CFR Part 744).
 2. **Anti-Echo Chamber Verification:**
    - Require **2+ structurally independent primary sources** for critical claims.
    - Verify that multiple news outlets are not simply syndicating the identical vendor press release.
@@ -86,6 +87,12 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
      * *Definition A (Strict/Measurable):* e.g., "Autonomous" = Zero human interventions over 1,000 hours of edge-case driving.
      * *Definition B (Loose/Marketing):* e.g., "Autonomous" = System can maintain lane assist on marked highways with hands on wheel.
    - Substitute both definitions into the argument. If the conclusion's validity depends on which definition is assumed, the argument contains a fatal ambiguity that must be resolved.
+3. **The Silicon & Hardware Maturity Hierarchy:**
+   - In semiconductor and hardware manufacturing, enforce the 4-tier maturity distinction:
+     1. *Level 1 (Concept/Simulation):* TCAD modeling or patent filing without physical silicon.
+     2. *Level 2 (Tape-Out / Test Silicon):* Functional switching demonstrated on R&D/pilot wafer at sub-economic yields (<20%).
+     3. *Level 3 (Risk Production / Qualification):* Engineering samples delivered to lead partners for JEDEC/server qualification.
+     4. *Level 4 (High-Volume Manufacturing / HVM):* Commercial production at stable yields (>75–85%) at market cost parity.
 
 ---
 
@@ -112,6 +119,10 @@ When analyzing why an outcome occurred (e.g., *"Why did startup X collapse?"*, *
    - Ask: *"What is the ONLY conclusion directly warranted by this dataset?"* Compare against the author's narrative to catch instances of *proving one thing and concluding another*.
 3. **Denominator & Baseline Requirements:**
    - Reject relative percentage changes (e.g., *"300% growth"*) unless accompanied by absolute baseline figures (*"from 2 to 8 enterprise customers"*).
+4. **Hardware & Process Node Decoupling Equations:**
+   - When auditing claims of bypassing lithographic or physical scaling limits, derive the explicit geometric equivalent:
+     $$\text{Cell Area } A = K \cdot F^2 \implies F_{\text{equiv}} = F_{\text{actual}} \cdot \sqrt{\frac{K_{\text{new}}}{K_{\text{incumbent}}}}$$
+   - Verify whether density gains stem from true lateral lithography shrinkage or architectural/vertical stacking (the "3D NAND playbook").
 
 ---
 
@@ -122,7 +133,14 @@ Persuasive pitches always highlight positive features while omitting downsides.
    - What are the strongest objections of those who refused to adopt this system?
 2. **Second-Order Effects & Technical Debt:**
    - What long-term operational liabilities, security vulnerabilities, or maintenance overheads emerge in years 2–5?
-3. **Survivorship & Graveyard Audits:**
+3. **Solid-State Physics & Hardware Failure Modes:**
+   - Interrogate omitted physical yield killers:
+     * *Aspect Ratio & Etch Physics:* Pillar tilt, CD taper, aspect-ratio-dependent etching (ARDE).
+     * *Interface Defect Traps:* Sidewall damage, interface trap density ($D_{it}$), threshold voltage ($V_{th}$) scatter, retention leakage.
+     * *Parasitic Impedance & Sensing Margins:* Bitline capacitance ($C_{bl}$), RC delay, sensing signal collapse ($\Delta V = \frac{V_{DD}}{2} \cdot \frac{C_s}{C_s + C_{bl}}$).
+     * *Packaging & Thermal Stress:* Wafer-to-wafer bonding overlay error, CTE mismatch, thermal dissipation in dense stacks.
+     * *Toolchain Choke Points:* Dependencies beyond lithography (high-aspect-ratio etch, ALD, metrology, hybrid bonding from Lam, TEL, Applied Materials).
+4. **Survivorship & Graveyard Audits:**
    - Who attempted this exact approach and failed? What differentiates the survivor from the casualties?
 
 ---

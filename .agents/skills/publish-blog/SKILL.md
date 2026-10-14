@@ -25,6 +25,10 @@ Ensure all posts are created simultaneously in all three languages:
 
 - **Agent-Driven Translation:** Always translate directly using the agent or parallel subagents. Avoid using local LLM background services or external batch scripts that introduce bottlenecks.
 - **Frontmatter Quoting Invariant:** Always enclose `title: "..."` and `description: "..."` in double quotes. Never leave multi-line descriptions unquoted or containing unquoted colons or dashes that break YAML parsing.
+- **Deep-Dive Preservation Invariant:** When converting deep-dive investigations into blog posts:
+  - Preserve mathematical derivations and $\LaTeX$ equations across all three language files (verify KaTeX compatibility and unescaped literal `$` protection).
+  - Maintain structural comparison scorecards and probability distribution matrices in clean ASCII/Unicode across all language versions.
+  - Ensure domain-specific technical terminology parity across all three languages (e.g. English *Vertical Surrounding Gate (VSG)*, Korean *수직 서라운딩 게이트*, Chinese *垂直环绕栅极*).
 
 ### Frontmatter Schema
 ```yaml
