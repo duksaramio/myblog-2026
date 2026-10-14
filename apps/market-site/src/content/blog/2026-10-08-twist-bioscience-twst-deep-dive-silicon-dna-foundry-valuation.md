@@ -126,7 +126,7 @@ For the past five years, synthetic biology advocates have hyped **enzymatic DNA 
 
 Yet in 2026, enzymatic synthesis has **completely failed to disrupt Twist's commercial moat**. Why?
 
-1. **Coupling Efficiency & Truncation**: Chemical phosphoramidite synthesis achieves stepwise coupling efficiencies of **99.5% to 99.8%**. Even a small drop to 98.5% coupling efficiency results in exponential yield collapse when synthesizing sequences longer than 100 base pairs (\(0.985^{100} \approx 22\%\) full-length yield vs \(0.995^{100} \approx 60.5\%\)). Engineered TdT enzymes have struggled to match chemical fidelity at scale.
+1. **Coupling Efficiency & Truncation**: Chemical phosphoramidite synthesis achieves stepwise coupling efficiencies of **99.5% to 99.8%**. Even a small drop to 98.5% coupling efficiency results in exponential yield collapse when synthesizing sequences longer than 100 base pairs ((0.985¹⁰⁰ ≈ 22%) full-length yield vs (0.995¹⁰⁰ ≈ 60.5%)). Engineered TdT enzymes have struggled to match chemical fidelity at scale.
 2. **Reagent Economics**: Engineered TdT enzymes and reversibly terminating nucleotide analogs are exceptionally expensive to produce. While a benchtop enzymatic printer is convenient for an academic lab needing 4 primers in two hours, it is economically unviable for synthesizing an oligo pool of 500,000 sequences.
 3. **Density Limitations**: Enzymatic reactions require aqueous, enzyme-friendly microenvironments that are difficult to miniaturize onto high-density silicon chips at the picoliter scale.
 

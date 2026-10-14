@@ -88,7 +88,7 @@ The answer lies in a fundamental biological dichotomy that public discourse igno
 
 | Parameter | Vaccines (Where mRNA Thrives) | Therapeutics / Protein Replacement (Where mRNA Stalls) |
 | :--- | :--- | :--- |
-| **Required Dose** | Micrograms ($\approx 10 - 100\ \mu\text{g}$) | Milligrams ($\approx 10 - 500\ \text{mg}$, 100x to 1,000x higher) |
+| **Required Dose** | Micrograms (≈ 10–100 µg) | Milligrams (≈ 10–500 mg, 100x to 1,000x higher) |
 | **Expression Duration** | Transient (2 to 4 days is optimal) | Sustained / Chronic (Weeks, months, or lifelong) |
 | **Dosing Frequency** | 1 to 3 times per lifetime or year | Weekly, bi-weekly, or monthly repeat infusions |
 | **Role of Immunogenicity** | **Feature:** Innate immune activation acts as an adjuvant | **Fatal Bug:** Triggers neutralizing antibodies & systemic toxicity |
@@ -98,7 +98,7 @@ The answer lies in a fundamental biological dichotomy that public discourse igno
 ### The Immunogenicity Double-Edged Sword
 In a vaccine, you do not need much protein. A microscopic whisper of viral spike protein produced inside your deltoid muscle for 48 hours is more than enough. 
 
-Crucially, **immunogenicity is your friend in a vaccine**. When Katalin Karikó and Drew Weissman won the [2023 Nobel Prize in Physiology or Medicine](https://www.nobelprize.org/prizes/medicine/2023/press-release/) for discovering that substituting uridine with pseudouridine ($\Psi$) dampened runaway inflammatory responses ([Karikó et al., *Immunity* 2005](https://pubmed.ncbi.nlm.nih.gov/16111635/)), they made mRNA translatable. But mRNA and its lipid carriers are never completely silent. The residual activation of innate sensors (Toll-like receptors TLR7/8, MDA5) acts as an endogenous **adjuvant**. It screams "foreign pathogen!" to dendritic cells, driving a ferocious antibody and T-cell response.
+Crucially, **immunogenicity is your friend in a vaccine**. When Katalin Karikó and Drew Weissman won the [2023 Nobel Prize in Physiology or Medicine](https://www.nobelprize.org/prizes/medicine/2023/press-release/) for discovering that substituting uridine with pseudouridine (Ψ) dampened runaway inflammatory responses ([Karikó et al., *Immunity* 2005](https://pubmed.ncbi.nlm.nih.gov/16111635/)), they made mRNA translatable. But mRNA and its lipid carriers are never completely silent. The residual activation of innate sensors (Toll-like receptors TLR7/8, MDA5) acts as an endogenous **adjuvant**. It screams "foreign pathogen!" to dendritic cells, driving a ferocious antibody and T-cell response.
 
 In a therapeutic (such as replacing the CFTR channel in cystic fibrosis or phenylalanine hydroxylase in PKU), that exact same biological response is catastrophic:
 1. **Accelerated Blood Clearance (ABC):** When you infuse lipid nanoparticles repeatedly, the immune system generates anti-PEG and anti-lipid antibodies. By the second or third dose, macrophage scavenger cells in the spleen clear the nanoparticles before they ever deliver their cargo.
@@ -164,7 +164,7 @@ Because the intracellular engine operates at ~2% efficiency, developers are forc
 ### 3. Thermodynamic Instability and Cold Chains
 Unlike double-stranded DNA, which can survive intact in fossilized mammoth bones for millennia, single-stranded mRNA is thermodynamically fragile. Its 2'-hydroxyl group makes the phosphodiester backbone inherently susceptible to alkaline hydrolysis. Furthermore, human skin, air, and bacterial dust are saturated with **RNases**—hyper-stable, indestructible enzymes evolved specifically to destroy foreign RNA.
 
-Formulating mRNA into an LNP does not freeze time; it simply slows degradation. The requirement for deep-freeze storage ($-20^\circ\text{C}$ to $-80^\circ\text{C}$) proved an enormous operational and financial barrier for non-pandemic medicines, particularly in developing economies and decentralized outpatient clinics.
+Formulating mRNA into an LNP does not freeze time; it simply slows degradation. The requirement for deep-freeze storage (-20°C to -80°C) proved an enormous operational and financial barrier for non-pandemic medicines, particularly in developing economies and decentralized outpatient clinics.
 
 ---
 
@@ -227,7 +227,7 @@ The results:
 
 Simultaneously, BioNTech and Genentech's **autogene cevumeran (BNT122)** showed in *Nature* that in surgically resected pancreatic ductal adenocarcinoma (PDAC)—one of the deadliest cancers on Earth—patients who mounted neoantigen-specific T-cell responses to the mRNA vaccine experienced dramatically prolonged recurrence-free survival sustained through three years of follow-up ([Rojas et al., *Nature* 2023](https://pubmed.ncbi.nlm.nih.gov/37165196/)).
 
-Here, mRNA's agility is irreplaceable: biopsy $\rightarrow$ sequence $\rightarrow$ predict neoantigens with AI $\rightarrow$ print mRNA $\rightarrow$ inject within weeks.
+Here, mRNA's agility is irreplaceable: biopsy → sequence → predict neoantigens with AI → print mRNA → inject within weeks.
 
 ### 3. In Vivo CRISPR/Cas Gene Editing: The "Hit-and-Run" Advantage
 In gene editing, having your therapeutic protein stick around forever is not an advantage; it is a catastrophe.
@@ -248,7 +248,7 @@ Because you *want* the protein to disappear after doing its job, mRNA is intrins
 The biophysical limitations of 2021 are actively being solved by chemical biology:
 
 - **Selective Organ Targeting (SORT lipids):** Pioneered by Daniel Siegwart's laboratory at UT Southwestern and commercialized by ReCode Therapeutics, SORT technology adds a tuned "fifth lipid" to conventional LNPs ([Cheng et al., *Nat Nanotechnol* 2020](https://pubmed.ncbi.nlm.nih.gov/32251383/)). By altering the surface charge and recruited protein corona, SORT LNPs can systematically redirect delivery away from the liver and exclusively into the **lungs or the spleen**.
-- **Self-Amplifying mRNA (saRNA):** Pioneered by Arcturus and CSL, saRNA incorporates alphaviral replicase machinery. The world's first saRNA vaccine (**Kostaive / ARCT-154**) was approved in Japan. Because saRNA self-replicates inside the cell, it achieves equal or greater immune response at **one-tenth the dose** (5 $\mu\text{g}$ vs. 50–100 $\mu\text{g}$), drastically cutting down lipid reactogenicity.
+- **Self-Amplifying mRNA (saRNA):** Pioneered by Arcturus and CSL, saRNA incorporates alphaviral replicase machinery. The world's first saRNA vaccine (**Kostaive / ARCT-154**) was approved in Japan. Because saRNA self-replicates inside the cell, it achieves equal or greater immune response at **one-tenth the dose** (5 µg vs. 50–100 µg), drastically cutting down lipid reactogenicity.
 - **Circular RNA (circRNA):** By enzymatically ligating the ends into a closed loop, circRNA eliminates the free 5' and 3' ends targeted by exonucleases. circRNA displays significantly longer half-lives and sustained translation without genomic integration, offering a viable bridge for conditions requiring multi-week expression.
 
 ---

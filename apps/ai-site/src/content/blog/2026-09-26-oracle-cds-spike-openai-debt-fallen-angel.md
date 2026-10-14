@@ -33,7 +33,7 @@ Let us conduct a forensic breakdown of the credit mechanics, the counterparty ex
 
 To grasp the magnitude of the chart, one must understand how Credit Default Swaps (CDS) function and how investment-grade technology debt is typically valued.
 
-A Credit Default Swap is an over-the-counter financial derivative that functions as insurance against a corporate or sovereign default. A spread of **230 basis points (bps)** means that an institutional bondholder must pay **$230,000 annually to insure $10 million of Oracle debt** against default over a 5-year horizon ($2.30\% \text{ per annum}$).
+A Credit Default Swap is an over-the-counter financial derivative that functions as insurance against a corporate or sovereign default. A spread of **230 basis points (bps)** means that an institutional bondholder must pay **$230,000 annually to insure $10 million of Oracle debt** against default over a 5-year horizon (2.30% per annum).
 
 ```
                   5-YEAR CREDIT SPREAD COMPARISON (SEPTEMBER 2026)

@@ -71,7 +71,7 @@ In this deep forensic investigation, we audit:
 
 ## 1. What Happened in Phase 3 ALOFT-IPF?
 
-According to the official [Bristol Myers Squibb Press Release](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Phase-3-ALOFT-IPF-Trial-Evaluating-Admilparant-in-Adults-with-Idiopathic-Pulmonary-Fibrosis-Met-Primary-Endpoint/default.aspx), the Phase 3 **ALOFT-IPF** trial ([NCT06003426](https://clinicaltrials.gov/study/NCT06003426), protocol IM027-068) enrolled approximately **1,255 adult patients** (aged $\ge 40$) diagnosed with IPF.
+According to the official [Bristol Myers Squibb Press Release](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Phase-3-ALOFT-IPF-Trial-Evaluating-Admilparant-in-Adults-with-Idiopathic-Pulmonary-Fibrosis-Met-Primary-Endpoint/default.aspx), the Phase 3 **ALOFT-IPF** trial ([NCT06003426](https://clinicaltrials.gov/study/NCT06003426), protocol IM027-068) enrolled approximately **1,255 adult patients** (aged ≥ 40) diagnosed with IPF.
 
 The study design was a randomized, double-blind, placebo-controlled trial evaluating two active treatment arms against placebo (1:1:1 randomization) for at least 52 weeks:
 * **Arm 1:** Admilparant 60 mg orally twice daily (BID)
@@ -131,7 +131,7 @@ On paper, the 60 mg arm achieved $p < 0.05$. In the eyes of a corporate regulato
 However, in multi-arm clinical trials, having one dose clear $p < 0.05$ while another fails is the oldest hedge in pharmaceutical development. If you test multiple active arms against a single control, your probability of at least one arm crossing the nominal significance threshold by random chance expands dramatically unless an ironclad multiplicity penalty is enforced.
 
 ### Line 2: *"high dose bad"*
-This is the core scientific failure. Pharmacology is anchored in the **law of dose-response monotonicity**: if a therapeutic molecule works via on-target receptor engagement, increasing the bioavailable systemic concentration of that molecule should produce equal or superior biological target inhibition, up to receptor saturation (the $E_{\max}$ asymptote).
+This is the core scientific failure. Pharmacology is anchored in the **law of dose-response monotonicity**: if a therapeutic molecule works via on-target receptor engagement, increasing the bioavailable systemic concentration of that molecule should produce equal or superior biological target inhibition, up to receptor saturation (the E_max asymptote).
 
 When 60 mg "works" and 120 mg (a 100% increase in active drug exposure) fails, the drug has violated the fundamental causal link between dose and efficacy. As we explore below, this either means the 60 mg result was a statistical fluke, or the drug exhibits severe pharmacological liabilities at higher doses.
 
@@ -140,7 +140,7 @@ In idiopathic pulmonary fibrosis, FVC preservation is measured in milliliters pe
 * Historical standard of care (nintedanib and pirfenidone) slows annual FVC decline by roughly **~100 to 125 mL/year** relative to placebo (a ~50% relative reduction).
 * Modern competitor **nerandomilast** (Boehringer Ingelheim) demonstrated an adjusted mean difference of **+69.5 mL** (18 mg BID) and **+45.6 mL** (9 mg BID) over placebo in its Phase 3 trial.
 
-Why did BMS not provide the mL difference for admilparant 60 mg? Because if the difference were +80 mL or +100 mL, it would be the headline of the year. The refusal to provide numbers almost certainly indicates that the 60 mg effect size is **marginal**—likely hovering between **+35 mL and +55 mL**, barely scraping past statistical significance ($p \approx 0.03$ or $0.04$), while the 120 mg arm drifted into non-significance ($p \ge 0.10$).
+Why did BMS not provide the mL difference for admilparant 60 mg? Because if the difference were +80 mL or +100 mL, it would be the headline of the year. The refusal to provide numbers almost certainly indicates that the 60 mg effect size is **marginal**—likely hovering between **+35 mL and +55 mL**, barely scraping past statistical significance (p ≈ 0.03 or $0.04$), while the 120 mg arm drifted into non-significance (p ≥ 0.10).
 
 ### Line 4: *"drug is bad"*
 A drug that presents an inverted dose-response curve, an undisclosed borderline effect size, and a history of hepatotoxicity questions cannot command physician confidence, cannot win premium pricing from payers, and cannot beat modern competitors. It is, from an investment and clinical utility standpoint, a commercial dead end.
@@ -202,11 +202,11 @@ Flushed with excitement over the 60 mg Phase 2 signal, BMS clinical leadership m
 Skipping Phase 2 dose-ranging for your highest Phase 3 dose is cardinal sin in drug development. By advancing 120 mg without empirical human efficacy data, BMS wagered hundreds of millions of dollars on a pharmacological guess—and lost.
 
 ### Hypothesis 3: GPCR Biology, Receptor Internalization & Off-Target Desensitization
-Admilparant is an antagonist of **Lysophosphatidic Acid Receptor 1 ($\text{LPA}_1$)**, a rhodopsin-like G-protein-coupled receptor (GPCR) that couples to $G_{\alpha i/o}$, $G_{\alpha q/11}$, and $G_{\alpha 12/13}$. In normal physiology, LPA activates $\text{LPA}_1$ to stimulate cell survival, migration, and cytoskeletal tension. In pulmonary fibrosis, persistent $\text{LPA}_1$ signaling on lung fibroblasts and alveolar epithelial cells drives aberrant repair, myofibroblast differentiation, and vascular permeability.
+Admilparant is an antagonist of **Lysophosphatidic Acid Receptor 1 (LPA₁)**, a rhodopsin-like G-protein-coupled receptor (GPCR) that couples to Gαi/o, Gαq/11, and Gα12/13. In normal physiology, LPA activates LPA₁ to stimulate cell survival, migration, and cytoskeletal tension. In pulmonary fibrosis, persistent LPA₁ signaling on lung fibroblasts and alveolar epithelial cells drives aberrant repair, myofibroblast differentiation, and vascular permeability.
 
 However, GPCR pharmacology is notoriously non-linear. High systemic concentrations of a small-molecule antagonist can induce:
 1. **Receptor Internalization & Desensitization:** Chronic high-affinity occupancy can alter GPCR trafficking, inducing endocytosis or altering the basal equilibrium between monomeric and homodimeric/heterodimeric receptor complexes.
-2. **Off-Target Crosstalk:** At elevated micromolar peak concentrations ($C_{\max}$) achieved with 120 mg BID, selectivity over related receptors—such as $\text{LPA}_2$ or $\text{LPA}_3$—begins to erode. In certain lung injury models, $\text{LPA}_2$ signaling plays a protective, anti-apoptotic role in epithelial barrier maintenance. If high-dose admilparant inadvertently antagonizes or perturbs $\text{LPA}_2$, it could neutralize the antifibrotic benefits observed at 60 mg.
+2. **Off-Target Crosstalk:** At elevated micromolar peak concentrations (C_max) achieved with 120 mg BID, selectivity over related receptors—such as LPA₂ or LPA₃—begins to erode. In certain lung injury models, LPA₂ signaling plays a protective, anti-apoptotic role in epithelial barrier maintenance. If high-dose admilparant inadvertently antagonizes or perturbs LPA₂, it could neutralize the antifibrotic benefits observed at 60 mg.
 
 While biologists love to construct theoretical "bell-shaped" or hormetic curves to explain away failed high-dose arms, **the FDA's Division of Pulmonology has historically treated post-hoc non-monotonic explanations with extreme skepticism.** Without pre-specified in vitro and in vivo models predicting an inverted U-curve, regulators view it as prima facie evidence of an unstable molecule.
 
@@ -223,7 +223,7 @@ If patients in the 120 mg arm experienced subtle, subclinical toxicity that degr
 
 ## 4. The Safety Spectre: The LPA1 Target Curse & The May 2026 Protocol Amendment
 
-To understand why biotech investors are so hypersensitive to admilparant's profile, one must understand the troubled history of the $\text{LPA}_1$ pathway.
+To understand why biotech investors are so hypersensitive to admilparant's profile, one must understand the troubled history of the LPA₁ pathway.
 
 ```
                       THE TROUBLED TIMELINE OF LPA1 INHIBITION
@@ -253,7 +253,7 @@ To understand why biotech investors are so hypersensitive to admilparant's profi
 ```
 
 ### The Ghost of BMS-986020
-Admilparant is not Bristol Myers Squibb's first foray into $\text{LPA}_1$. A decade ago, BMS developed **BMS-986020**, a first-generation $\text{LPA}_1$ antagonist. In a Phase 2 trial, BMS-986020 successfully slowed FVC decline in IPF patients. However, the program had to be completely abandoned due to marked hepatobiliary toxicity, manifested by severe elevations in ALT/AST and cases of acute cholecystitis. Subsequent research revealed that BMS-986020 inhibited hepatic transporters, particularly the **Bile Salt Export Pump (BSEP)**.
+Admilparant is not Bristol Myers Squibb's first foray into LPA₁. A decade ago, BMS developed **BMS-986020**, a first-generation LPA₁ antagonist. In a Phase 2 trial, BMS-986020 successfully slowed FVC decline in IPF patients. However, the program had to be completely abandoned due to marked hepatobiliary toxicity, manifested by severe elevations in ALT/AST and cases of acute cholecystitis. Subsequent research revealed that BMS-986020 inhibited hepatic transporters, particularly the **Bile Salt Export Pump (BSEP)**.
 
 BMS chemists synthesized admilparant (BMS-986278) specifically to engineered-out BSEP inhibition. For years, BMS boasted that admilparant was a clean, liver-safe molecule.
 
@@ -323,7 +323,7 @@ The contrast is devastating.
 * Boehringer Ingelheim ran a textbook program: both doses hit, the effect sizes were transparently published (+69.5 mL and +45.6 mL), dose-ordering was immaculate, and the biological thesis was proven beyond a shadow of a doubt.
 * Bristol Myers Squibb ran a muddy program: the high dose failed, the effect sizes were hidden, the dose-response is broken, and past safety questions linger.
 
-In the real world of clinical pulmonology, when a doctor decides what to prescribe to a patient dying of IPF, why would they choose an $\text{LPA}_1$ inhibitor with a broken dose response and unstated effect size over a PDE4B inhibitor backed by clean, unequivocal Phase 3 efficacy?
+In the real world of clinical pulmonology, when a doctor decides what to prescribe to a patient dying of IPF, why would they choose an LPA₁ inhibitor with a broken dose response and unstated effect size over a PDE4B inhibitor backed by clean, unequivocal Phase 3 efficacy?
 
 ---
 
@@ -334,15 +334,15 @@ Can Bristol Myers Squibb even get admilparant approved by the FDA?
 ### The Statistical Analysis Plan (SAP) Trap
 Everything hinges on the pre-specified **multiplicity testing hierarchy** in the ALOFT-IPF Statistical Analysis Plan.
 * **If BMS used a hierarchical testing procedure** that mandated testing the 120 mg dose FIRST before stepping down to the 60 mg dose, the failure of 120 mg means the 60 mg dose cannot formally claim statistical alpha! Under strict gatekeeping, a failure at the top of the hierarchy invalidates formal claims of significance for downstream doses.
-* **If BMS split alpha** (e.g., allocating $\alpha = 0.025$ to 120 mg and $\alpha = 0.025$ to 60 mg via a Bonferroni or graphical approach), then 60 mg can legally claim statistical significance—provided its p-value was lower than 0.025.
+* **If BMS split alpha** (e.g., allocating α = 0.025 to 120 mg and α = 0.025 to 60 mg via a Bonferroni or graphical approach), then 60 mg can legally claim statistical significance—provided its p-value was lower than 0.025.
 
 BMS stated in its release that 60 mg was "statistically significant," suggesting alpha-splitting or a Hochberg procedure was in place. But even if technically compliant with the SAP, **the FDA is not bound to approve a drug simply because one arm crossed an arbitrary alpha threshold.**
 
 The FDA’s Pulmonary Advisory Committee will ask hard questions:
-1. *Why did 120 mg fail if this molecule engages $\text{LPA}_1$?*
+1. *Why did 120 mg fail if this molecule engages LPA₁?*
 2. *Is the 60 mg result a false-positive outlier?*
 3. *What does the exposure-response (PK/PD) curve look like across patient quartiles?*
-4. *Can BMS prove that 60 mg provides clinically meaningful benefit (traditionally considered $\ge 50 \text{ mL}$ preservation over 52 weeks)?*
+4. *Can BMS prove that 60 mg provides clinically meaningful benefit (traditionally considered ≥ 50 mL preservation over 52 weeks)?*
 
 ### The ALOFT-PPF Overhang (Early 2027)
 Admilparant is currently being evaluated in a companion Phase 3 trial: **ALOFT-PPF** ([NCT06025578](https://clinicaltrials.gov/study/NCT06025578)) in approximately **1,057 patients** with progressive pulmonary fibrosis (PPF).

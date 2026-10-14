@@ -47,7 +47,7 @@ Consider the giants of everyday pharmacopeia:
 1. **Aspirin (Acetylsalicylic Acid):** Derived from willow bark used since the time of Hippocrates, synthesized by Bayer's Felix Hoffmann in 1897. Its precise molecular mechanism—irreversibly acetylating and inhibiting cyclooxygenase (COX-1 and COX-2) to block prostaglandin synthesis—was not discovered until **1971** by Sir John Vane ([awarded the Nobel Prize in 1982](https://pubmed.ncbi.nlm.nih.gov/17227290/)). Humanity used commercial aspirin for **74 years** without knowing its molecular target.
 2. **Penicillin:** Discovered accidentally by Alexander Fleming in 1928 and mass-produced in the early 1940s to save hundreds of thousands of Allied soldiers. Its binding to bacterial penicillin-binding proteins (PBPs) and transpeptidase inhibition was not mapped out until the 1960s by Jack Strominger and colleagues.
 3. **Lithium:** Discovered serendipitously in 1949 by Australian psychiatrist John Cade to treat acute bipolar mania. In 2026—**77 years later**—its definitive downstream therapeutic target remains actively disputed among neuroscientists (competing hypotheses include inositol monophosphatase [IMPase] inhibition, glycogen synthase kinase-3β [GSK-3β] inhibition, and BDNF gene modulation).
-4. **General Inhaled Anesthetics (Ether, Halothane, Sevoflurane):** Administered to hundreds of millions of surgical patients since William Morton's 1846 demonstration. For over a century, the Meyer-Overton correlation posited that anesthetics worked non-specifically by dissolving into neuronal lipid membranes. Only recently have we identified specific interactions with $GABA_A$ receptors, NMDA receptors, and two-pore domain potassium channels ($K_{2P}$), yet the full physical-chemical mechanism of general anesthesia remains an open scientific frontier.
+4. **General Inhaled Anesthetics (Ether, Halothane, Sevoflurane):** Administered to hundreds of millions of surgical patients since William Morton's 1846 demonstration. For over a century, the Meyer-Overton correlation posited that anesthetics worked non-specifically by dissolving into neuronal lipid membranes. Only recently have we identified specific interactions with GABA-A receptors, NMDA receptors, and two-pore domain potassium channels (K₂ₚ), yet the full physical-chemical mechanism of general anesthesia remains an open scientific frontier.
 
 ### What About Chemotherapy Drugs?
 
@@ -76,7 +76,7 @@ Unlike aspirin, ibuprofen, or naproxen, **acetaminophen is not a standard non-st
 Why?
 
 ### The Peroxide Hypothesis
-Classical NSAIDs directly block cyclooxygenase-1 and 2 (COX-1 and COX-2). Acetaminophen, by contrast, acts as a reducing co-substrate that quenches the protoporphyrin radical cation in the peroxidase active site of COX enzymes. In inflamed peripheral tissues, activated neutrophils and macrophages produce high concentrations of cellular peroxides ($H_2O_2$ and lipid hydroperoxides). These high peroxide levels outcompete and overwhelm acetaminophen, rendering it ineffective at inflammatory sites. In the central nervous system, where cellular peroxide tone is very low, acetaminophen successfully inhibits prostaglandin $E_2$ ($PGE_2$) synthesis.
+Classical NSAIDs directly block cyclooxygenase-1 and 2 (COX-1 and COX-2). Acetaminophen, by contrast, acts as a reducing co-substrate that quenches the protoporphyrin radical cation in the peroxidase active site of COX enzymes. In inflamed peripheral tissues, activated neutrophils and macrophages produce high concentrations of cellular peroxides (H₂O₂ and lipid hydroperoxides). These high peroxide levels outcompete and overwhelm acetaminophen, rendering it ineffective at inflammatory sites. In the central nervous system, where cellular peroxide tone is very low, acetaminophen successfully inhibits prostaglandin E₂ (PGE₂) synthesis.
 
 ### The Myth of "COX-3"
 In 2002, researchers discovered an alternative splice variant of the COX-1 gene in dog brains and dubbed it "COX-3," claiming it was the elusive, brain-specific target of acetaminophen. However, subsequent genetic sequencing demonstrated that in humans, the homologous mRNA transcript contains an out-of-frame intron retention that yields a truncated, non-functional protein. **Functional human COX-3 does not exist.**
@@ -86,7 +86,7 @@ Over the last two decades, neuropharmacologists uncovered that acetaminophen is 
 1. In the liver and brain, fatty acid amide hydrolase (FAAH) deacetylates acetaminophen into *p*-aminophenol.
 2. *p*-aminophenol is then conjugated with arachidonic acid to synthesize **AM404** ($N$-(4-hydroxyphenyl)arachidonoylethanolamide).
 3. **AM404 is a potent neuroactive compound:**
-   - It acts as an endogenous cannabinoid reuptake inhibitor, increasing anandamide concentrations in the brain and activating cannabinoid $CB_1$ receptors.
+   - It acts as an endogenous cannabinoid reuptake inhibitor, increasing anandamide concentrations in the brain and activating cannabinoid CB₁ receptors.
    - It directly activates the **TRPV1** (capsaicin) channel in the periaqueductal gray (PAG) of the midbrain, stimulating descending inhibitory pain pathways.
    - It modulates spinal **TRPA1** channels ([Andersson et al., *Nat Commun* 2011, PMID: 21873998](https://pubmed.ncbi.nlm.nih.gov/21873998/)) and serotonergic (5-HT) neurotransmission.
 
@@ -106,7 +106,7 @@ This is where the debate transitions from straightforward pharmacology into the 
 Paul Ehrlich’s foundational concept of the *magische Kugel* ("magic bullet")—a chemical that targets only the disease-causing agent while leaving healthy tissue completely untouched—is a known biological myth for small molecules.
 
 Approved drugs are notoriously "promiscuous." Extensive chemogenomic profiling shows that an average small-molecule therapeutic interacts with **6 to 20 different biological targets** at therapeutic plasma concentrations:
-- **Doxorubicin** (the "Red Devil" chemotherapy) inhibits topoisomerase II in cancer cells, but also cross-reacts with topoisomerase II-$\beta$ in cardiomyocytes, leading to cumulative, irreversible congestive heart failure.
+- **Doxorubicin** (the "Red Devil" chemotherapy) inhibits topoisomerase II in cancer cells, but also cross-reacts with topoisomerase II-β in cardiomyocytes, leading to cumulative, irreversible congestive heart failure.
 - **Cisplatin** binds DNA, but also accumulates in renal proximal tubular cells (causing nephrotoxicity) and inner-ear hair cells (causing irreversible bilateral sensorineural hearing loss).
 - **Thalidomide**, prescribed in the 1950s as a morning-sickness sedative, bound to cereblon (CRBN) and triggered the degradation of the transcription factor SALL4, resulting in devastating limb malformations (phocomelia) in over 10,000 newborns.
 
@@ -137,7 +137,7 @@ In an ideal world, a Phase 3 clinical trial for a cancer drug would measure **Ov
 
 In reality, waiting 5 to 10 years to measure overall survival is slow and expensive. Therefore, regulatory agencies like the FDA frequently grant approval based on **surrogate endpoints**:
 1. **Progression-Free Survival (PFS):** The length of time during and after medication that a patient lives with the disease without the tumor growing by 20% or more (as evaluated by RECIST 1.1 radiographic criteria).
-2. **Objective Response Rate (ORR):** The proportion of patients whose tumors shrink by $\ge 30\%$ on a CT scan.
+2. **Objective Response Rate (ORR):** The proportion of patients whose tumors shrink by ≥ 30% on a CT scan.
 
 Here is the dirty secret of modern oncology: **surrogate endpoints frequently do not correlate with living longer.**
 

@@ -45,7 +45,7 @@ Direct Preference Optimization has a beautiful insight: there's a closed-form ma
 
 The loss function looks like:
 
-$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
+$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_{\theta}(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_{\theta}(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
 
 Translation: increase the probability of the chosen response *relative to the reference model*, and decrease the rejected one. The reference model (usually your SFT checkpoint) acts as an anchor so the policy doesn't drift into incoherence.
 
@@ -107,7 +107,7 @@ GRPO has a problem: it computes importance-sampling ratios per token. In deep mo
 
 GSPO, proposed by the Qwen team in 2025, fixes this by moving to **sequence-level** importance ratios:
 
-$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_\theta(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
+$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_{\theta}(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
 
 This is the geometric mean of token-level ratios — a single number that captures how much the entire sequence has shifted. Clipping, KL, and optimization all happen at sequence level. The result: dramatically more stable training, especially for MoE models. No need for complex "Routing Replay" engineering hacks. Qwen3 was trained with GSPO.
 

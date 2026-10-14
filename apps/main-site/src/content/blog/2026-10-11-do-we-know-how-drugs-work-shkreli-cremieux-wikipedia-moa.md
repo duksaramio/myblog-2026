@@ -98,7 +98,7 @@ If you open the Wikipedia category expecting a roster of approved therapeutics, 
 
 Even among the ~37 real FDA-approved drugs on the list, several entries reveal a shocking failure of Wikipedia maintenance:
 
-- **Clavulanic Acid:** Why is this on the list? Clavulanic acid (partnered with amoxicillin in Augmentin) is one of the most widely prescribed antibiotics on the planet. Its mechanism has been established for over 40 years: it is an irreversible, mechanism-based **suicide inhibitor of bacterial $\beta$-lactamase enzymes**. Wikipedia tagged it as "unknown mechanism" because of obscure exploratory rodent studies looking at its hypothetical effect on glutamate transporter EAAT2 in anxiety models!
+- **Clavulanic Acid:** Why is this on the list? Clavulanic acid (partnered with amoxicillin in Augmentin) is one of the most widely prescribed antibiotics on the planet. Its mechanism has been established for over 40 years: it is an irreversible, mechanism-based **suicide inhibitor of bacterial β-lactamase enzymes**. Wikipedia tagged it as "unknown mechanism" because of obscure exploratory rodent studies looking at its hypothetical effect on glutamate transporter EAAT2 in anxiety models!
 - **Lenalidomide ([Revlimid](https://en.wikipedia.org/wiki/Lenalidomide)):** Bristol Myers Squibb's multibillion-dollar multiple myeloma therapy. Lenalidomide is the textbook triumph of **molecular glue** pharmacology. In 2014–2015, landmark structural biology (Ebert, Kaelin, Fischer labs) proved that lenalidomide binds to the CRL4-CRBN E3 ubiquitin ligase adapter cereblon, altering its surface topology to recruit and ubiquitinate the transcription factors **IKZF1 (Ikaros)** and **IKZF3 (Aiolos)** for proteasomal destruction. Yet Wikipedia's article still carried the "unknown MOA" category tag from the pre-2014 era!
 - **Selegiline & Rasagiline:** Both are classic, selective, irreversible **monoamine oxidase B (MAO-B) inhibitors** approved for Parkinson's disease. Wikipedia tagged them as "unknown mechanism" simply because secondary, speculative hypotheses regarding "neuroprotective effects" or "catecholaminergic activity enhancement" remain debated.
 - **Memantine (Namenda):** Its primary mechanism is an open-and-shut case of an **uncompetitive, low-affinity, fast off-rate NMDA receptor antagonist**.
@@ -120,10 +120,10 @@ In a definitive, comprehensive census of the human pharmacopeia published in *Na
 
 - These 1,578 approved drugs act through **893 well-characterized biomolecules** (667 human proteins and 189 pathogen proteins).
 - Over **70% of small-molecule drugs** act through well-defined "privileged" protein target families:
-  1. **G protein-coupled receptors (GPCRs):** $\sim 33\%$ (e.g., $\beta$-blockers, antihistamines, opioid agonists, angiotensin receptor blockers).
-  2. **Ion channels:** $\sim 18\%$ (e.g., calcium channel blockers, sodium channel blockers, GABA modulators).
-  3. **Kinases & Enzymes:** $\sim 16\%$ (e.g., statins, ACE inhibitors, tyrosine kinase inhibitors).
-  4. **Nuclear receptors:** $\sim 13\%$ (e.g., glucocorticoids, thyroid hormones, sex steroids).
+  1. **G protein-coupled receptors (GPCRs):** ~33% (e.g., β-blockers, antihistamines, opioid agonists, angiotensin receptor blockers).
+  2. **Ion channels:** ~18% (e.g., calcium channel blockers, sodium channel blockers, GABA modulators).
+  3. **Kinases & Enzymes:** ~16% (e.g., statins, ACE inhibitors, tyrosine kinase inhibitors).
+  4. **Nuclear receptors:** ~13% (e.g., glucocorticoids, thyroid hormones, sex steroids).
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -144,13 +144,13 @@ In a definitive, comprehensive census of the human pharmacopeia published in *Na
 Consider the medicines that fill the world's pharmacies:
 - **Statins (Atorvastatin, Rosuvastatin):** Competitively inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis.
 - **ACE Inhibitors (Lisinopril, Enalapril):** Competitively inhibit angiotensin-converting enzyme, blocking the conversion of angiotensin I to angiotensin II.
-- **Proton Pump Inhibitors (Omeprazole, Pantoprazole):** Irreversibly bind to and inhibit the $H^+/K^+$ ATPase in gastric parietal cells.
+- **Proton Pump Inhibitors (Omeprazole, Pantoprazole):** Irreversibly bind to and inhibit the H⁺/K⁺ ATPase in gastric parietal cells.
 - **Anticoagulants (Apixaban, Rivaroxaban):** Direct, selective inhibitors of coagulation Factor Xa.
 - **Targeted Oncology (Imatinib, Osimertinib):** Selectively bind the ATP-binding pocket of oncogenic kinases (BCR-ABL, mutant EGFR T790M).
 - **Monoclonal Antibodies (Pembrolizumab, Trastuzumab):** High-affinity, picomolar-binding biologics targeting PD-1 and HER2.
 - **Metabolic Blockbusters (Semaglutide, Tirzepatide):** Peptide agonists specifically engineering receptor activation at GLP-1R and GIPR.
 
-For every single one of these drugs, modern science possesses **X-ray crystallographic and cryo-EM structures at angstrom resolution**, binding affinities ($K_d$), inhibition constants ($K_i$), and well-understood biochemical catalytic cascades.
+For every single one of these drugs, modern science possesses **X-ray crystallographic and cryo-EM structures at angstrom resolution**, binding affinities (K_d), inhibition constants (K_i), and well-understood biochemical catalytic cascades.
 
 The idea that the pharmaceutical industry operates by mixing random concoctions, dosing patients, and praying while "monitoring to see if anything bad crops up" is a complete myth. Over the last 40 years, the overwhelming majority of drug approvals came from **rational, target-based drug discovery**.
 
@@ -182,13 +182,13 @@ The root of this disagreement is an **epistemological equivocation** over the wo
 ```
 
 ### Level 1: Target Engagement (Shkreli's Domain)
-At Level 1, Shkreli is undeniably correct. We know the molecular target for $>90\%$ of approved drugs. Modern drug development does not advance compounds into clinical trials without demonstrating target engagement, selectivity assays, and pharmacokinetics.
+At Level 1, Shkreli is undeniably correct. We know the molecular target for >90% of approved drugs. Modern drug development does not advance compounds into clinical trials without demonstrating target engagement, selectivity assays, and pharmacokinetics.
 
 ### Level 2: Multiscale Causal Biology (Crémieux's Domain)
 At Level 2, Crémieux points to a genuine, humbling reality of biological science: **knowing which protein a drug binds to does not mean you understand how the drug cures the patient.**
 
 1. **Antidepressants (SSRIs):** We know within minutes of dosing that fluoxetine inhibits the serotonin transporter (SERT). But clinical depression does not improve in minutes. It takes 4 to 8 weeks. Why? Because therapeutic remission requires complex downstream cascades: 5-HT1A autoreceptor desensitization, BDNF gene transcription, CREB phosphorylation, and hippocampal neurogenesis. The "serotonin deficiency" model was an oversimplified bedtime story.
-2. **Classical Oncology:** Cisplatin crosslinks purine bases on DNA across every dividing cell in the human body. Yet cisplatin achieves a $>95\%$ cure rate in metastatic testicular cancer, while failing miserably in pancreatic adenocarcinoma. Why? Cellular DNA repair architecture, apoptotic thresholds, and chromatin dynamics differ across tissues in ways oncology still cannot fully predict.
+2. **Classical Oncology:** Cisplatin crosslinks purine bases on DNA across every dividing cell in the human body. Yet cisplatin achieves a >95% cure rate in metastatic testicular cancer, while failing miserably in pancreatic adenocarcinoma. Why? Cellular DNA repair architecture, apoptotic thresholds, and chromatin dynamics differ across tissues in ways oncology still cannot fully predict.
 3. **The Sheltzer Lab Bombshell (2019):** In a landmark study in *Science Translational Medicine*, Jason Sheltzer and colleagues used CRISPR-Cas9 to delete the purported targets (MELK, PBK, HDAC6) of 10 cancer drugs in active clinical development ([Lin et al., *Sci Transl Med* 2019, PMID: 31511426](https://pubmed.ncbi.nlm.nih.gov/31511426/)). **The cancer cells lacking the targets died just as quickly when exposed to the drugs!** The drugs worked entirely through uncharacterized, off-target mechanisms that the original researchers had failed to detect with older RNA interference tools.
 4. **True Phenotypic Legends:** Lithium (bipolar disorder), Acetaminophen (Tylenol), Metformin (diabetes), and Inhaled Anesthetics. These drugs were discovered phenotypically, and their mechanisms remain polypharmacological mosaics that defy single-target reductionism.
 
@@ -203,8 +203,8 @@ Evaluating this clash requires separating the empirical facts from the philosoph
 | Question | Martin Shkreli's Stance | Crémieux / Fleuret's Stance | Our Verdict |
 | :--- | :--- | :--- | :--- |
 | **The Wikipedia Page** | It's a low-quality list of 154 items, ~76% non-drugs, including debunked molecules like Simufilam. | Cited as evidence that many drugs lack mechanisms. | **Team Shkreli wins decisively.** The Wikipedia category is an uncurated mess of research chemicals, mushroom poisons, and solved drugs. |
-| **FDA Approved Pharmacopeia** | We know the primary mechanisms for most approved drugs (~1,300+ small molecules). | "We don't know the mechanisms behind most drugs." | **Team Shkreli wins on empirical facts.** $>90\%$ of approved drugs have validated, atomic-level molecular targets (Santos et al., 2017). |
-| **Systems-Level Biological Understanding** | Argues identifiable MOAs can be discerned easily. | Highlights that medicine relies on empirical trial-and-error and post-marketing monitoring. | **Split / Crémieux has a valid biological warning.** Target engagement $\neq$ complete physiological understanding. Polypharmacology and off-targets are ubiquitous. |
+| **FDA Approved Pharmacopeia** | We know the primary mechanisms for most approved drugs (~1,300+ small molecules). | "We don't know the mechanisms behind most drugs." | **Team Shkreli wins on empirical facts.** >90% of approved drugs have validated, atomic-level molecular targets (Santos et al., 2017). |
+| **Systems-Level Biological Understanding** | Argues identifiable MOAs can be discerned easily. | Highlights that medicine relies on empirical trial-and-error and post-marketing monitoring. | **Split / Crémieux has a valid biological warning.** Target engagement ≠ complete physiological understanding. Polypharmacology and off-targets are ubiquitous. |
 | **Implication for AI Alignment** | Focuses on pharmacological classification. | Skeptical that AI lack of mechanism is novel, since medicine "already works like that." | **Terence Tao is vindicated.** Blind empiricism makes medicine uniquely vulnerable to AI specification gaming. |
 
 ---
@@ -226,8 +226,8 @@ Terence Tao asked a question rooted in mathematical optimization:
 > *"Could the AI solution to the prompt be somehow **misaligned by exploiting a weakness in the trial process**?"*
 
 Human clinical trials do not measure "true lifelong health." They measure **surrogate endpoints**:
-- **Progression-Free Survival (PFS):** Has the tumor grown by $\ge 20\%$ within 6 months on a CT scan (RECIST 1.1)?
-- **Objective Response Rate (ORR):** Did the tumor diameter shrink by $\ge 30\%$?
+- **Progression-Free Survival (PFS):** Has the tumor grown by ≥ 20% within 6 months on a CT scan (RECIST 1.1)?
+- **Objective Response Rate (ORR):** Did the tumor diameter shrink by ≥ 30%?
 - **Biomarker Clearance:** Did serum PSA or CA-125 levels drop?
 
 As oncologist Vinay Prasad and colleagues have repeatedly documented, surrogate endpoints often correlate poorly with true Overall Survival ([Kim & Prasad, *Mayo Clin Proc* 2016, PMID: 27040409](https://pubmed.ncbi.nlm.nih.gov/27040409/); [Prasad et al., *JAMA Intern Med* 2015, PMID: 26291663](https://pubmed.ncbi.nlm.nih.gov/26291663/)).

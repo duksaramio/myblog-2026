@@ -289,12 +289,12 @@ The human body evolved the liver and spleen (the reticuloendothelial system) to 
 If a targeted LNP has insufficient antibody density or low affinity, significant mRNA cargo can leak into liver tissue. If hepatocytes translate a chimeric antigen receptor on their surface, circulating immune cells could attack liver parenchyma, triggering drug-induced autoimmune hepatitis. Companies like Capstan have had to engineer novel ionizable lipids and hyper-dense scFv configurations to overcome this hepatic sink.
 
 ### Hurdle 2: The Missing "Kill Switch" for In Situ Super-Clones
-In ex-vivo autologous therapy, physicians carefully dose a defined number of viable cells (e.g., $2 \times 10^6$ CAR-T cells/kg). 
+In ex-vivo autologous therapy, physicians carefully dose a defined number of viable cells (e.g., 2 × 10⁶ CAR-T cells/kg). 
 With in-vivo viral vectors, dosing is systemic and stochastic: the vector transduces an unknown number of T cells and NK cells inside the patient. If an in-situ clone undergoes hyper-proliferation, triggering uncontrollable Cytokine Release Syndrome (CRS) or Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS), physicians cannot simply wash out the cells. Incorporating synthetic suicide switches—such as inducible Caspase-9 (iCasp9) activated by small-molecule dimerizers—will be mandatory for regulatory approval in broader non-specialist settings.
 
 ### Hurdle 3: "Sick Cells in Sick Bodies"
 In elderly lymphoma or myeloma patients who have failed 3 to 5 lines of prior chemotherapy, circulating T cells are heavily damaged, senescence-prone, and exhausted.
-Ex-vivo manufacturing allows bioprocess engineers to wash away immunosuppressive serum factors, activate T cells with CD3/CD28 dynabeads, and enrich for youthful central memory ($T_{CM}$) or stem-cell-like memory ($T_{SCM}$) subsets using cocktails of IL-7 and IL-15. In vivo delivery must transfect whatever battered, post-chemo lymphocytes are circulating in the patient at that exact moment.
+Ex-vivo manufacturing allows bioprocess engineers to wash away immunosuppressive serum factors, activate T cells with CD3/CD28 dynabeads, and enrich for youthful central memory (T_CM) or stem-cell-like memory (T_SCM) subsets using cocktails of IL-7 and IL-15. In vivo delivery must transfect whatever battered, post-chemo lymphocytes are circulating in the patient at that exact moment.
 
 ---
 

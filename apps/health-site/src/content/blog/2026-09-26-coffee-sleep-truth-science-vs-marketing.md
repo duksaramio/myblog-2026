@@ -97,7 +97,7 @@ The verdict from genetic epidemiology is unequivocal: **Coffee is not a magic po
 
 ---
 
-## 3. Coffee $\neq$ Caffeine: The Decaf Smoking Gun
+## 3. Coffee ≠ Caffeine: The Decaf Smoking Gun
 
 To understand what coffee actually does to the human body, we must eliminate the common linguistic conflation: **coffee is not simply a liquid vehicle for caffeine.**
 
@@ -166,7 +166,7 @@ It systematically impairs your sleep architecture.
 ### The Adenosine Dam
 To understand caffeine's mechanism, you must understand **Process S**—the homeostatic sleep drive.
 
-From the second you wake up, your brain's neurons are continuously burning adenosine triphosphate (ATP) for energy. The byproduct of this cellular metabolism is **adenosine**. Throughout the day, adenosine molecules accumulate in the extracellular space of your brain, binding to **$A_1$ and $A_{2A}$ adenosine receptors** located on neurons in the basal forebrain and the ventrolateral preoptic nucleus (VLPO).
+From the second you wake up, your brain's neurons are continuously burning adenosine triphosphate (ATP) for energy. The byproduct of this cellular metabolism is **adenosine**. Throughout the day, adenosine molecules accumulate in the extracellular space of your brain, binding to **A₁ and A₂ₐ adenosine receptors** located on neurons in the basal forebrain and the ventrolateral preoptic nucleus (VLPO).
 
 As more adenosine binds, neuronal firing slows down. Your eyelids grow heavy. Sleep pressure mounts. This is your brain’s biological fuel gauge signaling that it needs downtime to repair, restore glycogen reserves, and clear metabolic waste.
 
@@ -182,7 +182,7 @@ WITH CAFFEINE:
   When caffeine clears ──> Massive Adenosine Flood ──> The Afternoon Crash.
 ```
 
-Caffeine is an almost perfect molecular mimic of adenosine. It crosses the blood-brain barrier and slots into the $A_1$ and $A_{2A}$ receptors with high affinity. However, caffeine is an **antagonist**: it occupies the receptor without activating it. It acts like a key inserted into a deadbolt that fits, but doesn't turn—blocking the real key from entering.
+Caffeine is an almost perfect molecular mimic of adenosine. It crosses the blood-brain barrier and slots into the A₁ and A₂ₐ receptors with high affinity. However, caffeine is an **antagonist**: it occupies the receptor without activating it. It acts like a key inserted into a deadbolt that fits, but doesn't turn—blocking the real key from entering.
 
 Caffeine does not create energy. It creates **chemical blindness**. Your brain is just as exhausted as it was five minutes earlier, but it can no longer perceive its own metabolic debt.
 
@@ -271,7 +271,7 @@ In a landmark study published in *JAMA* by Dr. Marilyn Cornelis and Dr. Ahmed El
 Because slow metabolizers retain caffeine in their systemic circulation for up to 16 hours, the prolonged vasoconstriction, elevated sympathetic tone, and blood pressure spikes create genuine cardiovascular wear and tear.
 
 ### 2. ADORA2A: The Sensitivity Switchboard
-Even if your liver clears caffeine at an average speed, the **ADORA2A gene** encodes the structure of your adenosine $A_{2A}$ receptors in the brain.
+Even if your liver clears caffeine at an average speed, the **ADORA2A gene** encodes the structure of your adenosine A₂ₐ receptors in the brain.
 
 Variations at the *rs5751876* locus determine your receptor’s binding affinity. Individuals carrying the sensitive genotype experience pronounced central nervous system excitation: acute anxiety, jitteriness, panic sensations, and severe sleep disruption even at modest doses (50–100 mg).
 
@@ -382,7 +382,7 @@ If you eat a diverse diet rich in whole foods, you can easily exceed coffee's an
 ### Option C: If You Ever Reintroduce Caffeine
 If you decide to reintroduce caffeine for situational cognitive performance or athletic output, adhere strictly to these physiological boundaries:
 1. **The 12-to-14 Hour Hard Curfew:** If your target bedtime is 10:30 PM, your absolute last sip of caffeine must be finished by 8:30 AM or 10:30 AM at the very latest. Never consume caffeine in the afternoon.
-2. **Cap the Dose at $\le 100\text{–}150\text{ mg}$:** Avoid 20 oz cold brews and quad-shot lattes that deliver 300–400 mg in a single sitting.
+2. **Cap the Dose at ≤ 100–150 mg:** Avoid 20 oz cold brews and quad-shot lattes that deliver 300–400 mg in a single sitting.
 3. **Paper Filter Only:** Always brew using Chemex, V60, Kalita, or standard drip paper filters to trap cafestol and protect your LDL-C and ApoB levels.
 4. **Delay 90 Minutes Upon Waking:** Wait 60 to 90 minutes after waking before your first cup. This allows your natural morning cortisol pulse to peak and clear residual overnight adenosine, preventing the late-morning energy crater.
 

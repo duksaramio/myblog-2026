@@ -151,8 +151,8 @@ Why did CoreWeave's bond yield spike to 15.1%, and why is the AI credit architec
 │    Variable (Z)     │ time in early 2026, major private debt funds saw withdrawals exceed new    │
 │                     │ inflows. Managers dumped liquid tech bonds to fund retail redemptions.     │
 ├─────────────────────┼────────────────────────────────────────────────────────────────────────────┤
-│ 4. Mutual Feedback  │ Rising cost of capital $\to$ AI startups cut cloud compute budgets $\to$   │
-│    Loop (X↔Y)       │ neo-cloud revenue decelerates $\to$ credit spreads widen $\to$ debt costs  │
+│ 4. Mutual Feedback  │ Rising cost of capital → AI startups cut cloud compute budgets →   │
+│    Loop (X↔Y)       │ neo-cloud revenue decelerates → credit spreads widen → debt costs  │
 │                     │ surge higher, creating a self-reinforcing credit contraction.              │
 └─────────────────────┴────────────────────────────────────────────────────────────────────────────┘
 ```

@@ -143,7 +143,7 @@ Inspect the key terms in the following argument for critical ambiguity.
 
 ## 4. Excavating the Invisible Structure: Value & Descriptive Assumptions
 
-Chapter 5 is arguably the intellectual centerpiece of *Asking the Right Questions*. An argument's visible structure (Reasons $\rightarrow$ Conclusion) is held together by an **invisible glue**: unstated assumptions.
+Chapter 5 is arguably the intellectual centerpiece of *Asking the Right Questions*. An argument's visible structure (Reasons → Conclusion) is held together by an **invisible glue**: unstated assumptions.
 
 ```
        [ STATED REASONS ] ────────► [ CONCLUSION ]

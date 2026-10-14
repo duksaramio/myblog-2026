@@ -99,7 +99,7 @@ Transformers process tokens in parallel; they need explicit positional informati
 
 $$q_m = R_m W_q x_m$$
 
-The relative distance between tokens falls out naturally from the dot product $q_m^\top k_n$. Elegant, but trained on distances up to, say, 4K — extrapolate to 100K and the rotations spin too fast, representations collapse.
+The relative distance between tokens falls out naturally from the dot product q_mᵀ k_n. Elegant, but trained on distances up to, say, 4K — extrapolate to 100K and the rotations spin too fast, representations collapse.
 
 The fix is the **RoPE scaling family**:
 

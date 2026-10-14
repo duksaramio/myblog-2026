@@ -46,9 +46,9 @@ DPO와 ORPO는 이 복잡성을 단숨에 우회한다.
 
 손실 함수는 다음과 같다:
 
-$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
+$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_{\theta}(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_{\theta}(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
 
-쉽게 풀자면: *참조 모델(reference model) 대비* 선호된 응답($y_w$)의 확률은 높이고, 거부된 응답($y_l$)의 확률은 낮춘다. 여기서 참조 모델(대개 직전 SFT 체크포인트)은 정책이 엉뚱한 방향으로 표류하거나 텍스트가 붕괴하지 않도록 붙잡아주는 닻(anchor) 역할을 한다.
+쉽게 풀자면: *참조 모델(reference model) 대비* 선호된 응답(y_w)의 확률은 높이고, 거부된 응답(y_l)의 확률은 낮춘다. 여기서 참조 모델(대개 직전 SFT 체크포인트)은 정책이 엉뚱한 방향으로 표류하거나 텍스트가 붕괴하지 않도록 붙잡아주는 닻(anchor) 역할을 한다.
 
 DPO는 안정적이고 이론적 이해가 탄탄하여 2024~2025년 선호도 정렬의 사실상 표준(de facto standard)으로 자리 잡았다. 다만 "우도 변위(likelihood displacement)"라는 알려진 실패 모드가 있다. 선택된 응답과 거부된 응답 사이의 확률 비율은 의도한 대로 벌어지지만, 둘 다 절대적인 확률 측면에서는 높아지지 않는 현상이다. 모델이 텍스트 생성을 실제로 더 잘하게 되는 것이 아니라, 단지 두 답변의 순위를 맞히는 법만 학습하는 꼴이다.
 
@@ -108,7 +108,7 @@ $$\hat{A}_i = \frac{r_i - \text{mean}(r)}{\text{std}(r)}$$
 
 2025년 Qwen 팀이 제안한 GSPO는 이를 **시퀀스 단위(sequence-level)** 중요도 비율로 전환하여 해결했다:
 
-$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_\theta(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
+$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_{\theta}(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
 
 이는 토큰별 비율의 기하평균으로, 전체 시퀀스가 이전 정책에 비해 얼마나 달라졌는지를 나타내는 단 하나의 단일 지표다. 클리핑, KL 발산, 최적화가 모두 시퀀스 단위에서 수행된다. 그 결과 특히 MoE 모델에서 학습 안정성이 비약적으로 향상되었다. "Routing Replay" 같은 복잡한 엔지니어링 꼼수를 부릴 필요가 없어졌다. Qwen3가 바로 이 GSPO를 통해 학습되었다.
 

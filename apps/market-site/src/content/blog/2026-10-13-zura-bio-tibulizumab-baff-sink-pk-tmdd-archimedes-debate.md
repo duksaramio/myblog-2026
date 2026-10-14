@@ -219,7 +219,7 @@ Let us audit Zura Bio's actual Phase 1 data presented at EULAR 2024 and filed wi
 * **Target Engagement Observation:** Total serum IL-17A and total BAFF levels increased post-dose and appeared to plateau at doses of **100 mg Q4W and higher**, suggesting that circulating targets were largely bound.
 
 ### What May’s Analysis Omits
-1. **Total Target vs. Free Target:** Measuring an increase in *total* target (drug-target complex) merely proves the drug binds circulating cytokine. It does **not** prove that *free* active cytokine in deep tissues is suppressed below the pathological signaling threshold ($IC_{90}$).
+1. **Total Target vs. Free Target:** Measuring an increase in *total* target (drug-target complex) merely proves the drug binds circulating cytokine. It does **not** prove that *free* active cytokine in deep tissues is suppressed below the pathological signaling threshold (IC₉₀).
 2. **Inconsistent B-Cell Suppression:** As Archimedes pointed out, while total B-cell counts declined, the pharmacodynamic response was **highly variable and modest**, failing to achieve the profound, sustained peripheral B-cell depletion seen with anti-CD20 agents (rituximab) or anti-BAFF-R antibodies (ianalumab).
 3. **The Dosing Shift in TibuSHIELD:**
    * In the Phase 2 TibuSHIELD trial in HS ([NCT06993610](https://clinicaltrials.gov/study/NCT06993610)), Zura is testing **150 mg Q2W and 300 mg Q2W**.

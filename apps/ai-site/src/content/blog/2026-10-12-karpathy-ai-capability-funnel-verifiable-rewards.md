@@ -205,7 +205,7 @@ The impact of an agentic model does not scale linearly with problem size—it sc
 
 1. **Short Horizons ($T = 1$ to $5$ steps):**  
    Asking a model to summarize a document or write a friendly email barely exercises its cognitive capacity. The model operates in an open-loop regime without environment feedback. The value unlocked is modest (saving 3 minutes).
-2. **Extended Horizons ($T = 10^3$ to $10^5$ steps):**  
+2. **Extended Horizons (T = 10³ to 10⁵ steps):**  
    When a model is embedded in an agentic harness with bash access, file system tools, and a test harness, it enters a closed-loop feedback system. It inspects directory structures, reads error logs, edits multiple files, runs linters, encounters segmentation faults, reverts bad git commits, and iterates until the entire objective is achieved. 
 
 The casual user in Tier 2 never asks the system to solve a problem with a 500-step horizon. They ask for a paragraph answer, receive a paragraph answer, and conclude the technology is mundane.
@@ -216,7 +216,7 @@ Why have frontier labs directed their best researchers and tens of billions of d
 
 The answer lies in enterprise unit economics:
 - **Consumer Chatbot:** A retail user pays \$20/month for miscellaneous question-answering. Churn is high, willingness-to-pay is capped, and commercial monetization is fiercely contested.
-- **Enterprise Software & Security:** A software engineer or cybersecurity specialist costs an enterprise \$150,000 to \$500,000 annually. An agentic system capable of accelerating engineering throughput by $5\times$, translating legacy COBOL banking systems to Rust, or autonomously auditing critical infrastructure for zero-day vulnerabilities captures immense, enterprise-grade value.
+- **Enterprise Software & Security:** A software engineer or cybersecurity specialist costs an enterprise \$150,000 to \$500,000 annually. An agentic system capable of accelerating engineering throughput by 5×, translating legacy COBOL banking systems to Rust, or autonomously auditing critical infrastructure for zero-day vulnerabilities captures immense, enterprise-grade value.
 
 Frontier labs are rational economic actors: they aim their optimization algorithms at the domains with the highest return on invested capital.
 

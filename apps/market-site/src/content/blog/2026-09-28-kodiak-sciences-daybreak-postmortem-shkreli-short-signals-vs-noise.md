@@ -167,7 +167,7 @@ In DAYBREAK, Kodiak made a seemingly modest adjustment: patients received **four
 To the untrained eye, adding one injection looks like desperation. To a pharmacokineticist, it was transformative:
 - The ABC conjugate has a vitreous clearance half-life roughly **three to four times longer than aflibercept**.
 - However, building the intraocular concentration gradient required to drive diffusion through the internal limiting membrane into the deeper retinal layers requires consecutive dosing until steady state is reached.
-- The 4th loading dose at Week 12 created a high-concentration ocular reservoir that sustained free anti-VEGF trough levels well above the VEGF-inhibition dissociation constant ($K_d$) all the way out to Week 36 and Week 48.
+- The 4th loading dose at Week 12 created a high-concentration ocular reservoir that sustained free anti-VEGF trough levels well above the VEGF-inhibition dissociation constant (K_d) all the way out to Week 36 and Week 48.
 
 ### Signal #2: Objective AI-Guided "Treat-to-Dryness"
 In real-world retina clinics, physicians do not wait for a patient to lose 10 letters on an eye chart before retreating; they examine optical coherence tomography (OCT) scans. If any subretinal or intraretinal fluid appears, they inject.

@@ -160,7 +160,7 @@ If vispa-cel suffered from the HLA-matching compromise, why did Caribou also pul
 
 Unlike vispa-cel, CB-011 was armed with Caribou's most sophisticated "immune cloaking" gene edits:
 - **$B2M$ Knockout:** Strips Beta-2 Microglobulin, eliminating all surface HLA Class I (HLA-A, -B, -C) expression, rendering the CAR-T cell invisible to host CD8+ cytotoxic T lymphocytes.
-- **$B2M\text{–}HLA\text{-}E$ Peptide Knock-In:** Because Natural Killer (NK) cells are biologically programmed to destroy any human cell that lacks HLA Class I (the classic "missing-self" NK trigger), knocking out $B2M$ alone causes NK-mediated lysis. Caribou engineered a synthetic fusion of B2M and HLA-E, providing an artificial inhibitory ligand that engages the NKG2A receptor on host NK cells, disarming them.
+- **B2M–HLA-E Peptide Knock-In:** Because Natural Killer (NK) cells are biologically programmed to destroy any human cell that lacks HLA Class I (the classic "missing-self" NK trigger), knocking out $B2M$ alone causes NK-mediated lysis. Caribou engineered a synthetic fusion of B2M and HLA-E, providing an artificial inhibitory ligand that engages the NKG2A receptor on host NK cells, disarming them.
 
 In the Phase 1 CaMMouflage trial (NCT05722418), CB-011 generated genuinely impressive data:
 - In 12 BCMA-naïve patients treated at the recommended dose for expansion (450 million cells):
@@ -288,7 +288,7 @@ Founded by former Juno Therapeutics executives **Steve Harr** and **Hans Bishop*
 
 ### 3. Poseida Therapeutics: Validating That Big Pharma Scale Is Mandatory
 Poseida pursued allogeneic CAR-T using a non-viral, highly distinctive approach:
-- **Cas-CLOVER site-specific nucleases** combined with the **piggyBac DNA delivery system**, which uniquely produces cell therapy products extraordinarily enriched in **stem cell memory T cells ($T_{SCM}$)**—the long-lived, self-renewing T-cell subset with superior persistence.
+- **Cas-CLOVER site-specific nucleases** combined with the **piggyBac DNA delivery system**, which uniquely produces cell therapy products extraordinarily enriched in **stem cell memory T cells (T_SCM)**—the long-lived, self-renewing T-cell subset with superior persistence.
 - Lead asset: **P-BCMA-ALLO1** for relapsed/refractory multiple myeloma.
 - **The Endgame:** Unlike Caribou, which remained independent until its cash ran out, Poseida recognized early that an allogeneic Phase 2/3 program requires billions of dollars in commercial infrastructure. In 2022, Poseida entered into a massive global licensing partnership with **Roche** (worth up to \$6 billion in milestones).
 - In **November 2024**, Roche took the definitive step: it executed a merger agreement to **acquire Poseida for up to \$1.5 billion** (\$9.00/share upfront cash plus up to \$4.00/share in CVRs). The acquisition closed in early January 2025. P-BCMA-ALLO1 survived only because Roche stepped in to bankroll its global trials.
@@ -302,13 +302,13 @@ Co-founded by CRISPR and base-editing visionaries **David Liu**, **Feng Zhang**,
   1. $CD7$ knockout (preventing CAR-T fratricide, since CAR-T cells themselves express CD7).
   2. $TRAC$ knockout (preventing GvHD).
   3. $CD52$ knockout (enabling conditioning with anti-CD52 antibodies).
-  4. $PD\text{-}1$ knockout (resisting T-cell exhaustion).
+  4. PD-1 knockout (resisting T-cell exhaustion).
 - **The 2026 Strategic Reality:** Despite presenting promising early Phase 1/2 safety data, Beam recognized the treacherous economics of oncology cell therapy. In 2025 and 2026, Beam shifted virtually all of its strategic priority and capital toward its **in vivo liver-targeted base-editing franchise** (**BEAM-302** for alpha-1 antitrypsin deficiency [AATD], which reached alignment with the FDA on accelerated approval, and **BEAM-301** for GSDIa), alongside **risto-cel (BEAM-101)** for sickle cell disease. BEAM-201 was effectively relegated to non-core status.
 
 ---
 
 ### 5. CRISPR Therapeutics ($CRSP): The Pivot to Casgevy & In Vivo
-Co-founded by Nobel laureate **Dr. Emmanuelle Charpentier**, CRISPR Therapeutics was an early pioneer in allogeneic CAR-T with **CTX110** (anti-CD19) and **CTX130** (anti-CD70), later engineering next-generation iterations (**CTX112** and **CTX131**) armed with $Regnase\text{-}1$ and $TGFBR2$ knockouts.
+Co-founded by Nobel laureate **Dr. Emmanuelle Charpentier**, CRISPR Therapeutics was an early pioneer in allogeneic CAR-T with **CTX110** (anti-CD19) and **CTX130** (anti-CD70), later engineering next-generation iterations (**CTX112** and **CTX131**) armed with Regnase-1 and $TGFBR2$ knockouts.
 
 - However, as autologous CAR-T established unbreakable commercial dominance in lymphoma and myeloma, CRISPR Therapeutics made a disciplined capital allocation decision.
 - Rather than burning hundreds of millions on late-stage oncology trials, it concentrated resources on commercializing **Casgevy** (exagamglogene autotemcel, co-developed with Vertex)—the first FDA-approved CRISPR medicine in human history—and shifted its discovery engine toward **in vivo gene editing** and autoimmune cell therapy.
@@ -368,7 +368,7 @@ In 2026, that critique is obsolete.
 Autologous cell therapy has achieved massive industrialized scale:
 - **Carvykti (ciltacabtagene autoleucel):** Developed by Legend Biotech and Johnson & Johnson, Carvykti has become one of the most successful oncology launches of the decade. Following the milestone Phase 3 CARTITUDE-4 trial, which demonstrated an unprecedented 59% reduction in the risk of disease progression or death compared to standard-of-care regimens in early relapsed myeloma, Carvykti moved firmly into second-line treatment, tracking toward \$2 billion in annual run-rate revenue.
 - **Breyanzi (lisocabtagene maraleucel):** Bristol Myers Squibb has turned Breyanzi into a pipeline in a pill, securing four distinct FDA indications across Large B-cell Lymphoma (LBCL), Follicular Lymphoma (FL), Mantle Cell Lymphoma (MCL), and Chronic Lymphocytic Leukemia (CLL). Its defined 1:1 CD4+/CD8+ T-cell formulation has consistently demonstrated lower rates of severe cytokine release syndrome (CRS) and neurotoxicity (ICANS), enabling broad administration in outpatient settings.
-- **The Turnaround Revolution:** Kite Pharma (Gilead) and BMS have reduced vein-to-vein manufacturing timelines from 30+ days down to **12 to 14 days** with success rates above 97%. Next-generation rapid manufacturing platforms (such as Novartis’s **T-Charge**, which shortens ex-vivo culture to less than 48 hours) preserve stem cell memory phenotypes ($T_{SCM}$), yielding cells that expand exponentially better inside the patient and resist exhaustion.
+- **The Turnaround Revolution:** Kite Pharma (Gilead) and BMS have reduced vein-to-vein manufacturing timelines from 30+ days down to **12 to 14 days** with success rates above 97%. Next-generation rapid manufacturing platforms (such as Novartis’s **T-Charge**, which shortens ex-vivo culture to less than 48 hours) preserve stem cell memory phenotypes (T_SCM), yielding cells that expand exponentially better inside the patient and resist exhaustion.
 
 #### The 2024 FDA Black Box Warning: A Non-Event in Retrospect
 In early 2024, the FDA rattled the sector by mandating class-wide boxed warnings on all commercial autologous CAR-T therapies regarding the risk of secondary T-cell malignancies. 
@@ -384,7 +384,7 @@ The premise of allogeneic ex-vivo cell therapy was simple: healthy donor T-cells
 Instead, the sector has become an operational graveyard.
 
 #### Why Did Ex-Vivo Allogeneic Fail?
-1. **The Biological Wall of Host Immunogenicity:** The mammalian immune system evolved across 500 million years to identify and exterminate foreign biological tissue. No matter how many genes are knocked out ($TRAC, B2M, CD70, Regnase\text{-}1$) or knocked in ($HLA\text{-}E, CD47$), host NK cells, non-classical alloreactive T-cells, and the humoral complement cascade detect non-self markers and eliminate the cells. 
+1. **The Biological Wall of Host Immunogenicity:** The mammalian immune system evolved across 500 million years to identify and exterminate foreign biological tissue. No matter how many genes are knocked out (TRAC, B2M, CD70, Regnase-1) or knocked in (HLA-E, CD47), host NK cells, non-classical alloreactive T-cells, and the humoral complement cascade detect non-self markers and eliminate the cells. 
 2. **The Toxicity of Severe Conditioning:** To force allogeneic cells to survive for even a few weeks, companies were forced to administer brutal, highly toxic lymphodepletion regimens (such as high-dose fludarabine/cyclophosphamide plus anti-CD52 monoclonal antibodies like Allogene’s ALLO-647). This plunged cancer patients into prolonged, severe pancytopenia, leading to deadly opportunistic infections (CMV, fungal pneumonia, sepsis) that erased any safety advantage over autologous CAR-T.
 3. **The Bispecific Squeeze:** When an oncologist has an unstable, rapidly progressing lymphoma or myeloma patient who cannot wait 14 days for autologous manufacturing, they do not turn to an experimental allogeneic CAR-T with complex lymphodepletion. They prescribe an approved **bispecific antibody** from the hospital pharmacy.
 

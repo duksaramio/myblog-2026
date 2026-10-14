@@ -46,7 +46,7 @@ DPO 和 ORPO 跳过了这一切。
 
 损失函数看起来像这样：
 
-$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
+$$\mathcal{L}_{\text{DPO}} = -\log \sigma\left(\beta \log \frac{\pi_{\theta}(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_{\theta}(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)$$
 
 翻译：增加选择响应相对于参考模型的概率，减少拒绝响应的概率。参考模型（通常是你的 SFT 检查点）作为锚点，防止策略偏离到不一致的状态。
 
@@ -108,7 +108,7 @@ GRPO 有一个问题：它在每个标记上计算重要性采样比。在深度
 
 GSPO，由 Qwen 团队在 2025 年提出，通过转向 **序列级别** 重要性比解决了这个问题：
 
-$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_\theta(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
+$$\rho_{\text{seq}} = \exp\left(\frac{1}{|y|}\sum_t \log \frac{\pi_{\theta}(y_t|x,y_{<t})}{\pi_{\theta_{\text{old}}}(y_t|x,y_{<t})}\right)$$
 
 这是标记级别比率的几何平均值——一个单一数字，捕捉整个序列的偏移量。剪裁、KL 和优化都在序列级别进行。结果：训练更加稳定，尤其是对于 MoE 模型。无需复杂的“路由重放”工程技巧。Qwen3 就是用 GSPO 训练的。
 

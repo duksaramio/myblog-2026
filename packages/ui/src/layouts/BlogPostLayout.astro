@@ -664,7 +664,7 @@ const formattedDate = formatDate(pubDate, currentLocale);
 
 	// KaTeX math rendering (display $$...$$ and genuine inline $...$ LaTeX)
 	const postArticle = document.querySelector('.blog-post');
-	if (postArticle && (postArticle.textContent?.includes('$$') || postArticle.textContent?.includes('\\') || /\$[^$\n]*[\^_=]/.test(postArticle.textContent || ''))) {
+	if (postArticle && (postArticle.textContent?.includes('$') || postArticle.textContent?.includes('\\'))) {
 		if (!document.getElementById('katex-css')) {
 			const link = document.createElement('link');
 			link.id = 'katex-css';
@@ -674,12 +674,79 @@ const formattedDate = formatDate(pubDate, currentLocale);
 		}
 
 		import('https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs').then(({ default: katex }) => {
+			// Restore CommonMark backslash escapes stripped before HTML output
+			const sanitizeForKaTeX = (raw: string): string => {
+				return raw
+					.trim()
+					.replace(/(^|[^\\])\$/g, '$1\\$')
+					.replace(/(^|[^\\])%/g, '$1\\%')
+					.replace(/,(\s*\\(?:text|mu|mathrm)\b)/g, '\\,$1')
+					.replace(/,(\s*);(\s*)/g, ',$1\\;$2')
+					.replace(/(\\text\{[^}]+\})!(\\left)/g, '$1\\!$2')
+					.replace(/\\text\{([^}]*)\}/g, (_, inner: string) =>
+						'\\text{' +
+						inner
+							.replace(/(^|[^\\])&/g, '$1\\&')
+							.replace(/(^|[^\\])_/g, '$1\\_') +
+						'}'
+					);
+			};
+
+			// Reconstruct underscores (_) that CommonMark converted into <em>...</em> inside display math paragraphs
+			const extractMathText = (node: Node): string => {
+				if (node.nodeType === Node.TEXT_NODE) {
+					return node.nodeValue || '';
+				}
+				if (node.nodeType === Node.ELEMENT_NODE) {
+					const el = node as HTMLElement;
+					const tag = el.tagName.toLowerCase();
+					const inner = Array.from(el.childNodes).map(extractMathText).join('');
+					if (tag === 'em' || tag === 'i') return `_${inner}_`;
+					if (tag === 'strong' || tag === 'b') return `**${inner}**`;
+					if (tag === 'br') return '\n';
+					return inner;
+				}
+				return '';
+			};
+
+			// Pass 1: Render standalone $$...$$ display math blocks (including those where CommonMark italicized _..._)
+			const blockCandidates = postArticle.querySelectorAll('p, li');
+			blockCandidates.forEach((el) => {
+				if (el.querySelector('pre, code, .katex')) return;
+				const rawText = extractMathText(el).trim();
+				if (rawText.startsWith('$$') && rawText.endsWith('$$') && rawText.length > 4) {
+					const innerMath = rawText.slice(2, -2);
+					const wrapper = document.createElement('div');
+					try {
+						katex.render(sanitizeForKaTeX(innerMath), wrapper, {
+							displayMode: true,
+							throwOnError: false,
+							strict: false,
+						});
+						el.innerHTML = '';
+						el.appendChild(wrapper);
+					} catch {
+						// Leave untouched if rendering fails
+					}
+				}
+			});
+
+			// Pass 2: Non-consuming scanner for inline $...$ (and inline $$...$$) inside text nodes
 			const isLikelyInlineMath = (expr: string): boolean => {
-				if (!expr || /^\s|\s$/.test(expr)) return false;
-				// Contains LaTeX commands, subscripts, superscripts, or equations
-				if (/[\\^_=<>]/.test(expr)) return true;
-				// Single variable or short algebraic expression (not starting with a currency digit)
-				if (/^[A-Za-z][A-Za-z0-9\s+\-*/(),.]*$/.test(expr) && expr.length <= 24) return true;
+				if (!expr || expr.length > 180 || /^\s|\s$/.test(expr)) return false;
+				// Reject currency ranges/phrases like "$10–$14" or "$100 million to $"
+				if (/^\d[\d,.]*(\s*(million|billion|trillion|k|m|b|t|per|to|and|or|in|at|from|of|share|shares|market|cap|-|–|—|\/)|\s*$)/i.test(expr)) {
+					return false;
+				}
+				// Reject stock tickers like "$VSTM", "$NKTR", "$RVMD"
+				if (/^[A-Z]{2,5}(\b|\/|[-–—,:;.)\]`])/.test(expr)) {
+					return false;
+				}
+				// Accept expressions with LaTeX commands, subscripts, superscripts, or mathematical operators
+				if (/\\[a-zA-Z]+|[_^]|\\[%,;!]/.test(expr)) return true;
+				if (/^([A-Za-z]\s*)?[<>≈≤≥≠]=?\s*-?\d/.test(expr)) return true;
+				if (/^[A-Za-z0-9_]+\s*=\s*-?[A-Za-z0-9_.]+(\s*%?)?$/.test(expr)) return true;
+				if (/^([1-9](\.[0-9]+)?)?[A-Za-z]$/.test(expr)) return true;
 				return false;
 			};
 
@@ -704,42 +771,84 @@ const formattedDate = formatDate(pubDate, currentLocale);
 				currentNode = walker.nextNode();
 			}
 
-			const mathRegex = /\$\$([\s\S]+?)\$\$|\$([^\$\n]+?)\$/g;
-
 			for (const textNode of textNodes) {
 				const text = textNode.nodeValue || '';
-				mathRegex.lastIndex = 0;
-				let match: RegExpExecArray | null;
+				// Collect all '$' positions
+				const dollars: number[] = [];
+				for (let i = 0; i < text.length; i++) {
+					if (text[i] === '$' && (i === 0 || text[i - 1] !== '\\')) {
+						dollars.push(i);
+					}
+				}
+				if (dollars.length < 2) continue;
+
+				let k = 0;
 				let lastIdx = 0;
 				let changed = false;
 				const frag = document.createDocumentFragment();
 
-				while ((match = mathRegex.exec(text)) !== null) {
-					const isDisplay = match[1] !== undefined;
-					const rawMath = isDisplay ? match[1] : match[2];
+				while (k + 1 < dollars.length) {
+					// Check for inline $$...$$ first
+					if (
+						k + 3 < dollars.length &&
+						dollars[k + 1] === dollars[k] + 1 &&
+						dollars[k + 3] === dollars[k + 2] + 1
+					) {
+						const start = dollars[k];
+						const end = dollars[k + 3];
+						const rawMath = text.slice(start + 2, end - 1);
+						if (start > lastIdx) {
+							frag.appendChild(document.createTextNode(text.slice(lastIdx, start)));
+						}
+						const div = document.createElement('div');
+						try {
+							katex.render(sanitizeForKaTeX(rawMath), div, {
+								displayMode: true,
+								throwOnError: false,
+								strict: false,
+							});
+							frag.appendChild(div);
+							changed = true;
+							lastIdx = end + 1;
+							k += 4;
+							continue;
+						} catch {
+							frag.appendChild(document.createTextNode(text.slice(start, end + 1)));
+							lastIdx = end + 1;
+							k += 4;
+							continue;
+						}
+					}
 
-					if (!isDisplay && !isLikelyInlineMath(rawMath)) {
+					const i1 = dollars[k];
+					const i2 = dollars[k + 1];
+					const candidate = text.slice(i1 + 1, i2);
+
+					// If candidate is not valid inline math (e.g., i1 is a currency $ or stock ticker $VSTM),
+					// advance by ONLY 1 dollar sign so i2 can still pair with i3!
+					if (!isLikelyInlineMath(candidate)) {
+						k += 1;
 						continue;
 					}
 
-					if (match.index > lastIdx) {
-						frag.appendChild(document.createTextNode(text.slice(lastIdx, match.index)));
+					if (i1 > lastIdx) {
+						frag.appendChild(document.createTextNode(text.slice(lastIdx, i1)));
 					}
-
-					const span = document.createElement(isDisplay ? 'div' : 'span');
+					const span = document.createElement('span');
 					try {
-						const sanitizedMath = rawMath.trim().replace(/(^|[^\\])%/g, '$1\\%');
-						katex.render(sanitizedMath, span, {
-							displayMode: isDisplay,
+						katex.render(sanitizeForKaTeX(candidate), span, {
+							displayMode: false,
 							throwOnError: false,
 							strict: false,
 						});
 						frag.appendChild(span);
 						changed = true;
-						lastIdx = mathRegex.lastIndex;
+						lastIdx = i2 + 1;
+						k += 2;
 					} catch {
-						frag.appendChild(document.createTextNode(match[0]));
-						lastIdx = mathRegex.lastIndex;
+						frag.appendChild(document.createTextNode(text.slice(i1, i2 + 1)));
+						lastIdx = i2 + 1;
+						k += 2;
 					}
 				}
 

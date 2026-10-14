@@ -182,7 +182,7 @@ Daraxonrasib’s mechanism of action relies on forming an intracellular "tri-com
                      Codon 12 Mutation Interface
 ```
 
-* **In KRAS G12V (Valine):** The neutral, hydrophobic, aliphatic side chain (-CH(CH3)2) packs seamlessly into the hydrophobic pocket formed at the CypA-drug interface. Binding affinity is high ($K_d$ in low nanomolar range), resulting in deep, sustained MAPK pathway shutdown and a **50% objective response rate**.
+* **In KRAS G12V (Valine):** The neutral, hydrophobic, aliphatic side chain (-CH(CH3)2) packs seamlessly into the hydrophobic pocket formed at the CypA-drug interface. Binding affinity is high (K_d in low nanomolar range), resulting in deep, sustained MAPK pathway shutdown and a **50% objective response rate**.
 * **In KRAS G12D (Aspartate):** The substituted residue presents a **negatively charged, hydrophilic carboxylic acid side chain (-CH2-COO⁻)**. This introduces an immediate electrostatic repulsion and steric clash with adjacent electronegative residues on CypA, weakening tri-complex stability and lowering fractional target occupancy.
 * **The Dosage Ceiling Trap:** In a mutation-selective covalent inhibitor (like sotorasib for G12C or MRTX1133 for G12D), one can optimize binding specifically to the mutant pocket without touching wild-type RAS. But daraxonrasib is a **non-covalent multi-RAS inhibitor**. Increasing systemic dose to overcome the lower affinity for G12D causes severe inhibition of wild-type KRAS, NRAS, and HRAS in normal tissues—provoking dose-limiting grade 3/4 toxicities (severe rash, mucosal stomatitis, intractable diarrhea, and elevated transaminases).
 

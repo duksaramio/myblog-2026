@@ -63,7 +63,7 @@ Fast forward to 2024–2026:
 | :--- | :--- | :--- |
 | **Infrastructure Anchor** | Cisco Systems (Routers/Switches) | Nvidia (Accelerated Compute/GPUs) |
 | **Peak Valuation Scale** | Cisco: ~$550B–$569B (~5.5% US GDP) | Nvidia: ~$5.4T–$5.5T (~11.7% US GDP) |
-| **Big Hyperscaler/Telco Capex** | Telecom Capex peaked at ~$100B–$120B/yr | Hyperscaler Capex: ~$250B (2024) $\rightarrow$ ~$410B (2025) $\rightarrow$ **\$700B–\$800B+ (2026)** |
+| **Big Hyperscaler/Telco Capex** | Telecom Capex peaked at ~$100B–$120B/yr | Hyperscaler Capex: ~$250B (2024) → ~$410B (2025) → **\$700B–\$800B+ (2026)** |
 | **Capex vs. Free Cash Flow** | Telecoms took on massive junk debt | 2026 Capex now eclipses combined operating cash flows for leading hyperscalers |
 | **Physical Bottleneck** | Laying trench/rights-of-way fiber | **Power & Megawatts** (Grid interconnection, nuclear PPAs) |
 

@@ -104,7 +104,7 @@ There is no machine-learning shortcut to testing whether a chemical causes liver
 - **Time**: Even with expedited CRO scheduling, in-life dosing, recovery arms, slide preparation, bioanalysis, and final GLP audited reporting require **9 to 18 months**.
 
 ### The "Great Filter": Why AI Fails at IND Tox
-Here is where Shkreli's critique gains immense scientific weight. An AI model can optimize for in vitro binding affinity ($K_i$ or $IC_{50}$) against a static protein crystal structure. But in vivo animal biology is non-linear and deeply interconnected:
+Here is where Shkreli's critique gains immense scientific weight. An AI model can optimize for in vitro binding affinity (K_i or IC₅₀) against a static protein crystal structure. But in vivo animal biology is non-linear and deeply interconnected:
 
 - **Reactive Metabolite Formation**: A computationally optimized molecule may be non-toxic in parent form, but upon hepatic metabolism by cytochrome P450 enzymes (e.g., CYP3A4, CYP2D6), it forms reactive quinone imines or epoxides that bind covalently to hepatocytes, causing severe liver injury.
 - **Phospholipidosis and Lysosomal Trapping**: Basic lipophilic compounds designed by generative models frequently accumulate inside lysosomes, triggering tissue-wide vacuolation.
