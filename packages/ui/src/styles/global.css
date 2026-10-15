@@ -267,4 +267,54 @@ footer a:hover {
     border-width: 0;
 }
 
+/* Global Table Styles */
+.table-wrapper {
+    width: 100%;
+    margin: 24px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1.5px solid rgba(0, 0, 0, 0.45);
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.55;
+    text-align: left;
+    margin: 24px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.table-wrapper table {
+    margin: 0;
+}
+
+thead {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+th {
+    padding: 10px 14px;
+    font-weight: 600;
+    color: var(--text-color, #000000);
+    vertical-align: bottom;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+td {
+    padding: 10px 14px;
+    vertical-align: top;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.045);
+}

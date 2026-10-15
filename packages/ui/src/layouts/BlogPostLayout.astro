@@ -576,30 +576,26 @@ const formattedDate = formatDate(pubDate, currentLocale);
 		margin: 24px 0;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
-		border: 1px solid var(--border-color, rgba(0, 0, 0, 0.12));
-		border-radius: 6px;
-		background-color: rgba(255, 255, 255, 0.45);
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 	}
 
 	.post-content :global(table) {
 		width: 100%;
 		border-collapse: collapse;
+		border: 1.5px solid rgba(0, 0, 0, 0.45);
 		font-family: var(--font-mono);
 		font-size: 12.5px;
 		line-height: 1.55;
 		text-align: left;
 		margin: 24px 0;
+		background-color: rgba(255, 255, 255, 0.5);
 	}
 
 	.post-content :global(.table-wrapper table) {
 		margin: 0;
-		border: none;
 	}
 
 	.post-content :global(thead) {
-		background-color: rgba(0, 0, 0, 0.045);
-		border-bottom: 1.5px solid var(--border-color, rgba(0, 0, 0, 0.15));
+		background-color: rgba(0, 0, 0, 0.06);
 	}
 
 	.post-content :global(th) {
@@ -607,31 +603,23 @@ const formattedDate = formatDate(pubDate, currentLocale);
 		font-weight: 600;
 		color: var(--text-color, #111);
 		vertical-align: bottom;
-		border-right: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
-	}
-
-	.post-content :global(th:last-child) {
-		border-right: none;
+		border: 1px solid rgba(0, 0, 0, 0.35);
+		border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 	}
 
 	.post-content :global(td) {
 		padding: 10px 14px;
 		vertical-align: top;
-		border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
-		border-right: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
+		border: 1px solid rgba(0, 0, 0, 0.3);
 		overflow-wrap: break-word;
 	}
 
-	.post-content :global(td:last-child) {
-		border-right: none;
-	}
-
 	.post-content :global(tbody tr:nth-child(even)) {
-		background-color: rgba(0, 0, 0, 0.018);
+		background-color: rgba(0, 0, 0, 0.025);
 	}
 
 	.post-content :global(tbody tr:hover) {
-		background-color: rgba(0, 0, 0, 0.035);
+		background-color: rgba(0, 0, 0, 0.045);
 	}
 </style>
 
