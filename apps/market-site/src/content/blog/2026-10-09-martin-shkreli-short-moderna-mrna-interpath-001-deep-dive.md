@@ -103,7 +103,11 @@ Between August and October 2026, Moderna's market capitalization expanded by **\
 
 | Metric Level | Patient Count / Annual Pool |
 | :--- | :--- |
-| Total Incident Melanoma (US + EU5) Stage IIB - IV Resected Candidates Clinically Fit for Systemic Adjuvant Tx Biopsy / Sequencing Success Rate (85%) Peak INT Market Penetration (Generous 45%) | ~200,000 patients ~45,000 patients ~30,000 patients ~25,500 patients ~11,500 patients |
+| Total Incident Melanoma (US + EU5) | ~200,000 patients |
+| Stage IIB - IV Resected Candidates | ~45,000 patients |
+| Clinically Fit for Systemic Adjuvant Tx | ~30,000 patients |
+| Biopsy / Sequencing Success Rate (85%) | ~25,500 patients |
+| Peak INT Market Penetration (Generous 45%) | ~11,500 patients |
 
 1. **Addressable High-Risk Pool:** There are approximately 40,000 to 50,000 Stage IIB–IV completely resected melanoma patients diagnosed annually across the United States and major European markets.
 2. **Drop-Off Rates:** In real-world clinical practice, only ~30,000 of these patients receive systemic adjuvant immunotherapy due to comorbidities, toxicities, or physician preference. Furthermore, tumor biopsy quality, sequencing failures, and manufacturing turnaround issues inevitably drop another 10%–15% of patients.
@@ -132,7 +136,13 @@ Investors pricing Moderna as if it can produce cancer vaccines like COVID-19 sho
 
 | Attribute | Spikevax (COVID-19) | Intismeran Autogene (V940) |
 | :--- | :--- | :--- |
-| Product Nature Target Antigens Manufacturing Lead Time Batch Size Cost of Goods (COGS) Gross Margin Profile Scalability | One-size-fits-all 1 (Spike glycoprotein) Bulk vats on shelf Millions of doses/run ~$3 - $5 per dose 75% - 85% Exponentially scalable | Autologous, patient-specific Up to 34 unique neoantigens 6 to 8 Weeks from biopsy 1 Patient = 1 Batch $35,000 - $50,000 per course 40% - 55% Linear cleanroom constraint |
+| Product Nature | One-size-fits-all | Autologous, patient-specific |
+| Target Antigens | 1 (Spike glycoprotein) | Up to 34 unique neoantigens |
+| Manufacturing Lead Time | Bulk vats on shelf | 6 to 8 Weeks from biopsy |
+| Batch Size | Millions of doses/run | 1 Patient = 1 Batch |
+| Cost of Goods (COGS) | ~$3 - $5 per dose | $35,000 - $50,000 per course |
+| Gross Margin Profile | 75% - 85% | 40% - 55% |
+| Scalability | Exponentially scalable | Linear cleanroom constraint |
 
 1. **The 6–8 Week Turnaround Delay:** In high-risk melanoma, microscopic cancer cells are dividing rapidly. Requiring 45 to 60 days to complete biopsy processing, exome sequencing, epitope ranking, plasmid synthesis, IVT mRNA transcription, LNP formulation, and sterility testing creates significant clinical friction. Patients who recur or develop distant metastases during the manufacturing window are automatically removed from adjuvant therapy.
 2. **Crippling Cost of Goods Sold (COGS):** Individualized autologous manufacturing cannot benefit from the standard batch economies of scale that define pharmaceutical profitability. Each batch requires dedicated technician hours, bespoke quality control, individual sterility assays, and single-use consumables. Industry estimates place the COGS for a 9-dose individualized mRNA regimen at **$35,000 to $50,000 per patient**.

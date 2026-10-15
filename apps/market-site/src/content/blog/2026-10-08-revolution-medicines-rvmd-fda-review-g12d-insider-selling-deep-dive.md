@@ -34,7 +34,17 @@ Rather than relying on superficial market reactions or sell-side defensiveness, 
 
 | DIMENSION / CLINICAL METRIC | INSTITUTIONAL AUDIT & REGULATORY REALITY |
 | :--- | :--- |
-| Market Capitalization 2026 Projected GAAP OpEx Balance Sheet Cash (Q2 2026) Effective Operational Runway Wall Street Analyst Consensus Trailing 12-Month Insider Trades Rasonque G12V Response Rate Rasonque G12D Response Rate Regulatory Caveat (FDA Review) Management Strategic Pivot Institutional Verdict | ~$39.5B – $42.8B (Priced for universal commercial dominance) $2.1B – $2.2B ($525M – $550M cash incinerated every quarter) $3.9B (Bolstered by $2.1B net proceeds from April equity sale) < 22 Months at current burn rate without non-dilutive inflows 20 BUYS / 0 HOLDS / 0 SELLS (100% Unanimous Buy cartel) $149.7M SOLD / $0.00 BOUGHT (C-Suite systematic cash-out) 50% ORR (~31% of pancreatic cancer; drove headline optimism) 24% ORR (~43% of pancreatic cancer; narrow delta over chemo) Trial unpowered for formal subgroup comparative claims Rushed launch of RASolute 309 doublet on Oct 5 (concession) TACTICAL SHORT / UNDERWEIGHT (Fair Value: $95 – $110, -45-50%) |
+| Market Capitalization | ~$39.5B – $42.8B (Priced for universal commercial dominance) |
+| 2026 Projected GAAP OpEx | $2.1B – $2.2B ($525M – $550M cash incinerated every quarter) |
+| Balance Sheet Cash (Q2 2026) | $3.9B (Bolstered by $2.1B net proceeds from April equity sale) |
+| Effective Operational Runway | < 22 Months at current burn rate without non-dilutive inflows |
+| Wall Street Analyst Consensus | 20 BUYS / 0 HOLDS / 0 SELLS (100% Unanimous Buy cartel) |
+| Trailing 12-Month Insider Trades | $149.7M SOLD / $0.00 BOUGHT (C-Suite systematic cash-out) |
+| Rasonque G12V Response Rate | 50% ORR (~31% of pancreatic cancer; drove headline optimism) |
+| Rasonque G12D Response Rate | 24% ORR (~43% of pancreatic cancer; narrow delta over chemo) |
+| Regulatory Caveat (FDA Review) | Trial unpowered for formal subgroup comparative claims |
+| Management Strategic Pivot | Rushed launch of RASolute 309 doublet on Oct 5 (concession) |
+| Institutional Verdict | TACTICAL SHORT / UNDERWEIGHT (Fair Value: $95 – $110, -45-50%) |
 
 ---
 

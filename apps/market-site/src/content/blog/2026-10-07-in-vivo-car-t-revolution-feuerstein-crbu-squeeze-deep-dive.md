@@ -87,7 +87,13 @@ Specialized delivery vehicles target the patient’s own endogenous, circulating
 
 | EX-VIVO CELL THERAPY (Old Paradigm) | IN-VIVO CELL THERAPY (The New Frontier) |
 | :--- | :--- |
-| 1. Leukapheresis (Harvesting T-cells)<br>2. Cold-chain transport to cleanroom<br>3. Viral transduction / CRISPR edit<br>4. 14-28 days of cell expansion<br>5. Cryopreservation & QC release<br>6. Toxic lymphodepletion (Flu/Cy)<br>7. Inpatient hospital infusion & ICU | 1. Direct Intravenous Infusion (Off-the-shelf vial)<br>2. Targeted Delivery Vehicle enters systemic circulation<br>3. Selective binding to surface CD3/CD8/CD4/CD7 on T-cells<br>4. Endosomal uptake & intracellular translation/expression<br>5. Native T-cells transform into active CAR-Ts IN VIVO<br>6. CAR-Ts expand and eradicate diseased cells in situ<br>7. NO lymphodepletion, NO apheresis, OUTPATIENT delivery |
+| 1. Leukapheresis (Harvesting T-cells) | 1. Direct Intravenous Infusion (Off-the-shelf vial) |
+| 2. Cold-chain transport to cleanroom | 2. Targeted Delivery Vehicle enters systemic circulation |
+| 3. Viral transduction / CRISPR edit | 3. Selective binding to surface CD3/CD8/CD4/CD7 on T-cells |
+| 4. 14-28 days of cell expansion | 4. Endosomal uptake & intracellular translation/expression |
+| 5. Cryopreservation & QC release | 5. Native T-cells transform into active CAR-Ts IN VIVO |
+| 6. Toxic lymphodepletion (Flu/Cy) | 6. CAR-Ts expand and eradicate diseased cells in situ |
+| 7. Inpatient hospital infusion & ICU | 7. NO lymphodepletion, NO apheresis, OUTPATIENT delivery |
 
 ### The Two Technological Pillars of In Vivo CAR-T
 

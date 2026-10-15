@@ -84,7 +84,14 @@ The market often treats patent litigation as if every defendant is an impoverish
 
 | Metric | Q2 2026 Result (Reported Aug 2026) |
 | :--- | :--- |
-| Total Revenue YUTREPIA Net Product Sales GAAP Net Income Non-GAAP Adjusted EBITDA Cash and Cash Equivalents Active Treated Patients Unique Prescriptions Submitted Annualized Sales Run-Rate | $171.7 Million $170.4 Million (+31% QoQ vs Q1 2026) $74.7 Million $96.3 Million $284.2 Million (Up +$61.4M QoQ) >5,000 active patients >5,900 unique patient starts ~$681.6 Million |
+| Total Revenue | $171.7 Million |
+| YUTREPIA Net Product Sales | $170.4 Million (+31% QoQ vs Q1 2026) |
+| GAAP Net Income | $74.7 Million |
+| Non-GAAP Adjusted EBITDA | $96.3 Million |
+| Cash and Cash Equivalents | $284.2 Million (Up +$61.4M QoQ) |
+| Active Treated Patients | >5,000 active patients |
+| Unique Prescriptions Submitted | >5,900 unique patient starts |
+| Annualized Sales Run-Rate | ~$681.6 Million |
 
 **Key Takeaway:** Liquidia is **wildly profitable on an operating basis**. It is generating positive free cash flow, has $284.2 million in clean cash on its balance sheet, and is capturing market share at an annualized run-rate of nearly $700 million. It does not need to raise equity, it does not face an immediate cash cliff, and it cannot be starved into submission by legal fees.
 
@@ -283,7 +290,18 @@ Let us build a rigorous financial model to determine whether $70 is even mathema
 
 | Valuation Input | PRE-RULING (Dual Indication) | POST-RULING (PAH Only) |
 | :--- | :--- | :--- |
-| Total Addressable Market Peak Market Share Peak Annual Revenue Operating Margin Peak Net Income Diluted Shares Outstanding Peak EPS Target P/E Multiple Implied Enterprise Value Cash on Hand (Q2 2026) Fair Market Equity Value IMPLIED FAIR VALUE / SHARE | $3.5 – $4.0 Billion 35% across PAH + PH-ILD $1.30 Billion 42% $546 Million<br>89.5 Million $6.10<br>12.0x $6.55 Billion $284 Million $6.83 Billion $76.35 | $1.5 – $1.8 Billion 30% of PAH Only $510 Million 35% $178.5 Million<br>89.5 Million $1.99<br>14.0x (Cash-adjusted) $2.50 Billion $284 Million $2.78 Billion $31.10 |
+| Total Addressable Market | $3.5 – $4.0 Billion | $1.5 – $1.8 Billion |
+| Peak Market Share | 35% across PAH + PH-ILD | 30% of PAH Only |
+| Peak Annual Revenue | $1.30 Billion | $510 Million |
+| Operating Margin | 42% | 35% |
+| Peak Net Income | $546 Million | $178.5 Million |
+| Diluted Shares Outstanding | 89.5 Million | 89.5 Million |
+| Peak EPS | $6.10 | $1.99 |
+| Target P/E Multiple | 12.0x | 14.0x (Cash-adjusted) |
+| Implied Enterprise Value | $6.55 Billion | $2.50 Billion |
+| Cash on Hand (Q2 2026) | $284 Million | $284 Million |
+| Fair Market Equity Value | $6.83 Billion | $2.78 Billion |
+| IMPLIED FAIR VALUE / SHARE | $76.35 | $31.10 |
 
 ### The Valuation Audit Insights:
 1. **The $70+ Valuation Required PH-ILD:**  

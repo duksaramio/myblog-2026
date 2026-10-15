@@ -27,7 +27,16 @@ The actual empirical data tells the exact opposite story.
 
 | Era & Tracking Study | Study Cohort Window | Cumulative Success (PoS) | Overall Fail Rate |
 | :--- | :--- | :--- | :--- |
-| Tufts CSDD (DiMasi) Tufts CSDD (DiMasi) Merck / Nat Rev Drug Tufts CSDD (DiMasi) Nature Biotech (Hay) BIO / Biomedtracker MIT / Wong, Siah, Lo BIO / Informa / QLS IQVIA Institute IQVIA Institute | 1970–1982 IND Filings 1981–1992 IND Filings 1991–2000 Industry Portfolios 1993–2004 IND Filings 2003–2011 Industry Pipeline 2006–2015 Industry Pipeline 2000–2015 Citeline Dataset 2011–2020 Industry Pipeline 2021 Global Pipeline Nadir 2023–2025 Pipeline Rebound | ~20.0% – 23.0% ~16.0% – 19.0% ~11.0% ~16.0% (Self) / 19% (All)<br>10.4% (All) / 15.3% (Lead)<br>9.6% (All) / 11.9% (ex-Onc)<br>13.8% (Path) / 6.9% (Phase)<br>7.9% (All Indications)<br>5.0% (Single-Year Trough)<br>10.8% – 11.7 (CPPI Index) | 77.0% – 80.0%<br>81.0% – 84.0%<br>89.0%<br>81.0% – 84.0%<br>89.6% (All)<br>90.4% (All)<br>86.2% / 93.1%<br>92.1% (All)<br>95.0% (Trough)<br>88.3% – 89.2% |
+| Tufts CSDD (DiMasi) | 1970–1982 IND Filings | ~20.0% – 23.0% | 77.0% – 80.0% |
+| Tufts CSDD (DiMasi) | 1981–1992 IND Filings | ~16.0% – 19.0% | 81.0% – 84.0% |
+| Merck / Nat Rev Drug | 1991–2000 Industry Portfolios | ~11.0% | 89.0% |
+| Tufts CSDD (DiMasi) | 1993–2004 IND Filings | ~16.0% (Self) / 19% (All) | 81.0% – 84.0% |
+| Nature Biotech (Hay) | 2003–2011 Industry Pipeline | 10.4% (All) / 15.3% (Lead) | 89.6% (All) |
+| BIO / Biomedtracker | 2006–2015 Industry Pipeline | 9.6% (All) / 11.9% (ex-Onc) | 90.4% (All) |
+| MIT / Wong, Siah, Lo | 2000–2015 Citeline Dataset | 13.8% (Path) / 6.9% (Phase) | 86.2% / 93.1% |
+| BIO / Informa / QLS | 2011–2020 Industry Pipeline | 7.9% (All Indications) | 92.1% (All) |
+| IQVIA Institute | 2021 Global Pipeline Nadir | 5.0% (Single-Year Trough) | 95.0% (Trough) |
+| IQVIA Institute | 2023–2025 Pipeline Rebound | 10.8% – 11.7 (CPPI Index) | 88.3% – 89.2% |
 
 Why did failure rates climb despite revolutionary scientific progress? Where along the developmental pipeline do experimental medicines actually meet their demise? And why is modern drug development bifurcating into two radically different realities—one where trials almost always fail, and another where precision medicine has tripled success rates?
 
@@ -60,7 +69,10 @@ To operationalize these statutory mandates, the FDA structured human experimenta
 
 | Development Gate | Typical Cohort Size | Primary Endpoint Focus | Dominant Historical Failure Driver |
 | :--- | :--- | :--- | :--- |
-| Phase 1 Phase 2 Phase 3 NDA / BLA Review | 20 – 100 Subjects 100 – 300 Patients 1,000 – 5,000+ Pts Complete Pipeline | Safety, PK/PD, MTD Proof-of-Concept, Dose Confirmatory Pivotal Benefit/Risk, CMC | Unacceptable toxicity, poor PK profile Lack of clinical efficacy (~50-60%) Failure to beat SOC / Placebo (~50%) Manufacturing (CMC), data integrity |
+| Phase 1 | 20 – 100 Subjects | Safety, PK/PD, MTD | Unacceptable toxicity, poor PK profile |
+| Phase 2 | 100 – 300 Patients | Proof-of-Concept, Dose | Lack of clinical efficacy (~50-60%) |
+| Phase 3 | 1,000 – 5,000+ Pts | Confirmatory Pivotal | Failure to beat SOC / Placebo (~50%) |
+| NDA / BLA Review | Complete Pipeline | Benefit/Risk, CMC | Manufacturing (CMC), data integrity |
 
 ### The Inception of Attrition Accounting (1975–1976)
 Once clinical trials were codified into discrete regulatory milestones, economists and pharmacologists began measuring pipeline dropouts:
@@ -105,7 +117,10 @@ Clinical trial attrition is highly asymmetric. Each clinical phase presents an e
 
 | Failure Category | Phase 2 Terminations (% Share) | Phase 3 Terminations (% Share) |
 | :--- | :--- | :--- |
-| Lack of Clinical Efficacy Safety & Toxicity Commercial & Strategic Triage Operational / PK / Formulation | 52% 24% 15% 9% | 54% 17% 22% 7% |
+| Lack of Clinical Efficacy | 52% | 54% |
+| Safety & Toxicity | 24% | 17% |
+| Commercial & Strategic Triage | 15% | 22% |
+| Operational / PK / Formulation | 9% | 7% |
 
 ---
 
@@ -117,7 +132,15 @@ To definitively evaluate whether failure rates have increased or decreased, we m
 
 | Study & Primary Authors | Time Span | Phase 1 → 2 | Phase 2 → 3 | Phase 3 →Reg | Overall PoS (P1) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| DiMasi et al. (1991, 1995) DiMasi (2001) Kola & Landis (Merck, 2004) DiMasi et al. (2010) Hay et al. (Nat Biotech 2014) Thomas et al. (BIO 2016) Wong, Siah, Lo (MIT 2019) Thomas et al. (BIO 2021) IQVIA Institute (2021–2025) | 1970–1982 1981–1992 1991–2000 1993–2004 2003–2011 2006–2015 2000–2015 2011–2020 2021–2024 | ~75.0% ~71.0% ~65.0%<br>71.0%<br>64.5%<br>63.2%<br>66.4%<br>52.0% Variable | ~50.0% ~44.0% ~35.0%<br>45.0%<br>32.4%<br>30.7%<br>58.3%*<br>28.9% Variable | ~65.0% ~65.0% ~55.0%<br>60.0%<br>60.1%<br>58.1%<br>59.0%<br>57.8% Rebound | ~20.0% – 23.0% ~16.0% – 19.0% ~11.0%<br>16.0% (19% All)<br>10.4%<br>9.6%<br>13.8% (6.9% P2P)<br>7.9%<br>5.0% → 10.8% |
+| DiMasi et al. (1991, 1995) | 1970–1982 | ~75.0% | ~50.0% | ~65.0% | ~20.0% – 23.0% |
+| DiMasi (2001) | 1981–1992 | ~71.0% | ~44.0% | ~65.0% | ~16.0% – 19.0% |
+| Kola & Landis (Merck, 2004) | 1991–2000 | ~65.0% | ~35.0% | ~55.0% | ~11.0% |
+| DiMasi et al. (2010) | 1993–2004 | 71.0% | 45.0% | 60.0% | 16.0% (19% All) |
+| Hay et al. (Nat Biotech 2014) | 2003–2011 | 64.5% | 32.4% | 60.1% | 10.4% |
+| Thomas et al. (BIO 2016) | 2006–2015 | 63.2% | 30.7% | 58.1% | 9.6% |
+| Wong, Siah, Lo (MIT 2019) | 2000–2015 | 66.4% | 58.3%* | 59.0% | 13.8% (6.9% P2P) |
+| Thomas et al. (BIO 2021) | 2011–2020 | 52.0% | 28.9% | 57.8% | 7.9% |
+| IQVIA Institute (2021–2025) | 2021–2024 | Variable | Variable | Rebound | 5.0% → 10.8% |
 
 The mathematical progression is undeniable:
 * In the **1970s and 1980s**, overall clinical approval success sat comfortably between **16% and 23%** (meaning failure was **77% to 84%**).

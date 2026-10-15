@@ -233,7 +233,11 @@ What CAD did was eliminate **thousands of blind, catastrophic physical iteration
 
 | Traditional Pharma (Pre-AI) | Modern Biopharma (AI-Augmented) |
 | :--- | :--- |
-| • Screening millions of random chemicals in plastic wells<br>• Optimizing properties one by one over 4–5 years<br>• 40–60% Phase 1 safety failure<br>• Unphased crystal structures abandoned on hard drives<br>• "Undruggable" targets left untouched for decades | • Generative de novo design of molecules tailored to targets<br>• Multi-parameter optimization (binding, safety, ADMET) at once<br>• 80–90% Phase 1 safety success<br>• 93% automated crystallographic molecular replacement<br>• Allosteric pockets & dynamic motion unlocking hidden sites |
+| Screening millions of random chemicals in plastic wells | Generative de novo design of molecules tailored to targets |
+| Optimizing properties one by one over 4–5 years | Multi-parameter optimization (binding, safety, ADMET) at once |
+| 40–60% Phase 1 safety failure | 80–90% Phase 1 safety success |
+| Unphased crystal structures abandoned on hard drives | 93% automated crystallographic molecular replacement |
+| "Undruggable" targets left untouched for decades | Allosteric pockets & dynamic motion unlocking hidden sites |
 
 That is exactly what AI is doing for biology today:
 1. **It compresses early discovery from 5 years down to 18 months**, slashing millions in preclinical wasted spend.

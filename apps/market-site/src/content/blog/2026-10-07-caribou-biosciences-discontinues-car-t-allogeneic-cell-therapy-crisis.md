@@ -21,7 +21,14 @@ The market response on October 7, 2026 was immediate and brutal: **CRBU shares c
 
 | Metric | Historical Peak (IPO / 2021) | Post-Discontinuation (Oct 2026) |
 | :--- | :--- | :--- |
-| Stock Price All-Time High Drawdown Market Capitalization Cash & Marketable Securities (Q2 2026) Core Clinical Programs Remaining Active Strategic Status Financial Advisor Retained Estimated Restructuring Charges | $32.00 (Post-IPO High) — ~$1.95 Billion $390+ Million (Post-IPO) 3 (CB-010, CB-011, CB-012) Autonomous Commercial Hopeful — — | $0.64 – $0.72<br>-98.0% ~$68 Million $113.8 Million 0 (All Axed / Paused) Exploring Sale/Merger Wedbush Securities $15M – $19M |
+| Stock Price | $32.00 (Post-IPO High) | $0.64 – $0.72 |
+| All-Time High Drawdown | — | -98.0% |
+| Market Capitalization | ~$1.95 Billion | ~$68 Million |
+| Cash & Marketable Securities (Q2 2026) | $390+ Million (Post-IPO) | $113.8 Million |
+| Core Clinical Programs Remaining Active | 3 (CB-010, CB-011, CB-012) | 0 (All Axed / Paused) |
+| Strategic Status | Autonomous Commercial Hopeful | Exploring Sale/Merger |
+| Financial Advisor Retained | — | Wedbush Securities |
+| Estimated Restructuring Charges | — | $15M – $19M |
 
 Caribou was not an underfunded fly-by-night venture. It possessed **world-class scientific pedigree**, patented proprietary **chRDNA (CRISPR hybrid RNA-DNA)** multi-genome editing technology, an alignment with the U.S. FDA on a registrational Phase 3 trial design for vispa-cel, and a **\$25 million equity investment from Pfizer** inked in mid-2023.
 
@@ -133,7 +140,15 @@ Biotech is ultimately governed by cash burn. When the clinical narrative encount
 
 | Financial Metric | Value (SEC Filings Audit) |
 | :--- | :--- |
-| Cash, Cash Equivalents, and Marketable Securities Average Quarterly Operational Cash Burn Implied Runway (Pre-Announcement) Estimated Cost of Phase 3 Trial for vispa-cel Estimated Cost of Phase 2/3 Expansion for CB-011 Total Capital Required to Achieve BLA Filing Market Capitalization (Pre-Announcement) Equity Dilution Required to Fund Phase 3 via Stock Restructuring Charges Incurred (Q4 2026) | $113.8 Million $32.0M – $35.0 Million ~9 to 11 Months (Into Mid-2027) $220M – $300 Million $150M – $180 Million $370M – $480 Million ~$125 Million > 75% Total Dilution (Mathematically Imp) $15.0M – $19.0 Million |
+| Cash, Cash Equivalents, and Marketable Securities | $113.8 Million |
+| Average Quarterly Operational Cash Burn | $32.0M – $35.0 Million |
+| Implied Runway (Pre-Announcement) | ~9 to 11 Months (Into Mid-2027) |
+| Estimated Cost of Phase 3 Trial for vispa-cel | $220M – $300 Million |
+| Estimated Cost of Phase 2/3 Expansion for CB-011 | $150M – $180 Million |
+| Total Capital Required to Achieve BLA Filing | $370M – $480 Million |
+| Market Capitalization (Pre-Announcement) | ~$125 Million |
+| Equity Dilution Required to Fund Phase 3 via Stock | > 75% Total Dilution (Mathematically Imp) |
+| Restructuring Charges Incurred (Q4 2026) | $15.0M – $19.0 Million |
 
 The mathematics were insurmountable:
 - Caribou had **\$113.8 million** in cash as of June 30, 2026.
@@ -286,7 +301,13 @@ Instead of extracting cells, engineering them in a cleanroom bioreactor for two 
 
 | Metric | Ex-Vivo CAR-T (Traditional) | In-Vivo CAR-T (Next-Gen Frontier) |
 | :--- | :--- | :--- |
-| Delivery Vehicle Ex-Vivo Cell Processing Cost of Goods (COGS) Preconditioning Lymphodeplet. Vein-to-Vein Waiting Time Re-Dosing Capability Risk of GvHD | Living Cells (Cell Suspension Required (Cleanroom Facility) $50,000 – $150,000 per batch MANDATORY (High-dose Cy/Flu) 14 to 30 Days Extremely Difficult / Toxic Present in Allogeneic | Targeted LNP (tLNP) or Fusogen Zero (Standard Chemical/Bio mfg) < $2,000 per dose NONE (Or minimal immunosuppr.) 0 Days (Immediate Outpatient IV) Repeatable (like an mRNA vaccine) ZERO (Uses patient's own cells) |
+| **Delivery Vehicle** | Living Cells (Cell Suspension) | Targeted LNP (tLNP) or Fusogen |
+| **Ex-Vivo Cell Processing** | Required (Cleanroom Facility) | Zero (Standard Chemical/Bio mfg) |
+| **Cost of Goods (COGS)** | $50,000 – $150,000 per batch | < $2,000 per dose |
+| **Preconditioning Lymphodepletion** | MANDATORY (High-dose Cy/Flu) | NONE (Or minimal immunosuppression) |
+| **Vein-to-Vein Waiting Time** | 14 to 30 Days | 0 Days (Immediate Outpatient IV) |
+| **Re-Dosing Capability** | Extremely Difficult / Toxic | Repeatable (like an mRNA vaccine) |
+| **Risk of GvHD** | Present in Allogeneic | ZERO (Uses patient's own cells) |
 
 #### Major Milestones in In Vivo CAR-T (2025–2026):
 - **AbbVie’s \$2.1 Billion Acquisition of Capstan Therapeutics (June 2025):** AbbVie made the defining bet on the space by acquiring Capstan. Capstan’s lead asset, **CPTX2309**, packages an anti-CD19 CAR mRNA inside a targeted lipid nanoparticle (tLNP) conjugated with an anti-CD8 antibody. Upon IV injection, the tLNP specifically binds circulating CD8+ cytotoxic T-cells, enters via endocytosis, and instructs the host’s own T-cells to transiently express the CAR and eradicate pathogenic B-cells—**with zero ex-vivo cell handling and zero lymphodepletion.** Phase 1 human trials are progressing rapidly through 2026.

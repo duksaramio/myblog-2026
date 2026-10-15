@@ -280,7 +280,14 @@ SMIC가 4나노 EUV 공정으로 2,500 TFLOPS급 블랙웰 다이를 찍어낼 �
 
 | 아키텍처 비교 지표 | NVIDIA GB200 NVL72 | HUAWEI CLOUDMATRIX 384 |
 | :--- | :--- | :--- |
-| 슈퍼노드당 탑재 가속기 수 제조 공정 및 노광 기술 칩당 연산 성능 (Dense BF16) 슈퍼노드 합산 BF16 연산력 합산 HBM 메모리 총용량 합산 스케일업 대역폭 시스템 총 전력 소모량 에너지 효율 (와트당 FLOPs) | 72개 Blackwell B200 GPU TSMC 4NP (ASML EUV) ~2,500 TFLOPS ~180 PFLOPS ~13.5 TB (HBM3e) ~130 TB/s (구리 NVLink) ~145 kW 기준점 (1.0x Reference) | 384개 Ascend 910C NPU (5.3배) SMIC N+2 7nm급 (DUV SAQP) ~780 TFLOPS ~300 PFLOPS (1.67배 높음) ~48.6 TB (3.6배 높음) ~276 TB/s (전광 메쉬 네트워크) ~559 kW (3.85배 전력 소모) ~2.3배 낮은 전력 효율 |
+| 슈퍼노드당 탑재 가속기 수 | 72개 Blackwell B200 GPU | 384개 Ascend 910C NPU (5.3배) |
+| 제조 공정 및 노광 기술 | TSMC 4NP (ASML EUV) | SMIC N+2 7nm급 (DUV SAQP) |
+| 칩당 연산 성능 (Dense BF16) | ~2,500 TFLOPS | ~780 TFLOPS |
+| 슈퍼노드 합산 BF16 연산력 | ~180 PFLOPS | ~300 PFLOPS (1.67배 높음) |
+| 합산 HBM 메모리 총용량 | ~13.5 TB (HBM3e) | ~48.6 TB (3.6배 높음) |
+| 합산 스케일업 대역폭 | ~130 TB/s (구리 NVLink) | ~276 TB/s (전광 메쉬 네트워크) |
+| 시스템 총 전력 소모량 | ~145 kW | ~559 kW (3.85배 전력 소모) |
+| 에너지 효율 (와트당 FLOPs) | 기준점 (1.0x Reference) | ~2.3배 낮은 전력 효율 |
 
 이 비교표는 미·중 반도체 전쟁의 가장 본질적인 전략적 진실을 보여준다. **중국은 클러스터 수준에서 미국의 노광 장비 봉쇄를 무력화하기 위해 전력 소모(145 kW 대비 559 kW)와 광 네트워크 복잡성을 등가교환하고 있다.**
 

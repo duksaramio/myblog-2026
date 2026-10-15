@@ -226,7 +226,9 @@ Our verdict is nuanced: **Shkreli is 100% correct regarding market valuation, ca
 
 | Where Shkreli Is 100% CORRECT (The Market Reality) | Where Shkreli Is TOO CYNICAL (The Science |
 | :--- | :--- |
-| 1. Catalyst Substitution: Computational benchmarks ("Virtual Cell") are sold as clinical catalysts.<br>2. Multiple Compression: Pure-play AI biotechs inevitably crater from SaaS multiples to biotech.<br>3. Phase 2 Meat Grinder: In silico design does not bypass human clinical efficacy attrition. | 1. Amara's Law: We overestimate tech in the short run, underestimate in long.<br>2. The HGP Didn't Fail: HGP became the bedrock of modern targeted oncology.<br>3. Essential Infrastructure: Generative biology is becoming standard tooling. |
+| 1. Catalyst Substitution: Computational benchmarks ("Virtual Cell") are sold as clinical catalysts. | 1. Amara's Law: We overestimate tech in the short run, underestimate in long. |
+| 2. Multiple Compression: Pure-play AI biotechs inevitably crater from SaaS multiples to biotech. | 2. The HGP Didn't Fail: HGP became the bedrock of modern targeted oncology. |
+| 3. Phase 2 Meat Grinder: In silico design does not bypass human clinical efficacy attrition. | 3. Essential Infrastructure: Generative biology is becoming standard tooling. |
 
 ### Where We Agree with Shkreli
 1. **The "Catalyst" Illusion is Real**:

@@ -22,7 +22,18 @@ Yet, as of October 2026, the company finds itself at a critical reckoning point:
 
 | Metric | Data / Value |
 | :--- | :--- |
-| Stock Price Peak Stock Price (April 2021 Post-IPO) Shares Outstanding Market Capitalization Cash & Marketable Securities (Q2 2026) Q2 2026 Revenue Q2 2026 Net Loss Full-Year 2026 Cash Opex Guidance Cash Runway Total FDA-Approved Drugs Produced Total Successful Phase 3 Trials Statistically Significant Phase 2 Wins | $4.73 – $4.76 $31.30 (Down ~85%) ~533.5 Million (Up from ~160M at IPO, +233% Dilution) ~$2.54 Billion $556.82 Million $7.67 Million (Down 60% YoY)<br>-$131.01 Million < $375 Million Into Early 2028 0 0 0 |
+| Stock Price | $4.73 – $4.76 |
+| Peak Stock Price (April 2021 Post-IPO) | $31.30 (Down ~85%) |
+| Shares Outstanding | ~533.5 Million (Up from ~160M at IPO, +233% Dilution) |
+| Market Capitalization | ~$2.54 Billion |
+| Cash & Marketable Securities (Q2 2026) | $556.82 Million |
+| Q2 2026 Revenue | $7.67 Million (Down 60% YoY) |
+| Q2 2026 Net Loss | -$131.01 Million |
+| Full-Year 2026 Cash Opex Guidance | < $375 Million |
+| Cash Runway | Into Early 2028 |
+| Total FDA-Approved Drugs Produced | 0 |
+| Total Successful Phase 3 Trials | 0 |
+| Statistically Significant Phase 2 Wins | 0 |
 
 Despite burning billions of dollars across 13 years of operations, issuing over 530 million shares, and building the most advanced automated wet-lab infrastructure on Earth:
 
@@ -153,7 +164,15 @@ When we examine Recursion's audited financial statements, the tension between it
 
 | Financial Metric | Audited Q2 2026 Reported Value |
 | :--- | :--- |
-| Cash, Cash Equivalents & Liquid Assets Total Quarterly Revenue Research & Development (R&D) Expense General & Administrative (G&A) Expense Total Quarterly Net Loss Full-Year 2026 Cash Opex Guidance Effective Operating Cash Runway Shares Outstanding (Diluted) Enterprise Value / Sales Multiple | $556.82 Million $7.67 Million (Down 60.1% from $19.22M in Q2 2025) ~$85 Million ~$35 Million<br>-$131.01 Million < $375 Million (Lowered from $390M) Into Early 2028 (~6 Quarters unadjusted) ~533.5 Million ~65x – 70x |
+| Cash, Cash Equivalents & Liquid Assets | $556.82 Million |
+| Total Quarterly Revenue | $7.67 Million (Down 60.1% from $19.22M in Q2 2025) |
+| Research & Development (R&D) Expense | ~$85 Million |
+| General & Administrative (G&A) Expense | ~$35 Million |
+| Total Quarterly Net Loss | -$131.01 Million |
+| Full-Year 2026 Cash Opex Guidance | < $375 Million (Lowered from $390M) |
+| Effective Operating Cash Runway | Into Early 2028 (~6 Quarters unadjusted) |
+| Shares Outstanding (Diluted) | ~533.5 Million |
+| Enterprise Value / Sales Multiple | ~65x – 70x |
 
 ### 1. Revenue Volatility: The Danger of Lumpy Milestones
 In Q2 2026, Recursion generated just **\$7.67 million in total revenue**, representing a staggering **60.1% year-over-year decline** from \$19.22 million in Q2 2025.
@@ -193,7 +212,10 @@ Recursion’s journey reflects the existential identity crisis of the entire Tec
 
 | The "Silicon Valley SaaS" Fantasy | The "Clinical Biopharma" Reality |
 | :--- | :--- |
-| • Infinite scalability<br>• High gross margins (80%+)<br>• Moore's Law exponentiation<br>• Valued at 30x–50x Sales | • Massive linear capital costs (GLP tox, human trials)<br>• Negative 800%+ operating margins<br>• Eroom's Law clinical attrition (60% fail in Phase 2)<br>• Valued at pipeline Net Present Value (NPV) |
+| Infinite scalability | Massive linear capital costs (GLP tox, human trials) |
+| High gross margins (80%+) | Negative 800%+ operating margins |
+| Moore's Law exponentiation | Eroom's Law clinical attrition (60% fail in Phase 2) |
+| Valued at 30x–50x Sales | Valued at pipeline Net Present Value (NPV) |
 
 Under Chris Gibson, Recursion tried to have it both ways: trading at astronomical software multiples while simultaneously funding an expensive, risky internal clinical pipeline. The May 2025 pipeline cull proved that you cannot "hack" human pharmacology with computer vision.
 

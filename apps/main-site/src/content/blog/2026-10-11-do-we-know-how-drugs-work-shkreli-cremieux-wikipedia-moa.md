@@ -129,7 +129,12 @@ In a definitive, comprehensive census of the human pharmacopeia published in *Na
 
 | Target Family | Share of Approved Drugs |
 | :--- | :--- |
-| GPCRs Ion Channels Enzymes / Kinases Nuclear Receptors Other Characterized Targets Truly Unknown Target | ~33% ~18% ~16% ~13% ~12% < 8% |
+| GPCRs | ~33% |
+| Ion Channels | ~18% |
+| Enzymes / Kinases | ~16% |
+| Nuclear Receptors | ~13% |
+| Other Characterized Targets | ~12% |
+| Truly Unknown Target | < 8% |
 
 Consider the medicines that fill the world's pharmacies:
 - **Statins (Atorvastatin, Rosuvastatin):** Competitively inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis.

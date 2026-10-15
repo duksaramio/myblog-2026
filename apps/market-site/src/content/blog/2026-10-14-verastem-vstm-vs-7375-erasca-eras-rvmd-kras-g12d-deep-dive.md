@@ -45,7 +45,17 @@ Rather than accepting corporate slide decks at face value or collapsing into bin
 
 | DIMENSION / METRIC | VERASTEM ($VSTM) | ERASCA ($ERAS) | REVOLUTION MED ($RVMD) |
 | :--- | :--- | :--- | :--- |
-| Lead KRAS G12D Asset Molecular Mechanism Origin / Licensor Share Price (Oct 13/14) Market Capitalization Pro-Forma Cash Balance 2L+ PDAC G12D Efficacy (Confirmed vs Unconf.) Hidden Dose / Subtype Vulnerability Wild-Type RAS Toxicity & Discontinuation Rate Legal / Governance Risk Institutional Stance | VS-7375 (GFH375) Direct G12D ON/OFF Small Molecule (No CypA Glue) GenFleet (Ex-China Rts) $7.45 Close / $8.00 Deal ~$675M Pre / ~$925M Post ~$455M (Q3 $173M + $250M Deal + $50M Oberland) 900mg: 41% cORR (9/22; 2L: 50% [4/8], 2 CRs) 600mg US PDAC collapsed to 14.8% cORR (4/27)! 0% Mucositis/Stomatitis; 4% Gr1-2 Rash; 2% Disc.<br>34.5% Share Dilution on Oct 14 + CEO Retirement SPECULATIVE ACCUMULATE ON OFFERING CHURN ($8) | ERAS-0015 (+ ERAS-4001) Pan-RAS CypA Molecular Glue (eras-4001=panKRAS) Joyo Pharmatech (Global) $14.78 (-4.40%) ~$5.4B – $5.6B ~$950M+ (Q2 $384M + July $632.5M Offering) 32mg: 57% uORR_8wk (4/7 unconf. across G12X) Only N=7 at 32mg RDE; G12D vs G12V unsplit Claims 0% TRAE discont. in Ph1 (small N, early) RVMD Patent '225 & Trade Secret Threat + Lawsuits UNDERWEIGHT / AVOID (Litigation + 8x VSTM EV) | Daraxonrasib (+ Zoldon.) Pan-RAS(ON) CypA Glue (+ G12D Covalent Glue) In-House / Warp Drive Bio ~$188.00 ~$40.3B – $41.6B ~$3.9B (Q2 2026 10-Q; $525M–$550M/Qtr Burn) Daraxonrasib: 24% cORR in G12D (23/95, Phase 3) G12V 50% vs G12D 24%; Zoldonrasib cORR 15% (6/40 High Rash, Stomatitis, Mucositis; Dose-Capped $149.7M Insider Selling / $0 Bought; 20/20 Buy Bias TACTICAL SHORT / TRIM (G12D Monopoly Broken) |
+| Lead KRAS G12D Asset | VS-7375 (GFH375) | ERAS-0015 (+ ERAS-4001) | Daraxonrasib (+ Zoldon.) |
+| Molecular Mechanism | Direct G12D ON/OFF Small Molecule (No CypA Glue) | Pan-RAS CypA Molecular Glue (eras-4001=panKRAS) | Pan-RAS(ON) CypA Glue (+ G12D Covalent Glue) |
+| Origin / Licensor | GenFleet (Ex-China Rts) | Joyo Pharmatech (Global) | In-House / Warp Drive Bio |
+| Share Price (Oct 13/14) | $7.45 Close / $8.00 Deal | $14.78 (-4.40%) | ~$188.00 |
+| Market Capitalization | ~$675M Pre / ~$925M Post | ~$5.4B – $5.6B | ~$40.3B – $41.6B |
+| Pro-Forma Cash Balance | ~$455M (Q3 $173M + $250M Deal + $50M Oberland) | ~$950M+ (Q2 $384M + July $632.5M Offering) | ~$3.9B (Q2 2026 10-Q; $525M–$550M/Qtr Burn) |
+| 2L+ PDAC G12D Efficacy (Confirmed vs Unconf.) | 900mg: 41% cORR (9/22; 2L: 50% [4/8], 2 CRs) | 32mg: 57% uORR_8wk (4/7 unconf. across G12X) | Daraxonrasib: 24% cORR in G12D (23/95, Phase 3) |
+| Hidden Dose / Subtype Vulnerability | 600mg US PDAC collapsed to 14.8% cORR (4/27)! | Only N=7 at 32mg RDE; G12D vs G12V unsplit | G12V 50% vs G12D 24%; Zoldonrasib cORR 15% (6/40 |
+| Wild-Type RAS Toxicity & Discontinuation Rate | 0% Mucositis/Stomatitis; 4% Gr1-2 Rash; 2% Disc. | Claims 0% TRAE discont. in Ph1 (small N, early) | High Rash, Stomatitis, Mucositis; Dose-Capped |
+| Legal / Governance Risk | 34.5% Share Dilution on Oct 14 + CEO Retirement | RVMD Patent '225 & Trade Secret Threat + Lawsuits | $149.7M Insider Selling / $0 Bought; 20/20 Buy Bias |
+| Institutional Stance | SPECULATIVE ACCUMULATE ON OFFERING CHURN ($8) | UNDERWEIGHT / AVOID (Litigation + 8x VSTM EV) | TACTICAL SHORT / TRIM (G12D Monopoly Broken) |
 
 ---
 
@@ -209,7 +219,16 @@ Let us compare the pro-forma capital structures of the three companies as of Oct
 
 | FINANCIAL METRIC | VERASTEM ($VSTM) | ERASCA ($ERAS) | REVOLUTION MED ($RVMD) |
 | :--- | :--- | :--- | :--- |
-| Basic Shares (Q2 10-Q Baseline) H2 2026 Equity Offerings Pro-Forma Diluted Share Count Reference Share Price (Oct 14) Implied Pro-Forma Market Cap Pro-Forma Cash & Investments Debt / Royalty Liability Implied Enterprise Value (EV) Commercial Product Revenue Quarterly Operating Expense | 90.5M (+9.7M PFWs) +31.25M shs/PFWs ($250M @ $8.00 Oct14) ~131.5M (incl. PFWs) $8.00 Offering Price ~$1.05B ($972M exPFW) ~$455M (Q3 $172.8M + $235M Net + Oberland) ~$125M–$150M Debt & Oberland Facility ~$720M – $750M ~$96M/yr Run-Rate (Q3: $23.9M–$24.1M) ~$72.8M GAAP (~$48M net of LGSOC rev!) | 312.6M (June 30) +~45M–55M shs ($632.5M in July) ~365M – 375M $14.78 ~$5.4B – $5.55B ~$950M+ (Q2 $384.3M + ~$595M Net July) Minimal Debt ($150M Joyo IPR&D paid Q1) ~$4.5B – $4.6B $0.00 (Pre-Commerc.) ~$47.6M GAAP (excl. $150M IPR&D fee) | ~214.5M None in H2 ($2.1B in Apr) ~215M ~$188.00 ~$40.4B ~$3.9B (Q2 2026) $250M+ Royalty Pharma Tiered Liability ~$36.8B Launching Rasonque (Q4) ~$535M GAAP ($2.1B–$2.2B annualized burn furnace!) |
+| Basic Shares (Q2 10-Q Baseline) | 90.5M (+9.7M PFWs) | 312.6M (June 30) | ~214.5M |
+| H2 2026 Equity Offerings | +31.25M shs/PFWs ($250M @ $8.00 Oct14) | +~45M–55M shs ($632.5M in July) | None in H2 ($2.1B in Apr) |
+| Pro-Forma Diluted Share Count | ~131.5M (incl. PFWs) | ~365M – 375M | ~215M |
+| Reference Share Price (Oct 14) | $8.00 Offering Price | $14.78 | ~$188.00 |
+| Implied Pro-Forma Market Cap | ~$1.05B ($972M exPFW) | ~$5.4B – $5.55B | ~$40.4B |
+| Pro-Forma Cash & Investments | ~$455M (Q3 $172.8M + $235M Net + Oberland) | ~$950M+ (Q2 $384.3M + ~$595M Net July) | ~$3.9B (Q2 2026) |
+| Debt / Royalty Liability | ~$125M–$150M Debt & Oberland Facility | Minimal Debt ($150M Joyo IPR&D paid Q1) | $250M+ Royalty Pharma Tiered Liability |
+| Implied Enterprise Value (EV) | ~$720M – $750M | ~$4.5B – $4.6B | ~$36.8B |
+| Commercial Product Revenue | ~$96M/yr Run-Rate (Q3: $23.9M–$24.1M) | $0.00 (Pre-Commerc.) | Launching Rasonque (Q4) |
+| Quarterly Operating Expense | ~$72.8M GAAP (~$48M net of LGSOC rev!) | ~$47.6M GAAP (excl. $150M IPR&D fee) | ~$535M GAAP ($2.1B–$2.2B annualized burn furnace!) |
 
 Look at the **Enterprise Value (EV) asymmetry** revealed by this table:
 * **Verastem (`$VSTM`)**—which already generates **~\$24.0 million per quarter (~\$96M/year annualized)** in commercial net revenue from its FDA-approved ovarian cancer therapy **AVMAPKI FAKZYNJA CO-PACK** (with a Blister Pack NDA just granted **FDA Priority Review on October 7, 2026** for a Q1 2027 decision) AND holds ex-China rights to **VS-7375** (now entering Phase 3 1L PDAC with `41% cORR` in 2L+ PDAC and `43% cORR` in 2L+ NSCLC)—trades at a pro-forma **Enterprise Value of roughly \$720M to \$750M**!

@@ -280,7 +280,14 @@ As detailed in hardware teardowns by [SemiAnalysis](https://semianalysis.com/) a
 
 | ARCHITECTURAL METRIC | NVIDIA GB200 NVL72 | HUAWEI CLOUDMATRIX 384 |
 | :--- | :--- | :--- |
-| Total Accelerators per Supernode Process Node & Lithography Per-Chip Compute (Dense BF16) Aggregate Supernode BF16 Compute Aggregate HBM Memory Capacity Aggregate Scale-Up Bandwidth Total System Power Consumption Energy Efficiency (FLOPs per Watt) | 72x Blackwell B200 GPUs TSMC 4NP (ASML EUV) ~2,500 TFLOPS ~180 PFLOPS ~13.5 TB (HBM3e) ~130 TB/s (Copper NVLink) ~145 kW Baseline (1.0x Reference) | 384x Ascend 910C NPUs (5.3x) SMIC N+2 7nm-class (DUV SAQP) ~780 TFLOPS ~300 PFLOPS (1.67x Higher) ~48.6 TB (3.6x Higher) ~276 TB/s (All-Optical Mesh) ~559 kW (3.85x Higher Draw) ~2.3x Worse Energy Efficiency |
+| Total Accelerators per Supernode | 72x Blackwell B200 GPUs | 384x Ascend 910C NPUs (5.3x) |
+| Process Node & Lithography | TSMC 4NP (ASML EUV) | SMIC N+2 7nm-class (DUV SAQP) |
+| Per-Chip Compute (Dense BF16) | ~2,500 TFLOPS | ~780 TFLOPS |
+| Aggregate Supernode BF16 Compute | ~180 PFLOPS | ~300 PFLOPS (1.67x Higher) |
+| Aggregate HBM Memory Capacity | ~13.5 TB (HBM3e) | ~48.6 TB (3.6x Higher) |
+| Aggregate Scale-Up Bandwidth | ~130 TB/s (Copper NVLink) | ~276 TB/s (All-Optical Mesh) |
+| Total System Power Consumption | ~145 kW | ~559 kW (3.85x Higher Draw) |
+| Energy Efficiency (FLOPs per Watt) | Baseline (1.0x Reference) | ~2.3x Worse Energy Efficiency |
 
 This table reveals the defining strategic truth of the US–China chip war: **China is trading electrical power (559 kW vs. 145 kW) and optical complexity to neutralize the US lithography blockade at the cluster level.**
 

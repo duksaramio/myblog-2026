@@ -280,7 +280,14 @@ $$\text{MFU} = \frac{\text{Actual Achieved Cluster Throughput (FLOPs/sec)}}{\tex
 
 | 系统架构核心指标 | NVIDIA GB200 NVL72 | HUAWEI CLOUDMATRIX 384 |
 | :--- | :--- | :--- |
-| 单超节点搭载加速器数量制造工艺与光刻技术单芯片算力 (Dense BF16) 超节点汇总BF16算力超节点汇总HBM内存总容量超节点汇总Scale-Up互连带宽系统总功耗能源效率 (每瓦特FLOPs) | 72颗 Blackwell B200 GPU 台积电 4NP (ASML EUV) ~2,500 TFLOPS ~180 PFLOPS ~13.5 TB (HBM3e) ~130 TB/s (NVLink铜缆背板) ~145 kW 基准线 (1.0x Reference) | 384颗 昇腾910C NPU (5.3倍数量) 中芯国际 N+2 7nm级 (DUV SAQP) ~780 TFLOPS ~300 PFLOPS (高出67%) ~48.6 TB (高出3.6倍) ~276 TB/s (全光网格互连网络) ~559 kW (功耗高出3.85倍) 能效比低约2.3倍 |
+| 单超节点搭载加速器数量 | 72颗 Blackwell B200 GPU | 384颗 昇腾910C NPU (5.3倍数量) |
+| 制造工艺与光刻技术 | 台积电 4NP (ASML EUV) | 中芯国际 N+2 7nm级 (DUV SAQP) |
+| 单芯片算力 (Dense BF16) | ~2,500 TFLOPS | ~780 TFLOPS |
+| 超节点汇总BF16算力 | ~180 PFLOPS | ~300 PFLOPS (高出67%) |
+| 超节点汇总HBM内存总容量 | ~13.5 TB (HBM3e) | ~48.6 TB (高出3.6倍) |
+| 超节点汇总Scale-Up互连带宽 | ~130 TB/s (NVLink铜缆背板) | ~276 TB/s (全光网格互连网络) |
+| 系统总功耗 | ~145 kW | ~559 kW (功耗高出3.85倍) |
+| 能源效率 (每瓦特FLOPs) | 基准线 (1.0x Reference) | 能效比低约2.3倍 |
 
 这张对比表揭示了中美芯片战最核心的战略真相：**中国正在用高达3.85倍的电力消耗（559 kW对145 kW）和全光互连复杂度，在集群层面上强行抹平美国的光刻机封锁。**
 

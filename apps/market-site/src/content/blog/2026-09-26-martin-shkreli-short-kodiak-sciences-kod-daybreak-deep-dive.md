@@ -175,7 +175,13 @@ Shkreli's fourth claim—*"near no cash, KOD should plummet"*—is mathematicall
 
 | Financial Metric | Value (Q2 2026 / June 30) |
 | :--- | :--- |
-| Cash, Cash Equivalents & Marketable Securities Q2 2026 GAAP Net Loss Q2 2026 R&D Operating Expense Trailing 6-Month Operating Cash Burn Estimated Current Quarterly Burn Rate Implied Cash Runway Implied Solvency Horizon | $125.9 Million<br>-$65.6 Million $56.1 Million ~$110 Million ~$50 - $65 Million ~2.0 to 2.5 Quarters Q1 / Q2 2027 |
+| **Cash, Cash Equivalents & Marketable Securities** | $125.9 Million |
+| **Q2 2026 GAAP Net Loss** | -$65.6 Million |
+| **Q2 2026 R&D Operating Expense** | $56.1 Million |
+| **Trailing 6-Month Operating Cash Burn** | ~$110 Million |
+| **Estimated Current Quarterly Burn Rate** | ~$50 - $65 Million |
+| **Implied Cash Runway** | ~2.0 to 2.5 Quarters |
+| **Implied Solvency Horizon** | Q1 / Q2 2027 |
 
 ### The Inevitable Dilution Trap
 At a quarterly burn rate exceeding **$55–$65 million**, Kodiak's **$125.9 million** balance sheet gives the company roughly **6 months of runway**.

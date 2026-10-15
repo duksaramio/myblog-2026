@@ -142,7 +142,13 @@ If there is one company that personifies Shkreli's exact criticism, it is **Recu
 
 | Metric | Data / Status (As of October 2026) |
 | :--- | :--- |
-| Stock Price Market Capitalization Cash & Marketable Securities Guided 2026 Cash Operating Expenses Cash Runway Notable Acquisitions Big Tech / Pharma Partnerships | $4.53 $2.18 Billion ~$557 Million (Mid-2026) < $390 Million (Post-restructuring) Into Early 2028 Exscientia ($688M all-stock merger, closed Nov 2024) NVIDIA, Roche, Genentech, Sanofi, Bayer |
+| Stock Price | $4.53 |
+| Market Capitalization | $2.18 Billion |
+| Cash & Marketable Securities | ~$557 Million (Mid-2026) |
+| Guided 2026 Cash Operating Expenses | < $390 Million (Post-restructuring) |
+| Cash Runway | Into Early 2028 |
+| Notable Acquisitions | Exscientia ($688M all-stock merger, closed Nov 2024) |
+| Big Tech / Pharma Partnerships | NVIDIA, Roche, Genentech, Sanofi, Bayer |
 
 ### The Industrialized Vision
 Recursion was founded on the revolutionary premise that human biology could be mapped through industrial automation. By combining automated robotic wet-labs that take millions of cellular microscopy images per week with supercomputing clusters (BioHive-1 and BioHive-2, powered by thousands of NVIDIA H100 GPUs), Recursion extracts morphological feature embeddings to predict disease reversal without needing hypothesis-driven biology. In late 2024, it acquired UK-based AI pioneer Exscientia for \$688 million to combine its phenotypic screening with Exscientia's generative chemistry platform.
@@ -177,7 +183,13 @@ Martin Shkreli next singles out **Ginkgo Bioworks Holdings (NYSE: DNA)**. But do
 
 | Metric | Data / Status (As of October 2026) |
 | :--- | :--- |
-| Stock Price Pre-Split Equivalent Price Market Capitalization Cash & Liquid Assets Guided 2026 Full-Year Cash Burn Q2 2026 GAAP Net Loss Corporate Restructuring | $14.88 – $14.93 ~$0.37 (Adjusted for 1-for-40 Reverse Split) ~$830 Million (Down from >$15 Billion peak) $302 Million (+ $87M restricted) (As of Q2 2026) $125 Million – $150 Million<br>-$57.3 Million (Adjusted EBITDA loss -$36.3M) Divested Biosecurity (Apr 2026); automated lab pivot |
+| Stock Price | $4.53 |
+| Market Capitalization | $2.18 Billion |
+| Cash & Marketable Securities | ~$557 Million (Mid-2026) |
+| Guided 2026 Cash Operating Expenses | < $390 Million (Post-restructuring) |
+| Cash Runway | Into Early 2028 |
+| Notable Acquisitions | Exscientia ($688M all-stock merger, closed Nov 2024) |
+| Big Tech / Pharma Partnerships | NVIDIA, Roche, Genentech, Sanofi, Bayer |
 
 ### The Foundry Model: Ginkgo Never Wanted to Be a Drug Dev
 Here, Shkreli makes a **categorical error**: **Ginkgo Bioworks is not an internal drug developer.**
@@ -211,7 +223,13 @@ Shkreli's third target is **Twist Bioscience (NASDAQ: TWST)**. This is where his
 
 | Metric | Data / Status (As of October 2026) |
 | :--- | :--- |
-| Stock Price Market Capitalization Fiscal 2025 Revenue Guided Fiscal 2026 Revenue Adjusted Gross Margin Profitability Status Recent Financing Key Catalysts | $202.36 (Near All-Time Highs) ~$12.50 Billion $376.6 Million (+20.3% YoY) $456 Million – $457 Million<br>52.8% (Targeting >52% sustained) Targeting Adj. EBITDA breakeven Q4 FY26; GAAP loss Upsized $300 Million public offering (August 2026) Eli Lilly TuneLab AI partnership; Express Genes scale |
+| Stock Price | $14.88 – $14.93 |
+| Pre-Split Equivalent Price | ~$0.37 (Adjusted for 1-for-40 Reverse Split) |
+| Market Capitalization | ~$830 Million (Down from >$15 Billion peak) |
+| Cash & Liquid Assets | $302 Million (+ $87M restricted) (As of Q2 2026) |
+| Guided 2026 Full-Year Cash Burn | $125 Million – $150 Million |
+| Q2 2026 GAAP Net Loss | -$57.3 Million (Adjusted EBITDA loss -$36.3M) |
+| Corporate Restructuring | Divested Biosecurity (Apr 2026); automated lab pivot |
 
 ### The Business Model: Pure "Picks and Shovels"
 Twist Bioscience is **not an "AI drug dev play"** by any standard definition. 

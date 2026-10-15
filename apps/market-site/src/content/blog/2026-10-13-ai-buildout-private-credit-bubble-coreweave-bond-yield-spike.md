@@ -28,7 +28,16 @@ This report conducts an exhaustive, institutional forensic investigation into th
 
 | DIMENSION / FINANCIAL METRIC | INSTITUTIONAL AUDIT & REGULATORY REALITY |
 | :--- | :--- |
-| U.S. Private Credit Market Size Tech & Software Debt Exposure CoreWeave 2032 Bond Yield Apollo/Blackstone Anthropic SPV Hyperscaler 2026-2027 AI Capex BIS Risk Spread Discrepancy Structural Duration Mismatch Collateral Depreciation Profile Fund Liquidity Inflection Institutional Verdict | $2.4 Trillion (Exploded 25x from $96B in 2010 post-Dodd-Frank) >$1.0 Trillion (Grew 45x from $22B; ~42% of all direct loans) Spiked to 15.1% intraday / 14.5% close (~78.9¢ distressed mark $35 Billion (Single AI deal > entire Q2 PE direct lending $23B $870B in 2026; >$1.3 Trillion in 2027 (S&P Global Forecast) AI loans: +6.2% vs. Base; Non-AI: +6.1% (Only 10 bps spread!) 5-year debt backed by 3-year contracts; 25-yr bonds vs 4-yr le Nvidia H100/Blackwell GPUs suffer 80%+ economic decay in 36 mo Early 2026: Major private credit funds saw net outflows (1st) HIGH-RISK STRUCTURAL CRUNCH (Tactical Underweight / Short SPV) |
+| U.S. Private Credit Market Size | $2.4 Trillion (Exploded 25x from $96B in 2010 post-Dodd-Frank) |
+| Tech & Software Debt Exposure | >$1.0 Trillion (Grew 45x from $22B; ~42% of all direct loans) |
+| CoreWeave 2032 Bond Yield | Spiked to 15.1% intraday / 14.5% close (~78.9¢ distressed mark |
+| Apollo/Blackstone Anthropic SPV | $35 Billion (Single AI deal > entire Q2 PE direct lending $23B |
+| Hyperscaler 2026-2027 AI Capex | $870B in 2026; >$1.3 Trillion in 2027 (S&P Global Forecast) |
+| BIS Risk Spread Discrepancy | AI loans: +6.2% vs. Base; Non-AI: +6.1% (Only 10 bps spread!) |
+| Structural Duration Mismatch | 5-year debt backed by 3-year contracts; 25-yr bonds vs 4-yr le |
+| Collateral Depreciation Profile | Nvidia H100/Blackwell GPUs suffer 80%+ economic decay in 36 mo |
+| Fund Liquidity Inflection | Early 2026: Major private credit funds saw net outflows (1st) |
+| Institutional Verdict | HIGH-RISK STRUCTURAL CRUNCH (Tactical Underweight / Short SPV) |
 
 ---
 

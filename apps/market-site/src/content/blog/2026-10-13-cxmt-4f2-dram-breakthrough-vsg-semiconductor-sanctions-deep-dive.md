@@ -18,7 +18,16 @@ The catalyst was an explosive, unsubstantiated declaration made over the weekend
 
 | DIMENSION / METRIC | PRIMARY CLAIM VS. EMPIRICAL AUDIT |
 | :--- | :--- |
-| Core Claimed Breakthrough Target Commercial Product Incumbent Roadmaps (Samsung/Hynix Market Impact (Oct 13, 2026) US Export Control Ceiling Density Arbitrage Mechanism CXMT Capital Base Global DRAM Bit Share High-Bandwidth Memory (HBM) Share Forensic Diligence Verdict | 4F² cell layout using Vertical Surrounding Gate (VSG) DRAM Server-grade DDR5 RDIMM launched before end of 2026 4F² VCT / 3D DRAM targeted for 2028–2030 (IEDM presentations) Samsung -7.1%, SK Hynix -7.3%, Micron -4.0% BIS restrictions bar tools for DRAM half-pitch ≤18nm & EUV Vertical stacking decouples density from lateral EUV pitch Raised RMB 57.9B ($8.6B) in July 2026 IPO; peaked at >$520B cap CXMT rose from 4% (Q2 2025) to 10% (Q2 2026) [Counterpoint] ~0% (Big Three control ~100% of global AI HBM3e/HBM4 volume) SCENARIO A (55% Prob): Subsidized Domestic Pilot, Yield <25% |
+| Core Claimed Breakthrough | 4F² cell layout using Vertical Surrounding Gate (VSG) DRAM |
+| Target Commercial Product | Server-grade DDR5 RDIMM launched before end of 2026 |
+| Incumbent Roadmaps (Samsung/Hynix | 4F² VCT / 3D DRAM targeted for 2028–2030 (IEDM presentations) |
+| Market Impact (Oct 13, 2026) | Samsung -7.1%, SK Hynix -7.3%, Micron -4.0% |
+| US Export Control Ceiling | BIS restrictions bar tools for DRAM half-pitch ≤18nm & EUV |
+| Density Arbitrage Mechanism | Vertical stacking decouples density from lateral EUV pitch |
+| CXMT Capital Base | Raised RMB 57.9B ($8.6B) in July 2026 IPO; peaked at >$520B cap |
+| Global DRAM Bit Share | CXMT rose from 4% (Q2 2025) to 10% (Q2 2026) [Counterpoint] |
+| High-Bandwidth Memory (HBM) Share | ~0% (Big Three control ~100% of global AI HBM3e/HBM4 volume) |
+| Forensic Diligence Verdict | SCENARIO A (55% Prob): Subsidized Domestic Pilot, Yield <25% |
 
 If CXMT’s claim of commercial delivery is true, it represents an unprecedented event in modern semiconductor history: a heavily sanctioned Chinese fab, cut off from Western Extreme Ultraviolet (EUV) lithography and sub-18nm wafer equipment, would have beaten the entrenched global memory oligopoly—Samsung, SK Hynix, and Micron—to commercial 4F² production by roughly **two full years**.
 
@@ -162,7 +171,10 @@ This mathematical identity reveals the core strategic arbitrage:
 
 | CXMT 4F² PITCH (Vertical Design) | RESULTING CELL AREA (Physical Silicon) | INCUMBENT 6F² PITCH (Planar Equivalent) | REQUIRED EQUIPMENT & SANCTIONS STATUS |
 | :--- | :--- | :--- | :--- |
-| F = 22 nm F = 20 nm F = 18 nm (BIS) F = 16 nm | 1,936 nm² 1,600 nm² 1,296 nm² 1,024 nm² | F = 17.96 nm F = 16.33 nm (1z/1a) F = 14.70 nm (1a/1b) F = 13.06 nm (1b/1c) | Standard ArFi DUV (Unrestricted Standard ArFi DUV (Unrestricted ArFi Multi-Patterning (Limit) High-NA DUV / EUV-equivalent |
+| F = 22 nm | 1,936 nm² | F = 17.96 nm | Standard ArFi DUV (Unrestricted |
+| F = 20 nm | 1,600 nm² | F = 16.33 nm (1z/1a) | Standard ArFi DUV (Unrestricted |
+| F = 18 nm (BIS) | 1,296 nm² | F = 14.70 nm (1a/1b) | ArFi Multi-Patterning (Limit) |
+| F = 16 nm | 1,024 nm² | F = 13.06 nm (1b/1c) | High-NA DUV / EUV-equivalent |
 
 > [!IMPORTANT]
 > **The 3D NAND Parallel:**  

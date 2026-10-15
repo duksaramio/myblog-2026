@@ -27,6 +27,7 @@ alwaysApply: true
   - **NEVER** render tables, scorecards, causal matrices, or timelines inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which force dark Shiki `PLAINTEXT` horizontal scrollboxes.
   - Always escape literal pipe characters inside table cells (e.g., `P(Structure \| Sequence)`) as `\|`.
   - **Visible Table Grid Borders:** In shared UI styles (`packages/ui/src/styles/global.css` and `packages/ui/src/layouts/BlogPostLayout.astro`), always maintain explicit, high-contrast borders on `table` (`border-collapse: collapse; border: 1.5px solid rgba(0, 0, 0, 0.45)`), `th` (`border: 1px solid rgba(0, 0, 0, 0.35); border-bottom: 2px solid rgba(0, 0, 0, 0.5)`), and `td` (`border: 1px solid rgba(0, 0, 0, 0.3)`). Never use `var(--border-color)` for table borders because `:root { --border-color: rgba(0, 0, 0, 0.08); }` is nearly invisible against `#f5f4ef`.
+  - **Native Vector Chart Invariant (No ASCII Charts):** Never draw quantitative charts, decay curves, or bar plots using ASCII/Unicode characters inside fenced code blocks (` ``` `). Always render quantitative charts as responsive inline `<figure class="post-chart"><svg viewBox="...">...</svg><figcaption>...</figcaption></figure>` elements or `mermaid` diagrams across all three language versions.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 
