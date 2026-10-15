@@ -29,7 +29,7 @@ Ensure all posts are created simultaneously in all three languages:
   - Preserve multi-term mathematical derivations as standalone `$$ ... $$` display equations across all three language files (rendered via KaTeX in `BlogPostLayout.astro`).
   - **Never** wrap inline prose measurements, physical units, multipliers, or currency in `$ ... $` LaTeX (e.g., write `858 mm²`, `30 µm`, `13.5 nm`, `6-inch × 6-inch`, `250°C`, `4F²`, and `$30,000+` in native Unicode instead of `$858\text{ mm}^2$` or `$\$30,000+$`).
   - Never use LaTeX inside Markdown headings (`#`, `##`, `###`).
-  - Maintain structural comparison scorecards and probability distribution matrices in clean ASCII/Unicode across all language versions.
+  - **Native Markdown Table Invariant:** Format all tables, structural comparison scorecards, causal audit matrices, and probability distribution matrices as **native GFM Markdown tables (`| ... |`)** across all language versions. **NEVER** wrap tables, scorecards, or matrices inside fenced code blocks (` ``` `) or draw them with ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`). Always escape literal pipe characters inside table cells (e.g., conditional probabilities `P(A \| B)`) as `\|`.
   - Ensure domain-specific technical terminology parity across all three languages (e.g. English *Vertical Surrounding Gate (VSG)*, Korean *수직 서라운딩 게이트*, Chinese *垂直环绕栅极*).
 
 ### Frontmatter Schema

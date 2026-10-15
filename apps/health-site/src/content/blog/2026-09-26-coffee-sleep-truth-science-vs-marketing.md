@@ -40,24 +40,12 @@ Mainstream health journalists summarize this with breathless certainty: *Coffee 
 
 Except observational epidemiology cannot prove causation. When you examine the mechanics of these cohorts, three profound statistical distortions emerge.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                   THE THREE EPIDEMIOLOGICAL DISTORTIONS                │
-├─────────────────────────┬──────────────────────────────────────────────┤
-│ 1. Healthy User Bias    │ Coffee drinkers in modern cohorts skew       │
-│                         │ higher-income, more active, and have         │
-│                         │ superior healthcare access.                  │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 2. The "Sick Quitter"   │ People stop drinking coffee when diagnosed   │
-│    Effect               │ with arrhythmias, ulcers, GERD, or anxiety,  │
-│                         │ making the non-drinker group artificially    │
-│                         │ unhealthy.                                   │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 3. Relative vs.         │ A "15% reduction in mortality risk" sounds   │
-│    Absolute Risk        │ massive, but often translates to an absolute │
-│                         │ risk reduction of fractions of a percent.    │
-└─────────────────────────┴──────────────────────────────────────────────┘
-```
+**THE THREE EPIDEMIOLOGICAL DISTORTIONS**
+
+| 1. Healthy User Bias | Coffee drinkers in modern cohorts skew higher-income, more active, and have superior healthcare access. |
+| :--- | :--- |
+| 2. The "Sick Quitter" Effect | People stop drinking coffee when diagnosed with arrhythmias, ulcers, GERD, or anxiety, making the non-drinker group artificially unhealthy. |
+| 3. Relative vs. Absolute Risk | A "15% reduction in mortality risk" sounds massive, but often translates to an absolute risk reduction of fractions of a percent. |
 
 ### The "Sick Quitter" Bias (Reverse Causality)
 Who are the people in the "zero coffee" control groups? 
@@ -108,23 +96,13 @@ A brewed cup of coffee is a complex botanical broth containing more than **1,000
 * **Melanoidins:** Complex nitrogenous polymers formed during the Maillard roasting process that act as soluble prebiotics, feeding beneficial *Bifidobacterium* species in the gut microbiome.
 * **Magnesium & Potassium:** Essential intracellular minerals that support vascular tone and glycemic control.
 
-```
-       ┌────────────────────────────────────────────────────────┐
-       │                 WHAT'S IN A CUP OF COFFEE?             │
-       ├───────────────────────────┬────────────────────────────┤
-       │ Polyphenols & CGAs        │ Antioxidant, anti-inflam-  │
-       │ (~200–350 mg)             │ matory, insulin sensitizer │
-       ├───────────────────────────┼────────────────────────────┤
-       │ Trigonelline & Niacin     │ Neuroprotective, metabolic │
-       │ (~20–40 mg)               │ cofactor                   │
-       ├───────────────────────────┼────────────────────────────┤
-       │ Caffeine                  │ Central nervous system     │
-       │ (~80–180 mg)              │ stimulant, adenosine block │
-       ├───────────────────────────┼────────────────────────────┤
-       │ Diterpenes (Cafestol)     │ Potent LDL-raising lipids  │
-       │ (Unfiltered only)         │ (trapped by paper filters) │
-       └───────────────────────────┴────────────────────────────┘
-```
+**WHAT'S IN A CUP OF COFFEE?**
+
+| Polyphenols & CGAs (~200–350 mg) | Antioxidant, anti-inflammatory, insulin sensitizer |
+| :--- | :--- |
+| Trigonelline & Niacin (~20–40 mg) | Neuroprotective, metabolic cofactor |
+| Caffeine (~80–180 mg) | Central nervous system stimulant, adenosine block |
+| Diterpenes (Cafestol) (Unfiltered only) | Potent LDL-raising lipids (trapped by paper filters) |
 
 Now, consider the single most revealing fact in nutritional science regarding coffee:
 
@@ -143,15 +121,13 @@ Coffee beans contain fat-soluble diterpenes known as **cafestol** and **kahweol*
 
 The result? Circulating **LDL cholesterol (LDL-C) and Apolipoprotein B (ApoB)** rise significantly.
 
-```
-BREWING METHOD                 CAFESTOL PER CUP        LDL-C IMPACT
-────────────────────────────────────────────────────────────────────────
-French Press / Cafetière       6–8 mg                  Significant Increase
-Scandinavian Boiled / Turkish  8–12 mg                 Substantial Increase
-Espresso / Moka Pot            1–2 mg                  Moderate (Cumulative)
-Standard Paper Filter Drip     < 0.1 mg                Zero / Negligible
-Chemex / V60 / Kalita Wave     < 0.1 mg                Zero / Negligible
-```
+| BREWING METHOD | CAFESTOL PER CUP | LDL-C IMPACT |
+| :--- | :--- | :--- |
+| French Press / Cafetière | 6–8 mg | Significant Increase |
+| Scandinavian Boiled / Turkish | 8–12 mg | Substantial Increase |
+| Espresso / Moka Pot | 1–2 mg | Moderate (Cumulative) |
+| Standard Paper Filter Drip | < 0.1 mg | Zero / Negligible |
+| Chemex / V60 / Kalita Wave | < 0.1 mg | Zero / Negligible |
 
 If you drink unfiltered coffee (French press, Scandinavian boiled coffee, Turkish coffee, or excessive espresso), you are actively elevating your circulating atherogenic lipoproteins. Only **paper filters** contain the specific microscopic pore structure and lipophilic fibers required to trap cafestol and kahweol oils while allowing the water-soluble chlorogenic acids to pass through.
 
@@ -217,22 +193,14 @@ Subjective perception of sleep onset latency has almost zero correlation with ob
 2. **Total Sleep Time Reduction:** On average, caffeine intake decreases objective total sleep time by **35 to 45 minutes** per night.
 3. **Micro-Arousals & Sleep Fragmentation:** Caffeine increases stage N1 (very light, transition sleep) and elevates Wake After Sleep Onset (WASO) by an average of 12 minutes, causing micro-awakenings that the sleeper never consciously remembers.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│             WHAT CAFFEINE DOES TO YOUR SLEEP ARCHITECTURE              │
-│                 (Meta-Analysis of Polysomnography Data)                │
-├───────────────────────────────────┬────────────────────────────────────┤
-│ Total Sleep Time (TST)            │ Reduced by 35–45 minutes           │
-├───────────────────────────────────┼────────────────────────────────────┤
-│ Deep Sleep (Slow-Wave Sleep / N3) │ Reduced by 11.4 minutes (blunted)  │
-├───────────────────────────────────┼────────────────────────────────────┤
-│ Sleep Onset Latency (SOL)         │ Increased by 8–10 minutes          │
-├───────────────────────────────────┼────────────────────────────────────┤
-│ Wake After Sleep Onset (WASO)     │ Increased by ~12 minutes           │
-├───────────────────────────────────┼────────────────────────────────────┤
-│ Delta Power (Slow-Wave Activity)  │ Suppressed across early cycles     │
-└───────────────────────────────────┴────────────────────────────────────┘
-```
+**WHAT CAFFEINE DOES TO YOUR SLEEP ARCHITECTURE (Meta-Analysis of Polysomnography Data)**
+
+| Total Sleep Time (TST) | Reduced by 35–45 minutes |
+| :--- | :--- |
+| Deep Sleep (Slow-Wave Sleep / N3) | Reduced by 11.4 minutes (blunted) |
+| Sleep Onset Latency (SOL) | Increased by 8–10 minutes |
+| Wake After Sleep Onset (WASO) | Increased by ~12 minutes |
+| Delta Power (Slow-Wave Activity) | Suppressed across early cycles |
 
 Why does the loss of slow-wave sleep matter so profoundly?
 
@@ -250,12 +218,10 @@ There is a biological reason why your colleague can drink four coffees a day wit
 
 Your response to coffee is hardcoded in your DNA by two specific enzymes:
 
-```
-GENE           POLYMORPHISM        FUNCTION
-─────────────────────────────────────────────────────────────────────────
-CYP1A2         rs762551            Rate of caffeine breakdown in liver
-ADORA2A        rs5751876           Adenosine receptor sensitivity in brain
-```
+| GENE | POLYMORPHISM | FUNCTION |
+| :--- | :--- | :--- |
+| CYP1A2 | rs762551 | Rate of caffeine breakdown in liver |
+| ADORA2A | rs5751876 | Adenosine receptor sensitivity in brain |
 
 ### 1. CYP1A2: The Liver's Clearance Engine
 Approximately 95% of caffeine metabolism in the liver is executed by the cytochrome P450 enzyme **CYP1A2**. A common single nucleotide polymorphism (*rs762551*) dictates how rapidly this enzyme functions:
@@ -325,35 +291,13 @@ Once that receptor remodeling completes, the biological payoff is immense:
 
 To cut through the noise, let's look at the scientific consensus across every major health domain:
 
-```
-┌────────────────────────┬───────────────────────────────────────────────┐
-│ HEALTH DOMAIN          │ SCIENTIFIC REALITY VS. MEDIA HEADLINE         │
-├────────────────────────┼──────────────────────────────────────────────┤
-│ 1. All-Cause Mortality │ HEADLINE: "Coffee adds years to your life."   │
-│                        │ REALITY: Disproved by Mendelian Randomization │
-│                        │ studies. Driven by healthy user bias and the  │
-│                        │ "sick quitter" effect in observational data.  │
-├────────────────────────┼──────────────────────────────────────────────┤
-│ 2. Type 2 Diabetes     │ HEADLINE: "Caffeine prevents diabetes."       │
-│                        │ REALITY: Real effect, but driven by           │
-│                        │ chlorogenic acids and polyphenols, NOT        │
-│                        │ caffeine. Decaf works equally well.           │
-├────────────────────────┼──────────────────────────────────────────────┤
-│ 3. Liver Health        │ HEADLINE: "Coffee shields liver from disease."│
-│                        │ REALITY: Genuine hepatoprotective benefit.    │
-│                        │ Present in both regular and decaf coffee.     │
-├────────────────────────┼──────────────────────────────────────────────┤
-│ 4. Cardiovascular      │ HEADLINE: "Coffee strengthens your heart."    │
-│    Health              │ REALITY: Highly genotype-dependent (CYP1A2). │
-│                        │ Unfiltered coffee (cafestol) raises LDL-C.    │
-│                        │ Harmful for slow metabolizers.                │
-├────────────────────────┼──────────────────────────────────────────────┤
-│ 5. Sleep Architecture  │ HEADLINE: "One morning cup doesn't hurt."    │
-│                        │ REALITY: 10–14 hr quarter-life blunts N3 deep │
-│                        │ slow-wave sleep and suppresses delta waves,   │
-│                        │ even when you fall asleep easily.             │
-└────────────────────────┴──────────────────────────────────────────────┘
-```
+| HEALTH DOMAIN | SCIENTIFIC REALITY VS. MEDIA HEADLINE |
+| :--- | :--- |
+| 1. All-Cause Mortality | HEADLINE: "Coffee adds years to your life." REALITY: Disproved by Mendelian Randomization studies. Driven by healthy user bias and the "sick quitter" effect in observational data. |
+| 2. Type 2 Diabetes | HEADLINE: "Caffeine prevents diabetes." REALITY: Real effect, but driven by chlorogenic acids and polyphenols, NOT caffeine. Decaf works equally well. |
+| 3. Liver Health | HEADLINE: "Coffee shields liver from disease." REALITY: Genuine hepatoprotective benefit. Present in both regular and decaf coffee. |
+| 4. Cardiovascular Health | HEADLINE: "Coffee strengthens your heart." REALITY: Highly genotype-dependent (CYP1A2). Unfiltered coffee (cafestol) raises LDL-C. Harmful for slow metabolizers. |
+| 5. Sleep Architecture | HEADLINE: "One morning cup doesn't hurt." REALITY: 10–14 hr quarter-life blunts N3 deep slow-wave sleep and suppresses delta waves, even when you fall asleep easily. |
 
 ---
 

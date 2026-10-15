@@ -31,20 +31,11 @@ Caribou did not perish because cell therapy died. It perished because it was cau
 
 ---
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│              THE CELL THERAPY SQUEEZE: WHY EX-VIVO ALLOGENEIC GOT CRUSHED IN 2026                │
-├───────────────────────────────┬──────────────────────────────────┬───────────────────────────────┤
-│ THE AUTOLOGOUS FORTRESS       │ THE SQUEEZED MIDDLE (ALLOGENEIC) │ THE IN-VIVO REVOLUTION        │
-│ (Yescarta, Carvykti, Breyanzi)│ (Caribou, Allogene, Sana ex-vivo)│ (Kelonia, Capstan, Umoja)     │
-├───────────────────────────────┼──────────────────────────────────┼───────────────────────────────┤
-│ • Curative survival plateaus  │ • Durability cliff: donor cells  │ • Zero ex-vivo manufacturing  │
-│ • Vein-to-vein cut to 10-14d  │   cleared in 3-6 months          │ • No apheresis required       │
-│ • Established hospital infra  │ • Forced into HLA-matching       │ • No lymphodepletion chemo    │
-│ • Commercial reimbursement    │ • Toxic lymphodepletion needed   │ • Outpatient IV infusion      │
-│ • Big Pharma cash cows ($5B+) │ • Capital drought / Liquidations │ • $10B+ Pharma M&A (2024-2026)│
-└───────────────────────────────┴──────────────────────────────────┴───────────────────────────────┘
-```
+**THE CELL THERAPY SQUEEZE: WHY EX-VIVO ALLOGENEIC GOT CRUSHED IN 2026**
+
+| THE AUTOLOGOUS FORTRESS (Yescarta, Carvykti, Breyanzi) | THE SQUEEZED MIDDLE (ALLOGENEIC) (Caribou, Allogene, Sana ex-vivo) | THE IN-VIVO REVOLUTION (Kelonia, Capstan, Umoja) |
+| :--- | :--- | :--- |
+| • Curative survival plateaus<br>• Vein-to-vein cut to 10-14d<br>• Established hospital infra<br>• Commercial reimbursement<br>• Big Pharma cash cows ($5B+) | • Durability cliff: donor cells cleared in 3-6 months<br>• Forced into HLA-matching<br>• Toxic lymphodepletion needed<br>• Capital drought / Liquidations | • Zero ex-vivo manufacturing<br>• No apheresis required<br>• No lymphodepletion chemo<br>• Outpatient IV infusion<br>• $10B+ Pharma M&A (2024-2026) |
 
 ---
 
@@ -92,50 +83,27 @@ Instead of extracting, washing, culturing, and re-infusing cells through a \$500
 
 Specialized delivery vehicles target the patient’s own endogenous, circulating T cells *in situ*, engineering them inside the bloodstream and lymphoid organs into tumor-hunting CAR-T cells.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   EX-VIVO CELL THERAPY VS. IN-VIVO GENETIC REPROGRAMMING                         │
-├──────────────────────────────────────┬───────────────────────────────────────────────────────────┤
-│ EX-VIVO CELL THERAPY (Old Paradigm)  │ IN-VIVO CELL THERAPY (The New Frontier)                   │
-├──────────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ 1. Leukapheresis (Harvesting T-cells)│ 1. Direct Intravenous Infusion (Off-the-shelf vial)       │
-│ 2. Cold-chain transport to cleanroom │ 2. Targeted Delivery Vehicle enters systemic circulation  │
-│ 3. Viral transduction / CRISPR edit  │ 3. Selective binding to surface CD3/CD8/CD4/CD7 on T-cells│
-│ 4. 14-28 days of cell expansion     │ 4. Endosomal uptake & intracellular translation/expression│
-│ 5. Cryopreservation & QC release     │ 5. Native T-cells transform into active CAR-Ts IN VIVO    │
-│ 6. Toxic lymphodepletion (Flu/Cy)    │ 6. CAR-Ts expand and eradicate diseased cells in situ     │
-│ 7. Inpatient hospital infusion & ICU │ 7. NO lymphodepletion, NO apheresis, OUTPATIENT delivery  │
-└──────────────────────────────────────┴───────────────────────────────────────────────────────────┘
-```
+**EX-VIVO CELL THERAPY VS. IN-VIVO GENETIC REPROGRAMMING**
+
+| EX-VIVO CELL THERAPY (Old Paradigm) | IN-VIVO CELL THERAPY (The New Frontier) |
+| :--- | :--- |
+| 1. Leukapheresis (Harvesting T-cells)<br>2. Cold-chain transport to cleanroom<br>3. Viral transduction / CRISPR edit<br>4. 14-28 days of cell expansion<br>5. Cryopreservation & QC release<br>6. Toxic lymphodepletion (Flu/Cy)<br>7. Inpatient hospital infusion & ICU | 1. Direct Intravenous Infusion (Off-the-shelf vial)<br>2. Targeted Delivery Vehicle enters systemic circulation<br>3. Selective binding to surface CD3/CD8/CD4/CD7 on T-cells<br>4. Endosomal uptake & intracellular translation/expression<br>5. Native T-cells transform into active CAR-Ts IN VIVO<br>6. CAR-Ts expand and eradicate diseased cells in situ<br>7. NO lymphodepletion, NO apheresis, OUTPATIENT delivery |
 
 ### The Two Technological Pillars of In Vivo CAR-T
 
 In vivo cell therapy has bifurcated into two primary engineering approaches, each suited to distinct therapeutic indications:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                         IN VIVO CAR-T: THE TWO MAJOR DELIVERY ARCHITECTURES                      │
-├───────────────────────────────┬─────────────────────────────────┬────────────────────────────────┤
-│ Feature                       │ Targeted Lipid Nanoparticles    │ Targeted Engineered Viruses    │
-│                               │ (tLNP) + mRNA / circular RNA    │ (Targeted Lentivirus / iLenti) │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Leading Pioneers              │ Capstan Therapeutics (AbbVie),  │ Kelonia Therapeutics (Lilly),  │
-│                               │ Orna Therapeutics (Merck)       │ Umoja Biopharma (AbbVie)       │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Genetic Cargo                 │ mRNA or circular RNA (circRNA)  │ CAR transgene cDNA             │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Genomic Outcome               │ Non-integrating, transient      │ Stable proviral integration    │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ CAR Expression Duration       │ 48 to 120 hours (half-life)     │ Permanent (life of T-cell)     │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Repeat Dosing                 │ Yes (titratable, repeatable)    │ Limited by vector immunogenicity│
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Lymphodepletion Required?     │ NO                              │ NO                             │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Primary Indication Sweet-Spot │ Autoimmune Diseases             │ Refractory Hematologic Cancers │
-│                               │ (Lupus, RA, Scleroderma, MS)    │ (Multiple Myeloma, LBCL, CLL)  │
-└───────────────────────────────┴─────────────────────────────────┴────────────────────────────────┘
-```
+**IN VIVO CAR-T: THE TWO MAJOR DELIVERY ARCHITECTURES**
+
+| Feature | Targeted Lipid Nanoparticles (tLNP) + mRNA / circular RNA | Targeted Engineered Viruses (Targeted Lentivirus / iLenti) |
+| :--- | :--- | :--- |
+| Leading Pioneers | Capstan Therapeutics (AbbVie), Orna Therapeutics (Merck) | Kelonia Therapeutics (Lilly), Umoja Biopharma (AbbVie) |
+| Genetic Cargo | mRNA or circular RNA (circRNA) | CAR transgene cDNA |
+| Genomic Outcome | Non-integrating, transient | Stable proviral integration |
+| CAR Expression Duration | 48 to 120 hours (half-life) | Permanent (life of T-cell) |
+| Repeat Dosing | Yes (titratable, repeatable) | Limited by vector immunogenicity |
+| Lymphodepletion Required? | NO | NO |
+| Primary Indication Sweet-Spot | Autoimmune Diseases (Lupus, RA, Scleroderma, MS) | Refractory Hematologic Cancers (Multiple Myeloma, LBCL, CLL) |
 
 #### Architecture A: Targeted Lipid Nanoparticles (tLNPs) + mRNA
 Pioneered by **Capstan Therapeutics** (co-founded by CAR-T architect **Dr. Carl June** and mRNA Nobel laureate **Dr. Drew Weissman**):
@@ -171,32 +139,15 @@ When Dr. Rachel Haurwitz approached institutional life sciences investors to fin
 
 While allogeneic cell therapy companies were left to wither, Big Pharma orchestrated an aggressive, multi-billion-dollar acquisition sweep across the in-vivo cell therapy landscape between 2024 and 2026:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   THE IN-VIVO CELL THERAPY M&A AND PARTNERSHIP WAVE (2024–2026)                  │
-├───────────────┬──────────────────────────┬──────────────────────┬────────────────────────────────┤
-│ Acquirer /    │ Target / Partner         │ Transaction Value    │ Core Asset / Technological     │
-│ Pharma Giant  │ Company                  │ & Date               │ Platform Validated             │
-├───────────────┼──────────────────────────┼──────────────────────┼────────────────────────────────┤
-│ Eli Lilly     │ Kelonia Therapeutics     │ Up to $7.00 Billion  │ iGPS® targeted in-vivo lenti;  │
-│ ($LLY)        │                          │ ($3.25B Cash Upfront)│ KLN-1010 (anti-BCMA CAR-T);    │
-│               │                          │ (April 2026)         │ 100% ORR at ASCO 2026 w/o chemo│
-├───────────────┼──────────────────────────┼──────────────────────┼────────────────────────────────┤
-│ AbbVie        │ Capstan Therapeutics     │ Up to $2.10 Billion  │ CellSeeker™ tLNP mRNA platform;│
-│ ($ABBV)       │                          │ (August 2025)        │ CPTX2309 (anti-CD19 for lupus) │
-│               │                          │                      │ Carl June / Drew Weissman IP   │
-├───────────────┼──────────────────────────┼──────────────────────┼────────────────────────────────┤
-│ AbbVie        │ Umoja Biopharma          │ Up to $1.44 Billion  │ VivoVec™ in-situ lenti platform│
-│ ($ABBV)       │                          │ (January 2024)       │ UB-VV111 (anti-CD19);          │
-│               │                          │                      │ FDA Fast Track in Sept 2025    │
-├───────────────┼──────────────────────────┼──────────────────────┼────────────────────────────────┤
-│ Merck & Co.   │ Orna Therapeutics        │ Up to $3.50 Billion  │ Engineered circular RNA (oRNA) │
-│ ($MRK)        │                          │ (Bio-bucks & Equity) │ + immunotropic targeted LNPs   │
-├───────────────┼──────────────────────────┼──────────────────────┼────────────────────────────────┤
-│ Syndicated    │ Capstan Series B         │ $175 Million         │ Led by RA Capital; joined by   │
-│ Venture Group │ (Pre-Acquisition)        │ (March 2024)         │ J&J, BMS, Lilly, Bayer, Pfizer │
-└───────────────┴──────────────────────────┴──────────────────────┴────────────────────────────────┘
-```
+**THE IN-VIVO CELL THERAPY M&A AND PARTNERSHIP WAVE (2024–2026)**
+
+| Acquirer / Pharma Giant | Target / Partner Company | Transaction Value & Date | Core Asset / Technological Platform Validated |
+| :--- | :--- | :--- | :--- |
+| Eli Lilly ($LLY) | Kelonia Therapeutics | Up to $7.00 Billion ($3.25B Cash Upfront) (April 2026) | iGPS® targeted in-vivo lenti; KLN-1010 (anti-BCMA CAR-T); 100% ORR at ASCO 2026 w/o chemo |
+| AbbVie ($ABBV) | Capstan Therapeutics | Up to $2.10 Billion (August 2025) | CellSeeker™ tLNP mRNA platform; CPTX2309 (anti-CD19 for lupus) Carl June / Drew Weissman IP |
+| AbbVie ($ABBV) | Umoja Biopharma | Up to $1.44 Billion (January 2024) | VivoVec™ in-situ lenti platform UB-VV111 (anti-CD19); FDA Fast Track in Sept 2025 |
+| Merck & Co. ($MRK) | Orna Therapeutics | Up to $3.50 Billion (Bio-bucks & Equity) | Engineered circular RNA (oRNA) + immunotropic targeted LNPs |
+| Syndicated Venture Group | Capstan Series B (Pre-Acquisition) | $175 Million (March 2024) | Led by RA Capital; joined by J&J, BMS, Lilly, Bayer, Pfizer |
 
 ### 1. Eli Lilly’s \$7.0 Billion Bet on Kelonia Therapeutics (April 2026)
 In April 2026, **Eli Lilly** executed one of the largest private biotech acquisitions of the decade, paying **\$3.25 billion in upfront cash** and up to \$3.75 billion in milestones to acquire **Kelonia Therapeutics** ([PR Newswire announcement](https://www.prnewswire.com/news-releases/lilly-to-acquire-kelonia-therapeutics-to-advance-in-vivo-car-t-cell-therapies-302747122.html)).
@@ -220,40 +171,19 @@ In parallel, **Interius BioTherapeutics** advanced **INT2104**, an in-vivo targe
 
 To see why the capital markets abandoned Caribou, compare the operational, clinical, and financial profiles of the four major cellular immunotherapy architectures competing in 2026:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        COMPREHENSIVE MODALITY AUDIT: THE CELL THERAPY SPECTRUM IN 2026                                 │
-├──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────┬────────────────────────────┤
-│ Dimension            │ Autologous CAR-T     │ Ex-Vivo Allogeneic   │ In-Vivo Viral Vector │ In-Vivo mRNA-tLNP          │
-│                      │ (Yescarta/Carvykti)  │ (Caribou / Allogene) │ (Kelonia / Umoja)    │ (Capstan / AbbVie)         │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Starting Material    │ Patient Leukapheresis│ Healthy Donor Blood  │ Synthetic/Viral Vial │ Synthetic mRNA & Lipids    │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Vein-to-Vein Time    │ 10 to 14 Days        │ "Off-the-shelf"      │ Immediate (Outpatient│ Immediate (Outpatient      │
-│                      │                      │ (if HLA matched!)    │ IV Infusion)         │ IV Infusion)               │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Lymphodepletion      │ Mandatory            │ Mandatory & Harsh    │ NONE Required        │ NONE Required              │
-│ Chemotherapy?        │ (Flu / Cy)           │ (Flu/Cy or anti-CD52)│                      │                            │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Manufacturing Cost   │ $250,000 – $400,000  │ $60,000 – $100,000   │ $15,000 – $30,000    │ $1,500 – $5,000            │
-│ (COGS per dose)      │ (Batch of 1)         │ (Batch of 50-100)    │ (Bioreactor batches) │ (Vaccine-scale chemistry)  │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Biological           │ Permanent            │ Transient/Short      │ Permanent            │ Transient (48–120 hours)   │
-│ Persistence          │ (Years to Decades)   │ (Host Rejection in M)│ (Years, Memory T)    │ (Washout prevents aplasia) │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Repeat Dosing?       │ Difficult / Impract. │ Possible, but rapid  │ Limited by anti-     │ Highly Feasible            │
-│                      │                      │ antidonor antibodies │ vector antibodies    │ (Titratable like a drug)   │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Clinical Setting     │ Specialized Tertiary │ Specialized Tertiary │ Community Hospital / │ Community Outpatient       │
-│                      │ Academic Hospitals   │ Inpatient Units      │ Outpatient Infusion  │ Infusion Clinic            │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Therapeutic Target   │ High-Burden Liquid   │ High-Burden Liquid   │ Liquid & Solid       │ Massive Autoimmune TAM     │
-│ Sweet-Spot           │ Hematology           │ Hematology (Squeezed)│ Oncology             │ (Lupus, Scleroderma, RA)   │
-├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼────────────────────────────┤
-│ Commercial Verdict   │ Entrenched Moat,     │ DEAD END:            │ The Future of        │ The Future of              │
-│ in 2026              │ Big Pharma Cash Cow  │ Crushed in Middle    │ Cancer Immunotherapy │ Autoimmune Medicine        │
-└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────┴────────────────────────────┤
-```
+**COMPREHENSIVE MODALITY AUDIT: THE CELL THERAPY SPECTRUM IN 2026**
+
+| Dimension | Autologous CAR-T (Yescarta/Carvykti) | Ex-Vivo Allogeneic (Caribou / Allogene) | In-Vivo Viral Vector (Kelonia / Umoja) | In-Vivo mRNA-tLNP (Capstan / AbbVie) |
+| :--- | :--- | :--- | :--- | :--- |
+| Starting Material | Patient Leukapheresis | Healthy Donor Blood | Synthetic/Viral Vial | Synthetic mRNA & Lipids |
+| Vein-to-Vein Time | 10 to 14 Days | "Off-the-shelf" (if HLA matched!) | Immediate (Outpatient IV Infusion) | Immediate (Outpatient IV Infusion) |
+| Lymphodepletion Chemotherapy? | Mandatory (Flu / Cy) | Mandatory & Harsh (Flu/Cy or anti-CD52) | NONE Required | NONE Required |
+| Manufacturing Cost (COGS per dose) | $250,000 – $400,000 (Batch of 1) | $60,000 – $100,000 (Batch of 50-100) | $15,000 – $30,000 (Bioreactor batches) | $1,500 – $5,000 (Vaccine-scale chemistry) |
+| Biological Persistence | Permanent (Years to Decades) | Transient/Short (Host Rejection in M) | Permanent (Years, Memory T) | Transient (48–120 hours) (Washout prevents aplasia) |
+| Repeat Dosing? | Difficult / Impract. | Possible, but rapid antidonor antibodies | Limited by anti-vector antibodies | Highly Feasible (Titratable like a drug) |
+| Clinical Setting | Specialized Tertiary Academic Hospitals | Specialized Tertiary Inpatient Units | Community Hospital / Outpatient Infusion | Community Outpatient Infusion Clinic |
+| Therapeutic Target Sweet-Spot | High-Burden Liquid Hematology | High-Burden Liquid Hematology (Squeezed) | Liquid & Solid Oncology | Massive Autoimmune TAM (Lupus, Scleroderma, RA) |
+| Commercial Verdict in 2026 | Entrenched Moat, Big Pharma Cash Cow | DEAD END: Crushed in Middle | The Future of Cancer Immunotherapy | The Future of Autoimmune Medicine |
 
 ---
 
@@ -261,27 +191,13 @@ To see why the capital markets abandoned Caribou, compare the operational, clini
 
 As bullish as Wall Street and Big Pharma have become on in-vivo delivery, an honest biotechnology analyst must not fall victim to blind euphoria. In-vivo genetic programming faces four formidable biological bottlenecks that could still cause Phase 2/3 attrition:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   THE FOUR CRITICAL SCIENTIFIC HURDLES FACING IN-VIVO CAR-T                      │
-├───────────────────────────────┬──────────────────────────────────────────────────────────────────┤
-│ 1. THE HEPATIC SINK           │ Systemic LNPs naturally bind Apolipoprotein E (ApoE) and clear   │
-│    (Off-Target Tropism)       │ into liver hepatocytes. Imperfect targeting risks delivering     │
-│                               │ CARs to liver cells, triggering acute immune hepatitis.          │
-├───────────────────────────────┼──────────────────────────────────────────────────────────────────┤
-│ 2. THE LACK OF A KILL SWITCH  │ In permanent viral integration (Kelonia/Umoja), if a patient     │
-│    (In-Situ Hypertoxicity)    │ develops Grade 4 CRS or neurotoxicity, oncologists cannot purge  │
-│                               │ the expanding cells without engineered suicide genes (iCasp9).   │
-├───────────────────────────────┼──────────────────────────────────────────────────────────────────┤
-│ 3. VECTOR IMMUNOGENICITY      │ Patients develop neutralizing antibodies against viral envelopes │
-│    (Repeat Dosing Limits)     │ or anti-PEG antibodies against LNPs, preventing re-dosing if     │
-│                               │ tumor relapse occurs.                                            │
-├───────────────────────────────┼──────────────────────────────────────────────────────────────────┤
-│ 4. "SICK CELLS IN SICK BODIES"│ Traditional autologous manufacturing selects and rejuvenates fit │
-│    (T-Cell Exhaustion)        │ T-cell subsets ex-vivo. In vivo delivery transfects whatever    │
-│                               │ chemotherapy-exhausted T-cells happen to be circulating.         │
-└───────────────────────────────┴──────────────────────────────────────────────────────────────────┘
-```
+**THE FOUR CRITICAL SCIENTIFIC HURDLES FACING IN-VIVO CAR-T**
+
+| 1. THE HEPATIC SINK (Off-Target Tropism) | Systemic LNPs naturally bind Apolipoprotein E (ApoE) and clear into liver hepatocytes. Imperfect targeting risks delivering CARs to liver cells, triggering acute immune hepatitis. |
+| :--- | :--- |
+| 2. THE LACK OF A KILL SWITCH (In-Situ Hypertoxicity) | In permanent viral integration (Kelonia/Umoja), if a patient develops Grade 4 CRS or neurotoxicity, oncologists cannot purge the expanding cells without engineered suicide genes (iCasp9). |
+| 3. VECTOR IMMUNOGENICITY (Repeat Dosing Limits) | Patients develop neutralizing antibodies against viral envelopes or anti-PEG antibodies against LNPs, preventing re-dosing if tumor relapse occurs. |
+| 4. "SICK CELLS IN SICK BODIES" (T-Cell Exhaustion) | Traditional autologous manufacturing selects and rejuvenates fit T-cell subsets ex-vivo. In vivo delivery transfects whatever chemotherapy-exhausted T-cells happen to be circulating. |
 
 ### Hurdle 1: The Hepatic Sink & Off-Target Tropism
 The human body evolved the liver and spleen (the reticuloendothelial system) to clear foreign particulates from the blood. When lipid nanoparticles enter circulation, serum Apolipoprotein E (ApoE) adsorbs onto their surface, redirecting up to 70–90% of the dose directly into the Low-Density Lipoprotein (LDL) receptors of hepatocytes.
@@ -306,24 +222,11 @@ For seven years, Wall Street financed the allogeneic ex-vivo thesis on the premi
 
 As Dr. Rachel Haurwitz discovered when pitching Caribou’s Phase 3 design, **reality caught up with the bridge before companies could cross it.**
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                      THE EVOLUTIONARY TRAJECTORY OF GENETIC IMMUNOTHERAPY                        │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 2017–2023: THE FIRST GENERATION (Autologous Ex-Vivo)                                             │
-│ Proof of concept that cellular reprogramming cures terminal cancers. Hampered by vein-to-vein    │
-│ delays, massive cleanroom supply chains, and $400k+ price tags.                                  │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 2020–2026: THE BRIDGE THAT FAILED (Allogeneic Ex-Vivo)                                           │
-│ Attempted to solve turnaround times using healthy donor banks. Defeated by host immune rejection │
-│ (the durability cliff), HLA-matching constraints, and harsh lymphodepletion requirements.        │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 2026+: THE ENDGAME (In-Vivo Direct Genetic Reprogramming)                                        │
-│ Direct IV infusion of targeted mRNA-tLNPs or viral vectors. Eradicates cleanrooms, eliminates   │
-│ lymphodepletion, converts cell therapy into an outpatient biologic, and unlocks the $100B+      │
-│ autoimmune disease market.                                                                       │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
+| THE EVOLUTIONARY TRAJECTORY OF GENETIC IMMUNOTHERAPY |
+| :--- |
+| 2017–2023: THE FIRST GENERATION (Autologous Ex-Vivo) Proof of concept that cellular reprogramming cures terminal cancers. Hampered by vein-to-vein delays, massive cleanroom supply chains, and $400k+ price tags. |
+| 2020–2026: THE BRIDGE THAT FAILED (Allogeneic Ex-Vivo) Attempted to solve turnaround times using healthy donor banks. Defeated by host immune rejection (the durability cliff), HLA-matching constraints, and harsh lymphodepletion requirements. |
+| 2026+: THE ENDGAME (In-Vivo Direct Genetic Reprogramming) Direct IV infusion of targeted mRNA-tLNPs or viral vectors. Eradicates cleanrooms, eliminates lymphodepletion, converts cell therapy into an outpatient biologic, and unlocks the $100B+ autoimmune disease market. |
 
 ### The Institutional Investor Playbook
 

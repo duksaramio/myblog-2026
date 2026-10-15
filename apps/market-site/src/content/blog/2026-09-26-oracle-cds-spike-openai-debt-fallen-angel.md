@@ -35,19 +35,16 @@ To grasp the magnitude of the chart, one must understand how Credit Default Swap
 
 A Credit Default Swap is an over-the-counter financial derivative that functions as insurance against a corporate or sovereign default. A spread of **230 basis points (bps)** means that an institutional bondholder must pay **$230,000 annually to insure $10 million of Oracle debt** against default over a 5-year horizon (2.30% per annum).
 
-```
-                  5-YEAR CREDIT SPREAD COMPARISON (SEPTEMBER 2026)
------------------------------------------------------------------------------------------
-Asset / Issuer                           5Y CDS Spread    Credit Rating (S&P / Moody's)
------------------------------------------------------------------------------------------
-Microsoft Corp. (MSFT)                   ~18 bps          AAA / Aaa
-Alphabet Inc. (GOOGL)                    ~22 bps          AA+ / Aa2
-Markit CDX NA Investment Grade Index     55 bps           Investment Grade Composite
-U.S. High-Yield "BB" Crossover Index     ~210 - 240 bps   High Yield / Speculative
-ORACLE CORP. (ORCL)                      230 bps          BBB- / Baa3 (Negative Outlook)
-Republic of Turkey (Sovereign)           245 bps          B / B1 (Speculative Sovereign)
------------------------------------------------------------------------------------------
-```
+**5-YEAR CREDIT SPREAD COMPARISON (SEPTEMBER 2026)**
+
+| Asset / Issuer | 5Y CDS Spread | Credit Rating (S&P / Moody's) |
+| :--- | :--- | :--- |
+| Microsoft Corp. (MSFT) | ~18 bps | AAA / Aaa |
+| Alphabet Inc. (GOOGL) | ~22 bps | AA+ / Aa2 |
+| Markit CDX NA Investment Grade Index | 55 bps | Investment Grade Composite |
+| U.S. High-Yield "BB" Crossover Index | ~210 - 240 bps | High Yield / Speculative |
+| ORACLE CORP. (ORCL) | 230 bps | BBB- / Baa3 (Negative Outlook) |
+| Republic of Turkey (Sovereign) | 245 bps | B / B1 (Speculative Sovereign) |
 
 ### The Three Alarming Divergences
 
@@ -99,17 +96,14 @@ This transition is not merely a change in letters; it triggers an institutional 
 * **The Scale of the Dump:**
   As of fiscal Q1 2027 (ended August 31, 2026), Oracle carries approximately **$125.3 billion in total balance-sheet debt** ($117.7 billion in long-term notes and $7.6 billion in current maturities), with some adjusted lease-inclusive metrics reaching **$143.5 billion**.
 
-```
-                HISTORICAL FALLEN ANGEL COMPARISON BY DEBT VOLUME
------------------------------------------------------------------------------------------
-Company                 Year Downgraded to Junk    Estimated Debt Downgraded
------------------------------------------------------------------------------------------
-General Motors (GM)     2005                       ~$30 Billion
-Occidental Petroleum    2020                       ~$35 Billion
-Ford Motor Company      2020                       ~$36 - $78 Billion
-ORACLE CORP. (POTENTIAL) 2026 / 2027               ~$125+ BILLION (Record Breaking)
------------------------------------------------------------------------------------------
-```
+**HISTORICAL FALLEN ANGEL COMPARISON BY DEBT VOLUME**
+
+| Company | Year Downgraded to Junk | Estimated Debt Downgraded |
+| :--- | :--- | :--- |
+| General Motors (GM) | 2005 | ~$30 Billion |
+| Occidental Petroleum | 2020 | ~$35 Billion |
+| Ford Motor Company | 2020 | ~$36 - $78 Billion |
+| ORACLE CORP. (POTENTIAL) | 2026 / 2027 | ~$125+ BILLION (Record Breaking) |
 
 If S&P or Moody's cuts Oracle by just **one notch** to BB+, Oracle would instantly become **the single largest Fallen Angel in world economic history**.
 

@@ -27,34 +27,17 @@ In this deep forensic investigation, we cross-examine May's pitch across six ins
 
 ---
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        ZURA BIO ($ZURA) FORENSIC DILIGENCE SCORECARD: PITCH VS. REALITY                │
-├───────────────────────────────┬──────────────────────────────────┬─────────────────────────────────────┤
-│ Dimension / Clinical Thesis   │ Adam May Bull Thesis Narrative   │ Forensic Biopharma Reality          │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Valuation & Enterprise Value  │ ~$500M Cap / ~$294M EV; priced   │ Cash ~$175M at Q3; burn ~$29M/qtr;  │
-│                               │ for complete failure in HS       │ Dilution guaranteed on positive data│
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ IL-17F Contribution to HS     │ "Red herring"; IL-17AA affinity  │ Ignores Mass Action: IL-17F tissue  │
-│                               │ is >100x stronger than FF        │ concentration is 30x-100x > IL-17A  │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Moonlake ($MLTX) P3 Failure   │ Over-potent FF binding acted as  │ Nanobody PK + high placebo rate     │
-│                               │ a "drug sink" diverting from AA  │ (21.6% in VELA-2) drove miss        │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ BAFF Synergy in HS            │ Orthogonal B-cell clearance adds │ Novartis abandoned ianalumab in HS  │
-│                               │ 5-10% HiSCR75 delta over Bimzelx │ after P2 failed efficacy thresholds │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Systemic Sclerosis Proof      │ Japanese Brodalumab P3 (-21.2)   │ Application withdrawn in 2024;      │
-│                               │ proves IL-17 works in SSc        │ 24W crossover ruined 52W control    │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ PMR Market Expansion          │ Emerging $10B TAM replacing      │ Generic prednisone taper ($15) is   │
-│                               │ toxic chronic steroids           │ stubborn; Kevzara growth is blended │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Downside Risk Protection      │ Cushioned by cash (~$1.40/sh)    │ HS fail leaves high-risk SSc; stock │
-│                               │ and SSc Phase 2 readout in 1H27  │ faces -50% to -65% immediate drop   │
-└───────────────────────────────┴──────────────────────────────────┴─────────────────────────────────────┘
-```
+**ZURA BIO ($ZURA) FORENSIC DILIGENCE SCORECARD: PITCH VS. REALITY**
+
+| Dimension / Clinical Thesis | Adam May Bull Thesis Narrative | Forensic Biopharma Reality |
+| :--- | :--- | :--- |
+| Valuation & Enterprise Value | ~$500M Cap / ~$294M EV; priced for complete failure in HS | Cash ~$175M at Q3; burn ~$29M/qtr; Dilution guaranteed on positive data |
+| IL-17F Contribution to HS | "Red herring"; IL-17AA affinity is >100x stronger than FF | Ignores Mass Action: IL-17F tissue concentration is 30x-100x > IL-17A |
+| Moonlake ($MLTX) P3 Failure | Over-potent FF binding acted as a "drug sink" diverting from AA | Nanobody PK + high placebo rate (21.6% in VELA-2) drove miss |
+| BAFF Synergy in HS | Orthogonal B-cell clearance adds 5-10% HiSCR75 delta over Bimzelx | Novartis abandoned ianalumab in HS after P2 failed efficacy thresholds |
+| Systemic Sclerosis Proof | Japanese Brodalumab P3 (-21.2) proves IL-17 works in SSc | Application withdrawn in 2024; 24W crossover ruined 52W control |
+| PMR Market Expansion | Emerging $10B TAM replacing toxic chronic steroids | Generic prednisone taper ($15) is stubborn; Kevzara growth is blended |
+| Downside Risk Protection | Cushioned by cash (~$1.40/sh) and SSc Phase 2 readout in 1H27 | HS fail leaves high-risk SSc; stock faces -50% to -65% immediate drop |
 
 ---
 
@@ -104,21 +87,13 @@ As disclosed in Zura's SEC filings (Note 8, Commitments and Contingencies):
 
 Zura Bio's entire corporate valuation rests on tibulizumab across three active clinical indications:
 
-```
-                                  TIBULIZUMAB DEVELOPMENT PIPELINE
-    
-     Indication                   Phase / Trial ID           Sample Size (n)   Primary Catalyst
-    ─────────────────────────────────────────────────────────────────────────────────────────────
-     Hidradenitis Suppurativa     Phase 2 TibuSHIELD         n = 247 pts       Q4 2026 (Nov)
-     (HS)                         (NCT06993610)              (Over-enrolled)   AN Count / HiSCR
-    ─────────────────────────────────────────────────────────────────────────────────────────────
-     Systemic Sclerosis           Phase 2 TibuSURE           n = 80 pts        1H 2027 (May)
-     (SSc)                        (NCT06843239)              (Active, enrolled)mRSS at 24 Weeks
-    ─────────────────────────────────────────────────────────────────────────────────────────────
-     Polymyalgia Rheumatica       Phase 2 Initiation         n ~ 120 pts       2H 2027 / 2028
-     (PMR)                        (Q4 2026 Start)            (Planned)         Sustained Remission
-    ─────────────────────────────────────────────────────────────────────────────────────────────
-```
+**TIBULIZUMAB DEVELOPMENT PIPELINE**
+
+| Indication | Phase / Trial ID | Sample Size (n) | Primary Catalyst |
+| :--- | :--- | :--- | :--- |
+| Hidradenitis Suppurativa (HS) | Phase 2 TibuSHIELD (NCT06993610) | n = 247 pts (Over-enrolled) | Q4 2026 (Nov) AN Count / HiSCR |
+| Systemic Sclerosis (SSc) | Phase 2 TibuSURE (NCT06843239) | n = 80 pts (Active, enrolled)mRSS at 24 Weeks | 1H 2027 (May) |
+| Polymyalgia Rheumatica (PMR) | Phase 2 Initiation (Q4 2026 Start) | n ~ 120 pts (Planned) | 2H 2027 / 2028 Sustained Remission |
 
 ### Phase 2 TibuSHIELD (NCT06993610) Architecture
 According to the [ClinicalTrials.gov registry for NCT06993610](https://clinicaltrials.gov/study/NCT06993610):
@@ -362,34 +337,15 @@ To evaluate the asymmetry of ZURA going into the mid-November 2026 readout, we c
 1. **Avalo Therapeutics ($AVTX):** In May 2026, AVTX read out Phase 2 HS data for abdakibart (an anti-IL-1β mAb), reporting a **17.3% HiSCR75 delta** (300 mg Q4W). Despite being a me-too behind AbbVie's lutikizumab and showing efficacy inferior to Bimzelx, AVTX stock doubled, and the company completed a **$430M equity offering at a $1.1B valuation**.
 2. **Moonlake Therapeutics ($MLTX):** In its Phase 2 HS readout, Sonelokimab delivered a **24.4% HiSCR75 delta**, propelling Moonlake from a $1.5B valuation to a sustained **$3.0B–$4.0B market capitalization**.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        ZURA BIO ($ZURA) PHASE 2 READOUT SCENARIO MATRIX                               │
-├───────────────────────┬──────────────────┬─────────────────┬────────────────────┬──────────────────────┤
-│ Outcome Scenario      │ Clinical Metric  │ Projected Stock │ Implied Diluted    │ Strategic Rationale  │
-│                       │ (HiSCR75 Delta)  │ Price Target    │ Market Cap / EV    │ & Downside/Upside    │
-├───────────────────────┼──────────────────┼─────────────────┼────────────────────┼──────────────────────┤
-│ Scenario A:           │ HiSCR75 Delta    │ $18.00 - $24.00 │ $2.5B - $3.2B Cap  │ Dual-mechanism       │
-│ Best-in-Disease Blue  │ >= 24%           │ (+350% to +500%)│ $2.3B - $3.0B EV   │ validated; beats     │
-│ Sky (Bime + BAFF)     │ (Clean safety)   │ (Post-Offering) │                    │ Bimzelx; multi-block.│
-├───────────────────────┼──────────────────┼─────────────────┼────────────────────┼──────────────────────┤
-│ Scenario B:           │ HiSCR75 Delta    │ $9.00 - $12.00  │ $1.3B - $1.7B Cap  │ Parity with Bimzelx; │
-│ Strong Success        │ 20% - 23%        │ (+125% to +200%)│ $1.1B - $1.5B EV   │ validates IL-17A high│
-│ (Bimzelx Parity)      │ (Low candida)    │ (Post-Offering) │                    │ dose; $150M offering │
-├───────────────────────┼──────────────────┼─────────────────┼────────────────────┼──────────────────────┤
-│ Scenario C:           │ HiSCR75 Delta    │ $5.50 - $7.00   │ $750M - $950M Cap  │ Matches AVTX comp;   │
-│ Moderate Win          │ 15% - 19%        │ (+38% to +75%)  │ $575M - $775M EV   │ commercial viability │
-│ (AVTX / Humira Tier)  │                  │                 │                    │ questioned vs Bime   │
-├───────────────────────┼──────────────────┼─────────────────┼────────────────────┼──────────────────────┤
-│ Scenario D:           │ HiSCR75 Delta    │ $1.80 - $2.20   │ $225M - $275M Cap  │ HS asset dead;       │
-│ Placebo Miss / Weak   │ < 12%            │ (-45% to -55%)  │ ~$50M - $100M EV   │ valuation falls to   │
-│ (Cosentyx Tier)       │ (or p >= 0.05)   │                 │                    │ cash + SSc optional  │
-├───────────────────────┼──────────────────┼─────────────────┼────────────────────┼──────────────────────┤
-│ Scenario E:           │ Miss on all arms │ $1.20 - $1.40   │ $150M - $175M Cap  │ Complete corporate   │
-│ Total Failure /       │ OR Severe Safety │ (-65% to -70%)  │ $0 EV (Cash Floor) │ collapse; cash       │
-│ Infection Signal      │ (Infections/SAEs)│                 │                    │ liquidation value    │
-└───────────────────────┴──────────────────┴─────────────────┴────────────────────┴──────────────────────┘
-```
+**ZURA BIO ($ZURA) PHASE 2 READOUT SCENARIO MATRIX**
+
+| Outcome Scenario | Clinical Metric (HiSCR75 Delta) | Projected Stock Price Target | Implied Diluted Market Cap / EV | Strategic Rationale & Downside/Upside |
+| :--- | :--- | :--- | :--- | :--- |
+| Scenario A: Best-in-Disease Blue Sky (Bime + BAFF) | HiSCR75 Delta >= 24% (Clean safety) | $18.00 - $24.00 (+350% to +500%) (Post-Offering) | $2.5B - $3.2B Cap $2.3B - $3.0B EV | Dual-mechanism validated; beats Bimzelx; multi-block. |
+| Scenario B: Strong Success (Bimzelx Parity) | HiSCR75 Delta 20% - 23% (Low candida) | $9.00 - $12.00 (+125% to +200%) (Post-Offering) | $1.3B - $1.7B Cap $1.1B - $1.5B EV | Parity with Bimzelx; validates IL-17A high dose; $150M offering |
+| Scenario C: Moderate Win (AVTX / Humira Tier) | HiSCR75 Delta 15% - 19% | $5.50 - $7.00 (+38% to +75%) | $750M - $950M Cap $575M - $775M EV | Matches AVTX comp; commercial viability questioned vs Bime |
+| Scenario D: Placebo Miss / Weak (Cosentyx Tier) | HiSCR75 Delta < 12% (or p >= 0.05) | $1.80 - $2.20 (-45% to -55%) | $225M - $275M Cap ~$50M - $100M EV | HS asset dead; valuation falls to cash + SSc optional |
+| Scenario E: Total Failure / Infection Signal | Miss on all arms OR Severe Safety (Infections/SAEs) | $1.20 - $1.40 (-65% to -70%) | $150M - $175M Cap $0 EV (Cash Floor) | Complete corporate collapse; cash liquidation value |
 
 ---
 

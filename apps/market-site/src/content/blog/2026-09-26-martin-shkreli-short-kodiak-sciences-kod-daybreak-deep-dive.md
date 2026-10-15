@@ -33,25 +33,14 @@ We conducted a forensic investigation into Kodiak Sciences, auditing:
 
 Shkreli’s 48-word post dismantles Kodiak's investment thesis into four precise arguments:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                 MARTIN SHKRELI'S KOD SHORT THESIS BREAKDOWN                 │
-├───────────────────────┬─────────────────────────────────────────────────────┤
-│ Core Claim            │ Underlying Thesis Mechanism                         │
-├───────────────────────┼─────────────────────────────────────────────────────┤
-│ 1. Proven Inferiority │ Tarcocimab failed non-inferiority in DAZZLE         │
-│                       │ (+1.0 letters vs. +7.0 for Eylea).                  │
-├───────────────────────┼─────────────────────────────────────────────────────┤
-│ 2. The "3rd Trial"    │ Shuffling trial designs cannot fix fundamentally    │
-│    Fallacy            │ sub-therapeutic vitreal/retinal PK/PD concentrations.│
-├───────────────────────┼─────────────────────────────────────────────────────┤
-│ 3. Wasted Pipeline    │ KSI-501 (bispecific) shares the same ABC biopolymer │
-│    Efforts            │ liabilities; DR trials beat sham, not standard care.│
-├───────────────────────┼─────────────────────────────────────────────────────┤
-│ 4. Acute Cash Burn    │ $125.9M cash vs. $65.6M quarterly loss = terminal   │
-│    & Dilution Cliff   │ dilution or insolvency ahead.                       │
-└───────────────────────┴─────────────────────────────────────────────────────┘
-```
+**MARTIN SHKRELI'S KOD SHORT THESIS BREAKDOWN**
+
+| Core Claim | Underlying Thesis Mechanism |
+| :--- | :--- |
+| 1. Proven Inferiority | Tarcocimab failed non-inferiority in DAZZLE (+1.0 letters vs. +7.0 for Eylea). |
+| 2. The "3rd Trial" Fallacy | Shuffling trial designs cannot fix fundamentally sub-therapeutic vitreal/retinal PK/PD concentrations. |
+| 3. Wasted Pipeline Efforts | KSI-501 (bispecific) shares the same ABC biopolymer liabilities; DR trials beat sham, not standard care. |
+| 4. Acute Cash Burn & Dilution Cliff | $125.9M cash vs. $65.6M quarterly loss = terminal dilution or insolvency ahead. |
 
 Let us evaluate each claim against empirical data, clinical trial registries, SEC filings, and retinal pharmacology.
 
@@ -97,29 +86,14 @@ However, in biology, there is no free lunch:
 
 Shkreli's assertion that *"tarco is proven inferior to Eylea... no amt of repeated trials (this is 3rd) will show tarco is any different"* directly references the painful clinical trial history of tarcocimab tedromer.
 
-```
-                    SUMMARY OF PIVOTAL TARCOCIMAB TRIALS
-┌──────────┬──────────┬─────────────┬─────────────────────┬──────────────────┐
-│ Trial    │ Disease  │ Dosing      │ Primary Visual      │ Outcome & Market │
-│ Name     │ Target   │ Regimen     │ Acuity Result (BCVA)│ Reaction         │
-├──────────┼──────────┼─────────────┼─────────────────────┼──────────────────┤
-│ DAZZLE   │ wet AMD  │ Extended    │ Tarco: +1.0 letters │ FAILED non-infer-│
-│ (2022)   │ (Naïve)  │ Q12W-Q20W   │ Eylea: +7.0 letters │ iority (-6.0 gap)│
-│          │          │ vs. Eylea Q8│ Gap: -6.0 letters   │ Stock dropped 80%│
-├──────────┼──────────┼─────────────┼─────────────────────┼──────────────────┤
-│ GLEAM /  │ DME      │ Extended    │ Failed Non-Inferior │ FAILED endpoints;│
-│ GLIMMER  │ (Diabetic│ Q8W-Q24W    │ Cataract AE: ~19%   │ ~19% cataracts;  │
-│ (2023)   │ Edema)   │ vs. Eylea Q8│ vs. 9% in Eylea     │ Dropped to ~$2   │
-├──────────┼──────────┼─────────────┼─────────────────────┼──────────────────┤
-│ DAYLIGHT │ wet AMD  │ Rigid Q4W   │ Tarco: +7.1 letters │ PASSED, but Q4W  │
-│ (2023)   │ (Naïve)  │ (Monthly)   │ Eylea: +6.7 letters │ monthly dosing   │
-│          │          │ vs. Eylea Q8│ Non-inferiority met │ is DOA in market │
-├──────────┼──────────┼─────────────┼─────────────────────┼──────────────────┤
-│ DAYBREAK │ wet AMD  │ Q4W-Q24W    │ Scheduled for       │ BINARY CATALYST  │
-│ (Sep 28, │ (Naïve)  │ vs. Eylea 2mg│ Monday, Sept 28,    │ CURRENT STOCK:   │
-│ 2026)    │          │             │ 2026 (8:30 AM ET)   │ $32.35           │
-└──────────┴──────────┴─────────────┴─────────────────────┴──────────────────┘
-```
+**SUMMARY OF PIVOTAL TARCOCIMAB TRIALS**
+
+| Trial Name | Disease Target | Dosing Regimen | Primary Visual Acuity Result (BCVA) | Outcome & Market Reaction |
+| :--- | :--- | :--- | :--- | :--- |
+| DAZZLE (2022) | wet AMD (Naïve) | Extended Q12W-Q20W vs. Eylea Q8 | Tarco: +1.0 letters Eylea: +7.0 letters Gap: -6.0 letters | FAILED non-inferiority (-6.0 gap) Stock dropped 80% |
+| GLEAM / GLIMMER (2023) | DME (Diabetic Edema) | Extended Q8W-Q24W vs. Eylea Q8 | Failed Non-Inferior Cataract AE: ~19% vs. 9% in Eylea | FAILED endpoints; ~19% cataracts; Dropped to ~$2 |
+| DAYLIGHT (2023) | wet AMD (Naïve) | Rigid Q4W (Monthly) vs. Eylea Q8 | Tarco: +7.1 letters Eylea: +6.7 letters Non-inferiority met | PASSED, but Q4W monthly dosing is DOA in market |
+| DAYBREAK (Sep 28, 2026) | wet AMD (Naïve) | Q4W-Q24W vs. Eylea 2mg | Scheduled for Monday, Sept 28, 2026 (8:30 AM ET) | BINARY CATALYST CURRENT STOCK: $32.35 |
 
 ### The DAZZLE Debacle (February 2022)
 In the Phase 2b/3 DAZZLE trial in treatment-naïve wet AMD:
@@ -177,28 +151,14 @@ Shkreli’s argument is rooted in fundamental pharmacokinetics:
 
 Even if DAYBREAK manages to achieve statistical non-inferiority on Monday, Kodiak faces an insurmountable commercial reality in 2026:
 
-```
-                  WET AMD COMPETITIVE MATRIX (2026)
-┌───────────────────────┬──────────────────────┬──────────────────────────────┐
-│ Therapy               │ Durability / Dosing  │ Competitive Moat / Status    │
-├───────────────────────┼──────────────────────┼──────────────────────────────┤
-│ Vabysmo (faricimab)   │ Up to Q16W           │ Market leader. Dual VEGF/    │
-│ Roche / Genentech     │                      │ Ang-2 provides unmatched     │
-│                       │                      │ anatomical fluid drying.     │
-├───────────────────────┼──────────────────────┼──────────────────────────────┤
-│ Eylea HD (8 mg)       │ Q12W - Q16W          │ 4x molar aflibercept dose.   │
-│ Regeneron / Bayer     │                      │ Zero polymer safety risks;   │
-│                       │                      │ gold-standard physician trust│
-├───────────────────────┼──────────────────────┼──────────────────────────────┤
-│ Aflibercept           │ Q8W                  │ 50-70% discounted price.     │
-│ Biosimilars (Yesafili)│                      │ Payer-mandated step therapy; │
-│                       │                      │ crushes pricing power.       │
-├───────────────────────┼──────────────────────┼──────────────────────────────┤
-│ Tarcocimab Tedromer   │ Purported Q12W-Q24W  │ Failed DAZZLE (-6.0 letters);│
-│ (Kodiak Sciences)     │ (Historical +1.0 ltr)│ Cataract safety history;     │
-│                       │                      │ Zero commercial footprint.   │
-└───────────────────────┴──────────────────────┴──────────────────────────────┘
-```
+**WET AMD COMPETITIVE MATRIX (2026)**
+
+| Therapy | Durability / Dosing | Competitive Moat / Status |
+| :--- | :--- | :--- |
+| Vabysmo (faricimab) Roche / Genentech | Up to Q16W | Market leader. Dual VEGF/ Ang-2 provides unmatched anatomical fluid drying. |
+| Eylea HD (8 mg) Regeneron / Bayer | Q12W - Q16W | 4x molar aflibercept dose. Zero polymer safety risks; gold-standard physician trust |
+| Aflibercept Biosimilars (Yesafili) | Q8W | 50-70% discounted price. Payer-mandated step therapy; crushes pricing power. |
+| Tarcocimab Tedromer (Kodiak Sciences) | Purported Q12W-Q24W (Historical +1.0 ltr) | Failed DAZZLE (-6.0 letters); Cataract safety history; Zero commercial footprint. |
 
 1. **Vabysmo's Dominance:** Roche’s faricimab (targeting both VEGF-A and Angiopoietin-2) has established itself as the modern standard, offering up to 4-month durability while drying retinal fluid faster than legacy Eylea.
 2. **Eylea HD Neutralizes the Durability Advantage:** Regeneron successfully solved its own durability challenge with high-dose aflibercept 8 mg (Eylea HD), which achieves 12-to-16-week dosing without synthetic polymers.
@@ -211,20 +171,11 @@ Even if DAYBREAK manages to achieve statistical non-inferiority on Monday, Kodia
 
 Shkreli's fourth claim—*"near no cash, KOD should plummet"*—is mathematically substantiated by Kodiak’s SEC Form 10-Q filed on August 13, 2026.
 
-```
-               KODIAK SCIENCES FINANCIAL RUNWAY AUDIT
-┌───────────────────────────────────────────────┬─────────────────────────────┐
-│ Financial Metric                              │ Value (Q2 2026 / June 30)   │
-├───────────────────────────────────────────────┼─────────────────────────────┤
-│ Cash, Cash Equivalents & Marketable Securities│ $125.9 Million              │
-│ Q2 2026 GAAP Net Loss                         │ -$65.6 Million              │
-│ Q2 2026 R&D Operating Expense                 │ $56.1 Million               │
-│ Trailing 6-Month Operating Cash Burn          │ ~$110 Million               │
-│ Estimated Current Quarterly Burn Rate         │ ~$50 - $65 Million          │
-│ Implied Cash Runway                           │ ~2.0 to 2.5 Quarters        │
-│ Implied Solvency Horizon                      │ Q1 / Q2 2027                │
-└───────────────────────────────────────────────┴─────────────────────────────┘
-```
+**KODIAK SCIENCES FINANCIAL RUNWAY AUDIT**
+
+| Financial Metric | Value (Q2 2026 / June 30) |
+| :--- | :--- |
+| Cash, Cash Equivalents & Marketable Securities Q2 2026 GAAP Net Loss Q2 2026 R&D Operating Expense Trailing 6-Month Operating Cash Burn Estimated Current Quarterly Burn Rate Implied Cash Runway Implied Solvency Horizon | $125.9 Million<br>-$65.6 Million $56.1 Million ~$110 Million ~$50 - $65 Million ~2.0 to 2.5 Quarters Q1 / Q2 2027 |
 
 ### The Inevitable Dilution Trap
 At a quarterly burn rate exceeding **$55–$65 million**, Kodiak's **$125.9 million** balance sheet gives the company roughly **6 months of runway**.

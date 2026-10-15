@@ -21,6 +21,10 @@
   - Always use **native Unicode** for inline physical units, dimensions, multipliers, temperatures, and currency in headings, tables, and body prose (e.g., `858 mm²`, `30 µm`, `13.5 nm`, `6-inch × 6-inch`, `250°C`, `4F²`, `$30,000+`).
   - **NEVER wrap simple units, numbers, or currency in inline LaTeX** (such as `$858\text{ mm}^2$`, `$30\,\mu\text{m}$`, or `$\$30,000+$`). CommonMark strips backslashes in `\$` and `\%`, and LaTeX in headings breaks TOC anchor slugs and RSS feeds.
   - Reserve LaTeX (`$$ ... $$` standalone display blocks) strictly for multi-term mathematical equations and formal derivations.
+- **Native Markdown Table Invariant:**
+  - Always format tables, comparison scorecards, causal matrices, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all three language versions (`blog`, `blog_ko`, `blog_zh`).
+  - **NEVER** put tables, scorecards, or matrices inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which render as dark `PLAINTEXT` code blocks with horizontal scrollbars.
+  - Always escape literal pipe characters inside table cells (such as conditional probabilities `P(A \| B)`) as `\|`.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 

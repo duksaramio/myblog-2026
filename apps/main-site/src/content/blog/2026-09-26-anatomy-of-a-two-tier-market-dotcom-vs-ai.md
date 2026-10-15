@@ -133,17 +133,14 @@ When hyperscalers are compelled to underwrite 20-year nuclear restarts and small
 
 Are valuations as crazy as 1999? The answer is nuanced:
 
-```
-Valuation Metric Comparison
------------------------------------------------------------------
-Metric                     Dot-Com Peak (1999-2000)   Current (2026)
------------------------------------------------------------------
-Shiller CAPE (S&P 500)     44.2 (Dec 1999)            ~40.6
-Top-10 Median Forward P/E  ~30x – 35x                 ~32x – 38x
-Headline Leader P/E        Cisco >150x                Nvidia ~30x – 35x
-Tech Sector Unprofitable % >35% of listed tech        <15% of top tiers
------------------------------------------------------------------
-```
+**Valuation Metric Comparison**
+
+| Metric | Dot-Com Peak (1999-2000) | Current (2026) |
+| :--- | :--- | :--- |
+| Shiller CAPE (S&P 500) | 44.2 (Dec 1999) | ~40.6 |
+| Top-10 Median Forward P/E | ~30x – 35x | ~32x – 38x |
+| Headline Leader P/E | Cisco >150x | Nvidia ~30x – 35x |
+| Tech Sector Unprofitable % | >35% of listed tech | <15% of top tiers |
 
 - **Shiller CAPE Ratio:** The cyclically adjusted P/E ratio for the S&P 500 sits at **~40.6**, higher than the 1929 peak (~32.6) and second only to the all-time record of **44.2** reached in December 1999.
 - **Torsten Slok’s Median Metric:** As Apollo Global Management Chief Economist Torsten Slok demonstrated, if you look at the **median forward P/E of the top 10 companies**, today’s market is actually *more expensive* than the median of the top 10 in 1999. In 2000, the average was skewed by insane outliers like Cisco (150x+) and Yahoo, but several large-cap leaders (like Exxon, GE, Wal-Mart) traded at lower multiples. Today, premium multiples are ubiquitous across the entire leadership cohort.

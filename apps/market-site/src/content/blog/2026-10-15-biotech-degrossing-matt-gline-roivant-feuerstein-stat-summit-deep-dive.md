@@ -55,39 +55,13 @@ To evaluate whether Matt Gline’s `#STATSummit` eruption was justified—or mer
 
 Few companies in biotechnology have ever executed a cleaner six-week operational run than Roivant Sciences did in late summer 2026:
 
-```
-====================================================================================================
-ROIVANT SCIENCES ($ROIV): THE 48-DAY FUNDAMENTAL vs. MARKET MICROSTRUCTURE DISCONNECT (AUG–OCT 2026)
-====================================================================================================
-
-  [Aug 27, 2026]                  [Aug 28, 2026]                  [Sep 8–9, 2026]
-  FDA Approves LISRAYA™           Immediate U.S. Launch           Pulmovant Phase 2 PHocus Readout
-  (brepocitinib 30mg oral QD)     WAC: $35,000 / 30-ct bottle     Mosliciguat in PH-ILD (ERS 2026):
-  First-ever oral targeted drug   ($420,000 annualized WAC)       • -56.3% PVR vs PBO (p < 0.0001)
-  for Adult Dermatomyositis       Phase 3 VALOR (N=241):          • +35.2m 6MWD Wk 16 (p = 0.0027)
-  (Pre-approval close: $37.58)    55% vs 30% steroid-free TIS     • +52.7m 6MWD Wk 24 (p = 0.0003)
-               |                               |                               |
-               v                               v                               v
-      +-----------------+             +-----------------+             +-----------------+
-      |  $ROIV: $37.58  | ----------> |  $ROIV: $34.71  | ----------> |  $ROIV: $42.50  |
-      |  (Aug 27 Close) |   -7.64%    |  (Aug 28 Close) |   +22.44%   |  (Sep 8 High)   |
-      +-----------------+  Sell-Off!  +-----------------+   Re-Rating +-----------------+
-                                                                               |
-   +---------------------------------------------------------------------------+
-   |  [Sep 10 – Oct 14, 2026: THE POD-SHOP DEGROSSING LIQUIDATION CASCADE]
-   |  • Zero negative clinical or regulatory developments at Roivant
-   |  • $MRNA surges +66.9% ($135.61 -> $226.30), blowing up hedge fund short books
-   |  • 10-Yr Treasury Yield (^TNX) spikes to 5.31% (Sep 30)
-   |  • Pods dump liquid crowded longs ($ROIV, $ARGX, $INSM, $IMVT) to meet VaR limits
-   v
-  +---------------------------------------------------------------------------------------------+
-  |  [Oct 14, 2026 — #STATSummit Interview Day]                                                 |
-  |  • $ROIV Intraday Low: $33.00 (-22.35% from Sep 8 high; -12.19% BELOW pre-approval close!)  |
-  |  • $ROIV Close: $33.62 (-10.54% below Aug 27 pre-approval close of $37.58)                  |
-  |  • $IMVT (Immunovant subsidiary): Plunges -39.50% from Aug 19 peak ($45.42 -> $27.48)       |
-  +---------------------------------------------------------------------------------------------+
-====================================================================================================
-```
+| Date / Window (2026) | Fundamental Clinical / Regulatory Catalyst | `$ROIV` Price Action & Microstructure Reality |
+| :--- | :--- | :--- |
+| **Aug 27, 2026** | **FDA Approves LISRAYA™** (`brepocitinib` 30 mg oral QD) — First-ever oral targeted drug approved for Adult Dermatomyositis (`Phase 3 VALOR`, `N=241`: `55%` vs. `30%` steroid-free TIS response) | **Pre-Approval Close: `$37.58`** |
+| **Aug 28, 2026** | **Immediate U.S. Commercial Launch** — Wholesale Acquisition Cost (WAC) set at `$35,000` / 30-count bottle (**`$420,000` annualized WAC**) | **`$ROIV` closes at `$34.71` (`-7.64%` Launch-Day Sell-Off!)** |
+| **Sep 8–9, 2026** | **Pulmovant Phase 2 PHocus Readout** (`mosliciguat` in PH-ILD at ERS 2026):<br>• **`-56.3%` PVR vs. PBO** (`p < 0.0001`)<br>• **`+35.2 m` 6MWD at Wk 16** (`p = 0.0027`)<br>• **`+52.7 m` 6MWD at Wk 24** (`p = 0.0003`) | **`$ROIV` hits `$42.50` All-Time High (`+22.44%` Re-Rating from Aug 28)** |
+| **Sep 10 – Oct 14, 2026** | **The Pod-Shop Degrossing Liquidation Cascade:**<br>• **Zero** negative clinical or regulatory developments at Roivant (`IMVT-1402` CLE PoC win & CS Phase 3 initiated)<br>• **`$MRNA` surges `+66.9%`** (`$135.61 → $226.30`), blowing up hedge fund short books<br>• **10-Yr Treasury Yield (`^TNX`)** spikes to **`5.31%`** (Sep 30) | Pods dump liquid crowded longs (`$ROIV`, `$ARGX`, `$INSM`, `$IMVT`) to meet automated VaR and drawdown limits |
+| **Oct 14, 2026** *(STAT Summit Interview Day)* | Matt Gline confronts Wall Street degrossing on stage with Adam Feuerstein | • **`$ROIV` Intraday Low: `$33.00`** (**`-22.35%`** from Sep 8 high; **`-12.19%` BELOW pre-approval close!**)<br>• **`$ROIV` Close: `$33.62`** (`-10.54%` below Aug 27 pre-approval close of `$37.58`)<br>• **`$IMVT` (Immunovant):** Plunges **`-39.50%`** from Aug 19 peak (`$45.42 → $27.48`) |
 
 ### Milestone 1: FDA Approval and Launch of LISRAYA™ (Brepocitinib) in Dermatomyositis (August 27–28, 2026)
 
@@ -239,37 +213,12 @@ A rigorous Browne & Keeley evaluation forbids accepting a single protagonist’s
 
 We test all four structural hypotheses in our **4-Way Causal Association Matrix**:
 
-```
-+---------------------------------------------------------------------------------------------------+
-|                   4-WAY CAUSAL AUDIT OF THE FALL 2026 BIOTECH SELL-OFF                            |
-+---------------------------------------------------------------------------------------------------+
-|                                                                                                   |
-|  [1. DIRECT CAUSE: Pod-Shop Degrossing]           [2. REVERSE / ISSUER CAUSE: Supply Indigestion] |
-|  • $MRNA (+667% YTD) short squeeze blows up       • Issuers immediately monetize every clinical   |
-|    long-short books & triggers VaR haircuts.        rally with massive equity dilution ($VKTX     |
-|  • Pods dump liquid winners ($ROIV, $ARGX,          $500M, Imix $125M) + 23 IPOs in 2026 at       |
-|    $INSM, $CLDX) to shrink gross leverage.          record average deal sizes, draining cash.     |
-|                      |                                           |                                |
-|                      +-------------------+   +-------------------+                                |
-|                                          |   |                                                    |
-|                                          v   v                                                    |
-|              +-----------------------------------------------------------+                        |
-|              |   OBSERVED PHENOMENON (AUG 25 – OCT 14, 2026):            |                        |
-|              |   • Core SMID/Large-Cap Therapeutics down -22% to -42%    |                        |
-|              |   • Positive Ph2/Ph3 Data & FDA Approvals Sold Off        |                        |
-|              +-----------------------------------------------------------+                        |
-|                                          ^   ^                                                    |
-|                      +-------------------+   +-------------------+                                |
-|                      |                                           |                                |
-|  [3. THIRD VARIABLE: Macro Rates & Clinical/BD]   [4. REFLEXIVE FEEDBACK LOOP: Microstructure]    |
-|  • 10Y Treasury Yield (^TNX) surges +115 bps      • When FDA approvals ($ROIV) & Ph3 wins ($CLDX) |
-|    (4.16% -> 5.31%), crushing long-duration DCF.    get dumped, generalist investors flee;        |
-|  • 3 Major CV Ph3 Misses (Novartis Lp(a),         • Lower generalist participation increases      |
-|    Ionis/AZ ATTR-CM, Novo IL-6 ZEUS).               pod-shop share of daily volume (>65%),        |
-|  • Q3 M&A drops -29% (31 -> 22 deals) & ~30%        making post-catalyst fade algorithms          |
-|    of Pharma licensing shifts to China assets.      entirely self-fulfilling.                    |
-+---------------------------------------------------------------------------------------------------+
-```
+| Causal Dimension (Observed Aug 25 – Oct 14, 2026: Core Therapeutics `-22%` to `-42%` & Positive Clinical Data Sold Off) | Structural Mechanism & Empirical Evidence |
+| :--- | :--- |
+| **1. Direct Cause: Pod-Shop Degrossing (~45% Weight)** | • **`$MRNA` (`+667%` YTD) short squeeze** blows up long-short books and triggers automated VaR/drawdown haircuts.<br>• Pods dump liquid fundamental winners (`$ROIV`, `$ARGX`, `$INSM`, `$CLDX`) to mechanically shrink gross leverage. |
+| **2. Reverse / Issuer Cause: Supply Indigestion (~20% Weight)** | • Issuers immediately monetize every clinical rally with massive equity dilution (`$VKTX` `$500M`, Imix `$125M`) alongside **23 biotech IPOs in 2026** at record average deal sizes, draining specialist dry powder. |
+| **3. Third Variable: Macro Rates & Clinical/BD Headwinds (~25% Weight)** | • **10Y Treasury Yield (`^TNX`)** surges `+115 bps` (`4.16% → 5.31%`), compressing long-duration DCF valuations.<br>• **3 Major CV Phase 3 Misses:** Novartis `Lp(a)` (`pelacarsen`), Ionis/AZ `ATTR-CM` (`eplontersen`), Novo Nordisk `IL-6 ZEUS` (`ziltivekimab`).<br>• **Q3 M&A drops `-29%`** (`31 → 22` deals) & **`~30%` of Big Pharma licensing upfronts** shift to private China biotech assets. |
+| **4. Reflexive Feedback Loop: Microstructure Cannibalization (~10% Weight)** | • When FDA approvals (`$ROIV`) and Phase 3 wins (`$CLDX`) get dumped, long-only generalist investors flee.<br>• Lower generalist participation increases pod-shop share of daily volume (`>65%`), making post-catalyst fade algorithms self-fulfilling. |
 
 ### 1. Direct Cause: The Pod-Shop & Long-Short Degrossing Cascade (Weight: ~45%)
 The primary driver of the acute September–October liquidation in `$ROIV`, `$ARGX`, `$INSM`, and `$CLDX` is mechanical degrossing. As documented by BioCentury senior editors Stephen Hansen and Selina Koch on *BioCentury This Week* (`"Biotech markets: Pause before the storm?"`, October 2026) and corroborated by Adam Feuerstein’s Wall Street sources, multi-manager pods and specialist hedge funds entered September at peak gross leverage with heavy short exposure to `$MRNA` and early-stage platform names. When `$MRNA` rallied another `+66.9%` in five weeks (`$135.61` to `$226.30`), automated risk gates forced portfolio managers to slash gross exposure across their highest-liquidity long winners.

@@ -31,29 +31,14 @@ In investing, being wrong is part of the craft; refusing to conduct a ruthless, 
 
 To understand the wreckage of the short position, let us directly compare Shkreli's four foundational claims against the audited topline results of DAYBREAK:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    DAYBREAK TRIAL AUDIT: CLAIMS VS. CLINICAL REALITY                    │
-├───────────────────────┬──────────────────────────────┬──────────────────────────────────┤
-│ Shkreli's Core Thesis │ The Bear Hypothesis          │ DAYBREAK Topline Outcome (Sep 28)│
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ 1. "Tarco is proven   │ Tarcocimab is permanently    │ REFUTED. Zenkuda achieved non-   │
-│    inferior to Eylea" │ impaired; will show visual   │ inferiority (p = 0.0007). Strong │
-│                       │ deficit vs. Eylea control.   │ clinical immediacy matching Eylea│
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ 2. "3rd Trial Fallacy:│ Protocol tweaks cannot fix   │ REFUTED. 4 loading doses + OCT   │
-│    No trial will show │ underlying biopolymer        │ "treat-to-dryness" achieved 54%  │
-│    any difference"    │ diffusion physics.           │ patients at Q24W (6-month) dosing│
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ 3. "Rest of co efforts│ Bispecific KSI-501 is dead   │ REFUTED. Tabirafusp-ted hit BCVA │
-│    are waste"         │ weight; polymer shares same  │ (p=0.0036) & anatomy (p<0.0001); │
-│                       │ toxicities & liabilities.    │ 0% cataracts, 0.4% IOI.          │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ 4. "Near no cash, KOD │ $125.9M cash vs $65M burn    │ REFUTED (Reflexivity). Market cap│
-│    should plummet"    │ means bankruptcy or terminal │ surged to ~$4.5B; cost of capital│
-│                       │ dilution in 6 months.        │ collapsed; BLA filing in Q4 2026.│
-└───────────────────────┴──────────────────────────────┴──────────────────────────────────┘
-```
+**DAYBREAK TRIAL AUDIT: CLAIMS VS. CLINICAL REALITY**
+
+| Shkreli's Core Thesis | The Bear Hypothesis | DAYBREAK Topline Outcome (Sep 28) |
+| :--- | :--- | :--- |
+| 1. "Tarco is proven inferior to Eylea" | Tarcocimab is permanently impaired; will show visual deficit vs. Eylea control. | REFUTED. Zenkuda achieved non-inferiority (p = 0.0007). Strong clinical immediacy matching Eylea |
+| 2. "3rd Trial Fallacy: No trial will show any difference" | Protocol tweaks cannot fix underlying biopolymer diffusion physics. | REFUTED. 4 loading doses + OCT "treat-to-dryness" achieved 54% patients at Q24W (6-month) dosing |
+| 3. "Rest of co efforts are waste" | Bispecific KSI-501 is dead weight; polymer shares same toxicities & liabilities. | REFUTED. Tabirafusp-ted hit BCVA (p=0.0036) & anatomy (p<0.0001); 0% cataracts, 0.4% IOI. |
+| 4. "Near no cash, KOD should plummet" | $125.9M cash vs $65M burn means bankruptcy or terminal dilution in 6 months. | REFUTED (Reflexivity). Market cap surged to ~$4.5B; cost of capital collapsed; BLA filing in Q4 2026. |
 
 Shkreli batted 0 for 4. Every single pillar of the bearish thesis collapsed simultaneously under empirical testing.
 
@@ -138,28 +123,15 @@ A low cash balance creates fatal downside *if and only if* the science fails. Us
 
 While the market fixated on the loud, emotionally resonant narrative of past failures, the data contained profound positive signals that pointed toward DAYBREAK’s success.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                     THE 5 REAL SIGNALS HIDDEN IN PLAIN SIGHT                            │
-├───────────────────────┬─────────────────────────────────────────────────────────────────┤
-│ Real Signal           │ Clinical Mechanism & Predictive Power                           │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 1. 4 Loading Doses    │ Reached steady-state ocular saturation before interval extension│
-│    (Depot Kinetics)   │ eliminated the Week 12 trough deficit that sank DAZZLE.         │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 2. "Treat-to-Dryness" │ Proactive OCT fluid triggers prevented irreversible neurosensory│
-│    Algorithm          │ damage, catching recurrences before visual acuity decayed.      │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 3. GLOW 1 & 2 Proof   │ Diabetic retinopathy trials proved the biopolymer safely stayed │
-│    of Concept         │ active and regressed vascular lesions for extended durations.   │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 4. CMC Purification   │ Systematic resolution of free-polymer aggregate impurities      │
-│    Overhaul           │ cleared the cataract signal down to 0.5%.                       │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 5. Short Crowding     │ Extreme borrow fees, >25% short interest, and unanimous bearish │
-│    Asymmetry          │ consensus created a textbook infinite-upside short squeeze trap.│
-└───────────────────────┴─────────────────────────────────────────────────────────────────┘
-```
+**THE 5 REAL SIGNALS HIDDEN IN PLAIN SIGHT**
+
+| Real Signal | Clinical Mechanism & Predictive Power |
+| :--- | :--- |
+| 1. 4 Loading Doses (Depot Kinetics) | Reached steady-state ocular saturation before interval extension eliminated the Week 12 trough deficit that sank DAZZLE. |
+| 2. "Treat-to-Dryness" Algorithm | Proactive OCT fluid triggers prevented irreversible neurosensory damage, catching recurrences before visual acuity decayed. |
+| 3. GLOW 1 & 2 Proof of Concept | Diabetic retinopathy trials proved the biopolymer safely stayed active and regressed vascular lesions for extended durations. |
+| 4. CMC Purification Overhaul | Systematic resolution of free-polymer aggregate impurities cleared the cataract signal down to 0.5%. |
+| 5. Short Crowding Asymmetry | Extreme borrow fees, >25% short interest, and unanimous bearish consensus created a textbook infinite-upside short squeeze trap. |
 
 ### Signal #1: The 4th Loading Dose Solved the Retinal PK Equation
 In DAYBREAK, Kodiak made a seemingly modest adjustment: patients received **four monthly loading injections (Weeks 0, 4, 8, and 12)** instead of the three doses used in DAZZLE.
@@ -196,24 +168,15 @@ In our pre-catalyst analysis, we argued that even if DAYBREAK passed, tarcocimab
 
 With 54% of patients achieving 6-month durability, that thesis must be completely rewritten.
 
-```
-                    2026 ANTI-VEGF RETINAL LANDSCAPE
-┌──────────────────────┬────────────────┬────────────────────────┬─────────────────────────┐
-│ Drug (Company)       │ Target         │ Maximum Durability     │ Key Differentiator      │
-├──────────────────────┼────────────────┼────────────────────────┼─────────────────────────┤
-│ Eylea (aflibercept)  │ VEGF-A, PlGF   │ Q8W (8 weeks)          │ Biosimilarized; low cost│
-├──────────────────────┼────────────────┼────────────────────────┼─────────────────────────┤
-│ Vabysmo (faricimab)  │ VEGF-A, Ang-2  │ Up to Q16W (16 weeks)  │ Dual pathway; fluid dry │
-├──────────────────────┼────────────────┼────────────────────────┼─────────────────────────┤
-│ Eylea HD (8 mg)      │ VEGF-A, PlGF   │ Up to Q16W (16 weeks)  │ High molar dose; safe   │
-├──────────────────────┼────────────────┼────────────────────────┼─────────────────────────┤
-│ Zenkuda (tarcocimab) │ VEGF-A (ABC)   │ Up to Q24W (24 weeks)  │ 54% of patients at      │
-│ Kodiak Sciences      │                │ 6-MONTH INTERVALS      │ TWICE-A-YEAR DOSING     │
-├──────────────────────┼────────────────┼────────────────────────┼─────────────────────────┤
-│ Tabirafusp-ted       │ VEGF-A, IL-6   │ Q8W - Q16W             │ Targets inflammation;   │
-│ (KSI-501) Kodiak     │ Bispecific ABC │ (Ongoing Phase 3)      │ p < 0.0001 anatomy      │
-└──────────────────────┴────────────────┴────────────────────────┴─────────────────────────┘
-```
+**2026 ANTI-VEGF RETINAL LANDSCAPE**
+
+| Drug (Company) | Target | Maximum Durability | Key Differentiator |
+| :--- | :--- | :--- | :--- |
+| Eylea (aflibercept) | VEGF-A, PlGF | Q8W (8 weeks) | Biosimilarized; low cost |
+| Vabysmo (faricimab) | VEGF-A, Ang-2 | Up to Q16W (16 weeks) | Dual pathway; fluid dry |
+| Eylea HD (8 mg) | VEGF-A, PlGF | Up to Q16W (16 weeks) | High molar dose; safe |
+| Zenkuda (tarcocimab) Kodiak Sciences | VEGF-A (ABC) | Up to Q24W (24 weeks) 6-MONTH INTERVALS | 54% of patients at TWICE-A-YEAR DOSING |
+| Tabirafusp-ted (KSI-501) Kodiak | VEGF-A, IL-6 Bispecific ABC | Q8W - Q16W (Ongoing Phase 3) | Targets inflammation; p < 0.0001 anatomy |
 
 ### The Power of the "Twice-a-Year" Paradigm
 The Holy Grail of retinal ophthalmology has always been the **biannual injection**. 
@@ -268,30 +231,15 @@ It sounded definitive. It felt intellectually superior to the "retail bulls." Bu
 
 To institutionalize the lessons of DAYBREAK, we have codified five diagnostic questions to evaluate any future binary biotech catalyst:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    THE BIOTECH BINARY CATALYST CHECKLIST                                │
-├──────────────────────────┬──────────────────────────────────────────────────────────────┤
-│ Diagnostic Question      │ Analytical Rule of Thumb                                     │
-├──────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ 1. Molecule Failure or   │ If a drug failed previously, was it due to lack of binding   │
-│    Protocol Failure?     │ activity or an inadequate dosing/loading regimen? (DAYLIGHT  │
-│                          │ proved activity; DAYBREAK fixed loading).                    │
-├──────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ 2. Has the Safety Defect │ Was the historical adverse event intrinsic to the biology or │
-│    Been Isolated to CMC? │ an artifact of formulation, lot purity, or injection method? │
-├──────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ 3. Is the Pipeline Asset │ Never evaluate a flagship readout in a vacuum. If a second   │
-│    a "Free Call Option"? │ asset (KSI-501) shares the trial, the market may reprice     │
-│                          │ an entire platform overnight.                                │
-├──────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ 4. Is Reflexivity Being  │ Never use pre-catalyst cash runway as proof that a trial     │
-│    Ignored?              │ will fail. Good clinical data generates its own capital.     │
-├──────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ 5. Are You Shorting a    │ Never short a binary catalyst directly with unlimited risk.  │
-│    Crowded Consensus?    │ If you must bet against a trial, use defined-risk options.   │
-└──────────────────────────┴──────────────────────────────────────────────────────────────┘
-```
+**THE BIOTECH BINARY CATALYST CHECKLIST**
+
+| Diagnostic Question | Analytical Rule of Thumb |
+| :--- | :--- |
+| 1. Molecule Failure or Protocol Failure? | If a drug failed previously, was it due to lack of binding activity or an inadequate dosing/loading regimen? (DAYLIGHT proved activity; DAYBREAK fixed loading). |
+| 2. Has the Safety Defect Been Isolated to CMC? | Was the historical adverse event intrinsic to the biology or an artifact of formulation, lot purity, or injection method? |
+| 3. Is the Pipeline Asset a "Free Call Option"? | Never evaluate a flagship readout in a vacuum. If a second asset (KSI-501) shares the trial, the market may reprice an entire platform overnight. |
+| 4. Is Reflexivity Being Ignored? | Never use pre-catalyst cash runway as proof that a trial will fail. Good clinical data generates its own capital. |
+| 5. Are You Shorting a Crowded Consensus? | Never short a binary catalyst directly with unlimited risk. If you must bet against a trial, use defined-risk options. |
 
 ---
 

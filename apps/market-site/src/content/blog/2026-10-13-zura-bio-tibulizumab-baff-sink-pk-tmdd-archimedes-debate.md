@@ -12,29 +12,14 @@ Following dermatologist and biotech investor **Dr. Adam May's (@A_May_MD)** 448-
 
 Biopharma forensic analyst **Archimedes (@Archimedes20311)** and structural immunologist **Jing Liang (@AppleHelix)** directly challenged the foundational pharmacokinetic (PK) and biophysical assumptions underpinning May’s multi-billion-dollar thesis.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        THE BIOTECH X FORENSIC CLASH AT A GLANCE                        │
-├─────────────────────────┬──────────────────────────────────┬───────────────────────────┤
-│ Core Scientific Vector  │ Dr. Adam May's Thesis            │ Archimedes & Jing Liang   │
-├─────────────────────────┼──────────────────────────────────┼───────────────────────────┤
-│ IL-17A Binding Affinity │ "Potent inhibitor matching or    │ Empirically 4.4x to 5x    │
-│ vs. Bimzelx             │ exceeding standard blockers;     │ worse potency than        │
-│                         │ IL-17F is a red herring sink"    │ Bimekizumab (14pM vs 3.2pM│
-├─────────────────────────┼──────────────────────────────────┼───────────────────────────┤
-│ BAFF Role on PK &       │ "Heterobivalent: BAFF binding at │ BAFF is ~300x+ higher in  │
-│ Disposition (TMDD)      │ one end does not block IL-17;    │ serum; acts as a massive  │
-│                         │ target saturated at 100mg Q4W"   │ clearance sink (TMDD)     │
-├─────────────────────────┼──────────────────────────────────┼───────────────────────────┤
-│ BAFF Quaternary         │ Treated as small soluble         │ Soluble BAFF forms        │
-│ Structure               │ monomer/dimer ligand             │ 1.2 MDa 60-mer oligomers; │
-│                         │                                  │ drives immune complexes   │
-├─────────────────────────┼──────────────────────────────────┼───────────────────────────┤
-│ 150mg Dosing in HS      │ "150mg and 300mg Q2W provide     │ 150mg is underdosed;      │
-│ Sinus Tracts            │ massive therapeutic excess       │ drug is consumed by BAFF  │
-│                         │ over the 100mg plateau"          │ before reaching tissue    │
-└─────────────────────────┴──────────────────────────────────┴───────────────────────────┘
-```
+**THE BIOTECH X FORENSIC CLASH AT A GLANCE**
+
+| Core Scientific Vector | Dr. Adam May's Thesis | Archimedes & Jing Liang |
+| :--- | :--- | :--- |
+| IL-17A Binding Affinity vs. Bimzelx | "Potent inhibitor matching or exceeding standard blockers; IL-17F is a red herring sink" | Empirically 4.4x to 5x worse potency than Bimekizumab (14pM vs 3.2pM |
+| BAFF Role on PK & Disposition (TMDD) | "Heterobivalent: BAFF binding at one end does not block IL-17; target saturated at 100mg Q4W" | BAFF is ~300x+ higher in serum; acts as a massive clearance sink (TMDD) |
+| BAFF Quaternary Structure | Treated as small soluble monomer/dimer ligand | Soluble BAFF forms<br>1.2 MDa 60-mer oligomers; drives immune complexes |
+| 150mg Dosing in HS Sinus Tracts | "150mg and 300mg Q2W provide massive therapeutic excess over the 100mg plateau" | 150mg is underdosed; drug is consumed by BAFF before reaching tissue |
 
 The exchange cuts to the heart of biologic drug design: **Can an engineered bispecific antibody overcome extreme molar imbalances, target-mediated drug disposition (TMDD), and macromolecular immune complex formation to deliver therapeutic levels of drug into scarred, avascular inflammatory tissue?**
 
@@ -245,25 +230,13 @@ If 150 mg Q2W is partially consumed by the 300x BAFF sink, and the antibody is 4
 
 To evaluate whether BAFF inhibition can rescue a 4.4x less potent IL-17A blocker, we must examine the clinical fate of tibulizumab’s parental anti-BAFF backbone:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        THE HISTORICAL ANTI-BAFF CASUALTY LIST                          │
-├─────────────────────┬──────────────┬───────────────┬───────────────────────────────────┤
-│ Molecule & Sponsor  │ Target       │ Indication    │ Clinical Outcome & Fate           │
-├─────────────────────┼──────────────┼───────────────┼───────────────────────────────────┤
-│ Tabalumab           │ Soluble &    │ SLE (Phase 3: │ FAILED. Despite saturating BAFF   │
-│ (Eli Lilly)         │ Membrane     │ ILLUMINATE-1  │ and reducing B cells, both Phase 3│
-│                     │ BAFF         │ & 2, n=2,200) │ trials failed primary SRI-5 delta │
-├─────────────────────┼──────────────┼───────────────┼───────────────────────────────────┤
-│ Tabalumab           │ Soluble &    │ Rheumatoid    │ FAILED. Discontinued across RA    │
-│ (Eli Lilly)         │ Membrane     │ Arthritis     │ following lack of efficacy in     │
-│                     │ BAFF         │ (Phase 3)     │ multiple Phase 3 trials           │
-├─────────────────────┼──────────────┼───────────────┼───────────────────────────────────┤
-│ Ianalumab           │ BAFF-R       │ Hidradenitis  │ TERMINATED. Phase 2 trial         │
-│ (Novartis)          │ (Direct B-   │ Suppurativa   │ completed; indication terminated  │
-│                     │ cell lysis)  │ (NCT03827798) │ due to lack of efficacy signal    │
-└─────────────────────┴──────────────┴───────────────┴───────────────────────────────────┘
-```
+**THE HISTORICAL ANTI-BAFF CASUALTY LIST**
+
+| Molecule & Sponsor | Target | Indication | Clinical Outcome & Fate |
+| :--- | :--- | :--- | :--- |
+| Tabalumab (Eli Lilly) | Soluble & Membrane BAFF | SLE (Phase 3: ILLUMINATE-1 & 2, n=2,200) | FAILED. Despite saturating BAFF and reducing B cells, both Phase 3 trials failed primary SRI-5 delta |
+| Tabalumab (Eli Lilly) | Soluble & Membrane BAFF | Rheumatoid Arthritis (Phase 3) | FAILED. Discontinued across RA following lack of efficacy in multiple Phase 3 trials |
+| Ianalumab (Novartis) | BAFF-R (Direct Bcell lysis) | Hidradenitis Suppurativa (NCT03827798) | TERMINATED. Phase 2 trial completed; indication terminated due to lack of efficacy signal |
 
 1. **Tabalumab’s Flaw:** Tabalumab neutralized soluble and membrane BAFF and caused initial B-cell reductions, but it failed two massive Phase 3 lupus trials (ILLUMINATE-1 and ILLUMINATE-2, [PMID: 26648084](https://pubmed.ncbi.nlm.nih.gov/26648084/)) and Phase 3 trials in RA. The drug failed because neutralizing BAFF alone does not eliminate autoreactive long-lived plasma cells or overcome deep tissue inflammation.
 2. **Novartis' Direct HS Precedent:** Novartis explicitly tested B-cell/BAFF pathway inhibition in Hidradenitis Suppurativa with its anti-BAFF-R antibody **ianalumab (VAY736)** in a Phase 2 trial ([NCT03827798](https://clinicaltrials.gov/study/NCT03827798)). Novartis quietly discontinued the program because BAFF pathway blockade alone failed to produce meaningful clinical responses in HS.

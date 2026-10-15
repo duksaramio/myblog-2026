@@ -22,6 +22,10 @@ alwaysApply: true
 - Ensure frontmatter metadata matches, with translated `title`, `description`, and tags.
 - **Frontmatter Formatting Invariant:**
   - Always wrap `title` and `description` in double quotes: `title: "..."` and `description: "..."`. Never leave multi-line descriptions unquoted or containing unquoted colons or markdown bullet dashes that break YAML parsing.
+- **Native Markdown Table Invariant:**
+  - Format all tables, comparison scorecards, causal matrices, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all language versions.
+  - **NEVER** render tables or scorecards inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which force Shiki `PLAINTEXT` horizontal scrollboxes.
+  - Always escape literal pipe characters inside table cells (e.g., `P(Structure \| Sequence)`) as `\|`.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 

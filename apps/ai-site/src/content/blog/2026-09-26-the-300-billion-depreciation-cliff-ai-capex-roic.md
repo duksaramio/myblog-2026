@@ -138,20 +138,18 @@ Notice the core assumptions driving Sheridan's framework:
    $$\$6.8\text{B} + \$0.55\text{B} + \$0.84\text{B} \approx \mathbf{\$8.2\text{B} \text{ per GW per year}}$$
    * After factoring in working capital and corporate overhead allocations, this aligns directly with Goldman's modeled **$7.6B to $8.9B annual revenue threshold per GW at 0% ROIC**.
 
-```
-Unit Economics of 1 Gigawatt (GW) AI Infrastructure
-----------------------------------------------------------------------
-Upfront Capex:                   $42,400,000,000 ($42.4B)
-  - Compute Silicon & Racks:     ~$34,000,000,000 (80%)
-  - Power, Cooling & Building:   ~$8,400,000,000 (20%)
-----------------------------------------------------------------------
-Annual Depreciation Charge:      ~$7,350,000,000 / year
-Annual Cash OpEx (Power/Cool):   ~$836,000,000 / year
-----------------------------------------------------------------------
-Baseline Breakeven Revenue (0%): ~$7.6B - $8.2B / GW / year
-Required 15% ROIC Revenue:       $11.6B / GW / year
-----------------------------------------------------------------------
-```
+**Unit Economics of 1 Gigawatt (GW) AI Infrastructure**
+
+**Upfront Capex:                   $42,400,000,000 ($42.4B)**
+
+**- Compute Silicon & Racks:     ~$34,000,000,000 (80%)**
+
+| - Power, Cooling & Building: | ~$8,400,000,000 (20%) |
+| :--- | :--- |
+| Annual Depreciation Charge: | ~$7,350,000,000 / year |
+| Annual Cash OpEx (Power/Cool): | ~$836,000,000 / year |
+| Baseline Breakeven Revenue (0%): | ~$7.6B - $8.2B / GW / year |
+| Required 15% ROIC Revenue: | $11.6B / GW / year |
 
 ---
 
@@ -245,22 +243,27 @@ As of the second quarter of 2026, the three major cloud providers (Amazon, Micro
 ### 2. The Paradigm Shift: From Chatbots to Agentic AI
 The ultimate bull defense rests on the structural shift from **Conversational AI to Agentic AI**.
 
-```
-Token Consumption Comparison: Chatbot vs. Autonomous Agent
-----------------------------------------------------------------------
-Conversational Query (e.g. ChatGPT):
-  - User Prompt + Answer:              ~500 - 1,500 tokens
-  - Cost per interaction:              <$0.005
+**Token Consumption Comparison: Chatbot vs. Autonomous Agent**
 
-Agentic Multi-Step Task (e.g. Code Refactor / Forensic Audit):
-  - System Prompt + AST Analysis:      ~50,000 tokens
-  - Recursive Reflection & Tool Calls: ~350,000 tokens
-  - Test Execution & Self-Correction:  ~400,000 tokens
-  - Total Tokens Consumed:             ~800,000 - 2,500,000 tokens
-  - Cost per interaction:              $2.00 - $10.00
-----------------------------------------------------------------------
-Multiplier on Token Volume:            1,000x - 2,000x per task
-```
+**Conversational Query (e.g. ChatGPT):**
+
+**- User Prompt + Answer:              ~500 - 1,500 tokens**
+
+**- Cost per interaction:              <$0.005**
+
+**Agentic Multi-Step Task (e.g. Code Refactor / Forensic Audit):**
+
+**- System Prompt + AST Analysis:      ~50,000 tokens**
+
+**- Recursive Reflection & Tool Calls: ~350,000 tokens**
+
+**- Test Execution & Self-Correction:  ~400,000 tokens**
+
+**- Total Tokens Consumed:             ~800,000 - 2,500,000 tokens**
+
+| - Cost per interaction: | $2.00 - $10.00 |
+| :--- | :--- |
+| Multiplier on Token Volume: | 1,000x - 2,000x per task |
 
 When human users interact with an AI via a chat prompt, token volume is bounded by human reading speed. 
 

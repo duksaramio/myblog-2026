@@ -38,25 +38,14 @@ We conducted a forensic investigation into Liquidia's legal standing, regulatory
 
 Shkreli's argument rests on four interlocking assertions:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                      MARTIN SHKRELI'S $LQDA BULL THESIS DECONSTRUCTED                   │
-├───────────────────────┬─────────────────────────────────────────────────────────────────┤
-│ Core Claim            │ Shkreli's Argument & Underlying Logic                           │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 1. No NDA Refiling    │ De novo NDA refilings and 30-month Hatch-Waxman stays are bear  │
-│    or New Stays       │ FUD; post-approval label modifications do not reset the NDA.    │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 2. The 30-Day PAS     │ Having managed pharma companies (Retrophin/Turing), Shkreli     │
-│    Mechanism          │ claims removing an indication via PAS takes 30 days and is easy.│
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 3. FDA Indication     │ FDA will never revoke approval for a safe, approved drug for    │
-│    Severability       │ non-infringing indications due to litigation on a single use.   │
-├───────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 4. "Back to Previous  │ The PAH business alone (and off-label use) justifies the prior  │
-│    Highs" ($70+)      │ $70+ valuation; the 60% collapse is an unjustified overreaction.│
-└───────────────────────┴─────────────────────────────────────────────────────────────────┘
-```
+**MARTIN SHKRELI'S $LQDA BULL THESIS DECONSTRUCTED**
+
+| Core Claim | Shkreli's Argument & Underlying Logic |
+| :--- | :--- |
+| 1. No NDA Refiling or New Stays | De novo NDA refilings and 30-month Hatch-Waxman stays are bear FUD; post-approval label modifications do not reset the NDA. |
+| 2. The 30-Day PAS Mechanism | Having managed pharma companies (Retrophin/Turing), Shkreli claims removing an indication via PAS takes 30 days and is easy. |
+| 3. FDA Indication Severability | FDA will never revoke approval for a safe, approved drug for non-infringing indications due to litigation on a single use. |
+| 4. "Back to Previous Highs" ($70+) | The PAH business alone (and off-label use) justifies the prior $70+ valuation; the 60% collapse is an unjustified overreaction. |
 
 To evaluate whether this thesis holds water, we must first examine what Liquidia actually sells, how much cash it makes, and what happened in the Delaware courtroom.
 
@@ -91,22 +80,11 @@ While United Therapeutics eventually launched **Tyvaso DPI®** (partnered with M
 ### The Q2 2026 Financial Audit: An Engine of Cash Flow
 The market often treats patent litigation as if every defendant is an impoverished biotech burning its last dimes. Liquidia's audited **Q2 2026 financial report** paints an entirely different picture:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                        LIQUIDIA CORP ($LQDA) Q2 2026 FINANCIAL AUDIT                    │
-├─────────────────────────────────────────┬───────────────────────────────────────────────┤
-│ Metric                                  │ Q2 2026 Result (Reported Aug 2026)            │
-├─────────────────────────────────────────┼───────────────────────────────────────────────┤
-│ Total Revenue                           │ $171.7 Million                                │
-│ YUTREPIA Net Product Sales              │ $170.4 Million (+31% QoQ vs Q1 2026)          │
-│ GAAP Net Income                         │ $74.7 Million                                 │
-│ Non-GAAP Adjusted EBITDA                │ $96.3 Million                                 │
-│ Cash and Cash Equivalents               │ $284.2 Million (Up +$61.4M QoQ)               │
-│ Active Treated Patients                 │ >5,000 active patients                        │
-│ Unique Prescriptions Submitted          │ >5,900 unique patient starts                  │
-│ Annualized Sales Run-Rate               │ ~$681.6 Million                               │
-└─────────────────────────────────────────┴───────────────────────────────────────────────┘
-```
+**LIQUIDIA CORP ($LQDA) Q2 2026 FINANCIAL AUDIT**
+
+| Metric | Q2 2026 Result (Reported Aug 2026) |
+| :--- | :--- |
+| Total Revenue YUTREPIA Net Product Sales GAAP Net Income Non-GAAP Adjusted EBITDA Cash and Cash Equivalents Active Treated Patients Unique Prescriptions Submitted Annualized Sales Run-Rate | $171.7 Million $170.4 Million (+31% QoQ vs Q1 2026) $74.7 Million $96.3 Million $284.2 Million (Up +$61.4M QoQ) >5,000 active patients >5,900 unique patient starts ~$681.6 Million |
 
 **Key Takeaway:** Liquidia is **wildly profitable on an operating basis**. It is generating positive free cash flow, has $284.2 million in clean cash on its balance sheet, and is capturing market share at an annualized run-rate of nearly $700 million. It does not need to raise equity, it does not face an immediate cash cliff, and it cannot be starved into submission by legal fees.
 
@@ -116,25 +94,13 @@ The market often treats patent litigation as if every defendant is an impoverish
 
 To understand the current crisis, one must trace the multi-year legal trench warfare between United Therapeutics and Liquidia.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                     THE THREE-ROUND WAR: UNITED THERAPEUTICS VS. LIQUIDIA               │
-├───────────────────────┬──────────────────────────────┬──────────────────────────────────┤
-│ Round / Arena         │ Subject Matter               │ Outcome                          │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ Round 1 (2020–2024):  │ Method of treating PAH with  │ LIQUIDIA WON. PTAB invalidated   │
-│ The '793 Patent War   │ inhaled treprostinil.        │ all claims; Federal Circuit      │
-│                       │                              │ affirmed; SCOTUS denied cert.    │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ Round 2 (2022–2025):  │ 3-Year Regulatory            │ UTHR DELAYED, LIQUIDIA WON.      │
-│ The Exclusivity Block │ Exclusivity for Tyvaso DPI.  │ FDA gave final approval to       │
-│                       │                              │ YUTREPIA on May 23, 2025.        │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ Round 3 (2024–2026):  │ Method of treating PH-ILD    │ UTHR PREVAILED ON CLAIMS 1 & 14. │
-│ The '327 Patent Trial │ (U.S. Patent 11,826,327).    │ Delaware Court ruled claims valid│
-│                       │                              │ and infringed on Sep 30, 2026.   │
-└───────────────────────┴──────────────────────────────┴──────────────────────────────────┘
-```
+**THE THREE-ROUND WAR: UNITED THERAPEUTICS VS. LIQUIDIA**
+
+| Round / Arena | Subject Matter | Outcome |
+| :--- | :--- | :--- |
+| Round 1 (2020–2024): The '793 Patent War | Method of treating PAH with inhaled treprostinil. | LIQUIDIA WON. PTAB invalidated all claims; Federal Circuit affirmed; SCOTUS denied cert. |
+| Round 2 (2022–2025): The Exclusivity Block | 3-Year Regulatory Exclusivity for Tyvaso DPI. | UTHR DELAYED, LIQUIDIA WON. FDA gave final approval to YUTREPIA on May 23, 2025. |
+| Round 3 (2024–2026): The '327 Patent Trial | Method of treating PH-ILD (U.S. Patent 11,826,327). | UTHR PREVAILED ON CLAIMS 1 & 14. Delaware Court ruled claims valid and infringed on Sep 30, 2026. |
 
 ### The September 30, 2026 Delaware Ruling
 In late 2023, United Therapeutics was granted **U.S. Patent No. 11,826,327 (the '327 patent)**, which specifically claims methods of treating patients with **pulmonary hypertension associated with interstitial lung disease (PH-ILD)** by administering inhaled treprostinil. The patent does not expire until **December 2042**.
@@ -181,24 +147,13 @@ Here is where our deep research begins to diverge from Shkreli's confident asser
 ### The FDA Framework: 21 CFR § 314.70
 Under federal regulations governing post-marketing supplements, changes to an approved NDA fall into three rigid tiers:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                      FDA POST-APPROVAL SUPPLEMENT TIERS (21 CFR § 314.70)               │
-├──────────────────────────┬───────────────────────────────┬──────────────────────────────┤
-│ Mechanism                │ Regulatory Description        │ PDUFA Review Goal / Timing   │
-├──────────────────────────┼───────────────────────────────┼──────────────────────────────┤
-│ 1. Prior Approval        │ "Major Changes" that have     │ Standard: 6 to 10 months     │
-│    Supplement (PAS)      │ substantial potential to      │ Priority: 4 to 6 months      │
-│    [21 CFR 314.70(b)]    │ affect safety or efficacy.    │ *Requires affirmative signoff│
-├──────────────────────────┼───────────────────────────────┼──────────────────────────────┤
-│ 2. Changes Being         │ "Moderate Changes" with       │ Distribution allowed         │
-│    Effected in 30 Days   │ moderate potential.           │ 30 days after submission     │
-│    (CBE-30) [314.70(c)]  │                               │ without prior FDA approval.  │
-├──────────────────────────┼───────────────────────────────┼──────────────────────────────┤
-│ 3. Annual Report         │ "Minor Changes" (minimal      │ Submitted in annual report.  │
-│    [21 CFR 314.70(d)]    │ potential impact).            │ No pre-clearance needed.     │
-└──────────────────────────┴───────────────────────────────┴──────────────────────────────┘
-```
+**FDA POST-APPROVAL SUPPLEMENT TIERS (21 CFR § 314.70)**
+
+| Mechanism | Regulatory Description | PDUFA Review Goal / Timing |
+| :--- | :--- | :--- |
+| 1. Prior Approval Supplement (PAS) [21 CFR 314.70(b)] | "Major Changes" that have substantial potential to affect safety or efficacy. | Standard: 6 to 10 months Priority: 4 to 6 months<br>*Requires affirmative signoff |
+| 2. Changes Being Effected in 30 Days (CBE-30) [314.70(c)] | "Moderate Changes" with moderate potential. | Distribution allowed 30 days after submission without prior FDA approval. |
+| 3. Annual Report [21 CFR 314.70(d)] | "Minor Changes" (minimal potential impact). | Submitted in annual report. No pre-clearance needed. |
 
 Now, where does deleting an approved therapeutic indication fall?
 
@@ -266,24 +221,13 @@ This is the central blind spot in Martin Shkreli’s thesis. Shkreli treats remo
 
 **In reality, PH-ILD was the entire growth driver of the treprostinil market.**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    PAH VS. PH-ILD: THE COMMERCIAL & COMPETITIVE REALITY                 │
-├───────────────────────┬──────────────────────────────┬──────────────────────────────────┤
-│ Metric / Dimension    │ PAH (WHO Group 1)            │ PH-ILD (WHO Group 3)             │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ US Patient Prevalence │ ~45,000 – 50,000 patients    │ ~70,000 – 100,000 patients       │
-│ Competition Profile   │ Hyper-crowded: Winrevair     │ Exclusive Monopoly: Tyvaso was   │
-│                       │ (sotatercept), Uptravi,      │ the ONLY approved therapy prior  │
-│                       │ Opsumit, Tadliq, Adempas.    │ to YUTREPIA. Zero others.        │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ Growth Trajectory     │ Mature, slow growth (2–4%)   │ Rapid expansion (+25–35% YoY)    │
-│ Share of Treprostinil │ ~50% – 55% of market volume  │ ~45% – 50% of market volume      │
-│ Total TAM (US)        │ ~$1.5 Billion                │ ~$2.0 – $2.5 Billion             │
-├───────────────────────┼──────────────────────────────┼──────────────────────────────────┤
-│ Liquidia Label Status │ Fully Unencumbered           │ LOST TO '327 PATENT UNTIL 2042   │
-└───────────────────────┴──────────────────────────────┴──────────────────────────────────┘
-```
+**PAH VS. PH-ILD: THE COMMERCIAL & COMPETITIVE REALITY**
+
+| Metric / Dimension | PAH (WHO Group 1) | PH-ILD (WHO Group 3) |
+| :--- | :--- | :--- |
+| US Patient Prevalence Competition Profile | ~45,000 – 50,000 patients Hyper-crowded: Winrevair (sotatercept), Uptravi, Opsumit, Tadliq, Adempas. | ~70,000 – 100,000 patients Exclusive Monopoly: Tyvaso was the ONLY approved therapy prior to YUTREPIA. Zero others. |
+| Growth Trajectory Share of Treprostinil Total TAM (US) | Mature, slow growth (2–4%) ~50% – 55% of market volume ~$1.5 Billion | Rapid expansion (+25–35% YoY) ~45% – 50% of market volume ~$2.0 – $2.5 Billion |
+| Liquidia Label Status | Fully Unencumbered | LOST TO '327 PATENT UNTIL 2042 |
 
 ### The Crowded PAH Battlefield vs. The PH-ILD Goldmine
 1. **PAH is Under Siege from Merck's Winrevair (sotatercept):**  
@@ -335,26 +279,11 @@ Martin Shkreli claims LQDA is going "back to previous highs" ($70+).
 
 Let us build a rigorous financial model to determine whether $70 is even mathematically possible on a PAH-only label.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    LIQUIDIA CORP ($LQDA) SCENARIO VALUATION MATRIX                      │
-├────────────────────────────┬─────────────────────────────┬──────────────────────────────┤
-│ Valuation Input            │ PRE-RULING (Dual Indication)│ POST-RULING (PAH Only)       │
-├────────────────────────────┼─────────────────────────────┼──────────────────────────────┤
-│ Total Addressable Market   │ $3.5 – $4.0 Billion         │ $1.5 – $1.8 Billion          │
-│ Peak Market Share          │ 35% across PAH + PH-ILD     │ 30% of PAH Only              │
-│ Peak Annual Revenue        │ $1.30 Billion               │ $510 Million                 │
-│ Operating Margin           │ 42%                         │ 35%                          │
-│ Peak Net Income            │ $546 Million                │ $178.5 Million               │
-│ Diluted Shares Outstanding │ 89.5 Million                │ 89.5 Million                 │
-│ Peak EPS                   │ $6.10                       │ $1.99                        │
-│ Target P/E Multiple        │ 12.0x                       │ 14.0x (Cash-adjusted)        │
-│ Implied Enterprise Value   │ $6.55 Billion               │ $2.50 Billion                │
-│ Cash on Hand (Q2 2026)     │ $284 Million                │ $284 Million                 │
-│ Fair Market Equity Value   │ $6.83 Billion               │ $2.78 Billion                │
-│ IMPLIED FAIR VALUE / SHARE │ $76.35                      │ $31.10                       │
-└────────────────────────────┴─────────────────────────────┴──────────────────────────────┘
-```
+**LIQUIDIA CORP ($LQDA) SCENARIO VALUATION MATRIX**
+
+| Valuation Input | PRE-RULING (Dual Indication) | POST-RULING (PAH Only) |
+| :--- | :--- | :--- |
+| Total Addressable Market Peak Market Share Peak Annual Revenue Operating Margin Peak Net Income Diluted Shares Outstanding Peak EPS Target P/E Multiple Implied Enterprise Value Cash on Hand (Q2 2026) Fair Market Equity Value IMPLIED FAIR VALUE / SHARE | $3.5 – $4.0 Billion 35% across PAH + PH-ILD $1.30 Billion 42% $546 Million<br>89.5 Million $6.10<br>12.0x $6.55 Billion $284 Million $6.83 Billion $76.35 | $1.5 – $1.8 Billion 30% of PAH Only $510 Million 35% $178.5 Million<br>89.5 Million $1.99<br>14.0x (Cash-adjusted) $2.50 Billion $284 Million $2.78 Billion $31.10 |
 
 ### The Valuation Audit Insights:
 1. **The $70+ Valuation Required PH-ILD:**  
@@ -370,29 +299,14 @@ Let us build a rigorous financial model to determine whether $70 is even mathema
 
 ## 9. Four Forward Scenarios & Probabilities
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                           LIQUIDIA ($LQDA) PROBABILITY MATRIX                           │
-├─────────────────────┬──────┬─────────────────────────────┬──────────────────────────────┤
-│ Scenario            │ Prob │ Core Mechanism              │ 12-Month Target Price        │
-├─────────────────────┼──────┼─────────────────────────────┼──────────────────────────────┤
-│ 1. Shkreli Super-   │  5%  │ FDA approves PAS in 30 days,│ $65 – $75                    │
-│    Bull Thesis      │      │ court allows full sales,    │ (Unrealistic; requires       │
-│                     │      │ massive off-label adoption. │ ignoring payer firewalls)    │
-├─────────────────────┼──────┼─────────────────────────────┼──────────────────────────────┤
-│ 2. The Base Case:   │ 60%  │ Judge Andrews carves out    │ $34 – $42                    │
-│    Clean PAH Carve- │      │ PH-ILD; FDA approves PAS in │ (+28% to +58% upside from    │
-│    Out & Stabilization     │ 3–5 mos; PAH sales continue.│ current $26.64 price)        │
-├─────────────────────┼──────┼─────────────────────────────┼──────────────────────────────┤
-│ 3. The Bear Trap:   │ 25%  │ Judge Andrews grants blanket│ $18 – $22                    │
-│    Injunction Blackout     │ injunction; YUTREPIA pulled │ (Temporary operational       │
-│    & Packaging Limbo       │ until new cartons approved. │ cash-flow freeze)            │
-├─────────────────────┼──────┼─────────────────────────────┼──────────────────────────────┤
-│ 4. The Long-Shot:   │ 10%  │ CAFC reverses Judge Andrews │ $55 – $65                    │
-│    Federal Circuit  │      │ on '327 validity in 2027/28;│ (Long-dated call option on   │
-│    Reversal on Appeal      │ PH-ILD restored to label.   │ patent jurisprudence)        │
-└─────────────────────┴──────┴─────────────────────────────┴──────────────────────────────┘
-```
+**LIQUIDIA ($LQDA) PROBABILITY MATRIX**
+
+| Scenario | Prob | Core Mechanism | 12-Month Target Price |
+| :--- | :--- | :--- | :--- |
+| 1. Shkreli Super- Bull Thesis | 5% | FDA approves PAS in 30 days, court allows full sales, massive off-label adoption. | $65 – $75 (Unrealistic; requires ignoring payer firewalls) |
+| 2. The Base Case: Clean PAH Carve- Out & Stabilization | 60% 3–5 mos; PAH sales continue. | Judge Andrews carves out PH-ILD; FDA approves PAS in current $26.64 price) | $34 – $42 (+28% to +58% upside from |
+| 3. The Bear Trap: Injunction Blackout & Packaging Limbo | 25% injunction; YUTREPIA pulled until new cartons approved. | Judge Andrews grants blanket (Temporary operational cash-flow freeze) | $18 – $22 |
+| 4. The Long-Shot: Federal Circuit Reversal on Appeal | 10% PH-ILD restored to label. | CAFC reverses Judge Andrews on '327 validity in 2027/28; patent jurisprudence) | $55 – $65 (Long-dated call option on |
 
 ---
 
@@ -400,28 +314,10 @@ Let us build a rigorous financial model to determine whether $70 is even mathema
 
 Having completed our forensic regulatory, clinical, legal, and financial audit, we deliver our final verdict on Martin Shkreli's call:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                                 THE INDEPENDENT VERDICT                                 │
-├─────────────────────────────────────────────────────────────────────────────────────────┤
-│ 1. ON THE MECHANICS: WE PARTIALLY AGREE WITH SHKRELI                                    │
-│    • Shkreli is correct that the shorts' apocalyptic narrative of total NDA revocation │
-│      and new 30-month Hatch-Waxman stays is legal nonsense.                             │
-│    • Shkreli is correct that Liquidia is not going bankrupt; with $284M in cash and     │
-│      $74.7M in quarterly net profit, the company is fundamentally sound.                │
-│    • At $26.64, the stock is oversold and pricing in a catastrophic total shutdown.     │
-├─────────────────────────────────────────────────────────────────────────────────────────┤
-│ 2. ON THE CONCLUSION & PRICE TARGET: WE STRONGLY DISAGREE WITH SHKRELI                  │
-│    • Shkreli is REGULATORILY WRONG: A PAS to delete an indication is a Major Change     │
-│      under 21 CFR § 314.70(b) and takes 4 to 6 months under PDUFA VII, not 30 days.    │
-│    • Shkreli is COMMERCIALLY WRONG: PH-ILD was nearly 50% of the treprostinil market.    │
-│      Specialty pharmacy Prior Authorization firewalls will block off-label use.         │
-│    • Shkreli is VALUATIONALLY DELUSIONAL: Liquidia at $70+ was priced for a multi-      │
-│      billion-dollar PAH + PH-ILD duopoly. Stripped of PH-ILD, fair value is $32–$38.    │
-│    • Calling a patent loss that permanently halves your addressable market "bullish" is │
-│      pure intellectual theater.                                                         │
-└─────────────────────────────────────────────────────────────────────────────────────────┘
-```
+| THE INDEPENDENT VERDICT |
+| :--- |
+| 1. ON THE MECHANICS: WE PARTIALLY AGREE WITH SHKRELI<br>• Shkreli is correct that the shorts' apocalyptic narrative of total NDA revocation and new 30-month Hatch-Waxman stays is legal nonsense.<br>• Shkreli is correct that Liquidia is not going bankrupt; with $284M in cash and $74.7M in quarterly net profit, the company is fundamentally sound.<br>• At $26.64, the stock is oversold and pricing in a catastrophic total shutdown. |
+| 2. ON THE CONCLUSION & PRICE TARGET: WE STRONGLY DISAGREE WITH SHKRELI<br>• Shkreli is REGULATORILY WRONG: A PAS to delete an indication is a Major Change under 21 CFR § 314.70(b) and takes 4 to 6 months under PDUFA VII, not 30 days.<br>• Shkreli is COMMERCIALLY WRONG: PH-ILD was nearly 50% of the treprostinil market. Specialty pharmacy Prior Authorization firewalls will block off-label use.<br>• Shkreli is VALUATIONALLY DELUSIONAL: Liquidia at $70+ was priced for a multi-billion-dollar PAH + PH-ILD duopoly. Stripped of PH-ILD, fair value is $32–$38.<br>• Calling a patent loss that permanently halves your addressable market "bullish" is pure intellectual theater. |
 
 ### The Investor Takeaway
 If you are buying Liquidia ($LQDA) at **$26.64**, you are buying an operationally profitable business with $284M in cash and a superior dry-powder inhaler for PAH, trading at a steep, panic-induced discount. A relief rally toward **$32 to $38** (+20% to +45%) is a high-probability mean reversion once Judge Andrews settles the form of judgment and confirms that PAH sales can continue.

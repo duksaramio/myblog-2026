@@ -30,25 +30,11 @@ Rather than relying on superficial market reactions or sell-side defensiveness, 
 
 ---
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│              REVOLUTION MEDICINES ($RVMD) FORENSIC DILIGENCE SCORECARD: PITCH VS. REALITY        │
-├──────────────────────────────────┬───────────────────────────────────────────────────────────────┤
-│ DIMENSION / CLINICAL METRIC      │ INSTITUTIONAL AUDIT & REGULATORY REALITY                      │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ Market Capitalization            │ ~$39.5B – $42.8B (Priced for universal commercial dominance)   │
-│ 2026 Projected GAAP OpEx         │ $2.1B – $2.2B ($525M – $550M cash incinerated every quarter)  │
-│ Balance Sheet Cash (Q2 2026)     │ $3.9B (Bolstered by $2.1B net proceeds from April equity sale) │
-│ Effective Operational Runway     │ < 22 Months at current burn rate without non-dilutive inflows │
-│ Wall Street Analyst Consensus    │ 20 BUYS / 0 HOLDS / 0 SELLS (100% Unanimous Buy cartel)       │
-│ Trailing 12-Month Insider Trades │ $149.7M SOLD / $0.00 BOUGHT (C-Suite systematic cash-out)     │
-│ Rasonque G12V Response Rate      │ 50% ORR (~31% of pancreatic cancer; drove headline optimism)  │
-│ Rasonque G12D Response Rate      │ 24% ORR (~43% of pancreatic cancer; narrow delta over chemo)  │
-│ Regulatory Caveat (FDA Review)   │ Trial unpowered for formal subgroup comparative claims        │
-│ Management Strategic Pivot       │ Rushed launch of RASolute 309 doublet on Oct 5 (concession)   │
-│ Institutional Verdict            │ TACTICAL SHORT / UNDERWEIGHT (Fair Value: $95 – $110, -45-50%)│
-└──────────────────────────────────┴───────────────────────────────────────────────────────────────┘
-```
+**REVOLUTION MEDICINES ($RVMD) FORENSIC DILIGENCE SCORECARD: PITCH VS. REALITY**
+
+| DIMENSION / CLINICAL METRIC | INSTITUTIONAL AUDIT & REGULATORY REALITY |
+| :--- | :--- |
+| Market Capitalization 2026 Projected GAAP OpEx Balance Sheet Cash (Q2 2026) Effective Operational Runway Wall Street Analyst Consensus Trailing 12-Month Insider Trades Rasonque G12V Response Rate Rasonque G12D Response Rate Regulatory Caveat (FDA Review) Management Strategic Pivot Institutional Verdict | ~$39.5B – $42.8B (Priced for universal commercial dominance) $2.1B – $2.2B ($525M – $550M cash incinerated every quarter) $3.9B (Bolstered by $2.1B net proceeds from April equity sale) < 22 Months at current burn rate without non-dilutive inflows 20 BUYS / 0 HOLDS / 0 SELLS (100% Unanimous Buy cartel) $149.7M SOLD / $0.00 BOUGHT (C-Suite systematic cash-out) 50% ORR (~31% of pancreatic cancer; drove headline optimism) 24% ORR (~43% of pancreatic cancer; narrow delta over chemo) Trial unpowered for formal subgroup comparative claims Rushed launch of RASolute 309 doublet on Oct 5 (concession) TACTICAL SHORT / UNDERWEIGHT (Fair Value: $95 – $110, -45-50%) |
 
 ---
 
@@ -73,27 +59,15 @@ What empirical evidence would decisively invalidate our skeptical thesis?
 
 Our audit relies exclusively on primary regulatory filings, audited financial disclosures, and peer-reviewed molecular structures—never on secondary media syndications:
 
-```
-                                  PRIMARY ARTIFACT TRACEABILITY MATRIX
-    
-     Domain           Canonical Primary Source             Accession / Identifier     Key Verified Fact
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-     Regulatory       FDA CDER Multidiscipline Review      NDA/BLA Action Package     G12D ORR = 24% (n=unpowered)
-                      & Statistical Review (Aug 2026)      Post-Approval Dossier      G12V ORR = 50% (bimodal split)
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-     Financial        SEC Form 10-Q (Q2 2026)              0001193125-26-335104       Cash: $3.9B; Q2 OpEx: $535M
-                      Period Ended June 30, 2026           CIK 0001628171             Annual Burn: $2.1B - $2.2B
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-     Governance       SEC Form 4 / Form 144 Filings        SEC EDGAR Database         12-Mo Sales: $149,700,000
-                      Trailing 12-Month C-Suite Sales      CIK 0001628171             Open-Market Buys: $0.00
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-     Clinical         ClinicalTrials.gov Registry          NCT06625320 (RASolute 302) Phase 3 2L+ PDAC (RMC-6236)
-                      ClinicalTrials.gov Registry          NCT06915220 (RASolute 309) Phase 3 Doublet (+ RMC-9805)
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-     Biochemical      Exp Hematol Oncol (Lou & Zhang 2026) PMID: 42806361             CypA Tri-Complex Kinetics
-                      PNAS (Testa et al. 2026)             PMID: 42054368             Selective G12D vs Pan-RAS
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────
-```
+**PRIMARY ARTIFACT TRACEABILITY MATRIX**
+
+| Domain | Canonical Primary Source | Accession / Identifier | Key Verified Fact |
+| :--- | :--- | :--- | :--- |
+| Regulatory | FDA CDER Multidiscipline Review & Statistical Review (Aug 2026) | NDA/BLA Action Package Post-Approval Dossier | G12D ORR = 24% (n=unpowered) G12V ORR = 50% (bimodal split) |
+| Financial | SEC Form 10-Q (Q2 2026) Period Ended June 30, 2026 | 0001193125-26-335104 CIK 0001628171 | Cash: $3.9B; Q2 OpEx: $535M Annual Burn: $2.1B - $2.2B |
+| Governance | SEC Form 4 / Form 144 Filings Trailing 12-Month C-Suite Sales | SEC EDGAR Database CIK 0001628171 | 12-Mo Sales: $149,700,000 Open-Market Buys: $0.00 |
+| Clinical | ClinicalTrials.gov Registry ClinicalTrials.gov Registry | NCT06625320 (RASolute 302) NCT06915220 (RASolute 309) | Phase 3 2L+ PDAC (RMC-6236) Phase 3 Doublet (+ RMC-9805) |
+| Biochemical | Exp Hematol Oncol (Lou & Zhang 2026) PNAS (Testa et al. 2026) | PMID: 42806361 PMID: 42054368 | CypA Tri-Complex Kinetics Selective G12D vs Pan-RAS |
 
 ### The Sell-Side Underwriting Cartel: Follow the Capital Markets
 The striking unanimity of Wall Street's coverage—**20 out of 20 analysts rating RVMD a "BUY" or "OUTPERFORM"**—cannot be understood without mapping the underlying financial incentives.
@@ -141,29 +115,14 @@ flowchart TD
 
 Why did Rasonque underperform so dramatically in G12D, and why did C-suite executives liquidate $150M of stock? We deploy a systematic 4-way causal matrix to disentangle competing explanations:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   4-WAY CAUSAL MATRIX: RASONQUE KRAS G12D RESPONSE COLLAPSE                      │
-├─────────────────────┬────────────────────────────────────────────────────────────────────────────┤
-│ CAUSAL HYPOTHESIS   │ FORENSIC MECHANISTIC EVALUATION                                            │
-├─────────────────────┼────────────────────────────────────────────────────────────────────────────┤
-│ 1. Direct           │ CypA tri-complex steric hindrance: Asp12 carboxylate side chain introduces │
-│    Causation (X→Y)  │ electrostatic repulsion with CypA residues; narrow therapeutic index       │
-│                     │ prevents dose escalation due to wild-type pan-RAS toxicity. (CONFIRMED)    │
-├─────────────────────┼────────────────────────────────────────────────────────────────────────────┤
-│ 2. Reverse          │ Did G12D patient baseline severity cause the lower response? Unlikely:     │
-│    Causation (Y→X)  │ G12V patients often present with aggressive metastases; baseline liver     │
-│                     │ involvement and prior chemo lines were balanced across cohorts.            │
-├─────────────────────┼────────────────────────────────────────────────────────────────────────────┤
-│ 3. Confounding      │ Subgroup sample size noise / exploratory unpowered retrospective slicing.  │
-│    Variable (Z)     │ FDA explicitly cautioned that subgroup comparative claims were unpowered, │
-│                     │ but molecular biology independently substantiates the affinity deficit.    │
-├─────────────────────┼────────────────────────────────────────────────────────────────────────────┤
-│ 4. Mutual Feedback  │ Incomplete target engagement in G12D triggers rapid adaptive reactivation  │
-│    Loop (X↔Y)       │ of upstream receptor tyrosine kinases (EGFR, MET) and downstream MAPK/PI3K │
-│                     │ bypass signaling, extinguishing transient initial responses.               │
-└─────────────────────┴────────────────────────────────────────────────────────────────────────────┘
-```
+**4-WAY CAUSAL MATRIX: RASONQUE KRAS G12D RESPONSE COLLAPSE**
+
+| CAUSAL HYPOTHESIS | FORENSIC MECHANISTIC EVALUATION |
+| :--- | :--- |
+| 1. Direct Causation (X→Y) | CypA tri-complex steric hindrance: Asp12 carboxylate side chain introduces electrostatic repulsion with CypA residues; narrow therapeutic index prevents dose escalation due to wild-type pan-RAS toxicity. (CONFIRMED) |
+| 2. Reverse Causation (Y→X) | Did G12D patient baseline severity cause the lower response? Unlikely: G12V patients often present with aggressive metastases; baseline liver involvement and prior chemo lines were balanced across cohorts. |
+| 3. Confounding Variable (Z) | Subgroup sample size noise / exploratory unpowered retrospective slicing. FDA explicitly cautioned that subgroup comparative claims were unpowered, but molecular biology independently substantiates the affinity deficit. |
+| 4. Mutual Feedback Loop (X↔Y) | Incomplete target engagement in G12D triggers rapid adaptive reactivation of upstream receptor tyrosine kinases (EGFR, MET) and downstream MAPK/PI3K bypass signaling, extinguishing transient initial responses. |
 
 ### The Biophysical Mechanism: Tri-Complex Kinetics
 Daraxonrasib’s mechanism of action relies on forming an intracellular "tri-complex" with the endogenous immunophilin **Cyclophilin A (CypA)** ([Lou & Zhang, Exp Hematol Oncol 2026](https://pubmed.ncbi.nlm.nih.gov/42806361/)):
@@ -200,20 +159,12 @@ Why did corporate insiders sell $149.7M in stock with zero purchases?
 
 Stripping away corporate promotional spin, we examine what the raw clinical and financial dataset actually warrants:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   KRAS MUTATION SUBTYPE PERFORMANCE AUDIT IN PDAC (RASolute 302)                 │
-├──────────────────────┬──────────────────────┬──────────────────────┬─────────────────────────────┤
-│ SUBTYPE              │ PATIENT PREVALENCE   │ CLINICAL ORR (FDA)   │ COMMERCIAL VIABILITY        │
-├──────────────────────┼──────────────────────┼──────────────────────┼─────────────────────────────┤
-│ KRAS G12D            │ ~43% (Dominant)      │ 24% ORR              │ Severely impaired monotherapy│
-│ KRAS G12V            │ ~31%                 │ 50% ORR              │ Strong monotherapy niche    │
-│ KRAS G12R            │ ~14%                 │ Intermediate (~30%)  │ Moderate adoption           │
-│ KRAS G12C / Other    │ ~12%                 │ Variable / Low N     │ Fragmented                  │
-├──────────────────────┼──────────────────────┼──────────────────────┼─────────────────────────────┤
-│ AGGREGATE COHORT     │ 100%                 │ 30% – 32% ORR        │ Masks bimodal distribution  │
-└──────────────────────┴──────────────────────┴──────────────────────────────┴─────────────────────┘
-```
+**KRAS MUTATION SUBTYPE PERFORMANCE AUDIT IN PDAC (RASolute 302)**
+
+| SUBTYPE | PATIENT PREVALENCE | CLINICAL ORR (FDA) | COMMERCIAL VIABILITY |
+| :--- | :--- | :--- | :--- |
+| KRAS G12D KRAS G12V KRAS G12R KRAS G12C / Other | ~43% (Dominant) ~31% ~14% ~12% | 24% ORR 50% ORR Intermediate (~30%) Variable / Low N | Severely impaired monotherapy Strong monotherapy niche Moderate adoption Fragmented |
+| AGGREGATE COHORT | 100% | 30% – 32% ORR | Masks bimodal distribution |
 
 ### 1. The Aggregation Trap & Bimodal Distribution
 Revolution Medicines’ headline regulatory press releases celebrated an aggregate ORR of 30% to 32% and a median overall survival of 13.2 months versus 6.7 months for chemotherapy. 
@@ -261,23 +212,13 @@ On October 5, 2026—**three business days prior to the public posting of the un
 
 This trial combines daraxonrasib (RMC-6236) with **zoldonrasib (RMC-9805)**, its investigational covalent G12D-selective inhibitor.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   THE STRATEGIC CONCESSION: SINGLE-AGENT BACKBONE TO DOUBLET CRUTCH              │
-├──────────────────────┬───────────────────────────────────────────────────────────────────────────┤
-│ WHAT WALL STREET MODELLED (H1 2026)  │ WHAT RVMD WAS COMPELLED TO INITIATE (OCTOBER 2026)        │
-├──────────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ Daraxonrasib dominates all KRAS      │ Rushed initiation of RASolute 309 doublet trial combining │
-│ mutations as a standalone $5B+       │ daraxonrasib + zoldonrasib, implicitly conceding that     │
-│ monotherapy backbone across PDAC.    │ single-agent efficacy in G12D is inadequate.              │
-├──────────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ Rapid, high-margin commercial ramp   │ Commercial friction: payers demand subtype testing;       │
-│ with low promotional resistance.     │ oncologists defer monotherapy in G12D pending combo data. │
-├──────────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ Manageable clinical trial spend      │ Exploding clinical trial expenditures: running concurrent │
-│ with streamlined single-agent paths. │ global Phase 3 doublet studies pushes readouts to 2028-29.│
-└──────────────────────────────────────┴───────────────────────────────────────────────────────────┘
-```
+**THE STRATEGIC CONCESSION: SINGLE-AGENT BACKBONE TO DOUBLET CRUTCH**
+
+| WHAT WALL STREET MODELLED (H1 2026) | WHAT RVMD WAS COMPELLED TO INITIATE (OCTOBER 2026) |
+| :--- | :--- |
+| Daraxonrasib dominates all KRAS mutations as a standalone $5B+ monotherapy backbone across PDAC. | Rushed initiation of RASolute 309 doublet trial combining daraxonrasib + zoldonrasib, implicitly conceding that single-agent efficacy in G12D is inadequate. |
+| Rapid, high-margin commercial ramp with low promotional resistance. | Commercial friction: payers demand subtype testing; oncologists defer monotherapy in G12D pending combo data. |
+| Manageable clinical trial spend with streamlined single-agent paths. | Exploding clinical trial expenditures: running concurrent global Phase 3 doublet studies pushes readouts to 2028-29. |
 
 The doublet strategy introduces acute operational hazards:
 * **Overlapping and Compounded Toxicity:** Combining a pan-RAS systemic inhibitor with a covalent G12D inhibitor escalates treatment-related adverse event (TRAE) discontinuation rates, potentially degrading median overall survival due to poor therapy adherence.
@@ -330,22 +271,13 @@ Rejecting binary hyperbole ("RVMD is a total fraud" vs. "RVMD is a guaranteed 10
 
 Biotechnology investing requires synthesizing disparate empirical clues into a definitive, probability-weighted stance:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   VALUATION SENSITIVITY & INSTITUTIONAL DOWNSIDE SCENARIOS                       │
-├──────────────────────┬──────────────────────┬───────────────────────────────┬────────────────────┤
-│ SCENARIO             │ PROBABILITY WEIGHT   │ FAIR ENTERPRISE VALUE         │ TARGET SHARE PRICE │
-├──────────────────────┼──────────────────────┼───────────────────────────────┼────────────────────┤
-│ Bull Case            │ ~15% Probability     │ $38.0B – $42.0B               │ $190 – $210        │
-│ (Universal Backbone) │                      │ (Current Market Pricing)      │ (+5% to +15%)      │
-├──────────────────────┼──────────────────────┼───────────────────────────────┼────────────────────┤
-│ Base Case            │ ~55% Probability     │ $18.0B – $22.0B               │ $95 – $110         │
-│ (Subtype Compression)│                      │ (G12V Niche + Doublet Delay)  │ (-45% to -50%)     │
-├──────────────────────┼──────────────────────┼───────────────────────────────┼────────────────────┤
-│ Bear Case            │ ~30% Probability     │ $12.0B – $15.0B               │ $60 – $80          │
-│ (Toxicity + Dilution)│                      │ (Doublet Failure + Leapfrog)  │ (-60% to -70%)     │
-└──────────────────────┴──────────────────────┴───────────────────────────────┴────────────────────┘
-```
+**VALUATION SENSITIVITY & INSTITUTIONAL DOWNSIDE SCENARIOS**
+
+| SCENARIO | PROBABILITY WEIGHT | FAIR ENTERPRISE VALUE | TARGET SHARE PRICE |
+| :--- | :--- | :--- | :--- |
+| Bull Case (Universal Backbone) | ~15% Probability | $38.0B – $42.0B (Current Market Pricing) | $190 – $210 (+5% to +15%) |
+| Base Case (Subtype Compression) | ~55% Probability | $18.0B – $22.0B (G12V Niche + Doublet Delay) | $95 – $110 (-45% to -50%) |
+| Bear Case (Toxicity + Dilution) | ~30% Probability | $12.0B – $15.0B (Doublet Failure + Leapfrog) | $60 – $80 (-60% to -70%) |
 
 #### 1. Stance on the Evidence
 * **The biophysical evidence is unequivocal:** The electrostatic repulsion between CypA and the negatively charged G12D aspartate side chain is hard structural chemistry, not transitory clinical noise. Because daraxonrasib cannot be dose-escalated without triggering wild-type pan-RAS toxicities, the single-agent G12D potency ceiling is permanent.

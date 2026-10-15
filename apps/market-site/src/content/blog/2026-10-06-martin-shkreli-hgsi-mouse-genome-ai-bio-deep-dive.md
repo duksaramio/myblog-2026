@@ -33,31 +33,16 @@ We conducted an exhaustive historical, regulatory, and clinical trial investigat
 
 To evaluate Shkreli's analogy, one must first revisit the extraordinary speculative frenzy of the **Genomics Bubble of 1999–2000**.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                     THE 2000 GENOMICS BUBBLE VS. THE 2026 AI BIO HYPE CYCLE                     │
-├────────────────────────┬───────────────────────────────────┬────────────────────────────────────┤
-│ Dimension              │ 2000 Genomics Era ($HGSI, $CRA)   │ 2020–2026 AI Bio Era ($RXRX, $EXAI)│
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ Breakthrough Narrative │ Sequencing the human genetic code │ Machine learning predicting 3D     │
-│                        │ unlocks the "blueprint of life."  │ structures & generative molecules. │
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ Prominent Symbols      │ Human Genome Sciences ($HGSI),    │ Recursion ($RXRX), Exscientia,     │
-│                        │ Celera Genomics ($CRA), Incyte    │ Isomorphic Labs, Relay ($RLAY)     │
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ Peak Valuation Trigger │ Completion of Human Genome draft  │ AlphaFold releases, foundation     │
-│                        │ (Clinton/Blair June 2000 address) │ models, generative protein design  │
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ The "Next Catalyst"    │ "The Mouse Genome"                │ "AlphaFold 3 / Virtual Cells /     │
-│ Fallacy                │ (Sequencing more species)         │ Single-cell foundation models"     │
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ Biological Bottleneck  │ Target validation, in vivo ADMET, │ Target validation, in vivo ADMET,  │
-│                        │ human clinical trial attrition    │ human clinical trial attrition     │
-├────────────────────────┼───────────────────────────────────┼────────────────────────────────────┤
-│ Ultimate Outcome       │ >90% valuation crash; 11-year     │ >80% valuation crash from peak;    │
-│                        │ capital slog for single drug      │ lead Phase 2 assets axed           │
-└────────────────────────┴───────────────────────────────────┴────────────────────────────────────┘
-```
+**THE 2000 GENOMICS BUBBLE VS. THE 2026 AI BIO HYPE CYCLE**
+
+| Dimension | 2000 Genomics Era ($HGSI, $CRA) | 2020–2026 AI Bio Era ($RXRX, $EXAI) |
+| :--- | :--- | :--- |
+| Breakthrough Narrative | Sequencing the human genetic code unlocks the "blueprint of life." | Machine learning predicting 3D structures & generative molecules. |
+| Prominent Symbols | Human Genome Sciences ($HGSI), Celera Genomics ($CRA), Incyte | Recursion ($RXRX), Exscientia, Isomorphic Labs, Relay ($RLAY) |
+| Peak Valuation Trigger | Completion of Human Genome draft (Clinton/Blair June 2000 address) | AlphaFold releases, foundation models, generative protein design |
+| The "Next Catalyst" Fallacy | "The Mouse Genome" (Sequencing more species) | "AlphaFold 3 / Virtual Cells / Single-cell foundation models" |
+| Biological Bottleneck | Target validation, in vivo ADMET, human clinical trial attrition | Target validation, in vivo ADMET, human clinical trial attrition |
+| Ultimate Outcome | >90% valuation crash; 11-year capital slog for single drug | >80% valuation crash from peak; lead Phase 2 assets axed |
 
 ### The 17-Year-Old Intern at Cramer Berkowitz
 In the spring of 2000, Martin Shkreli was indeed 17 years old, working as an eager research intern at Cramer, Berkowitz & Co., the hedge fund run by Jim Cramer and Jeff Berkowitz. At that exact moment, the biotechnology sector was engulfed in a historic euphoria that dwarfed even the dot-com bubble.
@@ -88,29 +73,17 @@ To understand why Shkreli draws this parallel to AI bio, one must trace the grue
 
 Investors who bought HGSI in the spring of 2000 on the promise of the Human Genome Project did not achieve exponential returns. They walked into a decade-long financial slaughterhouse:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                      HUMAN GENOME SCIENCES ($HGSI) 2000–2012 TIMELINE                           │
-├───────────────┬─────────────────────────────────────────────────────────────────────────────────┤
-│ March 2000    │ Stock peaks at $232.75 (> $10B market cap) on Human Genome Project euphoria.   │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ June 2000     │ Clinton & Blair announce working draft of human genome. Peak market hype.      │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ Dec 2002      │ Mouse genome draft published in Nature. HGSI stock has already collapsed >90%.  │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ 2004          │ Lead clinical asset Repifermin (KGF-2) fails Phase 2 in wound healing/colitis.  │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ 2005          │ LymphoStat-B (belimumab) FAILS primary endpoint in Phase 2 lupus trial.        │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ 2008–2009     │ HGSI trades down to ~$1.50 per share during financial crisis; near-insolvency. │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ March 2011    │ Benlysta (belimumab) approved by FDA—first new lupus drug in 50 years.          │
-│               │ (11 full years after the 2000 bubble peak).                                     │
-├───────────────┼─────────────────────────────────────────────────────────────────────────────────┤
-│ July 2012     │ GlaxoSmithKline (GSK) acquires HGSI for $14.25/share ($3.6B)—a 94% drawdown    │
-│               │ from its March 2000 all-time high.                                              │
-└───────────────┴─────────────────────────────────────────────────────────────────────────────────┘
-```
+**HUMAN GENOME SCIENCES ($HGSI) 2000–2012 TIMELINE**
+
+| March 2000 | Stock peaks at $232.75 (> $10B market cap) on Human Genome Project euphoria. |
+| :--- | :--- |
+| June 2000 | Clinton & Blair announce working draft of human genome. Peak market hype. |
+| Dec 2002 | Mouse genome draft published in Nature. HGSI stock has already collapsed >90%. |
+| 2004 | Lead clinical asset Repifermin (KGF-2) fails Phase 2 in wound healing/colitis. |
+| 2005 | LymphoStat-B (belimumab) FAILS primary endpoint in Phase 2 lupus trial. |
+| 2008–2009 | HGSI trades down to ~$1.50 per share during financial crisis; near-insolvency. |
+| March 2011 | Benlysta (belimumab) approved by FDA—first new lupus drug in 50 years. (11 full years after the 2000 bubble peak). |
+| July 2012 | GlaxoSmithKline (GSK) acquires HGSI for $14.25/share ($3.6B)—a 94% drawdown from its March 2000 all-time high. |
 
 ### The Biology Meat Grinder
 HGSI discovered that knowing a gene sequence did not bypass the brutal laws of pharmacology:
@@ -178,31 +151,16 @@ To verify whether Shkreli's skepticism is grounded in facts, we investigated the
 
 The empirical data across the sector from 2020 to late 2026 reveals a stark reality:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                    CLINICAL ATTRITION AUDIT OF PROMINENT AI-BIO ASSETS                          │
-├───────────────────┬──────────────┬────────────────────────────┬─────────────────────────────────┤
-│ Company           │ Asset ID     │ Target / Indication        │ Real-World Clinical Outcome     │
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ Recursion ($RXRX) │ REC-994      │ Superoxide / CCM           │ FAILED Phase 2 efficacy in      │
-│                   │              │ (Cerebral Cavernous Malf.) │ SYCAMORE trial; AXED May 2025.  │
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ Recursion ($RXRX) │ REC-2282     │ Pan-HDAC / NF2 Meningioma  │ TERMINATED during portfolio     │
-│                   │              │                            │ restructuring (May 2025).       │
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ Exscientia        │ DSP-1181     │ 5-HT1A agonist / OCD       │ DISCONTINUED in Phase 1 by      │
-│ (Merged w/ RXRX)  │              │ (First "AI drug" in clinic)│ Sumitomo; failed criteria.      │
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ Exscientia        │ EXS-21546    │ A2A receptor antagonist /  │ TERMINATED due to poor clinical │
-│ (Merged w/ RXRX)  │              │ Immuno-oncology            │ tolerability/risk-benefit ratio.│
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ BenevolentAI      │ BEN-2293     │ Pan-Trk inhibitor /        │ FAILED Phase 2a primary &       │
-│ ($BAI)            │              │ Atopic Dermatitis          │ secondary endpoints (Apr 2023). │
-├───────────────────┼──────────────┼────────────────────────────┼─────────────────────────────────┤
-│ Schrödinger       │ SGR-2921     │ CDC7 inhibitor /           │ TERMINATED in 2024 due to       │
-│ ($SDGR)           │              │ AML / MDS                  │ clinical profile / toxicology.  │
-└───────────────────┴──────────────┴────────────────────────────┴─────────────────────────────────┘
-```
+**CLINICAL ATTRITION AUDIT OF PROMINENT AI-BIO ASSETS**
+
+| Company | Asset ID | Target / Indication | Real-World Clinical Outcome |
+| :--- | :--- | :--- | :--- |
+| Recursion ($RXRX) | REC-994 | Superoxide / CCM (Cerebral Cavernous Malf.) | FAILED Phase 2 efficacy in SYCAMORE trial; AXED May 2025. |
+| Recursion ($RXRX) | REC-2282 | Pan-HDAC / NF2 Meningioma | TERMINATED during portfolio restructuring (May 2025). |
+| Exscientia (Merged w/ RXRX) | DSP-1181 | 5-HT1A agonist / OCD (First "AI drug" in clinic) | DISCONTINUED in Phase 1 by Sumitomo; failed criteria. |
+| Exscientia (Merged w/ RXRX) | EXS-21546 | A2A receptor antagonist / Immuno-oncology | TERMINATED due to poor clinical tolerability/risk-benefit ratio. |
+| BenevolentAI ($BAI) | BEN-2293 | Pan-Trk inhibitor / Atopic Dermatitis | FAILED Phase 2a primary & secondary endpoints (Apr 2023). |
+| Schrödinger ($SDGR) | SGR-2921 | CDC7 inhibitor / AML / MDS | TERMINATED in 2024 due to clinical profile / toxicology. |
 
 ### 1. Recursion Pharmaceuticals ($RXRX): The Collapse of the Lead Pipeline
 Recursion was the premier public market bellwether for automated, AI-driven phenotypic discovery. Its BioHive supercomputers analyzed trillions of cellular images to identify drug candidates without needing target hypotheses.
@@ -232,24 +190,13 @@ Why is Phase 2 proving just as lethal for AI-designed molecules as it was for tr
 
 Comprehensive meta-analyses published by the **Boston Consulting Group (BCG)** in *Drug Discovery Today* (2024) and recent retrospective perspectives in *Nature Reviews Drug Discovery* (2026) confirm a vital empirical finding:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   CLINICAL TRIAL SUCCESS RATES: AI-DESIGNED VS. HISTORICAL BASELINE             │
-├─────────────────────────┬──────────────────────┬──────────────────────┬─────────────────────────┤
-│ Clinical Stage          │ Historical Baseline  │ AI-Discovered Drugs  │ Clinical Significance   │
-├─────────────────────────┼──────────────────────┼──────────────────────┼─────────────────────────┤
-│ Phase 1 (Safety / PK)   │ 65% – 75%            │ 80% – 90%            │ MODEST IMPROVEMENT:     │
-│                         │                      │                      │ Good at avoiding overt  │
-│                         │                      │                      │ chemical toxicophores.  │
-├─────────────────────────┼──────────────────────┼──────────────────────┼─────────────────────────┤
-│ Phase 2 (Proof of       │ 35% – 40%            │ ~ 40%                │ ZERO IMPROVEMENT:       │
-│ Concept / Efficacy)     │                      │                      │ Target biology remains  │
-│                         │                      │                      │ the primary failure.    │
-├─────────────────────────┼──────────────────────┼──────────────────────┼─────────────────────────┤
-│ Phase 3 (Pivotal Trial) │ 55% – 60%            │ Insufficient Data /  │ NO DE NOVO AI DRUG HAS  │
-│                         │                      │ Unproven             │ YET CLEARED PIVOTAL P3  │
-└─────────────────────────┴──────────────────────┴──────────────────────┴─────────────────────────┘
-```
+**CLINICAL TRIAL SUCCESS RATES: AI-DESIGNED VS. HISTORICAL BASELINE**
+
+| Clinical Stage | Historical Baseline | AI-Discovered Drugs | Clinical Significance |
+| :--- | :--- | :--- | :--- |
+| Phase 1 (Safety / PK) | 65% – 75% | 80% – 90% | MODEST IMPROVEMENT: Good at avoiding overt chemical toxicophores. |
+| Phase 2 (Proof of Concept / Efficacy) | 35% – 40% | ~ 40% | ZERO IMPROVEMENT: Target biology remains the primary failure. |
+| Phase 3 (Pivotal Trial) | 55% – 60% | Insufficient Data / Unproven | NO DE NOVO AI DRUG HAS YET CLEARED PIVOTAL P3 |
 
 These numbers explain the crux of Shkreli's insight:
 
@@ -275,22 +222,11 @@ Having completed this forensic audit, we can now answer the core question: **Doe
 
 Our verdict is nuanced: **Shkreli is 100% correct regarding market valuation, catalyst substitution, and near-term clinical reality. However, his cynicism risks falling into the "Amara's Law" fallacy regarding the long-term arc of biological technology.**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                           INDEPENDENT VERDICT ON SHKRELI'S HGSI ANALOGY                         │
-├──────────────────────────────────────────────────────┬──────────────────────────────────────────┤
-│ Where Shkreli Is 100% CORRECT (The Market Reality)   │ Where Shkreli Is TOO CYNICAL (The Science│
-├──────────────────────────────────────────────────────┼──────────────────────────────────────────┤
-│ 1. Catalyst Substitution: Computational benchmarks   │ 1. Amara's Law: We overestimate tech in  │
-│    ("Virtual Cell") are sold as clinical catalysts.  │    the short run, underestimate in long. │
-│                                                      │                                          │
-│ 2. Multiple Compression: Pure-play AI biotechs       │ 2. The HGP Didn't Fail: HGP became the   │
-│    inevitably crater from SaaS multiples to biotech. │    bedrock of modern targeted oncology.  │
-│                                                      │                                          │
-│ 3. Phase 2 Meat Grinder: In silico design does not   │ 3. Essential Infrastructure: Generative  │
-│    bypass human clinical efficacy attrition.         │    biology is becoming standard tooling. │
-└──────────────────────────────────────────────────────┴──────────────────────────────────────────┘
-```
+**INDEPENDENT VERDICT ON SHKRELI'S HGSI ANALOGY**
+
+| Where Shkreli Is 100% CORRECT (The Market Reality) | Where Shkreli Is TOO CYNICAL (The Science |
+| :--- | :--- |
+| 1. Catalyst Substitution: Computational benchmarks ("Virtual Cell") are sold as clinical catalysts.<br>2. Multiple Compression: Pure-play AI biotechs inevitably crater from SaaS multiples to biotech.<br>3. Phase 2 Meat Grinder: In silico design does not bypass human clinical efficacy attrition. | 1. Amara's Law: We overestimate tech in the short run, underestimate in long.<br>2. The HGP Didn't Fail: HGP became the bedrock of modern targeted oncology.<br>3. Essential Infrastructure: Generative biology is becoming standard tooling. |
 
 ### Where We Agree with Shkreli
 1. **The "Catalyst" Illusion is Real**:

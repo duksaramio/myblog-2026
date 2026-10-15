@@ -20,26 +20,11 @@ This report executes an exhaustive, 8-phase forensic investigation comparing the
 
 ---
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           FORENSIC COMPARATIVE SCORECARD: MARCH 2000 DOT-COM PEAK VS. OCTOBER 2026 AI CYCLE        │
-├─────────────────────────────────┬─────────────────────────────────┬────────────────────────────────┤
-│ STRUCTURAL DIMENSION            │ 1999–2000 DOT-COM / TELECOM     │ 2025–2026 AI INFRASTRUCTURE    │
-├─────────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ S&P 500 Shiller CAPE Ratio      │ 44.2x (All-time historical high)│ 40.0x–41.8x (2nd highest ever) │
-│ S&P 500 Price-to-Sales (P/S)    │ 2.27x–2.30x (1999–2000 Record)  │ 3.30x–3.80x (50% above 2000)   │
-│ S&P 500 Equal-Weight P/S        │ ~1.45x                          │ ~1.65x (Bifurcated market)     │
-│ Top-10 S&P 500 Concentration    │ ~27.0% of Total Index Market Cap│ 36.0%–40.0% (All-time record)  │
-│ Flagship Infrastructure Bellwether│ Cisco Systems (~130x–196x P/E)│ Nvidia (~28x–35x P/E; >55% Net)│
-│ Tech IPO Volume & Quality       │ 631 Tech IPOs (86%–87% Unprofit)│ 45 Tech IPOs (Losses in VC/SPV)│
-│ CapEx vs. Operating Cash Flow   │ Telecom CapEx >120% of OCF      │ Big-4 2026 CapEx ~103% of OCF  │
-│ Accounting Earnings Boost       │ Aggressive revenue recognition  │ Server life stretched 3–4→6 yrs│
-│ Circular Financing Mechanism    │ Lucent/Cisco CLEC vendor loans  │ Cloud credits, GPU SPVs & leases│
-│ Demand Myth vs. Reality         │ "Traffic doubles every 100 days"│ "Infinite scaling laws" vs ROI │
-│ Core Physical Collateral        │ Dark Fiber (Lasts 25–30 years)  │ AI GPUs (Obsolete in 36–48 mos)│
-│ Primary Vulnerability Vector    │ Public equity wipeout & CLEC BKs│ Capex air pocket & SPV credit  │
-└─────────────────────────────────┴─────────────────────────────────┴────────────────────────────────┘
-```
+**FORENSIC COMPARATIVE SCORECARD: MARCH 2000 DOT-COM PEAK VS. OCTOBER 2026 AI CYCLE**
+
+| STRUCTURAL DIMENSION | 1999–2000 DOT-COM / TELECOM | 2025–2026 AI INFRASTRUCTURE |
+| :--- | :--- | :--- |
+| S&P 500 Shiller CAPE Ratio S&P 500 Price-to-Sales (P/S) S&P 500 Equal-Weight P/S Top-10 S&P 500 Concentration Flagship Infrastructure Bellwether Tech IPO Volume & Quality CapEx vs. Operating Cash Flow Accounting Earnings Boost Circular Financing Mechanism Demand Myth vs. Reality Core Physical Collateral Primary Vulnerability Vector | 44.2x (All-time historical high)<br>2.27x–2.30x (1999–2000 Record) ~1.45x ~27.0% of Total Index Market Cap Cisco Systems (~130x–196x P/E) 631 Tech IPOs (86%–87% Unprofit) Telecom CapEx >120% of OCF Aggressive revenue recognition Lucent/Cisco CLEC vendor loans "Traffic doubles every 100 days" Dark Fiber (Lasts 25–30 years) Public equity wipeout & CLEC BKs | 40.0x–41.8x (2nd highest ever)<br>3.30x–3.80x (50% above 2000) ~1.65x (Bifurcated market)<br>36.0%–40.0% (All-time record) Nvidia (~28x–35x P/E; >55% Net) 45 Tech IPOs (Losses in VC/SPV) Big-4 2026 CapEx ~103% of OCF Server life stretched 3–4→6 yrs Cloud credits, GPU SPVs & leases "Infinite scaling laws" vs ROI AI GPUs (Obsolete in 36–48 mos) Capex air pocket & SPV credit |
 
 ---
 
@@ -67,33 +52,17 @@ What specific, measurable empirical evidence would invalidate our forensic thesi
 
 We anchor every empirical assertion in canonical primary artifacts: SEC Form 10-K filings, Federal Reserve and BIS macro series, academic econometrics, and historical telecom records.
 
-```
-                                   PRIMARY ARTIFACT TRACEABILITY MATRIX
+**PRIMARY ARTIFACT TRACEABILITY MATRIX**
 
-     Domain             Canonical Primary Source               Identifier / Citation      Key Verified Finding
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Valuation History  Robert Shiller / Yale University       econ.yale.edu/~shiller     S&P 500 CAPE: 44.2x (Dec 1999 peak)
-                        Long-Term U.S. Stock Dataset           U.S. Stock Markets 1871+   vs. 40.0x–41.8x (2025–2026)
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     IPO Cohort Audit   Prof. Jay R. Ritter (Univ. of Florida) site.warrington.ufl.edu    1999–2000: 631 tech IPOs (86%–87%
-                        IPO Statistics (Tables 4b & 9)         /ritter/ipo-data/          unprofitable) vs. 45 in 2024–2025
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     10-K Depreciation  Amazon, Meta, Alphabet, Microsoft      SEC Form 10-K (FY23–FY25)  GOOG/MSFT at 6 yrs; META 5.5 yrs
-                        Property & Equipment Footnotes         Note 1 (Accounting)        (+$2.92B OI); AMZN cut 6→5 yrs (2025)
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Telecom Myths      Andrew Odlyzko (AT&T Labs Research)    First Monday, Vol 5, No 8  Debunked "traffic doubles every 100
-                        "Internet growth: Myth and reality"    firstmonday.org (2000)     days" (~1,000%/yr); actual was ~100%
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     AI Macroeconomics  Goldman Sachs Global Macro Issue 129   goldmansachs.com           Jim Covello $1T+ spend audit; Daron
-                        & Daron Acemoglu (MIT / NBER w32487)   NBER Working Paper 32487   Acemoglu: ~0.53%–0.66% 10-yr TFP gain
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     CapEx Revenue Gap  Sequoia Capital (David Cahn)           sequoiacap.com             "$600B Question" formula: CapEx × 2
-                        "AI's $600B Question" & 2026 Scale     /article/ais-600b-question implies >$1.5T revenue needed for 2026
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Credit & SPV Risk  Bank for International Settlements     bis.org / CEPR /           AI private debt spread only +10 bps
-                        & Corporate Bond Trading Blotters      Frankfurt Exchange         over non-AI; Big-4 CapEx ~103% of OCF
-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-```
+| Domain | Canonical Primary Source | Identifier / Citation | Key Verified Finding |
+| :--- | :--- | :--- | :--- |
+| Valuation History | Robert Shiller / Yale University Long-Term U.S. Stock Dataset | econ.yale.edu/~shiller U.S. Stock Markets 1871+ | S&P 500 CAPE: 44.2x (Dec 1999 peak) vs. 40.0x–41.8x (2025–2026) |
+| IPO Cohort Audit | Prof. Jay R. Ritter (Univ. of Florida) IPO Statistics (Tables 4b & 9) | site.warrington.ufl.edu /ritter/ipo-data/ | 1999–2000: 631 tech IPOs (86%–87% unprofitable) vs. 45 in 2024–2025 |
+| 10-K Depreciation | Amazon, Meta, Alphabet, Microsoft Property & Equipment Footnotes | SEC Form 10-K (FY23–FY25) Note 1 (Accounting) | GOOG/MSFT at 6 yrs; META 5.5 yrs (+$2.92B OI); AMZN cut 6→5 yrs (2025) |
+| Telecom Myths | Andrew Odlyzko (AT&T Labs Research) "Internet growth: Myth and reality" | First Monday, Vol 5, No 8 firstmonday.org (2000) | Debunked "traffic doubles every 100 days" (~1,000%/yr); actual was ~100% |
+| AI Macroeconomics | Goldman Sachs Global Macro Issue 129 & Daron Acemoglu (MIT / NBER w32487) | goldmansachs.com NBER Working Paper 32487 | Jim Covello $1T+ spend audit; Daron Acemoglu: ~0.53%–0.66% 10-yr TFP gain |
+| CapEx Revenue Gap | Sequoia Capital (David Cahn) "AI's $600B Question" & 2026 Scale | sequoiacap.com /article/ais-600b-question | "$600B Question" formula: CapEx × 2 implies >$1.5T revenue needed for 2026 |
+| Credit & SPV Risk | Bank for International Settlements & Corporate Bond Trading Blotters | bis.org / CEPR / Frankfurt Exchange | AI private debt spread only +10 bps over non-AI; Big-4 CapEx ~103% of OCF |
 
 ### The 2-Column Claim Schism Matrix: Market Dogma vs. Forensic Reality
 
@@ -154,31 +123,14 @@ flowchart TD
 
 Why are market concentration, index P/S multiples, and infrastructure capital intensity simultaneously flashing 1999–2000 warning signals? We reject single-cause explanations and evaluate the **4-Way Causal Matrix**.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│            4-WAY CAUSAL MATRIX: WHAT IS DRIVING THE 2026 DOT-COM PATTERN CONVERGENCE?              │
-├──────────────────────┬─────────────────────────────────────────────────────────────────────────────┤
-│ CAUSAL PATHWAY       │ MECHANISTIC & HISTORICAL FORENSIC AUDIT                                     │
-├──────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
-│ 1. Direct Causation  │ Prisoner's Dilemma CapEx Arms Race (X → Y): Hyperscaler CEOs explicitly     │
-│    (Fundamental)     │ admit that "the risk of under-investing is dramatically greater than the    │
-│                      │ risk of over-investing." Existential fear of platform obsolescence forces   │
-│                      │ simultaneous $150B–$220B/yr individual capex commitments regardless of ROI. │
-├──────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
-│ 2. Reverse Causation │ Valuation Reflexivity (Y → X): Extreme equity market caps ($3T–$4T+) and    │
-│    (Market → Ops)    │ investor rewards for AI capex announcements lower the implied cost of       │
-│                      │ equity and debt, enabling capital raises and SPVs that fund further buildout│
-├──────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
-│ 3. Confounder (Z)    │ Non-Recessionary Fed Rate Cuts + Fiscal Liquidity (1998 vs. 2024–2026):     │
-│    (Macro Liquidity) │ In Autumn 1998 (post-LTCM), Greenspan cut rates 75 bps into a strong        │
-│                      │ economy, igniting the 1999 melt-up. In 2024–2026, Fed rate cuts alongside   │
-│                      │ $1.8T–$2.0T U.S. fiscal deficits injected massive liquidity into tech beta. │
-├──────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
-│ 4. Mutual Feedback   │ The CapEx-to-Passive-Index Flywheel (X ↔ Y): Hyperscaler CapEx →            │
-│    Loop (Flywheel)   │ Surging Nvidia/Semi EPS → Mag-7 Index Weight hits 38%+ → Passive 401(k)/ETF │
-│                      │ inflows mechanically buy Top-10 stocks → Higher multiples justify more CapEx│
-└──────────────────────┴─────────────────────────────────────────────────────────────────────────────┘
-```
+**4-WAY CAUSAL MATRIX: WHAT IS DRIVING THE 2026 DOT-COM PATTERN CONVERGENCE?**
+
+| CAUSAL PATHWAY | MECHANISTIC & HISTORICAL FORENSIC AUDIT |
+| :--- | :--- |
+| 1. Direct Causation (Fundamental) | Prisoner's Dilemma CapEx Arms Race (X → Y): Hyperscaler CEOs explicitly admit that "the risk of under-investing is dramatically greater than the risk of over-investing." Existential fear of platform obsolescence forces simultaneous $150B–$220B/yr individual capex commitments regardless of ROI. |
+| 2. Reverse Causation (Market → Ops) | Valuation Reflexivity (Y → X): Extreme equity market caps ($3T–$4T+) and investor rewards for AI capex announcements lower the implied cost of equity and debt, enabling capital raises and SPVs that fund further buildout |
+| 3. Confounder (Z) (Macro Liquidity) | Non-Recessionary Fed Rate Cuts + Fiscal Liquidity (1998 vs. 2024–2026): In Autumn 1998 (post-LTCM), Greenspan cut rates 75 bps into a strong economy, igniting the 1999 melt-up. In 2024–2026, Fed rate cuts alongside $1.8T–$2.0T U.S. fiscal deficits injected massive liquidity into tech beta. |
+| 4. Mutual Feedback Loop (Flywheel) | The CapEx-to-Passive-Index Flywheel (X ↔ Y): Hyperscaler CapEx → Surging Nvidia/Semi EPS → Mag-7 Index Weight hits 38%+ → Passive 401(k)/ETF inflows mechanically buy Top-10 stocks → Higher multiples justify more CapEx |
 
 ### The Lurking Macro Confounder: Autumn 1998 vs. 2024–2026
 Many observers forget that the dot-com bubble was actually two distinct cycles: a rational adoption phase (1995–1998) followed by a vertical liquidity melt-up (October 1998–March 2000).
@@ -213,19 +165,11 @@ $$
 ### 2. The SEC Form 10-K Server Depreciation Audit (The $150B+ Earnings Cushion)
 How have hyperscalers maintained record GAAP operating margins while spending hundreds of billions on AI data centers? A forensic reading of **Note 1 (Summary of Significant Accounting Policies — Property and Equipment)** across SEC Form 10-K filings reveals a massive, synchronized accounting tailwind between 2022 and 2025:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│               SEC FORM 10-K AUDIT: HYPERSCALER SERVER USEFUL LIFE EXTENSIONS (2022–2025)           │
-├────────────────────┬────────────────────┬────────────────────┬─────────────────────────────────────┤
-│ HYPERSCALER        │ LEGACY SERVER LIFE │ REVISED 10-K LIFE  │ DISCLOSED OPERATING INCOME IMPACT   │
-├────────────────────┼────────────────────┼────────────────────┼─────────────────────────────────────┤
-│ Alphabet (GOOGL)   │ 4.0 Years          │ 6.0 Years (FY2023) │ +$3.9 Billion boost to FY23 Op Inc  │
-│ Microsoft (MSFT)   │ 4.0 Years          │ 6.0 Years (FY2023) │ +$3.7 Billion boost to FY23 Op Inc  │
-│ Meta (META)        │ 4.0 → 5.0 Years    │ 5.5 Years (Jan '25)│ +$2.92 Billion boost to FY25 Op Inc │
-│ Amazon (AMZN)      │ Extended to 6.0 Yrs│ CUT TO 5.0 YRS ('25│ -$920M Q4'24 charge + lower '25 OI  │
-│                    │ (2022–2024)        │ *Citing AI/ML pace*│ (Smoking-gun admission of AI decay) │
-└────────────────────┴────────────────────┴────────────────────┴─────────────────────────────────────┘
-```
+**SEC FORM 10-K AUDIT: HYPERSCALER SERVER USEFUL LIFE EXTENSIONS (2022–2025)**
+
+| HYPERSCALER | LEGACY SERVER LIFE | REVISED 10-K LIFE | DISCLOSED OPERATING INCOME IMPACT |
+| :--- | :--- | :--- | :--- |
+| Alphabet (GOOGL) Microsoft (MSFT) Meta (META) Amazon (AMZN) | 4.0 Years<br>4.0 Years<br>4.0 → 5.0 Years Extended to 6.0 Yrs (2022–2024) | 6.0 Years (FY2023)<br>6.0 Years (FY2023)<br>5.5 Years (Jan '25) CUT TO 5.0 YRS ('25<br>*Citing AI/ML pace* | +$3.9 Billion boost to FY23 Op Inc +$3.7 Billion boost to FY23 Op Inc +$2.92 Billion boost to FY25 Op Inc<br>-$920M Q4'24 charge + lower '25 OI (Smoking-gun admission of AI decay) |
 
 Let us formalize the annual GAAP operating income overstatement (ΔEBIT_overstatement) created when an installed AI accelerator and server asset base (K_AI) with residual scrap value fraction (s) is depreciated over an accounting useful life (L_GAAP) that exceeds its true economic competitive life (L_econ):
 
@@ -338,27 +282,13 @@ Following Chapter 12 of the Browne & Keeley runbook, we reject both the permabea
 
 Is the 2026 market repeating the dot-com bust? **Our forensic verdict is that 2026 is NOT a repeat of the 1999 public retail dot-com IPO bubble—it is a high-stakes replay of the 2000–2001 Telecom Infrastructure & Capex Digestion Cycle, split across public mega-cap balance sheets and private shadow-credit SPVs.**
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│              PROBABILITY-WEIGHTED FORENSIC SCENARIO MATRIX (2026–2028 MARKET OUTLOOK)              │
-├─────────────────────────┬────────────────────┬─────────────────────────────┬───────────────────────┤
-│ SCENARIO BRANCH         │ PROBABILITY WEIGHT │ INDEX & SECTOR TRAJECTORY   │ STRATEGIC POSITIONING │
-├─────────────────────────┼────────────────────┼─────────────────────────────┼───────────────────────┤
-│ Scenario 1: Base Case   │ ~55% Probability   │ CapEx growth decelerates to │ Overweight Equal-Wt   │
-│ "The 2001 Capex Air     │ (Most Probable)    │ defend FCF; Semi/AI hardware│ S&P 500 (RSP) & Cash  │
-│ Pocket & Rotation"      │                    │ multiples reset -30% to -40%│ Flow Compounders;     │
-│                         │                    │ S&P 493 outperforms Mag-7   │ Trim Cap-Wt Tech Beta │
-├─────────────────────────┼────────────────────┼─────────────────────────────┼───────────────────────┤
-│ Scenario 2: Bear Case   │ ~25% Probability   │ Forced 10-K server life     │ Underweight/Short     │
-│ "Full Telecom & Shadow  │ (Downside Tail)    │ write-downs + SPV defaults; │ Leveraged Neo-Clouds  │
-│ Credit Contagion"       │                    │ Nasdaq drawdown -40% to -55%│ & Tech Private Credit;│
-│                         │                    │ as P/S & margins contract   │ Long Duration / Gold  │
-├─────────────────────────┼────────────────────┼─────────────────────────────┼───────────────────────┤
-│ Scenario 3: Bull Case   │ ~20% Probability   │ Enterprise AI ARR crosses   │ Core holdings in      │
-│ "Productivity Escape    │ (Upside Tail)      │ $400B+ by 2027; 13%+ index  │ Hyperscalers with     │
-│ Velocity"               │                    │ net margins sustained       │ Proprietary Distribution│
-└─────────────────────────┴────────────────────┴─────────────────────────────┴───────────────────────┘
-```
+**PROBABILITY-WEIGHTED FORENSIC SCENARIO MATRIX (2026–2028 MARKET OUTLOOK)**
+
+| SCENARIO BRANCH | PROBABILITY WEIGHT | INDEX & SECTOR TRAJECTORY | STRATEGIC POSITIONING |
+| :--- | :--- | :--- | :--- |
+| Scenario 1: Base Case "The 2001 Capex Air Pocket & Rotation" | ~55% Probability (Most Probable) | CapEx growth decelerates to defend FCF; Semi/AI hardware multiples reset -30% to -40% S&P 493 outperforms Mag-7 | Overweight Equal-Wt S&P 500 (RSP) & Cash Flow Compounders; Trim Cap-Wt Tech Beta |
+| Scenario 2: Bear Case "Full Telecom & Shadow Credit Contagion" | ~25% Probability (Downside Tail) | Forced 10-K server life write-downs + SPV defaults; Nasdaq drawdown -40% to -55% as P/S & margins contract | Underweight/Short Leveraged Neo-Clouds & Tech Private Credit; Long Duration / Gold |
+| Scenario 3: Bull Case "Productivity Escape Velocity" | ~20% Probability (Upside Tail) | Enterprise AI ARR crosses $400B+ by 2027; 13%+ index net margins sustained | Core holdings in Hyperscalers with Proprietary Distribution |
 
 #### 1. Stance on the Empirical Evidence
 * **Where the Bears Are Right:** The macro valuation concentration (38% Top-10 weight, 3.5x Price-to-Sales, 40.8x CAPE), the collapse of hyperscaler Free Cash Flow conversion (~103% CapEx-to-OCF in 2026), the aggressive extension of server depreciation schedules to 6 years, and the explosion of circular SPV debt financing ($35B Anthropic vehicle, 15.1% CoreWeave bond yields) are textbook late-cycle capital-overbuild signatures that mirror the 2000 telecom peak.Furthermore, **3-year GPU obsolescence makes an AI infrastructure overbuild far more punitive to capital recovery than the 30-year dark fiber glut of 2001.**

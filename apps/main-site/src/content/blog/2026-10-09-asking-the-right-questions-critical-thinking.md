@@ -40,17 +40,10 @@ Integrating the dual-process cognitive psychology of Daniel Kahneman (*Thinking,
 
 In a media landscape optimized to trigger our emotional elephant into a stampede, the foundational directive of critical thinking can be distilled into two words: **SLOW DOWN**.
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Dual-Process Cognition               │
-├──────────────────────────┬─────────────────────────────┤
-│ System 1 (Fast)          │ System 2 (Slow)             │
-│ • Automatic & reactive   │ • Conscious & analytical    │
-│ • Emotion-driven         │ • Evidence-grounded         │
-│ • "The Elephant"         │ • "The Rider"               │
-│ • Snap acceptance/attack │ • Methodical questioning    │
-└──────────────────────────┴─────────────────────────────┘
-```
+**Dual-Process Cognition**
+
+| System 1 (Fast)<br>• Automatic & reactive<br>• Emotion-driven<br>• "The Elephant"<br>• Snap acceptance/attack | System 2 (Slow)<br>• Conscious & analytical<br>• Evidence-grounded<br>• "The Rider"<br>• Methodical questioning |
+| :--- | :--- |
 
 ### The Sponge vs. Panning for Gold
 The authors distinguish between two contrasting intellectual postures:
@@ -141,19 +134,9 @@ Persuaders often rely on abstract, emotionally loaded words to manufacture easy 
 - An advertisement declares: *"OurBrand Sleep Aid works great in just 30 minutes."* What does "works great" mean? Does it gently induce drowsiness, or does it leave you incapacitated until noon the next day?
 - A policy editorial demands: *"We must ban inappropriate student attire."* Does "inappropriate" refer to offensive hate speech on T-shirts, or does it restrict political slogans?
 
-```
-┌────────────────────────────────────────────────────────┐
-│            The Ambiguity Substitution Test             │
-├────────────────────────────────────────────────────────┤
-│ 1. Identify key abstract terms in conclusion/reasons.  │
-│ 2. Propose Definition A (Narrow/Literal).               │
-│ 3. Propose Definition B (Broad/Expansive).             │
-│ 4. Substitute both into the argument:                  │
-│    Does the reason still support the conclusion under  │
-│    both interpretations?                               │
-│ 5. If NO ➔ You have located a critical ambiguity.      │
-└────────────────────────────────────────────────────────┘
-```
+| The Ambiguity Substitution Test |
+| :--- |
+| 1. Identify key abstract terms in conclusion/reasons.<br>2. Propose Definition A (Narrow/Literal).<br>3. Propose Definition B (Broad/Expansive).<br>4. Substitute both into the argument: Does the reason still support the conclusion under both interpretations?<br>5. If NO ➔ You have located a critical ambiguity. |
 
 #### Guidelines for Resolving Ambiguity:
 - **Focus on the Argumentative Core:** Do not waste time dissecting words that appear only in peripheral background text. Hunt for ambiguity strictly within the reasons and the conclusion.
@@ -209,28 +192,9 @@ Browne and Keeley detail the most pervasive fallacies encountered in public and 
 
 ### Critical Question 5: Are There Any Fallacies in the Reasoning?
 
-```
-┌────────────────────────────────────────────────────────┐
-│             The Fallacy Detection Framework            │
-├────────────────────────────────────────────────────────┤
-│ 1. Attacks the person instead of the argument?         │
-│    ➔ Ad Hominem                                       │
-│ 2. Assumes an inevitable catastrophic chain reaction? │
-│    ➔ Slippery Slope                                    │
-│ 3. Demands 100% eradication or rejects the remedy?     │
-│    ➔ Searching for Perfect Solutions                  │
-│ 4. Equates popular consensus with truth?               │
-│    ➔ Appeal to Popularity (Ad Populum)                │
-│ 5. Caricatures the opposing view to easily refute it?  │
-│    ➔ Straw Person                                      │
-│ 6. Artificially constrains options to two extremes?   │
-│    ➔ False Dilemma / Either-Or                         │
-│ 7. Uses diagnostic labels as causal explanations?      │
-│    ➔ Explaining by Naming                             │
-│ 8. Restates the conclusion as its own premise?         │
-│    ➔ Begging the Question (Circular Reasoning)        │
-└────────────────────────────────────────────────────────┘
-```
+| The Fallacy Detection Framework |
+| :--- |
+| 1. Attacks the person instead of the argument?<br>➔ Ad Hominem<br>2. Assumes an inevitable catastrophic chain reaction?<br>➔ Slippery Slope<br>3. Demands 100% eradication or rejects the remedy?<br>➔ Searching for Perfect Solutions<br>4. Equates popular consensus with truth?<br>➔ Appeal to Popularity (Ad Populum)<br>5. Caricatures the opposing view to easily refute it?<br>➔ Straw Person<br>6. Artificially constrains options to two extremes?<br>➔ False Dilemma / Either-Or<br>7. Uses diagnostic labels as causal explanations?<br>➔ Explaining by Naming<br>8. Restates the conclusion as its own premise?<br>➔ Begging the Question (Circular Reasoning) |
 
 1. **Ad Hominem:** Attacking the character, motives, political affiliation, or personality of the arguer rather than addressing their actual reasons. *(Example: "Of course the senator opposes the highway budget; what else do you expect from a tax-and-spend liberal?")*
 2. **Narrative Fallacy:** Assuming that because we can weave an emotionally coherent story that links a sequence of facts together, our narrative represents the true causal reality.
@@ -302,18 +266,9 @@ The scientific method remains the gold standard for reliable evidence because it
 - **Artificiality vs. Ecological Validity:** Controlled laboratory conditions often fail to reflect the messiness of real-world environments.
 - **The Impossible Certainty Fallacy:** While skepticism is essential, demanding 100% mathematical certainty before accepting scientific guidance is a logical error. In empirical reality, all knowledge is probabilistic.
 
-```
-┌────────────────────────────────────────────────────────┐
-│           Scientific Study Evaluation Checklist         │
-├────────────────────────────────────────────────────────┤
-│ ✓ Has the finding been replicated by independent teams?│
-│ ✓ Was the sample size sufficient, diverse, and random? │
-│ ✓ Did the study control for confounding variables?     │
-│ ✓ Were the measurements valid (Construct Validity)?    │
-│ ✓ Are the researchers' financial ties disclosed?      │
-│ ✓ Does the author qualify their claims realistically?  │
-└────────────────────────────────────────────────────────┘
-```
+| Scientific Study Evaluation Checklist |
+| :--- |
+| ✓ Has the finding been replicated by independent teams?<br>✓ Was the sample size sufficient, diverse, and random?<br>✓ Did the study control for confounding variables?<br>✓ Were the measurements valid (Construct Validity)?<br>✓ Are the researchers' financial ties disclosed?<br>✓ Does the author qualify their claims realistically? |
 
 ---
 
@@ -371,15 +326,9 @@ When analyzing wealth, real estate prices, or professional athlete earnings, rel
 
 Furthermore, averages obscure **range** and **distribution**. Citing paleontologist Stephen Jay Gould's famous personal encounter with cancer diagnosis: being diagnosed with an illness having a "median survival of 8 months" did not mean he would die in 8 months. Gould lived for 20 more years because the distribution curve had a long, heavy right tail.
 
-```
-┌────────────────────────────────────────────────────────┐
-│             The Skewed Average Distortion              │
-├────────────────────────────────────────────────────────┤
-│ [1, 1, 1, 2, 2, 3, 4, 100]                             │
-│ • Median = 2.0 (True typical experience)               │
-│ • Mean   = 14.25 (Distorted by outlier 100)            │
-└────────────────────────────────────────────────────────┘
-```
+| The Skewed Average Distortion |
+| :--- |
+| [1, 1, 1, 2, 2, 3, 4, 100]<br>• Median = 2.0 (True typical experience)<br>• Mean   = 14.25 (Distorted by outlier 100) |
 
 #### 3. Concluding One Thing While Proving Another
 A statistic may be completely true, yet unrelated to the conclusion drawn. 
@@ -421,23 +370,10 @@ Real-world problems exist across complex spectrums of trade-offs, constraints, a
 #### The Generative Power of "If-Clauses"
 To move beyond dichotomous polarization, Browne and Keeley recommend qualifying conclusions with **if-clauses**. Instead of making unconditional declarations, state the conditions under which a claim holds true:
 
-```
-┌────────────────────────────────────────────────────────┐
-│          Transforming Dogma via "If-Clauses"           │
-├────────────────────────────────────────────────────────┤
-│ Binary Claim:                                          │
-│ ❌ "We should make community college tuition-free."     │
-│ ❌ "We should reject free community college."          │
-├────────────────────────────────────────────────────────┤
-│ Conditional Nuance (If-Clauses):                       │
-│ ✔ "IF the primary goal is closing the socio-economic   │
-│   skills gap, THEN subsidized tuition is justified."   │
-│ ✔ "IF local tax bases are already overextended, THEN   │
-│   funding should be prioritized for vocational tracks."│
-│ ✔ "IF students lack basic living allowances, THEN free │
-│   tuition alone will not boost graduation rates."      │
-└────────────────────────────────────────────────────────┘
-```
+| Transforming Dogma via "If-Clauses" |
+| :--- |
+| Binary Claim:<br>❌ "We should make community college tuition-free."<br>❌ "We should reject free community college." |
+| Conditional Nuance (If-Clauses):<br>✔ "IF the primary goal is closing the socio-economic skills gap, THEN subsidized tuition is justified."<br>✔ "IF local tax bases are already overextended, THEN funding should be prioritized for vocational tracks."<br>✔ "IF students lack basic living allowances, THEN free tuition alone will not boost graduation rates." |
 
 Using if-clauses fosters intellectual humility. It acknowledges that conclusions are provisional, context-dependent, and shaped by underlying value priorities.
 

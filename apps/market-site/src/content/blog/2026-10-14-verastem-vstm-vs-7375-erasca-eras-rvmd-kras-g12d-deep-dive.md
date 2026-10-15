@@ -41,32 +41,11 @@ Rather than accepting corporate slide decks at face value or collapsing into bin
 
 ---
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           THE 2026 RAS ONCOLOGY TRIAD: FORENSIC VALUATION, MECHANISM & CLINICAL SCORECARD                  │
-├──────────────────────────┬──────────────────────────┬──────────────────────────┬───────────────────────────┤
-│ DIMENSION / METRIC       │ VERASTEM ($VSTM)         │ ERASCA ($ERAS)           │ REVOLUTION MED ($RVMD)    │
-├──────────────────────────┼──────────────────────────┼──────────────────────────┼───────────────────────────┤
-│ Lead KRAS G12D Asset     │ VS-7375 (GFH375)         │ ERAS-0015 (+ ERAS-4001)  │ Daraxonrasib (+ Zoldon.)  │
-│ Molecular Mechanism      │ Direct G12D ON/OFF Small │ Pan-RAS CypA Molecular   │ Pan-RAS(ON) CypA Glue     │
-│                          │ Molecule (No CypA Glue)  │ Glue (eras-4001=panKRAS) │ (+ G12D Covalent Glue)    │
-│ Origin / Licensor        │ GenFleet (Ex-China Rts)  │ Joyo Pharmatech (Global) │ In-House / Warp Drive Bio │
-│ Share Price (Oct 13/14)  │ $7.45 Close / $8.00 Deal │ $14.78 (-4.40%)          │ ~$188.00                  │
-│ Market Capitalization    │ ~$675M Pre / ~$925M Post │ ~$5.4B – $5.6B           │ ~$40.3B – $41.6B          │
-│ Pro-Forma Cash Balance   │ ~$455M (Q3 $173M + $250M │ ~$950M+ (Q2 $384M +      │ ~$3.9B (Q2 2026 10-Q;     │
-│                          │ Deal + $50M Oberland)    │ July $632.5M Offering)   │ $525M–$550M/Qtr Burn)     │
-│ 2L+ PDAC G12D Efficacy   │ 900mg: 41% cORR (9/22;   │ 32mg: 57% uORR_8wk (4/7  │ Daraxonrasib: 24% cORR    │
-│ (Confirmed vs Unconf.)   │ 2L: 50% [4/8], 2 CRs)    │ unconf. across G12X)     │ in G12D (23/95, Phase 3)  │
-│ Hidden Dose / Subtype    │ 600mg US PDAC collapsed  │ Only N=7 at 32mg RDE;    │ G12V 50% vs G12D 24%;     │
-│ Vulnerability            │ to 14.8% cORR (4/27)!    │ G12D vs G12V unsplit     │ Zoldonrasib cORR 15% (6/40│
-│ Wild-Type RAS Toxicity   │ 0% Mucositis/Stomatitis; │ Claims 0% TRAE discont.  │ High Rash, Stomatitis,    │
-│ & Discontinuation Rate   │ 4% Gr1-2 Rash; 2% Disc.  │ in Ph1 (small N, early)  │ Mucositis; Dose-Capped    │
-│ Legal / Governance Risk  │ 34.5% Share Dilution on  │ RVMD Patent '225 & Trade │ $149.7M Insider Selling / │
-│                          │ Oct 14 + CEO Retirement  │ Secret Threat + Lawsuits │ $0 Bought; 20/20 Buy Bias │
-│ Institutional Stance     │ SPECULATIVE ACCUMULATE   │ UNDERWEIGHT / AVOID      │ TACTICAL SHORT / TRIM     │
-│                          │ ON OFFERING CHURN ($8)   │ (Litigation + 8x VSTM EV)│ (G12D Monopoly Broken)    │
-└──────────────────────────┴──────────────────────────┴──────────────────────────┴───────────────────────────┘
-```
+**THE 2026 RAS ONCOLOGY TRIAD: FORENSIC VALUATION, MECHANISM & CLINICAL SCORECARD**
+
+| DIMENSION / METRIC | VERASTEM ($VSTM) | ERASCA ($ERAS) | REVOLUTION MED ($RVMD) |
+| :--- | :--- | :--- | :--- |
+| Lead KRAS G12D Asset Molecular Mechanism Origin / Licensor Share Price (Oct 13/14) Market Capitalization Pro-Forma Cash Balance 2L+ PDAC G12D Efficacy (Confirmed vs Unconf.) Hidden Dose / Subtype Vulnerability Wild-Type RAS Toxicity & Discontinuation Rate Legal / Governance Risk Institutional Stance | VS-7375 (GFH375) Direct G12D ON/OFF Small Molecule (No CypA Glue) GenFleet (Ex-China Rts) $7.45 Close / $8.00 Deal ~$675M Pre / ~$925M Post ~$455M (Q3 $173M + $250M Deal + $50M Oberland) 900mg: 41% cORR (9/22; 2L: 50% [4/8], 2 CRs) 600mg US PDAC collapsed to 14.8% cORR (4/27)! 0% Mucositis/Stomatitis; 4% Gr1-2 Rash; 2% Disc.<br>34.5% Share Dilution on Oct 14 + CEO Retirement SPECULATIVE ACCUMULATE ON OFFERING CHURN ($8) | ERAS-0015 (+ ERAS-4001) Pan-RAS CypA Molecular Glue (eras-4001=panKRAS) Joyo Pharmatech (Global) $14.78 (-4.40%) ~$5.4B – $5.6B ~$950M+ (Q2 $384M + July $632.5M Offering) 32mg: 57% uORR_8wk (4/7 unconf. across G12X) Only N=7 at 32mg RDE; G12D vs G12V unsplit Claims 0% TRAE discont. in Ph1 (small N, early) RVMD Patent '225 & Trade Secret Threat + Lawsuits UNDERWEIGHT / AVOID (Litigation + 8x VSTM EV) | Daraxonrasib (+ Zoldon.) Pan-RAS(ON) CypA Glue (+ G12D Covalent Glue) In-House / Warp Drive Bio ~$188.00 ~$40.3B – $41.6B ~$3.9B (Q2 2026 10-Q; $525M–$550M/Qtr Burn) Daraxonrasib: 24% cORR in G12D (23/95, Phase 3) G12V 50% vs G12D 24%; Zoldonrasib cORR 15% (6/40 High Rash, Stomatitis, Mucositis; Dose-Capped $149.7M Insider Selling / $0 Bought; 20/20 Buy Bias TACTICAL SHORT / TRIM (G12D Monopoly Broken) |
 
 ---
 
@@ -91,34 +70,17 @@ What specific empirical evidence would prove our thesis wrong across each leg of
 
 In accordance with our anti-echo chamber standard, every clinical denominator, pharmacokinetic curve, balance sheet figure, and legal claim in this report is traced directly to canonical primary SEC filings, ClinicalTrials.gov registries, and peer-reviewed literature:
 
-```
-                                   PRIMARY ARTIFACT TRACEABILITY MATRIX
-    
-     Entity / Domain  Canonical Primary Source             Accession / Identifier     Key Verified Fact
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Verastem ($VSTM) SEC Form 8-K & Exhibit 99.3 (60p)    0001104659-26-115687       900mg PDAC: 41% cORR (9/22),
-     Clinical & Deal  Filed October 14, 2026               CIK 0001526119             2L 50% (4/8); 600mg: 4/27 cPR;
-                                                                                      Q3 Cash: $172.8M; Q3 Rev: ~$24M
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Verastem ($VSTM) SEC Form 10-Q (Q2 2026) & Offering   0001104659-26-092007       90.5M basic shs (+9.7M PFWs);
-     Capital Struct.  Press Release (Oct 14, 2026)         CIK 0001526119             +30.94M shs @ $8.00 + 312.5k PFW
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Verastem ($VSTM) ClinicalTrials.gov Registries        NCT07020221 (TARGET-D 101) Ph1/2 Multi-Tumor (n>200 enrolled)
-     Trial Protocols  TARGET-D 101 / 201 / 202 / 203       NCT07644559 / 782 / 795    Ph2 Reg-Directed PDAC, NSCLC, CRC
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Erasca ($ERAS)   SEC Form 10-Q (Q2 2026) & Form 8-K   0001193125-26-344611       312.6M shs (pre-July $632.5M deal);
-     Financial & IP   Patent/Trade Secret Disclosure       CIK 0001761918             $150M Joyo IPR&D; RVMD Pat. '225
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Erasca ($ERAS)   ClinicalTrials.gov & AURORAS-1       NCT06983743 (AURORAS-1)    32mg QD: 57% uORR_8wk (4/7) in
-     Clinical Data    Update (July 13, 2026)               erasca.com Primary Release 2L+ KRAS G12X PDAC; 100% RDI
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     RevMed ($RVMD)   FDA CDER Multidiscipline Review &    NDA Action Package /       Daraxonrasib G12D cORR = 24% (23/95)
-     Regulatory       SEC Form 10-Q (Q2 2026)              CIK 0001628171             vs G12V 50%; $2.1B-$2.2B/yr burn
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Biophysics &     Nature Medicine (Ai et al., 2026)    PMID: 42745055             GFH375/VS-7375 ON/OFF Structure
-     Literature       Exp Hematol Oncol (Lou & Zhang 2026) PMID: 42806361             CypA Tri-Complex Steric Kinetics
-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-```
+**PRIMARY ARTIFACT TRACEABILITY MATRIX**
+
+| Entity / Domain | Canonical Primary Source | Accession / Identifier | Key Verified Fact |
+| :--- | :--- | :--- | :--- |
+| Verastem ($VSTM) Clinical & Deal | SEC Form 8-K & Exhibit 99.3 (60p) Filed October 14, 2026 | 0001104659-26-115687 CIK 0001526119 | 900mg PDAC: 41% cORR (9/22), 2L 50% (4/8); 600mg: 4/27 cPR; Q3 Cash: $172.8M; Q3 Rev: ~$24M |
+| Verastem ($VSTM) Capital Struct. | SEC Form 10-Q (Q2 2026) & Offering Press Release (Oct 14, 2026) | 0001104659-26-092007 CIK 0001526119 | 90.5M basic shs (+9.7M PFWs); +30.94M shs @ $8.00 + 312.5k PFW |
+| Verastem ($VSTM) Trial Protocols | ClinicalTrials.gov Registries TARGET-D 101 / 201 / 202 / 203 | NCT07020221 (TARGET-D 101) NCT07644559 / 782 / 795 | Ph1/2 Multi-Tumor (n>200 enrolled) Ph2 Reg-Directed PDAC, NSCLC, CRC |
+| Erasca ($ERAS) Financial & IP | SEC Form 10-Q (Q2 2026) & Form 8-K Patent/Trade Secret Disclosure | 0001193125-26-344611 CIK 0001761918 | 312.6M shs (pre-July $632.5M deal); $150M Joyo IPR&D; RVMD Pat. '225 |
+| Erasca ($ERAS) Clinical Data | ClinicalTrials.gov & AURORAS-1 Update (July 13, 2026) | NCT06983743 (AURORAS-1) erasca.com Primary Release | 32mg QD: 57% uORR_8wk (4/7) in 2L+ KRAS G12X PDAC; 100% RDI |
+| RevMed ($RVMD) Regulatory | FDA CDER Multidiscipline Review & SEC Form 10-Q (Q2 2026) | NDA Action Package / CIK 0001628171 | Daraxonrasib G12D cORR = 24% (23/95) vs G12V 50%; $2.1B-$2.2B/yr burn |
+| Biophysics & Literature | Nature Medicine (Ai et al., 2026) Exp Hematol Oncol (Lou & Zhang 2026) | PMID: 42745055 PMID: 42806361 | GFH375/VS-7375 ON/OFF Structure CypA Tri-Complex Steric Kinetics |
 
 ### Conflicts of Interest & Capital Markets Context
 1. **Verastem's Wall-Crossed Offering Architecture:** On October 14, 2026, Verastem's clinical data release was synchronized to the minute with a **\$250 million underwritten equity offering** managed by **Jefferies, Guggenheim Securities, Cantor Fitzgerald, and B. Riley**. Concurrent with the offering, Verastem terminated its August 2025 at-the-market (ATM) prospectus with Cantor Fitzgerald (`0 shares sold`). The slide deck (`Exhibit 99.3`) was explicitly constructed as a marketing document to clear a \$250 million bookbuild equal to ~37% of the company's prior-day market cap.
@@ -166,67 +128,29 @@ flowchart TD
 ### 1. Why Does VS-7375 Succeed in G12D Where Daraxonrasib Stumbles?
 To understand how today's Verastem data directly validates our [October 8 deep dive into Revolution Medicines](/blog/2026-10-08-revolution-medicines-rvmd-fda-review-g12d-insider-selling-deep-dive), compare the molecular architectures of the two classes:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           MOLECULAR BIOPHYSICS: DIRECT G12D ON/OFF INHIBITION VS. CypA TRI-COMPLEX GLUES                   │
-├─────────────────────────────┬──────────────────────────────────────┬───────────────────────────────────────┤
-│ BIOPHYSICAL PARAMETER       │ DIRECT G12D DUAL ON/OFF (VS-7375)    │ PAN-RAS CypA GLUE (Daraxonrasib/0015) │
-├─────────────────────────────┼──────────────────────────────────────┼───────────────────────────────────────┤
-│ Target Binding Pocket       │ Direct Switch-II Pocket binding;     │ Recruits endogenous Cyclophilin A     │
-│                             │ forms direct ionic salt bridge with  │ (CypA) to form ternary complex over   │
-│                             │ mutant Asp12 (-COO⁻) side chain.     │ Switch-I / Switch-II interface.       │
-├─────────────────────────────┼──────────────────────────────────────┼───────────────────────────────────────┤
-│ Effect of Asp12 (-COO⁻)     │ POSITIVE SELECTIVITY ANCHOR:         │ STERIC / ELECTROSTATIC LIABILITY:     │
-│ Negative Charge in G12D     │ Negatively charged Asp12 is the      │ Negatively charged Asp12 clashes with │
-│                             │ exact chemical hook that locks drug  │ CypA electronegative surface; prefers │
-│                             │ into G12D and ignores Wild-Type Gly12│ hydrophobic Val12 (G12V: 50% cORR).   │
-├─────────────────────────────┼──────────────────────────────────────┼───────────────────────────────────────┤
-│ Nucleotide State Coverage   │ Dual ON (GTP) and OFF (GDP) equal    │ Primarily ON (GTP-bound) state;       │
-│                             │ sub-nanomolar affinity; traps both   │ requires high intracellular CypA      │
-│                             │ cycling and active KRAS G12D pools.  │ stoichiometry in tumor tissue.        │
-├─────────────────────────────┼──────────────────────────────────────┼───────────────────────────────────────┤
-│ Wild-Type RAS (KRAS/NRAS/   │ HIGHLY SELECTIVE (>100x sparing of   │ NON-SELECTIVE PAN-RAS INHIBITION:     │
-│ HRAS) Off-Tumor Toxicity    │ WT RAS): 0% mucositis, 0% stomatitis,│ Inhibits WT RAS in healthy mucosa &   │
-│                             │ 4% Gr1-2 rash, 2% AE discontinuation.│ skin: high rash, stomatitis, GI tox.  │
-├─────────────────────────────┼──────────────────────────────────────┼───────────────────────────────────────┤
-│ Clinical Dosing Ceiling     │ Can dose-escalate to 900 mg QD       │ Capped at 300 mg QD (daraxonrasib);   │
-│ & Target Saturation         │ (97% RDI), achieving 100% (>50% VAF  │ cannot dose higher to rescue G12D     │
-│                             │ drop) & 58% complete ctDNA clearance.│ (24% cORR) without severe WT toxicity.│
-└─────────────────────────────┴──────────────────────────────────────┴───────────────────────────────────────┘
-```
+**MOLECULAR BIOPHYSICS: DIRECT G12D ON/OFF INHIBITION VS. CypA TRI-COMPLEX GLUES**
+
+| BIOPHYSICAL PARAMETER | DIRECT G12D DUAL ON/OFF (VS-7375) | PAN-RAS CypA GLUE (Daraxonrasib/0015) |
+| :--- | :--- | :--- |
+| Target Binding Pocket | Direct Switch-II Pocket binding; forms direct ionic salt bridge with mutant Asp12 (-COO⁻) side chain. | Recruits endogenous Cyclophilin A (CypA) to form ternary complex over Switch-I / Switch-II interface. |
+| Effect of Asp12 (-COO⁻) Negative Charge in G12D | POSITIVE SELECTIVITY ANCHOR: Negatively charged Asp12 is the exact chemical hook that locks drug into G12D and ignores Wild-Type Gly12 | STERIC / ELECTROSTATIC LIABILITY: Negatively charged Asp12 clashes with CypA electronegative surface; prefers hydrophobic Val12 (G12V: 50% cORR). |
+| Nucleotide State Coverage | Dual ON (GTP) and OFF (GDP) equal sub-nanomolar affinity; traps both cycling and active KRAS G12D pools. | Primarily ON (GTP-bound) state; requires high intracellular CypA stoichiometry in tumor tissue. |
+| Wild-Type RAS (KRAS/NRAS/ HRAS) Off-Tumor Toxicity | HIGHLY SELECTIVE (>100x sparing of WT RAS): 0% mucositis, 0% stomatitis, 4% Gr1-2 rash, 2% AE discontinuation. | NON-SELECTIVE PAN-RAS INHIBITION: Inhibits WT RAS in healthy mucosa & skin: high rash, stomatitis, GI tox. |
+| Clinical Dosing Ceiling & Target Saturation | Can dose-escalate to 900 mg QD (97% RDI), achieving 100% (>50% VAF drop) & 58% complete ctDNA clearance. | Capped at 300 mg QD (daraxonrasib); cannot dose higher to rescue G12D (24% cORR) without severe WT toxicity. |
 
 In short: **the exact chemical feature that cripples daraxonrasib in KRAS G12D—the negatively charged Asp12 carboxylate group—is the primary binding anchor that gives VS-7375 its selectivity and therapeutic window.** Because `VS-7375` does not touch wild-type KRAS, NRAS, or HRAS in healthy human epithelium (`Slide 30`: **0% mucositis, 0% stomatitis, 0% Grade ≥ 3 rash** across `N=48` patients at 900 mg QD), Verastem can push systemic exposure into the deep target-saturation zone without hitting a wild-type toxicity wall.
 
 ### 2. Why Did 600 mg QD Work in China (`GFH375`) But Collapse to 14.8% cORR in the U.S. (`VS-7375`)?
 One of the most striking revelations buried in today's filing is the divergence between **600 mg QD** and **900 mg QD** in U.S. patients. We test the 4-way causal matrix:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│         4-WAY CAUSAL MATRIX: WHY U.S. 2L+ PDAC cORR JUMPED FROM 14.8% (600 MG) TO 40.9% (900 MG)           │
-├───────────────────────┬────────────────────────────────────────────────────────────────────────────────────┤
-│ CAUSAL HYPOTHESIS     │ FORENSIC MECHANISTIC & PHARMACOKINETIC EVALUATION                                  │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
-│ 1. Direct Causation   │ Western vs. Asian PK / Body-Mass Scaling: At 600 mg QD (N=59), U.S. patient        │
-│    (PK Exposure →     │ steady-state exposure (AUC_ss) fell below the 100 mg/kg mouse pan-regression       │
-│    Target Saturation) │ threshold (Slide 13/15). Escalating to 900 mg QD (N=23) pushed the majority of     │
-│                       │ U.S. patients above the maximal regression threshold, lifting cORR from 14.8%      │
-│                       │ (4/27) to 40.9% (9/22). (CONFIRMED PRIMARY DRIVER)                                 │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
-│ 2. Reverse Causation  │ Did sicker or more heavily pretreated patients get assigned to 600 mg QD?          │
-│    (Baseline Bias →   │ FALSE: Looking at the Prior LoT row on Slide 15, the 600 mg waterfall actually     │
-│    Dose Outcome)      │ had a HIGHER proportion of 2L (1 prior line) patients (15/26 bars) than the        │
-│                       │ 900 mg waterfall (8/20 bars)! Thus, 900 mg outperformed despite heavier prior Tx.  │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
-│ 3. Confounding        │ Follow-up duration and anti-emetic management learning curve: 600 mg was enrolled  │
-│    Variable (Z)       │ earlier (median DoT 4.3 mo, 19% Gr3 TRAEs, 21% dose interruptions) vs 900 mg       │
-│                       │ enrolled later with optimized anti-emetic prophylaxis (mDoT 3.0 mo, 10% Gr3 TRAEs, │
-│                       │ 15% interruptions, 97% RDI), keeping 900 mg patients on uninterrupted drug longer. │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
-│ 4. Mutual Feedback    │ Rapid tumor shrinkage at 900 mg resolves PDAC disease symptoms (e.g., ascites and  │
-│    Loop (X ↔ Y)       │ visceral pain resolving within 1–2 weeks on Slides 25 & 55), improving GI motility │
-│                       │ and oral drug absorption, which further sustains 97% relative dose intensity.      │
-└───────────────────────┴────────────────────────────────────────────────────────────────────────────────────┘
-```
+**4-WAY CAUSAL MATRIX: WHY U.S. 2L+ PDAC cORR JUMPED FROM 14.8% (600 MG) TO 40.9% (900 MG)**
+
+| CAUSAL HYPOTHESIS | FORENSIC MECHANISTIC & PHARMACOKINETIC EVALUATION |
+| :--- | :--- |
+| 1. Direct Causation (PK Exposure → Target Saturation) | Western vs. Asian PK / Body-Mass Scaling: At 600 mg QD (N=59), U.S. patient steady-state exposure (AUC_ss) fell below the 100 mg/kg mouse pan-regression threshold (Slide 13/15). Escalating to 900 mg QD (N=23) pushed the majority of U.S. patients above the maximal regression threshold, lifting cORR from 14.8% (4/27) to 40.9% (9/22). (CONFIRMED PRIMARY DRIVER) |
+| 2. Reverse Causation (Baseline Bias → Dose Outcome) | Did sicker or more heavily pretreated patients get assigned to 600 mg QD? FALSE: Looking at the Prior LoT row on Slide 15, the 600 mg waterfall actually had a HIGHER proportion of 2L (1 prior line) patients (15/26 bars) than the 900 mg waterfall (8/20 bars)! Thus, 900 mg outperformed despite heavier prior Tx. |
+| 3. Confounding Variable (Z) | Follow-up duration and anti-emetic management learning curve: 600 mg was enrolled earlier (median DoT 4.3 mo, 19% Gr3 TRAEs, 21% dose interruptions) vs 900 mg enrolled later with optimized anti-emetic prophylaxis (mDoT 3.0 mo, 10% Gr3 TRAEs, 15% interruptions, 97% RDI), keeping 900 mg patients on uninterrupted drug longer. |
+| 4. Mutual Feedback Loop (X ↔ Y) | Rapid tumor shrinkage at 900 mg resolves PDAC disease symptoms (e.g., ascites and visceral pain resolving within 1–2 weeks on Slides 25 & 55), improving GI motility and oral drug absorption, which further sustains 97% relative dose intensity. |
 
 Look closely at **Slide 15** from Verastem's SEC Form 8-K (`Exhibit 99.3`) below:
 
@@ -257,40 +181,19 @@ Let us strip away the bar-chart heights on Verastem's Slide 12 and Erasca's pres
 
 $$\text{95\% Exact Clopper-Pearson CI for } \hat{p} = \frac{k}{n}: \quad \left[ \text{Beta}^{-1}\left(0.025; k, n-k+1\right), \; \text{Beta}^{-1}\left(0.975; k+1, n-k\right) \right]$$
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│         STATISTICAL AUDIT: KRAS G12D PDAC RESPONSE RATES & EXACT 95% CONFIDENCE INTERVALS                  │
-├──────────────────────────┬───────────────┬───────────────────┬──────────────────┬──────────────────────────┤
-│ DRUG / SPONSOR / COHORT  │ REPORTED STAT │ RAW FRACTION (k/n)│ EXACT 95% CI     │ FORENSIC AUDIT VERDICT   │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ VS-7375 900 mg QD (VSTM) │ 50% cORR      │ 4 / 8             │ [15.7%, 84.3%]   │ Tiny N=8 subgroup; 100%  │
-│ 2L mPDAC Monotherapy     │ (Confirmed)   │ (mITT)            │ (Width: 68.6%)   │ DCR (8/8) is encouraging │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ VS-7375 900 mg QD (VSTM) │ 41% cORR      │ 9 / 22            │ [20.7%, 63.6%]   │ Includes 2 CRs (-100%) & │
-│ 2L+ mPDAC Monotherapy    │ (Confirmed)   │ (2 NE kept in den)│ (Width: 42.9%)   │ 45% (9/20) in evaluable  │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ VS-7375 900 mg QD (VSTM) │ 36% cORR      │ 5 / 14            │ [12.8%, 64.9%]   │ Both CRs occurred in 3L  │
-│ 3L–4L mPDAC Monotherapy  │ (Confirmed)   │ (2 NE kept in den)│ (Width: 52.1%)   │ and 4L patients!         │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ VS-7375 600 mg QD (VSTM) │ "4 cPR, 4 uPR"│ 4 / 27 Confirmed  │ [4.2%, 33.7%]    │ 14.8% cORR (29.6% uORR); │
-│ 2L+ mPDAC Monotherapy    │ (% Omitted!)  │ (8 / 27 Unconf.)  │ (cORR CI)        │ Under-exposed in US PK   │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ ERAS-0015 32 mg QD (ERAS)│ 57% uORR_8wk  │ 4 / 7             │ [18.4%, 90.1%]   │ Unconfirmed 8-wk cut;    │
-│ 2L+ KRAS G12X PDAC       │ (Unconfirmed) │ (G12X Pooled!)    │ (Width: 71.7%)   │ Pools G12V + G12D (N=7!) │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ Daraxonrasib 300mg (RVMD)│ 24% cORR      │ 23 / 95           │ [16.0%, 34.1%]   │ Phase 3 RASolute 302 FDA │
-│ 2L KRAS G12D Subgroup    │ (Confirmed)   │ (Phase 3 Subgroup)│ (Width: 18.1%)   │ CDER Review; tight CI    │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ Zoldonrasib 1200mg (RVMD)│ 30% uORR      │ 6 / 40 Confirmed  │ [5.7%, 29.8%]    │ Only 15.0% cORR (6/40)   │
-│ 2L+ KRAS G12D PDAC       │ (15% cORR!)   │ (12 / 40 Unconf.) │ (cORR CI)        │ confirmed at cutoff!     │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ INCB161734 1200mg (INCY) │ 37% uORR      │ 8 / 41 Confirmed  │ [8.8%, 34.9%]    │ 19.5% cORR (8/41) at cut │
-│ 2L+ KRAS G12D PDAC       │ (~20–29% cORR)│ (15 / 41 Unconf.) │ (cORR CI)        │ (3 of 15 unlikely conf.) │
-├──────────────────────────┼───────────────┼───────────────────┼──────────────────┼──────────────────────────┤
-│ Setidegrasib 600mg (Aste)│ 24% cORR      │ 5 / 21 (or 16/67) │ [8.2%, 47.2%]    │ IV weekly degrader;      │
-│ 2L+ KRAS G12D PDAC       │ (Confirmed)   │                   │                  │ mPFS 3.0 mo, DCR 57%     │
-└──────────────────────────┴───────────────┴───────────────────┴──────────────────┴──────────────────────────┘
-```
+**STATISTICAL AUDIT: KRAS G12D PDAC RESPONSE RATES & EXACT 95% CONFIDENCE INTERVALS**
+
+| DRUG / SPONSOR / COHORT | REPORTED STAT | RAW FRACTION (k/n) | EXACT 95% CI | FORENSIC AUDIT VERDICT |
+| :--- | :--- | :--- | :--- | :--- |
+| VS-7375 900 mg QD (VSTM) 2L mPDAC Monotherapy | 50% cORR (Confirmed) | 4 / 8 (mITT) | [15.7%, 84.3%] (Width: 68.6%) | Tiny N=8 subgroup; 100% DCR (8/8) is encouraging |
+| VS-7375 900 mg QD (VSTM) 2L+ mPDAC Monotherapy | 41% cORR (Confirmed) | 9 / 22 (2 NE kept in den) | [20.7%, 63.6%] (Width: 42.9%) | Includes 2 CRs (-100%) & 45% (9/20) in evaluable |
+| VS-7375 900 mg QD (VSTM) 3L–4L mPDAC Monotherapy | 36% cORR (Confirmed) | 5 / 14 (2 NE kept in den) | [12.8%, 64.9%] (Width: 52.1%) | Both CRs occurred in 3L and 4L patients! |
+| VS-7375 600 mg QD (VSTM) 2L+ mPDAC Monotherapy | "4 cPR, 4 uPR" (% Omitted!) | 4 / 27 Confirmed (8 / 27 Unconf.) | [4.2%, 33.7%] (cORR CI) | 14.8% cORR (29.6% uORR); Under-exposed in US PK |
+| ERAS-0015 32 mg QD (ERAS) 2L+ KRAS G12X PDAC | 57% uORR_8wk (Unconfirmed) | 4 / 7 (G12X Pooled!) | [18.4%, 90.1%] (Width: 71.7%) | Unconfirmed 8-wk cut; Pools G12V + G12D (N=7!) |
+| Daraxonrasib 300mg (RVMD) 2L KRAS G12D Subgroup | 24% cORR (Confirmed) | 23 / 95 (Phase 3 Subgroup) | [16.0%, 34.1%] (Width: 18.1%) | Phase 3 RASolute 302 FDA CDER Review; tight CI |
+| Zoldonrasib 1200mg (RVMD) 2L+ KRAS G12D PDAC | 30% uORR (15% cORR!) | 6 / 40 Confirmed (12 / 40 Unconf.) | [5.7%, 29.8%] (cORR CI) | Only 15.0% cORR (6/40) confirmed at cutoff! |
+| INCB161734 1200mg (INCY) 2L+ KRAS G12D PDAC | 37% uORR (~20–29% cORR) | 8 / 41 Confirmed (15 / 41 Unconf.) | [8.8%, 34.9%] (cORR CI) | 19.5% cORR (8/41) at cut (3 of 15 unlikely conf.) |
+| Setidegrasib 600mg (Aste) 2L+ KRAS G12D PDAC | 24% cORR (Confirmed) | 5 / 21 (or 16/67) | [8.2%, 47.2%] | IV weekly degrader; mPFS 3.0 mo, DCR 57% |
 
 ### 2. What the Blinding Test Reveals Across Tumor Types
 When we inspect the raw numbers across all cohorts in Verastem's `TARGET-D 101` update without promotional adjectives, three distinct clinical realities emerge:
@@ -302,29 +205,11 @@ When we inspect the raw numbers across all cohorts in Verastem's `TARGET-D 101` 
 ### 3. Capital Structure, Enterprise Value & Cash Burn Audit (`$VSTM` vs. `$ERAS` vs. `$RVMD`)
 Let us compare the pro-forma capital structures of the three companies as of October 14, 2026:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           CAPITAL STRUCTURE & ENTERPRISE VALUE AUDIT (AS OF OCTOBER 14, 2026)                              │
-├──────────────────────────────────┬──────────────────────┬──────────────────────┬───────────────────────────┤
-│ FINANCIAL METRIC                 │ VERASTEM ($VSTM)     │ ERASCA ($ERAS)       │ REVOLUTION MED ($RVMD)    │
-├──────────────────────────────────┼──────────────────────┼──────────────────────┼───────────────────────────┤
-│ Basic Shares (Q2 10-Q Baseline)  │ 90.5M (+9.7M PFWs)   │ 312.6M (June 30)     │ ~214.5M                   │
-│ H2 2026 Equity Offerings         │ +31.25M shs/PFWs     │ +~45M–55M shs        │ None in H2 ($2.1B in Apr) │
-│                                  │ ($250M @ $8.00 Oct14)│ ($632.5M in July)    │                           │
-│ Pro-Forma Diluted Share Count    │ ~131.5M (incl. PFWs) │ ~365M – 375M         │ ~215M                     │
-│ Reference Share Price (Oct 14)   │ $8.00 Offering Price │ $14.78               │ ~$188.00                  │
-│ Implied Pro-Forma Market Cap     │ ~$1.05B ($972M exPFW)│ ~$5.4B – $5.55B      │ ~$40.4B                   │
-│ Pro-Forma Cash & Investments     │ ~$455M (Q3 $172.8M + │ ~$950M+ (Q2 $384.3M +│ ~$3.9B (Q2 2026)          │
-│                                  │ $235M Net + Oberland)│ ~$595M Net July)     │                           │
-│ Debt / Royalty Liability         │ ~$125M–$150M Debt &  │ Minimal Debt ($150M  │ $250M+ Royalty Pharma     │
-│                                  │ Oberland Facility    │ Joyo IPR&D paid Q1)  │ Tiered Liability          │
-│ Implied Enterprise Value (EV)    │ ~$720M – $750M       │ ~$4.5B – $4.6B       │ ~$36.8B                   │
-│ Commercial Product Revenue       │ ~$96M/yr Run-Rate    │ $0.00 (Pre-Commerc.) │ Launching Rasonque (Q4)   │
-│                                  │ (Q3: $23.9M–$24.1M)  │                      │                           │
-│ Quarterly Operating Expense      │ ~$72.8M GAAP (~$48M  │ ~$47.6M GAAP (excl.  │ ~$535M GAAP ($2.1B–$2.2B  │
-│                                  │ net of LGSOC rev!)   │ $150M IPR&D fee)     │ annualized burn furnace!) │
-└──────────────────────────────────┴──────────────────────┴──────────────────────┴───────────────────────────┘
-```
+**CAPITAL STRUCTURE & ENTERPRISE VALUE AUDIT (AS OF OCTOBER 14, 2026)**
+
+| FINANCIAL METRIC | VERASTEM ($VSTM) | ERASCA ($ERAS) | REVOLUTION MED ($RVMD) |
+| :--- | :--- | :--- | :--- |
+| Basic Shares (Q2 10-Q Baseline) H2 2026 Equity Offerings Pro-Forma Diluted Share Count Reference Share Price (Oct 14) Implied Pro-Forma Market Cap Pro-Forma Cash & Investments Debt / Royalty Liability Implied Enterprise Value (EV) Commercial Product Revenue Quarterly Operating Expense | 90.5M (+9.7M PFWs) +31.25M shs/PFWs ($250M @ $8.00 Oct14) ~131.5M (incl. PFWs) $8.00 Offering Price ~$1.05B ($972M exPFW) ~$455M (Q3 $172.8M + $235M Net + Oberland) ~$125M–$150M Debt & Oberland Facility ~$720M – $750M ~$96M/yr Run-Rate (Q3: $23.9M–$24.1M) ~$72.8M GAAP (~$48M net of LGSOC rev!) | 312.6M (June 30) +~45M–55M shs ($632.5M in July) ~365M – 375M $14.78 ~$5.4B – $5.55B ~$950M+ (Q2 $384.3M + ~$595M Net July) Minimal Debt ($150M Joyo IPR&D paid Q1) ~$4.5B – $4.6B $0.00 (Pre-Commerc.) ~$47.6M GAAP (excl. $150M IPR&D fee) | ~214.5M None in H2 ($2.1B in Apr) ~215M ~$188.00 ~$40.4B ~$3.9B (Q2 2026) $250M+ Royalty Pharma Tiered Liability ~$36.8B Launching Rasonque (Q4) ~$535M GAAP ($2.1B–$2.2B annualized burn furnace!) |
 
 Look at the **Enterprise Value (EV) asymmetry** revealed by this table:
 * **Verastem (`$VSTM`)**—which already generates **~\$24.0 million per quarter (~\$96M/year annualized)** in commercial net revenue from its FDA-approved ovarian cancer therapy **AVMAPKI FAKZYNJA CO-PACK** (with a Blister Pack NDA just granted **FDA Priority Review on October 7, 2026** for a Q1 2027 decision) AND holds ex-China rights to **VS-7375** (now entering Phase 3 1L PDAC with `41% cORR` in 2L+ PDAC and `43% cORR` in 2L+ NSCLC)—trades at a pro-forma **Enterprise Value of roughly \$720M to \$750M**!
@@ -384,24 +269,13 @@ Rejecting binary tribalism, we structure our strategic conclusions through expli
 
 Synthesizing the structural biophysics, pharmacokinetic exposure curves, exact binomial confidence intervals, and enterprise value disparities across all three companies, here is our probability-weighted institutional stance:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           PROBABILITY-WEIGHTED SCENARIO MATRIX: VERASTEM ($VSTM) 12-MONTH OUTLOOK                          │
-├──────────────────────────┬──────────────────────┬───────────────────────────────┬──────────────────────────┤
-│ SCENARIO                 │ PROBABILITY WEIGHT   │ POST-DEAL ENTERPRISE VALUE    │ TARGET SHARE PRICE       │
-├──────────────────────────┼──────────────────────┼───────────────────────────────┼──────────────────────────┤
-│ Base Case                │ ~55% Probability     │ $1.6B – $2.1B                 │ $14.00 – $18.00          │
-│ (PDAC & NSCLC Confirmed) │                      │ (35%+ BICR cORR + 0% Mucositis│ (+75% to +125% vs $8.00) │
-├──────────────────────────┼──────────────────────┼───────────────────────────────┼──────────────────────────┤
-│ Bull Case                │ ~20% Probability     │ $2.8B – $3.5B                 │ $23.00 – $28.00          │
-│ (Best-in-Class G12D +    │                      │ (40%+ cORR holds in Ph2 +     │ (+185% to +250% vs $8.00)│
-│  Big Pharma Partner/M&A) │                      │  CRC 900mg Combo Confirms)    │                          │
-├──────────────────────────┼──────────────────────┼───────────────────────────────┼──────────────────────────┤
-│ Bear Case                │ ~25% Probability     │ $450M – $650M                 │ $5.50 – $7.00            │
-│ (Small-N Regression to   │                      │ (ORR decays to ~25% in Ph2;   │ (-12% to -30% vs $8.00;  │
-│  Mean + Dilution Churn)  │                      │  valued on Cash + LGSOC Rev)  │  buffered by $455M cash) │
-└──────────────────────────┴──────────────────────┴───────────────────────────────┴──────────────────────────┘
-```
+**PROBABILITY-WEIGHTED SCENARIO MATRIX: VERASTEM ($VSTM) 12-MONTH OUTLOOK**
+
+| SCENARIO | PROBABILITY WEIGHT | POST-DEAL ENTERPRISE VALUE | TARGET SHARE PRICE |
+| :--- | :--- | :--- | :--- |
+| Base Case (PDAC & NSCLC Confirmed) | ~55% Probability | $1.6B – $2.1B (35%+ BICR cORR + 0% Mucositis | $14.00 – $18.00 (+75% to +125% vs $8.00) |
+| Bull Case (Best-in-Class G12D + Big Pharma Partner/M&A) | ~20% Probability | $2.8B – $3.5B (40%+ cORR holds in Ph2 + CRC 900mg Combo Confirms) | $23.00 – $28.00 (+185% to +250% vs $8.00) |
+| Bear Case (Small-N Regression to Mean + Dilution Churn) | ~25% Probability | $450M – $650M (ORR decays to ~25% in Ph2; valued on Cash + LGSOC Rev) | $5.50 – $7.00 (-12% to -30% vs $8.00; buffered by $455M cash) |
 
 #### 1. Stance on the Scientific & Clinical Evidence
 * **`$VSTM`'s 900 mg QD Dose Solves the U.S. Exposure Deficit and Validates Direct G12D Selectivity:** While we flag the small sample size in 2L PDAC (`4/8 = 50% cORR`, `95% CI [15.7%, 84.3%]`) and expose the under-dosed U.S. 600 mg cohort (`4/27 = 14.8% cORR`), the totality of evidence at **900 mg QD**—`9/22 (41%) cORR` across 2L–4L PDAC, **two complete responses in 3L/4L disease**, **100% (`12/12`) >50% ctDNA VAF reduction (`58%` complete clearance)**, **43% cORR (`10/23`) in 2L+ NSCLC** even at 600 mg, **0% mucositis/stomatitis**, and a **2% discontinuation rate**—demonstrates that direct dual ON/OFF G12D inhibition avoids the CypA steric hindrance and wild-type toxicity ceiling that trapped Revolution Medicines' `daraxonrasib` at 24% cORR in G12D.

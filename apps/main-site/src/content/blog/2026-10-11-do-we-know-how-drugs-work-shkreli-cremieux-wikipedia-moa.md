@@ -125,21 +125,11 @@ In a definitive, comprehensive census of the human pharmacopeia published in *Na
   3. **Kinases & Enzymes:** ~16% (e.g., statins, ACE inhibitors, tyrosine kinase inhibitors).
   4. **Nuclear receptors:** ~13% (e.g., glucocorticoids, thyroid hormones, sex steroids).
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│        Molecular Targets of FDA-Approved Small Molecules     │
-│             (Data: Santos et al., Nat Rev Drug Discov 2017)   │
-├────────────────────────────────┬─────────────────────────────┤
-│ Target Family                  │ Share of Approved Drugs     │
-├────────────────────────────────┼─────────────────────────────┤
-│ GPCRs                          │ ~33%                        │
-│ Ion Channels                   │ ~18%                        │
-│ Enzymes / Kinases              │ ~16%                        │
-│ Nuclear Receptors              │ ~13%                        │
-│ Other Characterized Targets    │ ~12%                        │
-│ Truly Unknown Target           │ < 8%                        │
-└────────────────────────────────┴─────────────────────────────┘
-```
+**Molecular Targets of FDA-Approved Small Molecules (Data: Santos et al., Nat Rev Drug Discov 2017)**
+
+| Target Family | Share of Approved Drugs |
+| :--- | :--- |
+| GPCRs Ion Channels Enzymes / Kinases Nuclear Receptors Other Characterized Targets Truly Unknown Target | ~33% ~18% ~16% ~13% ~12% < 8% |
 
 Consider the medicines that fill the world's pharmacies:
 - **Statins (Atorvastatin, Rosuvastatin):** Competitively inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis.
@@ -162,24 +152,12 @@ If the molecular targets of most drugs are known, why do thoughtful researchers 
 
 The root of this disagreement is an **epistemological equivocation** over the word **"mechanism"**:
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│               THE TWO DEFINITIONS OF "DRUG MECHANISM"                 │
-├────────────────────────────────────┬───────────────────────────────────┤
-│ LEVEL 1: Molecular Target          │ LEVEL 2: Systemic Pathophysiology │
-│ (Biochemist / Pharma Exec)         │ (Physiologist / Complex Systems)  │
-├────────────────────────────────────┼───────────────────────────────────┤
-│ "What protein or receptor does     │ "How does perturbing that protein │
-│ the molecule bind to in vitro?"    │ cause clinical remission across   │
-│                                    │ the whole mammalian network?"     │
-├────────────────────────────────────┼───────────────────────────────────┤
-│ Example: Fluoxetine (Prozac)       │ Example: Fluoxetine (Prozac)      │
-│ Target: SERT (SLC6A4) inhibition.  │ Pathophysiology: Why does it take │
-│ Kinetic affinity: Ki = 0.81 nM.    │ 6 weeks to work? How does it      │
-│ Status: 100% SOLVED                │ alter neurogenesis, BDNF & 5-HT1A?│
-│                                    │ Status: PARTIALLY UNRESOLVED      │
-└────────────────────────────────────┴───────────────────────────────────┘
-```
+**THE TWO DEFINITIONS OF "DRUG MECHANISM"**
+
+| LEVEL 1: Molecular Target (Biochemist / Pharma Exec) | LEVEL 2: Systemic Pathophysiology (Physiologist / Complex Systems) |
+| :--- | :--- |
+| "What protein or receptor does the molecule bind to in vitro?" | "How does perturbing that protein cause clinical remission across the whole mammalian network?" |
+| Example: Fluoxetine (Prozac)<br>Target: SERT (SLC6A4) inhibition.<br>Kinetic affinity: Ki = 0.81 nM.<br>Status: 100% SOLVED | Example: Fluoxetine (Prozac)<br>Pathophysiology: Why does it take 6 weeks to work? How does it alter neurogenesis, BDNF & 5-HT1A?<br>Status: PARTIALLY UNRESOLVED |
 
 ### Level 1: Target Engagement (Shkreli's Domain)
 At Level 1, Shkreli is undeniably correct. We know the molecular target for >90% of approved drugs. Modern drug development does not advance compounds into clinical trials without demonstrating target engagement, selectivity assays, and pharmacokinetics.

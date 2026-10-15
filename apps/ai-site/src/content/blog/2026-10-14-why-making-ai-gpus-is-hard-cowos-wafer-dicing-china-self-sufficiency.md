@@ -14,31 +14,16 @@ Any competent graduate student in electrical engineering can write the Verilog c
 
 Meanwhile, the richest corporations in human history—**Microsoft, Amazon, Meta, and OpenAI**—are spending tens of billions of dollars attempting to build their own custom AI chips, only to discover that designing a matrix multiplier represents less than 5% of the battle. Halfway across the world, **China** is waging an existential, state-mobilized campaign across lithography, memory, and advanced packaging to break free from US export controls and build a completely self-sufficient domestic AI hardware stack.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 THE ANATOMY OF THE AI SILICON BOTTLENECK: FORENSIC SCORECARD                     │
-├──────────────────────────────────┬───────────────────────────────────────────────────────────────┤
-│ CHOKEPOINT LAYER                 │ EMPIRICAL BOTTLENECK & MONOPOLY CONCENTRATION (2026)          │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 1. Wafer Thinning & Dicing       │ HBM wafers ground from 775µm to <30µm (half a human hair);    │
-│    ("The Wafer Slicing Wall")    │ Japan's DISCO Corp controls ~80–85% of precision saws/grinders│
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 2. Photolithography Reticle Limit│ ASML EUV lenses cap single-die exposure at 26×33mm (858 mm²); │
-│    & 2.5D Packaging (CoWoS-L)    │ forces multi-die stitching & CTE thermal warpage on CoWoS-L   │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 3. Insulating Substrate Film     │ Ajinomoto (Japanese food/seasoning giant) holds >90% monopoly │
-│    (ABF Substrate)               │ on Ajinomoto Build-up Film (ABF) used under every AI GPU      │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 4. High-Bandwidth Memory (HBM)   │ 12-to-16 DRAM dies pierced by thousands of TSVs; SK Hynix,    │
-│    Stacking & Compound Yield     │ Samsung & Micron control ~98% of global HBM3e/HBM4 supply     │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 5. Rack Interconnect & Compiler  │ 1.8 TB/s NVLink 72 copper backplanes + 18 years of CUDA/NCCL; │
-│    Utilization (MFU)             │ rivals with higher "paper FLOPs" collapse to <20% real MFU    │
-├──────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-│ 6. China's Domestic Parity Status│ Huawei CloudMatrix 384 matches Nvidia GB200 NVL72 compute via │
-│    (Watts-for-Nanometers Trade)  │ 5.3x more chips (384 vs 72) at 3.85x higher power (559 kW)    │
-└──────────────────────────────────┴───────────────────────────────────────────────────────────────┘
-```
+**THE ANATOMY OF THE AI SILICON BOTTLENECK: FORENSIC SCORECARD**
+
+| CHOKEPOINT LAYER | EMPIRICAL BOTTLENECK & MONOPOLY CONCENTRATION (2026) |
+| :--- | :--- |
+| 1. Wafer Thinning & Dicing ("The Wafer Slicing Wall") | HBM wafers ground from 775µm to <30µm (half a human hair); Japan's DISCO Corp controls ~80–85% of precision saws/grinders |
+| 2. Photolithography Reticle Limit & 2.5D Packaging (CoWoS-L) | ASML EUV lenses cap single-die exposure at 26×33mm (858 mm²); forces multi-die stitching & CTE thermal warpage on CoWoS-L |
+| 3. Insulating Substrate Film (ABF Substrate) | Ajinomoto (Japanese food/seasoning giant) holds >90% monopoly on Ajinomoto Build-up Film (ABF) used under every AI GPU |
+| 4. High-Bandwidth Memory (HBM) Stacking & Compound Yield | 12-to-16 DRAM dies pierced by thousands of TSVs; SK Hynix, Samsung & Micron control ~98% of global HBM3e/HBM4 supply |
+| 5. Rack Interconnect & Compiler Utilization (MFU) | 1.8 TB/s NVLink 72 copper backplanes + 18 years of CUDA/NCCL; rivals with higher "paper FLOPs" collapse to <20% real MFU |
+| 6. China's Domestic Parity Status (Watts-for-Nanometers Trade) | Huawei CloudMatrix 384 matches Nvidia GB200 NVL72 compute via<br>5.3x more chips (384 vs 72) at 3.85x higher power (559 kW) |
 
 Why is it physically and architecturally so difficult to build a frontier GPU? Is the true bottleneck really *"wafer slicing"* or something similar? Why are US hyperscalers struggling to escape the "Nvidia tax"? And what happens to the global AI race if China achieves 100% hardware self-sufficiency?
 
@@ -68,34 +53,17 @@ Our core analytical conclusions will be proven false if any of the following emp
 
 Every physical constant, yield figure, and architectural benchmark in this investigation is traced to primary engineering disclosures, equipment manufacturer specifications, academic papers, and verified teardown reports:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                             PRIMARY SOURCE TRACEABILITY MATRIX                                   │
-├───────────────────────────────┬─────────────────────────────────┬────────────────────────────────┤
-│ ARTIFACT / SOURCE             │ CORE METRIC / DECLARATION       │ INSTITUTIONAL STATUS           │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ DISCO Corporation Technical   │ TAIKO wafer thinning (<30µm),   │ Official OEM Process Specs     │
-│ Library (TAIKO / DBG / KABRA) │ Dicing Before Grinding, KABRA   │ (~80–85% Global Saw Monopoly)  │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ ASML EUV System Specifications│ 13.5nm wavelength; 26mm × 33mm  │ Canonical Lithography Hardware │
-│ (Twinscan NXE / EXE Series)   │ (858 mm²) max reticle field size│ Documentation (100% Monopoly)  │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Ajinomoto Group Innovation    │ Ajinomoto Build-up Film (ABF)   │ Primary Material Disclosure    │
-│ Disclosures (ABF Substrates)  │ dielectric insulator for CPUs   │ (>90% Global ABF Market Share) │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ NVIDIA GB200 NVL72 Technical  │ 72 Blackwell GPUs + 36 Grace    │ Official Vendor Architecture   │
-│ Architecture Datasheet        │ CPUs; 1.8 TB/s NVLink; ~145 kW  │ Specification                  │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ SemiAnalysis & TechPowerUp    │ Huawei CloudMatrix 384 (384x    │ Independent Hardware Teardown  │
-│ Cluster Teardown Audits       │ Ascend 910C): 300 PFLOPS, 559kW │ & Cluster Telemetry Analysis   │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ DeepSeek-V3 Technical Report  │ 671B MoE trained on 2,048 H800s │ Primary Peer-Reviewed / ArXiv  │
-│ (arXiv:2412.19437) & V4 Run   │ via custom PTX; V4 1.6T on 910C │ Engineering Artifact           │
-├───────────────────────────────┼─────────────────────────────────┼────────────────────────────────┤
-│ Google Cloud TPU, AWS Trainium│ Custom ASIC specs: TPU Ironwood,│ Canonical Hyperscaler Hardware │
-│ & Meta MTIA Technical Blogs   │ AWS Trainium2, Meta MTIA v2     │ Documentation                  │
-└───────────────────────────────┴─────────────────────────────────┴────────────────────────────────┘
-```
+**PRIMARY SOURCE TRACEABILITY MATRIX**
+
+| ARTIFACT / SOURCE | CORE METRIC / DECLARATION | INSTITUTIONAL STATUS |
+| :--- | :--- | :--- |
+| DISCO Corporation Technical Library (TAIKO / DBG / KABRA) | TAIKO wafer thinning (<30µm), Dicing Before Grinding, KABRA | Official OEM Process Specs (~80–85% Global Saw Monopoly) |
+| ASML EUV System Specifications (Twinscan NXE / EXE Series) | 13.5nm wavelength; 26mm × 33mm (858 mm²) max reticle field size | Canonical Lithography Hardware Documentation (100% Monopoly) |
+| Ajinomoto Group Innovation Disclosures (ABF Substrates) | Ajinomoto Build-up Film (ABF) dielectric insulator for CPUs | Primary Material Disclosure (>90% Global ABF Market Share) |
+| NVIDIA GB200 NVL72 Technical Architecture Datasheet | 72 Blackwell GPUs + 36 Grace CPUs; 1.8 TB/s NVLink; ~145 kW | Official Vendor Architecture Specification |
+| SemiAnalysis & TechPowerUp Cluster Teardown Audits | Huawei CloudMatrix 384 (384x Ascend 910C): 300 PFLOPS, 559kW | Independent Hardware Teardown & Cluster Telemetry Analysis |
+| DeepSeek-V3 Technical Report (arXiv:2412.19437) & V4 Run | 671B MoE trained on 2,048 H800s via custom PTX; V4 1.6T on 910C | Primary Peer-Reviewed / ArXiv Engineering Artifact |
+| Google Cloud TPU, AWS Trainium & Meta MTIA Technical Blogs | Custom ASIC specs: TPU Ironwood, AWS Trainium2, Meta MTIA v2 | Canonical Hyperscaler Hardware Documentation |
 
 ---
 
@@ -247,58 +215,23 @@ Given that Microsoft, Amazon, Meta, and Google collectively spend over **$250 bi
 
 Let us apply the **Substitution Test** and audit the four major US hyperscaler silicon programs alongside the startup graveyard.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                         THE HYPERSCALER CUSTOM SILICON SUBSTITUTION TEST                         │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ AMBIGUOUS CLAIM: "Hyperscaler X has deployed its own custom AI chip to replace Nvidia GPUs"      │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ DEFINITION A (True Full-Stack Frontier Independence):                                            │
-│ "The custom chip can train and serve rapidly evolving, arbitrary frontier architectures (MoE,    │
-│ RLVR agents, multimodal video) at >45% MFU across 100,000-chip clusters, is preferred by external│
-│ cloud developers over CUDA, and secures independent foundry/HBM supply outside TSMC/SK Hynix."   │
-│                                                                                                  │
-│ DEFINITION B (Internal Workload Offload / Margin Negotiation Leverage):                          │
-│ "Co-designing a fixed-function ASIC with Broadcom or Marvell (paying them a 50-60% margin) on    │
-│ the exact same TSMC CoWoS and SK Hynix HBM lines to run narrow, stable internal workloads        │
-│ (search ranking, ad recommendations, or captive inference), while still buying hundreds of       │
-│ thousands of Nvidia GPUs for general cloud customers and frontier R&D."                          │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
+| THE HYPERSCALER CUSTOM SILICON SUBSTITUTION TEST |
+| :--- |
+| AMBIGUOUS CLAIM: "Hyperscaler X has deployed its own custom AI chip to replace Nvidia GPUs" |
+| DEFINITION A (True Full-Stack Frontier Independence): "The custom chip can train and serve rapidly evolving, arbitrary frontier architectures (MoE, RLVR agents, multimodal video) at >45% MFU across 100,000-chip clusters, is preferred by external cloud developers over CUDA, and secures independent foundry/HBM supply outside TSMC/SK Hynix."<br>DEFINITION B (Internal Workload Offload / Margin Negotiation Leverage): "Co-designing a fixed-function ASIC with Broadcom or Marvell (paying them a 50-60% margin) on the exact same TSMC CoWoS and SK Hynix HBM lines to run narrow, stable internal workloads (search ranking, ad recommendations, or captive inference), while still buying hundreds of thousands of Nvidia GPUs for general cloud customers and frontier R&D." |
 
 With the sole exception of **Google**, every US hyperscaler custom silicon program in 2026 operates predominantly under **Definition B**.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 US HYPERSCALER & CHALLENGER SILICON SCORECARD (OCTOBER 2026)                     │
-├────────────────────┬──────────────────────┬────────────────────┬─────────────────────────────────┤
-│ COMPANY & CHIP     │ PRIMARY PARTNER / FAB│ MATURITY LEVEL     │ STRUCTURAL REALITY & BOTTLENECK │
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ Google TPU         │ Broadcom Co-Design / │ Level 4 (HVM)      │ The ONLY full-stack peer to     │
-│ (v6e Trillium /    │ TSMC CoWoS           │ True Frontier Peer │ Nvidia; 13-yr XLA compiler lead │
-│ v7 Ironwood)       │                      │                    │ & Optical Circuit Switches (OCS)│
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ Amazon AWS         │ Annapurna Labs /     │ Level 4 (HVM)      │ Scaled in Project Rainier       │
-│ (Trainium2 /       │ Marvell / TSMC       │ Captive Partner    │ (Anthropic), but Neuron SDK     │
-│ Trainium3)         │                      │ Workloads          │ lags CUDA for general cloud devs│
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ Meta MTIA          │ Broadcom Co-Design / │ Level 4 (Internal) │ Strong for ad ranking/DLRM and  │
-│ (MTIA v2 /         │ TSMC                 │ Narrow Workload    │ specific inference; frontier    │
-│ MTIA 300–500)      │                      │ Offload            │ Llama training stays on Nvidia  │
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ Microsoft Azure    │ In-house / Marvell / │ Level 3 -> 4       │ Maia 100 arrived late; pivoting │
-│ (Maia 100 / 200 /  │ TSMC N3 / N2P        │ Internal Copilot   │ aggressively to Maia 200/300    │
-│ Maia 300 Roadmap)  │                      │ & OpenAI Inference │ with HBM4 to curb Nvidia spend  │
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ AMD Instinct       │ TSMC CoWoS-S/L       │ Level 4 (HVM)      │ Superior raw HBM capacity per   │
-│ (MI300X / MI325X / │                      │ Merchant #2 (~8-10%│ dollar, but ROCm compiler &     │
-│ MI350 / MI400)     │                      │ market share)      │ rack-scale UALink lag NVLink 72 │
-├────────────────────┼──────────────────────┼────────────────────┼─────────────────────────────────┤
-│ Cerebras (WSE-3) & │ TSMC (Whole 300mm    │ Level 4 (Niche)    │ Bypasses wafer dicing/HBM for   │
-│ Groq (LPU)         │ Wafer / SRAM-only)   │ Ultra-Fast Batch-1 │ 10x token speed, but memory/    │
-│                    │                      │ Inference          │ power physics limit generality  │
-└────────────────────┴──────────────────────┴────────────────────┴─────────────────────────────────┘
-```
+**US HYPERSCALER & CHALLENGER SILICON SCORECARD (OCTOBER 2026)**
+
+| COMPANY & CHIP | PRIMARY PARTNER / FAB | MATURITY LEVEL | STRUCTURAL REALITY & BOTTLENECK |
+| :--- | :--- | :--- | :--- |
+| Google TPU (v6e Trillium / v7 Ironwood) | Broadcom Co-Design / TSMC CoWoS | Level 4 (HVM) True Frontier Peer | The ONLY full-stack peer to Nvidia; 13-yr XLA compiler lead & Optical Circuit Switches (OCS) |
+| Amazon AWS (Trainium2 / Trainium3) | Annapurna Labs / Marvell / TSMC | Level 4 (HVM) Captive Partner Workloads | Scaled in Project Rainier (Anthropic), but Neuron SDK lags CUDA for general cloud devs |
+| Meta MTIA (MTIA v2 / MTIA 300–500) | Broadcom Co-Design / TSMC | Level 4 (Internal) Narrow Workload Offload | Strong for ad ranking/DLRM and specific inference; frontier Llama training stays on Nvidia |
+| Microsoft Azure (Maia 100 / 200 / Maia 300 Roadmap) | In-house / Marvell / TSMC N3 / N2P | Level 3 -> 4 Internal Copilot & OpenAI Inference | Maia 100 arrived late; pivoting aggressively to Maia 200/300 with HBM4 to curb Nvidia spend |
+| AMD Instinct (MI300X / MI325X / MI350 / MI400) | TSMC CoWoS-S/L | Level 4 (HVM) Merchant #2 (~8-10% market share) | Superior raw HBM capacity per dollar, but ROCm compiler & rack-scale UALink lag NVLink 72 |
+| Cerebras (WSE-3) & Groq (LPU) | TSMC (Whole 300mm Wafer / SRAM-only) | Level 4 (Niche) Ultra-Fast Batch-1 Inference | Bypasses wafer dicing/HBM for 10x token speed, but memory/ power physics limit generality |
 
 ### Why Custom Silicon Is So Hard Even for Trillion-Dollar US Tech Giants
 
@@ -326,31 +259,15 @@ Did the sanctions freeze China’s AI hardware progress? No. Instead, they force
 
 Here is the forensic reality of China’s AI semiconductor stack in October 2026 across all five layers:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 CHINA'S 5-LAYER AI SEMICONDUCTOR SELF-SUFFICIENCY AUDIT (2026)                   │
-├──────────────────────┬──────────────────────────┬──────────────────┬─────────────────────────────┤
-│ STACK LAYER          │ DOMESTIC CHAMPIONS       │ MATURITY & YIELD │ GAP VS. WESTERN FRONTIER    │
-├──────────────────────┼──────────────────────────┼──────────────────┼─────────────────────────────┤
-│ 1. AI Compute        │ Huawei Ascend 910B/910C, │ Level 4 (HVM)    │ 910C (~780 TFLOPS) is ~75%  │
-│    Architecture      │ Cambricon, Moore Threads │ ~40%->60% Yield  │ of H100, ~31% of single B200│
-├──────────────────────┼──────────────────────────┼──────────────────┼─────────────────────────────┤
-│ 2. Rack-Scale        │ Huawei CloudMatrix 384   │ Level 4 (HVM)    │ Beats GB200 NVL72 in raw    │
-│    Superclusters     │ (Atlas 900 A3 SuperPoD)  │ Deployed at Scale│ BF16 (300 vs 180 PFLOPS) but│
-│                      │                          │                  │ burns 3.85x power (559 kW)  │
-├──────────────────────┼──────────────────────────┼──────────────────┼─────────────────────────────┤
-│ 3. Foundry &         │ SMIC (N+2/N+3 7nm/5nm),  │ Level 4 (7nm DUV)│ 35% domestic tool rate; EUV │
-│    Lithography Tools │ Naura, AMEC, SMEE,       │ Level 2 (Dom DUV/│ still 4–6 yrs behind ASML;  │
-│                      │ SiCarrier                │ EUV Prototypes)  │ SAQP inflates wafer cost 2.5x│
-├──────────────────────┼──────────────────────────┼──────────────────┼─────────────────────────────┤
-│ 4. Memory (HBM &     │ CXMT (HBM2e/HBM3 & 4F²   │ Level 3 (HBM2e/3)│ #1 Chokepoint: HBM lags SK  │
-│    Server DRAM)      │ VSG DDR5), Wuhan Xinxin  │ Level 2 (4F² VSG)│ Hynix HBM3e/HBM4 by ~2–3 yrs│
-├──────────────────────┼──────────────────────────┼──────────────────┼─────────────────────────────┤
-│ 5. Software &        │ Huawei CANN, DeepGEMM    │ Level 3 -> 4     │ Cleared 1.6T DeepSeek-V4    │
-│    Compiler Stack    │ Ascend, TileLang,        │ >30% MFU on 1k   │ post-training in 2026; still│
-│                      │ DeepSeek PTX Co-Design   │ 910C Cluster     │ trails CUDA out-of-the-box  │
-└──────────────────────┴──────────────────────────┴──────────────────┴─────────────────────────────┘
-```
+**CHINA'S 5-LAYER AI SEMICONDUCTOR SELF-SUFFICIENCY AUDIT (2026)**
+
+| STACK LAYER | DOMESTIC CHAMPIONS | MATURITY & YIELD | GAP VS. WESTERN FRONTIER |
+| :--- | :--- | :--- | :--- |
+| 1. AI Compute Architecture | Huawei Ascend 910B/910C, Cambricon, Moore Threads | Level 4 (HVM) ~40%->60% Yield | 910C (~780 TFLOPS) is ~75% of H100, ~31% of single B200 |
+| 2. Rack-Scale Superclusters | Huawei CloudMatrix 384 (Atlas 900 A3 SuperPoD) | Level 4 (HVM) Deployed at Scale | Beats GB200 NVL72 in raw BF16 (300 vs 180 PFLOPS) but burns 3.85x power (559 kW) |
+| 3. Foundry & Lithography Tools | SMIC (N+2/N+3 7nm/5nm), Naura, AMEC, SMEE, SiCarrier | Level 4 (7nm DUV) Level 2 (Dom DUV/ EUV Prototypes) | 35% domestic tool rate; EUV still 4–6 yrs behind ASML; SAQP inflates wafer cost 2.5x |
+| 4. Memory (HBM & Server DRAM) | CXMT (HBM2e/HBM3 & 4F² VSG DDR5), Wuhan Xinxin | Level 3 (HBM2e/3) Level 2 (4F² VSG) | #1 Chokepoint: HBM lags SK Hynix HBM3e/HBM4 by ~2–3 yrs |
+| 5. Software & Compiler Stack | Huawei CANN, DeepGEMM Ascend, TileLang, DeepSeek PTX Co-Design | Level 3 -> 4 >30% MFU on 1k 910C Cluster | Cleared 1.6T DeepSeek-V4 post-training in 2026; still trails CUDA out-of-the-box |
 
 ### 1. Compute & Rack Architecture: Huawei’s "Watts-for-Nanometers" Tradeoff
 Because SMIC cannot print a 2,500 TFLOPS Blackwell die on 4nm EUV, **Huawei HiSilicon** engineered around the single-chip limit at two levels:
@@ -359,22 +276,11 @@ Because SMIC cannot print a 2,500 TFLOPS Blackwell die on 4nm EUV, **Huawei HiSi
 
 As detailed in hardware teardowns by [SemiAnalysis](https://semianalysis.com/) and [TechPowerUp](https://www.techpowerup.com/), Huawei’s **CloudMatrix 384** links **384 Ascend 910C processors** via Huawei’s Unified Bus (UB) and thousands of optical transceivers (a component where Chinese optical module makers like Innolight and Eoptolink already dominate global supply):
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│              RACK-SCALE SHOWDOWN: NVIDIA GB200 NVL72 VS. HUAWEI CLOUDMATRIX 384                  │
-├────────────────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ ARCHITECTURAL METRIC               │ NVIDIA GB200 NVL72          │ HUAWEI CLOUDMATRIX 384        │
-├────────────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
-│ Total Accelerators per Supernode   │ 72x Blackwell B200 GPUs     │ 384x Ascend 910C NPUs (5.3x)  │
-│ Process Node & Lithography         │ TSMC 4NP (ASML EUV)         │ SMIC N+2 7nm-class (DUV SAQP) │
-│ Per-Chip Compute (Dense BF16)      │ ~2,500 TFLOPS               │ ~780 TFLOPS                   │
-│ Aggregate Supernode BF16 Compute   │ ~180 PFLOPS                 │ ~300 PFLOPS (1.67x Higher)    │
-│ Aggregate HBM Memory Capacity      │ ~13.5 TB (HBM3e)            │ ~48.6 TB (3.6x Higher)        │
-│ Aggregate Scale-Up Bandwidth       │ ~130 TB/s (Copper NVLink)   │ ~276 TB/s (All-Optical Mesh)  │
-│ Total System Power Consumption     │ ~145 kW                     │ ~559 kW (3.85x Higher Draw)   │
-│ Energy Efficiency (FLOPs per Watt) │ Baseline (1.0x Reference)   │ ~2.3x Worse Energy Efficiency │
-└────────────────────────────────────┴─────────────────────────────┴───────────────────────────────┘
-```
+**RACK-SCALE SHOWDOWN: NVIDIA GB200 NVL72 VS. HUAWEI CLOUDMATRIX 384**
+
+| ARCHITECTURAL METRIC | NVIDIA GB200 NVL72 | HUAWEI CLOUDMATRIX 384 |
+| :--- | :--- | :--- |
+| Total Accelerators per Supernode Process Node & Lithography Per-Chip Compute (Dense BF16) Aggregate Supernode BF16 Compute Aggregate HBM Memory Capacity Aggregate Scale-Up Bandwidth Total System Power Consumption Energy Efficiency (FLOPs per Watt) | 72x Blackwell B200 GPUs TSMC 4NP (ASML EUV) ~2,500 TFLOPS ~180 PFLOPS ~13.5 TB (HBM3e) ~130 TB/s (Copper NVLink) ~145 kW Baseline (1.0x Reference) | 384x Ascend 910C NPUs (5.3x) SMIC N+2 7nm-class (DUV SAQP) ~780 TFLOPS ~300 PFLOPS (1.67x Higher) ~48.6 TB (3.6x Higher) ~276 TB/s (All-Optical Mesh) ~559 kW (3.85x Higher Draw) ~2.3x Worse Energy Efficiency |
 
 This table reveals the defining strategic truth of the US–China chip war: **China is trading electrical power (559 kW vs. 145 kW) and optical complexity to neutralize the US lithography blockade at the cluster level.**
 
@@ -498,31 +404,13 @@ We reject both binary extremes—the complacent Western myth that *"China can ne
 
 ### The Forensic Verdict: What We Actually Think
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                THE FORENSIC VERDICT: GLOBAL AI SILICON TRAJECTORY (2026–2030)                    │
-├─────────────────────────────────────────────────────────────┬─────────────┬──────────────────────┤
-│ SCENARIO BRANCH                                             │ PROBABILITY │ STRATEGIC OUTCOME    │
-├─────────────────────────────────────────────────────────────┼─────────────┼──────────────────────┤
-│ SCENARIO A: Asymmetric Bifurcated Parity ("Two Worlds")     │   60%       │ 2026 – 2030 Base Case│
-│ China achieves ~80–90% domestic self-sufficiency using DUV  │             │                      │
-│ multi-patterning, 4F²/HBM3 memory, and 560kW+ optical racks.│             │ China matches US AI  │
-│ Per-chip efficiency trails TSMC/Nvidia by 2–3x, but China's │             │ capability via grid  │
-│ massive power grid & DeepSeek/CANN co-design offset the gap.│             │ megawatts & MoE code │
-├─────────────────────────────────────────────────────────────┼─────────────┼──────────────────────┤
-│ SCENARIO B: Western High-NA EUV & Packaging Pull-Away       │   25%       │ Bear Case for China  │
-│ Strict secondary sanctions on Japanese/Western sub-tools    │             │                      │
-│ (DISCO saws, Ajinomoto ABF, Lam etch, metrology) cap Chinese│             │ Widening 4–5x TCO    │
-│ HBM & 7nm yields <40%, while TSMC A16/A14 + Nvidia Rubin    │             │ gap; Chinese AI lags │
-│ deliver a 5x compute-per-watt leap China cannot match.      │             │ on massive clusters  │
-├─────────────────────────────────────────────────────────────┼─────────────┼──────────────────────┤
-│ SCENARIO C: Full Chinese Lithography Breakthrough & Dumping │   15%       │ Bull Case for China  │
-│ China commercializes indigenous EUV/immersion DUV and HBM3e │             │                      │
-│ at >70% yields by 2028–2029, flooding Global South markets  │             │ Severe compression of│
-│ with subsidized turnkey AI racks and collapsing Western     │             │ Nvidia, SK Hynix &   │
-│ GPU/HBM oligopoly margins by 30–50%.                        │             │ ASML valuation multiples│
-└─────────────────────────────────────────────────────────────┴─────────────┴──────────────────────┘
-```
+**THE FORENSIC VERDICT: GLOBAL AI SILICON TRAJECTORY (2026–2030)**
+
+| SCENARIO BRANCH | PROBABILITY | STRATEGIC OUTCOME |
+| :--- | :--- | :--- |
+| SCENARIO A: Asymmetric Bifurcated Parity ("Two Worlds") China achieves ~80–90% domestic self-sufficiency using DUV multi-patterning, 4F²/HBM3 memory, and 560kW+ optical racks. Per-chip efficiency trails TSMC/Nvidia by 2–3x, but China's massive power grid & DeepSeek/CANN co-design offset the gap. | 60% | 2026 – 2030 Base Case China matches US AI capability via grid megawatts & MoE code |
+| SCENARIO B: Western High-NA EUV & Packaging Pull-Away Strict secondary sanctions on Japanese/Western sub-tools (DISCO saws, Ajinomoto ABF, Lam etch, metrology) cap Chinese HBM & 7nm yields <40%, while TSMC A16/A14 + Nvidia Rubin deliver a 5x compute-per-watt leap China cannot match. | 25% | Bear Case for China Widening 4–5x TCO gap; Chinese AI lags on massive clusters |
+| SCENARIO C: Full Chinese Lithography Breakthrough & Dumping China commercializes indigenous EUV/immersion DUV and HBM3e at >70% yields by 2028–2029, flooding Global South markets with subsidized turnkey AI racks and collapsing Western GPU/HBM oligopoly margins by 30–50%. | 15% | Bull Case for China Severe compression of Nvidia, SK Hynix & ASML valuation multiples |
 
 #### 1. Our Stance on Why Making a GPU Is So Hard
 The popular belief that making an AI chip is simply about "designing a faster circuit" or "buying an EUV scanner" is **empirically wrong**. 

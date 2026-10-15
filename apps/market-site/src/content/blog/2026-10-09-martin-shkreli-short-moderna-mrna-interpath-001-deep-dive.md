@@ -37,38 +37,19 @@ In this forensic research investigation, we audit:
 
 ---
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        MODERNA ($MRNA) AT $220.99: INSTITUTIONAL FORENSIC AUDIT                        │
-├───────────────────────────────┬──────────────────────────────────┬─────────────────────────────────────┤
-│ Metric / Dimension            │ Squeeze Euphoria Narrative       │ Forensic Institutional Reality      │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Market Capitalization         │ $88.23B (Universal cancer cure)  │ Q2 2026 Revenue: $145M; P/S > 48x   │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Net Cash Burn                 │ $6.9B cash = "fortress runway"   │ Burning ~$2.0B-$2.5B annually;      │
-│                               │                                  │ Guided to $4.7B-$5.2B by end-2026   │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Phase 3 INTerpath-001 TAM     │ "Tens of billions in melanoma"   │ High-Risk Resected Melanoma is      │
-│                               │                                  │ ~40K-50K pts US/EU; TAM: ~$2.5B     │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Commercial Deal Structure     │ 100% credited to MRNA valuation  │ 50/50 Global Profit & Loss Split    │
-│                               │                                  │ with Merck & Co. (MRK)              │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Manufacturing Scalability     │ "Mass-market mRNA production"    │ Bespoke autologous therapy; TAT:    │
-│                               │                                  │ 6-8 weeks; COGS: $35K-$50K/pt       │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Commercial Revenue Horizon    │ "Imminent cancer vaccine sales"  │ Zero cancer revenues for 12-18 mos; │
-│                               │                                  │ Launch delayed to late 2027/2028    │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Near-Term P&L Drivers         │ Oncology hype                    │ Q3/Q4 2026 respiratory vaccine      │
-│                               │                                  │ sales collapsing; big losses ahead  │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Dilution Risk                 │ Ignored                          │ Prime candidate for $2B-$3B ATM     │
-│                               │                                  │ secondary offering into strength    │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Institutional Fair Value      │ $220.99 (Spot Price)             │ $95.00 - $115.00 (-48% to -57%)     │
-└───────────────────────────────┴──────────────────────────────────┴─────────────────────────────────────┘
-```
+**MODERNA ($MRNA) AT $220.99: INSTITUTIONAL FORENSIC AUDIT**
+
+| Metric / Dimension | Squeeze Euphoria Narrative | Forensic Institutional Reality |
+| :--- | :--- | :--- |
+| Market Capitalization | $88.23B (Universal cancer cure) | Q2 2026 Revenue: $145M; P/S > 48x |
+| Net Cash Burn | $6.9B cash = "fortress runway" | Burning ~$2.0B-$2.5B annually; Guided to $4.7B-$5.2B by end-2026 |
+| Phase 3 INTerpath-001 TAM | "Tens of billions in melanoma" | High-Risk Resected Melanoma is ~40K-50K pts US/EU; TAM: ~$2.5B |
+| Commercial Deal Structure | 100% credited to MRNA valuation | 50/50 Global Profit & Loss Split with Merck & Co. (MRK) |
+| Manufacturing Scalability | "Mass-market mRNA production" | Bespoke autologous therapy; TAT: 6-8 weeks; COGS: $35K-$50K/pt |
+| Commercial Revenue Horizon | "Imminent cancer vaccine sales" | Zero cancer revenues for 12-18 mos; Launch delayed to late 2027/2028 |
+| Near-Term P&L Drivers | Oncology hype | Q3/Q4 2026 respiratory vaccine sales collapsing; big losses ahead |
+| Dilution Risk | Ignored | Prime candidate for $2B-$3B ATM secondary offering into strength |
+| Institutional Fair Value | $220.99 (Spot Price) | $95.00 - $115.00 (-48% to -57%) |
 
 ---
 
@@ -118,19 +99,11 @@ The most glaring flaw in the current \$88 billion valuation is the complete fail
 Between August and October 2026, Moderna's market capitalization expanded by **\$56.3 billion** (from ~$31.9B to ~$88.2B). Can adjuvant melanoma support this?
 
 ### The Epidemiological Funnel
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                 ADJUVANT MELANOMA EPIDEMIOLOGICAL MARKET FUNNEL             │
-├──────────────────────────────────────────┬──────────────────────────────────┤
-│ Metric Level                             │ Patient Count / Annual Pool      │
-├──────────────────────────────────────────┼──────────────────────────────────┤
-│ Total Incident Melanoma (US + EU5)       │ ~200,000 patients                │
-│ Stage IIB - IV Resected Candidates       │ ~45,000 patients                 │
-│ Clinically Fit for Systemic Adjuvant Tx  │ ~30,000 patients                 │
-│ Biopsy / Sequencing Success Rate (85%)   │ ~25,500 patients                 │
-│ Peak INT Market Penetration (Generous 45%)│ ~11,500 patients                 │
-└──────────────────────────────────────────┴──────────────────────────────────┘
-```
+**ADJUVANT MELANOMA EPIDEMIOLOGICAL MARKET FUNNEL**
+
+| Metric Level | Patient Count / Annual Pool |
+| :--- | :--- |
+| Total Incident Melanoma (US + EU5) Stage IIB - IV Resected Candidates Clinically Fit for Systemic Adjuvant Tx Biopsy / Sequencing Success Rate (85%) Peak INT Market Penetration (Generous 45%) | ~200,000 patients ~45,000 patients ~30,000 patients ~25,500 patients ~11,500 patients |
 
 1. **Addressable High-Risk Pool:** There are approximately 40,000 to 50,000 Stage IIB–IV completely resected melanoma patients diagnosed annually across the United States and major European markets.
 2. **Drop-Off Rates:** In real-world clinical practice, only ~30,000 of these patients receive systemic adjuvant immunotherapy due to comorbidities, toxicities, or physician preference. Furthermore, tumor biopsy quality, sequencing failures, and manufacturing turnaround issues inevitably drop another 10%–15% of patients.
@@ -155,21 +128,11 @@ Even in an ultra-optimistic scenario with 60% penetration and $180,000 net prici
 
 Investors pricing Moderna as if it can produce cancer vaccines like COVID-19 shots fundamentally misunderstand bioprocess engineering.
 
-```
-┌───────────────────────────────────────────────────────────────────────────────────┐
-│              MASS VACCINE (SPIKEVAX) vs. INDIVIDUALIZED ONCOLOGY (V940)           │
-├─────────────────────────┬──────────────────────────┬──────────────────────────────┤
-│ Attribute               │ Spikevax (COVID-19)      │ Intismeran Autogene (V940)   │
-├─────────────────────────┼──────────────────────────┼──────────────────────────────┤
-│ Product Nature          │ One-size-fits-all        │ Autologous, patient-specific │
-│ Target Antigens         │ 1 (Spike glycoprotein)   │ Up to 34 unique neoantigens  │
-│ Manufacturing Lead Time │ Bulk vats on shelf       │ 6 to 8 Weeks from biopsy     │
-│ Batch Size              │ Millions of doses/run    │ 1 Patient = 1 Batch          │
-│ Cost of Goods (COGS)    │ ~$3 - $5 per dose        │ $35,000 - $50,000 per course │
-│ Gross Margin Profile    │ 75% - 85%                │ 40% - 55%                    │
-│ Scalability             │ Exponentially scalable   │ Linear cleanroom constraint  │
-└─────────────────────────┴──────────────────────────┴──────────────────────────────┘
-```
+**MASS VACCINE (SPIKEVAX) vs. INDIVIDUALIZED ONCOLOGY (V940)**
+
+| Attribute | Spikevax (COVID-19) | Intismeran Autogene (V940) |
+| :--- | :--- | :--- |
+| Product Nature Target Antigens Manufacturing Lead Time Batch Size Cost of Goods (COGS) Gross Margin Profile Scalability | One-size-fits-all 1 (Spike glycoprotein) Bulk vats on shelf Millions of doses/run ~$3 - $5 per dose 75% - 85% Exponentially scalable | Autologous, patient-specific Up to 34 unique neoantigens 6 to 8 Weeks from biopsy 1 Patient = 1 Batch $35,000 - $50,000 per course 40% - 55% Linear cleanroom constraint |
 
 1. **The 6–8 Week Turnaround Delay:** In high-risk melanoma, microscopic cancer cells are dividing rapidly. Requiring 45 to 60 days to complete biopsy processing, exome sequencing, epitope ranking, plasmid synthesis, IVT mRNA transcription, LNP formulation, and sterility testing creates significant clinical friction. Patients who recur or develop distant metastases during the manufacturing window are automatically removed from adjuvant therapy.
 2. **Crippling Cost of Goods Sold (COGS):** Individualized autologous manufacturing cannot benefit from the standard batch economies of scale that define pharmaceutical profitability. Each batch requires dedicated technician hours, bespoke quality control, individual sterility assays, and single-use consumables. Industry estimates place the COGS for a 9-dose individualized mRNA regimen at **$35,000 to $50,000 per patient**.
@@ -183,31 +146,16 @@ Why did Martin Shkreli specifically say *"a great short if you can tough it out 
 
 Understanding this timing is the difference between an amateur short seller blowing up their account and an institutional fund harvesting alpha.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                      THE 6-MONTH CATALYST VACUUM TIMELINE (OCT 2026 - APR 2027)        │
-├──────────────────────┬─────────────────────────────────────────────────────────────────┤
-│ Month                │ Macro Event & Fundamental Headwind                              │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ October 2026         │ Peak Squeeze Euphoria: MRNA hits $220.99; retail and momentum   │
-│                      │ algorithms dominate tape; borrow fees remain elevated.          │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ November 2026        │ Q3 2026 Earnings Reality Check: Dismal COVID/RSV sales;         │
-│                      │ GAAP net loss expected at -$700M to -$800M; cash burns lower.   │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Dec 2026 / Jan 2027  │ Medical Congress Presentation: Full INTerpath-001 data revealed │
-│                      │ (ESMO/SMR); actual HRs, subgroup data, and nuances temper hype. │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Jan / Feb 2027       │ Equity Offering / ATM Dilution: Management executes $2B-$3B     │
-│                      │ secondary offering to take advantage of multi-year high stock.  │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Feb / Mar 2027       │ Q4 2026 Full-Year Earnings: Year-end cash confirmed at ~$4.8B;  │
-│                      │ FY2026 net loss exceeding -$2.5B; 2027 guidance remains bleak.  │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ April 2027           │ 6-Month Horizon Reached: Zero commercial cancer sales; BLA      │
-│                      │ under standard/priority FDA review; stock re-rates to $95-$115. │
-└──────────────────────┴─────────────────────────────────────────────────────────────────┘
-```
+**THE 6-MONTH CATALYST VACUUM TIMELINE (OCT 2026 - APR 2027)**
+
+| Month | Macro Event & Fundamental Headwind |
+| :--- | :--- |
+| October 2026 | Peak Squeeze Euphoria: MRNA hits $220.99; retail and momentum algorithms dominate tape; borrow fees remain elevated. |
+| November 2026 | Q3 2026 Earnings Reality Check: Dismal COVID/RSV sales; GAAP net loss expected at -$700M to -$800M; cash burns lower. |
+| Dec 2026 / Jan 2027 | Medical Congress Presentation: Full INTerpath-001 data revealed (ESMO/SMR); actual HRs, subgroup data, and nuances temper hype. |
+| Jan / Feb 2027 | Equity Offering / ATM Dilution: Management executes $2B-$3B secondary offering to take advantage of multi-year high stock. |
+| Feb / Mar 2027 | Q4 2026 Full-Year Earnings: Year-end cash confirmed at ~$4.8B; FY2026 net loss exceeding -$2.5B; 2027 guidance remains bleak. |
+| April 2027 | 6-Month Horizon Reached: Zero commercial cancer sales; BLA under standard/priority FDA review; stock re-rates to $95-$115. |
 
 ### Pillar 1: Why You Must "Tough It Out"
 Shorting into the immediate aftermath of a Phase 3 cancer breakthrough is notoriously hazardous:
@@ -239,34 +187,19 @@ Over a 6-month horizon (October 2026 to April 2027), the market is forced to con
 
 To determine an objective fair value for Moderna, we perform an institutional Sum-of-the-Parts (SOTP) discounted cash flow analysis across each business segment:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        MODERNA ($MRNA) SOTP VALUATION BREAKDOWN                        │
-├───────────────────────────────────┬──────────────┬──────────────┬──────────────────────┤
-│ Franchise Component               │ Bear Value   │ Base Value   │ Bull Value           │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ 1. Endemic Respiratory Franchise  │ $8.0B        │ $11.0B       │ $14.0B               │
-│    (Spikevax + mRESVIA + Flu P3)  │              │              │                      │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ 2. mRNA-4157 Melanoma (50% Split) │ $6.5B        │ $9.5B        │ $13.0B               │
-│    (rNPV, 80% Approval Prob.)     │              │              │                      │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ 3. Pipeline Optionality           │ $8.0B        │ $12.5B       │ $18.0B               │
-│    (NSCLC INT, CMV P3, Norovirus) │              │              │                      │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ 4. Net Cash (Projected YE 2026)   │ $4.7B        │ $5.0B        │ $5.2B                │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ Total Enterprise Equity Value     │ $27.2B       │ $38.0B       │ $50.2B               │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ Fully Diluted Shares Outstanding  │ 399.2M       │ 399.2M       │ 399.2M               │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ Fair Value Per Share              │ $68.14       │ $95.19       │ $125.75              │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ Current Trading Price             │ $220.99      │ $220.99      │ $220.99              │
-├───────────────────────────────────┼──────────────┼──────────────┼──────────────────────┤
-│ Expected Downside vs. Spot        │ -69.2%       │ -56.9%       │ -43.1%               │
-└───────────────────────────────────┴──────────────┴──────────────┴──────────────────────┘
-```
+**MODERNA ($MRNA) SOTP VALUATION BREAKDOWN**
+
+| Franchise Component | Bear Value | Base Value | Bull Value |
+| :--- | :--- | :--- | :--- |
+| 1. Endemic Respiratory Franchise (Spikevax + mRESVIA + Flu P3) | $8.0B | $11.0B | $14.0B |
+| 2. mRNA-4157 Melanoma (50% Split) (rNPV, 80% Approval Prob.) | $6.5B | $9.5B | $13.0B |
+| 3. Pipeline Optionality (NSCLC INT, CMV P3, Norovirus) | $8.0B | $12.5B | $18.0B |
+| 4. Net Cash (Projected YE 2026) | $4.7B | $5.0B | $5.2B |
+| Total Enterprise Equity Value | $27.2B | $38.0B | $50.2B |
+| Fully Diluted Shares Outstanding | 399.2M | 399.2M | 399.2M |
+| Fair Value Per Share | $68.14 | $95.19 | $125.75 |
+| Current Trading Price | $220.99 | $220.99 | $220.99 |
+| Expected Downside vs. Spot | -69.2% | -56.9% | -43.1% |
 
 ### Valuation Audit
 - **Endemic Respiratory ($11.0B Base):** Assumes Spikevax stabilizes at ~$1.5B annual sales, mRESVIA reaches ~$500M, and the Phase 3 influenza/COVID combination (mRNA-1083) adds modest incremental cash flow.
@@ -284,26 +217,13 @@ At **$220.99**, the stock is trading at an unjustified **+75% to +132% premium**
 
 For professional investors and market participants evaluating Shkreli’s short thesis, execution is critical.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                              SHORT IMPLEMENTATION PLAYBOOK                             │
-├──────────────────────┬─────────────────────────────────────────────────────────────────┤
-│ Vehicle              │ Tactical Execution & Rationale                                  │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Direct Equity Short  │ HIGH RISK / CAUTION: Elevated borrow fees and violent intraday  │
-│                      │ short covering spikes make direct shorting risky without deep   │
-│                      │ capital reserves.                                               │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Long Put Spreads     │ PREFERRED STRATEGY: Buying April 2027 or June 2027 $160 / $120  │
-│ (6-Month Horizon)    │ Bear Put Spreads. Provides defined risk against temporary       │
-│                      │ squeeze spikes to $250+ while capturing the full re-rating      │
-│                      │ driven by Q3/Q4 earnings, dilution, and catalyst vacuum.        │
-├──────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ Bear Call Spreads    │ INCOME / THETA STRATEGY: Selling OTM call spreads (e.g.,        │
-│                      │ $260 / $300 strikes) expiring in early 2027 to capture implied  │
-│                      │ volatility collapse as squeeze momentum stagnates.              │
-└──────────────────────┴─────────────────────────────────────────────────────────────────┘
-```
+**SHORT IMPLEMENTATION PLAYBOOK**
+
+| Vehicle | Tactical Execution & Rationale |
+| :--- | :--- |
+| Direct Equity Short | HIGH RISK / CAUTION: Elevated borrow fees and violent intraday short covering spikes make direct shorting risky without deep capital reserves. |
+| Long Put Spreads (6-Month Horizon) | PREFERRED STRATEGY: Buying April 2027 or June 2027 $160 / $120 Bear Put Spreads. Provides defined risk against temporary squeeze spikes to $250+ while capturing the full re-rating driven by Q3/Q4 earnings, dilution, and catalyst vacuum. |
+| Bear Call Spreads | INCOME / THETA STRATEGY: Selling OTM call spreads (e.g., $260 / $300 strikes) expiring in early 2027 to capture implied volatility collapse as squeeze momentum stagnates. |
 
 ### Key Risks to the Short Thesis (What Could Break the Trade?)
 1. **Outright Acquisition by Merck:** Facing the catastrophic loss of exclusivity (LOE) on Keytruda in 2028, Merck could theoretically decide to acquire Moderna outright to capture 100% of the INT franchise. However, given Moderna's $88B market cap, an acquisition with a standard 30% premium would require Merck to pay over **$115 billion**—an improbable capital allocation for an asset burning $2B+ annually.

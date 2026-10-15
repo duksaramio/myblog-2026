@@ -65,38 +65,11 @@ When a healthcare company communicates with three different audiences—venture 
 
 In Saccade's case, the contradiction between its promotional claims and its buried participant documentation is not a subtle nuance of phrasing; it is a direct factual inversion.
 
-```
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                 THE SACCADE CLAIM SCHISM (OCTOBER 14, 2026)                  │
-├──────────────────────────────────────┬───────────────────────────────────────┤
-│ PUBLIC MARKETING & LAUNCH YC         │ BURIED TERMS & PARTICIPANT PAMPHLETS  │
-│ (What Consumers & Investors Read)    │ (What the Fine Print Admits)          │
-├──────────────────────────────────────┼───────────────────────────────────────┤
-│ • "World's Earliest Test for         │ • "Investigational device. Not a      │
-│   Alzheimer's Biomarkers — Non-      │   diagnostic device. It cannot        │
-│   invasive VR screening to protect   │   diagnose, screen for, predict or    │
-│   a lifetime of memories." (Hero H1) │   rule out Alzheimer's disease..."    │
-│                                      │   (saccade-02-your-visit.pdf, p. 1)   │
-│ • "We analyze 21 oculomotor          │                                       │
-│   biomarkers with our proprietary    │ • "Will I receive a score?            │
-│   ML model to produce a risk score." │   Not at this stage. The visit        │
-│   (Launch YC)                        │   confirms the tasks completed and    │
-│                                      │   recording quality. Individual       │
-│ • "Once classified into one of       │   measurements still need             │
-│   three risk categories, patients    │   validation."                        │
-│   can start interventions ranging    │   (saccade-02-your-visit.pdf, p. 2)   │
-│   from preventative longevity        │                                       │
-│   practices, further neurological    │ • "Age-based ranges are not yet       │
-│   evaluations, and new FDA-approved  │   available in the current reporting  │
-│   drugs." (Launch YC)                │   system." (assessment.html, line 45) │
-│                                      │                                       │
-│ • "We're live in San Francisco       │ • "This research describes            │
-│   clinics, testing people in their   │   differences between groups; it      │
-│   30s and older for early risk       │   does not validate Saccade's panel   │
-│   indicators." (Launch YC)           │   for individual diagnosis."          │
-│                                      │   (assessment.html, footnote 1)       │
-└──────────────────────────────────────┴───────────────────────────────────────┘
-```
+**THE SACCADE CLAIM SCHISM (OCTOBER 14, 2026)**
+
+| PUBLIC MARKETING & LAUNCH YC (What Consumers & Investors Read) | BURIED TERMS & PARTICIPANT PAMPHLETS (What the Fine Print Admits) |
+| :--- | :--- |
+| • "World's Earliest Test for Alzheimer's Biomarkers — Non-invasive VR screening to protect a lifetime of memories." (Hero H1)<br>• "We analyze 21 oculomotor biomarkers with our proprietary ML model to produce a risk score." (Launch YC)<br>• "Once classified into one of three risk categories, patients can start interventions ranging from preventative longevity practices, further neurological evaluations, and new FDA-approved drugs." (Launch YC)<br>• "We're live in San Francisco clinics, testing people in their 30s and older for early risk indicators." (Launch YC) | • "Investigational device. Not a diagnostic device. It cannot diagnose, screen for, predict or rule out Alzheimer's disease..." (saccade-02-your-visit.pdf, p. 1)<br>• "Will I receive a score? Not at this stage. The visit confirms the tasks completed and recording quality. Individual measurements still need validation." (saccade-02-your-visit.pdf, p. 2)<br>• "Age-based ranges are not yet available in the current reporting system." (assessment.html, line 45)<br>• "This research describes differences between groups; it does not validate Saccade's panel for individual diagnosis." (assessment.html, footnote 1) |
 
 Read that comparison carefully:
 
@@ -234,27 +207,11 @@ Why does an oculomotor test have such a high false-positive rate in the real wor
 
 When a person puts on a headset and performs a prosaccade (looking toward a flash), an antisaccade (suppressing the reflex to look at a flash and looking in the opposite direction), or a memory-guided saccade, what neural circuits are being tested?
 
-```
-┌──────────────────────────────────────────────────────────────────────────────┐
-│          RIVAL CAUSES OF ABNORMAL SACCADES & ANTISACCADE ERRORS              │
-├──────────────────────────────────────────────────────────────────────────────┤
-│  Observed Signal: Prolonged Saccade Latency (+20 ms) & Antisaccade Errors    │
-│                                      ▲                                       │
-│        ┌─────────────────────────────┼─────────────────────────────┐         │
-│        │                             │                             │         │
-│  [1. Psychiatric &            [2. Pharmacological &         [3. Non-AD       │
-│   Neurodevelopmental]          Physiological State]          Neurology &     │
-│  • ADHD (DLPFC inhibition)    • Sleep deprivation /          Systemic]       │
-│  • Schizophrenia / Bipolar      circadian trough            • Parkinson's &  │
-│  • Major Depressive           • Caffeine withdrawal /         PSP / Lewy Body│
-│    Disorder & Anxiety           acute fatigue               • Frontotemporal │
-│  • Autism Spectrum            • Alcohol, benzodiazepines,     Dementia (FTD) │
-│                                 sedatives, antihistamines,  • Multiple       │
-│                                 anticholinergics, SSRIs       Sclerosis / TBI│
-│                               • Dry eye / astigmatism /     • Diabetes (70.5%│
-│                                 VR vergence fatigue           in Qi 2024!)   │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+| Rival Cause Category (Observed Signal: Prolonged Saccade Latency `+20 ms` & Antisaccade Errors) | Confounding Conditions & Clinical Mechanisms |
+| :--- | :--- |
+| **1. Psychiatric & Neurodevelopmental** | • **ADHD** (DLPFC top-down inhibition deficit)<br>• **Schizophrenia / Bipolar Disorder**<br>• **Major Depressive Disorder & Generalized Anxiety**<br>• **Autism Spectrum** |
+| **2. Pharmacological & Physiological State** | • **Sleep deprivation** (`< 5 hrs`) / circadian trough<br>• **Caffeine withdrawal** / acute work fatigue<br>• **Medications & Substances:** Alcohol, benzodiazepines, Z-drugs/sedatives, antihistamines, anticholinergics, SSRIs<br>• **Ocular / Optical:** Dry eye, astigmatism, VR vergence-accommodation fatigue |
+| **3. Non-AD Neurology & Systemic Disease** | • **Parkinson's Disease**, Progressive Supranuclear Palsy (**PSP**), **Lewy Body Dementia (DLB)**<br>• **Frontotemporal Dementia (FTD)**<br>• **Multiple Sclerosis / Traumatic Brain Injury (TBI)**<br>• **Type 2 Diabetes** (**`70.5%`** prevalence in `Qi et al. 2024` AD cohort vs. `23.8%` in controls!) |
 
 1. **Direct Neuroanatomical Pathway (Executive Control, Not Amyloid Specificity):** Antisaccade inhibition is governed by top-down inhibitory signals from the **dorsolateral prefrontal cortex (DLPFC)**, **anterior cingulate cortex (ACC)**, and **frontal eye fields (FEF)** projecting via the basal ganglia (caudate nucleus and substantia nigra pars reticulata) to the **superior colliculus**. Any condition that transiently or chronically impairs prefrontal executive attention increases antisaccade error rates and saccadic latency.
 2. **Third-Variable Confounders Across Psychiatric, Pharmacological, and Systemic Conditions:**

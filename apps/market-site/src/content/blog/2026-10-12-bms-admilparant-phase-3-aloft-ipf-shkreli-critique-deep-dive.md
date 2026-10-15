@@ -38,34 +38,17 @@ In this deep forensic investigation, we audit:
 
 ---
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                     BRISTOL MYERS SQUIBB: ADMILPARANT (ALOFT-IPF) FORENSIC AUDIT                       │
-├───────────────────────────────┬──────────────────────────────────┬─────────────────────────────────────┤
-│ Dimension / Clinical Metric   │ BMS Press Release Narrative      │ Forensic Pharmacological Reality    │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Primary Endpoint Status       │ "Met Primary Endpoint at 60 mg"  │ 120 mg FAILED statistical           │
-│                               │                                  │ significance (p >= 0.05)            │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Dose-Response Monotonicity    │ Framed as overall positive       │ Completely broken; inverted         │
-│                               │ profile                          │ response violates drug causality    │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Reported FVC Effect Size (mL) │ Omitted / Concealed              │ Withholding delta in mL strongly    │
-│                               │                                  │ implies a marginal effect (~40-50mL)│
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Phase 2 Dose Exploration      │ Advanced straight to Phase 3     │ 120 mg was NEVER tested in Phase 2; │
-│                               │                                  │ dose selection was pure hubris      │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Hepatic Safety Profile        │ "Well-tolerated, low d/c rates"  │ May 2026 protocol amendment added   │
-│                               │                                  │ DILI stopping rules after death     │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Competitive Stance vs. BI     │ "First-in-class LPA1 approach"   │ Blown away by Nerandomilast         │
-│ (Boehringer Ingelheim)        │                                  │ (both doses hit, +69.5 mL, p<0.001) │
-├───────────────────────────────┼──────────────────────────────────┼─────────────────────────────────────┤
-│ Peak Sales Expectations       │ $2.0B - $3.0B Blockbuster        │ Relegated to second-tier niche;     │
-│                               │                                  │ Real peak value <$700M              │
-└───────────────────────────────┴──────────────────────────────────┴─────────────────────────────────────┘
-```
+**BRISTOL MYERS SQUIBB: ADMILPARANT (ALOFT-IPF) FORENSIC AUDIT**
+
+| Dimension / Clinical Metric | BMS Press Release Narrative | Forensic Pharmacological Reality |
+| :--- | :--- | :--- |
+| Primary Endpoint Status | "Met Primary Endpoint at 60 mg" | 120 mg FAILED statistical significance (p >= 0.05) |
+| Dose-Response Monotonicity | Framed as overall positive profile | Completely broken; inverted response violates drug causality |
+| Reported FVC Effect Size (mL) | Omitted / Concealed | Withholding delta in mL strongly implies a marginal effect (~40-50mL) |
+| Phase 2 Dose Exploration | Advanced straight to Phase 3 | 120 mg was NEVER tested in Phase 2; dose selection was pure hubris |
+| Hepatic Safety Profile | "Well-tolerated, low d/c rates" | May 2026 protocol amendment added DILI stopping rules after death |
+| Competitive Stance vs. BI (Boehringer Ingelheim) | "First-in-class LPA1 approach" | Blown away by Nerandomilast (both doses hit, +69.5 mL, p<0.001) |
+| Peak Sales Expectations | $2.0B - $3.0B Blockbuster | Relegated to second-tier niche; Real peak value <$700M |
 
 ---
 
@@ -283,41 +266,20 @@ Boehringer Ingelheim, the undisputed global powerhouse in fibrotic lung disease 
 
 Compare the institutional profiles of these two programs:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        HEAD-TO-HEAD PHASE 3 AUDIT: NERANDOMILAST VS. ADMILPARANT                       │
-├───────────────────────────────┬────────────────────────────────────┬───────────────────────────────────┤
-│ Clinical Metric / Feature     │ Nerandomilast (Boehringer Ingel.)  │ Admilparant (Bristol Myers Sq.)   │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Mechanism of Action           │ Oral PDE4B preferential inhibitor  │ Oral LPA1 receptor antagonist     │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Pivotal Trial Name            │ FIBRONEER-IPF (1,177 patients)     │ ALOFT-IPF (1,255 patients)        │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Active Doses Evaluated        │ 9 mg BID & 18 mg BID               │ 60 mg BID & 120 mg BID            │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Primary Endpoint Result       │ BOTH DOSES HIGHLY SIGNIFICANT      │ 60 mg: Significant (p < 0.05)     │
-│ (Absolute FVC change at W52)  │ - 18 mg BID: p < 0.001             │ 120 mg: FAILED (p >= 0.05)        │
-│                               │ - 9 mg BID: p < 0.01               │                                   │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Dose-Response Relationship    │ Textbook Monotonic:                │ Inverted / Non-Monotonic:         │
-│                               │ Higher dose = greater efficacy     │ Higher dose loses significance    │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Reported 52-Week FVC Delta    │ Transparently Published:           │ CONCEALED / WITHHELD:             │
-│ vs. Placebo (mL)              │ - 18 mg BID: +69.5 mL              │ No mL figures provided in the     │
-│                               │ - 9 mg BID: +45.6 mL               │ press release (indicates weakness)│
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Background Antifibrotic Use   │ Proven consistent with/without     │ Unrevealed subgroup performance   │
-│                               │ background Ofev/Esbriet            │                                   │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Safety Scrutiny               │ Expected class diarrhea; no fatal  │ May 2026 DILI amendment; fatal    │
-│                               │ hepatic necrosis scares            │ acute hepatic necrosis report     │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Regulatory Confidence         │ Near 100% FDA approval certainty   │ Significant FDA advisory grill;   │
-│                               │ with clean dual-dose package       │ Single borderline dose scrutiny   │
-├───────────────────────────────┼────────────────────────────────────┼───────────────────────────────────┤
-│ Commercial Positioning        │ Undisputed Next-Gen Market Leader  │ Compromised Second-Tier Follower  │
-└───────────────────────────────┴────────────────────────────────────┴───────────────────────────────────┘
-```
+**HEAD-TO-HEAD PHASE 3 AUDIT: NERANDOMILAST VS. ADMILPARANT**
+
+| Clinical Metric / Feature | Nerandomilast (Boehringer Ingel.) | Admilparant (Bristol Myers Sq.) |
+| :--- | :--- | :--- |
+| Mechanism of Action | Oral PDE4B preferential inhibitor | Oral LPA1 receptor antagonist |
+| Pivotal Trial Name | FIBRONEER-IPF (1,177 patients) | ALOFT-IPF (1,255 patients) |
+| Active Doses Evaluated | 9 mg BID & 18 mg BID | 60 mg BID & 120 mg BID |
+| Primary Endpoint Result (Absolute FVC change at W52) | BOTH DOSES HIGHLY SIGNIFICANT<br>- 18 mg BID: p < 0.001<br>- 9 mg BID: p < 0.01 | 60 mg: Significant (p < 0.05) 120 mg: FAILED (p >= 0.05) |
+| Dose-Response Relationship | Textbook Monotonic: Higher dose = greater efficacy | Inverted / Non-Monotonic: Higher dose loses significance |
+| Reported 52-Week FVC Delta vs. Placebo (mL) | Transparently Published:<br>- 18 mg BID: +69.5 mL<br>- 9 mg BID: +45.6 mL | CONCEALED / WITHHELD: No mL figures provided in the press release (indicates weakness) |
+| Background Antifibrotic Use | Proven consistent with/without background Ofev/Esbriet | Unrevealed subgroup performance |
+| Safety Scrutiny | Expected class diarrhea; no fatal hepatic necrosis scares | May 2026 DILI amendment; fatal acute hepatic necrosis report |
+| Regulatory Confidence | Near 100% FDA approval certainty with clean dual-dose package | Significant FDA advisory grill; Single borderline dose scrutiny |
+| Commercial Positioning | Undisputed Next-Gen Market Leader | Compromised Second-Tier Follower |
 
 The contrast is devastating. 
 * Boehringer Ingelheim ran a textbook program: both doses hit, the effect sizes were transparently published (+69.5 mL and +45.6 mL), dose-ordering was immaculate, and the biological thesis was proven beyond a shadow of a doubt.

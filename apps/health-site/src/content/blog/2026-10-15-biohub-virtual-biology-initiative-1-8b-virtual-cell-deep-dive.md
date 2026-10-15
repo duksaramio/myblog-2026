@@ -17,34 +17,15 @@ On paper, the coalition looks like a biomedical Manhattan Project. Anchored by B
 
 Yet when you strip away the celebratory press release and subject the announcement to a primary-source forensic audit—cross-referencing historical funding ledgers, parallel federal memoranda of understanding, executive media interviews, Biohub's buried legal subpages, and the peer-reviewed benchmarking literature—a starkly different picture emerges.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           THE $1.8 BILLION VIRTUAL BIOLOGY INITIATIVE (VBI): FORENSIC AUDIT SCORECARD              │
-├──────────────────────────────────┬─────────────────────────────────────────────────────────────────┤
-│ AUDIT DIMENSION                  │ PRIMARY-SOURCE EMPIRICAL REALITY (OCTOBER 2026)                 │
-├──────────────────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 1. The "$1.8 Billion" Headline   │ • $500M (Biohub): Already announced 5 months prior (Apr 2026)   │
-│    Capital Decomposition         │ • $500M+ (NIH): Zero new money ("prior federal investment")     │
-│                                  │ • $500M+ (DOE): 5-yr amortized in-kind lab/supercomputer time   │
-│                                  │ • $300M (DeepMind/Isomorphic/Meta): Only new private commitment │
-├──────────────────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 2. "New Standard for Open        │ Biohub Head of Science Alex Rives admitted to Reuters/Axios     │
-│    Science" vs. Exclusive Access │ that commercial funders (Meta, DeepMind, Isomorphic) get a      │
-│                                  │ 1-YEAR EXCLUSIVE EMBARGO ("head start") before open release.    │
-├──────────────────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 3. Legal & Benchmarking          │ Biohub's Acceptable Use Policy explicitly prohibits users from  │
-│    Restrictions                  │ using its hosted Services "to evaluate, benchmark, probe, or    │
-│                                  │ otherwise test the behavior, limitations, or safeguards."       │
-├──────────────────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 4. The Federal "AI" → "SI"       │ DOE and NIH press releases systematically replaced every        │
-│    Rhetorical Rewrite            │ instance of "AI" and "AI-ready" with "Super Intelligence (SI)"  │
-│                                  │ and "SI-ready"—even altering Under Secretary Darío Gil's quote. │
-├──────────────────────────────────┼─────────────────────────────────────────────────────────────────┤
-│ 5. Empirical Model Reality       │ Ahlmann-Eltze et al. (Nature Methods, 2025) & Kedzierska et al. │
-│    (Foundation Models vs. Linear)│ (Genome Biology, 2025) prove scGPT, Geneformer, scFoundation,   │
-│                                  │ UCE, GEARS & CPA fail to beat simple linear/additive baselines. │
-└──────────────────────────────────┴─────────────────────────────────────────────────────────────────┘
-```
+**THE $1.8 BILLION VIRTUAL BIOLOGY INITIATIVE (VBI): FORENSIC AUDIT SCORECARD**
+
+| AUDIT DIMENSION | PRIMARY-SOURCE EMPIRICAL REALITY (OCTOBER 2026) |
+| :--- | :--- |
+| 1. The "$1.8 Billion" Headline Capital Decomposition | • $500M (Biohub): Already announced 5 months prior (Apr 2026)<br>• $500M+ (NIH): Zero new money ("prior federal investment")<br>• $500M+ (DOE): 5-yr amortized in-kind lab/supercomputer time<br>• $300M (DeepMind/Isomorphic/Meta): Only new private commitment |
+| 2. "New Standard for Open Science" vs. Exclusive Access | Biohub Head of Science Alex Rives admitted to Reuters/Axios that commercial funders (Meta, DeepMind, Isomorphic) get a 1-YEAR EXCLUSIVE EMBARGO ("head start") before open release. |
+| 3. Legal & Benchmarking Restrictions | Biohub's Acceptable Use Policy explicitly prohibits users from using its hosted Services "to evaluate, benchmark, probe, or otherwise test the behavior, limitations, or safeguards." |
+| 4. The Federal "AI" → "SI" Rhetorical Rewrite | DOE and NIH press releases systematically replaced every instance of "AI" and "AI-ready" with "Super Intelligence (SI)" and "SI-ready"—even altering Under Secretary Darío Gil's quote. |
+| 5. Empirical Model Reality (Foundation Models vs. Linear) | Ahlmann-Eltze et al. (Nature Methods, 2025) & Kedzierska et al. (Genome Biology, 2025) prove scGPT, Geneformer, scFoundation, UCE, GEARS & CPA fail to beat simple linear/additive baselines. |
 
 In this deep dive, we apply an eight-phase forensic methodology to dissect the financial accounting, legal governance, causal physics, and mathematical bottlenecks of the Virtual Cell race.
 
@@ -89,29 +70,14 @@ Every claim in this audit is anchored to primary institutional releases, governm
 
 How do you construct a nearly $2 billion headline when only $300 million in new private commitments has joined the table? You combine **announcement recycling**, **historical sunk-cost accounting**, and **amortized in-kind facility hours**.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                  DECONSTRUCTING THE "$1.8 BILLION" HEADLINE BY FUNDING TRANCHE                     │
-├──────────────────────────┬──────────────┬───────────────┬──────────────────────────────────────────┤
-│ PARTICIPANT TRANCHE      │ HEADLINE SUM │ % OF $1.8B    │ FORENSIC CASH & ACCOUNTING REALITY       │
-├──────────────────────────┼──────────────┼───────────────┼──────────────────────────────────────────┤
-│ 1. Biohub (CZI)          │ $500 Million │ 27.8%         │ RECYCLED ANNOUNCEMENT: Identical $500M   │
-│    Internal + Grants     │ (over 5 yrs) │               │ announced Apr 29, 2026 ($400M internal   │
-│                          │              │               │ tech/compute + $100M external grants).   │
-├──────────────────────────┼──────────────┼───────────────┼──────────────────────────────────────────┤
-│ 2. NIH ("Bio Genesis     │ $500M+       │ 27.8%         │ ZERO NEW CAPITAL: Explicitly defined as  │
-│    Mission")             │ (historical) │               │ "prior federal investment" in existing   │
-│                          │              │               │ NCBI, NLM, and CFDE databases.           │
-├──────────────────────────┼──────────────┼───────────────┼──────────────────────────────────────────┤
-│ 3. U.S. Dept. of Energy  │ $500M+       │ 27.8%         │ IN-KIND FACILITY ALLOCATION: ~$100M/yr   │
-│    ("Genesis Mission")   │ (over 5 yrs) │               │ over 5 yrs across 17 National Labs (JGI, │
-│                          │              │               │ EMSL, beamlines, exascale compute).      │
-├──────────────────────────┼──────────────┼───────────────┼──────────────────────────────────────────┤
-│ 4. Google DeepMind,      │ $300 Million │ 16.7%         │ ONLY NEW PRIVATE COMMITMENT: ~$100M avg  │
-│    Isomorphic Labs, Meta │ (over 5 yrs) │               │ per firm (~$20M/yr each), mixed cash,    │
-│                          │              │               │ compute credits, and proprietary data.   │
-└──────────────────────────┴──────────────┴───────────────┴──────────────────────────────────────────┘
-```
+**DECONSTRUCTING THE "$1.8 BILLION" HEADLINE BY FUNDING TRANCHE**
+
+| PARTICIPANT TRANCHE | HEADLINE SUM | % OF $1.8B | FORENSIC CASH & ACCOUNTING REALITY |
+| :--- | :--- | :--- | :--- |
+| 1. Biohub (CZI) Internal + Grants | $500 Million (over 5 yrs) | 27.8% | RECYCLED ANNOUNCEMENT: Identical $500M announced Apr 29, 2026 ($400M internal tech/compute + $100M external grants). |
+| 2. NIH ("Bio Genesis Mission") | $500M+ (historical) | 27.8% | ZERO NEW CAPITAL: Explicitly defined as "prior federal investment" in existing NCBI, NLM, and CFDE databases. |
+| 3. U.S. Dept. of Energy ("Genesis Mission") | $500M+ (over 5 yrs) | 27.8% | IN-KIND FACILITY ALLOCATION: ~$100M/yr over 5 yrs across 17 National Labs (JGI, EMSL, beamlines, exascale compute). |
+| 4. Google DeepMind, Isomorphic Labs, Meta | $300 Million (over 5 yrs) | 16.7% | ONLY NEW PRIVATE COMMITMENT: ~$100M avg per firm (~$20M/yr each), mixed cash, compute credits, and proprietary data. |
 
 Let us examine each of the four pillars in detail:
 
@@ -179,29 +145,14 @@ The Virtual Biology Initiative leans heavily on three ambiguous phrases: **"Virt
 
 Public commentary routinely conflates the undisputed triumph of **AlphaFold2/3** and **ESM** (Tier 1) with the unsolved challenge of whole-cell causal simulation (Tier 4). To evaluate where Biohub's existing portfolio ([biohub.org/ai-models](https://biohub.org/ai-models/)) actually sits, we construct a strict four-tier maturity hierarchy:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                    THE 4-TIER BIOLOGICAL AI MATURITY HIERARCHY (2026)                              │
-├──────────┬─────────────────────────────┬──────────────────────────┬────────────────────────────────┤
-│ TIER     │ PHYSICAL DOMAIN & MATH TASK │ REPRESENTATIVE MODELS    │ EMPIRICAL VALIDATION STATUS    │
-├──────────┼─────────────────────────────┼──────────────────────────┼────────────────────────────────┤
-│ Tier 1   │ Single-Molecule Sequence to │ AlphaFold2/3, ESMFold,   │ SOLVED / MATURE: Atomic-level  │
-│          │ Static 3D Structure         │ ESM3 (98B params)        │ accuracy (GDT_TS > 90) on      │
-│          │ P(Structure | Sequence)     │                          │ globular crystal structures.   │
-├──────────┼─────────────────────────────┼──────────────────────────┼────────────────────────────────┤
-│ Tier 2   │ Observational Cell Atlas    │ TranscriptFormer (112M   │ DESCRIPTIVE ONLY: Maps cell    │
-│          │ Manifold & Taxonomy         │ cells), CELLxGENE, UCE,  │ ontologies across species;     │
-│          │ P(X_mRNA | Tissue, Species) │ scGPT, Geneformer        │ fails zero-shot vs. 2,000 HVG. │
-├──────────┼─────────────────────────────┼──────────────────────────┼────────────────────────────────┤
-│ Tier 3   │ Single-Context Perturbation │ GEARS, CPA, Arc STATE,   │ FRAGILE INTERPOLATION: Fails   │
-│          │ Interpolation               │ VariantFormer (1.2B)     │ to beat linear/additive models │
-│          │ P(X_post | X_pre, do(G_i))  │                          │ on unseen double knockouts.    │
-├──────────┼─────────────────────────────┼──────────────────────────┼────────────────────────────────┤
-│ Tier 4   │ Causal Multi-Scale Dynamical│ Target of VBI / Bunne et │ UNBUILT: Requires non-         │
-│          │ Virtual Cell & Tissue Twin  │ al. (Cell 2024) UR + PCG │ destructive longitudinal data, │
-│          │ dX/dt = f(X, U, do(I), E)   │                          │ spatial proteomics & fluxomics.│
-└──────────┴─────────────────────────────┴──────────────────────────┴────────────────────────────────┘
-```
+**THE 4-TIER BIOLOGICAL AI MATURITY HIERARCHY (2026)**
+
+| TIER | PHYSICAL DOMAIN & MATH TASK | REPRESENTATIVE MODELS | EMPIRICAL VALIDATION STATUS |
+| :--- | :--- | :--- | :--- |
+| Tier 1 | Single-Molecule Sequence to Static 3D Structure<br>P(Structure \| Sequence) | AlphaFold2/3, ESMFold, ESM3 (98B params) | SOLVED / MATURE: Atomic-level accuracy (GDT_TS > 90) on globular crystal structures. |
+| Tier 2 | Observational Cell Atlas Manifold & Taxonomy<br>P(X_mRNA \| Tissue, Species) | TranscriptFormer (112M cells), CELLxGENE, UCE, scGPT, Geneformer | DESCRIPTIVE ONLY: Maps cell ontologies across species; fails zero-shot vs. 2,000 HVG. |
+| Tier 3 | Single-Context Perturbation Interpolation<br>P(X_post \| X_pre, do(G_i)) | GEARS, CPA, Arc STATE, VariantFormer (1.2B) | FRAGILE INTERPOLATION: Fails to beat linear/additive models on unseen double knockouts. |
+| Tier 4 | Causal Multi-Scale Dynamical Virtual Cell & Tissue Twin<br>dX/dt = f(X, U, do(I), E) | Target of VBI / Bunne et al. (Cell 2024) UR + PCG | UNBUILT: Requires non-destructive longitudinal data, spatial proteomics & fluxomics. |
 
 Look closely at the flagship models currently showcased on [Biohub's AI Models portal](https://biohub.org/ai-models/):
 - **[TranscriptFormer](https://github.com/czi-ai/transcriptformer)** (*Science*, 2025/2026): An autoregressive generative transformer pretrained on **112 million observational cells** spanning **12 species** across **1.53 billion years of evolution**. It is a Tier 2 taxonomic manifold model—useful for cross-species cell-type homology, but trained on static observational `scRNA-seq` snapshots.
@@ -218,29 +169,14 @@ Why do TechBio executives and AI investors assume that pouring $1.8 billion into
 
 To test whether that extrapolation holds, we apply a **4-Way Causal Audit** comparing why **Protein Language Models (PLMs)** succeeded vs. why **Single-Cell Foundation Models (scFMs)** have hit a wall:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│        4-WAY CAUSAL AUDIT: WHY ALPHAFOLD SUCCEEDED WHILE SINGLE-CELL MODELS HIT A WALL             │
-├─────────────────────────┬────────────────────────────────────┬─────────────────────────────────────┤
-│ CAUSAL DIRECTION        │ PROTEIN FOLDING (TIER 1)           │ WHOLE-CELL DYNAMICS (TIER 3 / 4)    │
-├─────────────────────────┼────────────────────────────────────┼─────────────────────────────────────┤
-│ 1. Direct Cause         │ 3B+ years of natural selection     │ Static mRNA count tables lack time  │
-│    (Data → Model)       │ acts as a massive pre-computed     │ derivatives (dX/dt) and omit >80%   │
-│                         │ mutational perturbation screen.    │ of causal post-transcriptional state│
-├─────────────────────────┼────────────────────────────────────┼─────────────────────────────────────┤
-│ 2. Reverse Causation    │ Well-folded globular domains are   │ High-throughput Perturb-seq relies  │
-│    (Assay Bias → Data)  │ disproportionately crystallizable  │ on immortalized cancer lines (K562, │
-│                         │ in PDB, inflating benchmark scores.│ RPE1, HCT116) with rewired circuits.│
-├─────────────────────────┼────────────────────────────────────┼─────────────────────────────────────┤
-│ 3. Third-Variable       │ Thermodynamic free-energy minimum  │ Unobserved confounders (protein     │
-│    Confounder (Z)       │ (Anfinsen's Dogma: 1D sequence     │ half-lives, phosphorylation, spatial│
-│                         │ uniquely determines 3D fold).      │ paracrine signals, metabolic flux). │
-├─────────────────────────┼────────────────────────────────────┼─────────────────────────────────────┤
-│ 4. Feedback Loop        │ Predicted structures guide faster  │ Destructive assays kill the cell at │
-│    (System Dynamics)    │ cryo-EM/X-ray model building,      │ measurement, severing longitudinal  │
-│                         │ compounding structural priors.     │ feedback trajectories.              │
-└─────────────────────────┴────────────────────────────────────┴─────────────────────────────────────┘
-```
+**4-WAY CAUSAL AUDIT: WHY ALPHAFOLD SUCCEEDED WHILE SINGLE-CELL MODELS HIT A WALL**
+
+| CAUSAL DIRECTION | PROTEIN FOLDING (TIER 1) | WHOLE-CELL DYNAMICS (TIER 3 / 4) |
+| :--- | :--- | :--- |
+| 1. Direct Cause (Data → Model) | 3B+ years of natural selection acts as a massive pre-computed mutational perturbation screen. | Static mRNA count tables lack time derivatives (dX/dt) and omit >80% of causal post-transcriptional state |
+| 2. Reverse Causation (Assay Bias → Data) | Well-folded globular domains are disproportionately crystallizable in PDB, inflating benchmark scores. | High-throughput Perturb-seq relies on immortalized cancer lines (K562, RPE1, HCT116) with rewired circuits. |
+| 3. Third-Variable Confounder (Z) | Thermodynamic free-energy minimum (Anfinsen's Dogma: 1D sequence uniquely determines 3D fold). | Unobserved confounders (protein half-lives, phosphorylation, spatial paracrine signals, metabolic flux). |
+| 4. Feedback Loop (System Dynamics) | Predicted structures guide faster cryo-EM/X-ray model building, compounding structural priors. | Destructive assays kill the cell at measurement, severing longitudinal feedback trajectories. |
 
 ### The Fundamental Physics Gap: Anfinsen's Dogma vs. Cellular Non-Stationarity
 1. **Why AlphaFold2 Worked (Thermodynamic Closure + Evolution's Perturbation Screen):**
@@ -370,30 +306,14 @@ Even if a foundation model achieves 99% accuracy at predicting *in vitro* single
 
 Let us examine the empirical track record of the "High-Throughput Cellular Data + AI" thesis:
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│               THE TECHBIO GRAVEYARD & CLINICAL ATTRITION AUDIT (2015–2026)                         │
-├──────────────────────────┬───────────────────────────────────┬─────────────────────────────────────┤
-│ COMPANY / INITIATIVE     │ CORE DATA + AI THESIS             │ EMPIRICAL & CLINICAL OUTCOME        │
-├──────────────────────────┼───────────────────────────────────┼─────────────────────────────────────┤
-│ 1. Recursion             │ Petabytes of automated Cell       │ Multiple clinical pipeline cuts     │
-│    Pharmaceuticals       │ Painting microscopy + Perturb-seq │ (2024–2026); merged with Exscientia │
-│    (NASDAQ: RXRX)        │ + BioHive supercomputers          │ to preserve cash; zero approved     │
-│                          │                                   │ AI-discovered drugs to date.        │
-├──────────────────────────┼───────────────────────────────────┼─────────────────────────────────────┤
-│ 2. Exscientia            │ End-to-end generative AI drug     │ Halted lead clinical assets (e.g.,  │
-│    (Acquired by RXRX)    │ design & automated patient-tissue │ EXS21546) after clinical setbacks;  │
-│                          │ phenomics                         │ absorbed in all-stock merger (2024).│
-├──────────────────────────┼───────────────────────────────────┼─────────────────────────────────────┤
-│ 3. BenevolentAI          │ Massive biomedical knowledge      │ Flagship atopic dermatitis drug     │
-│                          │ graphs + multi-omic target ID     │ (BEN-2293) failed Phase IIa efficacy│
-│                          │                                   │ (2023); massive layoffs & restructuring│
-├──────────────────────────┼───────────────────────────────────┼─────────────────────────────────────┤
-│ 4. Zymergen              │ Automated robotic strain          │ Collapsed from $5B+ valuation to    │
-│                          │ perturbation + ML optimization    │ $300M distressed sale to Ginkgo     │
-│                          │                                   │ Bioworks (2022) after scale-up fail.│
-└──────────────────────────┴───────────────────────────────────┴─────────────────────────────────────┘
-```
+**THE TECHBIO GRAVEYARD & CLINICAL ATTRITION AUDIT (2015–2026)**
+
+| COMPANY / INITIATIVE | CORE DATA + AI THESIS | EMPIRICAL & CLINICAL OUTCOME |
+| :--- | :--- | :--- |
+| 1. Recursion Pharmaceuticals (NASDAQ: RXRX) | Petabytes of automated Cell Painting microscopy + Perturb-seq + BioHive supercomputers | Multiple clinical pipeline cuts (2024–2026); merged with Exscientia to preserve cash; zero approved AI-discovered drugs to date. |
+| 2. Exscientia (Acquired by RXRX) | End-to-end generative AI drug design & automated patient-tissue phenomics | Halted lead clinical assets (e.g., EXS21546) after clinical setbacks; absorbed in all-stock merger (2024). |
+| 3. BenevolentAI | Massive biomedical knowledge graphs + multi-omic target ID | Flagship atopic dermatitis drug (BEN-2293) failed Phase IIa efficacy (2023); massive layoffs & restructuring |
+| 4. Zymergen | Automated robotic strain perturbation + ML optimization | Collapsed from $5B+ valuation to $300M distressed sale to Ginkgo Bioworks (2022) after scale-up fail. |
 
 Why do roughly **90% of drug candidates that pass preclinical cellular and animal assays still fail in human clinical trials Phase I–III**?
 Because the primary causes of clinical trial attrition are **not** single-cell transcriptomic mysteries in isolated *in vitro* cultures. Drugs fail in humans because of:

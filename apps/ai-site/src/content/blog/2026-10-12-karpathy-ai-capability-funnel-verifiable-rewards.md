@@ -33,18 +33,14 @@ Let us dissect the four tiers of Karpathy’s funnel, audit the empirical events
 
 Karpathy models global exposure to modern machine intelligence not as a smooth bell curve, but as a hyper-concentrated power law funnel:
 
-```
-========================================================================================
-                          THE AI CAPABILITY FUNNEL (2026)
-========================================================================================
- Tier      Population     Share (%)    Primary Interface       Dominant Perception
-----------------------------------------------------------------------------------------
- Tier 1    ~6.0 Billion   ~75.0%       None                    Abstract / Unaware
- Tier 2    ~1.5 Billion   ~20.0%       Free-tier Chatbots      "Derpy" Novelty / Search Aid
- Tier 3    ~20 Million    ~0.2%        Paid Frontier Agents    Exponential Productivity
- Tier 4    ~5,000         ~0.00006%    Internal Frontier Labs  Existential Vertigo
-========================================================================================
-```
+**THE AI CAPABILITY FUNNEL (2026)**
+
+| Tier | Population | Share (%) | Primary Interface | Dominant Perception |
+| :--- | :--- | :--- | :--- | :--- |
+| Tier 1 | ~6.0 Billion | ~75.0% | None | Abstract / Unaware |
+| Tier 2 | ~1.5 Billion | ~20.0% | Free-tier Chatbots | "Derpy" Novelty / Search Aid |
+| Tier 3 | ~20 Million | ~0.2% | Paid Frontier Agents | Exponential Productivity |
+| Tier 4 | ~5,000 | ~0.00006% | Internal Frontier Labs | Existential Vertigo |
 
 ```mermaid
 flowchart TD
@@ -230,16 +226,13 @@ For decades, the core identity of a programmer was tethered to the physical act 
 
 That era is decisively closing. The progression of software engineering over the last five years reveals a relentless migration up the abstraction ladder:
 
-```
-                      THE EVOLUTION OF SOFTWARE CREATION
-========================================================================================
- Era            Dominant Paradigm      Human Role              Primary Bottleneck
-----------------------------------------------------------------------------------------
- 2021–2023      Autocomplete Copilot   Manual Typist           Typing & Syntax Recall
- 2023–2024      Chat in IDE            Copy-Paste Reviewer     Context Window / Glue Code
- 2025–2026      Autonomous Agents      System Architect        Verification & Scaffolding
-========================================================================================
-```
+**THE EVOLUTION OF SOFTWARE CREATION**
+
+| Era | Dominant Paradigm | Human Role | Primary Bottleneck |
+| :--- | :--- | :--- | :--- |
+| 2021–2023 | Autocomplete Copilot | Manual Typist | Typing & Syntax Recall |
+| 2023–2024 | Chat in IDE | Copy-Paste Reviewer | Context Window / Glue Code |
+| 2025–2026 | Autonomous Agents | System Architect | Verification & Scaffolding |
 
 In the agentic paradigm:
 - **Writing raw syntax is commoditized:** Agents generate, decompile, and translate code faster than any human can read it.

@@ -40,41 +40,17 @@ To evaluate whether Phelps's conviction is warranted by primary empirical eviden
 
 ---
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                   CORVUS PHARMACEUTICALS ($CRVS) FORENSIC DILIGENCE SCORECARD                            │
-├─────────────────────────────┬────────────────────────────────────┬───────────────────────────────────────┤
-│ Diligence Dimension         │ @HOThomasWPhelps Bull Thesis       │ Primary-Source Forensic Reality       │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Valuation & Capital Base    │ $9.84/sh; $215M cash funds runway  │ 84.12M common + 8.28M pre-funded +    │
-│ (Q2 2026 Form 10-Q)         │ through key 2027 readouts solo     │ 13.25M options ($4.90 WAEP) = ~99.0M  │
-│                             │                                    │ diluted sh (~$975M cap / ~$760M EV)   │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Covalent ITK Selectivity    │ Novel MOA selectively blocks ITK   │ Kd = 6.5 nM; IC50 = 0.5 nM ITK vs     │
-│ (npj Drug Discov 2024)      │ to skew Th1 and block Th2/Th17     │ 261 nM RLK (115x kinact/Ki), BUT ≥10  │
-│                             │                                    │ µM abolishes IFN-γ & T-cell growth    │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Phase 1 AD Cohort 4 Data    │ 75% EASI-75 vs 20% placebo;        │ N=12 active vs N=10 evaluable pbo;    │
-│ (May 2026 Form 8-K)         │ "Best-in-disease" potential in AD  │ Exact 95% CI is [42.8%, 94.5%]; pbo   │
-│                             │ with off-drug Treg durability      │ had 58% prior-systemic vs 42% active  │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Phase 1/1b PTCL Efficacy    │ Durable CRs (>2 yrs) & 28.1-month  │ 37.5% ORR (9/24) required 1-3 prior   │
-│ (Blood Aug 2026)            │ median OS validate Phase 3 PTCL    │ lines + adequate ALC; patients with   │
-│                             │                                    │ >3 prior lines had 0% ORR (0/12)      │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ ICB Combo (Anti-PD1/CTLA4)  │ Best-in-class combo potential with │ Zero clinical trials of soquelitinib  │
-│                             │ anti-PD-1 / anti-CTLA-4            │ + ICB; Corvus's RCC ipi/nivo trial was│
-│                             │                                    │ ciforadenant (34% vs 32%, halted)     │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Human Genetic & Viral Safety│ Clean safety up to 600 mg BID with │ Human ITK deficiency causes fatal EBV │
-│ (NIH ALPS NCT06730126)      │ no immunosuppression               │ lymphoma; NIH excludes EBV >300 cp/mL │
-│                             │                                    │ & CYP3A4 / P-gp inhibitors            │
-├─────────────────────────────┼────────────────────────────────────┼───────────────────────────────────────┤
-│ Partnership Strategy        │ "Not now" — waiting until 2027     │ Correct vs fire-sale buyout at $9.84, │
-│ ("Not Now" vs Staged Deal)  │ maximizes shareholder returns      │ but Q27 cash (~$120M) cannot fund     │
-│                             │                                    │ $500M+ AD/Asthma P3 without dilution  │
-└─────────────────────────────┴────────────────────────────────────┴───────────────────────────────────────┘
-```
+**CORVUS PHARMACEUTICALS ($CRVS) FORENSIC DILIGENCE SCORECARD**
+
+| Diligence Dimension | @HOThomasWPhelps Bull Thesis | Primary-Source Forensic Reality |
+| :--- | :--- | :--- |
+| Valuation & Capital Base (Q2 2026 Form 10-Q) | $9.84/sh; $215M cash funds runway through key 2027 readouts solo | 84.12M common + 8.28M pre-funded +<br>13.25M options ($4.90 WAEP) = ~99.0M diluted sh (~$975M cap / ~$760M EV) |
+| Covalent ITK Selectivity (npj Drug Discov 2024) | Novel MOA selectively blocks ITK to skew Th1 and block Th2/Th17 | Kd = 6.5 nM; IC50 = 0.5 nM ITK vs 261 nM RLK (115x kinact/Ki), BUT ≥10 µM abolishes IFN-γ & T-cell growth |
+| Phase 1 AD Cohort 4 Data (May 2026 Form 8-K) | 75% EASI-75 vs 20% placebo; "Best-in-disease" potential in AD with off-drug Treg durability | N=12 active vs N=10 evaluable pbo; Exact 95% CI is [42.8%, 94.5%]; pbo had 58% prior-systemic vs 42% active |
+| Phase 1/1b PTCL Efficacy (Blood Aug 2026) | Durable CRs (>2 yrs) & 28.1-month median OS validate Phase 3 PTCL | 37.5% ORR (9/24) required 1-3 prior lines + adequate ALC; patients with >3 prior lines had 0% ORR (0/12) |
+| ICB Combo (Anti-PD1/CTLA4) | Best-in-class combo potential with anti-PD-1 / anti-CTLA-4 | Zero clinical trials of soquelitinib + ICB; Corvus's RCC ipi/nivo trial was ciforadenant (34% vs 32%, halted) |
+| Human Genetic & Viral Safety (NIH ALPS NCT06730126) | Clean safety up to 600 mg BID with no immunosuppression | Human ITK deficiency causes fatal EBV lymphoma; NIH excludes EBV >300 cp/mL & CYP3A4 / P-gp inhibitors |
+| Partnership Strategy ("Not Now" vs Staged Deal) | "Not now" — waiting until 2027 maximizes shareholder returns | Correct vs fire-sale buyout at $9.84, but Q27 cash (~$120M) cannot fund $500M+ AD/Asthma P3 without dilution |
 
 ---
 
@@ -120,42 +96,13 @@ To Phelps's credit, insider alignment at Corvus is unusually high for a clinical
 
 Following Phase 2 of our runbook, we cross-examined the public claims circulating in retail/institutional bull commentary against buried disclosures in Corvus's SEC filings, NIH clinical trial exclusions, and peer-reviewed enzymology data:
 
-```
-┌────────────────────────────────────────────────────┬────────────────────────────────────────────────────┐
-│ PUBLIC BULL NARRATIVE (@HOThomasWPhelps / Street)  │ BURIED SEC FILING, PROTOCOL & ENZYMOLOGY REALITY   │
-├────────────────────────────────────────────────────┼────────────────────────────────────────────────────┤
-│ 1. "Combo therapy w/ ICB-treatment i.e., anti-PD-1 │ In Q2 2026 Form 10-Q (p. 30), Corvus's clinical    │
-│    / anti-CTLA4 can lead to a best-in-class drug   │ ipilimumab + nivolumab RCC combo trial used        │
-│    in oncology."                                   │ CIFORADENANT (A2AR antagonist), which hit a non-   │
-│                                                    │ significant 34% vs 32% deep response rate at ESMO  │
-│                                                    │ Oct 2025 ("No further trials are planned").        │
-│                                                    │ Soquelitinib + ICB has ONLY been tested in mice.   │
-├────────────────────────────────────────────────────┼────────────────────────────────────────────────────┤
-│ 2. "Cohort 4 AD showed 75% EASI-75 vs 20% placebo  │ Form 10-Q (p. 25-28) reveals Cohort 4 enrolled     │
-│    (p=0.035), proving best-in-disease efficacy     │ N=12 active vs N=12 placebo (2 placebo missed Day  │
-│    across systemic-naive and refractory patients." │ 56). Randomization was skewed: 58.3% (7/12) of     │
-│                                                    │ placebo had failed prior systemics vs 41.7% (5/12) │
-│                                                    │ on active drug, depressing the placebo arm.        │
-├────────────────────────────────────────────────────┼────────────────────────────────────────────────────┤
-│ 3. "Phase 1/1b PTCL data in Blood showed 37.5% ORR │ Blood (Aug 2026, PMID: 42640855) & 10-Q (p. 23-24) │
-│    (25% CR) and 28.1-month median OS at 200 mg     │ admit that across all N=36 patients treated at 200 │
-│    BID."                                           │ mg BID, all 9 responses occurred in the N=24       │
-│                                                    │ subgroup with 1-3 prior lines & adequate ALC;      │
-│                                                    │ patients with >3 prior lines had 0% ORR (0/12).    │
-├────────────────────────────────────────────────────┼────────────────────────────────────────────────────┤
-│ 4. "Specificity of soquelitinib for ITK confers    │ NIAID Phase 2a ALPS protocol (NCT06730126)         │
-│    safety without immunosuppression."              │ explicitly excludes active EBV (>300 copies/mL),   │
-│                                                    │ history of EBV lymphoma, and moderate/strong       │
-│                                                    │ CYP3A4 or P-gp inhibitors, monitoring Grade 3/4    │
-│                                                    │ viral/mycobacterial/fungal infections for 360 days.│
-├────────────────────────────────────────────────────┼────────────────────────────────────────────────────┤
-│ 5. "$215M cash position means Corvus does not need │ On March 13, 2026 (Form 10-Q Note 10, p. 16),      │
-│    any deal or financing until late 2027."         │ immediately after raising $189.4M net at $22.15,   │
-│                                                    │ Corvus amended its Jefferies ATM agreement to      │
-│                                                    │ DOUBLE its equity shelf capacity from $100M to     │
-│                                                    │ $200M, preparing for Phase 3 I&I capital needs.    │
-└────────────────────────────────────────────────────┴────────────────────────────────────────────────────┘
-```
+| PUBLIC BULL NARRATIVE (@HOThomasWPhelps / Street) | BURIED SEC FILING, PROTOCOL & ENZYMOLOGY REALITY |
+| :--- | :--- |
+| 1. "Combo therapy w/ ICB-treatment i.e., anti-PD-1 / anti-CTLA4 can lead to a best-in-class drug in oncology." | In Q2 2026 Form 10-Q (p. 30), Corvus's clinical ipilimumab + nivolumab RCC combo trial used CIFORADENANT (A2AR antagonist), which hit a non-significant 34% vs 32% deep response rate at ESMO Oct 2025 ("No further trials are planned"). Soquelitinib + ICB has ONLY been tested in mice. |
+| 2. "Cohort 4 AD showed 75% EASI-75 vs 20% placebo (p=0.035), proving best-in-disease efficacy across systemic-naive and refractory patients." | Form 10-Q (p. 25-28) reveals Cohort 4 enrolled N=12 active vs N=12 placebo (2 placebo missed Day 56). Randomization was skewed: 58.3% (7/12) of placebo had failed prior systemics vs 41.7% (5/12) on active drug, depressing the placebo arm. |
+| 3. "Phase 1/1b PTCL data in Blood showed 37.5% ORR (25% CR) and 28.1-month median OS at 200 mg BID." | Blood (Aug 2026, PMID: 42640855) & 10-Q (p. 23-24) admit that across all N=36 patients treated at 200 mg BID, all 9 responses occurred in the N=24 subgroup with 1-3 prior lines & adequate ALC; patients with >3 prior lines had 0% ORR (0/12). |
+| 4. "Specificity of soquelitinib for ITK confers safety without immunosuppression." | NIAID Phase 2a ALPS protocol (NCT06730126) explicitly excludes active EBV (>300 copies/mL), history of EBV lymphoma, and moderate/strong CYP3A4 or P-gp inhibitors, monitoring Grade 3/4 viral/mycobacterial/fungal infections for 360 days. |
+| 5. "$215M cash position means Corvus does not need any deal or financing until late 2027." | On March 13, 2026 (Form 10-Q Note 10, p. 16), immediately after raising $189.4M net at $22.15, Corvus amended its Jefferies ATM agreement to DOUBLE its equity shelf capacity from $100M to $200M, preparing for Phase 3 I&I capital needs. |
 
 ---
 
@@ -224,58 +171,31 @@ What happens when we substitute different intracellular concentrations `[I]_free
 
 Corvus is currently advancing soquelitinib across five distinct clinical indications (four sponsored directly by Corvus plus Greater China trials via 48.6%-owned Angel Pharmaceuticals, and one sponsored by the NIH/NIAID):
 
-```
-                      SOQUELITINIB (CPI-818) GLOBAL CLINICAL DEVELOPMENT PIPELINE
-    
-     Indication / Trial            Registry ID      Phase & Design                Sample   Key Catalyst
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Relapsed/Refractory PTCL      NCT06561048      Phase 3 Open-Label 1:1 vs     N = 150  Interim Futility:
-     (1-3 Prior Lines)                              Belinostat or Pralatrexate             Early 2027
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Atopic Dermatitis (US)        NCT07441395      Phase 2 Quadruple-Blind 1:1:1:1 N = 200 Primary Readout:
-     (SIERRA-1)                                     200QD / 200BID / 400QD / Pbo           Mid-2027 (Jun)
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Atopic Dermatitis (China)     Angel Pharma     Phase 1b/2 Blinded Pbo-Ctrl   N = 48   Cohort 1 Readout:
-     (Moderate-to-Severe AD)                        (12-Wk: 100BID/200QD/200BID)  (+60-90) Late 2026
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Autoimmune Lymphoprolif.      NCT06730126      Phase 2a NIH/NIAID Simon 2-St N = 15   Primary Day 90 CT:
-     Syndrome (ALPS-FAS)                            Open-Label 200 mg BID (360d)           Dec 2026 / 1H27
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Hidradenitis Suppurativa      NCT07828860      Phase 1b Open-Label Single-Arm N = 25  Primary Week 12:
-     (Moderate-to-Severe HS)                        200 mg BID for 84 Days (12 Wk)         Late 2027 (Dec)
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-     Moderate-to-Severe Asthma     Corvus / Angel   Phase 2 Proof-of-Concept      Planned  Initiation:
-                                                    Oral Soquelitinib                      Late 2026 / 1Q27
-    ────────────────────────────────────────────────────────────────────────────────────────────────────────
-```
+**SOQUELITINIB (CPI-818) GLOBAL CLINICAL DEVELOPMENT PIPELINE**
+
+| Indication / Trial | Registry ID | Phase & Design | Sample | Key Catalyst |
+| :--- | :--- | :--- | :--- | :--- |
+| Relapsed/Refractory PTCL (1-3 Prior Lines) | NCT06561048 | Phase 3 Open-Label 1:1 vs Belinostat or Pralatrexate | N = 150 | Interim Futility: Early 2027 |
+| Atopic Dermatitis (US) (SIERRA-1) | NCT07441395 | Phase 2 Quadruple-Blind 1:1:1:1 200QD / 200BID / 400QD / Pbo | N = 200 | Primary Readout: Mid-2027 (Jun) |
+| Atopic Dermatitis (China) (Moderate-to-Severe AD) | Angel Pharma | Phase 1b/2 Blinded Pbo-Ctrl (12-Wk: 100BID/200QD/200BID) | N = 48 (+60-90) | Cohort 1 Readout: Late 2026 |
+| Autoimmune Lymphoprolif. Syndrome (ALPS-FAS) | NCT06730126 | Phase 2a NIH/NIAID Simon 2-St Open-Label 200 mg BID (360d) | N = 15 | Primary Day 90 CT: Dec 2026 / 1H27 |
+| Hidradenitis Suppurativa (Moderate-to-Severe HS) | NCT07828860 | Phase 1b Open-Label Single-Arm 200 mg BID for 84 Days (12 Wk) | N = 25 | Primary Week 12: Late 2027 (Dec) |
+| Moderate-to-Severe Asthma | Corvus / Angel | Phase 2 Proof-of-Concept Oral Soquelitinib | Planned | Initiation: Late 2026 / 1Q27 |
 
 ### Quantitative Audit of Phase 1 Atopic Dermatitis (`NCT06345404`)
 The centerpiece of the bull case that propelled CRVS to $26.95 in January 2026—and underpins Phelps's assertion that *"soquelitinib could be best in disease for atopic dermatitis"*—is the Phase 1 dataset (`NCT06345404`), finalized in the [May 14, 2026 Form 8-K](https://www.sec.gov/Archives/edgar/data/1626971/000117184326003397/f8k_051426.htm) and Q2 2026 Form 10-Q (pages 25–30).
 
 Across Cohorts 1–3 (16 patients per cohort randomized 3:1 active-to-placebo for **28 days** of treatment) and Cohort 4 (24 patients randomized 1:1 active-to-placebo at 200 mg BID for **56 days / 8 weeks** of treatment), 72 patients were evaluated:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│           PHASE 1 ATOPIC DERMATITIS (NCT06345404) EFFICACY & EXACT 95% BINOMIAL CI AUDIT                 │
-├──────────────────────────┬─────────────┬──────────────┬─────────────────┬───────────────┬────────────────┤
-│ Cohort & Dosing Regimen  │ Sample Size │ Mean % EASI  │ EASI-75 Rate    │ EASI-90 Rate  │ IGA 0/1 Rate   │
-│ (Treatment Duration)     │ (Evaluable) │ Reduction    │ [Exact 95% CI]  │ [Exact 95% CI]│ [Exact 95% CI] │
-├──────────────────────────┼─────────────┼──────────────┼─────────────────┼───────────────┼────────────────┤
-│ Cohorts 1 & 2 Combined   │ Active: N=24│    54.6%     │ 29.2% (7/24)    │      0.0%     │ 20.8% (5/24)   │
-│ 100mg BID & 200mg QD     │             │              │ [12.6%, 51.1%]  │  [0.0%, 14.2%]│ [7.1%, 42.2%]  │
-│ (28-Day Treatment)       │ Pbo:    N=8 │    30.6%     │  0.0% (0/8)     │      0.0%     │  0.0% (0/8)    │
-├──────────────────────────┼─────────────┼──────────────┼─────────────────┼───────────────┼────────────────┤
-│ Cohort 3 (High Dose)     │ Active: N=12│    71.1%     │ 50.0% (6/12)    │  8.3% (1/12)  │ 25.0% (3/12)   │
-│ 200 mg BID (400mg/day)   │             │              │ [21.1%, 78.9%]  │  [0.2%, 38.5%]│ [5.5%, 57.2%]  │
-│ (28-Day + 90d Follow-Up) │ Pbo:    N=4 │    42.1%     │  0.0% (0/4)     │      0.0%     │  0.0% (0/4)    │
-├──────────────────────────┼─────────────┼──────────────┼─────────────────┼───────────────┼────────────────┤
-│ Cohort 4 (Extended 8-Wk) │ Active: N=12│    72.0%     │ 75.0% (9/12)    │ 25.0% (3/12)  │ 33.3% (4/12)   │
-│ 200 mg BID (400mg/day)   │             │  (p = 0.035) │ [42.8%, 94.5%]  │  [5.5%, 57.2%]│ [9.9%, 65.1%]  │
-│ (56-Day + 30d Follow-Up) │ Pbo:   N=10*│    40.0%     │ 20.0% (2/10)*   │  0.0% (0/10)  │  0.0% (0/10)   │
-│                          │ (12 enrolled│              │ [2.5%, 55.6%]   │  [0.0%, 30.8%]│ [0.0%, 30.8%]  │
-└──────────────────────────┴─────────────┴──────────────┴─────────────────┴───────────────┴────────────────┘
+**PHASE 1 ATOPIC DERMATITIS (NCT06345404) EFFICACY & EXACT 95% BINOMIAL CI AUDIT**
+
+| Cohort & Dosing Regimen (Treatment Duration) | Sample Size (Evaluable) | Mean % EASI Reduction | EASI-75 Rate [Exact 95% CI] | EASI-90 Rate [Exact 95% CI] | IGA 0/1 Rate [Exact 95% CI] |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Cohorts 1 & 2 Combined 100mg BID & 200mg QD (28-Day Treatment) | Active: N=24 Pbo:    N=8 | 54.6%<br>30.6% | 29.2% (7/24) [12.6%, 51.1%]<br>0.0% (0/8) | 0.0% [0.0%, 14.2%]<br>0.0% | 20.8% (5/24) [7.1%, 42.2%]<br>0.0% (0/8) |
+| Cohort 3 (High Dose) 200 mg BID (400mg/day) (28-Day + 90d Follow-Up) | Active: N=12 Pbo:    N=4 | 71.1%<br>42.1% | 50.0% (6/12) [21.1%, 78.9%]<br>0.0% (0/4) | 8.3% (1/12) [0.2%, 38.5%]<br>0.0% | 25.0% (3/12) [5.5%, 57.2%]<br>0.0% (0/4) |
+| Cohort 4 (Extended 8-Wk) 200 mg BID (400mg/day) (56-Day + 30d Follow-Up) | Active: N=12 Pbo:   N=10* (12 enrolled | 72.0% (p = 0.035)<br>40.0% | 75.0% (9/12) [42.8%, 94.5%]<br>20.0% (2/10)* [2.5%, 55.6%] | 25.0% (3/12) [5.5%, 57.2%]<br>0.0% (0/10) [0.0%, 30.8%] | 33.3% (4/12) [9.9%, 65.1%]<br>0.0% (0/10) [0.0%, 30.8%] |
+
 *Note: In Cohort 4, 12 placebo patients were enrolled, but 2 missed the Day 56 visit due to non-compliance.
-```
 
 ### Phase 4 & 5 Forensic Deconstruction: Four Critical Adjustments to Cohort 4
 While a 75.0% EASI-75 rate (9/12) vs. 20.0% (2/10) placebo at Week 8—accompanied by zero disease flares during a 30-to-90-day drug-free follow-up period and identical adverse event rates between drug and placebo (41.7% vs. 41.7%, all Grade 1–2)—is an undeniably promising Phase 1 signal, our statistical and causal audit uncovers four crucial caveats that must be priced into Phase 2 `SIERRA-1`:
@@ -304,28 +224,15 @@ $$\sum_{j=k}^{n} \binom{n}{j} p_L^j (1 - p_L)^{n-j} = 0.025, \qquad \sum_{j=0}^{
 4. **Benchmarking "Best-in-Disease" Against the 2026–2027 AD Competitive Field:**
    For soquelitinib to be crowned *"best in disease"* in Phase 2 `SIERRA-1` (Week 12 readout expected mid-2027), it does not merely compete against legacy biologics; it faces a fiercely crowded oral and long-acting biologic arena:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 2026-2027 MODERATE-TO-SEVERE ATOPIC DERMATITIS COMPETITIVE BENCHMARK                     │
-├─────────────────────────┬──────────────────────┬───────────────────────┬─────────────────────────────────┤
-│ Drug / Sponsor          │ Modality & Target    │ Key Efficacy Metric   │ Strategic Advantage / Liability │
-├─────────────────────────┼──────────────────────┼───────────────────────┼─────────────────────────────────┤
-│ Soquelitinib (CPI-818)  │ Oral Covalent ITK    │ P1 Coh 4 (8-Wk, N=12):│ Oral BID/QD; Th17->Treg switch; │
-│ Corvus ($CRVS)          │ Inhibitor (Cys442)   │ 75% EASI-75 (55% Δ)   │ Unproven in N=200 12-Wk P2      │
-├─────────────────────────┼──────────────────────┼───────────────────────┼─────────────────────────────────┤
-│ KT-621                  │ Oral STAT6 Targeted  │ P1b BroADen (4-Wk):   │ Once-daily oral; 93.6% skin     │
-│ Kymera / Sanofi         │ Protein Degrader     │ 63% Mean EASI Reduct. │ STAT6 knockdown; P2b mid-2027   │
-├─────────────────────────┼──────────────────────┼───────────────────────┼─────────────────────────────────┤
-│ Upadacitinib (Rinvoq)   │ Oral JAK1 Selective  │ P3 Measure Up (16-Wk):│ Gold-standard oral efficacy,    │
-│ AbbVie                  │ Inhibitor (15/30 mg) │ 70-80% EASI-75 (~55%Δ)│ BUT carries FDA Black Box Warn  │
-├─────────────────────────┼──────────────────────┼───────────────────────┼─────────────────────────────────┤
-│ Dupilumab (Dupixent)    │ SubQ Anti-IL-4Rα mAb │ P3 SOLO 1/2 (16-Wk):  │ Clean multi-year safety; ~$14B+ │
-│ Regeneron / Sanofi      │ (Q2W Biologic)       │ 44-51% EASI-75 (~35%Δ)│ entrenched 1L biologic standard │
-├─────────────────────────┼──────────────────────┼───────────────────────┼─────────────────────────────────┤
-│ Amlitelimab             │ SubQ Anti-OX40L mAb  │ P3 COAST/SHORE (24W): │ Q12W maintenance dosing;        │
-│ Sanofi                  │ (Non-depleting)      │ ~47-50% EASI-75       │ targets T-cell memory / Treg    │
-└─────────────────────────┴──────────────────────┴───────────────────────┴─────────────────────────────────┘
-```
+**2026-2027 MODERATE-TO-SEVERE ATOPIC DERMATITIS COMPETITIVE BENCHMARK**
+
+| Drug / Sponsor | Modality & Target | Key Efficacy Metric | Strategic Advantage / Liability |
+| :--- | :--- | :--- | :--- |
+| Soquelitinib (CPI-818) Corvus ($CRVS) | Oral Covalent ITK Inhibitor (Cys442) | P1 Coh 4 (8-Wk, N=12): 75% EASI-75 (55% Δ) | Oral BID/QD; Th17->Treg switch; Unproven in N=200 12-Wk P2 |
+| KT-621 Kymera / Sanofi | Oral STAT6 Targeted Protein Degrader | P1b BroADen (4-Wk): 63% Mean EASI Reduct. | Once-daily oral; 93.6% skin STAT6 knockdown; P2b mid-2027 |
+| Upadacitinib (Rinvoq) AbbVie | Oral JAK1 Selective Inhibitor (15/30 mg) | P3 Measure Up (16-Wk): 70-80% EASI-75 (~55%Δ) | Gold-standard oral efficacy, BUT carries FDA Black Box Warn |
+| Dupilumab (Dupixent) Regeneron / Sanofi | SubQ Anti-IL-4Rα mAb (Q2W Biologic) | P3 SOLO 1/2 (16-Wk): 44-51% EASI-75 (~35%Δ) | Clean multi-year safety; ~$14B+ entrenched 1L biologic standard |
+| Amlitelimab Sanofi | SubQ Anti-OX40L mAb (Non-depleting) | P3 COAST/SHORE (24W): ~47-50% EASI-75 | Q12W maintenance dosing; targets T-cell memory / Treg |
 
 If soquelitinib replicates a **50%–60% absolute EASI-75 (30%–35% placebo-adjusted delta)** at Week 12 in `SIERRA-1` with **zero JAK-style boxed warning liabilities** (no thrombosis, MACE, acne, or herpes zoster reactivation) and **90-day off-drug durability**, it would genuinely rival Kymera/Sanofi's oral STAT6 degrader `KT-621` for the title of best-in-class oral immunology therapy. Conversely, if multicenter placebo rates remain near 35%–40% (as seen on mean EASI in Cohorts 3 and 4) while active EASI-75 regresses toward 40%–45%, its placebo-adjusted delta would compress into the 15%–20% range.
 
@@ -372,31 +279,16 @@ Phase 6 of our runbook requires interrogating what company presentations and bul
 ### 1. The 15-Year ITK Inhibitor Graveyard Audit
 Why did prior pharma programs fail to translate murine ITK asthma/dermatitis efficacy into human drugs?
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                     THE ITK INHIBITOR GRAVEYARD VS. SOQUELITINIB (SURVIVORSHIP AUDIT)                    │
-├─────────────────────────┬──────────────────────┬───────────────────────────┬─────────────────────────────┤
-│ Compound & Sponsor      │ Binding Mechanism    │ Biochemical Profile       │ Primary Cause of Failure    │
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ BMS-509744              │ Reversible ATP-      │ ITK IC50 = 19 nM          │ Outcompeted by 1-5 mM       │
-│ Bristol Myers Squibb    │ competitive          │ Short residence time      │ intracellular ATP; poor PK  │
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ GNE-4997 / GNE-9822     │ Reversible / Covalent│ Potent ITK, moderate      │ Preclinical toxicity & poor │
-│ Genentech / Roche       │ indazole series      │ kinome selectivity        │ oral asthma therapeutic idx │
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ PF-06465469             │ Covalent Cys442      │ kinact/Ki = 0.016 µM⁻¹s⁻¹ │ 107x weaker than SQL; equal │
-│ Pfizer                  │ acrylamide           │ Equal potency on BTK      │ BTK blockade -> off-target  │
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ GSK Inhaled ITK Series  │ Covalent Cys442      │ kinact/Ki = 1.9 µM⁻¹s⁻¹   │ Off-target BTK IC50 = 80 nM │
-│ GlaxoSmithKline         │ inhaled scaffold     │                           │ & lung irritation liabilities│
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ PRN694                  │ Covalent Dual        │ ITK kinact/Ki = 4.7       │ Dual RLK blockade crushed   │
-│ Principia / Sanofi      │ ITK / RLK Inhibitor  │ RLK kinact/Ki = 0.46      │ Th1/CD8+ IFN-γ & Granzyme B │
-├─────────────────────────┼──────────────────────┼───────────────────────────┼─────────────────────────────┤
-│ Soquelitinib (CPI-818)  │ Covalent Cys442      │ ITK kinact/Ki = 1.71      │ SURVIVOR: 115x selective vs │
-│ Corvus ($CRVS)          │ aminothiazole        │ RLK kinact/Ki = 0.0149    │ RLK; spares BTK & Th1/CD8+  │
-└─────────────────────────┴──────────────────────┴───────────────────────────┴─────────────────────────────┘
-```
+**THE ITK INHIBITOR GRAVEYARD VS. SOQUELITINIB (SURVIVORSHIP AUDIT)**
+
+| Compound & Sponsor | Binding Mechanism | Biochemical Profile | Primary Cause of Failure |
+| :--- | :--- | :--- | :--- |
+| BMS-509744 Bristol Myers Squibb | Reversible ATPcompetitive | ITK IC50 = 19 nM Short residence time | Outcompeted by 1-5 mM intracellular ATP; poor PK |
+| GNE-4997 / GNE-9822 Genentech / Roche | Reversible / Covalent indazole series | Potent ITK, moderate kinome selectivity | Preclinical toxicity & poor oral asthma therapeutic idx |
+| PF-06465469 Pfizer | Covalent Cys442 acrylamide | kinact/Ki = 0.016 µM⁻¹s⁻¹ Equal potency on BTK | 107x weaker than SQL; equal BTK blockade -> off-target |
+| GSK Inhaled ITK Series GlaxoSmithKline | Covalent Cys442 inhaled scaffold | kinact/Ki = 1.9 µM⁻¹s⁻¹ | Off-target BTK IC50 = 80 nM & lung irritation liabilities |
+| PRN694 Principia / Sanofi | Covalent Dual ITK / RLK Inhibitor | ITK kinact/Ki = 4.7 RLK kinact/Ki = 0.46 | Dual RLK blockade crushed Th1/CD8+ IFN-γ & Granzyme B |
+| Soquelitinib (CPI-818) Corvus ($CRVS) | Covalent Cys442 aminothiazole | ITK kinact/Ki = 1.71 RLK kinact/Ki = 0.0149 | SURVIVOR: 115x selective vs RLK; spares BTK & Th1/CD8+ |
 
 Our graveyard audit confirms that Corvus solved the specific biochemical flaw (**RLK and BTK cross-reactivity**) that killed `PRN694` and `PF-06465469`. However, solving off-target kinase cross-reactivity does not eliminate **on-target human ITK biology**.
 
@@ -449,28 +341,13 @@ Let `p_win` be the probability of a decisive Phase 2 `SIERRA-1` + PTCL interim w
 
 $$\text{E}\left[V_{\text{sh}}\right] = \frac{p_{\text{win}} \cdot EV_{\text{win}} + p_{\text{mod}} \cdot EV_{\text{mod}} + p_{\text{fail}} \cdot EV_{\text{fail}} + \text{Cash}_{\text{2027}} + \text{Upfront}_{\text{deal}}}{N_{\text{diluted}} + \Delta N_{\text{offering}}}$$
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 STRATEGIC PARTNERSHIP GAME-THEORY MATRIX (OCTOBER 2026 - MID-2027)                       │
-├──────────────────────────┬─────────────────────────────────────┬─────────────────────────────────────────┤
-│ Strategic Posture        │ Upside / Downside Mechanics         │ Forensic Assessment                     │
-├──────────────────────────┼─────────────────────────────────────┼─────────────────────────────────────────┤
-│ Posture 1:               │ • Caps near-term stock at ~$14-$16  │ SUBOPTIMAL. @HOThomasWPhelps is 100%    │
-│ Premature Full Buyout or │ • Gives away 70-80% of AD/Asthma    │ right that signing a fire-sale global   │
-│ Cheap Global Out-License │   economics at a 55% discount to    │ deal at $9.84 after a macro biotech     │
-│ Today at $9.84/sh        │   the Jan 2026 ($22.15) offering    │ drawdown destroys long-term EV.         │
-├──────────────────────────┼─────────────────────────────────────┼─────────────────────────────────────────┤
-│ Posture 2:               │ • Retains 100% ex-China upside into │ HIGH BINARY & DILUTION RISK. If SIERRA-1│
-│ Pure Unhedged Solo Run   │   June 2027 SIERRA-1 readout        │ is moderate (e.g., 18-22% EASI-75 Δ),   │
-│ Through Late 2027        │ • Enters mid-2027 with ~$120M cash  │ Corvus has <12 mos cash and must tap    │
-│ ("Phelps Pure Solo")     │   and $200M Jefferies ATM overhang  │ its $200M ATM or negotiate from weakness│
-├──────────────────────────┼─────────────────────────────────────┼─────────────────────────────────────────┤
-│ Posture 3:               │ • Wait for Angel China AD Cohort 1  │ OPTIMAL RISK-ADJUSTED EV. Uses China    │
-│ Staged Indication-Split  │   (Late 2026) & PTCL Interim (1Q27) │ 12-wk AD & PTCL interim to re-rate      │
-│ or Ex-US / Asthma Deal   │ • Out-license Asthma/Ex-US I&I for  │ stock to $15-$18, then secures non-     │
-│ After 1Q27 Interim Data  │   $150M-$250M upfront; keep PTCL/AD │ dilutive cash before SIERRA-1 binary.   │
-└──────────────────────────┴─────────────────────────────────────┴─────────────────────────────────────────┘
-```
+**STRATEGIC PARTNERSHIP GAME-THEORY MATRIX (OCTOBER 2026 - MID-2027)**
+
+| Strategic Posture | Upside / Downside Mechanics | Forensic Assessment |
+| :--- | :--- | :--- |
+| Posture 1: Premature Full Buyout or Cheap Global Out-License Today at $9.84/sh | • Caps near-term stock at ~$14-$16<br>• Gives away 70-80% of AD/Asthma economics at a 55% discount to the Jan 2026 ($22.15) offering | SUBOPTIMAL. @HOThomasWPhelps is 100% right that signing a fire-sale global deal at $9.84 after a macro biotech drawdown destroys long-term EV. |
+| Posture 2: Pure Unhedged Solo Run Through Late 2027 ("Phelps Pure Solo") | • Retains 100% ex-China upside into June 2027 SIERRA-1 readout<br>• Enters mid-2027 with ~$120M cash and $200M Jefferies ATM overhang | HIGH BINARY & DILUTION RISK. If SIERRA-1 is moderate (e.g., 18-22% EASI-75 Δ), Corvus has <12 mos cash and must tap its $200M ATM or negotiate from weakness |
+| Posture 3: Staged Indication-Split or Ex-US / Asthma Deal After 1Q27 Interim Data | • Wait for Angel China AD Cohort 1 (Late 2026) & PTCL Interim (1Q27)<br>• Out-license Asthma/Ex-US I&I for $150M-$250M upfront; keep PTCL/AD | OPTIMAL RISK-ADJUSTED EV. Uses China 12-wk AD & PTCL interim to re-rate stock to $15-$18, then secures non-dilutive cash before SIERRA-1 binary. |
 
 **Where Phelps Is Right—and What He Misses:**
 Phelps is **unequivocally right** that Corvus should reject any lowball buyout or global I&I licensing giveaway today at **$9.84 per share** (~$700M EV), especially when institutional investors just funded the company at **$22.15 per share** nine months ago and four value-inflection readouts sit within the next 3 to 9 months:
@@ -510,29 +387,13 @@ Rejecting both uncritical retail cheerleading and reflexive bear dismissal, we s
 
 After cross-examining every SEC filing, clinical protocol, and enzymatic assay, we arrive at a nuanced but unambiguous verdict on `@HOThomasWPhelps`'s thesis and Corvus Pharmaceuticals at **$9.84 per share**:
 
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                 CORVUS PHARMACEUTICALS ($CRVS) 12-MONTH PROBABILITY-WEIGHTED SCENARIO MATRIX             │
-├──────────────────────────┬───────────────┬──────────────────────┬───────────────────┬────────────────────┤
-│ Scenario Branch          │ Probability   │ Clinical / Strategic │ Implied Diluted   │ 12-Month Target    │
-│                          │ Weight        │ Outcome              │ Market Cap / EV   │ Share Price Range  │
-├──────────────────────────┼───────────────┼──────────────────────┼───────────────────┼────────────────────┤
-│ Base Case:               │     50%       │ PTCL passes 1Q27     │ $1.6B - $2.2B Cap │  $16.00 - $22.00   │
-│ Clinically Active Oral   │               │ interim; SIERRA-1    │ $1.5B - $2.1B EV  │ (+63% to +124%)    │
-│ AD (22-30% EASI-75 Δ) +  │               │ shows solid 22-30% Δ │                   │ Followed by I&I    │
-│ PTCL Win                 │               │ at 200mg BID         │                   │ Partner Deal       │
-├──────────────────────────┼───────────────┼──────────────────────┼───────────────────┼────────────────────┤
-│ Bull Case:               │     25%       │ SIERRA-1 hits ≥35%   │ $2.8B - $3.8B Cap │  $28.00 - $38.00   │
-│ Best-in-Disease Oral     │               │ EASI-75 Δ + 90-day   │ $2.7B - $3.7B EV  │ (+185% to +286%)   │
-│ Remission (≥35% Δ) +     │               │ drug-free Treg cure; │                   │ Tier-1 Pharma      │
-│ ALPS / PTCL Triumph      │               │ PTCL & ALPS succeed  │                   │ Buyout / Licensing │
-├──────────────────────────┼───────────────┼──────────────────────┼───────────────────┼────────────────────┤
-│ Bear Case:               │     25%       │ SIERRA-1 compresses  │ $350M - $550M Cap │   $3.50 - $5.50    │
-│ Phase 2 Multicenter      │               │ to <15% EASI-75 Δ OR │ $230M - $430M EV  │ (-44% to -64%)     │
-│ Compression (<15% Δ) or  │               │ PTCL interim futility│ (Cash + PTCL Stub)│ ATM Dilution Risk  │
-│ Safety / PTCL Miss       │               │ miss / viral SAE     │                   │                    │
-└──────────────────────────┴───────────────┴──────────────────────┴───────────────────┴────────────────────┘
-```
+**CORVUS PHARMACEUTICALS ($CRVS) 12-MONTH PROBABILITY-WEIGHTED SCENARIO MATRIX**
+
+| Scenario Branch | Probability Weight | Clinical / Strategic Outcome | Implied Diluted Market Cap / EV | 12-Month Target Share Price Range |
+| :--- | :--- | :--- | :--- | :--- |
+| Base Case: Clinically Active Oral AD (22-30% EASI-75 Δ) + PTCL Win | 50% | PTCL passes 1Q27 interim; SIERRA-1 shows solid 22-30% Δ at 200mg BID | $1.6B - $2.2B Cap $1.5B - $2.1B EV | $16.00 - $22.00 (+63% to +124%) Followed by I&I Partner Deal |
+| Bull Case: Best-in-Disease Oral Remission (≥35% Δ) + ALPS / PTCL Triumph | 25% | SIERRA-1 hits ≥35% EASI-75 Δ + 90-day drug-free Treg cure; PTCL & ALPS succeed | $2.8B - $3.8B Cap $2.7B - $3.7B EV | $28.00 - $38.00 (+185% to +286%) Tier-1 Pharma Buyout / Licensing |
+| Bear Case: Phase 2 Multicenter Compression (<15% Δ) or Safety / PTCL Miss | 25% | SIERRA-1 compresses to <15% EASI-75 Δ OR PTCL interim futility miss / viral SAE | $350M - $550M Cap $230M - $430M EV (Cash + PTCL Stub) | $3.50 - $5.50 (-44% to -64%) ATM Dilution Risk |
 
 1. **Probability-Weighted Expected Value:**
    Weighting our three scenarios (`0.50 × $19.00 + 0.25 × $33.00 + 0.25 × $4.50`) yields a **12-month probability-weighted expected value of $18.88 per diluted share** (+91.9% upside from $9.84), representing an attractively skewed risk/reward profile after the stock's 63.5% drawdown from its January 2026 highs.

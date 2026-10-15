@@ -133,17 +133,14 @@ Great Financial Crisis:     ~20%
 
 当下的估值是否真的像 1999 年那样疯狂？答案极为微妙：
 
-```
-Valuation Metric Comparison
------------------------------------------------------------------
-Metric                     Dot-Com Peak (1999-2000)   Current (2026)
------------------------------------------------------------------
-Shiller CAPE (S&P 500)     44.2 (Dec 1999)            ~40.6
-Top-10 Median Forward P/E  ~30x – 35x                 ~32x – 38x
-Headline Leader P/E        Cisco >150x                Nvidia ~30x – 35x
-Tech Sector Unprofitable % >35% of listed tech        <15% of top tiers
------------------------------------------------------------------
-```
+**Valuation Metric Comparison**
+
+| Metric | Dot-Com Peak (1999-2000) | Current (2026) |
+| :--- | :--- | :--- |
+| Shiller CAPE (S&P 500) | 44.2 (Dec 1999) | ~40.6 |
+| Top-10 Median Forward P/E | ~30x – 35x | ~32x – 38x |
+| Headline Leader P/E | Cisco >150x | Nvidia ~30x – 35x |
+| Tech Sector Unprofitable % | >35% of listed tech | <15% of top tiers |
 
 - **席勒 CAPE 比率：** 标普 500 指数的周期调整市盈率（CAPE）目前徘徊在 **~40.6**，高于 1929 年巅峰（~32.6），仅次于 1999 年 12 月创下的 **44.2** 历史峰值。
 - **托斯滕·斯洛克的“中位数指标”：** 正如阿波罗全球管理（Apollo Global Management）首席经济学家托斯滕·斯洛克（Torsten Slok）所示，如果观察**前十大公司的预期市盈率中位数**，当今市场实际上比 1999 年前十大巨头的中位数*更加昂贵*。在 2000 年，整体均值被思科（150倍以上）和雅虎等疯狂的离群值所扭曲，但许多大盘龙头（如埃克森美孚、通用电气、沃尔玛）当时的估值倍数相对适中。而今天，高溢价倍数普遍蔓延在整个龙头群体之中。

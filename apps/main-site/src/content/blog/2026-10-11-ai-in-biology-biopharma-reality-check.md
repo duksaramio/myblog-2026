@@ -179,19 +179,10 @@ If AI is achieving all this, why are we not swimming in miracle cures? Why does 
 
 Because biology possesses four physical, inescapable bottlenecks that no neural network can magically erase:
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                      THE 4 PHYSICAL BOTTLENECK WALLS                   │
-├───────────────────┬───────────────────┬───────────────────┬────────────┤
-│ 1. Target         │ 2. The Data       │ 3. Evolutionary   │ 4. The Wet │
-│    Validation     │    Famine         │    Spaghetti Code │    Clock   │
-│                   │                   │                   │            │
-│ Making the key    │ Models need       │ Human cells have  │ Clinical   │
-│ is easy; making   │ data, but biology │ 5 backup routes   │ trials     │
-│ sure it opens the │ is noisy, sparse, │ for every pathway │ take years │
-│ right door is not │ and locked in IP  │ you block         │ in humans  │
-└───────────────────┴───────────────────┴───────────────────┴────────────┘
-```
+**THE 4 PHYSICAL BOTTLENECK WALLS**
+
+| 1. Target Validation Making the key is easy; making sure it opens the right door is not | 2. The Data Famine Models need data, but biology is noisy, sparse, and locked in IP | 3. Evolutionary Spaghetti Code Human cells have 5 backup routes for every pathway you block | 4. The Wet Clock Clinical trials take years in humans |
+| :--- | :--- | :--- | :--- |
 
 ### Bottleneck 1: The "Right Key, Wrong Door" Problem (Target Validation)
 AI has gotten astonishingly good at designing a molecule that binds tightly to a chosen protein. But **binding to a protein is not curing a disease**.
@@ -238,23 +229,11 @@ CAD did not eliminate gravity. CAD did not eliminate the need to build physical 
 
 What CAD did was eliminate **thousands of blind, catastrophic physical iterations**. It transformed airplane design from an artisanal trial-and-error craft into a predictive, rational engineering discipline.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                   THE SHIFT: FROM SCREENING TO DESIGN                  │
-├───────────────────────────────────┬────────────────────────────────────┤
-│ Traditional Pharma (Pre-AI)       │ Modern Biopharma (AI-Augmented)    │
-├───────────────────────────────────┼────────────────────────────────────┤
-│ • Screening millions of random    │ • Generative de novo design of     │
-│   chemicals in plastic wells      │   molecules tailored to targets    │
-│ • Optimizing properties one by    │ • Multi-parameter optimization     │
-│   one over 4–5 years              │   (binding, safety, ADMET) at once │
-│ • 40–60% Phase 1 safety failure   │ • 80–90% Phase 1 safety success    │
-│ • Unphased crystal structures     │ • 93% automated crystallographic   │
-│   abandoned on hard drives        │   molecular replacement            │
-│ • "Undruggable" targets left      │ • Allosteric pockets & dynamic     │
-│   untouched for decades           │   motion unlocking hidden sites    │
-└───────────────────────────────────┴────────────────────────────────────┘
-```
+**THE SHIFT: FROM SCREENING TO DESIGN**
+
+| Traditional Pharma (Pre-AI) | Modern Biopharma (AI-Augmented) |
+| :--- | :--- |
+| • Screening millions of random chemicals in plastic wells<br>• Optimizing properties one by one over 4–5 years<br>• 40–60% Phase 1 safety failure<br>• Unphased crystal structures abandoned on hard drives<br>• "Undruggable" targets left untouched for decades | • Generative de novo design of molecules tailored to targets<br>• Multi-parameter optimization (binding, safety, ADMET) at once<br>• 80–90% Phase 1 safety success<br>• 93% automated crystallographic molecular replacement<br>• Allosteric pockets & dynamic motion unlocking hidden sites |
 
 That is exactly what AI is doing for biology today:
 1. **It compresses early discovery from 5 years down to 18 months**, slashing millions in preclinical wasted spend.
