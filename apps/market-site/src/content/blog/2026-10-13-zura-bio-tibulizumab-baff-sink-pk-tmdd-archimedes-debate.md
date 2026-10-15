@@ -76,20 +76,23 @@ Tracing both molecules back to their peer-reviewed biophysical characterizations
      * Dissociation constant for human **IL-17F homodimer (*Kd*)**: **>10,000 pM (no measurable binding)**.
      * Dissociation constant for human **BAFF (*Kd*)**: **~60 pM**.
 
-```
-   Biophysical Affinity Comparison (Lower Kd = Tighter Binding)
-   ─────────────────────────────────────────────────────────────
-   IL-17A Homodimer:
-   Bimekizumab (Bimzelx) : 3.2 pM  [████████████████████]  (Super-potent)
-   Tibulizumab (ZB-106)  : 14.0 pM [████]                 (4.38x weaker)
-   
-   IL-17A/F Heterodimer:
-   Bimekizumab (Bimzelx) : ~12 pM  [████████████████]
-   Tibulizumab (ZB-106)  : ~90 pM  [██]                   (7.5x weaker)
-
-   IL-17F Homodimer:
-   Bimekizumab (Bimzelx) : 23.0 pM [███████████████]
-   Tibulizumab (ZB-106)  : >10,000 pM                     (Zero activity)
+```mermaid
+flowchart LR
+    subgraph S1["Biophysical Affinity Comparison (Lower Kd = Tighter Binding)"]
+        direction TB
+        subgraph A["IL-17A Homodimer"]
+            A1["Bimekizumab (Bimzelx): 3.2 pM (Super-potent)"]
+            A2["Tibulizumab (ZB-106): 14.0 pM (4.38x weaker)"]
+        end
+        subgraph B["IL-17A/F Heterodimer"]
+            B1["Bimekizumab (Bimzelx): ~12 pM"]
+            B2["Tibulizumab (ZB-106): ~90 pM (7.5x weaker)"]
+        end
+        subgraph C["IL-17F Homodimer"]
+            C1["Bimekizumab (Bimzelx): 23.0 pM"]
+            C2["Tibulizumab (ZB-106): >10,000 pM (Zero activity)"]
+        end
+    end
 ```
 
 ### The Mathematical Verdict
@@ -127,24 +130,17 @@ Unlike a monospecific anti-IL-17A antibody (where target abundance is so low tha
 1. **Membrane-Bound BAFF (mBAFF):** Expressed continuously on myeloid lineages (monocytes, macrophages, dendritic cells) and activated B cells. Binding of tibulizumab’s parental tabalumab IgG core to mBAFF triggers **rapid receptor-mediated endocytosis**, routing the antibody to lysosomes for proteolytic degradation.
 2. **Soluble BAFF Trimers & 60-Mer Oligomers:** Cleaved from the membrane by furin-family proteases. Soluble BAFF exists as a 51 kDa homotrimer. However, under physiological conditions, **20 trimers spontaneously self-assemble into a massive 60-mer viral capsid-like sphere** ([Liu et al., *Cell* 2002, PMID: 11853672](https://pubmed.ncbi.nlm.nih.gov/11853672/)).
 
-```
-                      THE BAFF 60-MER CLEARANCE TRAP
-                      
-   [ Soluble BAFF Trimers ]           [ 20 Trimers Self-Assemble ]
-       (51 kDa each)                  ───────────────────────────▶   [ BAFF 60-Mer Capsid ]
-             │                                                          (~1,200 kDa / 1.2 MDa)
-             ▼                                                                   │
-   Bivalent Tibulizumab                                                          ▼
-   (Tabalumab IgG Core)                                               Multivalent Cross-Linking
-             │                                                                   │
-             ▼                                                                   ▼
-   Cross-links multiple trimers                                       [ Massive Immune Complexes ]
-   into soluble networks                                                         │
-             │                                                                   ▼
-             └───────────────────────────────────────────────────────▶   Rapid FcγR Clearance
-                                                                         by Hepatic Kupffer Cells
-                                                                         & Splenic Macrophages
-                                                                         (Non-Linear TMDD Sink)
+```mermaid
+flowchart TD
+    subgraph TRAP["THE BAFF 60-MER CLEARANCE TRAP"]
+        T1["Soluble BAFF Trimers<br/>(51 kDa each)"] -->|"20 Trimers Self-Assemble"| T2["BAFF 60-Mer Capsid<br/>(~1,200 kDa / 1.2 MDa)"]
+        T1 --> T3["Bivalent Tibulizumab<br/>(Tabalumab IgG Core)"]
+        T3 --> T4["Cross-links multiple trimers<br/>into soluble networks"]
+        T2 --> T5["Multivalent Cross-Linking"]
+        T5 --> T6["Massive Immune Complexes"]
+        T4 --> T7["Rapid FcγR Clearance<br/>by Hepatic Kupffer Cells & Splenic Macrophages<br/>(Non-Linear TMDD Sink)"]
+        T6 --> T7
+    end
 ```
 
 ### The Immune Complex Catastrophe (Jing Liang's Insight)
@@ -212,12 +208,12 @@ Let us audit Zura Bio's actual Phase 1 data presented at EULAR 2024 and filed wi
    * If 100 mg Q4W truly maximized target engagement, a 150 mg Q4W or 300 mg Q4W regimen would have been chosen.
    * Moving to **Q2W dosing** is direct proof that Zura's own pharmacokinetic modelers recognized that monthly dosing allowed trough concentrations (*C*~trough~) to plummet into the non-linear TMDD clearance zone! Doubling the dosing frequency to every two weeks was required to keep serum concentrations above the BAFF clearance sink.
 
-```
-   Phase 1 vs. Phase 2 Dosing Architecture
-   ─────────────────────────────────────────────────────────────
-   Phase 1 (Sjögren's):   100 mg Q4W  =  100 mg / 4 weeks  (25 mg/week)
-   TibuSHIELD Low-Dose:   150 mg Q2W  =  300 mg / 4 weeks  (75 mg/week - 3x Phase 1)
-   TibuSHIELD High-Dose:  300 mg Q2W  =  600 mg / 4 weeks  (150 mg/week - 6x Phase 1)
+```mermaid
+xychart-beta
+    title "Phase 1 vs. Phase 2 Dosing Architecture (Cumulative Dose per 4 Weeks)"
+    x-axis ["Phase 1 Sjögren's: 100mg Q4W (25mg/wk)", "TibuSHIELD Low: 150mg Q2W (75mg/wk, 3x)", "TibuSHIELD High: 300mg Q2W (150mg/wk, 6x)"]
+    y-axis "Dose per 4 Weeks (mg)" 0 --> 650
+    bar [100, 300, 600]
 ```
 
 While May claims the high dose (300 mg Q2W) provides a massive buffer, **Archimedes’ critique focuses squarely on the 150 mg Q2W arm**. 
@@ -249,28 +245,18 @@ This historical record refutes May’s assumption that BAFF neutralization provi
 
 We construct a 4-way causal matrix to disentangle the rival factors governing tibulizumab’s upcoming Phase 2 readout:
 
-```
-                          4-WAY CAUSAL MATRIX: TIBUSHIELD OUTCOMES
-                          
-            Direct Causation                          Reverse / Kinetic Causation
-   ┌────────────────────────────────┐        ┌─────────────────────────────────────────┐
-   │ High-dose IL-17A block rescues │        │ BAFF sink accelerates clearance (TMDD), │
-   │ 4.4x affinity deficit; BAFF    │        │ depressing free drug trough levels in   │
-   │ adds modest adjuvant benefit.  │        │ scarred dermal sinus tracts.            │
-   └────────────────────────────────┘        └─────────────────────────────────────────┘
-                   ▲                                               ▲
-                   │                                               │
-                   └───────────────────────┬───────────────────────┘
-                                           │
-                   ┌───────────────────────┴───────────────────────┐
-                   │                                               │
-                   ▼                                               ▼
-            Confounding Variable                      Feedback Loop / Structural
-   ┌────────────────────────────────┐        ┌─────────────────────────────────────────┐
-   │ Placebo response drift (>22%)  │        │ BAFF 60-mer cross-linking forms immune  │
-   │ and high site scoring noise    │        │ complexes, triggering FcγR phagocytosis │
-   │ wash out drug treatment delta. │        │ and high patient-to-patient PK scatter. │
-   └────────────────────────────────┘        └─────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph M["4-WAY CAUSAL MATRIX: TIBUSHIELD OUTCOMES"]
+        D["Direct Causation:<br/>High-dose IL-17A block rescues 4.4x affinity deficit;<br/>BAFF adds modest adjuvant benefit."]
+        R["Reverse / Kinetic Causation:<br/>BAFF sink accelerates clearance (TMDD),<br/>depressing free drug trough levels in scarred dermal sinus tracts."]
+        C["Confounding Variable:<br/>Placebo response drift (>22%) and high site scoring noise<br/>wash out drug treatment delta."]
+        F["Feedback Loop / Structural:<br/>BAFF 60-mer cross-linking forms immune complexes,<br/>triggering FcγR phagocytosis and high patient-to-patient PK scatter."]
+        D <--> C
+        D <--> F
+        R <--> C
+        R <--> F
+    end
 ```
 
 1. **Direct Mechanism:** Can 300 mg Q2W overcome the 4.4x potency deficit? Yes, if systemic drug concentrations exceed the *Kd* by 1,000-fold, high-affinity IL-17A binding will occur. But this requires flawless dosing adherence and minimal ADA.

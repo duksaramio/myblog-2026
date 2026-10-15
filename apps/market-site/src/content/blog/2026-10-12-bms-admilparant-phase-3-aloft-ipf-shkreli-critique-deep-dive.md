@@ -65,28 +65,18 @@ Patients were permitted to enroll either as monotherapy or on top of stable back
 
 The primary endpoint was the **absolute change in forced vital capacity (FVC) from baseline to Week 52**.
 
-```
-                           ALOFT-IPF RANDOMIZATION & OUTCOME
-   
-                               [ 1,255 IPF Patients ]
-                                         │
-                 ┌───────────────────────┼───────────────────────┐
-                 │ 1:1:1                 │ 1:1:1                 │ 1:1:1
-                 ▼                       ▼                       ▼
-        [ Admilparant 60 mg ]   [ Admilparant 120 mg ]       [ Placebo ]
-              (BID, 52W)              (BID, 52W)             (BID, 52W)
-                 │                       │                       │
-                 ▼                       ▼                       ▼
-         FVC Decline Slowed      FVC Decline Slowed        Standard FVC
-        STATISTICALLY SIGNIF.     NOT STAT. SIGNIFICANT       Decline
-             (p < 0.05)                (p >= 0.05)
-                 │                       │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-              [ INVERTED DOSE-RESPONSE CURVE ]
-              - High dose failed statistical bar
-              - Zero numerical delta (mL) disclosed
+```mermaid
+flowchart TD
+    subgraph R["ALOFT-IPF RANDOMIZATION & OUTCOME"]
+        P["1,255 IPF Patients"] -->|"1:1:1"| A1["Admilparant 60 mg<br/>(BID, 52W)"]
+        P -->|"1:1:1"| A2["Admilparant 120 mg<br/>(BID, 52W)"]
+        P -->|"1:1:1"| A3["Placebo<br/>(BID, 52W)"]
+        A1 --> R1["FVC Decline Slowed<br/>STATISTICALLY SIGNIF.<br/>(p < 0.05)"]
+        A2 --> R2["FVC Decline Slowed<br/>NOT STAT. SIGNIFICANT<br/>(p >= 0.05)"]
+        A3 --> R3["Standard FVC Decline"]
+        R1 --> INV["INVERTED DOSE-RESPONSE CURVE<br/>- High dose failed statistical bar<br/>- Zero numerical delta (mL) disclosed"]
+        R2 --> INV
+    end
 ```
 
 ### The Topline Findings
@@ -134,29 +124,16 @@ A drug that presents an inverted dose-response curve, an undisclosed borderline 
 
 How does a major pharmaceutical company run a 1,255-patient Phase 3 trial costing upwards of $300 million and end up with a higher dose that fails?
 
-```
-                     FOUR HYPOTHESES FOR THE 120 MG FAILURE
-  
-  ┌─────────────────────────────────┐      ┌─────────────────────────────────┐
-  │   1. THE "WINNER'S CURSE"       │      │   2. DOSE-SELECTION HUBRIS      │
-  │   (False Positive & Noise)      │      │   (Skipping Phase 2 for 120mg)  │
-  ├─────────────────────────────────┤      ├─────────────────────────────────┤
-  │ FVC SD is large (~250-350 mL).  │      │ Phase 2 only tested 30 & 60 mg. │
-  │ With a weak true effect, 60 mg  │      │ BMS doubled dose blindly into   │
-  │ got lucky on random variance,   │      │ Phase 3 without empirical PK/PD │
-  │ while 120 mg regressed to mean. │      │ validation in humans.           │
-  └─────────────────────────────────┘      └─────────────────────────────────┘
-                   │                                        │
-                   ▼                                        ▼
-  ┌─────────────────────────────────┐      ┌─────────────────────────────────┐
-  │   3. RECEPTOR INTERNALIZATION   │      │   4. SUBCLINICAL TOXICITY       │
-  │   (GPCR Desensitization)        │      │   (Adherence & ITT Dilution)    │
-  ├─────────────────────────────────┤      ├─────────────────────────────────┤
-  │ LPA1 is a GPCR prone to arrestin│      │ High dose causes low-grade GI/  │
-  │ recruitment and down-regulation.│      │ liver distress. Patients skip   │
-  │ Excessive antagonist drives     │      │ pills; ITT analysis drags mean  │
-  │ off-target counter-regulation.  │      │ FVC change toward placebo.      │
-  └─────────────────────────────────┘      └─────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph H["FOUR HYPOTHESES FOR THE 120 MG FAILURE"]
+        H1["1. THE 'WINNER'S CURSE'<br/>(False Positive & Noise)<br/>FVC SD is large (~250-350 mL).<br/>With a weak true effect, 60 mg got lucky<br/>on random variance, while 120 mg regressed to mean."]
+        H2["2. DOSE-SELECTION HUBRIS<br/>(Skipping Phase 2 for 120mg)<br/>Phase 2 only tested 30 & 60 mg.<br/>BMS doubled dose blindly into Phase 3<br/>without empirical PK/PD validation in humans."]
+        H3["3. RECEPTOR INTERNALIZATION<br/>(GPCR Desensitization)<br/>LPA1 is a GPCR prone to arrestin recruitment<br/>and down-regulation. Excessive antagonist<br/>drives off-target counter-regulation."]
+        H4["4. SUBCLINICAL TOXICITY<br/>(Adherence & ITT Dilution)<br/>High dose causes low-grade GI/liver distress.<br/>Patients skip pills; ITT analysis drags mean<br/>FVC change toward placebo."]
+        H1 --> H3
+        H2 --> H4
+    end
 ```
 
 ### Hypothesis 1: The "Winner's Curse" & The Statistical Fluke
@@ -208,31 +185,14 @@ If patients in the 120 mg arm experienced subtle, subclinical toxicity that degr
 
 To understand why biotech investors are so hypersensitive to admilparant's profile, one must understand the troubled history of the LPA₁ pathway.
 
-```
-                      THE TROUBLED TIMELINE OF LPA1 INHIBITION
-  
-  [ 2014-2018: BMS-986020 ]
-  BMS 1st-generation LPA1 antagonist. Halted in Phase 2 due to severe hepatobiliary
-  toxicity, cholecystitis, and direct inhibition of bile salt export pump (BSEP).
-             │
-             ▼
-  [ 2019-2021: GLPG1690 (Ziritaxestat) ]
-  Galapagos / Gilead Autotaxin inhibitor (upstream of LPA1). Terminated in Phase 3
-  (ISABELA 1 & 2) due to lack of efficacy and INCREASED PATIENT MORTALITY.
-             │
-             ▼
-  [ 2022-2025: Admilparant (BMS-986278) ]
-  Designed specifically to eliminate BSEP inhibition and bypass hepatotoxicity.
-  Demonstrates clean 26-week safety in Phase 2.
-             │
-             ▼
-  [ MAY 2026: ALOFT European Protocol Amendment ]
-  Trial safety documentation updated following liver toxicity cases and a PATIENT
-  DEATH from acute hepatic necrosis and multi-organ failure. DILI rules enforced.
-             │
-             ▼
-  [ OCTOBER 2026: Phase 3 ALOFT-IPF Topline Readout ]
-  60 mg hits; 120 mg fails; effect size withheld. The target curse resurfaces.
+```mermaid
+flowchart TD
+    subgraph T["THE TROUBLED TIMELINE OF LPA1 INHIBITION"]
+        T1["2014-2018: BMS-986020<br/>BMS 1st-generation LPA1 antagonist. Halted in Phase 2 due to severe<br/>hepatobiliary toxicity, cholecystitis, and direct BSEP inhibition."] --> T2["2019-2021: GLPG1690 (Ziritaxestat)<br/>Galapagos / Gilead Autotaxin inhibitor (upstream of LPA1).<br/>Terminated in Phase 3 (ISABELA 1 & 2) due to lack of efficacy<br/>and INCREASED PATIENT MORTALITY."]
+        T2 --> T3["2022-2025: Admilparant (BMS-986278)<br/>Designed specifically to eliminate BSEP inhibition and bypass<br/>hepatotoxicity. Demonstrates clean 26-week safety in Phase 2."]
+        T3 --> T4["MAY 2026: ALOFT European Protocol Amendment<br/>Trial safety documentation updated following liver toxicity cases<br/>and a PATIENT DEATH from acute hepatic necrosis and multi-organ failure."]
+        T4 --> T5["OCTOBER 2026: Phase 3 ALOFT-IPF Topline Readout<br/>60 mg hits; 120 mg fails; effect size withheld. The target curse resurfaces."]
+    end
 ```
 
 ### The Ghost of BMS-986020
@@ -324,16 +284,16 @@ Bristol Myers Squibb is facing one of the most brutal **loss-of-exclusivity (LOE
 * **Eliquis:** Jointly marketed with Pfizer; faces U.S. generic entry between 2026 and 2028 ($12B+ global franchise).
 * **Opdivo:** BMS's foundational PD-1 oncology anchor ($9B+ franchise); faces patent expiration starting in 2028.
 
-```
-                     BMY IMMINENT REVENUE EROSION (2026-2030)
-  
-  [ ELIQUIS ] ───────► Patent Expiration (2026-2028) ───────► -$8B-$10B Revenue Hole
-  [ OPDIVO ]  ───────► Patent Expiration (2028-2029) ───────► -$7B-$9B Revenue Hole
-  [ REVLIMID ] ──────► Generic Decay (Ongoing)        ───────► -$4B-$6B Revenue Decay
-                                                                   │
-                                                                   ▼
-                                                       [ TOTAL REVENUE HOLE ]
-                                                          -$20B TO -$25B
+```mermaid
+flowchart LR
+    subgraph LOE["BMY IMMINENT REVENUE EROSION (2026-2030)"]
+        E["ELIQUIS<br/>Patent Expiration (2026-2028)"] --> EH["-$8B to -$10B Revenue Hole"]
+        O["OPDIVO<br/>Patent Expiration (2028-2029)"] --> OH["-$7B to -$9B Revenue Hole"]
+        R["REVLIMID<br/>Generic Decay (Ongoing)"] --> RH["-$4B to -$6B Revenue Decay"]
+        EH --> TOT["TOTAL REVENUE HOLE:<br/>-$20B TO -$25B"]
+        OH --> TOT
+        RH --> TOT
+    end
 ```
 
 BMS leadership has repeatedly promised Wall Street that its "New Product Portfolio"—anchored by drugs like Camzyos (mavacamten), Sotyktu (deucravacitinib), Cobenfy (KarXT), and **admilparant**—would bridge this catastrophic $20B+ revenue chasm.
@@ -361,11 +321,12 @@ The biopharmaceutical industry has perfected the art of the "paper win." When a 
 
 Martin Shkreli’s viral four-line critique was not an exercise in cynicism; it was an exercise in **forensic clinical literacy**:
 
-```
-  "low dose good"   ──► The bare-minimum regulatory pass to save executive face.
-  "high dose bad"   ──► The death of pharmacological causality and dose monotonicity.
-  "effect size bad" ──► The telltale omission of numbers to hide a marginal delta.
-  "drug is bad"     ──► The inevitable commercial, clinical, and competitive verdict.
+```mermaid
+flowchart LR
+    L1["'low dose good'"] --> D1["The bare-minimum regulatory pass to save executive face."]
+    L2["'high dose bad'"] --> D2["The death of pharmacological causality and dose monotonicity."]
+    L3["'effect size bad'"] --> D3["The telltale omission of numbers to hide a marginal delta."]
+    L4["'drug is bad'"] --> D4["The inevitable commercial, clinical, and competitive verdict."]
 ```
 
 Bristol Myers Squibb may yet manage to usher admilparant across the FDA finish line on the back of its 60 mg arm. But in the unforgiving arena of clinical medicine and competitive biopharma markets, you cannot spin your way to standard-of-care status. 

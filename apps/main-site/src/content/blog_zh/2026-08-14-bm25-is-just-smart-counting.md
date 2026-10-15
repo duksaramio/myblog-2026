@@ -40,17 +40,13 @@ BM25会给较短的文档提供公平性加分。较长的文档自然包含更�
 
 ## 公式（用中文解释）
 
-```
-分数 = 词的稀有性 × (计数上限) / (词计数 + 页面长度惩罚)
-```
+$$\text{分数} = \text{词的稀有性} \times \frac{\text{计数上限}}{\text{词计数} + \text{页面长度惩罚}}$$
 
 对于查询中的每个词语，BM25都会为每份文档计算这个分数。将所有查询词的分数相加。分数最高的获胜。
 
 实际的公式：
 
-```
-Score(D, Q) = Σ IDF(qi) × [f(qi, D) × (k1 + 1)] / [f(qi, D) + k1 × (1 - b + b × |D|/avgdl)]
-```
+$$\text{Score}(D, Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \frac{f(q_i, D) \cdot (k_1 + 1)}{f(q_i, D) + k_1 \cdot \left(1 - b + b \cdot \frac{|D|}{\text{avgdl}}\right)}$$
 
 两个调节旋钮：
 
@@ -67,8 +63,13 @@ Score(D, Q) = Σ IDF(qi) × [f(qi, D) × (k1 + 1)] / [f(qi, D) + k1 × (1 - b + 
 
 这就是为什么最有效的RAG检索架构是混合的：
 
-```
-查询 → BM25（精确词语）+ 向量搜索（意义） → 组合 → 重新排序 → LLM
+```mermaid
+flowchart LR
+    Q["查询"] --> BM25["BM25（精确词语）"]
+    Q --> VEC["向量搜索（意义）"]
+    BM25 --> COMB["组合"]
+    VEC --> COMB
+    COMB --> RERANK["重新排序"] --> LLM["LLM"]
 ```
 
 BM25捕捉精确的术语。向量搜索捕捉同义词。重新排序将它们合并。LLM则兼得两者之长。

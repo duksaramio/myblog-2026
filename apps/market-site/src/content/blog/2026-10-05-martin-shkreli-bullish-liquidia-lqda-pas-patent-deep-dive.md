@@ -58,17 +58,13 @@ Unlike pre-revenue clinical biotechs, Liquidia Corporation ($LQDA) is an establi
 ### The PRINT® Technology and Clinical Value Proposition
 Liquidia's core asset is **YUTREPIA® (treprostinil inhalation powder)**, developed using its proprietary **PRINT® (Particle Replication in Non-wetting Templates)** engineered particle technology:
 
-```
-                     LIQUIDIA PRINT® PARTICLE ENGINEERING
-                     
-    [ Treprostinil Formulation ] ──► [ Precision Micro-Molds ] ──► [ Monodisperse Particles ]
-                                                                             │
-    ┌────────────────────────────────────────────────────────────────────────┘
-    ▼
-    • Uniform geometric size (1–3 µm aerodynamic diameter)
-    • Optimal deep-lung deposition into small pulmonary arterioles
-    • Low carrier/excipient mass -> Significantly fewer inhalations per dose
-    • High tolerable dosing without dose-limiting upper-airway cough
+```mermaid
+flowchart TD
+    subgraph S1["LIQUIDIA PRINT® PARTICLE ENGINEERING"]
+        A["Treprostinil Formulation"] --> B["Precision Micro-Molds"]
+        B --> C["Monodisperse Particles"]
+        C --> D["• Uniform geometric size (1–3 µm aerodynamic diameter)<br/>• Optimal deep-lung deposition into small pulmonary arterioles<br/>• Low carrier/excipient mass -> Significantly fewer inhalations per dose<br/>• High tolerable dosing without dose-limiting upper-airway cough"]
+    end
 ```
 
 Treprostinil is a synthetic prostacyclin analogue designed to induce direct vasodilation of the pulmonary and systemic arterial vascular beds and inhibit platelet aggregation. 
@@ -193,22 +189,13 @@ In standard Hatch-Waxman litigation, the trial concludes *before* final FDA appr
 
 However, YUTREPIA is in an extraordinarily rare posture: **it was already granted final approval on May 23, 2025, and has been commercially available for 16 months!**
 
-```
-                       THE § 271(e)(4)(A) REMEDY FORK
-                       
-                               Judge Andrews
-                             Final Judgment Order
-                                      │
-        ┌─────────────────────────────┴─────────────────────────────┐
-        ▼                                                           ▼
-   SCENARIO A: BLANKET ORDER                               SCENARIO B: EQUITABLE CARVE-OUT
-   "Effective date of YUTREPIA NDA                         "Effective date of approval FOR
-   is reset to Dec 2042."                                  PH-ILD ONLY is reset to Dec 2042;
-        │                                                  PAH approval remains in effect."
-        ├─► YUTREPIA pulled from shelves                            │
-        ├─► Sales halt for 3–6 months while                         ├─► Liquidia continues selling PAH
-        │   emergency appeal / stay is sought                       ├─► Injunction bars PH-ILD marketing
-        └─► Catastrophic short-term disruption                      └─► Commercial continuity preserved
+```mermaid
+flowchart TD
+    subgraph S1["THE § 271(e)(4)(A) REMEDY FORK"]
+        J["Judge Andrews<br/>Final Judgment Order"]
+        J --> A["SCENARIO A: BLANKET ORDER<br/>'Effective date of YUTREPIA NDA is reset to Dec 2042.'<br/>• YUTREPIA pulled from shelves<br/>• Sales halt for 3–6 months while emergency appeal / stay is sought<br/>• Catastrophic short-term disruption"]
+        J --> B["SCENARIO B: EQUITABLE CARVE-OUT<br/>'Effective date of approval FOR PH-ILD ONLY is reset to Dec 2042; PAH approval remains in effect.'<br/>• Liquidia continues selling PAH<br/>• Injunction bars PH-ILD marketing<br/>• Commercial continuity preserved"]
+    end
 ```
 
 ### Can Judge Andrews Sever the Indications?
@@ -248,19 +235,14 @@ Retail bulls frequently argue: *"Doctors love YUTREPIA! They will just prescribe
 
 This betrays a profound misunderstanding of how high-cost specialty pharmaceuticals are distributed and reimbursed:
 
-```
-                  THE SPECIALTY REIMBURSEMENT GAUNTLET
-                  
-   Physician Prescribes ──► Specialty Pharmacy ──► Payer / PBM System
-   YUTREPIA for PH-ILD      (Accredo, CVS Caremark) (Prior Authorization Form)
-                                                          │
-           ┌──────────────────────────────────────────────┴────────────────┐
-           ▼                                                               ▼
-   ON-LABEL APPROVAL (PAH)                               OFF-LABEL REJECTION (PH-ILD)
-   • ICD-10: I27.0 or I27.20                             • ICD-10: I27.23 (PH-ILD)
-   • Matches YUTREPIA FDA Label                          • Does NOT match YUTREPIA Label
-   • Automated Payer Approval                            • Mandatory Step-Therapy to Tyvaso DPI
-   • Co-pay applied, drug shipped                        • CLAIM DENIED
+```mermaid
+flowchart TD
+    subgraph S1["THE SPECIALTY REIMBURSEMENT GAUNTLET"]
+        P["Physician Prescribes<br/>YUTREPIA for PH-ILD"] --> SP["Specialty Pharmacy<br/>(Accredo, CVS Caremark)"]
+        SP --> PBM["Payer / PBM System<br/>(Prior Authorization Form)"]
+        PBM --> A["ON-LABEL APPROVAL (PAH)<br/>• ICD-10: I27.0 or I27.20<br/>• Matches YUTREPIA FDA Label<br/>• Automated Payer Approval<br/>• Co-pay applied, drug shipped"]
+        PBM --> B["OFF-LABEL REJECTION (PH-ILD)<br/>• ICD-10: I27.23 (PH-ILD)<br/>• Does NOT match YUTREPIA Label<br/>• Mandatory Step-Therapy to Tyvaso DPI<br/>• CLAIM DENIED"]
+    end
 ```
 
 Treprostinil therapies cost between **$180,000 and $250,000 per patient per year**. No patient pays for this out-of-pocket. 

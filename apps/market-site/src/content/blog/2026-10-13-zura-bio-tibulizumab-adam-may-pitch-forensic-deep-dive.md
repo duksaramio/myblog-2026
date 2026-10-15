@@ -54,23 +54,14 @@ According to Zura Bio Ltd’s [Form 10-Q for the quarterly period ended June 30,
 * **Estimated Q3 2026 Cash Position:** Assuming a steady-state quarterly cash burn of ~$28–$30 million, Zura will enter the mid-November 2026 HS readout with approximately **$175 million in cash** (~$1.40 per share in net cash backing).
 * **Market Capitalization & Enterprise Value:** At a share price of $4.00, Zura's basic market cap is $381.7 million, its fully diluted market cap (including pre-funded warrants) is **$498.9 million**, and its Enterprise Value (EV) stands at **$293.8 million** (or ~$324 million factoring in Q3 burn).
 
-```
-                             ZURA BIO CAPITAL STRUCTURE BREAKDOWN
-   
-           [ Class A Common: 95.42M ]        [ Pre-Funded Warrants: 29.30M ]
-                       │                                    │
-                       └──────────────────┬─────────────────┘
-                                          │
-                                          ▼
-                       [ Diluted Share Count: 124.72M ]
-                                          │
-                        x $4.00 Stock Price
-                                          ▼
-                       [ Market Capitalization: $498.9M ]
-                                          │
-                        Less: Cash ($205.1M Q2 / ~$175M Q3)
-                                          ▼
-                        [ Enterprise Value: $293.8M - $323.9M ]
+```mermaid
+flowchart TD
+    subgraph CAP["ZURA BIO CAPITAL STRUCTURE BREAKDOWN"]
+        S1["Class A Common: 95.42M"] --> S3["Diluted Share Count: 124.72M"]
+        S2["Pre-Funded Warrants: 29.30M"] --> S3
+        S3 -->|"x $4.00 Stock Price"| S4["Market Capitalization: $498.9M"]
+        S4 -->|"Less: Cash ($205.1M Q2 / ~$175M Q3)"| S5["Enterprise Value: $293.8M - $323.9M"]
+    end
 ```
 
 ### The Eli Lilly Licensing Agreement Encumbrance
@@ -113,16 +104,13 @@ According to the [ClinicalTrials.gov registry for NCT06993610](https://clinicalt
 
 The foundational pillar of Adam May's investment thesis is his assertion that the market's preference for dual IL-17A/F inhibitors (such as UCB’s Bimzelx) over IL-17A-only inhibitors (such as Novartis’ Cosentyx or Lilly’s Taltz) is based on a fundamental pharmacological misunderstanding.
 
-```
-                          IL-17 DIMER RECEPTOR ACTIVATION TAXONOMY
-   
-         IL-17AA (Homodimer)        IL-17AF (Heterodimer)       IL-17FF (Homodimer)
-        [ IL-17A ]─[ IL-17A ]      [ IL-17A ]─[ IL-17F ]       [ IL-17F ]─[ IL-17F ]
-                  │                          │                           │
-                  ▼                          ▼                           ▼
-        Binds IL-17RA/RC           Binds IL-17RA/RC            Binds IL-17RA/RC
-        Kd ~ 1.8 - 3.2 nM          Kd ~ 1.8 - 26 nM            Kd ~ 23 - >100 nM
-        ULTRA-POTENT SIGNAL        INTERMEDIATE SIGNAL         WEAK SIGNAL (>100x LESS)
+```mermaid
+flowchart TD
+    subgraph TAX["IL-17 DIMER RECEPTOR ACTIVATION TAXONOMY"]
+        D1["IL-17AA (Homodimer)<br/>[IL-17A] - [IL-17A]"] --> R1["Binds IL-17RA/RC<br/>Kd ~ 1.8 - 3.2 nM<br/>ULTRA-POTENT SIGNAL"]
+        D2["IL-17AF (Heterodimer)<br/>[IL-17A] - [IL-17F]"] --> R2["Binds IL-17RA/RC<br/>Kd ~ 1.8 - 26 nM<br/>INTERMEDIATE SIGNAL"]
+        D3["IL-17FF (Homodimer)<br/>[IL-17F] - [IL-17F]"] --> R3["Binds IL-17RA/RC<br/>Kd ~ 23 - >100 nM<br/>WEAK SIGNAL (>100x LESS)"]
+    end
 ```
 
 May constructs a four-part argument to prove that IL-17F does not contribute to clinical efficacy:
@@ -161,23 +149,16 @@ May proposes a provocative hypothesis: **Sonelokimab's ultra-potent IL-17FF affi
 
 While Dr. May’s reasoning is compelling, a forensic critical thinking audit reveals a critical pharmacological flaw: **The Fallacy of Isolated In Vitro Affinity (Ignoring the Law of Mass Action).**
 
-```
-                   THE MASS ACTION COUNTER-AUDIT: AFFINITY VS. CONCENTRATION
-   
-   Biochemical Occupancy Equation:
-   
-                    [ Ligand Concentration (L) ]
-   Occupancy  =  ───────────────────────────────────
-                  [ Ligand (L) ]  +  [ Affinity (Kd) ]
-   
-   ─────────────────────────────────────────────────────────────────────────────
-   Cytokine       In Vitro Affinity (Kd)     Lesional Tissue Level [L]    Net Biological Drive
-   ─────────────────────────────────────────────────────────────────────────────
-   IL-17AA        High (~1.8 nM)             Low (~1x baseline)           Potent, but saturable
-   IL-17FF        Weak (~100 nM)             Massive (~30x - 100x)        Drives persistent signaling
-   ─────────────────────────────────────────────────────────────────────────────
-   Conclusion: Dismissing IL-17FF based solely on Kd ignores that 100x higher molar
-               concentration completely overcomes a 100x weaker binding affinity.
+```mermaid
+flowchart TD
+    subgraph MASS["THE MASS ACTION COUNTER-AUDIT: AFFINITY VS. CONCENTRATION"]
+        EQ["Biochemical Occupancy Equation:<br/>Occupancy = [Ligand Concentration (L)] / ([Ligand (L)] + [Affinity (Kd)])"]
+        AA["IL-17AA<br/>In Vitro Affinity (Kd): High (~1.8 nM)<br/>Lesional Tissue Level [L]: Low (~1x baseline)<br/>Net Biological Drive: Potent, but saturable"]
+        FF["IL-17FF<br/>In Vitro Affinity (Kd): Weak (~100 nM)<br/>Lesional Tissue Level [L]: Massive (~30x - 100x)<br/>Net Biological Drive: Drives persistent signaling"]
+        CONC["Conclusion:<br/>Dismissing IL-17FF based solely on Kd ignores that 100x higher<br/>molar concentration completely overcomes a 100x weaker binding affinity."]
+        EQ --> AA --> CONC
+        EQ --> FF --> CONC
+    end
 ```
 
 ### The Mass Action Reality
@@ -202,29 +183,18 @@ May attributes Sonelokimab's VELA-2 miss entirely to an "IL-17F drug sink." But 
 
 Tibulizumab’s unique selling proposition is its second arm: neutralization of **BAFF (B-cell activating factor)**.
 
-```
-                      TIBULIZUMAB DUAL-TARGETING PHARMACOLOGY
-   
-                    [ TIBULIZUMAB (ZB-106 / LY3090106) ]
-                                      │
-               ┌──────────────────────┴──────────────────────┐
-               │                                             │
-               ▼                                             ▼
-        [ Anti-IL-17A ]                               [ Anti-BAFF ]
-     (Ixekizumab-derived)                          (Tabalumab-derived)
-               │                                             │
-               ▼                                             ▼
-   Neutralizes IL-17AA & AF                     Neutralizes Soluble BAFF / BLyS
-               │                                             │
-               ▼                                             ▼
-   - Inhibits Th17 Inflammation                 - Depletes Transitional & Mature B Cells
-   - Suppresses Neutrophil Influx               - Reduces Autoantibody Secretion
-   - Normalizes Keratinocytes                   - Dampens Chronic Follicular Plasma Cells
-               │                                             │
-               └──────────────────────┬──────────────────────┘
-                                      │
-                                      ▼
-                      [ COMBINATORIAL EFFICACY IN HS? ]
+```mermaid
+flowchart TD
+    subgraph DUAL["TIBULIZUMAB DUAL-TARGETING PHARMACOLOGY"]
+        T["TIBULIZUMAB (ZB-106 / LY3090106)"] --> A1["Anti-IL-17A<br/>(Ixekizumab-derived)"]
+        T --> B1["Anti-BAFF<br/>(Tabalumab-derived)"]
+        A1 --> A2["Neutralizes IL-17AA & AF"]
+        B1 --> B2["Neutralizes Soluble BAFF / BLyS"]
+        A2 --> A3["- Inhibits Th17 Inflammation<br/>- Suppresses Neutrophil Influx<br/>- Normalizes Keratinocytes"]
+        B2 --> B3["- Depletes Transitional & Mature B Cells<br/>- Reduces Autoantibody Secretion<br/>- Dampens Chronic Follicular Plasma Cells"]
+        A3 --> OUT["COMBINATORIAL EFFICACY IN HS?"]
+        B3 --> OUT
+    end
 ```
 
 ### The Pro-BAFF Thesis
@@ -254,23 +224,13 @@ A central strength of May’s pitch is that Zura Bio is not a "one-trick pony." 
 * **The Proof of Concept:** Kyowa Kirin evaluated brodalumab (an IL-17RA receptor antagonist) in a 100-patient randomized, double-blind Phase 3 trial in Japan. Topline results presented at EULAR 2022 were staggering: **a -21.2 point mRSS delta at Week 24** (drug -16.8 vs. placebo +4.4, $p < 0.001$).
 * **The SSc Case Report ([Frontiers in Immunology 2026, PMID 41884839](https://pubmed.ncbi.nlm.nih.gov/41884839/)):** A diffuse SSc patient who failed autologous stem cell transplantation and rituximab experienced dramatic clinical reversal, reduction in skin score, and complete liberation from dialysis after sequential treatment with Cosentyx and Bimzelx.
 
-```
-                           THE KYOWA KIRIN BRODALUMAB MYSTERY
-   
-      Phase 3 SSc Trial in Japan (n = 100)
-      - Week 24 mRSS Delta: -21.2 points (p < 0.001)
-      - Hit FVC (+5.23% delta) and all key secondaries
-                       │
-                       ▼
-      [ 2024: APPLICATION ABRUPTLY WITHDRAWN ]
-                       │
-         ┌─────────────┴─────────────┐
-         ▼                           ▼
-   Regulatory Vulnerability      Trial Design Artifact
-   - 37 of 47 placebo patients   - Lack of 52-week blinded control
-     crossed over at Week 24     - PMDA refused approval based on
-   - Only 7 placebo completers     short 24-week endpoint in a
-     remained at Week 52           chronic fatal disease
+```mermaid
+flowchart TD
+    subgraph KK["THE KYOWA KIRIN BRODALUMAB MYSTERY"]
+        K1["Phase 3 SSc Trial in Japan (n = 100)<br/>- Week 24 mRSS Delta: -21.2 points (p < 0.001)<br/>- Hit FVC (+5.23% delta) and all key secondaries"] --> K2["2024: APPLICATION ABRUPTLY WITHDRAWN"]
+        K2 --> K3["Regulatory Vulnerability:<br/>- 37 of 47 placebo patients crossed over at Week 24<br/>- Only 7 placebo completers remained at Week 52"]
+        K2 --> K4["Trial Design Artifact:<br/>- Lack of 52-week blinded control<br/>- PMDA refused approval based on short 24-week<br/>endpoint in a chronic fatal disease"]
+    end
 ```
 
 #### The Forensic Audit of Kyowa Kirin's Withdrawal
@@ -300,32 +260,15 @@ However:
 
 A rigorous institutional deep dive must aggressively interrogate omitted liabilities and downside risks:
 
-```
-                              THE NEGATIVE VIEW AUDIT
-   
-   1. Dual-Immunosuppression Toxicity:
-      - IL-17A inhibition suppresses mucocutaneous fungal defenses (Candida 10-15%).
-      - BAFF inhibition starves peripheral B cells and suppresses humoral antibodies.
-      - In HS patients with deep, open, bacteria-laden tunnels, dual blockade risks
-        serious soft-tissue cellulitis, systemic bacteremia, or opportunistic infections.
-   
-   2. Engineered Bispecific Immunogenicity (ADAs):
-      - Tibulizumab fuses ixekizumab and tabalumab fragments.
-      - Unnatural linker regions create neo-epitopes.
-      - At high chronic doses (300 mg Q4W), neutralizing anti-drug antibodies could
-        accelerate clearance and attenuate efficacy by Week 16-52.
-   
-   3. The Placebo Response Trap:
-      - HS placebo HiSCR rates have steadily climbed:
-        Humira (26.8%) -> Bimzelx (33.2%) -> Sonelokimab (36.7%) -> Avalo (40.7%).
-      - If TibuSHIELD placebo HiSCR75 exceeds 22%, tibulizumab needs an absolute
-        response >42% just to demonstrate a 20% delta.
-   
-   4. Immediate Post-Data Equity Dilution:
-      - Zura has ~$175M cash entering Q4, burning ~$29M/quarter.
-      - Running three concurrent global Phase 3 trials requires >$350M-$450M.
-      - Any positive stock spike on HS data will be immediately followed by a
-        $150M-$200M secondary offering, diluting existing shareholders by 20-30%.
+```mermaid
+flowchart TD
+    subgraph NEG["THE NEGATIVE VIEW AUDIT"]
+        N1["1. Dual-Immunosuppression Toxicity:<br/>- IL-17A inhibition suppresses mucocutaneous fungal defenses (Candida 10-15%).<br/>- BAFF inhibition starves peripheral B cells and suppresses humoral antibodies.<br/>- In HS patients with deep, open, bacteria-laden tunnels, dual blockade risks<br/>serious soft-tissue cellulitis, systemic bacteremia, or opportunistic infections."]
+        N2["2. Engineered Bispecific Immunogenicity (ADAs):<br/>- Tibulizumab fuses ixekizumab and tabalumab fragments.<br/>- Unnatural linker regions create neo-epitopes.<br/>- At high chronic doses (300 mg Q4W), neutralizing anti-drug antibodies could<br/>accelerate clearance and attenuate efficacy by Week 16-52."]
+        N3["3. The Placebo Response Trap:<br/>- HS placebo HiSCR rates have steadily climbed:<br/>Humira (26.8%) -> Bimzelx (33.2%) -> Sonelokimab (36.7%) -> Avalo (40.7%).<br/>- If TibuSHIELD placebo HiSCR75 exceeds 22%, tibulizumab needs an absolute<br/>response >42% just to demonstrate a 20% delta."]
+        N4["4. Immediate Post-Data Equity Dilution:<br/>- Zura has ~$175M cash entering Q4, burning ~$29M/quarter.<br/>- Running three concurrent global Phase 3 trials requires >$350M-$450M.<br/>- Any positive stock spike on HS data will be immediately followed by a<br/>$150M-$200M secondary offering, diluting existing shareholders by 20-30%."]
+        N1 --> N2 --> N3 --> N4
+    end
 ```
 
 ---

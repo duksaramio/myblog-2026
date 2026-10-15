@@ -106,31 +106,20 @@ Now, examine Martin Shkreli's punchline: *"same shit with AI bio lol."*
 
 Why is the modern TechBio / AI drug discovery market an exact structural mirror of the HGSI phenomenon? Because the industry has once again replaced **clinical milestones** with **computational milestones**.
 
-```
-                   THE PARALLEL CYCLES OF CATALYST SUBSTITUTION
-
-         2000 GENOMICS CYCLE                         2020–2026 AI BIO CYCLE
-  ─────────────────────────────────            ─────────────────────────────────
-  Human Genome Draft Completed (2000)          AlphaFold 2 Solves Folding (2020)
-                 │                                            │
-                 ▼                                            ▼
-  "What's the next catalyst?"                  "What's the next catalyst?"
-  "Mouse Genome!" (2002)                       "200M Predicted Structures!" (2022)
-                 │                                            │
-                 ▼                                            ▼
-  "What's the next catalyst?"                  "What's the next catalyst?"
-  "Rat Genome / SNP Haplotype Maps!"           "RFdiffusion Generative Binders!" (2023)
-                 │                                            │
-                 ▼                                            ▼
-  "What's the next catalyst?"                  "What's the next catalyst?"
-  "Functional Proteomics Catalog!"             "AlphaFold 3 / ESM3 Foundation Models!"
-                 │                                            │
-                 ▼                                            ▼
-  THE CLINICAL CLIFF (2004–2009)               THE CLINICAL CLIFF (2024–2026)
-  • Repifermin fails Phase 2                   • REC-994 fails Phase 2 (CCM)
-  • LymphoStat-B misses Phase 2                • DSP-1181 axed in Phase 1
-  • Albuferon scrapped for toxicity            • BEN-2293 fails Phase 2a
-  • 95% equity drawdowns                       • Pure-play stocks collapse 80-95%
+```mermaid
+flowchart TD
+    subgraph S1["2000 GENOMICS CYCLE"]
+        G1["Human Genome Draft Completed (2000)"] --> G2["'What's the next catalyst?'<br/>'Mouse Genome!' (2002)"]
+        G2 --> G3["'What's the next catalyst?'<br/>'Rat Genome / SNP Haplotype Maps!'"]
+        G3 --> G4["'What's the next catalyst?'<br/>'Functional Proteomics Catalog!'"]
+        G4 --> G5["THE CLINICAL CLIFF (2004–2009)<br/>• Repifermin fails Phase 2<br/>• LymphoStat-B misses Phase 2<br/>• Albuferon scrapped for toxicity<br/>• 95% equity drawdowns"]
+    end
+    subgraph S2["2020–2026 AI BIO CYCLE"]
+        A1["AlphaFold 2 Solves Folding (2020)"] --> A2["'What's the next catalyst?'<br/>'200M Predicted Structures!' (2022)"]
+        A2 --> A3["'What's the next catalyst?'<br/>'RFdiffusion Generative Binders!' (2023)"]
+        A3 --> A4["'What's the next catalyst?'<br/>'AlphaFold 3 / ESM3 Foundation Models!'"]
+        A4 --> A5["THE CLINICAL CLIFF (2024–2026)<br/>• REC-994 fails Phase 2 (CCM)<br/>• DSP-1181 axed in Phase 1<br/>• BEN-2293 fails Phase 2a<br/>• Pure-play stocks collapse 80-95%"]
+    end
 ```
 
 ### The New "Mouse Genomes" of AI

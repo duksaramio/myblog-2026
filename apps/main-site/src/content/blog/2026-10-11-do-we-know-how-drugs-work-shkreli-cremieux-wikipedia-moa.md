@@ -49,24 +49,14 @@ To test François Fleuret's citation and Martin Shkreli's claim, we conducted a 
 
 What did we find? Shkreli's skepticism was not merely justified—it understated how poorly curated that Wikipedia category actually is.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│    Wikipedia "Drugs with Unknown MOA" Category Breakdown (154 Pages)  │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-    ┌───────────────────────────────┴───────────────────────────────┐
-    │                                                               │
-┌───▼──────────────────────────────────┐        ┌───────────────────▼──────────────────┐
-│   NON-APPROVED / NON-DRUGS (117)     │        │   REAL FDA-APPROVED MEDICATIONS (37) │
-│  - Research chems & designer synthetics: 48│        │  - Landmark "Solved" Targets: 7      │
-│  - Discredited / failed programs: 9  │        │    (Lenalidomide, Clavulanic acid,   │
-│  - Toxins, spices & industrial: 6    │        │     Selegiline, Rasagiline, etc.)    │
-│  - Soviet/Russian unapproved: 12     │        │  - Primary Target Known, Network     │
-│  - Veterinary / anthelmintic: 3      │        │    Biology Complex: 18               │
-│  - High-level concepts / duplicates: 14│      │    (Metformin, Ketamine, Lamotrigine)│
-│  - Discontinued / withdrawn: 25      │        │  - Truly Phenotypic / Incomplete: 12 │
-└──────────────────────────────────────┘        │    (Lithium, Tylenol, Anesthetics)   │
-                                                └──────────────────────────────────────┘
+```mermaid
+flowchart TD
+    Root["Wikipedia 'Drugs with Unknown MOA' Category Breakdown (154 Pages)"]
+    NonDrugs["NON-APPROVED / NON-DRUGS (117)<br/>• Research chems & designer synthetics: 48<br/>• Discredited / failed programs: 9<br/>• Toxins, spices & industrial: 6<br/>• Soviet/Russian unapproved: 12<br/>• Veterinary / anthelmintic: 3<br/>• High-level concepts / duplicates: 14<br/>• Discontinued / withdrawn: 25"]
+    RealDrugs["REAL FDA-APPROVED MEDICATIONS (37)<br/>• Landmark 'Solved' Targets: 7<br/>  (Lenalidomide, Clavulanic acid, Selegiline, Rasagiline, etc.)<br/>• Primary Target Known, Network Biology Complex: 18<br/>  (Metformin, Ketamine, Lamotrigine)<br/>• Truly Phenotypic / Incomplete: 12<br/>  (Lithium, Tylenol, Anesthetics)"]
+
+    Root --> NonDrugs
+    Root --> RealDrugs
 ```
 
 Out of the 154 entries on Wikipedia:
@@ -215,27 +205,14 @@ Human clinical trials do not measure "true lifelong health." They measure **surr
 
 As oncologist Vinay Prasad and colleagues have repeatedly documented, surrogate endpoints often correlate poorly with true Overall Survival ([Kim & Prasad, *Mayo Clin Proc* 2016, PMID: 27040409](https://pubmed.ncbi.nlm.nih.gov/27040409/); [Prasad et al., *JAMA Intern Med* 2015, PMID: 26291663](https://pubmed.ncbi.nlm.nih.gov/26291663/)).
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Human Objective                      │
-│            "Cure the cancer and save the patient"       │
-└───────────────────────────┬────────────────────────────┘
-                            │
-               OBJECTIVE COLLAPSE IN PROMPT
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                  AI Training Metric                    │
-│     "Maximize probability of passing Phase 3 trial"    │
-└───────────────────────────┬────────────────────────────┘
-                            │
-                 GOODHART / SPECIFICATION GAMING
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│             Exploiting the Trial Flaws                 │
-│  1. Dehydrate tumor stroma to fake CT shrinkage        │
-│  2. Induce 6-month cell-cycle pause (hits PFS)         │
-│  3. Delayed lethal cardiotoxicity at Month 9 (unseen)  │
-└────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["Human Objective<br/>'Cure the cancer and save the patient'"]
+    B["AI Training Metric<br/>'Maximize probability of passing Phase 3 trial'"]
+    C["Exploiting the Trial Flaws<br/>1. Dehydrate tumor stroma to fake CT shrinkage<br/>2. Induce 6-month cell-cycle pause (hits PFS)<br/>3. Delayed lethal cardiotoxicity at Month 9 (unseen)"]
+
+    A -->|"OBJECTIVE COLLAPSE IN PROMPT"| B
+    B -->|"GOODHART / SPECIFICATION GAMING"| C
 ```
 
 When human medicinal chemists design a drug, their progress is constrained by:

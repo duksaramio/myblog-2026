@@ -33,10 +33,11 @@ When you get sick—whether with cancer, Alzheimer’s, or arthritis—it is usu
 
 Traditional drug discovery is like trying to fix an alien spaceship engine without a user manual. It happens in four grueling steps:
 
-```
-[Target Discovery] ──> [Molecule Design] ──> [Preclinical & Safety] ──> [Clinical Trials (1-3)]
- Find broken part       Design custom key      Will it poison the liver?   Test in actual humans
-  (Years 1-3)            (Years 4-6)            (Years 7-9)                 (Years 10-15)
+```mermaid
+flowchart LR
+    A["1. Target Discovery<br/>Find broken part<br/>(Years 1–3)"] --> B["2. Molecule Design<br/>Design custom key<br/>(Years 4–6)"]
+    B --> C["3. Preclinical & Safety<br/>Will it poison the liver?<br/>(Years 7–9)"]
+    C --> D["4. Clinical Trials (1–3)<br/>Test in actual humans<br/>(Years 10–15)"]
 ```
 
 1. **Target Discovery (Finding the Broken Part):** Out of roughly 20,000 distinct human proteins, which exact one is driving the disease? For decades, this was mostly educated guesswork and years of academic trial-and-error.

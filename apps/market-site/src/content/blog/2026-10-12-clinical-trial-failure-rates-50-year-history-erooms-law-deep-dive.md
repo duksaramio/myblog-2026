@@ -202,19 +202,12 @@ While the macro industry baseline shows failure rates worsening from ~80% to ~92
 
 Modern clinical development has split into two parallel realities:
 
-```
-                                  ALL CLINICAL TRIALS
-                                          │
-                 ┌────────────────────────┴────────────────────────┐
-                 ▼                                                 ▼
-     BROAD / UNSTRATIFIED PATH                         PRECISION MEDICINE PATH
-  ───────────────────────────────                   ─────────────────────────────
-  • Solid Tumors (All-Comers): ~96% Fail            • Biomarker-Enriched: ~74% Fail
-  • CNS / Alzheimer's: ~95-99% Fail                 • Monogenic Rare Diseases: ~75% Fail
-  • Broad Metabolic Megatrials                      • Targeted Monoclonal Antibodies
-                 │                                                 │
-                 ▼                                                 ▼
-      CUMULATIVE SUCCESS: 3 - 5%                       CUMULATIVE SUCCESS: 20 - 26%
+```mermaid
+flowchart TD
+    ALL["ALL CLINICAL TRIALS"] --> B["BROAD / UNSTRATIFIED PATH<br/>• Solid Tumors (All-Comers): ~96% Fail<br/>• CNS / Alzheimer's: ~95-99% Fail<br/>• Broad Metabolic Megatrials"]
+    ALL --> P["PRECISION MEDICINE PATH<br/>• Biomarker-Enriched: ~74% Fail<br/>• Monogenic Rare Diseases: ~75% Fail<br/>• Targeted Monoclonal Antibodies"]
+    B --> BS["CUMULATIVE SUCCESS: 3 - 5%"]
+    P --> PS["CUMULATIVE SUCCESS: 20 - 26%"]
 ```
 
 ### 1. The Biomarker Revolution

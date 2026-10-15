@@ -27,9 +27,9 @@ Memgraph에는 세 가지 스토리지 모드가 있으며, 여기서 내리는 
 
 Memgraph의 생명줄은 RAM이다. 트랜잭션 모드에서 필요한 스토리지 메모리를 추정하는 공식은 다음과 같다.
 
-```
-StorageRAM = 정점(Vertices) × 204B + 간선(Edges) × 154B
-```
+$$
+\text{StorageRAM} = \text{Vertices} \times 204\text{ B} + \text{Edges} \times 154\text{ B}
+$$
 
 이것은 대략적인 추정치다. 실제 세부 내역을 뜯어보면 이렇다. 정점 하나는 최소 136바이트(객체 80B + 델타 56B)이고, 간선 하나는 최소 88바이트(객체 32B + 델타 56B)이며, 여기에 스킵리스트(SkipList) 컨테이너 오버헤드(노드 및 포인터당 약 24B)가 추가되고, 마지막으로 속성(properties) 데이터가 더해진다.
 

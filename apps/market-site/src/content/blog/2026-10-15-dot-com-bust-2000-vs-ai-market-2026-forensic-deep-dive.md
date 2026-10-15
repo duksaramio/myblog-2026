@@ -239,117 +239,15 @@ Tech optimists routinely argue: *"Even if the AI infrastructure buildout is a bu
 
 This argument ignores solid-state physics and thermodynamic obsolescence:
 
-<figure class="post-chart">
-  <svg viewBox="0 0 720 360" role="img" aria-label="Physical Collateral Decay: 2000 Dark Fiber vs. 2026 AI GPUs">
-    <title>Physical Collateral Decay: 2000 Dark Fiber vs. 2026 AI GPUs</title>
-    <!-- Chart Title & Subtitle -->
-    <text x="70" y="24" font-size="13" font-weight="700" fill="#111">PHYSICAL COLLATERAL DECAY: 2000 DARK FIBER VS. 2026 AI GPUS</text>
-    <text x="70" y="42" font-size="10.5" fill="#555">Asset Residual Economic Value (%) Over 15-Year Post-Installation Horizon</text>
-
-    <!-- Horizontal Grid Lines & Y-Axis Labels -->
-    <g stroke="rgba(0,0,0,0.12)" stroke-width="1">
-      <line x1="70" y1="68" x2="670" y2="68" />
-      <line x1="70" y1="112" x2="670" y2="112" stroke-dasharray="3,3" />
-      <line x1="70" y1="156" x2="670" y2="156" stroke-dasharray="3,3" />
-      <line x1="70" y1="200" x2="670" y2="200" stroke-dasharray="3,3" />
-      <line x1="70" y1="244" x2="670" y2="244" stroke-dasharray="3,3" />
-      <line x1="70" y1="288" x2="670" y2="288" stroke="rgba(0,0,0,0.45)" stroke-width="1.5" />
-    </g>
-    <line x1="70" y1="68" x2="70" y2="288" stroke="rgba(0,0,0,0.45)" stroke-width="1.5" />
-
-    <g font-size="10.5" fill="#444" text-anchor="end">
-      <text x="62" y="72">100%</text>
-      <text x="62" y="116">80%</text>
-      <text x="62" y="160">60%</text>
-      <text x="62" y="204">40%</text>
-      <text x="62" y="248">20%</text>
-      <text x="62" y="292">0%</text>
-    </g>
-
-    <!-- X-Axis Ticks & Labels (Linear scale: 40px per year from Yr 0 at x=70 to Yr 15 at x=670) -->
-    <g stroke="rgba(0,0,0,0.35)" stroke-width="1">
-      <line x1="70" y1="288" x2="70" y2="294" />
-      <line x1="110" y1="288" x2="110" y2="294" />
-      <line x1="150" y1="288" x2="150" y2="294" />
-      <line x1="190" y1="288" x2="190" y2="294" />
-      <line x1="230" y1="288" x2="230" y2="294" />
-      <line x1="270" y1="288" x2="270" y2="294" />
-      <line x1="310" y1="288" x2="310" y2="294" />
-      <line x1="390" y1="288" x2="390" y2="294" />
-      <line x1="470" y1="288" x2="470" y2="294" />
-      <line x1="550" y1="288" x2="550" y2="294" />
-      <line x1="670" y1="288" x2="670" y2="294" />
-    </g>
-    <g font-size="10.5" fill="#333" text-anchor="middle">
-      <text x="70" y="308">Yr 0</text>
-      <text x="110" y="308">Yr 1</text>
-      <text x="150" y="308">Yr 2</text>
-      <text x="190" y="308">Yr 3</text>
-      <text x="230" y="308">Yr 4</text>
-      <text x="270" y="308">Yr 5</text>
-      <text x="310" y="308">Yr 6</text>
-      <text x="390" y="308">Yr 8</text>
-      <text x="470" y="308">Yr 10</text>
-      <text x="550" y="308">Yr 12</text>
-      <text x="670" y="308">Yr 15</text>
-    </g>
-
-    <!-- Shaded Area: GAAP Depreciation Overstatement Gap (6-Yr GAAP vs. True GPU Decay) -->
-    <polygon points="70,68 310,266 230,266 190,248.4 150,200 110,129.6" fill="rgba(220, 38, 38, 0.10)" />
-
-    <!-- Series 1: 2000 Dark Fiber (Inert Silica Glass, 25-30 Yr Lifespan) -->
-    <polyline fill="none" stroke="#0284c7" stroke-width="3" points="70,68 150,70 230,72 310,75 390,78 470,81 550,85 670,90" />
-    <g fill="#0284c7">
-      <circle cx="70" cy="68" r="3.5" />
-      <circle cx="190" cy="71" r="3.5" />
-      <circle cx="310" cy="75" r="3.5" />
-      <circle cx="470" cy="81" r="3.5" />
-      <circle cx="670" cy="90" r="3.5" />
-    </g>
-
-    <!-- Series 2: 10-K GAAP Depreciation Schedule (6-Yr Linear to 10% Residual) -->
-    <line x1="70" y1="68" x2="310" y2="266" stroke="#d97706" stroke-width="2" stroke-dasharray="6,4" />
-    <circle cx="310" cy="266" r="3.5" fill="#d97706" />
-
-    <!-- Series 3: 2026 AI GPU Silicon (H100 / Blackwell True Economic Value) -->
-    <polyline fill="none" stroke="#dc2626" stroke-width="3" points="70,68 110,129.6 150,200 190,248.4 230,266 310,266 670,266" />
-    <g fill="#dc2626">
-      <circle cx="70" cy="68" r="3.5" />
-      <circle cx="110" cy="129.6" r="3.5" />
-      <circle cx="150" cy="200" r="3.5" />
-      <circle cx="190" cy="248.4" r="3.5" />
-      <circle cx="230" cy="266" r="3.5" />
-      <circle cx="670" cy="266" r="3.5" />
-    </g>
-
-    <!-- Callout Annotations -->
-    <rect x="355" y="92" width="305" height="48" rx="3" fill="rgba(224, 242, 254, 0.85)" stroke="#0284c7" stroke-width="1" />
-    <text x="365" y="109" font-size="10.5" font-weight="700" fill="#0369a1">2000 Dark Fiber (Inert Silica Glass)</text>
-    <text x="365" y="123" font-size="9.5" fill="#1e293b">25–30 yr physical life underground (~0 holding cost).</text>
-    <text x="365" y="135" font-size="9.5" fill="#1e293b">Lit 7–15 yrs later by YouTube, iPhone &amp; AWS Cloud.</text>
-
-    <text x="208" y="156" font-size="9.5" font-weight="700" fill="#b45309">6-Yr GAAP Schedule (GOOG/MSFT)</text>
-    <text x="208" y="169" font-size="9" fill="#92400e">Shaded: $110B–$180B/yr Depreciation Gap</text>
-
-    <rect x="242" y="206" width="418" height="48" rx="3" fill="rgba(254, 226, 226, 0.85)" stroke="#dc2626" stroke-width="1" />
-    <text x="252" y="222" font-size="10.5" font-weight="700" fill="#b91c1c">2026 AI GPU Silicon (H100 / Blackwell Economic Value)</text>
-    <text x="252" y="236" font-size="9.5" fill="#1e293b">75%–85% value decay in 36–48 mos via Moore's Law + Jevons energy</text>
-    <text x="252" y="248" font-size="9.5" fill="#1e293b">efficiency. Hits 10% scrap floor when power cost exceeds token price.</text>
-
-    <!-- Legend -->
-    <g transform="translate(70, 336)" font-size="10" fill="#222">
-      <line x1="0" y1="-4" x2="22" y2="-4" stroke="#0284c7" stroke-width="3" />
-      <text x="28" y="0">2000 Dark Fiber</text>
-
-      <line x1="155" y1="-4" x2="177" y2="-4" stroke="#d97706" stroke-width="2" stroke-dasharray="5,3" />
-      <text x="183" y="0">6-Yr GAAP Accounting Curve</text>
-
-      <line x1="375" y1="-4" x2="397" y2="-4" stroke="#dc2626" stroke-width="3" />
-      <text x="403" y="0">2026 AI GPU Economic Value (10% Scrap Floor)</text>
-    </g>
-  </svg>
-  <figcaption>Figure 1: Residual economic value trajectory of 2000 telecom dark fiber versus 2026 AI GPU clusters and hyperscaler 6-year straight-line GAAP depreciation schedules.</figcaption>
-</figure>
+```mermaid
+xychart-beta
+    title "Physical Collateral Decay: 2000 Dark Fiber vs. 6-Yr GAAP vs. 2026 AI GPUs (%)"
+    x-axis ["Yr 0", "Yr 1", "Yr 2", "Yr 3", "Yr 4", "Yr 5", "Yr 6", "Yr 8", "Yr 10", "Yr 12", "Yr 15"]
+    y-axis "Residual Economic Value (%)" 0 --> 100
+    line "2000 Dark Fiber (Silica Glass)" [100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90]
+    line "6-Yr GAAP Schedule (GOOG/MSFT)" [100, 85, 70, 55, 40, 25, 10, 10, 10, 10, 10]
+    line "2026 AI GPU True Economic Value" [100, 72, 40, 18, 10, 10, 10, 10, 10, 10, 10]
+```
 
 * **Why 2000 Dark Fiber Survived the Bust:** In 1999–2001, telecom carriers laid 80+ million miles of optical fiber under the delusion—debunked by AT&T Labs mathematician **Andrew Odlyzko** in *First Monday* (2000)—that internet traffic was doubling every 100 days (~1,000% per year) rather than once per year (~100%). When WorldCom, Global Crossing, and 360networks went bankrupt, bondholders and equity holders were wiped out, **but the physical silica glass fiber remained intact underground for 30 years at near-zero holding cost**. Only the optical transceivers at the ends of the cable needed upgrading. Seven to ten years later, Netflix, YouTube, iPhone mobile backhaul, and AWS cloud computing lit that cheap dark fiber.
 * **Why 2026 "Dark GPUs" Cannot Wait for Demand:** An Nvidia H100 or B200 GPU cluster is not passive glass in a trench. It is an active, power-hungry semiconductor system whose economic value is governed by **tokens generated per megawatt-hour of electricity**. When next-generation architectures (Rubin, Feynman, or custom 2nm ASICs) deliver 4x to 8x higher inference throughput per watt within 36 months, running a 4-year-old GPU cluster becomes **gross-margin negative** because the electricity and cooling bill exceeds the market clearing price of the tokens it produces. If AI software demand takes 7 to 10 years to mature, **today's $750B+ GPU cohorts will be electronic scrap metal long before that demand arrives.**

@@ -42,22 +42,13 @@ Moderna 的官方宣讲 PPT 甚至直接将 mRNA 标榜为 **“操作系统”*
 
 当时人们随之做出的预测是：mRNA 将迅速席卷医学的每一个角落：季节性流感、RSV、巨细胞病毒（CMV）、EB 病毒、HIV、癌症、心力衰竭以及罕见的遗传性酶缺乏症。
 
-```
-       The Silicon Valley Biological Compiler Fallacy (2021)
-       ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
-       │   Digital Code  │ ───>  │  LNP Injection  │ ───>  │ Universal Cure  │
-       │  (A, U, C, G)   │       │  "Run Binary"   │       │ (Any Protein)   │
-       └─────────────────┘       └─────────────────┘       └─────────────────┘
-                                          │
-                                  REALITY CHECK (2026)
-                                           ▼
-       ┌─────────────────────────────────────────────────────────────────────┐
-       │ 1. 80-90% trapped in liver (LDLR / ApoE clearance)                 │
-       │ 2. 98% destroyed in endosomes (1-2% escape efficiency)              │
-       │ 3. Repeat dosing triggers neutralizing & anti-PEG antibodies        │
-       │ 4. Systemic lipid reactogenicity & organ inflammation               │
-       │ 5. Cold-chain instability & thermodynamic degradation               │
-       └─────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph Fallacy["硅谷的生物编译器谬误 (2021)"]
+        direction LR
+        A["数字代码输入<br/>(A, U, C, G)"] --> B["LNP 纳米注射<br/>'运行二进制'"] --> C["万能神药<br/>(任意目标蛋白)"]
+    end
+    Fallacy -->|"现实审视 (2026)"| D["1. 80-90% 蓄积于肝脏被清除 (LDLR / ApoE 捕获陷阱)<br/>2. 98% 被困在内体中降解 (内体逃逸率仅 1-2%)<br/>3. 重复给药诱发抗 PEG 抗体与中和抗体 (ABC 现象)<br/>4. 脂质纳米颗粒引发全身反应原性与器官炎症<br/>5. 深低温冷链依赖与单链 RNA 热力学不稳定性"]
 ```
 
 当开发者试图将疫苗的成功蓝图套用到季节性呼吸道疾病和慢性系统性疗法中时，宿醉如期而至。
@@ -120,26 +111,15 @@ Moderna 的官方宣讲 PPT 甚至直接将 mRNA 标榜为 **“操作系统”*
 
 具体而言，纳米颗粒表面会被**载脂蛋白 E（ApoE）**大量包被。ApoE 在生物体内的本职工作是将膳食脂肪护送至**肝脏肝细胞**表面的低密度脂蛋白受体（LDLR）。
 
-```
-    Intravenous Injection
-           │
-           ▼
-    [ LNP Formulation ] ──> Blood Plasma ──> ApoE Protein Opsonization
-                                                      │
-                                                      ▼
-                                       Binds LDLR on Hepatocytes
-                                                      │
-                                                      ▼
-                                      ┌───────────────────────────────┐
-                                      │  80% to 90%+ Cleared to LIVER │
-                                      └───────────────────────────────┘
-                                                      │
-                    ┌─────────────────────────────────┴─────────────────────────────────┐
-                    ▼                                                                   ▼
-       LIVER-BASED TARGETS (SUCCESS)                                    NON-LIVER TARGETS (COLLAPSE)
-       • Transthyretin Amyloidosis (ATTR)                                • Lungs (Cystic Fibrosis)
-       • PCSK9 / Hypercholesterolemia                                    • Heart / Brain / Skeletal Muscle
-       • Hepatic Enzyme Deficiencies                                     • Autoimmune T-cells
+```mermaid
+flowchart TD
+    A["静脉注射给药"] --> B["LNP 纳米制剂"]
+    B --> C["血浆"]
+    C --> D["ApoE 载脂蛋白调理包被"]
+    D --> E["结合肝细胞表面的 LDLR 受体"]
+    E --> F["80% 至 90% 以上被清除并蓄积于肝脏"]
+    F --> G["肝脏靶点疾病 (取得成功)<br/>• 转甲状腺素蛋白淀粉样变性 (ATTR)<br/>• PCSK9 / 高胆固醇血症<br/>• 肝脏罕见遗传酶缺乏症"]
+    F --> H["非肝脏靶点疾病 (临床受挫)<br/>• 肺部 (囊性纤维化)<br/>• 心脏 / 大脑 / 骨骼肌<br/>• 自身免疫性 T 细胞"]
 ```
 
 正如 [Paunovska 等人在《自然综述：遗传学》（*Nature Reviews Genetics*, 2022）](https://pubmed.ncbi.nlm.nih.gov/34983972/)中所总结的那样，**全身静脉给药的 LNP 中，有 80% 至 90% 以上会蓄积在肝脏中**。
@@ -183,17 +163,12 @@ Moderna 的官方宣讲 PPT 甚至直接将 mRNA 标榜为 **“操作系统”*
 
 **因为 ABO2203 巧妙地利用 mRNA 攻克了细胞免疫治疗中最棘手的危机：极其昂贵复杂的制备流程与严重毒性。**
 
-```
-                     The Paradigm Shift in Cellular Medicine
-                     
-   CONVENTIONAL EX VIVO CAR-T                        IN VIVO mRNA CELL ENGAGER (ABO2203)
-   ┌────────────────────────────────┐                ┌────────────────────────────────┐
-   │ 1. Harvest patient T-cells     │                │ 1. Off-the-shelf LNP injection │
-   │ 2. Ship to GMP viral facility  │                │ 2. Patient cells express       │
-   │ 3. 4-6 week wait ($400,000+)   │       VS.      │    CD19xCD3 bispecific in vivo │
-   │ 4. Toxic lymphodepletion chemo │                │ 3. Transient B-cell depletion  │
-   │ 5. High risk of lethal CRS/ICANS│               │ 4. Zero CRS reported in clinic │
-   └────────────────────────────────┘                └────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph Root["细胞免疫医学的范式转移"]
+        direction LR
+        A["传统体外制备 CAR-T (Ex Vivo)<br/>1. 采集分离患者自体 T 细胞<br/>2. 运送至 GMP 病毒洁净车间改造<br/>3. 漫长等待 4–6 周 ($400,000+)<br/>4. 剧毒的清淋化疗预处理<br/>5. 致命 CRS / ICANS 神经毒性高风险"] ---|"VS."| B["体内 mRNA 细胞衔接器 (ABO2203)<br/>1. 现货型 (Off-the-shelf) LNP 直接注射<br/>2. 患者自体细胞在体内表达 CD19xCD3 双抗<br/>3. 瞬时可控的深度 B 细胞耗竭<br/>4. 临床试验中实现 0 例严重 CRS 报告"]
+    end
 ```
 
 传统上，通过耗竭 B 细胞来治疗严重的自身免疫性疾病（如系统性红斑狼疮或难治性类风湿关节炎）需要：
@@ -259,16 +234,14 @@ Moderna 的官方宣讲 PPT 甚至直接将 mRNA 标榜为 **“操作系统”*
 
 答案需要坚决抛弃两种天真的极端偏见：
 
-```
-        THE CYCLE OF mRNA REALISM
-        
-  1. Hype Era (2020-2021)       2. Crash Era (2022-2025)       3. Mature Era (2026+)
-  "Universal compiler for       "It's a one-hit pandemic       "An indispensable, targeted
-   all human disease;            wonder; delivery failed;       biological weapon with
-   biology is just software."    pipelines are worthless."      precise clinical scope."
-             │                              │                              │
-             ▼                              ▼                              ▼
-      CATEGORICAL ERROR              CYNICAL MISTAKE                EMPIRICAL REALITY
+```mermaid
+flowchart TD
+    subgraph Cycle["mRNA 现实主义演进的三阶段周期"]
+        direction TB
+        A1["1. 狂热期 (2020–2021)<br/>'攻克人类所有疾病的万能编译器；<br/>生物学不过就是编写软件。'"] --> B1["范畴逻辑谬误"]
+        A2["2. 幻灭期 (2022–2025)<br/>'不过是疫情期间的昙花一现；<br/>递送彻底失败；研发管线一文不值。'"] --> B2["短视愤世偏见"]
+        A3["3. 成熟期 (2026+)<br/>'拥有精确临床适应症边界、<br/>无可替代的精准生物武器。'"] --> B3["经验客观现实"]
+    end
 ```
 
 1. **科技狂热分子在应用边界上犯了错：** mRNA 绝不是所谓的“生命软件”。人体并不是一台 AWS 云服务器，输入一段代码就能期待无 Bug 运行。你不能无视肝脏趋向性、内体滞留、免疫原性或器官炎症。当不加区分地将其套用在需要长期稳定补充的慢性蛋白质替代疗法，或是已有成熟低成本替代方案的普通季节性感染上时，mRNA 必然碰壁并让市场付出数百亿美元的惨痛代价。

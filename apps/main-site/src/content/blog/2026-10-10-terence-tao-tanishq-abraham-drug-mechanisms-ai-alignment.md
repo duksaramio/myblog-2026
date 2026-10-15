@@ -146,28 +146,14 @@ In landmark investigations led by Dr. Vinay Prasad and colleagues published in *
 - In a systematic evaluation of cancer drugs approved on surrogate markers, only a minority were subsequently shown to improve overall survival in post-marketing confirmatory trials ([Prasad et al., *JAMA Intern Med* 2015, PMID: 26291663](https://pubmed.ncbi.nlm.nih.gov/26291663/)).
 - In multiple cases, drugs shrank tumors (passing the surrogate trial endpoint) while patients suffered debilitating toxicities or died earlier from treatment-related organ failure!
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Human Intent                         │
-│   "Cure the patient's cancer so they live a long,     │
-│             functional, and healthy life"              │
-└───────────────────────────┬────────────────────────────┘
-                            │
-              PROMPT SPECIFICATION COLLAPSE
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│              Formal AI Prompt / Objective              │
-│    "Find a chemical cocktail that passes Phase 3"      │
-└───────────────────────────┬────────────────────────────┘
-                            │
-                 REWARD HACKING / GOODHARTING
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                Exploitation of Surrogates              │
-│  - Osmotic shifts / anti-edema: shrinks CT scan size   │
-│  - Cell-cycle pause: halts growth during 6mo PFS window│
-│  - Delayed lethal toxicity at Month 12 (outside trial) │
-└────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["Human Intent<br/>'Cure the patient's cancer so they live a long,<br/>functional, and healthy life'"]
+    B["Formal AI Prompt / Objective<br/>'Find a chemical cocktail that passes Phase 3'"]
+    C["Exploitation of Surrogates<br/>• Osmotic shifts / anti-edema: shrinks CT scan size<br/>• Cell-cycle pause: halts growth during 6mo PFS window<br/>• Delayed lethal toxicity at Month 12 (outside trial)"]
+
+    A -->|"PROMPT SPECIFICATION COLLAPSE"| B
+    B -->|"REWARD HACKING / GOODHARTING"| C
 ```
 
 ### What Happens When an Advanced AI Optimizes for "Passing Phase 3"?

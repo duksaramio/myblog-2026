@@ -71,19 +71,23 @@ Financial aggregator portals frequently underreport Corvus's market capitalizati
 * **Cash, Cash Equivalents & Marketable Securities:** **$215.23 million** as of June 30, 2026 ($18.905M in cash and cash equivalents + $170.234M in U.S. Treasury securities + $26.089M in U.S. government agency securities), bolstered by the **January 23, 2026 follow-on offering** of 9,085,778 shares at **$22.15 per share** ($189.407 million in net proceeds).
 * **Operating Burn Trajectory:** In Q2 2026, R&D expenses jumped 102.8% year-over-year to **$15.96 million** (up from $7.87M in Q2 2025) and G&A rose to **$3.33 million**, bringing quarterly operating expenses to **$19.30 million** (6-month operating loss of $34.17 million; 6-month operating cash outflow of **$25.77 million**, plus **$5.00 million** invested in China partner **Angel Pharmaceuticals Co. Ltd.**). Factoring in estimated Q3 2026 net cash burn of ~$15M–$17M, Corvus enters mid-October 2026 with approximately **$198M–$200M in net cash** (~$2.00 per diluted share).
 
-```
-                     CORVUS PHARMACEUTICALS ($CRVS) CAPITAL STRUCTURE AT $9.84
-   
-   [ Common Stock: 84.12M ]   [ Pre-Funded Warrants: 8.28M ]   [ Net Treasury Options: 6.65M ]
-               │                            │                                 │
-               └────────────────────────────┼─────────────────────────────────┘
-                                            ▼
-                    [ GAAP Basic + Pre-Funded: 92.40M ($909.2M Cap) ]
-                    [ Fully Diluted (Treasury): 99.05M ($974.7M Cap) ]
-                                            │
-                       Less: Q2 Cash ($215.2M) / Est. Q3 Cash (~$199M)
-                                            ▼
-                    [ Implied Enterprise Value: $694.0M - $775.7M ]
+```mermaid
+flowchart TD
+    classDef equity fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef total fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+    classDef cash fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+    classDef ev fill:#f3e8ff,stroke:#9333ea,stroke-width:2px;
+
+    subgraph Cap["CORVUS PHARMACEUTICALS ($CRVS) CAPITAL STRUCTURE AT $9.84"]
+        CS["Common Stock:<br/>84.12M shares"]:::equity
+        PFW["Pre-Funded Warrants ($0.0001):<br/>8.28M shares"]:::equity
+        OPT["Net Treasury Options ($4.90 WAEP):<br/>6.65M net dilutive shares"]:::equity
+
+        CS & PFW --> BASIC["GAAP Basic + Pre-Funded:<br/>92.40M shares ($909.2M Cap)"]:::total
+        BASIC & OPT --> DIL["Fully Diluted (Treasury Method):<br/>99.05M shares ($974.7M Cap)"]:::total
+        DIL --> CASH["Less Net Cash:<br/>Q2 Cash $215.2M / Est. Q3 Cash ~$199M"]:::cash
+        CASH --> EV["Implied Enterprise Value:<br/>$694.0M – $775.7M"]:::ev
+    end
 ```
 
 ### Insider Alignment & Governance Upgrading
@@ -118,21 +122,22 @@ Why have pharmaceutical giants including Pfizer (`PF-06465469`), Bristol Myers S
 
 The answer lies in the **TEC-family kinase homology problem**. In human T cells, two closely related TEC-family non-receptor tyrosine kinases—**ITK (Interleukin-2-inducible T-cell kinase)** and **RLK (Resting Lymphocyte Kinase, also known as TXK)**—operate downstream of the T-cell receptor (TCR) and ZAP-70 to phosphorylate **PLCγ1**, triggering calcium flux (`NFAT`), `NF-κB`, `ERK`, and `mTOR` signaling:
 
-```
-                      PROXIMAL TCR SIGNALING & THE ITK / RLK BIFURCATION
-   
-                            [ TCR / CD3 + CD28 Costimulation ]
-                                            │
-                                            ▼
-                                  [ Lck / ZAP-70 Activation ]
-                                            │
-                     ┌──────────────────────┴──────────────────────┐
-                     ▼                                             ▼
-      [ ITK (Dominant in Th2 & Th17) ]              [ RLK / TXK (Redundant in Th1 & CD8+) ]
-      • Contains Cys442 in ATP pocket               • Contains homologous Cys350 in pocket
-      • Drives GATA3 / STAT6 (Th2: IL-4/5/13)       • Sustains T-bet / IFN-γ / TNF-α / GZMB
-      • Drives RORγt / STAT3 (Th17: IL-17A/F)       • Preserves CD8+ CTL & anti-viral defense
-      • Suppresses BACH2 / Foxp3 (Treg switch)      • Spared ONLY if [Drug] << IC50(RLK)
+```mermaid
+flowchart TD
+    classDef upstream fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef itk fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    classDef rlk fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+
+    subgraph TCR_Cascade["PROXIMAL TCR SIGNALING & THE ITK / RLK BIFURCATION"]
+        TCR["TCR / CD3 + CD28 Costimulation"]:::upstream
+        ZAP["Lck / ZAP-70 Activation"]:::upstream
+        ITK_NODE["ITK (Dominant in Th2 & Th17)<br/>• Contains Cys442 in ATP pocket<br/>• Drives GATA3 / STAT6 (Th2: IL-4/5/13)<br/>• Drives RORγt / STAT3 (Th17: IL-17A/F)<br/>• Suppresses BACH2 / Foxp3 (Treg switch)"]:::itk
+        RLK_NODE["RLK / TXK (Redundant in Th1 & CD8+)<br/>• Contains homologous Cys350 in pocket<br/>• Sustains T-bet / IFN-γ / TNF-α / GZMB<br/>• Preserves CD8+ CTL & anti-viral defense<br/>• Spared ONLY if Free Drug << IC50(RLK)"]:::rlk
+
+        TCR --> ZAP
+        ZAP --> ITK_NODE
+        ZAP --> RLK_NODE
+    end
 ```
 
 In classic murine genetic studies (`Itk-/-` single-knockout vs. `Itk-/- Rlk-/-` double-knockout mice), deleting *Itk* alone impairs TCR signal strength just enough to block **Th2 (`GATA3`)** and **Th17 (`RORγt`)** differentiation while shifting naive CD4+ T cells toward **Th1 (`T-bet`)** and **Regulatory T cells (`Foxp3+ Tregs`)**, because **RLK/TXK** remains intact to rescue Th1 and CD8+ cytotoxic T lymphocyte (CTL) function. However, when *both* **ITK and RLK** are inhibited (`Itk-/- Rlk-/-` double knockout or dual ITK/RLK inhibitor `PRN694`), PLCγ1 phosphorylation collapses completely, paralyzing CD8+ granzyme B, IL-2, and IFN-γ production and causing global T-cell immunosuppression.

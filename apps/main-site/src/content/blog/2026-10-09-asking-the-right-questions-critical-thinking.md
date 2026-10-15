@@ -75,23 +75,10 @@ To sustain strong-sense critical thinking, an individual must cultivate four fou
 
 Before an argument can be evaluated, its skeletal structure must be exposed. Every argument consists of two foundational visible elements: a **conclusion** and the **reasons** offered to support it.
 
-```
-┌────────────────────────────────────────┐
-│             Issue (Question)           │
-└──────────────────┬─────────────────────┘
-                   │
-                   ▼
-┌────────────────────────────────────────┐
-│         Conclusion (Thesis)            │
-│       "What should I believe?"         │
-└──────────────────▲─────────────────────┘
-                   │
-                   │ supported by (Warrants)
-                   │
-┌──────────────────┴─────────────────────┐
-│          Reasons & Evidence            │
-│         "Why is this true?"            │
-└────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    I["Issue (Question)"] --> C["Conclusion (Thesis)<br/>'What should I believe?'"]
+    R["Reasons & Evidence<br/>'Why is this true?'"] -->|"supported by (Warrants)"| C
 ```
 
 ### Critical Question 1: What Are the Issue and the Conclusion?
@@ -148,15 +135,11 @@ Persuaders often rely on abstract, emotionally loaded words to manufacture easy 
 
 In every argument, the visible reasons do not directly touch the conclusion. They are linked by unstated, taken-for-granted beliefs called **assumptions**. Understanding an argument requires identifying these hidden maneuvers, much like discovering the secret mechanisms behind a stage magician's trick.
 
-```
-┌────────────────┐                     ┌────────────────┐
-│     Reason     │ ──[Unstated Link]──▶│   Conclusion   │
-└────────────────┘                     └────────────────┘
-                           ▲
-                           │
-                 Invisible Assumptions:
-                 1. Value Priorities
-                 2. Descriptive Beliefs
+```mermaid
+flowchart TD
+    R["Reason"] -->|"Unstated Link"| C["Conclusion"]
+    A["Invisible Assumptions:<br/>1. Value Priorities<br/>2. Descriptive Beliefs"] -.->|"Bridges Gap"| R
+    A -.->|"Supports"| C
 ```
 
 #### 1. Value Assumptions (Prescriptive)
@@ -223,16 +206,12 @@ Evidence is explicit information shared by a communicator to justify the dependa
 
 The authors systematically review the strengths and vulnerabilities of the major categories of evidence:
 
-```
-┌────────────────────────────────────────────────────────┐
-│            The Spectrum of Evidence Dependability       │
-├────────────────────────────────────────────────────────┤
-│ WEAK                                            STRONG │
-│ Anecdotes ➔ Testimonials ➔ Expert Opinion ➔ Controlled │
-│ & Personal   & Case Studies   (Independent)    Peer-   │
-│ Experience                                    Reviewed │
-│                                               Studies  │
-└────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph Spectrum["The Spectrum of Evidence Dependability (WEAK ➔ STRONG)"]
+        direction LR
+        E1["WEAK:<br/>Anecdotes & Personal Experience"] --> E2["Testimonials & Case Studies"] --> E3["Expert Opinion<br/>(Independent)"] --> E4["STRONG:<br/>Controlled Peer-Reviewed Studies"]
+    end
 ```
 
 #### 1. Personal Experience and Anecdotes
@@ -293,16 +272,12 @@ When characteristics X and Y correlate in research, there are at least four dist
 3. **A third factor, Z, causes both X and Y (*Neglect of a Common Cause*):** A study shows ice cream consumption correlates with violent crime spikes. Ice cream does not cause aggression; summer heat waves (Z) increase both outdoor ice cream sales and interpersonal friction.
 4. **X and Y mutually reinforce each other (*Confusion of Cause and Effect*):** Depression may cause insomnia, but chronic insomnia also intensifies depression.
 
-```
-                  ┌──────────────────────────────┐
-                  │ Correlation between X and Y  │
-                  └──────────────┬───────────────┘
-                                 │
-         ┌───────────────┬───────┴───────┬───────────────┐
-         ▼               ▼               ▼               ▼
-     [X ➔ Y]         [Y ➔ X]         [Z ➔ X & Y]     [X ⇄ Y]
-     Direct          Reverse          Confounding   Reciprocal
-    Causation       Causation          Factor       Feedback
+```mermaid
+flowchart TD
+    C["Correlation between X and Y"] --> D1["X ➔ Y<br/>Direct Causation"]
+    C --> D2["Y ➔ X<br/>Reverse Causation"]
+    C --> D3["Z ➔ X & Y<br/>Confounding Factor"]
+    C --> D4["X ⇄ Y<br/>Reciprocal Feedback"]
 ```
 
 #### Temporal Fallacies and Dispositional Biases
@@ -390,19 +365,14 @@ They are called speed bumps because:
 
 ### Critical Question 11: What Cognitive Biases Are Clouding Our Judgment?
 
-```
-                    ┌────────────────────────────┐
-                    │    Cognitive Speed Bumps   │
-                    └─────────────┬──────────────┘
-          ┌───────────────────────┼───────────────────────┐
-          ▼                       ▼                       ▼
-  [Egocentrism]          [Belief Perseverance]   [Wishful Thinking]
-  "The universe          "I've always believed   "I want it to be
-   revolves around        this, so it must        true, so it is
-   my experience"         be true"                true"
-          │                       │                       │
-          ▼                       ▼                       ▼
-   Curse of Knowledge     Confirmation Bias       "Truthiness"
+```mermaid
+flowchart TD
+    S["Cognitive Speed Bumps"] --> B1["Egocentrism<br/>'The universe revolves around my experience'"]
+    S --> B2["Belief Perseverance<br/>'I have always believed this, so it must be true'"]
+    S --> B3["Wishful Thinking<br/>'I want it to be true, so it is true'"]
+    B1 --> C1["Curse of Knowledge"]
+    B2 --> C2["Confirmation Bias"]
+    B3 --> C3["'Truthiness'"]
 ```
 
 1. **The Social Discomfort of Questioning:** People often perceive critical questions as personal attacks or courtroom cross-examinations (*"Why are you picking on me?"*). Critical thinkers must learn to frame questions with genuine curiosity, warmth, and humility (*"Help me understand your reasoning"*).

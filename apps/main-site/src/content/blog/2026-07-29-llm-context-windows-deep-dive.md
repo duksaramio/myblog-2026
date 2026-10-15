@@ -47,24 +47,17 @@ Programming code, legal text, tables, JSON, and XML all produce **more tokens pe
 
 Most people think only the user prompt consumes context. It doesn't. The full budget includes:
 
-```
-+--------------------------------------------------+
-| System Prompt                                    |
-+--------------------------------------------------+
-| Developer / System Instructions                  |
-+--------------------------------------------------+
-| Conversation History                             |
-+--------------------------------------------------+
-| Retrieved RAG Documents                          |
-+--------------------------------------------------+
-| Tool Definitions + Tool Outputs                  |
-+--------------------------------------------------+
-| Multimodal Attachments                           |
-+--------------------------------------------------+
-| Current User Prompt                              |
-+--------------------------------------------------+
-| Reserved Output Budget                           |
-+--------------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph Budget["LLM Context Window Budget Allocation"]
+        SP["1. System Prompt"] --> DEV["2. Developer / System Instructions"]
+        DEV --> CH["3. Conversation History"]
+        CH --> RAG["4. Retrieved RAG Documents"]
+        RAG --> TOOLS["5. Tool Definitions + Tool Outputs"]
+        TOOLS --> MM["6. Multimodal Attachments"]
+        MM --> UP["7. Current User Prompt"]
+        UP --> OUT["8. Reserved Output Budget"]
+    end
 ```
 
 Output budgets are usually much smaller than input budgets — a model with 1M input may cap generation at 128K.
@@ -181,37 +174,15 @@ A common misconception: "With 1M-token windows, RAG is obsolete." Empirically fa
 
 For regulated environments (GxP, SOPs, CAPAs, deviations, validation docs) this matters acutely because evidence must remain traceable. A practical pipeline:
 
-```
-User Question
-      │
-      ▼
-Metadata Filter
-(Product, Site, Process, Version)
-      │
-      ▼
-Hybrid Search
-(BM25 + Dense Retrieval)
-      │
-      ▼
-Reranking
-      │
-      ▼
-Top 5–15 Evidence Chunks
-      │
-      ▼
-Context Builder
-  • SOP excerpts
-  • CAPA references
-  • Deviation details
-  • Glossary
-  • User question
-  • Clear instructions
-      │
-      ▼
-LLM
-      │
-      ▼
-Answer with citations
+```mermaid
+flowchart TD
+    Q["User Question"] --> MF["Metadata Filter<br/>(Product, Site, Process, Version)"]
+    MF --> HS["Hybrid Search<br/>(BM25 + Dense Retrieval)"]
+    HS --> RR["Reranking"]
+    RR --> CHUNKS["Top 5–15 Evidence Chunks"]
+    CHUNKS --> CB["Context Builder<br/>• SOP excerpts & CAPA references<br/>• Deviation details & Glossary<br/>• User question & Clear instructions"]
+    CB --> LLM["LLM"]
+    LLM --> ANS["Answer with Citations"]
 ```
 
 This is typically more accurate than loading an entire QMS into the model. It also supports auditability — every claim traces back to a retrieved source.

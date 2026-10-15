@@ -57,26 +57,13 @@ To understand why Twist enjoys an economic moat in synthetic DNA, one must first
 
 For more than four decades, the standard industrial method for synthesizing artificial DNA has been **phosphoramidite chemistry**, developed in the early 1980s by Marvin Caruthers. In this cyclic chemical process, four protected deoxynucleoside phosphoramidite monomers (Adenine, Cytosine, Guanine, Thymine) are sequentially coupled, capped, oxidized, and deprotected onto a solid support to build an oligonucleotide base by base:
 
-```
-                            THE 4-STEP PHOSPHORAMIDITE CYCLE
-                                          │
-                  ┌───────────────────────┴───────────────────────┐
-                  ▼                                               ▼
-         [ 1. Deprotection ]                             [ 2. Coupling ]
-         Remove 5'-DMT protecting                        Add activated nucleoside
-         group with trichloroacetic acid                 phosphoramidite monomer
-                  │                                               │
-                  └───────────────────────┬───────────────────────┘
-                                          ▼
-                                   [ 3. Capping ]
-                               Acetylate unreacted 5'-OH
-                               to block truncation errors
-                                          │
-                                          ▼
-                                  [ 4. Oxidation ]
-                               Iodine converts unstable
-                               phosphite triester to stable
-                               phosphate backbone
+```mermaid
+flowchart TD
+    Root["THE 4-STEP PHOSPHORAMIDITE CYCLE"] --> S1["1. Deprotection<br/>Remove 5'-DMT protecting group with trichloroacetic acid"]
+    Root --> S2["2. Coupling<br/>Add activated nucleoside phosphoramidite monomer"]
+    S1 --> S3["3. Capping<br/>Acetylate unreacted 5'-OH to block truncation errors"]
+    S2 --> S3
+    S3 --> S4["4. Oxidation<br/>Iodine converts unstable phosphite triester to stable phosphate backbone"]
 ```
 
 ### The Legacy Bottleneck: 96-Well Plastic Plates
@@ -130,17 +117,10 @@ Twist maintains internal R&D in enzymatic chemistry, but for high-throughput, lo
 
 Twist Bioscience reports its operations across three primary commercial pillars, plus an advanced exploratory division:
 
-```
-                          TWIST BIOSCIENCE REVENUE ARCHITECTURE
-                                            │
-         ┌──────────────────────────────────┴──────────────────────────────────┐
-         ▼                                                                     ▼
-[ NGS Target Enrichment ]                                    [ DNA Synthesis & Protein Solutions ]
-  • Q3 FY26: $61.8M (52.2% of rev)                             • Q3 FY26: $56.6M (47.8% of rev)
-  • YoY Growth: +12%                                           • YoY Growth: +39%
-  • Core: Biotinylated capture panels                          • Core: Clonal Genes, Express Genes,
-  • Key Market: Liquid Biopsy, Oncology                          Oligo Pools, Biopharma Services
-  • Moat: Clinical assay lock-in (IVD/LDT)                     • Driver: Wilsonville Automation, AI/ML
+```mermaid
+flowchart TD
+    Root["TWIST BIOSCIENCE REVENUE ARCHITECTURE"] --> NGS["NGS Target Enrichment<br/>• Q3 FY26: $61.8M (52.2% of rev)<br/>• YoY Growth: +12%<br/>• Core: Biotinylated capture panels<br/>• Key Market: Liquid Biopsy, Oncology<br/>• Moat: Clinical assay lock-in (IVD/LDT)"]
+    Root --> DSPS["DNA Synthesis & Protein Solutions<br/>• Q3 FY26: $56.6M (47.8% of rev)<br/>• YoY Growth: +39%<br/>• Core: Clonal Genes, Express Genes, Oligo Pools, Biopharma Services<br/>• Driver: Wilsonville Automation, AI/ML"]
 ```
 
 ### Segment 1: Next-Generation Sequencing (NGS) Target Enrichment (The Cash Generator)
@@ -151,18 +131,17 @@ Whole-genome sequencing (WGS) reads all 3 billion base pairs of human DNA. Howev
 
 Target enrichment solves this by utilizing **biotinylated single-stranded DNA/RNA probes** that hybridize specifically to target regions of interest (e.g., all 20,000 human protein-coding genes in an "Exome Panel," or a curated panel of 500 cancer genes like *EGFR*, *KRAS*, *TP53*, and *BRAF*):
 
-```
-                       THE HYBRIDIZATION CAPTURE MECHANISM
-                                        │
-1. Fragmented Patient DNA ──────────────┼──────────────► [ Mixed Genome Library ]
-                                        │                      │
-2. Add Twist Biotinylated Probes ───────┼──────────────► [ Probes Bind Target DNA ]
-                                        │                      │
-3. Streptavidin Magnetic Beads ─────────┼──────────────► [ Target DNA Captured ]
-                                        │                      │
-4. Wash Unbound Background DNA ─────────┼──────────────► [ 99% Non-Coding DNA Discarded ]
-                                        │                      │
-5. Elute & Sequence Target on NGS ──────┼──────────────► [ 1,000x Deep Sequencing on Cancer Genes ]
+```mermaid
+flowchart TD
+    S1["1. Fragmented Patient DNA"] --> O1["Mixed Genome Library"]
+    O1 --> S2["2. Add Twist Biotinylated Probes"]
+    S2 --> O2["Probes Bind Target DNA"]
+    O2 --> S3["3. Streptavidin Magnetic Beads"]
+    S3 --> O3["Target DNA Captured"]
+    O3 --> S4["4. Wash Unbound Background DNA"]
+    S4 --> O4["99% Non-Coding DNA Discarded"]
+    O4 --> S5["5. Elute & Sequence Target on NGS"]
+    S5 --> O5["1,000x Deep Sequencing on Cancer Genes"]
 ```
 
 #### Twist's Moat: Fold-80 Base Penalty and Sequencing Cost Reduction
@@ -220,23 +199,13 @@ Why did Twist's stock price ignite in September 2026, soaring past \$200 per sha
 
 The catalyst was the realization among institutional investors that **Twist is the critical physical bottleneck for Generative AI in biology**.
 
-```
-                   THE GENERATIVE BIOLOGY DATA FEEDBACK LOOP
-                                       │
-     ┌─────────────────────────────────┴─────────────────────────────────┐
-     ▼                                                                   ▼
-[ In Silico AI Prediction ]                                [ Physical Wet-Lab Reality ]
-  • AlphaFold 3 / Chai-1 / ESM3                              • Twist Silicon Synthesis
-  • Generates 1,000,000 De Novo Designs                      • Prints Physical DNA / Express Genes
-  • Fast, Cheap, Zero Friction                               • Expresses Real Antibodies / Proteins
-     │                                                                   │
-     └───────────────────────────────►◄──────────────────────────────────┘
-                                       │
-                                       ▼
-                   [ The Ground-Truth Functional Assay ]
-                   • Binding Kinetics, Affinity (SPR/BLI)
-                   • Developability & Thermostability
-                   • Active Learning: Feedback Retrains AI
+```mermaid
+flowchart TD
+    Root["THE GENERATIVE BIOLOGY DATA FEEDBACK LOOP"] --> AI["In Silico AI Prediction<br/>• AlphaFold 3 / Chai-1 / ESM3<br/>• Generates 1,000,000 De Novo Designs<br/>• Fast, Cheap, Zero Friction"]
+    Root --> Wet["Physical Wet-Lab Reality<br/>• Twist Silicon Synthesis<br/>• Prints Physical DNA / Express Genes<br/>• Expresses Real Antibodies / Proteins"]
+    AI --> Assay["The Ground-Truth Functional Assay<br/>• Binding Kinetics, Affinity (SPR/BLI)<br/>• Developability & Thermostability<br/>• Active Learning: Feedback Retrains AI"]
+    Wet --> Assay
+    Assay -.-> AI
 ```
 
 #### The "Garbage In, Garbage Out" Crisis in AI Drug Design

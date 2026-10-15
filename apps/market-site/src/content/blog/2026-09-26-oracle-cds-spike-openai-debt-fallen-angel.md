@@ -65,18 +65,10 @@ Why is the market so panicked when Oracle is still technically classified as "In
 
 The answer lies in the **liquidity cliff** separating **BBB-** from **BB+**.
 
-```
-    INVESTMENT GRADE (IG)               HIGH YIELD ("JUNK")
-+-----------------------------+     +-----------------------------+
-| AAA  |  AA  |   A   |  BBB  |  |  |  BB+  |   BB   |    B   | CCC |
-|                             |  |  |                             |
-| Trillions in Institutional  |  |  | Speculative Funds, Family   |
-| Mandates (Pensions/Insurers)|  |  | Offices, Distressed Debt    |
-+-----------------------------+  |  +-----------------------------+
-                                 |
-                                 v
-                     THE BBB- LIQUIDITY CLIFF
-                     (Oracle currently: BBB-)
+```mermaid
+flowchart LR
+    IG["INVESTMENT GRADE (IG)<br/>AAA | AA | A | BBB<br/>Trillions in Institutional Mandates (Pensions/Insurers)"] --> CLIFF["THE BBB- LIQUIDITY CLIFF<br/>(Oracle currently: BBB-)"]
+    CLIFF --> HY["HIGH YIELD ('JUNK')<br/>BB+ | BB | B | CCC<br/>Speculative Funds, Family Offices, Distressed Debt"]
 ```
 
 ### The S&P July 2026 Downgrade
@@ -123,37 +115,13 @@ In recent earnings calls, Oracle celebrated a record **$638 billion Remaining Pe
 
 However, credit rating agencies look past the headline backlog to evaluate **customer concentration and counterparty solvency**.
 
-```
-                     THE CIRCULAR AI FINANCING LOOP
-                     
-            +-----------------------------------------------+
-            |               Venture Capital / PE            |
-            |      (Sovereign Funds, SoftBank, Tech Giants) |
-            +-----------------------------------------------+
-                                    |
-                       Invests Equity / Liquidity
-                                    v
-            +-----------------------------------------------+
-            |                    OPENAI                     |
-            |   Pre-IPO Projections: -$278B FCF thru 2030   |
-            |   Infrastructure Commitments: $856 Billion    |
-            +-----------------------------------------------+
-                                    |
-                       Signs Long-Term GPU Leases
-                        (~50% of Oracle's RPO)
-                                    v
-            +-----------------------------------------------+
-            |                 ORACLE (OCI)                  |
-            |   Borrows $125B+ to build data centers        |
-            |   Signs 15-20 yr land/power PPAs              |
-            +-----------------------------------------------+
-                                    |
-                       Buys NVL72 Racks / Silicon
-                                    v
-            +-----------------------------------------------+
-            |               NVIDIA / HARDWARE               |
-            |         Records Record GPU Revenues           |
-            +-----------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph S1["THE CIRCULAR AI FINANCING LOOP"]
+        A["Venture Capital / PE<br/>(Sovereign Funds, SoftBank, Tech Giants)"] -->|"Invests Equity / Liquidity"| B["OPENAI<br/>Pre-IPO Projections: -$278B FCF thru 2030<br/>Infrastructure Commitments: $856 Billion"]
+        B -->|"Signs Long-Term GPU Leases (~50% of Oracle's RPO)"| C["ORACLE (OCI)<br/>Borrows $125B+ to build data centers<br/>Signs 15-20 yr land/power PPAs"]
+        C -->|"Buys NVL72 Racks / Silicon"| D["NVIDIA / HARDWARE<br/>Records Record GPU Revenues"]
+    end
 ```
 
 ### The Anatomy of the Counterparty Vulnerability
@@ -210,21 +178,11 @@ This development must be viewed in tandem with our earlier investigation into Go
 
 In that analysis, we documented the **$308 billion annual revenue hurdle** required across the six major infrastructure operators simply to break even (0.0% ROIC) on Phase II AI capex ($1.22 trillion) against the ruthless 5-year depreciation cycle of GPU silicon.
 
-```
-THE EVOLUTION OF THE AI CAPITAL CYCLE
------------------------------------------------------------------------------------------
-Phase I (2023 - 2024): The Cash-Flow Harvest
-- Players: Microsoft, Alphabet, Meta, Apple.
-- Funding: 100% self-funded via massive search, ad, and software free cash flows.
-- Leverage: Zero net debt; balance sheets resembling sovereign fortresses.
-- Market Reaction: Unanimous institutional euphoria.
-
-Phase II (2025 - 2026): The Leveraged Land Grab
-- Players: Oracle, CoreWeave, Neo-cloud startups, utility joint ventures.
-- Funding: High-yield syndicated loans, private credit, commercial paper, massive bond issues.
-- Leverage: Debt-to-EBITDA rising to 4x - 5x; customer concentration in cash-burning startups.
-- Market Reaction: CDS spreads blow out; S&P downgrades; bond markets front-run default.
------------------------------------------------------------------------------------------
+```mermaid
+flowchart TD
+    subgraph S1["THE EVOLUTION OF THE AI CAPITAL CYCLE"]
+        P1["Phase I (2023 - 2024): The Cash-Flow Harvest<br/>• Players: Microsoft, Alphabet, Meta, Apple<br/>• Funding: 100% self-funded via massive search, ad, and software free cash flows<br/>• Leverage: Zero net debt; balance sheets resembling sovereign fortresses<br/>• Market Reaction: Unanimous institutional euphoria"] --> P2["Phase II (2025 - 2026): The Leveraged Land Grab<br/>• Players: Oracle, CoreWeave, Neo-cloud startups, utility joint ventures<br/>• Funding: High-yield syndicated loans, private credit, commercial paper, massive bond issues<br/>• Leverage: Debt-to-EBITDA rising to 4x - 5x; customer concentration in cash-burning startups<br/>• Market Reaction: CDS spreads blow out; S&P downgrades; bond markets front-run default"]
+    end
 ```
 
 During Phase I, the AI boom was funded by the cash cows of Big Tech. Microsoft and Google could afford to write $30 billion checks for GPUs every year out of excess operating cash flow without taking on debt.

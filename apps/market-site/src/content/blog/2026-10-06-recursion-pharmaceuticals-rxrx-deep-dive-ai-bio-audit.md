@@ -189,13 +189,12 @@ In Q2 2026 alone, Recursion posted a **net loss of \$131.01 million**.
 ### 3. The Unforgiving Dilution Engine: 233% Share Count Growth
 For equity investors, the most sobering metric is Recursion’s relentless share dilution:
 
-```
-    SHARES OUTSTANDING TRAJECTORY (IPO TO 2026)
-
-    April 2021 (IPO):        ~160 Million Shares
-    Late 2023:               ~220 Million Shares
-    Nov 2024 (Exscientia):   ~385 Million Shares
-    October 2026:            ~533.5 Million Shares (+233% Dilution)
+```mermaid
+xychart-beta
+    title "Shares Outstanding Trajectory (IPO to 2026, +233% Dilution)"
+    x-axis ["Apr 2021 (IPO)", "Late 2023", "Nov 2024 (Exscientia)", "Oct 2026"]
+    y-axis "Shares (Millions)" 0 --> 600
+    bar [160, 220, 385, 533.5]
 ```
 
 - When Recursion went public in April 2021 at \$18.00 per share, it had approximately 160 million shares outstanding.

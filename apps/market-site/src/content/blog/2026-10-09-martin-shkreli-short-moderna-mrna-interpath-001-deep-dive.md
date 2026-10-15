@@ -64,24 +64,16 @@ The trial met its primary endpoint of **Recurrence-Free Survival (RFS)** and key
 
 This is indisputably a landmark scientific milestone: it is the **first-ever Phase 3 trial in human medical history to demonstrate efficacy for an individualized mRNA cancer vaccine**, and the first regimen to demonstrate additive benefit over Keytruda monotherapy in the adjuvant melanoma setting.
 
-```
-                  INTERPATH-001 CLINICAL WORKFLOW
-  
-  [ Patient Surgical Resection ] (Completely resected Stage IIB-IV Melanoma)
-                │
-                ▼
-  [ Whole-Exome Sequencing (WES) ] (Tumor vs. Healthy Tissue Genomic Audit)
-                │
-                ▼
-  [ AI Neoantigen Epitope Selection ] (Algorithm selects up to 34 neoantigens)
-                │
-                ▼
-  [ Bespoke mRNA-4157 Manufacturing ] (Single-patient cleanroom synthesis: 6-8 WEEKS)
-                │
-                ▼
-  [ Adjuvant Administration ]
-      ├── mRNA-4157 (1 mg IM every 3 weeks for up to 9 doses)
-      └── KEYTRUDA (200 mg IV every 3 weeks for up to 18 cycles)
+```mermaid
+flowchart TD
+    subgraph W["INTERPATH-001 CLINICAL WORKFLOW"]
+        S1["Patient Surgical Resection<br/>(Completely resected Stage IIB-IV Melanoma)"] --> S2["Whole-Exome Sequencing (WES)<br/>(Tumor vs. Healthy Tissue Genomic Audit)"]
+        S2 --> S3["AI Neoantigen Epitope Selection<br/>(Algorithm selects up to 34 neoantigens)"]
+        S3 --> S4["Bespoke mRNA-4157 Manufacturing<br/>(Single-patient cleanroom synthesis: 6-8 WEEKS)"]
+        S4 --> S5["Adjuvant Administration"]
+        S5 --> A1["mRNA-4157<br/>(1 mg IM every 3 weeks for up to 9 doses)"]
+        S5 --> A2["KEYTRUDA<br/>(200 mg IV every 3 weeks for up to 18 cycles)"]
+    end
 ```
 
 ### The Unreported Nuances: What the Topline PR Concealed

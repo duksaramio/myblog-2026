@@ -103,15 +103,15 @@ The compound math is brutal: a 10-step process at 99% reliability per step = 90.
 
 ## The Maturity Model
 
-```
-Level 0: Chatbot (no harness)
-Level 1: System prompts only
-Level 2: Structured tool use
-Level 3: Cross-session memory
-Level 4: Task decomposition / planning
-Level 5: Automated verification
-Level 6: Multi-agent orchestration
-Level 7: Self-improving harness
+```mermaid
+flowchart TD
+    L0["Level 0: Chatbot (no harness)"] --> L1["Level 1: System prompts only"]
+    L1 --> L2["Level 2: Structured tool use"]
+    L2 --> L3["Level 3: Cross-session memory"]
+    L3 --> L4["Level 4: Task decomposition / planning"]
+    L4 --> L5["Level 5: Automated verification"]
+    L5 --> L6["Level 6: Multi-agent orchestration"]
+    L6 --> L7["Level 7: Self-improving harness"]
 ```
 
 Most production systems sit at Level 3-4. Very few reach Level 6+. Almost none are at Level 7. The gap between where most teams are and where the state of the art sits is the engineering opportunity of 2026.

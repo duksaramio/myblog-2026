@@ -49,18 +49,16 @@ You want to swap DeepSeek for Claude as your model? Register a new LLM adapter o
 
 The agent loop is itself a plugin (`dsh-agent-loop`). Here's what happens when the agent processes a message:
 
-```
-turn/start
-  claim input + queued message
-  assemble prompt + tool schemas
-  -> agent/pre-step (reject or enter)
-     step/start
-     derive model history from session log
-     agent/request -> llm/stream -> assistant/message
-     tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute
-     step/end
-  -> agent/turn-stopping
-turn/end
+```mermaid
+flowchart TD
+    TS["turn/start<br/>claim input + queued message<br/>assemble prompt + tool schemas"] --> PRE["agent/pre-step (reject or enter)"]
+    subgraph STEP["step/start -> step/end"]
+        HIST["derive model history from session log"] --> REQ["agent/request -> llm/stream -> assistant/message"]
+        REQ --> TOOL["tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute"]
+    end
+    PRE --> STEP
+    STEP --> STOP["agent/turn-stopping"]
+    STOP --> TE["turn/end"]
 ```
 
 A **step** is one model request plus its tool calls. A **turn** is zero or more steps. The key events are waterfalls — listeners must call `next()` to delegate, or they short-circuit the chain. This means hooks can intercept, modify, or block at any point in the pipeline without changing the loop itself.

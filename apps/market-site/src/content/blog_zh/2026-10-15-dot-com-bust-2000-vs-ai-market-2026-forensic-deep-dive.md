@@ -239,117 +239,15 @@ $$
 
 这一论点完全违背了固体物理学与热力学折旧定律：
 
-<figure class="post-chart">
-  <svg viewBox="0 0 720 360" role="img" aria-label="物理抵押资产残值衰减曲线：2000年暗光纤 vs 2026年AI GPU">
-    <title>物理抵押资产残值衰减曲线：2000年暗光纤 vs 2026年AI GPU</title>
-    <!-- Chart Title & Subtitle -->
-    <text x="70" y="24" font-size="13" font-weight="700" fill="#111">物理抵押资产残值衰减曲线：2000年暗光纤 VS. 2026年AI GPU</text>
-    <text x="70" y="42" font-size="10.5" fill="#555">安装后15年周期内的资产剩余经济价值 (%)</text>
-
-    <!-- Horizontal Grid Lines & Y-Axis Labels -->
-    <g stroke="rgba(0,0,0,0.12)" stroke-width="1">
-      <line x1="70" y1="68" x2="670" y2="68" />
-      <line x1="70" y1="112" x2="670" y2="112" stroke-dasharray="3,3" />
-      <line x1="70" y1="156" x2="670" y2="156" stroke-dasharray="3,3" />
-      <line x1="70" y1="200" x2="670" y2="200" stroke-dasharray="3,3" />
-      <line x1="70" y1="244" x2="670" y2="244" stroke-dasharray="3,3" />
-      <line x1="70" y1="288" x2="670" y2="288" stroke="rgba(0,0,0,0.45)" stroke-width="1.5" />
-    </g>
-    <line x1="70" y1="68" x2="70" y2="288" stroke="rgba(0,0,0,0.45)" stroke-width="1.5" />
-
-    <g font-size="10.5" fill="#444" text-anchor="end">
-      <text x="62" y="72">100%</text>
-      <text x="62" y="116">80%</text>
-      <text x="62" y="160">60%</text>
-      <text x="62" y="204">40%</text>
-      <text x="62" y="248">20%</text>
-      <text x="62" y="292">0%</text>
-    </g>
-
-    <!-- X-Axis Ticks & Labels -->
-    <g stroke="rgba(0,0,0,0.35)" stroke-width="1">
-      <line x1="70" y1="288" x2="70" y2="294" />
-      <line x1="110" y1="288" x2="110" y2="294" />
-      <line x1="150" y1="288" x2="150" y2="294" />
-      <line x1="190" y1="288" x2="190" y2="294" />
-      <line x1="230" y1="288" x2="230" y2="294" />
-      <line x1="270" y1="288" x2="270" y2="294" />
-      <line x1="310" y1="288" x2="310" y2="294" />
-      <line x1="390" y1="288" x2="390" y2="294" />
-      <line x1="470" y1="288" x2="470" y2="294" />
-      <line x1="550" y1="288" x2="550" y2="294" />
-      <line x1="670" y1="288" x2="670" y2="294" />
-    </g>
-    <g font-size="10.5" fill="#333" text-anchor="middle">
-      <text x="70" y="308">第0年</text>
-      <text x="110" y="308">第1年</text>
-      <text x="150" y="308">第2年</text>
-      <text x="190" y="308">第3年</text>
-      <text x="230" y="308">第4年</text>
-      <text x="270" y="308">第5年</text>
-      <text x="310" y="308">第6年</text>
-      <text x="390" y="308">第8年</text>
-      <text x="470" y="308">第10年</text>
-      <text x="550" y="308">第12年</text>
-      <text x="670" y="308">第15年</text>
-    </g>
-
-    <!-- Shaded Area: GAAP Depreciation Overstatement Gap -->
-    <polygon points="70,68 310,266 230,266 190,248.4 150,200 110,129.6" fill="rgba(220, 38, 38, 0.10)" />
-
-    <!-- Series 1: 2000 Dark Fiber -->
-    <polyline fill="none" stroke="#0284c7" stroke-width="3" points="70,68 150,70 230,72 310,75 390,78 470,81 550,85 670,90" />
-    <g fill="#0284c7">
-      <circle cx="70" cy="68" r="3.5" />
-      <circle cx="190" cy="71" r="3.5" />
-      <circle cx="310" cy="75" r="3.5" />
-      <circle cx="470" cy="81" r="3.5" />
-      <circle cx="670" cy="90" r="3.5" />
-    </g>
-
-    <!-- Series 2: 10-K GAAP Depreciation Schedule -->
-    <line x1="70" y1="68" x2="310" y2="266" stroke="#d97706" stroke-width="2" stroke-dasharray="6,4" />
-    <circle cx="310" cy="266" r="3.5" fill="#d97706" />
-
-    <!-- Series 3: 2026 AI GPU Silicon -->
-    <polyline fill="none" stroke="#dc2626" stroke-width="3" points="70,68 110,129.6 150,200 190,248.4 230,266 310,266 670,266" />
-    <g fill="#dc2626">
-      <circle cx="70" cy="68" r="3.5" />
-      <circle cx="110" cy="129.6" r="3.5" />
-      <circle cx="150" cy="200" r="3.5" />
-      <circle cx="190" cy="248.4" r="3.5" />
-      <circle cx="230" cy="266" r="3.5" />
-      <circle cx="670" cy="266" r="3.5" />
-    </g>
-
-    <!-- Callout Annotations -->
-    <rect x="355" y="92" width="305" height="48" rx="3" fill="rgba(224, 242, 254, 0.85)" stroke="#0284c7" stroke-width="1" />
-    <text x="365" y="109" font-size="10.5" font-weight="700" fill="#0369a1">2000年暗光纤 (地下惰性石英玻璃)</text>
-    <text x="365" y="123" font-size="9.5" fill="#1e293b">地下25–30年物理寿命几乎无损耗 (维护成本 ~0)。</text>
-    <text x="365" y="135" font-size="9.5" fill="#1e293b">7–15年后被YouTube、iPhone与AWS云计算重新点亮。</text>
-
-    <text x="208" y="156" font-size="9.5" font-weight="700" fill="#b45309">6年GAAP会计折旧线 (GOOG/MSFT)</text>
-    <text x="208" y="169" font-size="9" fill="#92400e">阴影区：每年 $110B–$180B 折旧低估缺口</text>
-
-    <rect x="242" y="206" width="418" height="48" rx="3" fill="rgba(254, 226, 226, 0.85)" stroke="#dc2626" stroke-width="1" />
-    <text x="252" y="222" font-size="10.5" font-weight="700" fill="#b91c1c">2026年AI GPU硅片 (H100 / Blackwell 真实经济价值)</text>
-    <text x="252" y="236" font-size="9.5" fill="#1e293b">摩尔定律 + 能效比(Jevons)衰减使价值在36–48个月内缩水75%–85%。</text>
-    <text x="252" y="248" font-size="9.5" fill="#1e293b">当电费与液冷成本超过产出Token价格时触及10%废铁残值底线。</text>
-
-    <!-- Legend -->
-    <g transform="translate(70, 336)" font-size="10" fill="#222">
-      <line x1="0" y1="-4" x2="22" y2="-4" stroke="#0284c7" stroke-width="3" />
-      <text x="28" y="0">2000年暗光纤</text>
-
-      <line x1="155" y1="-4" x2="177" y2="-4" stroke="#d97706" stroke-width="2" stroke-dasharray="5,3" />
-      <text x="183" y="0">6年GAAP会计折旧曲线</text>
-
-      <line x1="365" y1="-4" x2="387" y2="-4" stroke="#dc2626" stroke-width="3" />
-      <text x="393" y="0">2026年AI GPU真实经济价值 (10%残值底线)</text>
-    </g>
-  </svg>
-  <figcaption>图 1：2000年电信暗光纤与2026年AI GPU集群的剩余经济价值衰减轨迹，以及与超大规模云厂商6年直线法GAAP会计折旧曲线的对比。</figcaption>
-</figure>
+```mermaid
+xychart-beta
+    title "物理抵押资产残值衰减曲线：2000年暗光纤 vs 6年GAAP vs 2026年AI GPU (%)"
+    x-axis ["第0年", "第1年", "第2年", "第3年", "第4年", "第5年", "第6年", "第8年", "第10年", "第12年", "第15年"]
+    y-axis "剩余经济价值 (%)" 0 --> 100
+    line "2000年暗光纤 (石英玻璃)" [100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90]
+    line "6年GAAP会计折旧曲线" [100, 85, 70, 55, 40, 25, 10, 10, 10, 10, 10]
+    line "2026年AI GPU真实经济价值" [100, 72, 40, 18, 10, 10, 10, 10, 10, 10, 10]
+```
 
 * **为什么2000年的暗光纤能够熬过泡沫破裂：** 1999–2001年间，电信运营商在“互联网流量每100天翻一番（年化增长约1000%）”的集体幻觉驱动下铺设了逾8000万英里光缆——而AT&T实验室数学家 **Andrew Odlyzko** 在《First Monday》（2000）发表的论文中证实，真实流量增速仅为每年翻一番（约100%）。当世通、环球电讯（Global Crossing）和360networks破产清算时，股东和债权人血本无归，**但埋在地下的石英玻璃光纤却以近乎零的持有成本完好保存了30年**。只需升级两端的波分复用光模块，7至10年后，Netflix、YouTube、iPhone移动回传网和AWS云计算便重新点亮了这些廉价的暗光纤。
 * **为什么2026年的“暗GPU”无法等待需求慢慢赶上：** 英伟达H100或B200 GPU集群不是埋在沟槽里的被动玻璃。它是一个高能耗的有源半导体系统，其经济价值取决于 **每兆瓦时（MWh）电力所生成的Token数量**。当下一代架构（Rubin、Feynman或2nm定制ASIC）在36个月内将每瓦推理吞吐量提升4至8倍时，继续开机运行一套4年树龄的旧GPU集群将陷入 **毛利率为负（Gross-Margin Negative）** 的境地——因为其消耗的电费和液冷成本已经超过了所产出Token的市场清算价格。如果企业级AI软件需求需要7到10年才能真正成熟，**今天投入的7500亿美元GPU队列早在需求到来之前就会变成一堆电子废铁。**

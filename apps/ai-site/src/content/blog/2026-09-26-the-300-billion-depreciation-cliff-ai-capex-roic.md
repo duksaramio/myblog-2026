@@ -41,8 +41,10 @@ Looking closely at the published table reveals where the viral commentary went a
 
 ### Error #1: Aggregate 3-Year Revenue vs. Annual Spending
 Look at the title of Table 1:
-```
-Aggregate 2028-2030 Revenues Needed
+```mermaid
+flowchart LR
+    T1["Table 1: Aggregate 2028-2030 Revenues Needed ($923.4B Base Case)"] --> ACTUAL["Actual Goldman Math:<br/>$923.4B over 3 Years = $307.8B / Year"]
+    T1 --> VIRAL["Viral Misreading:<br/>'$920B Needed Every Single Year' (3x Error)"]
 ```
 The figures in that table—including the **$923.4 billion** highlighted at the base case ($42.4B Capex per GW at 0.0% ROIC)—represent the **cumulative three-year aggregate revenue requirement from 2028 through 2030**, *not* an annual run-rate.
 
@@ -177,33 +179,18 @@ In equity valuation, hyperscalers trade at enterprise value multiples of 25x–3
 
 Three structural forces threaten to push the industry toward this zero-ROIC scenario:
 
-```
-                      THE ZERO-ROIC SQUEEZE
-                      
-   [ Algorithmic Efficiency ]      [ Open-Weights Models ]
-     (Inference cost drops           (Llama / DeepSeek / Qwen
-      10x every 18 months)            strip away API pricing)
-              \                                /
-               \                              /
-                v                            v
-          +----------------------------------------+
-          |      PLUNGING TOKEN REALIZED VALUE     |
-          |  Hyperscalers sell commodity tokens    |
-          |      at collapsing gross margins       |
-          +----------------------------------------+
-                              |
-                              v
-          +----------------------------------------+
-          |    THE 5-YEAR HARDWARE HALF-LIFE       |
-          |  $42.4B/GW must be amortized over      |
-          |   60 months before silicon expires     |
-          +----------------------------------------+
-                              |
-                              v
-          +----------------------------------------+
-          |   ANNUAL REVENUE DEFICIT: <$308B/YR    |
-          |    GAAP Impairment & Capital Destr.    |
-          +----------------------------------------+
+```mermaid
+flowchart TD
+    subgraph SQUEEZE["THE ZERO-ROIC SQUEEZE"]
+        ALG["Algorithmic Efficiency<br/>(Inference cost drops 10x every 18 months)"]
+        OPEN["Open-Weights Models<br/>(Llama / DeepSeek / Qwen strip away API pricing)"]
+        VAL["PLUNGING TOKEN REALIZED VALUE<br/>Hyperscalers sell commodity tokens at collapsing gross margins"]
+        HW["THE 5-YEAR HARDWARE HALF-LIFE<br/>$42.4B/GW must be amortized over 60 months before silicon expires"]
+        DEF["ANNUAL REVENUE DEFICIT: Under $308B/YR<br/>GAAP Impairment & Capital Destruction"]
+        ALG --> VAL
+        OPEN --> VAL
+        VAL --> HW --> DEF
+    end
 ```
 
 ### 1. The Token Deflation Treadmill & Jevons Paradox Failure

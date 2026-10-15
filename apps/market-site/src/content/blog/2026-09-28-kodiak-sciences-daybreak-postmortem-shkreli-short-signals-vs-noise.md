@@ -50,28 +50,11 @@ Why? What led so many experienced market participants—including ourselves—to
 
 The fatal flaw of the short thesis was not a lack of intelligence; it was an epistemological error. The bears identified genuine historical data points and elevated them into immutable physical laws. In doing so, they treated **operational and protocol noise as fundamental pharmacological signal**.
 
-```
-                   THE ANATOMY OF EPISTEMIC ERROR IN $KOD
-                   
-   ┌──────────────────────────────────────────────────────────────────┐
-   │                     THE BEAR ECHO CHAMBER                        │
-   │  "DAZZLE failed (+1.0 ltr) ──► 800 kDa biopolymer cannot diffuse │
-   │  "GLEAM had 19% cataracts  ──► Platform is chronically toxic     │
-   │  "DAYLIGHT was monthly Q4W ──► Drug only works if dosed monthly  │
-   │  "Cash is $125M            ──► Insolvency guarantees collapse    │
-   └────────────────────────────────┬─────────────────────────────────┘
-                                    │
-                         MISTOOK NOISE FOR SIGNAL
-                                    │
-                                    ▼
-   ┌──────────────────────────────────────────────────────────────────┐
-   │                      THE CLINICAL REALITY                        │
-   │  • DAZZLE failed because 3 loading doses caused under-saturation  │
-   │  • Cataracts were manufacturing/formulation artifacts, now fixed │
-   │  • DAYLIGHT proved potent biological efficacy of the molecule    │
-   │  • Treat-to-dryness retreatment unlocked 54% Q24W durability     │
-   │  • Clinical success inverted the balance sheet via Reflexivity   │
-   └──────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph S1["THE ANATOMY OF EPISTEMIC ERROR IN $KOD"]
+        A["THE BEAR ECHO CHAMBER<br/>• DAZZLE failed (+1.0 ltr) -> 800 kDa biopolymer cannot diffuse<br/>• GLEAM had 19% cataracts -> Platform is chronically toxic<br/>• DAYLIGHT was monthly Q4W -> Drug only works if dosed monthly<br/>• Cash is $125M -> Insolvency guarantees collapse"] -->|"MISTOOK NOISE FOR SIGNAL"| B["THE CLINICAL REALITY<br/>• DAZZLE failed because 3 loading doses caused under-saturation<br/>• Cataracts were manufacturing/formulation artifacts, now fixed<br/>• DAYLIGHT proved potent biological efficacy of the molecule<br/>• Treat-to-dryness retreatment unlocked 54% Q24W durability<br/>• Clinical success inverted the balance sheet via Reflexivity"]
+    end
 ```
 
 ### Noise #1: Anchoring to DAZZLE as an "Immutable Biological Law"
@@ -194,18 +177,16 @@ Furthermore, with five successful Phase 3 studies in hand, Kodiak is not submitt
 
 Beyond the clinical specifics of Kodiak Sciences, Martin Shkreli's trade provides a masterclass in the **structural structural traps of shorting binary biotech events**.
 
-```
-                   THE ASYMMETRY ILLUSION IN BIOTECH SHORTS
-                   
-       BEAR VALUATION MODEL (Fawed)             EMPIRICAL MARKET REALITY
-       
-       ▲ +40% ($45) Max Upside                  ▲ +173% ($88.50) Short Squeeze
-       │                                        │
-$32 ───┼─────────────────────────        $32 ───┼─────────────────────────
-       │                                        │
-       ▼ -85% ($5) Target Downside              ▼ -85% ($5) Target Downside
-       
-       "Favorable Risk/Reward (2:1)"            "Catastrophic Tail Risk (-170%)"
+```mermaid
+flowchart TD
+    subgraph S1["BEAR VALUATION MODEL (Flawed)"]
+        B1["+40% ($45) Max Upside"] --- B2["$32 Baseline"]
+        B2 --- B3["-85% ($5) Target Downside<br/>'Favorable Risk/Reward (2:1)'"]
+    end
+    subgraph S2["EMPIRICAL MARKET REALITY"]
+        R1["+173% ($88.50) Short Squeeze"] --- R2["$32 Baseline"]
+        R2 --- R3["-85% ($5) Target Downside<br/>'Catastrophic Tail Risk (-170%)'"]
+    end
 ```
 
 ### 1. The Asymmetry Fallacy

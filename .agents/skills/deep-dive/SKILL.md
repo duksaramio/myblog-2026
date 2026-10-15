@@ -19,35 +19,17 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
 
 ## The 8-Phase Deep-Dive Workflow
 
-```
-   [ Topic / Dilemma ]
-           │
-           ▼
-   Phase 1: Issue Classification & Boundary Framing
-           │
-           ▼
-   Phase 2: Primary Source Excavation & Traceability
-           │
-           ▼
-   Phase 3: Semantic Precision & Operational Definitions
-           │
-           ▼
-   Phase 4: Causal Disentanglement & Rival Causes
-           │
-           ▼
-   Phase 5: Quantitative Audit & Statistical Integrity
-           │
-           ▼
-   Phase 6: The "Negative View" & Omission Interrogation
-           │
-           ▼
-   Phase 7: Grey Thinking & Conditional Synthesis ("If-Clauses")
-           │
-           ▼
-   Phase 8: Automated Verification & Citation Integrity
-           │
-           ▼
-   [ Published Deep-Dive Report / Strategic Brief ]
+```mermaid
+flowchart TD
+    T["Topic / Dilemma"] --> P1["Phase 1: Issue Classification & Boundary Framing"]
+    P1 --> P2["Phase 2: Primary Source Excavation & Traceability"]
+    P2 --> P3["Phase 3: Semantic Precision & Operational Definitions"]
+    P3 --> P4["Phase 4: Causal Disentanglement & Rival Causes"]
+    P4 --> P5["Phase 5: Quantitative Audit & Statistical Integrity"]
+    P5 --> P6["Phase 6: The 'Negative View' & Omission Interrogation"]
+    P6 --> P7["Phase 7: Grey Thinking & Conditional Synthesis ('If-Clauses')"]
+    P7 --> P8["Phase 8: Automated Verification & Citation Integrity"]
+    P8 --> R["Published Deep-Dive Report / Strategic Brief"]
 ```
 
 ---
@@ -205,4 +187,4 @@ Before finalizing any deep-dive report, verify the following 10 items:
 - [ ] **7. Negative View:** Identified who loses, failure modes, and long-term liabilities.
 - [ ] **8. Survivorship Audit:** Graveyard/survivorship analysis conducted for failed prior attempts.
 - [ ] **9. Grey Thinking & Verdict:** Final synthesis articulated through nuanced "If-Clauses" AND an explicit, probability-weighted "Bottom-Line Verdict" in a native GFM Markdown table.
-- [ ] **10. Native Tables & Link Liveness:** Zero ASCII/Unicode box tables inside code blocks (all tables/matrices use native GFM `| ... |` with escaped `\|` pipes), and every external citation returns HTTP 200.
+- [ ] **10. Native Tables, Mermaid Diagrams & Link Liveness:** Zero ASCII/Unicode box tables or ASCII diagrams/charts inside plain code blocks (all tables/matrices use native GFM `| ... |` with escaped `\|` pipes; all flowcharts, schematics, and charts use ` ```mermaid `), and every external citation returns HTTP 200.

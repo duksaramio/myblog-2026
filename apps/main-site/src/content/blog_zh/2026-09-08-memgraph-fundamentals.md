@@ -27,9 +27,9 @@ Memgraph有三种存储模式，你在这里的选择决定了后续的一切。
 
 Memgraph依赖于RAM。以下是事务模式下估计存储内存的公式：
 
-```
-StorageRAM = Vertices × 204B + Edges × 154B
-```
+$$
+\text{StorageRAM} = \text{Vertices} \times 204\text{ B} + \text{Edges} \times 154\text{ B}
+$$
 
 这是一个粗略的估计。实际分解如下：一个顶点至少需要136字节（80字节的对象 + 56字节的Delta），一条边至少需要88字节（32字节的对象 + 56字节的Delta），再加上SkipList容器开销（每个对象约24字节，节点指针），以及属性。
 

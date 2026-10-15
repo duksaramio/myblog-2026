@@ -26,11 +26,13 @@ lang: "ko"
 
 해법은 세 가지 검색 전략을 모두 실행하여 결합하는 것이다:
 
-```
-쿼리 → 밀집 벡터 (all-MiniLM-L6-v2, 384차원)  → 상위 20개 후보
-      → 희소 벡터 (IDF 적용 BM25)              → 상위 20개 후보
-      → 합집합 풀 (최대 40개 후보)
-      → ColBERT MaxSim 리랭킹                  → 최종 랭킹 결과
+```mermaid
+flowchart LR
+    Q["쿼리"] --> D["밀집 벡터 (all-MiniLM-L6-v2, 384차원)<br/>상위 20개 후보"]
+    Q --> S["희소 벡터 (IDF 적용 BM25)<br/>상위 20개 후보"]
+    D --> U["합집합 풀 (최대 40개 후보)"]
+    S --> U
+    U --> C["ColBERT MaxSim 리랭킹"] --> F["최종 랭킹 결과"]
 ```
 
 각 레이어는 서로의 빈틈을 완벽하게 메워준다:
@@ -47,16 +49,15 @@ lang: "ko"
 
 ColBERT는 그 절충점을 찾았다. 쿼리와 문서를 각각 '토큰 임베딩의 시퀀스'로 표현한다:
 
-```
-쿼리:   [filter] [failed] [AFTER] [filling]    → 4개 벡터 × 96차원
-문서:   [membrane] [tearing] [AFTER] [filled]  → N개 벡터 × 96차원
+```mermaid
+flowchart LR
+    QT["쿼리:<br/>[filter] [failed] [AFTER] [filling]"] --> QV["4개 벡터 × 96차원"]
+    DT["문서:<br/>[membrane] [tearing] [AFTER] [filled]"] --> DV["N개 벡터 × 96차원"]
 ```
 
 **MaxSim** 연산자는 쿼리의 각 토큰에 대해 문서 내 모든 토큰 중 가장 코사인 유사도가 높은 토큰을 찾아내고, 이 최댓값들을 모두 더한다:
 
-```
-Score = cos(filter, membrane) + cos(failed, tearing) + cos(AFTER, AFTER) + cos(filling, filled)
-```
+$$\text{Score} = \cos(\text{filter}, \text{membrane}) + \cos(\text{failed}, \text{tearing}) + \cos(\text{AFTER}, \text{AFTER}) + \cos(\text{filling}, \text{filled})$$
 
 이 연산 방식 덕분에 ColBERT는 생명과학 검색에서 가장 까다로운 케이스를 완벽하게 분별해 낸다. 다음 두 가지 일탈 기록을 비교해 보자:
 
@@ -105,9 +106,7 @@ client.create_collection(
 
 ColBERT 리랭킹을 수행하기 전, 밀집 검색과 희소 검색의 결과는 RRF를 통해 하나로 병합된다:
 
-```
-RRF(d) = Σ 1/(k + rank_m(d))
-```
+$$\text{RRF}(d) = \sum_{m} \frac{1}{k + \text{rank}_m(d)}$$
 
 여기서 `k=60`(스무딩 상수)이고, `m`은 각 검색 방식을 순회한다. RRF는 점수의 스케일을 정규화할 필요 없이 오직 순위 위치(rank position)만으로 계산한다. 밀집 검색에서 3등, 희소 검색에서 5등을 한 문서는 `1/(60+3) + 1/(60+5)`의 종합 점수를 받는다. 두 검색 방식이 모두 추천한 문서에 자연스럽게 가산점이 붙는 구조다.
 

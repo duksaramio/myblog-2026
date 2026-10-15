@@ -42,22 +42,13 @@ At its peak in August 2021, Moderna's market capitalization touched **\$195 bill
 
 The immediate prediction was that mRNA would rapidly sweep across every corner of medicine: seasonal flu, RSV, cytomegalovirus (CMV), Epstein-Barr, HIV, cancer, heart failure, and rare genetic enzyme deficiencies.
 
-```
-       The Silicon Valley Biological Compiler Fallacy (2021)
-       ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
-       │   Digital Code  │ ───>  │  LNP Injection  │ ───>  │ Universal Cure  │
-       │  (A, U, C, G)   │       │  "Run Binary"   │       │ (Any Protein)   │
-       └─────────────────┘       └─────────────────┘       └─────────────────┘
-                                          │
-                                 REALITY CHECK (2026)
-                                          ▼
-       ┌─────────────────────────────────────────────────────────────────────┐
-       │ 1. 80-90% trapped in liver (LDLR / ApoE clearance)                 │
-       │ 2. 98% destroyed in endosomes (1-2% escape efficiency)              │
-       │ 3. Repeat dosing triggers neutralizing & anti-PEG antibodies        │
-       │ 4. Systemic lipid reactogenicity & organ inflammation               │
-       │ 5. Cold-chain instability & thermodynamic degradation               │
-       └─────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph Fallacy["The Silicon Valley Biological Compiler Fallacy (2021)"]
+        direction LR
+        A["Digital Code<br/>(A, U, C, G)"] --> B["LNP Injection<br/>'Run Binary'"] --> C["Universal Cure<br/>(Any Protein)"]
+    end
+    Fallacy -->|"REALITY CHECK (2026)"| D["1. 80-90% trapped in liver (LDLR / ApoE clearance)<br/>2. 98% destroyed in endosomes (1-2% escape efficiency)<br/>3. Repeat dosing triggers neutralizing & anti-PEG antibodies<br/>4. Systemic lipid reactogenicity & organ inflammation<br/>5. Cold-chain instability & thermodynamic degradation"]
 ```
 
 The hangover arrived when developers tried to translate the vaccine blueprint into seasonal illnesses and chronic therapies.
@@ -120,26 +111,15 @@ When you inject conventional LNPs into a human bloodstream, they do not circulat
 
 Specifically, the particles become coated with **Apolipoprotein E (ApoE)**. ApoE's biological job is to chaperone dietary fats directly to low-density lipoprotein receptors (LDLR) on **hepatocytes in the liver**.
 
-```
-    Intravenous Injection
-           │
-           ▼
-    [ LNP Formulation ] ──> Blood Plasma ──> ApoE Protein Opsonization
-                                                      │
-                                                      ▼
-                                       Binds LDLR on Hepatocytes
-                                                      │
-                                                      ▼
-                                      ┌───────────────────────────────┐
-                                      │  80% to 90%+ Cleared to LIVER │
-                                      └───────────────────────────────┘
-                                                      │
-                    ┌─────────────────────────────────┴─────────────────────────────────┐
-                    ▼                                                                   ▼
-       LIVER-BASED TARGETS (SUCCESS)                                    NON-LIVER TARGETS (COLLAPSE)
-       • Transthyretin Amyloidosis (ATTR)                                • Lungs (Cystic Fibrosis)
-       • PCSK9 / Hypercholesterolemia                                    • Heart / Brain / Skeletal Muscle
-       • Hepatic Enzyme Deficiencies                                     • Autoimmune T-cells
+```mermaid
+flowchart TD
+    A["Intravenous Injection"] --> B["LNP Formulation"]
+    B --> C["Blood Plasma"]
+    C --> D["ApoE Protein Opsonization"]
+    D --> E["Binds LDLR on Hepatocytes"]
+    E --> F["80% to 90%+ Cleared to LIVER"]
+    F --> G["LIVER-BASED TARGETS (SUCCESS)<br/>• Transthyretin Amyloidosis (ATTR)<br/>• PCSK9 / Hypercholesterolemia<br/>• Hepatic Enzyme Deficiencies"]
+    F --> H["NON-LIVER TARGETS (COLLAPSE)<br/>• Lungs (Cystic Fibrosis)<br/>• Heart / Brain / Skeletal Muscle<br/>• Autoimmune T-cells"]
 ```
 
 As reviewed by [Paunovska et al. in *Nature Reviews Genetics* (2022)](https://pubmed.ncbi.nlm.nih.gov/34983972/), **80% to 90%+ of systemically administered LNPs accumulate in the liver**.
@@ -183,17 +163,12 @@ Why would Novartis pay \$575 million upfront for an mRNA candidate in late 2026?
 
 **Because ABO2203 uses mRNA to solve the single worst crisis in cellular immunotherapy: manufacturing and toxicity.**
 
-```
-                     The Paradigm Shift in Cellular Medicine
-                     
-   CONVENTIONAL EX VIVO CAR-T                        IN VIVO mRNA CELL ENGAGER (ABO2203)
-   ┌────────────────────────────────┐                ┌────────────────────────────────┐
-   │ 1. Harvest patient T-cells     │                │ 1. Off-the-shelf LNP injection │
-   │ 2. Ship to GMP viral facility  │                │ 2. Patient cells express       │
-   │ 3. 4-6 week wait ($400,000+)   │       VS.      │    CD19xCD3 bispecific in vivo │
-   │ 4. Toxic lymphodepletion chemo │                │ 3. Transient B-cell depletion  │
-   │ 5. High risk of lethal CRS/ICANS│               │ 4. Zero CRS reported in clinic │
-   └────────────────────────────────┘                └────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph Root["The Paradigm Shift in Cellular Medicine"]
+        direction LR
+        A["CONVENTIONAL EX VIVO CAR-T<br/>1. Harvest patient T-cells<br/>2. Ship to GMP viral facility<br/>3. 4–6 week wait ($400,000+)<br/>4. Toxic lymphodepletion chemo<br/>5. High risk of lethal CRS/ICANS"] ---|"VS."| B["IN VIVO mRNA CELL ENGAGER (ABO2203)<br/>1. Off-the-shelf LNP injection<br/>2. Patient cells express CD19xCD3 bispecific in vivo<br/>3. Transient B-cell depletion<br/>4. Zero CRS reported in clinic"]
+    end
 ```
 
 Traditionally, treating severe autoimmune diseases (like systemic lupus erythematosus or refractory rheumatoid arthritis) with B-cell depletion required:
@@ -259,16 +234,14 @@ When you strip away the market capitalization swings and Silicon Valley hype, wh
 
 The answer requires rejecting both naive extremes:
 
-```
-        THE CYCLE OF mRNA REALISM
-        
-  1. Hype Era (2020-2021)       2. Crash Era (2022-2025)       3. Mature Era (2026+)
-  "Universal compiler for       "It's a one-hit pandemic       "An indispensable, targeted
-   all human disease;            wonder; delivery failed;       biological weapon with
-   biology is just software."    pipelines are worthless."      precise clinical scope."
-             │                              │                              │
-             ▼                              ▼                              ▼
-      CATEGORICAL ERROR              CYNICAL MISTAKE                EMPIRICAL REALITY
+```mermaid
+flowchart TD
+    subgraph Cycle["THE CYCLE OF mRNA REALISM"]
+        direction TB
+        A1["1. Hype Era (2020–2021)<br/>'Universal compiler for all human disease;<br/>biology is just software.'"] --> B1["CATEGORICAL ERROR"]
+        A2["2. Crash Era (2022–2025)<br/>'It's a one-hit pandemic wonder;<br/>delivery failed; pipelines are worthless.'"] --> B2["CYNICAL MISTAKE"]
+        A3["3. Mature Era (2026+)<br/>'An indispensable, targeted biological weapon<br/>with precise clinical scope.'"] --> B3["EMPIRICAL REALITY"]
+    end
 ```
 
 1. **The tech enthusiasts were wrong about the scope:** mRNA is not "software for life." The human body is not an AWS cloud server where you can inject code and expect bug-free execution. You cannot ignore liver tropism, endosomal trapping, immunogenicity, or organ inflammation. When applied carelessly to chronic protein replacement or simple seasonal infections with established alternatives, mRNA hit a brick wall and deservedly lost billions.

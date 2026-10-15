@@ -321,7 +321,7 @@ Before projecting the impact of full Chinese self-sufficiency, we must audit how
 
 ```mermaid
 flowchart TD
-    subgraph The Sanctions Paradox: 4-Way Causal Disentanglement
+    subgraph Paradox["The Sanctions Paradox: 4-Way Causal Disentanglement"]
         D["<b>1. Direct Causation (Sanctions -> Domestic R&D)</b><br/>US bans cut off Nvidia/ASML/HBM, forcing Beijing to inject $150B+ via Big Fund III & subsidies"]
         R["<b>2. Reverse Causation (Captive Demand -> Product Maturity)</b><br/>Before bans, Alibaba/Tencent refused to buy Huawei chips; sanctions created a $40B captive customer base"]
         Z["<b>3. Confounder Z (The Algorithmic Efficiency Shift)</b><br/>Global shift to MoE (DeepSeek), FP8 quantization, and RLVR inference reduced single-chip FLOP dependency"]

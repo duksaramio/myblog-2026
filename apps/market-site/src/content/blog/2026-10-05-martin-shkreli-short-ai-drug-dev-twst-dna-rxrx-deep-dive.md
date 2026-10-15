@@ -58,21 +58,13 @@ Shkreli notes parenthetically that IND-enabling tox is *(not hard just expensive
 
 To clear an IND, a sponsor must execute a standardized battery of studies mandated by international regulatory harmonisation:
 
-```
-                      THE PRECLINICAL IND-ENABLING TOXICOLOGY BATTERY
-                                (ICH M3(R2) & 21 CFR § 312)
-                                             │
-      ┌──────────────────────┬───────────────┴───────────────┬──────────────────────┐
-      ▼                      ▼                               ▼                      ▼
-[ Repeat-Dose Tox ]  [ Safety Pharmacology ]         [ Genotoxicity ]        [ ADME & CMC ]
-  • Rodent (Rat):       • Cardiovascular:               • Bacterial Reverse     • GLP/GMP kg-scale
-    14- or 28-day         hERG patch-clamp                Mutation (Ames)         batch synthesis
-    GLP repeat dose       conscious telemetry           • In vitro Mammalian    • Solid-state salt &
-  • Non-Rodent:         • Respiratory:                    Chromosomal Aberr.      polymorph screening
-    Cyno Monkey or        Plethysmography               • In vivo Rat           • Formulation stability
-    Beagle Dog          • Central Nervous System:         Micronucleus Assay      & bioanalytical assay
-  • Toxicokinetics        Irwin Battery test                                      validation
-    (TK) & Necropsy
+```mermaid
+flowchart TD
+    TOP["THE PRECLINICAL IND-ENABLING TOXICOLOGY BATTERY<br/>(ICH M3(R2) & 21 CFR § 312)"]
+    TOP --> A["Repeat-Dose Tox<br/>• Rodent (Rat): 14- or 28-day GLP repeat dose<br/>• Non-Rodent: Cyno Monkey or Beagle Dog<br/>• Toxicokinetics (TK) & Necropsy"]
+    TOP --> B["Safety Pharmacology<br/>• Cardiovascular: hERG patch-clamp, conscious telemetry<br/>• Respiratory: Plethysmography<br/>• Central Nervous System: Irwin Battery test"]
+    TOP --> C["Genotoxicity<br/>• Bacterial Reverse Mutation (Ames)<br/>• In vitro Mammalian Chromosomal Aberr.<br/>• In vivo Rat Micronucleus Assay"]
+    TOP --> D["ADME & CMC<br/>• GLP/GMP kg-scale batch synthesis<br/>• Solid-state salt & polymorph screening<br/>• Formulation stability & bioanalytical assay validation"]
 ```
 
 1. **Repeat-Dose GLP Toxicity**: Repeated dosing for 14 to 28 days in **two mammalian species** (one rodent, typically Sprague-Dawley rats; one non-rodent, typically cynomolgus macaques or beagle dogs). Every animal is sacrificed, necropsied, and over 40 distinct organs undergo comprehensive histopathological evaluation to identify the No Observed Adverse Effect Level (NOAEL).

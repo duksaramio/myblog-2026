@@ -41,29 +41,18 @@ Do not provide a generic summary. Execute the following evaluation:
 4. Under what exact conditions would the policy fail to achieve its stated objectives?
 ```
 
-```
-                   SPONGE PROMPTING (Default LLM Behavior)
-   [Prompt / Claim] ───► [Passive Absorption / Fluent Echo] ───► Unexamined Output
-                                      vs.
-              PANNING FOR GOLD (The Critical Thinking Pipeline)
-   [Prompt / Claim]
-          │
-          ▼
-   ┌────────────────────────────────────────────────────────────────────────┐
-   │ 1. Structural Decomposition: Issue & Conclusion Identification        │
-   │ 2. Warrant Isolation: Reasons & Evidence Separation                    │
-   │ 3. Semantic Audit: Ambiguity & Operational Definitions                 │
-   │ 4. Hidden Architecture: Value Conflicts & Descriptive Assumptions      │
-   │ 5. Reasoning Diagnostics: Fallacy Detection & Diversion Filters       │
-   │ 6. Evidence Scrutiny: Empirical Hierarchy & Measurement Validity       │
-   │ 7. Causal Disentanglement: Rival Causes & Directionality               │
-   │ 8. Quantitative Audit: Statistical Truth vs. Deception                 │
-   │ 9. Negative View & Information Omission: Who Loses & What's Missing    │
-   │ 10. Grey Thinking Synthesis: Conditional Conclusions ("If-Clauses")    │
-   └────────────────────────────────────────────────────────────────────────┘
-          │
-          ▼
-   [Evaluated Gold: Robust, Contextualized, Falsifiable Conclusions]
+```mermaid
+flowchart TD
+    subgraph Sponge["SPONGE PROMPTING (Default LLM Behavior)"]
+        direction LR
+        S1["Prompt / Claim"] --> S2["Passive Absorption / Fluent Echo"] --> S3["Unexamined Output"]
+    end
+
+    subgraph Panning["PANNING FOR GOLD (The Critical Thinking Pipeline)"]
+        direction TB
+        P1["Prompt / Claim"] --> P2["1. Structural Decomposition: Issue & Conclusion Identification<br/>2. Warrant Isolation: Reasons & Evidence Separation<br/>3. Semantic Audit: Ambiguity & Operational Definitions<br/>4. Hidden Architecture: Value Conflicts & Descriptive Assumptions<br/>5. Reasoning Diagnostics: Fallacy Detection & Diversion Filters<br/>6. Evidence Scrutiny: Empirical Hierarchy & Measurement Validity<br/>7. Causal Disentanglement: Rival Causes & Directionality<br/>8. Quantitative Audit: Statistical Truth vs. Deception<br/>9. Negative View & Information Omission: Who Loses & What's Missing<br/>10. Grey Thinking Synthesis: Conditional Conclusions ('If-Clauses')"]
+        P2 --> P3["Evaluated Gold: Robust, Contextualized, Falsifiable Conclusions"]
+    end
 ```
 
 ### Strong-Sense vs. Weak-Sense Prompting
@@ -145,13 +134,11 @@ Inspect the key terms in the following argument for critical ambiguity.
 
 Chapter 5 is arguably the intellectual centerpiece of *Asking the Right Questions*. An argument's visible structure (Reasons → Conclusion) is held together by an **invisible glue**: unstated assumptions.
 
-```
-       [ STATED REASONS ] ────────► [ CONCLUSION ]
-                 ▲                      ▲
-                 │   INVISIBLE GLUE     │
-                 └─── [ ASSUMPTIONS ] ──┘
-                      • Value Priorities
-                      • Descriptive Beliefs
+```mermaid
+flowchart TD
+    R["STATED REASONS"] --> C["CONCLUSION"]
+    A["ASSUMPTIONS (Invisible Glue)<br/>• Value Priorities<br/>• Descriptive Beliefs"] -.->|"Supports"| R
+    A -.->|"Bridges Gap"| C
 ```
 
 ### 1. Value Assumptions (Value Conflicts)
@@ -216,12 +203,21 @@ When models evaluate evidence, they often equate personal testimonials, case stu
 
 Chapter 9 provides one of the most powerful tools in critical thinking: **The Rival Causes Framework**. When an argument claims that $X$ caused $Y$ based on an association or correlation, critical thinkers must test four competing hypotheses:
 
-```
-  1. Direct Causation:        X ──────────────► Y
-  2. Reverse Causation:       Y ──────────────► X
-  3. Third Variable (Z):      Z ──────┬───────► X
-                                      └───────► Y
-  4. Mutual Feedback Loop:    X ◄─────────────► Y
+```mermaid
+flowchart LR
+    subgraph M1["1. Direct Causation"]
+        X1["X"] --> Y1["Y"]
+    end
+    subgraph M2["2. Reverse Causation"]
+        Y2["Y"] --> X2["X"]
+    end
+    subgraph M3["3. Third Variable (Z)"]
+        Z3["Z"] --> X3["X"]
+        Z3 --> Y3["Y"]
+    end
+    subgraph M4["4. Mutual Feedback Loop"]
+        X4["X"] <--> Y4["Y"]
+    end
 ```
 
 #### The Rival Cause Generator Prompt
@@ -272,16 +268,12 @@ Chapter 12 tackles **Dichotomous Thinking**—the black-and-white, yes-or-no tra
 
 Very few complex problems have binary answers. Browne and Keeley advocate **Grey Thinking**: reflective thinking that explores the spectrum of possibilities between "yes" and "no". The primary tool for grey thinking is the **If-Clause**.
 
-```
-                DICHOTOMOUS THINKING (Binary Trap)
-                       [ Yes ]  or  [ No ]
-                                │
-                                ▼
-                   GREY THINKING (If-Clauses)
-        ┌───────────────────────┼───────────────────────┐
-        ▼                       ▼                       ▼
-  If [Context A holds]   If [Context B holds]   If [Context C holds]
-   → Conclusion 1         → Conclusion 2         → Conclusion 3
+```mermaid
+flowchart TD
+    D["DICHOTOMOUS THINKING (Binary Trap)<br/>'Yes' or 'No'"] --> G["GREY THINKING (If-Clauses)"]
+    G --> C1["If Context A holds<br/>→ Conclusion 1"]
+    G --> C2["If Context B holds<br/>→ Conclusion 2"]
+    G --> C3["If Context C holds<br/>→ Conclusion 3"]
 ```
 
 Instead of forcing an LLM to take an absolute stand (*"Is remote work good for productivity?"*), use the Grey Thinking syntax:
@@ -336,7 +328,7 @@ CORE OPERATING DIRECTIVES:
 
 Before accepting any high-stakes analysis, deploying an AI workflow, or making a strategic decision, execute this verification pass:
 
-```
+```markdown
 [ ] 1. ISSUE: Is the core question explicitly identified as descriptive or prescriptive?
 [ ] 2. CONCLUSION: What is the exact thesis the communicator wants me to accept?
 [ ] 3. REASONS: Did reasons precede the conclusion, or is this managed/backward reasoning?

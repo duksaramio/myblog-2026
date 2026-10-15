@@ -319,7 +319,8 @@ tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.045);
 }
 
-/* Data Visualization Charts */
+/* Data Visualization & Mermaid Charts */
+.mermaid-chart,
 .post-chart {
     width: 100%;
     margin: 28px 0;
@@ -329,6 +330,18 @@ tbody tr:hover {
     border-radius: 4px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+.mermaid-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.mermaid-chart svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .post-chart svg {
@@ -348,4 +361,3 @@ tbody tr:hover {
     line-height: 1.5;
     color: var(--text-muted);
 }
-

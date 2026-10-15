@@ -146,16 +146,16 @@ From the second you wake up, your brain's neurons are continuously burning adeno
 
 As more adenosine binds, neuronal firing slows down. Your eyelids grow heavy. Sleep pressure mounts. This is your brain’s biological fuel gauge signaling that it needs downtime to repair, restore glycogen reserves, and clear metabolic waste.
 
-```
-NATURAL WAKEFULNESS:
-  ATP Burning ──> Adenosine Accumulates ──> Binds to A1/A2A Receptors ──> Deep Sleep Drive (Process S)
-
-WITH CAFFEINE:
-  Caffeine ──> Crosses Blood-Brain Barrier ──> Plugs A1/A2A Receptors (Antagonist)
-                                               │
-                                               ▼
-  Adenosine continues building up behind the dam, undetected by the brain.
-  When caffeine clears ──> Massive Adenosine Flood ──> The Afternoon Crash.
+```mermaid
+flowchart TD
+    subgraph NAT["NATURAL WAKEFULNESS"]
+        N1["ATP Burning"] --> N2["Adenosine Accumulates"] --> N3["Binds to A1/A2A Receptors"] --> N4["Deep Sleep Drive (Process S)"]
+    end
+    subgraph CAF["WITH CAFFEINE"]
+        C1["Caffeine"] --> C2["Crosses Blood-Brain Barrier"] --> C3["Plugs A1/A2A Receptors (Antagonist)"]
+        C3 --> C4["Adenosine continues building up behind the dam, undetected by the brain"]
+        C4 -->|"When caffeine clears"| C5["Massive Adenosine Flood"] --> C6["The Afternoon Crash"]
+    end
 ```
 
 Caffeine is an almost perfect molecular mimic of adenosine. It crosses the blood-brain barrier and slots into the A₁ and A₂ₐ receptors with high affinity. However, caffeine is an **antagonist**: it occupies the receptor without activating it. It acts like a key inserted into a deadbolt that fits, but doesn't turn—blocking the real key from entering.
@@ -171,13 +171,13 @@ In healthy adults, the **average elimination half-life of caffeine is approximat
 
 **Caffeine’s quarter-life is approximately 10 to 14 hours.**
 
-```
-A 200 mg Caffeine Timeline (e.g., a 16 oz coffee or double espresso at 2:00 PM):
-
-  02:00 PM:  200 mg ingested (Peak plasma concentration at ~2:45 PM)
-  07:30 PM:  100 mg active in your brain (Equivalent to a strong cup of black tea)
-  01:00 AM:   50 mg active in your brain (Equivalent to a can of Coca-Cola)
-  06:30 AM:   25 mg still circulating as your alarm rings
+```mermaid
+flowchart LR
+    subgraph TIMELINE["A 200 mg Caffeine Timeline (16 oz coffee or double espresso at 2:00 PM)"]
+        T1["02:00 PM: 200 mg ingested<br/>(Peak plasma concentration at ~2:45 PM)"] --> T2["07:30 PM: 100 mg active in brain<br/>(Equivalent to a strong cup of black tea)"]
+        T2 --> T3["01:00 AM: 50 mg active in brain<br/>(Equivalent to a can of Coca-Cola)"]
+        T3 --> T4["06:30 AM: 25 mg still circulating<br/>(As your morning alarm rings)"]
+    end
 ```
 
 When you go to bed at 11:30 PM after a 2:00 PM coffee, you are not sleeping with a clean nervous system. You are going to bed with approximately a quarter to a third of a cup of coffee actively circulating through your brainstem.
@@ -249,27 +249,13 @@ When public health headlines announce that *"everyone should drink coffee for th
 
 If you recently quit coffee cold turkey, what actually occurred inside your physiology?
 
-```
-CHRONIC CONSUMPTION:
-  Brain senses blocked adenosine ──> Compensates by creating MORE receptors (Upregulation)
-                                     │
-                                     ▼
-COLD TURKEY CESSATION:
-  Day 1–3: Massive adenosine flood onto supersized receptor field
-           ──> Severe cerebral vasodilation (Vascular migraine/headache)
-           ──> Acute lethargy, brain fog, dysphoria
-                                     │
-                                     ▼
-DAY 5–14 (NEUROCHEMICAL ADAPTATION):
-  Brain prunes excess receptors back to normal baseline density (Downregulation)
-  Adenosine tone re-calibrates
-                                     │
-                                     ▼
-LONG-TERM OUTCOME:
-  Restoration of natural delta Slow-Wave Sleep (N3)
-  Rebound REM sleep with vivid dreaming
-  Cortisol awakening response (CAR) restored: natural morning wakefulness
-  Resting heart rate drops, baseline autonomic nervous system balances
+```mermaid
+flowchart TD
+    S1["CHRONIC CONSUMPTION<br/>Brain senses blocked adenosine -> Compensates by creating MORE receptors (Upregulation)"]
+    S2["COLD TURKEY CESSATION (Day 1-3)<br/>Massive adenosine flood onto supersized receptor field<br/>Severe cerebral vasodilation (Vascular migraine/headache)<br/>Acute lethargy, brain fog, dysphoria"]
+    S3["DAY 5-14 (NEUROCHEMICAL ADAPTATION)<br/>Brain prunes excess receptors back to normal baseline density (Downregulation)<br/>Adenosine tone re-calibrates"]
+    S4["LONG-TERM OUTCOME<br/>Restoration of natural delta Slow-Wave Sleep (N3)<br/>Rebound REM sleep with vivid dreaming<br/>Cortisol awakening response (CAR) restored: natural morning wakefulness<br/>Resting heart rate drops, baseline autonomic nervous system balances"]
+    S1 --> S2 --> S3 --> S4
 ```
 
 During chronic caffeine intake, your brain isn't passive. Sighting that its adenosine receptors are continually obstructed, it executes homeostatic compensation: **it upregulates, synthesizing hundreds of new adenosine receptors** to maintain its ability to sense fatigue.

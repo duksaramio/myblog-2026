@@ -129,18 +129,17 @@ Why did CoreWeave's bond yield spike to 15.1%, and why is the AI credit architec
 ### The Fatal Duration Mismatch: Five-Year Debt vs. Three-Year Contracts
 At the core of the CoreWeave yield blowout lies an existential duration mismatch documented by Chamath Palihapitiya:
 
-```
-                            THE AI INFRASTRUCTURE DURATION TRAP
-    
-          Liabilities (Debt Term):  [ ─── 5-Year Senior Unsecured Bonds (Due 2032) ─── ]
-                                    ▲                                                   ▲
-          Customer Contracts:       [ ── 3-Year Cloud Lease ── ]                       │
-                                    ▲                          ▲                       │
-          Collateral Useful Life:   [ ── 36-Month GPU Peak ── ]                        │
-                                                               │                       │
-                                                      RECONTRACTING CLIFF:             │
-                                              Can CoreWeave re-lease aged H100s        │
-                                              in Year 4-5 to service Year 6 debt? ─────┘
+```mermaid
+flowchart TD
+    subgraph TRAP["THE AI INFRASTRUCTURE DURATION TRAP"]
+        L1["Liabilities (Debt Term):<br/>5-Year Senior Unsecured Bonds (Due 2032)"]
+        L2["Customer Contracts:<br/>3-Year Cloud Lease"]
+        L3["Collateral Useful Life:<br/>36-Month GPU Peak"]
+        CLIFF["RECONTRACTING CLIFF:<br/>Can CoreWeave re-lease aged H100s<br/>in Year 4-5 to service Year 6 debt?"]
+        L1 --> CLIFF
+        L2 --> CLIFF
+        L3 --> CLIFF
+    end
 ```
 
 * **CoreWeave:** Borrowed for five to six years (2026–2032) against underlying customer contracts averaging approximately **three years**.
@@ -172,15 +171,15 @@ In January 2026, the **Bank for International Settlements (BIS)** conducted a qu
 * Private loans to AI-related borrowers carried an average spread of **6.2 percentage points (620 bps)** above base rate.
 * Private loans to non-AI corporate borrowers carried an average spread of **6.1 percentage points (610 bps)** above base rate.
 
-```
-                   PRIVATE CREDIT SPREAD COMPARISON (BIS DATA)
-    
-     Non-AI Direct Corporate Loans: [ Base Rate + 6.10% ]
-     AI Infrastructure & Cloud:     [ Base Rate + 6.20% ] ──> Only 10 bps difference!
-                                    ▲
-                                    Missing Risk Premium:
-                                    Where is the compensation for Moore's Law,
-                                    cancellable leases, and 15% bond yields?
+```mermaid
+flowchart LR
+    subgraph BIS["PRIVATE CREDIT SPREAD COMPARISON (BIS DATA)"]
+        N["Non-AI Direct Corporate Loans:<br/>Base Rate + 6.10% (610 bps)"]
+        A["AI Infrastructure & Cloud:<br/>Base Rate + 6.20% (620 bps)"]
+        M["Only 10 bps difference!<br/>Missing Risk Premium:<br/>Where is the compensation for Moore's Law,<br/>cancellable leases, and 15% bond yields?"]
+        N --> M
+        A --> M
+    end
 ```
 
 A **10-basis-point differential** between a stable, cash-generative industrial company and an AI cloud startup borrowing billions against rapidly depreciating semiconductor chips represents a colossal market mispricing of risk. Private direct lenders failed to price technological obsolescence, mistaking hyperscaler enthusiasm for structural creditworthiness.

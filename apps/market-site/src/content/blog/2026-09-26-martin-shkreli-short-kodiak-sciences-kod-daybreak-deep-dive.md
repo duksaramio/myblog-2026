@@ -57,19 +57,13 @@ Historically, anti-VEGF biologics have a short intravitreal half-life (~4 to 9 d
 
 Kodiak’s thesis was conceptually ambitious: **conjugate a humanized anti-VEGF-A antibody fragment (Fab) to an ultra-high-molecular-weight (~800 kDa) branched phosphorylcholine (PC) biopolymer.**
 
-```
-                     KODIAK ABC® PLATFORM SCHEMATIC
-   
-       [ Anti-VEGF Fab Fragment ] (Binding affinity & specificity)
-                  │
-                  ▼ (Optically clear covalent linkage)
-     ====================================================
-     [   800 kDa Phosphorylcholine (PC) Biopolymer Mesh  ]
-     ====================================================
-                  │
-                  ├─► Intended: Prolonged vitreous retention (Slow clearance)
-                  └─► Unintended Liability: Impeded retinal tissue penetration &
-                      sub-therapeutic retinal pigment epithelium (RPE) trough levels
+```mermaid
+flowchart TD
+    subgraph S1["KODIAK ABC® PLATFORM SCHEMATIC"]
+        A["Anti-VEGF Fab Fragment<br/>(Binding affinity & specificity)"] -->|"Optically clear covalent linkage"| B["800 kDa Phosphorylcholine (PC) Biopolymer Mesh"]
+        B --> C["Intended: Prolonged vitreous retention (Slow clearance)"]
+        B --> D["Unintended Liability: Impeded retinal tissue penetration &<br/>sub-therapeutic retinal pigment epithelium (RPE) trough levels"]
+    end
 ```
 
 ### The Biophysical Trade-Off: Vitreal Retention vs. Retinal Bioavailability
@@ -120,17 +114,14 @@ In late 2023, Kodiak reported data from the Phase 3 **DAYLIGHT** study, which ev
 
 This brings us directly to **DAYBREAK**—the exact trial Shkreli is shorting ahead of.
 
-```
-                  DAYBREAK TRIAL (PHASE 3) ARCHITECTURE
-                  
-       Total Enrollment: ~675-690 Treatment-Naïve wet AMD Patients
-                                   │
-         ┌─────────────────────────┼─────────────────────────┐
-         ▼                         ▼                         ▼
-   [ ARM A: KSI-501 ]       [ ARM B: Tarcocimab ]     [ ARM C: Aflibercept ]
-   Tabirafusp alfa           Zenkuda (KSI-301)         Eylea 2 mg
-   Bispecific anti-VEGF/IL-6 Anti-VEGF ABC Conjugate   Active Comparator
-   Fixed Q8W + PRN           Individualized Q4W-Q24W   Standard Q8W Regimen
+```mermaid
+flowchart TD
+    subgraph S1["DAYBREAK TRIAL (PHASE 3) ARCHITECTURE"]
+        TOP["Total Enrollment: ~675-690 Treatment-Naïve wet AMD Patients"]
+        TOP --> A["ARM A: KSI-501<br/>Tabirafusp alfa<br/>Bispecific anti-VEGF/IL-6<br/>Fixed Q8W + PRN"]
+        TOP --> B["ARM B: Tarcocimab<br/>Zenkuda (KSI-301)<br/>Anti-VEGF ABC Conjugate<br/>Individualized Q4W-Q24W"]
+        TOP --> C["ARM C: Aflibercept<br/>Eylea 2 mg<br/>Active Comparator<br/>Standard Q8W Regimen"]
+    end
 ```
 
 ### What Did Kodiak Change in DAYBREAK?
@@ -198,17 +189,12 @@ In both scenarios, equity holders face severe structural headwinds.
 
 The run-up of $KOD to **$32.35** ahead of Monday’s announcement represents an extraordinary momentum anomaly.
 
-```
-                           KOD STOCK VALUATION ASYMMETRY
-               
-       Bullish Ceiling (Best Case)  ▲  ~$42.00 - $48.00 (+30% to +50%)
-                                    │  (Quickly diluted by secondary offering)
-                                    │
-       CURRENT STOCK PRICE ───────► │  $32.35 (Pre-DAYBREAK Sentiment Peak)
-                                    │
-                                    │
-       Bearish Floor (Failure Case) ▼  ~$3.50 - $6.50 (-80% to -90%)
-                                       (Cash parity / pipeline write-off)
+```mermaid
+flowchart TD
+    subgraph S1["KOD STOCK VALUATION ASYMMETRY"]
+        A["Bullish Ceiling (Best Case): ~$42.00 - $48.00 (+30% to +50%)<br/>(Quickly diluted by secondary offering)"] --- B["CURRENT STOCK PRICE: $32.35<br/>(Pre-DAYBREAK Sentiment Peak)"]
+        B --- C["Bearish Floor (Failure Case): ~$3.50 - $6.50 (-80% to -90%)<br/>(Cash parity / pipeline write-off)"]
+    end
 ```
 
 At $32.35, the options market is pricing in an enormous binary move (implied volatility >200%). The risk-reward skew is heavily asymmetric:

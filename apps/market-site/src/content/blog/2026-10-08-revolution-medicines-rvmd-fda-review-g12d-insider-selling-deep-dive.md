@@ -137,18 +137,11 @@ Why did Rasonque underperform so dramatically in G12D, and why did C-suite execu
 ### The Biophysical Mechanism: Tri-Complex Kinetics
 Daraxonrasib’s mechanism of action relies on forming an intracellular "tri-complex" with the endogenous immunophilin **Cyclophilin A (CypA)** ([Lou & Zhang, Exp Hematol Oncol 2026](https://pubmed.ncbi.nlm.nih.gov/42806361/)):
 
-```
-                  ┌───────────────────────────────┐
-                  │      Cyclophilin A (CypA)     │
-                  └──────────────┬────────────────┘
-                                 │
-                     [ Daraxonrasib (RMC-6236) ]
-                                 │
-                  ┌──────────────┴────────────────┐
-                  │       Active RAS(ON)-GTP      │
-                  └───────────────────────────────┘
-                                 ▲
-                     Codon 12 Mutation Interface
+```mermaid
+flowchart TD
+    A["Cyclophilin A (CypA)"] --- B["Daraxonrasib (RMC-6236)"]
+    B --- C["Active RAS(ON)-GTP"]
+    D["Codon 12 Mutation Interface"] --> C
 ```
 
 * **In KRAS G12V (Valine):** The neutral, hydrophobic, aliphatic side chain (-CH(CH3)2) packs seamlessly into the hydrophobic pocket formed at the CypA-drug interface. Binding affinity is high (K_d in low nanomolar range), resulting in deep, sustained MAPK pathway shutdown and a **50% objective response rate**.
@@ -191,16 +184,12 @@ However, mathematical aggregation concealed an acute bimodal distribution:
 ### 3. Capital Structure & Cash Furnace Mathematics
 Biotechnology valuations are fundamentally constrained by balance sheet survival math. According to Revolution Medicines' [Form 10-Q for the quarter ended June 30, 2026](https://data.sec.gov/submissions/CIK0001628171.json):
 
-```
-                               REVOLUTION MEDICINES CAPITAL RUNWAY AUDIT
-    
-           Balance Sheet Cash & Securities (Q2 2026): $3.9 Billion
-           ─────────────────────────────────────────────────────────────
-           Projected Full-Year 2026 GAAP Operating Burn: $2.1B - $2.2B
-           Quarterly Cash Burn Rate: ~$525 Million - $550 Million / Quarter
-           ─────────────────────────────────────────────────────────────
-           Imputed Cash Runway: ~18 to 22 Months
-           Royalty Pharma Encumbrance: $250M upfront (tiered royalty drain)
+```mermaid
+flowchart TD
+    subgraph S1["REVOLUTION MEDICINES CAPITAL RUNWAY AUDIT"]
+        A["Balance Sheet Cash & Securities (Q2 2026): $3.9 Billion"] --> B["Projected Full-Year 2026 GAAP Operating Burn: $2.1B - $2.2B<br/>Quarterly Cash Burn Rate: ~$525 Million - $550 Million / Quarter"]
+        B --> C["Imputed Cash Runway: ~18 to 22 Months<br/>Royalty Pharma Encumbrance: $250M upfront (tiered royalty drain)"]
+    end
 ```
 
 Even with an ostensibly massive $3.9 billion cash balance, RVMD is incinerating **over half a billion dollars every 90 days**. It is simultaneously financing multiple global Phase 3 programs (RASolute 302 confirmatory, RASolute 305 frontline PDAC, RASolute 309 doublet, and NSCLC expansion studies) while funding commercial buildout.

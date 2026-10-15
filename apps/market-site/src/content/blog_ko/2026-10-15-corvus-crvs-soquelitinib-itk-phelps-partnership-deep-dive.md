@@ -71,19 +71,23 @@ lang: "ko"
 * **현금, 현금성 자산 및 시장성 유가증권:** 2026년 6월 30일 기준 **2억 1,523만 달러** (현금 및 현금성 자산 1,890.5만 달러 + 미국채 1억 7,023.4만 달러 + 미국 정부기관채 2,608.9만 달러). 이는 **2026년 1월 23일 주당 22.15달러**에 9,085,778주를 발행해 **1억 8,940.7만 달러의 순조달액**을 확보한 유상증자에 힘입은 것이다.
 * **영업 현금 소진(Burn) 궤적:** 2026년 2분기 연구개발(R&D) 비용은 전년 동기(787만 달러) 대비 102.8% 급증한 **1,596만 달러**, 일반관리(G&A) 비용은 **333만 달러**로 분기 총영업비용은 **1,930만 달러**를 기록했다(상반기 영업손실 3,417만 달러; 상반기 영업활동 현금유출 **2,577만 달러** 및 중국 관계사 **Angel Pharmaceuticals Co. Ltd.** 추가 지분 투자 **500만 달러**). 2026년 3분기 추정 순현금 소진액 약 1,500만~1,700만 달러를 차감하면, 2026년 10월 중순 현재 코버스는 약 **1억 9,800만~2억 달러의 순현금**(희석 주당 약 2.00달러)을 보유한 상태로 추산된다.
 
-```
-                     코버스 파마슈티컬스 ($CRVS) 자본 구조 (주가 $9.84 기준)
-   
-   [ 보통주: 8,412만주 ]      [ 선지급 워런트: 828만주 ]      [ 순희석 옵션: 665만주 ]
-              │                            │                                │
-              └────────────────────────────┼────────────────────────────────┘
-                                           ▼
-                   [ GAAP 기본 + 선지급 합산: 9,240만주 (시총 $9.09억) ]
-                   [ 완전 희석 (자기주식법): 9,905만주 (시총 $9.75억) ]
-                                           │
-                      차감: 2Q 현금 ($2.15억) / 3Q 추정 현금 (~$1.99억)
-                                           ▼
-                   [ 내재 기업가치 (Implied EV): $6.94억 ~ $7.76억 ]
+```mermaid
+flowchart TD
+    classDef equity fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef total fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+    classDef cash fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+    classDef ev fill:#f3e8ff,stroke:#9333ea,stroke-width:2px;
+
+    subgraph Cap["코버스 파마슈티컬스 ($CRVS) 자본 구조 (주가 $9.84 기준)"]
+        CS["보통주:<br/>8,412만주"]:::equity
+        PFW["선지급 워런트 ($0.0001):<br/>828만주"]:::equity
+        OPT["순희석 옵션 (WAEP $4.90):<br/>665만주"]:::equity
+
+        CS & PFW --> BASIC["GAAP 기본 + 선지급 합산:<br/>9,240만주 (시총 $9.09억)"]:::total
+        BASIC & OPT --> DIL["완전 희석 (자기주식법):<br/>9,905만주 (시총 $9.75억)"]:::total
+        DIL --> CASH["현금 차감:<br/>2Q 현금 $2.15억 / 3Q 추정 현금 ~$1.99억"]:::cash
+        CASH --> EV["내재 기업가치 (Implied EV):<br/>$6.94억 ~ $7.76억"]:::ev
+    end
 ```
 
 ### 내부자 이해관계 일치 및 이사회 거버넌스 보강
@@ -118,21 +122,22 @@ lang: "ko"
 
 그 해답은 **TEC 계열 키나아제의 구조적 상동성(homology) 문제**에 있다. 인간 T세포 내부에서는 두 가지 밀접하게 연관된 TEC 계열 비수용체 타이로신 키나아제인 **ITK(Interleukin-2-inducible T-cell kinase)**와 **RLK(Resting Lymphocyte Kinase, 일명 TXK)**가 T세포 수용체(TCR) 및 ZAP-70 하류에서 작동하여 **PLCγ1**을 인산화하고, 칼슘 유입(`NFAT`), `NF-κB`, `ERK`, `mTOR` 신호전달을 촉발한다.
 
-```
-                       근위부 TCR 신호전달 및 ITK / RLK 분기 메커니즘
-   
-                             [ TCR / CD3 + CD28 보조자극 ]
-                                           │
-                                           ▼
-                                 [ Lck / ZAP-70 활성화 ]
-                                           │
-                      ┌────────────────────┴────────────────────┐
-                      ▼                                         ▼
-       [ ITK (Th2 및 Th17에서 우세) ]            [ RLK / TXK (Th1 및 CD8+에서 중복 작동) ]
-       • ATP 포켓 내 Cys442 보유                 • 상동 위치에 Cys350 보유
-       • GATA3 / STAT6 구동 (Th2: IL-4/5/13)     • T-bet / IFN-γ / TNF-α / GZMB 유지
-       • RORγt / STAT3 구동 (Th17: IL-17A/F)     • CD8+ 세포독성 T세포 및 항바이러스 방어 보존
-       • BACH2 / Foxp3 억제 (Treg 전환 차단)     • 오직 [약물농도] << IC50(RLK)일 때만 보존됨
+```mermaid
+flowchart TD
+    classDef upstream fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef itk fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    classDef rlk fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+
+    subgraph TCR_Cascade["근위부 TCR 신호전달 및 ITK / RLK 분기 메커니즘"]
+        TCR["TCR / CD3 + CD28 보조자극"]:::upstream
+        ZAP["Lck / ZAP-70 활성화"]:::upstream
+        ITK_NODE["ITK (Th2 및 Th17에서 우세)<br/>• ATP 포켓 내 Cys442 보유<br/>• GATA3 / STAT6 구동 (Th2: IL-4/5/13)<br/>• RORγt / STAT3 구동 (Th17: IL-17A/F)<br/>• BACH2 / Foxp3 억제 (Treg 전환 차단)"]:::itk
+        RLK_NODE["RLK / TXK (Th1 및 CD8+에서 중복 작동)<br/>• 상동 위치에 Cys350 보유<br/>• T-bet / IFN-γ / TNF-α / GZMB 유지<br/>• CD8+ 세포독성 T세포 및 항바이러스 방어 보존<br/>• 오직 유리 약물농도 << IC50(RLK)일 때만 보존됨"]:::rlk
+
+        TCR --> ZAP
+        ZAP --> ITK_NODE
+        ZAP --> RLK_NODE
+    end
 ```
 
 고전적인 마우스 유전학 연구(`Itk-/-` 단일 녹아웃 vs. `Itk-/- Rlk-/-` 이중 녹아웃 마우스)에서 밝혀졌듯, *Itk* 유전자만 단독으로 결손시키면 TCR 신호 강도가 적절히 약화되어 **Th2(`GATA3`)** 및 **Th17(`RORγt`)** 분화는 차단되는 반면, 미감작(naive) CD4+ T세포가 **Th1(`T-bet`)** 및 **조절 T세포(`Foxp3+ Tregs`)**로 분화하도록 유도된다. 이는 **RLK/TXK**가 온전히 남아 Th1 및 CD8+ 세포독성 T림프구(CTL) 기능을 구제(rescue)하기 때문이다. 그러나 **ITK와 RLK가 동시에 억제**되면(`Itk-/- Rlk-/-` 이중 녹아웃 또는 이중 ITK/RLK 억제제 `PRN694` 투여 시), PLCγ1 인산화가 완전히 붕괴되면서 CD8+ 그랜자임 B(granzyme B), IL-2, IFN-γ 생성이 마비되고 범(pan) T세포 면역억제가 발생한다.

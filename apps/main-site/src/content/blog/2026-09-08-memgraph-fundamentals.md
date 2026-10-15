@@ -26,9 +26,9 @@ Switching between in-memory modes is straightforward (`STORAGE MODE IN_MEMORY_AN
 
 Memgraph lives and dies by RAM. Here's the formula for estimating storage memory in transactional mode:
 
-```
-StorageRAM = Vertices × 204B + Edges × 154B
-```
+$$
+\text{StorageRAM} = \text{Vertices} \times 204\text{ B} + \text{Edges} \times 154\text{ B}
+$$
 
 That's a rough estimate. The real breakdown: a Vertex is at least 136 bytes (80B object + 56B Delta), an Edge is at least 88 bytes (32B object + 56B Delta), plus SkipList container overhead (~24B per object for node + pointers), plus properties.
 

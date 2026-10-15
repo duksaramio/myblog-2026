@@ -50,18 +50,16 @@ DeepSeek将整个Cordis框架——九个包——打包进了他们的仓库中
 
 代理循环本身也是一个插件（`dsh-agent-loop`）。当代理处理消息时会发生以下情况：
 
-```
-turn/start
-  claim input + queued message
-  assemble prompt + tool schemas
-  -> agent/pre-step (reject or enter)
-     step/start
-     derive model history from session log
-     agent/request -> llm/stream -> assistant/message
-     tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute
-     step/end
-  -> agent/turn-stopping
-turn/end
+```mermaid
+flowchart TD
+    TS["turn/start<br/>认领输入 + 队列消息<br/>组装提示词 + 工具模式"] --> PRE["agent/pre-step（拒绝或进入）"]
+    subgraph STEP["step/start -> step/end"]
+        HIST["从会话日志推导模型历史记录"] --> REQ["agent/request -> llm/stream -> assistant/message"]
+        REQ --> TOOL["tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute"]
+    end
+    PRE --> STEP
+    STEP --> STOP["agent/turn-stopping"]
+    STOP --> TE["turn/end"]
 ```
 
 一个**步骤**是一个模型请求加上其工具调用。一个**轮**是零或多个步骤。关键事件是瀑布流 —— 监听器必须调用`next()`来委托，否则会中断链。这意味着钩子可以在管道中的任何点拦截、修改或阻止，而不改变循环本身。

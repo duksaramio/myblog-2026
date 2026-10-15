@@ -98,7 +98,7 @@ Why did Samsung (-7.1%), SK Hynix (-7.3%), and Micron (-4.0%) drop violently on 
 
 ```mermaid
 flowchart TD
-    subgraph Market Transmission Channels
+    subgraph S_MAT["Market Transmission Channels"]
         C1["Direct Threat: Risk of CXMT eroding high-margin server DDR5 pricing"]
         C2["Reverse Sentiment: Fund profit-taking after massive AI/HBM rally"]
         C3["Confounder Z: Macro rotation out of cyclical tech & capex fatigue"]
@@ -129,19 +129,23 @@ $$\text{Cell Area } A = K \cdot F^2$$
 
 For more than two decades, the global semiconductor industry has been anchored to **K = 6 (6F²)**.
 
-```
-    TRADITIONAL 6F² CELL (Planar / Saddle-Fin)           NEXT-GEN 4F² CELL (Vertical Channel Transistor)
-    ┌─────────────┬─────────────┬─────────────┐          ┌──────────────────────┬──────────────────────┐
-    │             │             │             │          │                      │                      │
-    │  Word Line  │ Transistor  │  Capacitor  │ 2F       │   Word Line (Gate)   │   Capacitor on Top   │ 2F
-    │             │   Channel   │   Contact   │          │     Wraps Channel    │                      │
-    ├─────────────┼─────────────┼─────────────┤          ├──────────────────────┼──────────────────────┤
-    │             │             │             │          │                      │                      │
-    │             │             │             │ 1F       │      Bit Line        │   Vertical Channel   │ 2F
-    │             │             │             │          │      (Buried)        │       Pillar         │
-    └─────────────┴─────────────┴─────────────┘          └──────────────────────┴──────────────────────┘
-    ◄────────────────── 3F ───────────────────►          ◄────────────────── 2F ───────────────────────►
-               Area = 3F × 2F = 6F²                                     Area = 2F × 2F = 4F²
+```mermaid
+flowchart LR
+    subgraph C6["TRADITIONAL 6F² CELL (Planar / Saddle-Fin)"]
+        direction TB
+        C6_1["Row 1 (2F Height):<br/>[Word Line] | [Transistor Channel] | [Capacitor Contact]"]
+        C6_2["Row 2 (1F Height):<br/>Isolation & Horizontal Active Area"]
+        C6_3["Dimensions: 3F Width × 2F Height<br/>Cell Area = 3F × 2F = 6F²"]
+        C6_1 --> C6_2 --> C6_3
+    end
+    subgraph C4["NEXT-GEN 4F² CELL (Vertical Channel Transistor)"]
+        direction TB
+        C4_1["Top Layer (2F):<br/>[Word Line (Gate) Wraps Channel] | [Capacitor on Top]"]
+        C4_2["Bottom Layer (2F):<br/>[Bit Line (Buried)] | [Vertical Channel Pillar]"]
+        C4_3["Dimensions: 2F Width × 2F Height<br/>Cell Area = 2F × 2F = 4F² (-33.3% Area, +50% Density)"]
+        C4_1 --> C4_2 --> C4_3
+    end
+    C6 -->|"Vertical 3D Transition"| C4
 ```
 
 In a planar or saddle-fin 6F² layout, the cell requires a 3F × 2F rectangle (or an angled 1.5F × 4F active area) to accommodate the horizontal channel length, source/drain contacts, and wordline isolation.
@@ -188,8 +192,8 @@ This mathematical identity reveals the core strategic arbitrage:
 What did CXMT deliberately omit from its triumphant conference presentation? The laws of solid-state device physics impose punishing engineering tradeoffs that CXMT did not discuss.
 
 ```mermaid
-graph LR
-    subgraph 4F² Physical Hurdles
+flowchart LR
+    subgraph S_HURD["4F² Physical Hurdles"]
         H1["High-Aspect-Ratio Etch<br>(Pillar tilt & CD taper)"]
         H2["Vertical Channel Defects<br>(Etch roughness & Dit traps)"]
         H3["Parasitic Bitline C_bl<br>(Sensing margin collapse)"]

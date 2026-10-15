@@ -65,18 +65,16 @@ Why is the market so panicked when Oracle is still technically classified as "In
 
 The answer lies in the **liquidity cliff** separating **BBB-** from **BB+**.
 
-```
-    INVESTMENT GRADE (IG)               HIGH YIELD ("JUNK")
-+-----------------------------+     +-----------------------------+
-| AAA  |  AA  |   A   |  BBB  |  |  |  BB+  |   BB   |    B   | CCC |
-|                             |  |  |                             |
-| Trillions in Institutional  |  |  | Speculative Funds, Family   |
-| Mandates (Pensions/Insurers)|  |  | Offices, Distressed Debt    |
-+-----------------------------+  |  +-----------------------------+
-                                 |
-                                 v
-                     THE BBB- LIQUIDITY CLIFF
-                     (Oracle currently: BBB-)
+```mermaid
+flowchart LR
+    subgraph IG["INVESTMENT GRADE (IG)"]
+        IG_R["AAA | AA | A | BBB-<br/>Trillions in Institutional Mandates<br/>(Pensions / Insurers)"]
+    end
+    CLIFF["THE BBB- LIQUIDITY CLIFF<br/>(Oracle currently: BBB-)"]
+    subgraph HY["HIGH YIELD ('JUNK')"]
+        HY_R["BB+ | BB | B | CCC<br/>Speculative Funds, Family Offices,<br/>Distressed Debt"]
+    end
+    IG_R -->|"1-Notch Downgrade"| CLIFF -->|"Forced Liquidation"| HY_R
 ```
 
 ### The S&P July 2026 Downgrade
@@ -123,37 +121,17 @@ In recent earnings calls, Oracle celebrated a record **$638 billion Remaining Pe
 
 However, credit rating agencies look past the headline backlog to evaluate **customer concentration and counterparty solvency**.
 
-```
-                     THE CIRCULAR AI FINANCING LOOP
-                     
-            +-----------------------------------------------+
-            |               Venture Capital / PE            |
-            |      (Sovereign Funds, SoftBank, Tech Giants) |
-            +-----------------------------------------------+
-                                    |
-                       Invests Equity / Liquidity
-                                    v
-            +-----------------------------------------------+
-            |                    OPENAI                     |
-            |   Pre-IPO Projections: -$278B FCF thru 2030   |
-            |   Infrastructure Commitments: $856 Billion    |
-            +-----------------------------------------------+
-                                    |
-                       Signs Long-Term GPU Leases
-                        (~50% of Oracle's RPO)
-                                    v
-            +-----------------------------------------------+
-            |                 ORACLE (OCI)                  |
-            |   Borrows $125B+ to build data centers        |
-            |   Signs 15-20 yr land/power PPAs              |
-            +-----------------------------------------------+
-                                    |
-                       Buys NVL72 Racks / Silicon
-                                    v
-            +-----------------------------------------------+
-            |               NVIDIA / HARDWARE               |
-            |         Records Record GPU Revenues           |
-            +-----------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph LOOP["THE CIRCULAR AI FINANCING LOOP"]
+        VC["Venture Capital / PE<br/>(Sovereign Funds, SoftBank, Tech Giants)"]
+        OAI["OPENAI<br/>Pre-IPO Projections: -$278B FCF thru 2030<br/>Infrastructure Commitments: $856 Billion"]
+        ORCL["ORACLE (OCI)<br/>Borrows $125B+ to build data centers<br/>Signs 15-20 yr land/power PPAs"]
+        NVDA["NVIDIA / HARDWARE<br/>Records Record GPU Revenues"]
+        VC -->|"Invests Equity / Liquidity"| OAI
+        OAI -->|"Signs Long-Term GPU Leases (~50% of Oracle's RPO)"| ORCL
+        ORCL -->|"Buys NVL72 Racks / Silicon"| NVDA
+    end
 ```
 
 ### The Anatomy of the Counterparty Vulnerability
@@ -210,21 +188,15 @@ This development must be viewed in tandem with our earlier investigation into Go
 
 In that analysis, we documented the **$308 billion annual revenue hurdle** required across the six major infrastructure operators simply to break even (0.0% ROIC) on Phase II AI capex ($1.22 trillion) against the ruthless 5-year depreciation cycle of GPU silicon.
 
-```
-THE EVOLUTION OF THE AI CAPITAL CYCLE
------------------------------------------------------------------------------------------
-Phase I (2023 - 2024): The Cash-Flow Harvest
-- Players: Microsoft, Alphabet, Meta, Apple.
-- Funding: 100% self-funded via massive search, ad, and software free cash flows.
-- Leverage: Zero net debt; balance sheets resembling sovereign fortresses.
-- Market Reaction: Unanimous institutional euphoria.
-
-Phase II (2025 - 2026): The Leveraged Land Grab
-- Players: Oracle, CoreWeave, Neo-cloud startups, utility joint ventures.
-- Funding: High-yield syndicated loans, private credit, commercial paper, massive bond issues.
-- Leverage: Debt-to-EBITDA rising to 4x - 5x; customer concentration in cash-burning startups.
-- Market Reaction: CDS spreads blow out; S&P downgrades; bond markets front-run default.
------------------------------------------------------------------------------------------
+```mermaid
+flowchart LR
+    subgraph P1["Phase I (2023 - 2024): The Cash-Flow Harvest"]
+        P1_D["Players: Microsoft, Alphabet, Meta, Apple<br/>Funding: 100% self-funded via search, ad, and software FCF<br/>Leverage: Zero net debt; sovereign fortress balance sheets<br/>Market Reaction: Unanimous institutional euphoria"]
+    end
+    subgraph P2["Phase II (2025 - 2026): The Leveraged Land Grab"]
+        P2_D["Players: Oracle, CoreWeave, Neo-cloud startups, utility JVs<br/>Funding: High-yield syndicated loans, private credit, massive bonds<br/>Leverage: Debt-to-EBITDA 4x-5x; cash-burning startup concentration<br/>Market Reaction: CDS spreads blow out; S&P downgrades"]
+    end
+    P1 -->|"Transition to Leveraged Buildout"| P2
 ```
 
 During Phase I, the AI boom was funded by the cash cows of Big Tech. Microsoft and Google could afford to write $30 billion checks for GPUs every year out of excess operating cash flow without taking on debt.

@@ -123,12 +123,12 @@ The broader trend: each generation of methods **eliminates a proxy**. PPO needed
 
 Modern post-training is a multi-stage pipeline:
 
-```
-Base Model
-  → SFT (format, style, instruction following)
-  → Preference Optimization (DPO/ORPO for alignment)
-  → RL (GRPO/GSPO for reasoning and tool use)
-  → [Optional] Distillation to smaller deployment models
+```mermaid
+flowchart TD
+    B["Base Model"] --> SFT["SFT (Format, Style, Instruction Following)"]
+    SFT --> PO["Preference Optimization (DPO / ORPO for Alignment)"]
+    PO --> RL["RL (GRPO / GSPO for Reasoning & Tool Use)"]
+    RL --> DIST["Optional: Distillation to Smaller Deployment Models"]
 ```
 
 Not every pipeline uses all stages. The choice depends on what you need:

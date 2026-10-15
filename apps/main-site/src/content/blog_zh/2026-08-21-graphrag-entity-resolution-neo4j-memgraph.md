@@ -17,8 +17,12 @@ lang: "zh"
 
 这个承诺很吸引人。向量检索 RAG 只能检索相似的文本片段。而 GraphRAG 能检索 *连接的上下文* —— 实体、关系、多跳路径。与其给 LLM 五个关于温度监测的不相关段落，不如给它一个结构化的子图：
 
-```
-Change-123 → AFFECTS → Process-Y → GOVERNED_BY → SOP-123 → HAS_REQUIREMENT → Requirement-87 → VALIDATED_BY → CSV-VAL-042
+```mermaid
+flowchart LR
+    C["Change-123"] -->|"AFFECTS"| P["Process-Y"]
+    P -->|"GOVERNED_BY"| S["SOP-123"]
+    S -->|"HAS_REQUIREMENT"| R["Requirement-87"]
+    R -->|"VALIDATED_BY"| V["CSV-VAL-042"]
 ```
 
 LLM 可以在这样的结构上进行推理。而五个包含“温度”这个词的不相关段落则不行。
@@ -74,13 +78,13 @@ LLM 可以在这样的结构上进行推理。而五个包含“温度”这个�
 
 管道看起来像这样：
 
-```
-候选生成（阻塞）
-    → 词法 + 嵌入过滤
-    → 属性 + 图拓扑评分
-    → LLM 仲裁（仅模糊案例）
-    → 用 SAME_AS 边合并或链接
-    → 与本体验证
+```mermaid
+flowchart TD
+    S1["1. 候选生成（阻塞）"] --> S2["2. 词法 + 嵌入过滤"]
+    S2 --> S3["3. 属性 + 图拓扑评分"]
+    S3 --> S4["4. LLM 仲裁（仅模糊案例）"]
+    S4 --> S5["5. 用 SAME_AS 边合并或链接"]
+    S5 --> S6["6. 与本体验证"]
 ```
 
 这就是 Splink 为它构建的。这就是 Senzing 做的。这也是大多数 GraphRAG 实现完全跳过的部分。

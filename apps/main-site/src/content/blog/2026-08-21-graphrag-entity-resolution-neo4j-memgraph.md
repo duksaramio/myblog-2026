@@ -16,8 +16,12 @@ The database choice matters, but it's not where GraphRAG implementations succeed
 
 The pitch is compelling. Vector-only RAG retrieves similar text chunks. GraphRAG retrieves *connected context* — entities, relationships, multi-hop paths. Instead of handing the LLM five disconnected paragraphs about temperature monitoring, you hand it a structured subgraph:
 
-```
-Change-123 → AFFECTS → Process-Y → GOVERNED_BY → SOP-123 → HAS_REQUIREMENT → Requirement-87 → VALIDATED_BY → CSV-VAL-042
+```mermaid
+flowchart LR
+    C["Change-123"] -->|"AFFECTS"| P["Process-Y"]
+    P -->|"GOVERNED_BY"| S["SOP-123"]
+    S -->|"HAS_REQUIREMENT"| R["Requirement-87"]
+    R -->|"VALIDATED_BY"| V["CSV-VAL-042"]
 ```
 
 The LLM can reason over that. It can't reason over five chunks that happen to contain the word "temperature."
@@ -73,13 +77,13 @@ Real entity resolution combines five signals:
 
 The pipeline looks like:
 
-```
-Candidate generation (blocking)
-    → Lexical + embedding filtering
-    → Attribute + graph topology scoring
-    → LLM adjudication (ambiguous cases only)
-    → Merge or link with SAME_AS edges
-    → Validate against ontology
+```mermaid
+flowchart TD
+    S1["1. Candidate generation (blocking)"] --> S2["2. Lexical + embedding filtering"]
+    S2 --> S3["3. Attribute + graph topology scoring"]
+    S3 --> S4["4. LLM adjudication (ambiguous cases only)"]
+    S4 --> S5["5. Merge or link with SAME_AS edges"]
+    S5 --> S6["6. Validate against ontology"]
 ```
 
 This is what Splink was built for. This is what Senzing does. This is what most GraphRAG implementations skip entirely.

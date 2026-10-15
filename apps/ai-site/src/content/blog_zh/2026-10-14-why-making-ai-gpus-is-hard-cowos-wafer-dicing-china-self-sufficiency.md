@@ -321,7 +321,7 @@ $$\text{CD} = k_1 \cdot \frac{\lambda}{\text{NA}}$$
 
 ```mermaid
 flowchart TD
-    subgraph 制裁悖论 (The Sanctions Paradox)：四向因果关系解耦
+    subgraph Paradox["制裁悖论 (The Sanctions Paradox)：四向因果关系解耦"]
         D["<b>1. 直接因果（外部封锁 -> 国家资本强力注入）</b><br/>美国切断英伟达/ASML/HBM供应，迫使中国通过大基金三期等注入超1,500亿美元国家级补贴"]
         R["<b>2. 反向因果（强制锁定内需 -> 催化产品成熟）</b><br/>制裁前阿里腾讯拒绝采购华为芯片；制裁瞬间为华为创造了年均400亿美元的强制性本土专属市场"]
         Z["<b>3. 混杂变量 Z（全球算法效率范式转移）</b><br/>AI向稀疏MoE(DeepSeek)、FP8量化与RLVR推理演进，大幅降低了对单芯片峰值FLOPs的绝对依赖"]

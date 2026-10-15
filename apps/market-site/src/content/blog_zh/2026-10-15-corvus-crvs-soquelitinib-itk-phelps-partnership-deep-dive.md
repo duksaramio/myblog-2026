@@ -71,19 +71,23 @@ Phelps 的核心论点（thesis）处于深层 T 细胞受体（TCR）酶学与�
 * **现金、现金等价物及有价证券：** 截至 2026 年 6 月 30 日为 **2.1523 亿美元**（其中现金及现金等价物 1,890.5 万美元 + 美国国债 1.70234 亿美元 + 美国政府机构债券 2,608.9 万美元），主要得益于 **2026 年 1 月 23 日以每股 22.15 美元**发行 9,085,778 股普通股（净募资 **1.89407 亿美元**）的公开增发。
 * **经营现金消耗（Burn）轨迹：** 2026 年第二季度，研发（R&D）费用同比暴增 102.8% 至 **1,596 万美元**（2025 年同期为 787 万美元），管理（G&A）费用升至 **333 万美元**，单季营业总费用达 **1,930 万美元**（上半年营业亏损 3,417 万美元；上半年经营活动现金净流出 **2,577 万美元**，另向持股 48.6% 的中国合作伙伴 **Angel Pharmaceuticals Co. Ltd. [弈安济世/安杰医药]** 追加股权投资 **500 万美元**）。扣除 2026 年第三季度预计约 1,500 万–1,700 万美元的净现金消耗，Corvus 进入 2026 年 10 月中旬时的净现金约为 **1.98 亿–2.00 亿美元**（合完全稀释每股约 2.00 美元）。
 
-```
-                     CORVUS PHARMACEUTICALS ($CRVS) 资本结构拆解 (按股价 $9.84 计)
-   
-   [ 普通股: 8,412万股 ]      [ 预付权证: 828万股 ]      [ 库藏股法净期权: 665万股 ]
-              │                         │                             │
-              └─────────────────────────┼─────────────────────────────┘
-                                        ▼
-                   [ GAAP 基本 + 预付权证: 9,240万股 (市值 $9.09亿) ]
-                   [ 完全稀释 (库藏股法):  9,905万股 (市值 $9.75亿) ]
-                                        │
-                      减去: Q2 现金 ($2.15亿) / 预计 Q3 现金 (~$1.99亿)
-                                        ▼
-                   [ 隐含企业价值 (Implied EV): $6.94亿 - $7.76亿 ]
+```mermaid
+flowchart TD
+    classDef equity fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef total fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+    classDef cash fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+    classDef ev fill:#f3e8ff,stroke:#9333ea,stroke-width:2px;
+
+    subgraph Cap["CORVUS PHARMACEUTICALS ($CRVS) 资本结构拆解 (按股价 $9.84 计)"]
+        CS["普通股:<br/>8,412万股"]:::equity
+        PFW["预付权证 ($0.0001):<br/>828万股"]:::equity
+        OPT["库藏股法净期权 (WAEP $4.90):<br/>665万股"]:::equity
+
+        CS & PFW --> BASIC["GAAP 基本 + 预付权证:<br/>9,240万股 (市值 $9.09亿)"]:::total
+        BASIC & OPT --> DIL["完全稀释 (库藏股法):<br/>9,905万股 (市值 $9.75亿)"]:::total
+        DIL --> CASH["减去净现金:<br/>Q2 现金 $2.15亿 / 预计 Q3 现金 ~$1.99亿"]:::cash
+        CASH --> EV["隐含企业价值 (Implied EV):<br/>$6.94亿 - $7.76亿"]:::ev
+    end
 ```
 
 ### 内部人利益绑定与董事会治理升级
@@ -118,21 +122,22 @@ Phelps 的核心论点（thesis）处于深层 T 细胞受体（TCR）酶学与�
 
 答案在于 **TEC 家族激酶的同源性难题（homology problem）**。在人类 T 细胞中，两种高度同源的 TEC 家族非受体酪氨酸激酶——**ITK（白细胞介素-2 诱导型 T 细胞激酶）**与 **RLK（静息淋巴细胞激酶，又名 TXK）**——在 T 细胞受体（TCR）和 ZAP-70 下游协同工作，磷酸化 **PLCγ1** 并激活钙内流（`NFAT`）、`NF-κB`、`ERK` 和 `mTOR` 信号通路：
 
-```
-                       近端 TCR 信号级联与 ITK / RLK 双轨分岔机制
-   
-                             [ TCR / CD3 + CD28 共刺激信号 ]
-                                            │
-                                            ▼
-                                 [ Lck / ZAP-70 磷酸化激活 ]
-                                            │
-                      ┌─────────────────────┴─────────────────────┐
-                      ▼                                           ▼
-       [ ITK (在 Th2 与 Th17 中占主导) ]           [ RLK / TXK (在 Th1 与 CD8+ 中冗余代偿) ]
-       • ATP 口袋内含 Cys442 残基                  • 同源位置含 Cys350 残基
-       • 驱动 GATA3 / STAT6 (Th2: IL-4/5/13)       • 维持 T-bet / IFN-γ / TNF-α / GZMB
-       • 驱动 RORγt / STAT3 (Th17: IL-17A/F)       • 保护 CD8+ 细胞毒性 T细胞与抗病毒免疫
-       • 抑制 BACH2 / Foxp3 (阻断 Treg 转化)       • 仅当 [游离药浓] << IC50(RLK) 时得以保留
+```mermaid
+flowchart TD
+    classDef upstream fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+    classDef itk fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    classDef rlk fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+
+    subgraph TCR_Cascade["近端 TCR 信号级联与 ITK / RLK 双轨分岔机制"]
+        TCR["TCR / CD3 + CD28 共刺激信号"]:::upstream
+        ZAP["Lck / ZAP-70 磷酸化激活"]:::upstream
+        ITK_NODE["ITK (在 Th2 与 Th17 中占主导)<br/>• ATP 口袋内含 Cys442 残基<br/>• 驱动 GATA3 / STAT6 (Th2: IL-4/5/13)<br/>• 驱动 RORγt / STAT3 (Th17: IL-17A/F)<br/>• 抑制 BACH2 / Foxp3 (阻断 Treg 转化)"]:::itk
+        RLK_NODE["RLK / TXK (在 Th1 与 CD8+ 中冗余代偿)<br/>• 同源位置含 Cys350 残基<br/>• 维持 T-bet / IFN-γ / TNF-α / GZMB<br/>• 保护 CD8+ 细胞毒性 T细胞与抗病毒免疫<br/>• 仅当游离药浓 << IC50(RLK) 时得以保留"]:::rlk
+
+        TCR --> ZAP
+        ZAP --> ITK_NODE
+        ZAP --> RLK_NODE
+    end
 ```
 
 经典的小鼠遗传学研究（`Itk-/-` 单敲除小鼠对比 `Itk-/- Rlk-/-` 双敲除小鼠）早就证明：单独敲除 *Itk* 会适度削弱 TCR 信号强度，从而阻断 **Th2（`GATA3`）**和 **Th17（`RORγt`）**分化，同时引导初始 CD4+ T 细胞向 **Th1（`T-bet`）**和**调节性 T 细胞（`Foxp3+ Tregs`）**偏移，因为完好无损的 **RLK/TXK** 能够代偿并挽救 Th1 及 CD8+ 细胞毒性 T 淋巴细胞（CTL）功能。然而，一旦 **ITK 和 RLK 被同时抑制**（如 `Itk-/- Rlk-/-` 双敲除或双靶点抑制剂 `PRN694`），PLCγ1 磷酸化将彻底崩溃，导致 CD8+ 颗粒酶 B（granzyme B）、IL-2 和 IFN-γ 分泌瘫痪，引发全 T 细胞免疫抑制。

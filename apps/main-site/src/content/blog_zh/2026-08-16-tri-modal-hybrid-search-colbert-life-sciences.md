@@ -1,7 +1,7 @@
 ---
-title: 生物科学问答的三模态混合搜索与ColBERT重排序
+title: "生物科学问答的三模态混合搜索与ColBERT重排序"
 pubDate: 2026-08-16
-description: 在Qdrant中结合密集向量、BM25和ColBERT MaxSim重排序，构建一个生产级的搜索引擎——配备Pydantic AI副驾和Langfuse审计轨迹，适用于受监管的制药行业。
+description: "在Qdrant中结合密集向量、BM25和ColBERT MaxSim重排序，构建一个生产级的搜索引擎——配备Pydantic AI副驾和Langfuse审计轨迹，适用于受监管的制药行业。"
 lang: "zh"
 draft: false
 audioUrl: "https://file.duklee.net/audio/2026-08-16-tri-modal-hybrid-search-colbert-life-sciences.wav"
@@ -26,11 +26,13 @@ tags: ["搜索", "Qdrant", "ColBERT", "生物科学", "制药", "Pydantic AI", "
 
 解决方案是运行所有三种检索策略并结合它们：
 
-```
-查询 → 密集（all-MiniLM-L6-v2，384维） → 20个候选者
-      → 稀疏（BM25带IDF）              → 20个候选者
-      → 并集池（最多40个候选者）
-      → ColBERT MaxSim重排序             → 最终排名结果
+```mermaid
+flowchart LR
+    Q["查询"] --> D["密集（all-MiniLM-L6-v2，384维）<br/>前20个候选者"]
+    Q --> S["稀疏（BM25带IDF）<br/>前20个候选者"]
+    D --> U["并集池（最多40个候选者）"]
+    S --> U
+    U --> C["ColBERT MaxSim重排序"] --> F["最终排名结果"]
 ```
 
 每一层都填补了其他层留下的空白：
@@ -47,16 +49,15 @@ tags: ["搜索", "Qdrant", "ColBERT", "生物科学", "制药", "Pydantic AI", "
 
 ColBERT找到了一个折中的方法。它将查询和文档表示为一系列的词嵌入序列：
 
-```
-查询:   [过滤器] [失败] [AFTER] [填充]    → 4个向量 × 96维
-文档:     [膜] [撕裂] [AFTER] [填充]  → N个向量 × 96维
+```mermaid
+flowchart LR
+    QT["查询：<br/>[过滤器] [失败] [AFTER] [填充]"] --> QV["4个向量 × 96维"]
+    DT["文档：<br/>[膜] [撕裂] [AFTER] [填充]"] --> DV["N个向量 × 96维"]
 ```
 
 **MaxSim** 操作符为每个查询词找到与之最相似的文档词，然后将这些最大值相加：
 
-```
-分数 = cos(过滤器, 膜) + cos(失败, 撕裂) + cos(AFTER, AFTER) + cos(填充, 填充)
-```
+$$\text{分数} = \cos(\text{过滤器}, \text{膜}) + \cos(\text{失败}, \text{撕裂}) + \cos(\text{AFTER}, \text{AFTER}) + \cos(\text{填充}, \text{填充})$$
 
 这使得ColBERT在最棘手的生物科学搜索案例中表现出色。考虑两个偏差记录：
 
@@ -105,9 +106,7 @@ client.create_collection(
 
 在ColBERT重排序之前，密集和稀疏结果使用互逆排名融合（RRF）合并：
 
-```
-RRF(d) = Σ 1/(k + rank_m(d))
-```
+$$\text{RRF}(d) = \sum_{m} \frac{1}{k + \text{rank}_m(d)}$$
 
 其中`k=60`（平滑常数）且`m`迭代检索方法。RRF不需要归一化的分数——它仅基于排名位置工作。一个文档在密集检索中排名为3，在稀疏检索中排名为5，其综合得分为`1/(60+3) + 1/(60+5)`。这自然提升了两种检索策略都同意的文档的得分。
 

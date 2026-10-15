@@ -25,11 +25,13 @@ Neither approach alone is good enough when a wrong search result means releasing
 
 The solution is to run all three retrieval strategies and combine them:
 
-```
-Query → Dense (all-MiniLM-L6-v2, 384-dim)  → Top 20 candidates
-      → Sparse (BM25 with IDF)              → Top 20 candidates
-      → Union pool (up to 40 candidates)
-      → ColBERT MaxSim reranking             → Final ranked results
+```mermaid
+flowchart LR
+    Q["Query"] --> D["Dense (all-MiniLM-L6-v2, 384-dim)<br/>Top 20 candidates"]
+    Q --> S["Sparse (BM25 with IDF)<br/>Top 20 candidates"]
+    D --> U["Union pool (up to 40 candidates)"]
+    S --> U
+    U --> C["ColBERT MaxSim reranking"] --> F["Final ranked results"]
 ```
 
 Each layer fills a gap the others leave:
@@ -46,16 +48,15 @@ Standard bi-encoders compress an entire document into a single vector. That's fa
 
 ColBERT splits the difference. It represents queries and documents as *sequences* of token embeddings:
 
-```
-Query:   [filter] [failed] [AFTER] [filling]    → 4 vectors × 96 dimensions
-Doc:     [membrane] [tearing] [AFTER] [filled]  → N vectors × 96 dimensions
+```mermaid
+flowchart LR
+    QT["Query:<br/>[filter] [failed] [AFTER] [filling]"] --> QV["4 vectors × 96 dimensions"]
+    DT["Doc:<br/>[membrane] [tearing] [AFTER] [filled]"] --> DV["N vectors × 96 dimensions"]
 ```
 
 The **MaxSim** operator finds, for each query token, the document token with the highest cosine similarity, then sums those maximums:
 
-```
-Score = cos(filter, membrane) + cos(failed, tearing) + cos(AFTER, AFTER) + cos(filling, filled)
-```
+$$\text{Score} = \cos(\text{filter}, \text{membrane}) + \cos(\text{failed}, \text{tearing}) + \cos(\text{AFTER}, \text{AFTER}) + \cos(\text{filling}, \text{filled})$$
 
 This is what makes ColBERT so good at the hardest life sciences search cases. Consider two deviation records:
 
@@ -104,9 +105,7 @@ All three embeddings are generated client-side via FastEmbed (ONNX runtime). No 
 
 Before ColBERT reranking, dense and sparse results are merged using Reciprocal Rank Fusion:
 
-```
-RRF(d) = Σ 1/(k + rank_m(d))
-```
+$$\text{RRF}(d) = \sum_{m} \frac{1}{k + \text{rank}_m(d)}$$
 
 Where `k=60` (smoothing constant) and `m` iterates over retrieval methods. RRF doesn't need normalized scores — it works purely on rank positions. A document ranked #3 by dense and #5 by sparse gets a combined score of `1/(60+3) + 1/(60+5)`. This naturally boosts documents that both retrieval strategies agree on.
 

@@ -29,14 +29,12 @@ The dominant defense of the current bull market is liquidity and index performan
 
 However, technicians and quantitative strategists remember the warning sign of 1999: the **Advance-Decline (A/D) Line divergence**.
 
-```
-Concentration Peak (Top 10 S&P 500 Weight)
------------------------------------------------------------
-1990 Historical Baseline:  ~17%
-Dot-Com Peak (March 2000): ~27% – 29%
-Great Financial Crisis:     ~20%
-2024-2026 AI Expansion:   ~38% – 41%
------------------------------------------------------------
+```mermaid
+xychart-beta
+    title "Concentration Peak: Top 10 S&P 500 Weight (%)"
+    x-axis ["1990 Baseline (~17%)", "Dot-Com Peak 2000 (27-29%)", "GFC (~20%)", "2024-2026 AI (38-41%)"]
+    y-axis "Top 10 S&P 500 Weight (%)" 0 --> 45
+    bar [17, 28, 20, 40]
 ```
 
 In late 1998 and throughout 1999, the cumulative Advance-Decline line peaked and deteriorated sharply even as the cap-weighted S&P 500 and Nasdaq Composite sprinted higher. The rally narrowed down to a shrinking cabal of infrastructure and networking giants—Cisco, Lucent, Nortel, Microsoft, and Intel. The median stock was already entering a quiet bear market well before the index crested in March 2000.

@@ -50,18 +50,16 @@ DeepSeek 모델 대신 Claude를 사용하고 싶은가? `ctx.llm`에 새로운 
 
 에이전트 루프 자체도 하나의 플러그인(`dsh-agent-loop`)이다. 에이전트가 메시지를 처리할 때 벌어지는 흐름은 다음과 같다:
 
-```
-turn/start
-  입력 청구 + 큐에 쌓인 메시지 확인
-  프롬프트 + 도구 스키마 조립
-  -> agent/pre-step (진입 또는 거절)
-     step/start
-     세션 로그로부터 모델 히스토리 파생
-     agent/request -> llm/stream -> assistant/message
-     tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute
-     step/end
-  -> agent/turn-stopping
-turn/end
+```mermaid
+flowchart TD
+    TS["turn/start<br/>입력 청구 + 큐에 쌓인 메시지 확인<br/>프롬프트 + 도구 스키마 조립"] --> PRE["agent/pre-step (진입 또는 거절)"]
+    subgraph STEP["step/start -> step/end"]
+        HIST["세션 로그로부터 모델 히스토리 파생"] --> REQ["agent/request -> llm/stream -> assistant/message"]
+        REQ --> TOOL["tool/call -> tools/pre-execute -> tools/execute -> tools/post-execute"]
+    end
+    PRE --> STEP
+    STEP --> STOP["agent/turn-stopping"]
+    STOP --> TE["turn/end"]
 ```
 
 **스텝(step)**은 하나의 모델 요청과 그에 수반되는 도구 호출들로 이루어진다. **턴(turn)**은 0개 이상의 스텝으로 구성된다. 핵심 이벤트들은 워터폴(waterfall) 구조를 따른다. 리스너는 다음 단계로 위임하기 위해 반드시 `next()`를 호출해야 하며, 그렇지 않으면 체인이 즉시 단락(short-circuit)된다. 이는 루프 자체를 수정하지 않고도 파이프라인의 어느 지점에서든 훅(hook)이 개입하여 가로채거나, 변조하거나, 차단할 수 있음을 의미한다.

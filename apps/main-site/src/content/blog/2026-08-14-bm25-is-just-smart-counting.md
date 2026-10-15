@@ -39,17 +39,13 @@ BM25 gives a fairness boost to shorter documents. A long document naturally cont
 
 ## The Formula (In English)
 
-```
-Score = How Rare the Word Is × (Capped Word Count) / (Word Count + Page Length Penalty)
-```
+$$\text{Score} = \text{How Rare the Word Is} \times \frac{\text{Capped Word Count}}{\text{Word Count} + \text{Page Length Penalty}}$$
 
 For every word in your query, BM25 calculates this score for every document. Add up the scores for all query terms. Highest total wins.
 
 The actual formula:
 
-```
-Score(D, Q) = Σ IDF(qi) × [f(qi, D) × (k1 + 1)] / [f(qi, D) + k1 × (1 - b + b × |D|/avgdl)]
-```
+$$\text{Score}(D, Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \frac{f(q_i, D) \cdot (k_1 + 1)}{f(q_i, D) + k_1 \cdot \left(1 - b + b \cdot \frac{|D|}{\text{avgdl}}\right)}$$
 
 Two tuning knobs:
 
@@ -66,8 +62,13 @@ Vector search is great at finding semantically similar content — "electronic r
 
 That's why the most effective RAG retrieval architecture is hybrid:
 
-```
-Query → BM25 (exact terms) + Vector Search (meaning) → Combine → Rerank → LLM
+```mermaid
+flowchart LR
+    Q["Query"] --> BM25["BM25 (exact terms)"]
+    Q --> VEC["Vector Search (meaning)"]
+    BM25 --> COMB["Combine"]
+    VEC --> COMB
+    COMB --> RERANK["Rerank"] --> LLM["LLM"]
 ```
 
 BM25 catches the precise terminology. Vector search catches the paraphrases. Reranking merges them. The LLM gets the best of both worlds.

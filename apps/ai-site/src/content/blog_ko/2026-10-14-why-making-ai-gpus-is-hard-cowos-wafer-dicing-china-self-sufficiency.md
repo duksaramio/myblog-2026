@@ -321,7 +321,7 @@ $$\text{CD} = k_1 \cdot \frac{\lambda}{\text{NA}}$$
 
 ```mermaid
 flowchart TD
-    subgraph 제재의 역설 (The Sanctions Paradox): 4방향 인과관계 해체
+    subgraph Paradox["제재의 역설 (The Sanctions Paradox): 4방향 인과관계 해체"]
         D["<b>1. 직접 인과 (제재 -> 국산화 R&D 폭증)</b><br/>미국의 엔비디아/ASML/HBM 차단이 중국 정부의 1,500억 달러 이상 국가기금(빅펀드 3기 등) 투입 강제"]
         R["<b>2. 역인과 (강제된 독점 수요 -> 제품 성숙)</b><br/>제재 전 알리바바·텐센트는 화웨이 칩을 외면했으나, 제재가 연 400억 달러 규모의 고정 내수 시장을 창출"]
         Z["<b>3. 제3의 교란 변수 Z (알고리즘 효율 혁명)</b><br/>글로벌 AI가 희소 MoE(DeepSeek), FP8 양자화, RLVR 추론으로 이동하며 단일 칩 FLOPs 의존도 하락"]
