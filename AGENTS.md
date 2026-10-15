@@ -22,9 +22,10 @@
   - **NEVER wrap simple units, numbers, or currency in inline LaTeX** (such as `$858\text{ mm}^2$`, `$30\,\mu\text{m}$`, or `$\$30,000+$`). CommonMark strips backslashes in `\$` and `\%`, and LaTeX in headings breaks TOC anchor slugs and RSS feeds.
   - Reserve LaTeX (`$$ ... $$` standalone display blocks) strictly for multi-term mathematical equations and formal derivations.
 - **Native Markdown Table Invariant:**
-  - Always format tables, comparison scorecards, causal matrices, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all three language versions (`blog`, `blog_ko`, `blog_zh`).
-  - **NEVER** put tables, scorecards, or matrices inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which render as dark `PLAINTEXT` code blocks with horizontal scrollbars.
+  - Always format tables, comparison scorecards, 4-way causal matrices, timelines, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all three language versions (`blog`, `blog_ko`, `blog_zh`).
+  - **NEVER** put tables, scorecards, causal matrices, or timelines inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which render as dark `PLAINTEXT` code blocks with horizontal scrollbars.
   - Always escape literal pipe characters inside table cells (such as conditional probabilities `P(A \| B)`) as `\|`.
+  - **Visible Table Grid Borders:** In shared UI styles (`packages/ui/src/styles/global.css` and `packages/ui/src/layouts/BlogPostLayout.astro`), always maintain explicit, high-contrast borders on `table` (`border-collapse: collapse; border: 1.5px solid rgba(0, 0, 0, 0.45)`), `th` (`border: 1px solid rgba(0, 0, 0, 0.35); border-bottom: 2px solid rgba(0, 0, 0, 0.5)`), and `td` (`border: 1px solid rgba(0, 0, 0, 0.3)`). Never use `var(--border-color)` for table borders because `:root { --border-color: rgba(0, 0, 0, 0.08); }` is nearly invisible against `#f5f4ef`.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 

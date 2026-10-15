@@ -23,9 +23,10 @@ alwaysApply: true
 - **Frontmatter Formatting Invariant:**
   - Always wrap `title` and `description` in double quotes: `title: "..."` and `description: "..."`. Never leave multi-line descriptions unquoted or containing unquoted colons or markdown bullet dashes that break YAML parsing.
 - **Native Markdown Table Invariant:**
-  - Format all tables, comparison scorecards, causal matrices, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all language versions.
-  - **NEVER** render tables or scorecards inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which force Shiki `PLAINTEXT` horizontal scrollboxes.
+  - Format all tables, comparison scorecards, 4-way causal matrices, timelines, and probability scenario tables as **native GFM Markdown tables (`| ... |`)** across all language versions.
+  - **NEVER** render tables, scorecards, causal matrices, or timelines inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which force dark Shiki `PLAINTEXT` horizontal scrollboxes.
   - Always escape literal pipe characters inside table cells (e.g., `P(Structure \| Sequence)`) as `\|`.
+  - **Visible Table Grid Borders:** In shared UI styles (`packages/ui/src/styles/global.css` and `packages/ui/src/layouts/BlogPostLayout.astro`), always maintain explicit, high-contrast borders on `table` (`border-collapse: collapse; border: 1.5px solid rgba(0, 0, 0, 0.45)`), `th` (`border: 1px solid rgba(0, 0, 0, 0.35); border-bottom: 2px solid rgba(0, 0, 0, 0.5)`), and `td` (`border: 1px solid rgba(0, 0, 0, 0.3)`). Never use `var(--border-color)` for table borders because `:root { --border-color: rgba(0, 0, 0, 0.08); }` is nearly invisible against `#f5f4ef`.
 - **Agent-Driven Translation:**
   - Translate directly within the agent or parallel subagents. Do NOT use local LLM background services or external batch scripts that introduce processing bottlenecks.
 

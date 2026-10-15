@@ -77,7 +77,7 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
 3. **The "Bait-and-Switch" Subpage & Brochure Excavation:**
    - Never stop at a company's homepage (`index.html`) or launch post (`Launch YC`, press release).
    - Systematically scrape and extract all secondary routes (`terms.html`, `privacy.html`, `assessment.html`, `/for-clinics`, client-side JS form handlers) and downloadable PDFs (`/downloads/*.pdf`, participant brochures, user manuals).
-   - Construct a **2-Column Claim Schism Matrix** (*Public Marketing & Launch Claims* vs. *Buried Legal & Participant Admissions*) to expose direct factual inversions (e.g., promising an ML risk score on the launch page while admitting in the participant PDF that no score or normative range exists).
+   - Construct a **2-Column Claim Schism Matrix** (*Public Marketing & Launch Claims* vs. *Buried Legal & Participant Admissions*) as a **native GFM Markdown table (`| ... |`)** to expose direct factual inversions (e.g., promising an ML risk score on the launch page while admitting in the participant PDF that no score or normative range exists).
 4. **Disclose Conflicts of Interest & Implied-Endorsement Traps:**
    - Audit the funding sources, author affiliations, and commercial stakes behind every cited study or report.
    - Flag "Logo Walls of Implied Authority" (e.g., displaying *Nature*, *NEJM*, or university logos with fine-print disclaimers that they are not partners or endorsers).
@@ -93,7 +93,7 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
      * *Definition B (Loose/Marketing):* e.g., "Autonomous" = System can maintain lane assist on marked highways with hands on wheel.
    - Substitute both definitions into the argument. If the conclusion's validity depends on which definition is assumed, the argument contains a fatal ambiguity that must be resolved.
 3. **The Silicon & Hardware Maturity Hierarchy:**
-   - In semiconductor and hardware manufacturing, enforce the 4-tier maturity distinction:
+   - In semiconductor, hardware, and biological AI systems, enforce the 4-tier maturity distinction and always present maturity scorecards as **native GFM Markdown tables (`| ... |`)** (never as ASCII/Unicode box-drawing art inside code blocks):
      1. *Level 1 (Concept/Simulation):* TCAD modeling or patent filing without physical silicon.
      2. *Level 2 (Tape-Out / Test Silicon):* Functional switching demonstrated on R&D/pilot wafer at sub-economic yields (<20%).
      3. *Level 3 (Risk Production / Qualification):* Engineering samples delivered to lead partners for JEDEC/server qualification.
@@ -104,7 +104,8 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
 ### Phase 4: Causal Disentanglement & Rival Causes (Chapter 9)
 When analyzing why an outcome occurred (e.g., *"Why did startup X collapse?"*, *"Why did benchmark score Y improve?"*), reject single-cause explanations.
 
-1. **Test the 4-Way Causal Matrix:**
+1. **Test the 4-Way Causal Matrix (Format as a Native GFM Markdown Table):**
+   - Always render 4-Way Causal Audits and timeline comparisons as **native GFM Markdown tables (`| ... |`)** (or `mermaid` flowcharts). **NEVER** draw causal matrices or timelines as ASCII/Unicode box art (`┌─┬─┐`, `+---+---+`, `===`) inside fenced code blocks.
    - **Direct:** Did $X$ cause $Y$? (Document the direct mechanistic link).
    - **Reverse:** Could $Y$ have caused $X$? (e.g., Did high market valuation attract top talent, or did top talent create the valuation?).
    - **Confounding Variable (Z):** What macro or environmental third factor drove both $X$ and $Y$? (e.g., Zero-interest-rate environment, dataset contamination, hardware upgrades).
@@ -173,7 +174,7 @@ Persuasive pitches always highlight positive features while omitting downsides.
 3. **Mandatory "The Forensic Verdict: What We Actually Think":**
    - Never abdicate analytical judgment behind neutral decision trees. The reader expects the investigator's definitive stance.
    - Every deep-dive conclusion **must include an explicit "The Forensic Verdict: What We Actually Think" section**:
-     * **Probability-Weighted Scenarios:** Assign explicit likelihood percentages to each conditional branch (e.g., *Base/Most Probable [~60%]*, *Bear/Downside [~25%]*, *Bull/Upside [~15%]*).
+     * **Probability-Weighted Scenarios:** Assign explicit likelihood percentages to each conditional branch (e.g., *Base/Most Probable [~60%]*, *Bear/Downside [~25%]*, *Bull/Upside [~15%]*), formatted as a **native GFM Markdown table (`| ... |`)**.
      * **Stance on the Evidence:** State unequivocally which side of the dispute has the superior empirical/mechanistic backing and why.
      * **Actionable Bottom-Line Stance:** Provide a clear, definitive stance or recommendation based on expected value, structural bottlenecks, and risk asymmetry.
 
@@ -195,15 +196,13 @@ Persuasive pitches always highlight positive features while omitting downsides.
 
 Before finalizing any deep-dive report, verify the following 10 items:
 
-```
-[ ] 1. Core issue explicitly defined as Descriptive (factual/mechanistic) or Prescriptive (decision/policy).
-[ ] 2. All key metrics traced back to canonical primary artifacts (filings, papers, git code).
-[ ] 3. Anti-echo chamber verified: 2+ sources are structurally independent, not wire syndications.
-[ ] 4. Abstract buzzwords subjected to the Substitution Test and operationally defined.
-[ ] 5. Causal claims audited against the 4-Way Causal Matrix (including third variables and reverse causation).
-[ ] 6. Statistics audited for mean/median skew, range/distribution, and absolute baseline denominators.
-[ ] 7. "Negative View" executed: Identified who loses, failure modes, and long-term liabilities.
-[ ] 8. Graveyard/survivorship analysis conducted for failed prior attempts.
-[ ] 9. Final synthesis articulated through nuanced "If-Clauses" AND an explicit, probability-weighted "Bottom-Line Verdict".
-[ ] 10. Every external citation programmatically verified for HTTP 200 liveness.
-```
+- [ ] **1. Issue Framing:** Core issue explicitly defined as Descriptive (factual/mechanistic) or Prescriptive (decision/policy).
+- [ ] **2. Primary Sources:** All key metrics traced back to canonical primary artifacts (filings, papers, git code).
+- [ ] **3. Anti-Echo Chamber:** 2+ sources are structurally independent, not wire syndications.
+- [ ] **4. Substitution Test:** Abstract buzzwords subjected to the Substitution Test and operationally defined.
+- [ ] **5. 4-Way Causal Matrix:** Causal claims audited against Direct, Reverse, Third-Variable, and Feedback-Loop hypotheses in a native GFM Markdown table.
+- [ ] **6. Statistical Audit:** Statistics audited for mean/median skew, range/distribution, and absolute baseline denominators.
+- [ ] **7. Negative View:** Identified who loses, failure modes, and long-term liabilities.
+- [ ] **8. Survivorship Audit:** Graveyard/survivorship analysis conducted for failed prior attempts.
+- [ ] **9. Grey Thinking & Verdict:** Final synthesis articulated through nuanced "If-Clauses" AND an explicit, probability-weighted "Bottom-Line Verdict" in a native GFM Markdown table.
+- [ ] **10. Native Tables & Link Liveness:** Zero ASCII/Unicode box tables inside code blocks (all tables/matrices use native GFM `| ... |` with escaped `\|` pipes), and every external citation returns HTTP 200.
