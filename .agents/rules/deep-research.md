@@ -24,6 +24,8 @@ Every research task, technical deep dive, and factual synthesis conducted in thi
 * **Expertise & Conflict-of-Interest Scrutiny:**
   - When citing an authority, verify that their expertise is domain-specific (avoid the *Appeal to Questionable Authority*).
   - Explicitly disclose any commercial, financial, or ideological conflicts of interest in cited sources.
+* **Front-Door Marketing vs. Buried Legal/Brochure Cross-Examination:**
+  - When auditing company claims, systematically extract buried subpages (`terms.html`, `privacy.html`, footnotes, form scripts) and downloadable PDFs/brochures to check for direct factual inversions between public marketing and legal/participant disclosures.
 
 ---
 
@@ -51,6 +53,8 @@ Numbers create an illusion of scientific precision. Every quantitative claim mus
 * **Absolute Baselines vs. Relative Percentages:**
   - Never report relative percentage changes without providing baseline numbers (e.g., a "300% increase" could mean 1 incident rising to 4).
   - Always provide the denominator (population or sample size) for rates and percentages.
+* **Bayesian Base-Rate & Distributional Overlap Audits:**
+  - For diagnostic, screening, or classification claims, evaluate Positive Predictive Value (`PPV`) against the target cohort's base-rate prevalence $P(D)$, and verify whether group-level differences (`SMD` / Hedges' `g`) have sufficient separation (`AUC`) for individual-level decisions.
 * **Unknowable & Estimate Statistics:**
   - When figures describe covert, illicit, or unmeasurable activities (e.g., total volume of prompt injection attacks, dark web revenue), explicitly note how the estimate was derived and highlight its margins of error.
 

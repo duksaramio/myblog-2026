@@ -67,15 +67,20 @@ This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. 
 1. **Enforce the Hierarchy of Evidence:**
    - Never rely solely on tech press, blogs, or PR wire aggregators for technical or financial metrics.
    - Trace every metric back to its canonical primary artifact:
-     * **Financial / Corporate:** SEC filings (10-K, 10-Q, 8-K), audited earnings transcripts.
-     * **Biotech / Life Sciences:** PubMed/PMC peer-reviewed papers, ClinicalTrials.gov registers, FDA approval packages.
+      * **Financial / Corporate:** SEC filings (10-K, 10-Q, 8-K), audited earnings transcripts.
+      * **Biotech / MedTech / Life Sciences:** PubMed/PMC peer-reviewed full texts (not just abstracts), ClinicalTrials.gov registers, FDA 510(k)/De Novo/PMA databases, consensus clinical staging criteria (e.g., NIA-AA), and university capstone/lab archives (`capstone.engineering.<univ>.edu`, archival posters, founder technical portfolios) to verify true hardware BOM and clinical sample size (`N`).
       * **Software / AI:** GitHub commit histories, reproducible benchmarks, raw benchmark logs, official RFCs/whitepapers.
       * **Semiconductors & Deep-Tech:** IEEE IEDM/VLSI/ISSCC technical digests, patent family publications (WIPO/USPTO/CNIPA), certified physical teardowns (TechInsights, Yole), export control regulatory schedules (e.g. BIS 15 CFR Part 744).
 2. **Anti-Echo Chamber Verification:**
    - Require **2+ structurally independent primary sources** for critical claims.
    - Verify that multiple news outlets are not simply syndicating the identical vendor press release.
-3. **Disclose Conflicts of Interest:**
+3. **The "Bait-and-Switch" Subpage & Brochure Excavation:**
+   - Never stop at a company's homepage (`index.html`) or launch post (`Launch YC`, press release).
+   - Systematically scrape and extract all secondary routes (`terms.html`, `privacy.html`, `assessment.html`, `/for-clinics`, client-side JS form handlers) and downloadable PDFs (`/downloads/*.pdf`, participant brochures, user manuals).
+   - Construct a **2-Column Claim Schism Matrix** (*Public Marketing & Launch Claims* vs. *Buried Legal & Participant Admissions*) to expose direct factual inversions (e.g., promising an ML risk score on the launch page while admitting in the participant PDF that no score or normative range exists).
+4. **Disclose Conflicts of Interest & Implied-Endorsement Traps:**
    - Audit the funding sources, author affiliations, and commercial stakes behind every cited study or report.
+   - Flag "Logo Walls of Implied Authority" (e.g., displaying *Nature*, *NEJM*, or university logos with fine-print disclaimers that they are not partners or endorsers).
 
 ---
 
@@ -123,6 +128,13 @@ When analyzing why an outcome occurred (e.g., *"Why did startup X collapse?"*, *
    - When auditing claims of bypassing lithographic or physical scaling limits, derive the explicit geometric equivalent:
      $$\text{Cell Area } A = K \cdot F^2 \implies F_{\text{equiv}} = F_{\text{actual}} \cdot \sqrt{\frac{K_{\text{new}}}{K_{\text{incumbent}}}}$$
    - Verify whether density gains stem from true lateral lithography shrinkage or architectural/vertical stacking (the "3D NAND playbook").
+5. **Diagnostic Biostatistics, Bayesian Screening PPV, & Sensor Quantization Audits:**
+   - **Cohort & Disease-Stage Mismatch:** Verify whether cited clinical studies tested the marketed target population (e.g., asymptomatic/preclinical individuals 15 years prior to symptoms) or already-diagnosed symptomatic patients, and audit baseline demographic/metabolic confounders (e.g., diabetes imbalance between cases and controls).
+   - **Meta-Analysis & Distributional Overlap Deconstruction:** Extract raw Mean Differences (`MD`), Hedges' `g` / `SMD` (`95% CI`), `p`-values, heterogeneity (`I²`), and Egger's publication bias `Z`-scores. Convert standardized effect sizes into individual ROC area ($\text{AUC} \approx \Phi(g / \sqrt{2})$) to expose distributional overlap when group-level correlations are marketed as individual diagnostics.
+   - **Bayesian Base-Rate Screening Math (`PPV`):** Whenever a screening test is marketed to a low-prevalence or young population, compute the exact Positive Predictive Value (`PPV`) across age-stratified base rates $P(D)$:
+     $$\text{PPV} = \frac{\text{Sensitivity} \cdot P(D)}{\text{Sensitivity} \cdot P(D) + (1 - \text{Specificity}) \cdot (1 - P(D))}$$
+   - **Sensor Sampling Quantization vs. Physiological Signal Math:** Compare the device's sampling interval ($\Delta t = 1 / f_s$), display refresh jitter, and mechanical slip against the physiological signal magnitude ($\text{MD}$ in ms) measured on stationary `500–1,000 Hz` laboratory reference instruments:
+     $$\sigma_{\text{quant}} = \sqrt{\frac{(\Delta t_{\text{camera}})^2 + (\Delta t_{\text{display}})^2}{6}}$$
 
 ---
 
@@ -142,6 +154,12 @@ Persuasive pitches always highlight positive features while omitting downsides.
      * *Toolchain Choke Points:* Dependencies beyond lithography (high-aspect-ratio etch, ALD, metrology, hybrid bonding from Lam, TEL, Applied Materials).
 4. **Survivorship & Graveyard Audits:**
    - Who attempted this exact approach and failed? What differentiates the survivor from the casualties?
+5. **Federal Medical Device & Regulatory Statutory Audit (MedTech / TechBio):**
+   - When a health or biotech product markets disease or biomarker screening without FDA authorization, audit its claims against federal statutes:
+     * *Device Status vs. General Wellness (`21 U.S.C. § 321(h)`):* Disease-specific biomarker screening or risk classification for FDA-approved drugs disqualifies a product from FDA's General Wellness exemption.
+     * *Objective Intended Use Doctrine (`21 CFR § 801.4`):* Front-page promotional headlines and launch claims establish legal intended use and cannot be voided by buried footer or `terms.html` disclaimers.
+     * *Premarket Clearance, Adulteration & Misbranding (`21 U.S.C. §§ 331, 351(f)(1)(B), 352(a)/(o), 360(k), 360c(f)(1)`):* Novel diagnostics without a cleared predicate default to Class III requiring De Novo or PMA; distributing them commercially without clearance renders them statutorily adulterated and misbranded.
+     * *The Investigational Device Catch-22 (`21 CFR § 812.7` & `Parts 50, 56`):* Claiming a device is "investigational" while promoting it commercially, recruiting clinics, or representing it as safe/effective violates `21 CFR § 812.7(a), (b), and (d)` and requires IRB approval (`Part 56`) and statutory informed consent (`§ 50.25`).
 
 ---
 
