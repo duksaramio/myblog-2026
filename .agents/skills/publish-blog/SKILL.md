@@ -1,12 +1,12 @@
 ---
 name: publish-blog
 description: >-
-  Use this skill when researching, drafting, editing, or deploying blog posts across the myblog-2026 platform sites (market-site, ai-site, health-site, main-site).
+  Use this skill when researching, drafting, editing, or deploying blog posts on the myblog-2026 site (duklee.net).
 ---
 
 # Blog Publishing Workflow
 
-Use this runbook to research, write, verify, and deploy blog posts across the platform sites.
+Use this runbook to research, write, verify, and deploy blog posts on `duklee.net`.
 
 ## 1. Research & Fact Verification
 - Follow [.agents/rules/deep-research.md](../../rules/deep-research.md) for mandatory epistemic invariants (hierarchy of evidence, rival causes, statistical audits, negative view).
@@ -19,9 +19,9 @@ Use this runbook to research, write, verify, and deploy blog posts across the pl
 
 ## 2. Trilingual Drafting
 Ensure all posts are created simultaneously in all three languages:
-- **English Post:** `apps/<site>/src/content/blog/<YYYY-MM-DD-slug>.md`
-- **Korean Post:** `apps/<site>/src/content/blog_ko/<YYYY-MM-DD-slug>.md`
-- **Chinese Post:** `apps/<site>/src/content/blog_zh/<YYYY-MM-DD-slug>.md`
+- **English Post:** `src/content/blog/<YYYY-MM-DD-slug>.md`
+- **Korean Post:** `src/content/blog_ko/<YYYY-MM-DD-slug>.md`
+- **Chinese Post:** `src/content/blog_zh/<YYYY-MM-DD-slug>.md`
 
 - **Agent-Driven Translation:** Always translate directly using the agent or parallel subagents. Avoid using local LLM background services or external batch scripts that introduce bottlenecks.
 - **Frontmatter Quoting Invariant:** Always enclose `title: "..."` and `description: "..."` in double quotes. Never leave multi-line descriptions unquoted or containing unquoted colons or dashes that break YAML parsing.
@@ -55,45 +55,27 @@ lang: "en"  # "en", "ko", or "zh"
 Before building, verify that no stray inline LaTeX commands (`\text{`, `\mu`, `\$`), untagged ASCII code blocks, or unquoted Mermaid `subgraph` titles exist across the trilingual post files:
 ```bash
 # 1. Check for stray inline LaTeX outside $$ ... $$ blocks
-grep -n '\\' apps/<site>/src/content/blog*/<YYYY-MM-DD-slug>.md
+grep -n '\\' src/content/blog*/<YYYY-MM-DD-slug>.md
 
 # 2. Check for unquoted Mermaid subgraph titles with parentheses (breaks Mermaid v11 parser)
-grep -nE 'subgraph [^"\[]+\(' apps/<site>/src/content/blog*/<YYYY-MM-DD-slug>.md
+grep -nE 'subgraph [^"\[]+\(' src/content/blog*/<YYYY-MM-DD-slug>.md
 ```
 
-Before committing or deploying, run the site-specific build to catch Astro type or markdown errors:
+Before committing or deploying, run the build to catch Astro type or markdown errors:
 ```bash
-# Main site
-npm run build:main
-
-# Market site
-npm run build:market
-
-# AI site
-npm run build:ai
-
-# Health site
-npm run build:health
+npm run build
 ```
 
 ## 5. Deployment
-Deploy to Cloudflare Pages via the monorepo workspace scripts:
+Deploy to Cloudflare via Wrangler:
 ```bash
-npm run deploy:<workspace>
-# Example:
-npm run deploy:market
+npm run deploy
 ```
 
-## 6. Synchronize Main Site Writing List
-Because `apps/main-site` aggregates posts across all sub-sites (`ai-site`, `health-site`, `market-site`) into its homepage writing list, whenever a post is published to any sub-site, always re-build and deploy `main-site`:
-```bash
-npm run build:main && npm run deploy:main
-```
-
-## 7. Post-Deployment Verification
+## 6. Post-Deployment Verification
 After deploying, programmatically verify that all language endpoints return HTTP 200:
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "<SITE_URL>/zh"
-curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "<SITE_URL>/ko"
-curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "<SITE_URL>/"
+curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "https://duklee.net/zh"
+curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "https://duklee.net/ko"
+curl -s -o /dev/null -w "%{http_code}\n" -L --max-time 10 "https://duklee.net/"
 ```

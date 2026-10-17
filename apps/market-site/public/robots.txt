@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://market.duklee.net/sitemap-index.xml

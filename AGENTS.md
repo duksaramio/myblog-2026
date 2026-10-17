@@ -11,9 +11,9 @@
 
 ## 2. Multilingual Parity Requirement (Trilingual)
 - Every new blog post or substantial revision must be published in English, Korean, and Chinese:
-  - English path: `apps/<site>/src/content/blog/<slug>.md`
-  - Korean path: `apps/<site>/src/content/blog_ko/<slug>.md`
-  - Chinese path: `apps/<site>/src/content/blog_zh/<slug>.md`
+  - English path: `src/content/blog/<slug>.md`
+  - Korean path: `src/content/blog_ko/<slug>.md`
+  - Chinese path: `src/content/blog_zh/<slug>.md`
 - Ensure frontmatter metadata matches, with translated `title`, `description`, and tags.
 - **Frontmatter Formatting Invariant:**
   - Always wrap `title` and `description` in double quotes: `title: "..."` and `description: "..."`. Never leave multi-line descriptions unquoted or containing unquoted colons or markdown bullet dashes that break YAML parsing.
@@ -26,7 +26,7 @@
   - **NEVER** put tables, scorecards, causal matrices, or timelines inside fenced code blocks (` ``` `) using ASCII/Unicode box-drawing characters (`┌─┬─┐`, `+---+---+`, `===`), which render as dark `PLAINTEXT` code blocks with horizontal scrollbars.
   - **Multi-Row Table Invariant:** Every logical record or item in a table must be its own Markdown row (`| col1 | col2 |`). Never collapse multiple logical rows into a single table row separated by `<br>` tags.
   - Always escape literal pipe characters inside table cells (such as conditional probabilities `P(A \| B)`) as `\|`.
-  - **Visible Table Grid Borders:** In shared UI styles (`packages/ui/src/styles/global.css` and `packages/ui/src/layouts/BlogPostLayout.astro`), always maintain explicit, high-contrast borders on `table` (`border-collapse: collapse; border: 1.5px solid rgba(0, 0, 0, 0.45)`), `th` (`border: 1px solid rgba(0, 0, 0, 0.35); border-bottom: 2px solid rgba(0, 0, 0, 0.5)`), and `td` (`border: 1px solid rgba(0, 0, 0, 0.3)`). Never use `var(--border-color)` for table borders because `:root { --border-color: rgba(0, 0, 0, 0.08); }` is nearly invisible against `#f5f4ef`.
+  - **Visible Table Grid Borders:** In UI styles (`src/styles/global.css` and `src/layouts/BlogPostLayout.astro`), always maintain explicit, high-contrast borders on `table` (`border-collapse: collapse; border: 1.5px solid rgba(0, 0, 0, 0.45)`), `th` (`border: 1px solid rgba(0, 0, 0, 0.35); border-bottom: 2px solid rgba(0, 0, 0, 0.5)`), and `td` (`border: 1px solid rgba(0, 0, 0, 0.3)`). Never use `var(--border-color)` for table borders because `:root { --border-color: rgba(0, 0, 0, 0.08); }` is nearly invisible against `#f5f4ef`.
 - **Mermaid Diagram & Chart Invariant (No ASCII Diagrams or Charts):**
   - Never draw flowcharts, capital structure trees, mechanism schematics, timelines, decay curves, or bar/line plots using ASCII/Unicode box-drawing or arrow characters (`┌─┬─┐`, `│`, `▼`, `──►`, `█`) inside plain fenced code blocks (` ``` `), which render as dark `PLAINTEXT` code blocks.
   - Always render all diagrams, flowcharts, schematics, and quantitative charts using **Mermaid (` ```mermaid `)** (`flowchart TD`, `flowchart LR`, `xychart-beta`, `sequenceDiagram`, `stateDiagram-v2`) across all three language versions (`blog`, `blog_ko`, `blog_zh`), styled in `.mermaid-chart` containers with visible borders (`border: 1.5px solid rgba(0, 0, 0, 0.45)`).
@@ -49,13 +49,9 @@
 
 ## 4. Verification & Deployment Pipeline
 - Always verify the Astro build before committing:
-  `npm run build:<workspace>` (e.g., `npm run build:market`, `npm run build:main`, `npm run build:ai`, `npm run build:health`)
+  `npm run build`
 - Deploy only after the build succeeds:
-  `npm run deploy:<workspace>` (e.g., `npm run deploy:market`)
-- **Main-Site Homepage Sync:**
-  - The main site (`apps/main-site`) aggregates posts from `ai-site`, `health-site`, and `market-site` on its homepage writing list.
-  - Whenever a post is published or revised on ANY sub-site (`ai-site`, `health-site`, `market-site`), **always verify and deploy the main site** as well:
-    `npm run build:main && npm run deploy:main`
+  `npm run deploy`
 
 ## 5. Agent Customization Version Control
 - All project-level agent rules (`.agents/rules/*.md`) and skills (`.agents/skills/*/SKILL.md`) are first-class codebase assets.
