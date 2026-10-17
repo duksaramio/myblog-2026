@@ -86,7 +86,6 @@ const zhUrl = getLocalizedPath(pathname, 'zh');
 				<a href={homeUrl} class={isHome ? 'active' : ''}>{t('nav.writing')}</a>
 				<a href={nakseojangUrl} class={isNakseojang ? 'active' : ''}>{t('nav.nakseojang')}</a>
 				<a href={libraryUrl} class={isLibrary ? 'active' : ''}>{t('nav.library')}</a>
-				<a href={isKo ? 'https://learn.duklee.net/ko' : isZh ? 'https://learn.duklee.net/zh' : 'https://learn.duklee.net'} target="_blank" rel="noopener noreferrer" title={isKo ? '배움 & 호기심 탐구 노트' : isZh ? '学习与求知笔记' : 'Learning & Curiosity Notes'}>Learn ↗</a>
 			</>
 		)}
 		<div class="lang-switch-wrapper">
