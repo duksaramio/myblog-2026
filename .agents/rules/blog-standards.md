@@ -1,6 +1,7 @@
 ---
 description: "Blog publishing invariants: strict ban on AI images, trilingual parity (EN/KO/ZH), and YAML frontmatter quoting"
-globs: ["src/content/**", "public/**"]
+trigger: always_on
+globs: "src/content/**, public/**"
 alwaysApply: true
 ---
 

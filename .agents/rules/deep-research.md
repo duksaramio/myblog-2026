@@ -1,6 +1,7 @@
 ---
 description: "Rigorous deep research standard incorporating Browne & Keeley critical thinking principles: primary source hierarchy, anti-echo chamber verification, rival cause testing, statistical scrutiny, negative-view auditing, and URL liveness checks"
-globs: ["*"]
+trigger: always_on
+globs: "*"
 alwaysApply: true
 ---
 
