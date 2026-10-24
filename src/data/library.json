@@ -1396,5 +1396,24 @@
     "backdropColor": "linear-gradient(135deg, #b8430c 0%, #4a1a10 50%, #0c0c0c 100%)",
     "externalUrl": "https://www.imdb.com/title/tt37281055/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWRkNWJhNjYtY2FkZC00YjFlLWFjMjUtZGFhMjc5MGYyODE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "the-cycle",
+    "title": "The Cycle",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Jordan Downey",
+    "rating": 6,
+    "review": "",
+    "watchDate": "2026-10-24",
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
+    ],
+    "backdropColor": "linear-gradient(135deg, #4a5b6e 0%, #22303c 50%, #0b0f13 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt32358390/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BM2MxZDAwZmItOWI5Ni00YjEzLTg1Y2UtMWE1ZjYyNDJjMDczXkEyXkFqcGc@._V1_.jpg"
   }
 ]
