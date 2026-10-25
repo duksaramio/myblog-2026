@@ -1434,5 +1434,24 @@
     "backdropColor": "linear-gradient(135deg, #2f7d6d 0%, #16524a 50%, #08211e 100%)",
     "externalUrl": "https://www.amazon.com/dp/B0FHG1HJFF",
     "coverUrl": "https://m.media-amazon.com/images/I/61cEcvmgyCL._UF1000,1000_QL80_FMwebp_.jpg"
+  },
+  {
+    "id": "huge-numbers",
+    "title": "Huge Numbers: A Story of Counting Ambitiously, from 4 1/2 to Fish 7",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2026,
+    "creator": "Richard Elwes",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-10-25",
+    "genres": [
+      "Mathematics",
+      "Science",
+      "Nonfiction"
+    ],
+    "backdropColor": "linear-gradient(135deg, #f2702c 0%, #c2410c 50%, #43140a 100%)",
+    "externalUrl": "https://www.amazon.com/dp/B0FL1KCL1L",
+    "coverUrl": "https://m.media-amazon.com/images/I/81E6b8ky4wL._UF1000,1000_QL80_FMwebp_.jpg"
   }
 ]
