@@ -1415,5 +1415,24 @@
     "backdropColor": "linear-gradient(135deg, #4a5b6e 0%, #22303c 50%, #0b0f13 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32358390/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BM2MxZDAwZmItOWI5Ni00YjEzLTg1Y2UtMWE1ZjYyNDJjMDczXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "classical-mechanics",
+    "title": "Classical Mechanics: The Theoretical Minimum",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2025,
+    "creator": "Leonard Susskind & George Hrabovsky",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-10-25",
+    "genres": [
+      "Physics",
+      "Mechanics",
+      "Science"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2f7d6d 0%, #16524a 50%, #08211e 100%)",
+    "externalUrl": "https://www.amazon.com/dp/B0FHG1HJFF",
+    "coverUrl": "https://m.media-amazon.com/images/I/61cEcvmgyCL._UF1000,1000_QL80_FMwebp_.jpg"
   }
 ]
