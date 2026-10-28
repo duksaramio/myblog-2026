@@ -1491,5 +1491,24 @@
     "backdropColor": "linear-gradient(135deg, #8c1d2b 0%, #3a2b2e 50%, #0d0f12 100%)",
     "externalUrl": "https://www.imdb.com/title/tt32261958/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BZmE0OWRiNzktY2MwMy00YzQ5LWFkMzctNjI1ZWQ1NTRiZGM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "forgotten-island",
+    "title": "Forgotten Island",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Joel Crawford & Januel Mercado",
+    "rating": 2,
+    "review": "Stopped watching 10 minutes in. Overbearing, obnoxious characters. No thanks.",
+    "watchDate": "2026-10-28",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "backdropColor": "linear-gradient(135deg, #f0803c 0%, #b5348f 50%, #16113a 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt36583977/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWJlY2JiNTMtYTAwYy00NGFiLTkwYTEtM2VmNDc4MzM5YmJiXkEyXkFqcGc@._V1_.jpg"
   }
 ]
