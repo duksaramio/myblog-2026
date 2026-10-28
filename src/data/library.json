@@ -1472,5 +1472,24 @@
     "backdropColor": "linear-gradient(135deg, #2aa5f5 0%, #0b5fa5 50%, #062f52 100%)",
     "externalUrl": "https://www.amazon.com/dp/B0791M9X4P",
     "coverUrl": "https://m.media-amazon.com/images/I/81Xao-z-UjL._UF1000,1000_QL80_FMwebp_.jpg"
+  },
+  {
+    "id": "verity",
+    "title": "Verity",
+    "type": "movie",
+    "status": "completed",
+    "releaseYear": 2026,
+    "creator": "Michael Showalter",
+    "rating": 5,
+    "review": "",
+    "watchDate": "2026-10-28",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "backdropColor": "linear-gradient(135deg, #8c1d2b 0%, #3a2b2e 50%, #0d0f12 100%)",
+    "externalUrl": "https://www.imdb.com/title/tt32261958/",
+    "coverUrl": "https://m.media-amazon.com/images/M/MV5BZmE0OWRiNzktY2MwMy00YzQ5LWFkMzctNjI1ZWQ1NTRiZGM3XkEyXkFqcGc@._V1_.jpg"
   }
 ]
