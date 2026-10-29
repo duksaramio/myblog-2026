@@ -1,11 +1,11 @@
 ---
 name: deep-dive
 description: >-
-  Execute end-to-end technical, market, or scientific deep-dive investigations using Browne & Keeley's 'Panning for Gold' critical thinking methodology. Enforces primary source extraction, rival cause audits, statistical deconstruction, negative-view analysis, and grey-thinking synthesis.
+  Execute end-to-end technical, market, or scientific deep-dive investigations using Browne & Keeley's 'Panning for Gold' critical thinking methodology, and automatically publish the resulting insight blog post in English, Korean, and Chinese to duklee.net. Enforces primary source extraction, rival cause audits, statistical deconstruction, negative-view analysis, grey-thinking synthesis, and trilingual blog deployment.
 ---
 
 # Deep-Dive Investigation Runbook: The "Panning for Gold" Framework
-*Operationalizing Critical Thinking for High-Stakes Technical, Market, and Scientific Investigations*
+*Operationalizing Critical Thinking for High-Stakes Technical, Market, and Scientific Investigations — With Automatic Trilingual Insight Blog Publishing*
 
 ---
 
@@ -13,11 +13,13 @@ description: >-
 
 A "Deep Dive" is not a glorified summary or an aggregation of search snippets. It is a forensic, epistemically rigorous investigation that cuts through corporate marketing, academic hype, and cognitive bias to establish what is genuinely known, what is probable, and what is unproven.
 
-This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. Keeley's *Asking the Right Questions: A Guide to Critical Thinking* into a standard 8-phase workflow for autonomous agents and pair programmers.
+**Mandatory End-to-End Execution Rule:** Every `/deep-dive` invocation **must automatically include writing, building, committing, pushing, and deploying a trilingual (`en`, `ko`, `zh`) insight blog post** on `duklee.net` via the [`publish-blog`](../publish-blog/SKILL.md) pipeline as its final phase—without waiting for a separate user prompt to "publish a blog."
+
+This skill operationalizes the 13 core chapters of M. Neil Browne and Stuart M. Keeley's *Asking the Right Questions: A Guide to Critical Thinking* into a standard 9-phase workflow for autonomous agents and pair programmers.
 
 ---
 
-## The 8-Phase Deep-Dive Workflow
+## The 9-Phase Deep-Dive Workflow
 
 ```mermaid
 flowchart TD
@@ -29,7 +31,8 @@ flowchart TD
     P5 --> P6["Phase 6: The 'Negative View' & Omission Interrogation"]
     P6 --> P7["Phase 7: Grey Thinking & Conditional Synthesis ('If-Clauses')"]
     P7 --> P8["Phase 8: Automated Verification & Citation Integrity"]
-    P8 --> R["Published Deep-Dive Report / Strategic Brief"]
+    P8 --> P9["Phase 9: Automatic Trilingual Insight Blog Publication & Live Deployment"]
+    P9 --> R["Published Deep-Dive Report & Live Trilingual Blog on duklee.net"]
 ```
 
 ---
@@ -174,9 +177,26 @@ Persuasive pitches always highlight positive features while omitting downsides.
 
 ---
 
+### Phase 9: Automatic Trilingual Insight Blog Publication & Live Deployment
+Every `/deep-dive` investigation must automatically culminate in publishing a trilingual insight blog post on `duklee.net` following [`publish-blog`](../publish-blog/SKILL.md) (do not wait for a separate user prompt to publish):
+1. **Simultaneous Trilingual Drafting:**
+   - Write the full forensic deep-dive investigation across all three language directories:
+     * **English:** `src/content/blog/<YYYY-MM-DD-slug>.md` (`lang: "en"`)
+     * **Korean:** `src/content/blog_ko/<YYYY-MM-DD-slug>.md` (`lang: "ko"`)
+     * **Chinese:** `src/content/blog_zh/<YYYY-MM-DD-slug>.md` (`lang: "zh"`)
+   - Enforce all [`publish-blog`](../publish-blog/SKILL.md) invariants: double-quoted `title` and `description`, native Unicode for inline units/currency (standalone `$$ ... $$` only for multi-term mathematical derivations), native GFM Markdown tables (`| ... |` with zero `<br/>` tags inside table cells and escaped `\|` pipes), Mermaid v11 diagrams (`flowchart TD`, `xychart-beta` with explicit `subgraph SG1["..."]` IDs and quoted labels), and zero AI-generated images (`heroImage: "/og-image.png"`).
+2. **Syntax, Build, Commit, Push & Deploy Pipeline:**
+   - Verify zero stray inline LaTeX backslashes (`grep -n '\\' src/content/blog*/<YYYY-MM-DD-slug>.md`) and zero unquoted Mermaid subgraph titles (`grep -nE 'subgraph [^"\[]+\(' src/content/blog*/<YYYY-MM-DD-slug>.md`).
+   - Run `npm run build` and verify exit code `0`.
+   - Stage, commit, and push all three blog files to `origin/main` (`git add`, `git commit`, `git push origin main`).
+   - Deploy to Cloudflare Workers via `npm run deploy`.
+   - Verify `HTTP 200` on `https://duklee.net/`, `https://duklee.net/ko`, `https://duklee.net/zh`, and all three new blog post URLs via `curl`.
+
+---
+
 ## Deep-Dive Execution Checklist
 
-Before finalizing any deep-dive report, verify the following 10 items:
+Before finalizing any deep-dive report, verify the following 11 items:
 
 - [ ] **1. Issue Framing:** Core issue explicitly defined as Descriptive (factual/mechanistic) or Prescriptive (decision/policy).
 - [ ] **2. Primary Sources:** All key metrics traced back to canonical primary artifacts (filings, papers, git code).
@@ -188,3 +208,4 @@ Before finalizing any deep-dive report, verify the following 10 items:
 - [ ] **8. Survivorship Audit:** Graveyard/survivorship analysis conducted for failed prior attempts.
 - [ ] **9. Grey Thinking & Verdict:** Final synthesis articulated through nuanced "If-Clauses" AND an explicit, probability-weighted "Bottom-Line Verdict" in a native GFM Markdown table.
 - [ ] **10. Native Tables, Mermaid Diagrams & Link Liveness:** Zero ASCII/Unicode box tables or ASCII diagrams/charts inside plain code blocks (all tables/matrices use native GFM `| ... |` with escaped `\|` pipes; all flowcharts, schematics, and charts use ` ```mermaid `), and every external citation returns HTTP 200.
+- [ ] **11. Automatic Trilingual Insight Blog Published & Deployed:** Trilingual posts (`blog`, `blog_ko`, `blog_zh`) created, verified with `npm run build`, committed and pushed to `origin/main`, deployed via `npm run deploy`, and verified live (`HTTP 200`) on `duklee.net`.

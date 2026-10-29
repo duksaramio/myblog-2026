@@ -48,6 +48,7 @@
   - Reject binary thinking; synthesize conclusions using contextual **If-Clauses**.
 
 ## 4. Verification & Deployment Pipeline
+- **Automatic Deep-Dive Insight Blog Publishing:** Whenever `/deep-dive` (`.agents/skills/deep-dive/SKILL.md`) is invoked, always automatically write, build, commit, push, and deploy the corresponding trilingual (`blog`, `blog_ko`, `blog_zh`) insight blog post on `duklee.net` as part of the deep-dive execution without waiting for a separate user prompt.
 - Always verify the Astro build before committing:
   `npm run build`
 - Deploy only after the build succeeds:
