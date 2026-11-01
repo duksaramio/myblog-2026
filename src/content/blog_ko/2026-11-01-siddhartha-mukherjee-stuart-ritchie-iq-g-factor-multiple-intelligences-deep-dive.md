@@ -151,7 +151,7 @@ $$\frac{dx_k}{dt} = a_k x_k \left(1 - \frac{x_k}{K_k}\right) + \sum_{l \neq k}^{
 xychart-beta
     title "Visser et al. (2006, N=200): 가드너 8대 다중지능 영역별 신뢰도 보정 g-적재량"
     x-axis ["Diag Rel (Nat)", "Arith Ops (Log)", "Vocab (Ling)", "Mak Grp (Nat)", "Opp (Ling)", "Map Plan (Spat)", "Paper Fold (Spat)", "Soc Trans (Inter)", "Cartoon (Inter)", "Consist (Intra)", "Rhythm (Mus)", "Sub/Mult (Log)", "Tonal (Mus)", "Mark Mak (Body)", "Stork (Body)"]
-    y-axis "신뢰도 보정 g-요인 적재량 (Disattenuated g-Loading)" 0.0 to 0.9
+    y-axis "신뢰도 보정 g-요인 적재량 (Disattenuated g-Loading)" 0.0 --> 0.9
     bar [0.83, 0.78, 0.66, 0.64, 0.61, 0.61, 0.57, 0.56, 0.55, 0.37, 0.34, 0.25, 0.24, 0.06, 0.03]
 ```
 
@@ -228,7 +228,7 @@ $$\text{Population GWAS Effect: } \hat{\beta}_{\text{pop}} = \beta_{\text{direct
 xychart-beta
     title "연구 설계별 인지/학업 능력 유전율(h2) 및 설명 분산(R2) 비교 (%)"
     x-axis ["Twin MZA (Bouchard 1990)", "Twin Adulthood (Haworth 2010)", "Twin Age 9 (Haworth 2010)", "Common SNP h2 (Savage 2018)", "RDR Direct h2 (Young 2018)", "Pop EA4 PGI R2 (Okbay 2022)", "Within-Family Direct PGI (Okbay 2022)"]
-    y-axis "표현형 분산 설명 비율 (%)" 0 to 80
+    y-axis "표현형 분산 설명 비율 (%)" 0 --> 80
     bar [74, 66, 41, 21, 17, 14, 7]
 ```
 

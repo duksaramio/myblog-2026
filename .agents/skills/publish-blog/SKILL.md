@@ -57,8 +57,8 @@ Before building, verify that no stray inline LaTeX commands (`\text{`, `\mu`, `\
 # 1. Check for stray inline LaTeX outside $$ ... $$ blocks
 grep -n '\\' src/content/blog*/<YYYY-MM-DD-slug>.md
 
-# 2. Check for unquoted Mermaid subgraph titles with parentheses (breaks Mermaid v11 parser)
-grep -nE 'subgraph [^"\[]+\(' src/content/blog*/<YYYY-MM-DD-slug>.md
+# 2. Check for unquoted Mermaid subgraph titles with parentheses or invalid xychart-beta y-axis 'to' ranges (breaks Mermaid v11 parser)
+grep -nE 'subgraph [^"\[]+\(|y-axis .* [0-9.]+ to [0-9.]+' src/content/blog*/<YYYY-MM-DD-slug>.md
 ```
 
 Before committing or deploying, run the build to catch Astro type or markdown errors:

@@ -151,7 +151,7 @@ $$\frac{dx_k}{dt} = a_k x_k \left(1 - \frac{x_k}{K_k}\right) + \sum_{l \neq k}^{
 xychart-beta
     title "Visser et al. (2006, N=200): 加德纳八大智能领域的信度校正 g-载荷"
     x-axis ["Diag Rel (Nat)", "Arith Ops (Log)", "Vocab (Ling)", "Mak Grp (Nat)", "Opp (Ling)", "Map Plan (Spat)", "Paper Fold (Spat)", "Soc Trans (Inter)", "Cartoon (Inter)", "Consist (Intra)", "Rhythm (Mus)", "Sub/Mult (Log)", "Tonal (Mus)", "Mark Mak (Body)", "Stork (Body)"]
-    y-axis "信度校正 g-因子载荷 (Disattenuated g-Loading)" 0.0 to 0.9
+    y-axis "信度校正 g-因子载荷 (Disattenuated g-Loading)" 0.0 --> 0.9
     bar [0.83, 0.78, 0.66, 0.64, 0.61, 0.61, 0.57, 0.56, 0.55, 0.37, 0.34, 0.25, 0.24, 0.06, 0.03]
 ```
 
@@ -228,7 +228,7 @@ $$\text{Population GWAS Effect: } \hat{\beta}_{\text{pop}} = \beta_{\text{direct
 xychart-beta
     title "不同研究设计下认知/教育能力的遗传率 (h2) 与解释方差 (R2) 对比 (%)"
     x-axis ["Twin MZA (Bouchard 1990)", "Twin Adulthood (Haworth 2010)", "Twin Age 9 (Haworth 2010)", "Common SNP h2 (Savage 2018)", "RDR Direct h2 (Young 2018)", "Pop EA4 PGI R2 (Okbay 2022)", "Within-Family Direct PGI (Okbay 2022)"]
-    y-axis "解释表型方差百分比 (%)" 0 to 80
+    y-axis "解释表型方差百分比 (%)" 0 --> 80
     bar [74, 66, 41, 21, 17, 14, 7]
 ```
 

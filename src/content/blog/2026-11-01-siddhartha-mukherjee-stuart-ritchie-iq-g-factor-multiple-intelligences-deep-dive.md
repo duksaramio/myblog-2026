@@ -151,7 +151,7 @@ In [Visser, Ashton, & Vernon (2006)](https://eric.ed.gov/?id=EJ742896) (*Intelli
 xychart-beta
     title "Visser et al. (2006, N=200): Disattenuated g-Loadings Across Gardner's 8 Domains"
     x-axis ["Diag Rel (Nat)", "Arith Ops (Log)", "Vocab (Ling)", "Mak Grp (Nat)", "Opp (Ling)", "Map Plan (Spat)", "Paper Fold (Spat)", "Soc Trans (Inter)", "Cartoon (Inter)", "Consist (Intra)", "Rhythm (Mus)", "Sub/Mult (Log)", "Tonal (Mus)", "Mark Mak (Body)", "Stork (Body)"]
-    y-axis "Disattenuated g-Factor Loading" 0.0 to 0.9
+    y-axis "Disattenuated g-Factor Loading" 0.0 --> 0.9
     bar [0.83, 0.78, 0.66, 0.64, 0.61, 0.61, 0.57, 0.56, 0.55, 0.37, 0.34, 0.25, 0.24, 0.06, 0.03]
 ```
 
@@ -228,7 +228,7 @@ $$\text{Population GWAS Effect: } \hat{\beta}_{\text{pop}} = \beta_{\text{direct
 xychart-beta
     title "Heritability & Variance Estimates of Cognitive/Educational Ability Across Designs (%)"
     x-axis ["Twin MZA (Bouchard 1990)", "Twin Adulthood (Haworth 2010)", "Twin Age 9 (Haworth 2010)", "Common SNP h2 (Savage 2018)", "RDR Direct h2 (Young 2018)", "Pop EA4 PGI R2 (Okbay 2022)", "Within-Family Direct PGI (Okbay 2022)"]
-    y-axis "Percentage of Phenotypic Variance (%)" 0 to 80
+    y-axis "Percentage of Phenotypic Variance (%)" 0 --> 80
     bar [74, 66, 41, 21, 17, 14, 7]
 ```
 
