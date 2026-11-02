@@ -11,6 +11,7 @@ Use this runbook to research, write, verify, and deploy blog posts on `duklee.ne
 ## 1. Research & Fact Verification
 - Follow [.agents/rules/deep-research.md](../../rules/deep-research.md) for mandatory epistemic invariants (hierarchy of evidence, rival causes, statistical audits, negative view).
 - For in-depth investigative, market, or architectural analyses, follow the runbook in [.agents/skills/deep-dive/SKILL.md](../deep-dive/SKILL.md).
+- For deep-research investigations on unfamiliar topics explained so clearly that a 5th grader can completely understand them, follow the runbook in [.agents/skills/fifth-grader/SKILL.md](../fifth-grader/SKILL.md).
 - Test all cited URLs programmatically before publishing:
   ```bash
   curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "<TARGET_URL>"
