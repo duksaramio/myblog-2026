@@ -179,13 +179,17 @@ Persuasive pitches always highlight positive features while omitting downsides.
 
 ### Phase 9: Automatic Trilingual Insight Blog Publication & Live Deployment
 Every `/deep-dive` investigation must automatically culminate in publishing a trilingual insight blog post on `duklee.net` following [`publish-blog`](../publish-blog/SKILL.md) (do not wait for a separate user prompt to publish):
-1. **Simultaneous Trilingual Drafting:**
+1. **General-Audience Investigative Storytelling Style (No Dry Textbook Scaffolding):**
+   - Use the 9-Phase "Panning for Gold" framework as your **behind-the-scenes detective methodology**, NOT as literal textbook section headers (*never* title blog sections `"Phase 1: Issue Classification"` or `"Phase 4: Rival Causes"`).
+   - Write the blog post as a vivid, accessible investigative narrative for a smart, curious general audience—using clear everyday analogies (e.g., volume knobs, scratched vinyl records, pocket calculators), conversational prose, and compelling storytelling while keeping all hard primary-source numbers and forensic proof intact.
+   - Avoid walls of abstract mathematical symbols or dense academic jargon when a plain-language explanation and a clean table or chart communicate the insight more clearly.
+2. **Simultaneous Trilingual Drafting:**
    - Write the full forensic deep-dive investigation across all three language directories:
      * **English:** `src/content/blog/<YYYY-MM-DD-slug>.md` (`lang: "en"`)
      * **Korean:** `src/content/blog_ko/<YYYY-MM-DD-slug>.md` (`lang: "ko"`)
      * **Chinese:** `src/content/blog_zh/<YYYY-MM-DD-slug>.md` (`lang: "zh"`)
-   - Enforce all [`publish-blog`](../publish-blog/SKILL.md) invariants: double-quoted `title` and `description`, native Unicode for inline units/currency (standalone `$$ ... $$` only for multi-term mathematical derivations), native GFM Markdown tables (`| ... |` with zero `<br/>` tags inside table cells and escaped `\|` pipes), Mermaid v11 diagrams (`flowchart TD`, `xychart-beta` with explicit `subgraph SG1["..."]` IDs and quoted labels), and zero AI-generated images (`heroImage: "/og-image.png"`).
-2. **Syntax, Build, Commit, Push & Deploy Pipeline:**
+   - Enforce all [`publish-blog`](../publish-blog/SKILL.md) invariants: double-quoted `title` and `description`, native Unicode for inline units/currency (standalone `$$ ... $$` only when a multi-term mathematical equation is genuinely needed), native GFM Markdown tables (`| ... |` with zero `<br/>` tags inside table cells and escaped `\|` pipes), Mermaid v11 diagrams (`flowchart TD`, `xychart-beta` with explicit `subgraph SG1["..."]` IDs and quoted labels), and zero AI-generated images (`heroImage: "/og-image.png"`).
+3. **Syntax, Build, Commit, Push & Deploy Pipeline:**
    - Verify zero stray inline LaTeX backslashes (`grep -n '\\' src/content/blog*/<YYYY-MM-DD-slug>.md`) and zero unquoted Mermaid subgraph titles (`grep -nE 'subgraph [^"\[]+\(' src/content/blog*/<YYYY-MM-DD-slug>.md`).
    - Run `npm run build` and verify exit code `0`.
    - Stage, commit, and push all three blog files to `origin/main` (`git add`, `git commit`, `git push origin main`).
