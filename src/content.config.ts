@@ -43,7 +43,7 @@ const blog = defineCollection({
 const nakseojang = defineCollection({
 	loader: glob({ pattern: 'index.md', base: './src/content/nakseojang' }),
 	schema: z.object({
-		title: z.string().optional().default('낙서장'),
+		title: z.string().optional().default('Scribbles'),
 		description: z.string().optional().default(''),
 	}),
 });

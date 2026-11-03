@@ -16,27 +16,30 @@ const siteTitle = t('site.title');
 const nakseojangEntry = await getEntry('nakseojang', 'index');
 const { Content } = nakseojangEntry ? await render(nakseojangEntry) : { Content: null };
 
+const pageTitle = nakseojangEntry?.data.title || t('nakseojang.title');
+const pageDescription = nakseojangEntry?.data.description || t('nakseojang.description');
+
 const seo = {
 	og: {
 		...profile.seo.og,
-		title: `낙서장 | ${siteTitle}`,
-		description: nakseojangEntry?.data.description || "머릿속에 떠오르는 생각을 자유롭게 기록하는 공간",
+		title: `${pageTitle} | ${siteTitle}`,
+		description: pageDescription,
 	},
 	twitter: {
 		...profile.seo.twitter,
-		title: `낙서장 | ${siteTitle}`,
-		description: nakseojangEntry?.data.description || "머릿속에 떠오르는 생각을 자유롭게 기록하는 공간",
+		title: `${pageTitle} | ${siteTitle}`,
+		description: pageDescription,
 	},
 };
 ---
 
-<BaseLayout title={`낙서장 | ${siteTitle}`} description={nakseojangEntry?.data.description || "머릿속에 떠오르는 생각을 자유롭게 기록하는 공간"} seo={seo} locale={locale} banner={profile.banner}>
+<BaseLayout title={`${pageTitle} | ${siteTitle}`} description={pageDescription} seo={seo} locale={locale} banner={profile.banner}>
 	<Header logo={siteTitle} locale={locale} />
 
 	<main>
 		<article class="nakseojang-article">
 			<header class="nakseojang-header">
-				<h1 class="page-title">{nakseojangEntry?.data.title || '낙서장'}</h1>
+				<h1 class="page-title">{pageTitle}</h1>
 				{nakseojangEntry?.data.description && (
 					<p class="subtitle">{nakseojangEntry.data.description}</p>
 				)}
