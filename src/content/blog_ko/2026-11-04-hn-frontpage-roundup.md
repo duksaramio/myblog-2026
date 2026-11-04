@@ -229,7 +229,7 @@ ERICI — 유럽 RISC-V 산업용 컴퓨팅 이니셔티브 — 는 제품이 �
 | [Ubuntu의 미패치 CVE](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) | 597 | 623 (+26) |
 | [후지필름의 테이프 베팅](https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/) | 306 | 526 (+220) |
 | [OpenAI가 학습 스위치를 다시 켰다](https://news.ycombinator.com/item?id=50352757) | 374 | 514 (+140) |
-| [Kalshi의 중범죄 기소](https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-state/) | 354 | 492 (+138) |
+| [Kalshi의 중범죄 기소](https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/) | 354 | 492 (+138) |
 | [1995년 펜티엄 프로 체스 엔진](https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html) | 387 | 486 (+99) |
 | [미국 이름이 여성 쪽으로 이동한다](https://namedaisy.com/blog/boy-names-that-became-girl-names) | 470 | 485 (+15) |
 | [Hacker Times](https://hackertimes.ca/) | 448 | 466 (+18) |
@@ -244,7 +244,7 @@ ERICI — 유럽 RISC-V 산업용 컴퓨팅 이니셔티브 — 는 제품이 �
 | [OpenAI의 Git 확장](https://openai.com/index/scaling-git-at-openai/) | 260 | 270 (+10) |
 | [Ask HN: Who is hiring?](https://news.ycombinator.com/item?id=50338728) | 240 | 247 (+7) |
 | [syscall.sh](https://syscall.sh/) | 230 | 236 (+6) |
-| [Toit v2.0.0](https://toit.io/blog/toit-v2-0.0/) | 209 | 235 (+26) |
+| [Toit v2.0.0](https://toit.io/blog/toit-v2-0-0/) | 209 | 235 (+26) |
 | [RAMBO 에어갭 유출](https://arxiv.org/abs/2409.02292) | 220 | 220 (+0) |
 
 ## 관통하는 주제

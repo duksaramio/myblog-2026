@@ -228,7 +228,7 @@ Thirty-four of the page's stories were covered in earlier roundups. The biggest 
 | [Ubuntu's unpatched CVE](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) | 597 | 623 (+26) |
 | [Fujifilm's tape bet](https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/) | 306 | 526 (+220) |
 | [OpenAI re-enabled the training switch](https://news.ycombinator.com/item?id=50352757) | 374 | 514 (+140) |
-| [Kalshi's felony charges](https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-state/) | 354 | 492 (+138) |
+| [Kalshi's felony charges](https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/) | 354 | 492 (+138) |
 | [The 1995 Pentium Pro chess engine](https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html) | 387 | 486 (+99) |
 | [US names move toward girls](https://namedaisy.com/blog/boy-names-that-became-girl-names) | 470 | 485 (+15) |
 | [Hacker Times](https://hackertimes.ca/) | 448 | 466 (+18) |
@@ -243,7 +243,7 @@ Thirty-four of the page's stories were covered in earlier roundups. The biggest 
 | [OpenAI scaled Git](https://openai.com/index/scaling-git-at-openai/) | 260 | 270 (+10) |
 | [Ask HN: Who is hiring?](https://news.ycombinator.com/item?id=50338728) | 240 | 247 (+7) |
 | [syscall.sh](https://syscall.sh/) | 230 | 236 (+6) |
-| [Toit v2.0.0](https://toit.io/blog/toit-v2-0.0/) | 209 | 235 (+26) |
+| [Toit v2.0.0](https://toit.io/blog/toit-v2-0-0/) | 209 | 235 (+26) |
 | [RAMBO air-gap leak](https://arxiv.org/abs/2409.02292) | 220 | 220 (+0) |
 
 ## Throughline
