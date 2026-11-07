@@ -10,7 +10,7 @@ Seventy-seven stories cleared the 200-point threshold in this afternoon's scan o
 
 The new material is quieter than Thursday's. No product launches, no fresh scandal. What it does have is three genuine arguments. One about whether AI is accelerating AI research, where a METR deep-access report and a LessWrong quick take landed the same day and contradict each other in a way that turns out to be resolvable. One about whether on-device data collection is meaningfully different from cloud data collection, where a pair of Apple daemons have been running since 2022 without a man page worth reading. And one about how much compatibility a rewrite of `sudo` owes you.
 
-The rest is craft: a terminal emulator extracted into a C library that twelve million IDE users now depend on without knowing it, a twenty-year-old racing game recompiled to run in a browser tab, and a fan project that reverse-engineered the FAA's floppy disk budget.
+The rest is craft: a terminal emulator extracted into a C library that twelve million IDE users now depend on without knowing it, a twenty-year-old racing game recompiled to run in a browser tab, and a federal agency finally retiring a display system that still needed a 3.5-inch disk.
 
 ## Libghostty 1.0 — 980 points
 
