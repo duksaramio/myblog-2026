@@ -1510,5 +1510,24 @@
     "backdropColor": "linear-gradient(135deg, #f0803c 0%, #b5348f 50%, #16113a 100%)",
     "externalUrl": "https://www.imdb.com/title/tt36583977/",
     "coverUrl": "https://m.media-amazon.com/images/M/MV5BMWJlY2JiNTMtYTAwYy00NGFiLTkwYTEtM2VmNDc4MzM5YmJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "what-is-life",
+    "title": "What Is Life?: Five Great Ideas in Biology",
+    "type": "book",
+    "status": "reading",
+    "releaseYear": 2021,
+    "creator": "Paul Nurse",
+    "rating": 0,
+    "review": "",
+    "watchDate": "2026-11-08",
+    "genres": [
+      "Biology",
+      "Science",
+      "Philosophy"
+    ],
+    "backdropColor": "linear-gradient(135deg, #2f4a3f 0%, #16302b 50%, #0a1418 100%)",
+    "externalUrl": "https://www.amazon.com/dp/0393541150",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0393541150-L.jpg"
   }
 ]
